@@ -1,0 +1,31 @@
+
+   <view class="dian" bindtap="dian">
+   {{dian}}
+   </view>
+   <view class="{{showOrHidden?'usermotto':'nohua'}}" animation="{{ani}}">
+    <image src="../../img/wu.png" style="width:100%;height:50px;"></image>
+      <text class="num">{{motto}}</text>
+    </view>
+
+    <view class="demo4">
+    <view class="title">
+     <view style="margin-left:10px">已签到：<text style="color:#b64c9b">{{num}}</text>天</view>
+     <view style="margin-left:20px">漏签：<text style="color:#f84053;">1</text>天</view>
+    </view>
+        <calendar 
+         calendar-style="calendar"  
+         header-style="calendar-header" 
+          board-style="board" 
+          cell-size="30"
+          days-color="{{demo4_days_style}}" 
+          weeks-type="cn" 
+          binddayClick="dayClick"
+          active-type = "square" />
+          
+    </view>
+    
+
+
+    
+
+
