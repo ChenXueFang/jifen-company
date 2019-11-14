@@ -1,0 +1,24 @@
+{
+  "pages": [
+    "pages/calender/calender",
+    "pages/history/history",
+    "pages/Pagination/Pagination",
+    "pages/index_qrcode/index_qrcode",
+    "pages/useInComponent_qrcode/useInComponent_qrcode",
+    "pages/test_qrcode/test_qrcode",
+    "pages/responsive_qrcode/responsive_qrcode"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "white"
+  },
+  "plugins": {
+    "calendar": {
+      "version": "1.1.0",
+      "provider": "wx92c68dae5a8bb046"
+    }
+  },
+  "sitemapLocation": "sitemap69.json"
+}
