@@ -25,12 +25,13 @@ Page({
     var num = 0
     num++
     that.setData({
-      // zindex:9999,//点击了z-index就有值
-      show: true,
       num: num,
       dian: '您已签到',
     })
     setTimeout(function() {
+      that.setData({
+        show: true,
+      })
       var animation = wx.createAnimation({
         duration: 2000, //设置执行多长时间，动画执行5秒
         timingFunction: 'ease',
@@ -40,7 +41,7 @@ Page({
       that.setData({
         ani: animation.export() //这个就是 wx.createAnimation的写法
       })
-    }, 500)
+    }, 3000)
     // 动画
 
     // 日历时间
