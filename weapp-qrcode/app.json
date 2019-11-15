@@ -1,8 +1,8 @@
 {
   "pages": [
+    "pages/Pagination/Pagination",
     "pages/calender/calender",
     "pages/history/history",
-    "pages/Pagination/Pagination",
     "pages/index_qrcode/index_qrcode",
     "pages/useInComponent_qrcode/useInComponent_qrcode",
     "pages/test_qrcode/test_qrcode",

@@ -1,52 +1,54 @@
+<!-- 历史签到 -->
+<view class="history">
+  <view class="history_pro">
+    <view class="pro1">
+      <!-- 内容 -->
+      <view class="main_pro">
+        <!-- 数据内容 -->
+        <view class="pro_list" wx:for="{{datalist}}" wx:key="*this">
+          <!-- 上层的内容 -->
+          <view class="pro_nei">
+            <view style="width:70px;height:100%;display: flex;justify-content: center;align-content: center;margin-top:10px">{{item.day}}</view>
+            <!-- 紫色的圈 -->
+            <view class="circular" wx:if="{{!item.que}}"></view>
+            <!-- 白色的圈 -->
+            <view class="circular2" wx:if="{{item.que}}"></view>
+            <!-- 大的效果 -->
+            <image src="../../../images/sign_start3.png" style="width:30px;height:30px;margin-left:10px;" wx:if="{{item.good}}"></image>
+            <!-- 小的效果 -->
+            <image src="../../../images/sign_start3.png" style="width:20px;height:20px;margin-left:10px;" wx:if="{{!item.good}}"></image>
+            <view>+{{item.order}}</view>
+            <view style="width:50px;height:50px;margin-right:10px; display: flex; align-items: center;" wx:if="{{item.good}}">+
+              <image src="../../../images/sign_big30.png" style="width:30px;height:30px"></image>
+            </view>
+          </view>
+          <!-- 上层的内容结束，下面是左弯弯和右的 -->
+          <image src="../../../images/left1.png" class="wanwan" wx:if="{{item.leftview &&!item.wan}}"></image>
+          <image src="../../../images/right1.png" class="wanwan" style="margin-left:79px;margin-top:-7px" wx:if="{{!item.leftview &&!item.wan}}"></image>
 
-    <!-- 历史签到 -->
-    <view class="history">
-      <view class="history_pro">
-        <view class="pro1">
-              <!-- 内容 -->
-              <view class="main_pro">
-              <!-- 数据内容 -->
-               <view class="pro_list" wx:for="{{datalist}}" wx:key="*this">
-               <!-- 上层的内容 -->
-               <view class="pro_nei">
-                 <view style="width:70px;height:100%;display: flex;justify-content: center;align-content: center;margin-top:10px">{{item.day}}</view>
-                   <!-- 紫色的圈 -->
-                   <view class="circular" wx:if="{{!item.que}}"></view>
-                   <!-- 白色的圈 -->
-                   <view class="circular2" wx:if="{{item.que}}"></view>
-                   <!-- 大的效果 -->
-                    <image src="../../../images/sign_start3.png" style="width:30px;height:30px;margin-left:10px;"  wx:if="{{item.good}}"></image>
-                    <!-- 小的效果 -->
-                    <image src="../../../images/sign_start3.png" style="width:20px;height:20px;margin-left:10px;"  wx:if="{{!item.good}}"></image>
-                     <view>+{{item.order}}</view>
-                      <view style="width:50px;height:50px;margin-right:10px; display: flex; align-items: center;" wx:if="{{item.good}}">+ <image src="../../../images/sign_big30.png" style="width:30px;height:30px"></image></view>
-               </view>
-                <!-- 上层的内容结束，下面是左弯弯和右的 -->
-                  <image src="../../../images/left1.png" class="wanwan" wx:if="{{item.leftview &&!item.wan}}"></image>
-                   <image src="../../../images/right1.png" class="wanwan" style="margin-left:79px;margin-top:-7px" wx:if="{{!item.leftview &&!item.wan}}"></image>
-
-               </view>
-               <!-- 数据内容结束 -->
-             
-
-              </view>
         </view>
+        <!-- 数据内容结束 -->
+
+
       </view>
-<view>内容{{nei}}</view>
-      <!-- 分页器 -->
-<view class="fen">
- <!-- 分页的切换 -->
-         <ul class='fenye'>
-           <li bindtap="upit" style="width:50px;color:rgb(204,136,212);">上一页</li>
-        <!-- 判断当参数shen不存在的时候就显示前面的...，也就是大于3过后显示 -->
-           <li wx:if="{{shen}}"  bindtap="lastmore">...</li>
-           <!--当前页背景色为紫色，利用三则运算实现点击谁谁就获取dian2这个类，也就是背景为紫色，首先要点击获取这个item.ic也就是数字，js里面我自定义的数字内容，只显示1，2，3，这个cur是我定义的一个参数，用来判断是否点击的数字与cur是否相等，相等就有背景为紫色-->
-           <li wx:for='{{it}}' wx:key="*this" data-ic="{{item.ic}}" bindtap="dian" class="{{cur == item.ic ? 'dian2' :  ''}}">
-            <a>{{item.ic }}</a>
-           </li>
-            <!-- 判断当参数shen存在的时候就显示后面的...，也就是小于3过后显示 -->
-           <li wx:if="{{more}}"  bindtap="more">...</li>
-           <li bindtap="next"  style="width:50px;color:rgb(204,136,212);">下一页</li> 
-         </ul>
-</view>
     </view>
+  </view>
+  <view>内容{{nei}}</view>
+  <!-- 分页器 -->
+  <view class="fen">
+    <!-- 分页的切换 -->
+    <ul class='fenye'>
+      <li bindtap="upit" style="width:50px;color:rgb(204,136,212);">上一页</li>
+      <!-- 判断当参数shen不存在的时候就显示前面的...，也就是大于3过后显示 -->
+      <li wx:if="{{shen}}" bindtap="lastmore">...</li>
+      <!--当前页背景色为紫色，利用三则运算实现点击谁谁就获取dian2这个类，也就是背景为紫色，首先要点击获取这个item.ic也就是数字，js里面我自定义的数字内容，只显示1，2，3，这个cur是我定义的一个参数，用来判断是否点击的数字与cur是否相等，相等就有背景为紫色-->
+      <li wx:for='{{it}}' wx:key="*this" data-ic="{{item.ic}}" bindtap="dian" class="{{cur == item.ic ? 'dian2' :  ''}}">
+        <a>{{item.ic }}</a>
+      </li>
+      <!-- 判断当参数shen存在的时候就显示后面的...，也就是小于3过后显示 -->
+      <li wx:if="{{more}}" bindtap="more">...</li>
+      <li bindtap="next" style="width:50px;color:rgb(204,136,212);">下一页</li>
+    </ul>
+  </view>
+  <!-- 分页器 end -->
+</view>

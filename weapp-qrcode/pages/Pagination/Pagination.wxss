@@ -2,13 +2,16 @@
   width: 100%;
   height:300px;
 }
-.content{
+.con{
   width: 100%;
-  height: 100px;
+  height: 300rpx;
+  line-height: 300rpx;
+  text-align: center;
   background: orange;
 }
 .fenye{
-  width: 100%;
+  width: 85%;
+  margin: 0 auto;
   height: 50px;
   display: flex;
   justify-content: space-between;
