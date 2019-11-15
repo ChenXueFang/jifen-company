@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/Pagination2/Pagination2",
     "pages/Pagination/Pagination",
     "pages/calender/calender",
     "pages/history/history",
