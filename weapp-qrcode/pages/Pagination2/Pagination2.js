@@ -255,7 +255,7 @@ if(all>3){
   onShow: function () {
     // 页面一加载将请求到的数据进行处理，获取当前页赋值到page或者请求到的总页赋值到all里面
     var that = this
-    var all = 1//总页数
+    var all = 4//总页数
    if(all>3){
      var page = 1 //当前页数
      if (page > 3) { //如果椅开始就显示的不是第一页而大于第三页的来显示就执行这里
