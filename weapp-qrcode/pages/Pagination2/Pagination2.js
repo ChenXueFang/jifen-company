@@ -134,8 +134,8 @@ Page({
         }] 
         that.setData({
           it:newlist,
-          cur:2,
-          pageContent:2,
+          cur:4,
+          pageContent:4,
           premore:'show',
           one:'',
           lastmore:'',
@@ -200,8 +200,8 @@ Page({
         }]
       that.setData({
         it: prelist,
-        cur: 3,
-        pageContent: 3,
+        cur: 1,
+        pageContent: 1,
         premore: '',
         one:'',
         lastmore: 'show',//显示左边的三点
@@ -468,7 +468,7 @@ if(all>4){
      })
    
     
-   } else if (all = 4) {
+   } else if (all == 4) {
 
      var list3 = [{
        ic: 1
