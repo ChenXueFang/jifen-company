@@ -22,7 +22,6 @@ Page({
     one:'',//用于判断第一个也就是1的显示，当为空就不显示，不为空就显示
     lastone:'show'//用于显示最后的数字，当为空的时候不显示，不为空的时候就显示
   },
-
   // 分页, 点击页码，匹配内容
   clickPage: function (e) { //点击页数
     var that = this
@@ -79,101 +78,141 @@ Page({
       lastmore:''//右边的三个点消失
     })
   },
-
   // 点击右边的省略号
   lastMore: function () {
     var that = this
     var all = that.data.all //首先获取所有的页数来判断
-    var it = that.data.it //获取这个显示的数据
-    var arr = [] //定义一个空的 数组来存放新的内容
-    for (var i = 0; i < it.length; i++) {
-      var shownum = it[2].ic
-    }
-    var isnum = shownum + 1
-    if (isnum >= all - 1 || isnum >= all-2) { //新添加的是这里，判断当isnum大于总数减1，也就是10-1=9
-      arr.push({
-        ic: all - 2
-      }, {
-          ic: all - 1
+    if(all>4){
+      var it = that.data.it //获取这个显示的数据
+      var arr = [] //定义一个空的 数组来存放新的内容
+      for (var i = 0; i < it.length; i++) {
+        var shownum = it[2].ic
+      }
+      var isnum = shownum + 1
+      if (isnum >= all - 1 || isnum >= all - 2) { //新添加的是这里，判断当isnum大于总数减1，也就是10-1=9
+        arr.push({
+          ic: all - 2
         }, {
-          ic: all
-        }) //然后就存入新数组
-      that.setData({
-        it: arr,
-        cur: all - 2, //当大于了总数就固定显示的数字背景颜色为all-2=8
-        pageContent: all - 2, //当大于了总数就固定显示的内容为all-2=8内容8
-        premore: 'show', //显示前面的三点
-        lastmore: '', //隐藏后面的三点
-        one:'show',//显示定义的第一页
-        lastone: ''//当isnum大于总数减1或者减2的时候就要隐藏定义的最后一个数字，不然的话会出现两个最后一个值，不信你试试
-      })
-    } else {//下面是不大于总数的减三以内的
-      arr.push({
-        ic: isnum
-      }, {
-          ic: isnum + 1
-        }, {
-          ic: isnum + 2
+            ic: all - 1
+          }, {
+            ic: all
+          }) //然后就存入新数组
+        that.setData({
+          it: arr,
+          cur: all - 2, //当大于了总数就固定显示的数字背景颜色为all-2=8
+          pageContent: all - 2, //当大于了总数就固定显示的内容为all-2=8内容8
+          premore: 'show', //显示前面的三点
+          lastmore: '', //隐藏后面的三点
+          one: 'show',//显示定义的第一页
+          lastone: ''//当isnum大于总数减1或者减2的时候就要隐藏定义的最后一个数字，不然的话会出现两个最后一个值，不信你试试
         })
-      that.setData({
-        it: arr,
-        cur: isnum,
-        pageContent: isnum,
-        premore: 'show',
-        one: 'show',//显示定义的第一页
-        lastone:'show'//显示定义的最后一页
-      })
+      } else {//下面是不大于总数的减三以内的
+        arr.push({
+          ic: isnum
+        }, {
+            ic: isnum + 1
+          }, {
+            ic: isnum + 2
+          })
+        that.setData({
+          it: arr,
+          cur: isnum,
+          pageContent: isnum,
+          premore: 'show',
+          one: 'show',//显示定义的第一页
+          lastone: 'show'//显示定义的最后一页
+        })
+      }
+    }else if(all==4){
+      console.log('等于4')
+      var newlist = [{
+        ic:2
+      }, {
+          ic: 3
+        }, {
+          ic:4
+        }] 
+        that.setData({
+          it:newlist,
+          cur:2,
+          pageContent:2,
+          premore:'show',
+          one:'',
+          lastmore:'',
+          lastone:''
+        })
     }
+   
   },
   // 点击左边的省略号
   preMore: function () {
     var that = this
-    var islist = that.data.it
-    var arr = []
-    for (var i = 0; i < islist.length; i++) {
-      var shownum = islist[0].ic
-    }
-    var isnum = shownum - 3
-    if (isnum <= 1 || isnum <= 2) {//这是当isnum小于等于1或者2的时候显示
-      arr.push({
+    var all = that.data.all
+    if(all>4){
+      var islist = that.data.it
+      var arr = []
+      for (var i = 0; i < islist.length; i++) {
+        var shownum = islist[0].ic
+      }
+      var isnum = shownum - 3
+      if (isnum <= 1 || isnum <= 2) {//这是当isnum小于等于1或者2的时候显示
+        arr.push({
+          ic: 1
+        }, {
+            ic: 2
+          }, {
+            ic: 3
+          })
+        that.setData({
+          it: arr,
+          cur: 3,
+          pageContent: 3,
+          premore: '',
+          lastmore: 'show',//显示右边的三点
+          lastone: 'show',//显示自定义的最后一页
+          one: ''//定义的第一页隐藏
+        })
+      } else {//下面是正常向左点击三点的情况
+        arr.push({
+          ic: isnum
+        }, {
+            ic: isnum + 1
+          }, {
+            ic: isnum + 2
+          })
+        that.setData({
+          it: arr,
+          cur: isnum,
+          pageContent: isnum,
+          premore: 'show',
+          lastmore: 'show',//显示左边的三点
+          lastone: 'show',//显示最后的页数
+
+        })
+      }
+    }else if(all==4){
+      var prelist = [{
         ic: 1
       }, {
           ic: 2
         }, {
           ic: 3
-        })
+        }]
       that.setData({
-        it: arr,
+        it: prelist,
         cur: 3,
         pageContent: 3,
         premore: '',
-        lastmore: 'show',//显示右边的三点
-        lastone:'show',//显示自定义的最后一页
-        one:''//定义的第一页隐藏
-      })
-    } else {//下面是正常向左点击三点的情况
-      arr.push({
-        ic: isnum
-      }, {
-          ic: isnum + 1
-        }, {
-          ic: isnum + 2
-        })
-      that.setData({
-        it: arr,
-        cur: isnum,
-        pageContent: isnum,
-        premore: 'show',
+        one:'',
         lastmore: 'show',//显示左边的三点
-        lastone:'show',//显示最后的页数
-       
+        lastone: '',//显示最后的页数
       })
     }
   },
   nextPage: function () { //点击下一页
     var that = this //这里就是可以设置也可以不设置，我只是用来区别，如果都用this的话会有警告，但不影响
     var all = that.data.all //首先获取所有的页数来判断
-if(all>3){
+if(all>4){
   var num = that.data.cur //让num等于当前正在显示的页数，点击下一一页的时候数字进行加，每点击一次就加1
   num++
   that.setData({
@@ -216,7 +255,6 @@ if(all>3){
         
       })
     }
-
     if (num >= all) { //如果加的数字大于了总页数
       var list3 = [] //再另起一个空的数组，例如总页数为10，当大于10的时候就显示8，9，10这三个值，分别就是all-2,all-1,all
       list3.push({
@@ -235,11 +273,35 @@ if(all>3){
         lastone:''
       })
     }
-
-
   }
-}else{//这是总数小于3的
-  console.log('小于3')
+} else if (all == 4) {
+  console.log('all等于四的操作')
+    var num = that.data.cur //让num等于当前正在显示的页数，点击下一一页的时候数字进行加，每点击一次就加1
+    num++
+    that.setData({
+      cur: num, //将页数赋值
+      pageContent: num, //内容指示也赋值为num
+    })
+   
+    if (num >= 4) {
+      var list3 = [] //再另起一个空的数组，例如总页数为10，当大于10的时候就显示8，9，10这三个值，分别就是all-2,all-1,all
+      list3.push({
+        ic: all - 2
+      }, {
+          ic: all - 1
+        }, {
+          ic: all
+        })
+      that.setData({
+        it:list3,
+        cur:all,
+        pageContent:all,
+        premore: 'show',
+        one: '',
+        lastmore:''
+      })
+    }
+  }else{//这是总数小于3的
   var num = that.data.cur //让num等于当前正在显示的页数，点击下一一页的时候数字进行加，每点击一次就加1
   num++
   that.setData({
@@ -260,10 +322,9 @@ if(all>3){
   prePage: function () { //点击上一页，原理就与下一页的相反
     var that = this
     var all = that.data.all //获取总页数
-    if(all>3){
+    if(all>4){
       var num = that.data.cur //num获取当前显示的页数。用来点击的时候就开始减
       num--
-      console.log(num)
       that.setData({
         cur: num,
         pageContent: num,
@@ -322,10 +383,44 @@ if(all>3){
           })
         }
       }
+      // 单数设置总页数为4的时候点击上一页
+      if (all <= 4) {
+        console.log(num)
+        that.setData({
+          lastmore: '',
+          one:'',
+          premore:'show'
+        })
+      }
+    } else if (all == 4) {
+      var num = that.data.cur //让num等于当前正在显示的页数，点击下一一页的时候数字进行加，每点击一次就加1
+      num--
+      that.setData({
+        cur: num, //将页数赋值
+        pageContent: num, //内容指示也赋值为num
+      })
+
+      if (num <= 1) {
+        var list3 = [] //再另起一个空的数组，例如总页数为10，当大于10的时候就显示8，9，10这三个值，分别就是all-2,all-1,all
+        list3.push({
+          ic: 1
+        }, {
+            ic: 2
+          }, {
+            ic: 3
+          })
+        that.setData({
+          it: list3,
+          cur: 1,
+          pageContent: 1,
+          premore: '',
+          one: '',
+          lastmore: 'show'
+        })
+      }
     }else{//总页数小于3的
       var num = that.data.cur //num获取当前显示的页数。用来点击的时候就开始减
       num--
-      console.log(num)
       that.setData({
         cur: num, //减的值赋值给当前页数
         pageContent: num, //减的值赋值给当前的内容指示
@@ -343,8 +438,8 @@ if(all>3){
   onShow: function () {
     // 页面一加载将请求到的数据进行处理，获取当前页赋值到page或者请求到的总页赋值到all里面
     var that = this
-    var all = 20//总页数
-   if(all>3){
+    var all =5//总页数
+   if(all>4){
      var page = 1 //当前页数
      if (page > 3) { //如果椅开始就显示的不是第一页而大于第三页的来显示就执行这里
        var list3 = [{
@@ -360,7 +455,8 @@ if(all>3){
        })
      } else {
        that.setData({
-         premore: '' //如果没有当前页，也就是显示第一页那么开始就要后面三个点的显示
+         premore: '', //如果没有当前页，也就是显示第一页那么开始就要后面三个点的显示
+         lastone: 'show'
        })
      }
      var cur = page;
@@ -368,6 +464,28 @@ if(all>3){
        cur: cur, //cur参数等于当前页或者第一页
        pageContent: page, //内容也一样等于当前页数
        all: all, //这是总页数
+      //  lastone:'show'
+     })
+   
+    
+   } else if (all = 4) {
+
+     var list3 = [{
+       ic: 1
+     }, {
+       ic: 2
+     }, {
+       ic: 3
+     },]
+     that.setData({
+       it: list3, //it是循环出来的页数，也是用来显示的
+       premore: '', //premore这个参数是用来判断三个...的，大于三的时候，这个三个点就在第一位，也就是为空，为空第一位的三个点显示
+       cur: 1,
+       pageContent: 1,
+       one: '',
+       all:all,
+       lastone: '',
+       lastmore: 'show'
      })
    }else{//总页数小于3的
      console.log('页数小于3')
@@ -375,7 +493,8 @@ if(all>3){
        cur: 1, //cur参数等于当前页或者第一页
        pageContent:1, //内容也一样等于当前页数
        all: all, //这是总页数
-       lastmore:''
+       lastmore:'',
+       lastone:''
      })
 
      if(all == 2){

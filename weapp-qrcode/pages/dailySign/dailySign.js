@@ -1,14 +1,10 @@
 // pages/signIn/dailyCheck/dailyCheck.js
 const app = getApp()
-import regeneratorRuntime from '../../../libs/regenerator-runtime/runtime-module';
-import dataApi from '../../../services/myFamily'
-import authApi from '../../../services/dataapi'
 
-const util = require("../../../utils/util.js")
-const setting = require("../../../utils/setting.js");
+const util = require("../../utils/util.js")
 const MONTHS = ['Jan.', 'Feb.', 'Mar.', 'Apr.', 'May.', 'June.', 'July.', 'Aug.', 'Sept.', 'Oct.', 'Nov.', 'Dec.'];
 
-var urlImg = wx.getStorageSync("apiImgurl") == '' ? setting.setting.defaultImgUrl : wx.getStorageSync("apiImgurl");
+// var urlImg = wx.getStorageSync("apiImgurl") == '' ? setting.setting.defaultImgUrl : wx.getStorageSync("apiImgurl");
 Page({
 
   /**
@@ -16,7 +12,6 @@ Page({
    */
   data: {
     img: ['upload/pointimg/signIn_signBg.png', 'upload/pointimg/signIn_star.png', 'upload/pointimg/signIn_giftBox.png', 'upload/pointimg/sign_medal10.png', 'upload/pointimg/sign_medal20.png', 'upload/pointimg/sign_medal30.png', 'upload/pointimg/sign_medal40.png', 'upload/pointimg/sign_medal11.png', 'upload/pointimg/sign_medal21.png', 'upload/pointimg/sign_medal31.png', 'upload/pointimg/sign_medal41.png', 'upload/pointimg/sign_medal50.png', 'upload/pointimg/sign_medal60.png', 'upload/pointimg/sign_medal70.png', 'upload/pointimg/sign_medal80.png', 'upload/pointimg/sign_medal51.png', 'upload/pointimg/sign_medal61.png', 'upload/pointimg/sign_medal71.png', 'upload/pointimg/sign_medal81.png', 'upload/pointimg/sign_reward.png'],
-    urlImg: setting.setting.urlImg,
     currentTab: 1,
     isHidd: true, //签到动画隐藏
     isHidd2: true, //签到动画隐藏
@@ -136,9 +131,9 @@ Page({
     this.calender(); //日历
     this.pagination(); //总页数
 
-    this.setData({
-      urlImg: wx.getStorageSync("apiImgurl") == '' ? setting.setting.defaultImgUrl : wx.getStorageSync("apiImgurl")
-    })
+    // this.setData({
+    //   urlImg: wx.getStorageSync("apiImgurl") == '' ? setting.setting.defaultImgUrl : wx.getStorageSync("apiImgurl")
+    // })
 
   },
   onShow: function () {
