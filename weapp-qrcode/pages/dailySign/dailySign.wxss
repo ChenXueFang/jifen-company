@@ -241,7 +241,10 @@ page {
   font-weight: 400 !important;
   background-color: none;
 }
-
+picker {
+  /* background: pink; */
+  width: 210rpx;
+}
 .downArrImg {
   width: 26rpx;
   height: 13rpx;
@@ -308,6 +311,36 @@ page {
   position: absolute;
   top: 33rpx;
   right: 25rpx;
+}
+.signStart2{
+  width: 154rpx;
+  height: 131rpx;
+  position: absolute;
+  top: 33rpx;
+  right: 195rpx;
+}
+.signImgBox{
+  position: relative;
+}
+.signStartImg2 {
+  width: 154rpx;
+  height: 131rpx;
+}
+.signZi{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 69rpx;
+	height: 74rpx;
+  line-height: 34rpx;
+  letter-spacing:4rpx;
+  margin: 0 auto;
+  font-size: 27rpx;
+  color: #c07321;
+  /* font-weight: 600; */
+  position: absolute;
+  top: 35rpx;
+  left: 46rpx;
 }
 
 /* 补签卡 */
@@ -395,17 +428,24 @@ page {
   background: #fff;
   border-radius: 18rpx;
   border: dashed 3rpx #b64c9b;
-  box-sizing: border-box;
   margin-top: 30rpx;
   margin-bottom: 250rpx;
   padding-bottom: 50rpx;
+  box-sizing: border-box;
+  position: relative;
 }
 
 .historyCon {
   height: 822rpx;
   margin: 51rpx 0 0 50rpx;
 }
-
+.noHistory{
+  position: absolute;
+  top: 200rpx;
+  width: 660rpx;
+  text-align: center;
+  color: #666;
+}
 .timeLineCon, .card, .add30, .signRecord {
   display: flex;
   align-items: center;
@@ -471,29 +511,43 @@ page {
 }
 
 .ten2 {
-  font-size: 28rpx;
+  font-size: 32rpx;
 }
 
 .add30 {
   margin-left: 10rpx;
-  margin-right: 46rpx;
 }
-
+.extraAddBox{
+  position: relative;
+  margin-left: 5rpx;
+}
+.extraImg{
+  position: absolute;
+}
+.extraAdd{
+  font-size: 32rpx;
+  color: #b64c9b;
+}
+.extraAdd2{
+  font-size: 36rpx;
+}
 .img30 {
   width: 45rpx;
-  height: 49rpx;
+  height: 20rpx;
 }
 
 .img302 {
-  width: 60rpx;
-  height: 54rpx;
+  width: 55rpx;
+  height: 26rpx;
 }
 
 .cardImg {
   width: 54rpx;
   height: 76rpx;
 }
-
+.card{
+  margin-left: 46rpx;
+}
 .curveBox {
   margin-left: 129rpx;
   margin-top: -13rpx;
@@ -649,6 +703,12 @@ page {
   line-height: 38rpx;
   font-size: 30rpx;
   text-align: center;
+}
+.allPage{
+  width: 40rpx;
+  height: 38rpx;
+  line-height: 38rpx;
+  font-size: 30rpx;
 }
 
 .pageNumAct {
