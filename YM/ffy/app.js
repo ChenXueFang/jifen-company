@@ -1,4 +1,4 @@
-//app.js
+﻿//app.js
 //appid:wx4c528ff2aabe915b 孕妈的
 import regeneratorRuntime from './libs/regenerator-runtime/runtime-module';
 import authApi from './services/dataapi'
@@ -8,7 +8,7 @@ const util = require("./utils/util.js");
 
 var apiUrl = setting.defaultUrl; //正式环境
 var apiUrlDev = "https://www.mylife.philips.com.cn/ffymwebapi"; //开发环境
-// var apiUrlDev = "http://localhost:8090"; //开发环境，本地测试每日签到功能
+// var apiUrlDev = "http://localhost:8090"; //开发环境，本地测试每日签到功能//开发环境https://ffy.crmclick.com/webapi
 
 var apiImgUrl = setting.defaultImgUrl; //正式环境-图片
 var apiImgUrlDev = "https://www.mylife.philips.com.cn/ffymadnim/"; //开发环境
