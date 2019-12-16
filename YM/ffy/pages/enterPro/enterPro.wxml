@@ -1,0 +1,27 @@
+<view class="container">
+<image class="indexPic" src="https://www.mylife.philips.com.cn/ffymadnim/upload/pic/index.png" mode="widthFix"></image>
+  <view class='indexfont'>
+    <text class='indexText'>孕育宝宝美好时光</text>
+  </view>
+  <view class='indexBtn'>
+  <!-- <button  open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取昵称1</button> -->
+    <button class='Mbtn' open-type="getUserInfo" bindgetuserinfo="getUserInfo" data-role="0" data-fath="Mother">我是妈妈</button>
+    <button class='Dbtn' open-type="getUserInfo" bindgetuserinfo="getUserInfo" data-role="1" data-fath="Father">我是爸爸</button>
+  </view>
+  <view class='otherBtn'>
+    <button class="othermember" open-type="getUserInfo" bindgetuserinfo="getUserInfo" data-role="1" data-fath="Family">其他成员</button>
+  </view>
+
+
+
+  <!-- <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view> -->
+</view>

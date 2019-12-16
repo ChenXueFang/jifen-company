@@ -1,0 +1,54 @@
+<view id='container'>
+  <image class="family_bg" src="https://www.mylife.philips.com.cn/ffymadnim/upload/bgimages/family_bg.png"></image>
+
+  <view class='myFaTitle'>
+    <image class="selectsp" src="../../images/selectBack.png" mode="widthFix" bindtap='toMyFam'></image>
+    <text>家庭成员</text>
+  </view>
+
+  <view class='FamMemberMain'>
+    <view class='manager'>
+      <text class='FMTitle'>妈妈</text>
+      <view class='MInfo' wx:for="{{myfamMem}}" wx:if="{{item.UserRole=='Mather' || item.UserRole=='0'}}" wx:key="index">
+        <image class="MPic" src="{{item.HeadImage}}"></image>
+        <text class='MName'>{{item.NickName}}</text>
+        <text class='Mdate'>妈妈</text>
+      </view>
+    </view>
+
+    <view class='FMTitle'>
+      <text>成员</text>
+      <view class='FMTitle_oper' class="{{showView?'show':'hide'}}" bindtap='showButton' wx:if="{{myRole=='Mather'}}">
+        <text class='editFG'>编辑</text>
+      </view>
+      <view class='FMTitle_oper' class="{{showView?'hide':'show'}}">
+        <text class='operBtn' bindtap='cancelButton'>取消</text>
+        <text class='operBtn del' bindtap='deleteButton'>删除</text>
+      </view>
+    </view>
+
+    <checkbox-group bindchange="checkboxChange">
+      <label class="label {{item.isBg?'MInfoBg':''}}" wx:for="{{myfamMem}}" wx:key="index" wx:if="{{item.UserRole!='Mather' && item.UserRole!='0'}}">
+        <view class="checkbox">
+          <checkbox class="{{showView?'hide':'show'}}" value='{{item.FamilyMemberId}}' checked="{{checked}}" data-memberid="{{item.FamilyMemberId}}" data-userid="{{item.UserId}}" />
+        </view>
+        <image class="MPic" src="{{item.HeadImage}}"></image>
+        <text class='MName'>{{item.NickName}}</text>
+        <!-- 妈妈修改角色  catchtap='checkedTap'-->
+        <picker bindchange="bindRole" value="{{roleArray1[item.UserRole].code}}" range="{{roleArray1}}" wx:if="{{myRole=='Mather'}}" data-memberid="{{item.UserId}}" data-selecthx="{{roleArray1[index].name}}" range-key="{{'name'}}">
+          <view class="rolepicker">
+            <text class='selecttip'>{{(item.UserRole==null||item.UserRole=='GrandMa'||item.UserRole=='GrandPa'||item.UserRole=='GrandMather'||item.UserRole=='GrandFather')?'家人':roleArray1[item.UserRole].name}}</text>
+          </view>
+        </picker>
+        <!-- 成员修改角色 -->
+        <picker bindchange="bindRole" value="{{roleArray1[item.UserRole].code}}" range="{{roleArray1}}" wx:if="{{myRole!='Mather'}}" disabled="{{!item.isBg}}" data-memberid="{{item.UserId}}" data-selecthx="{{roleArray1[index].name}}" range-key="{{'name'}}">
+          <view class="rolepicker">
+            <text class='selecttip'>{{(item.UserRole==null||item.UserRole=='GrandMa'||item.UserRole=='GrandPa'||item.UserRole=='GrandMather'||item.UserRole=='GrandFather')?'家人':roleArray1[item.UserRole].name}}</text>
+          </view>
+        </picker>
+      </label>
+    </checkbox-group>
+
+
+  </view>
+</view>

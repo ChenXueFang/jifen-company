@@ -1,0 +1,106 @@
+<!--pages/protocolPre/protocolPre.wxml-->
+<view class="box">
+  <!-- 居中标题 -->
+  <view class="centerTitle">
+    <view class="titleA">最终用户许可协议（“许可协议”) </view>
+    <text class="titleB">最后修订日期：2019年8月27日</text>
+  </view>
+  <!-- 内容 -->
+  <view class="conBox">
+    <view class="TitleConA con">在使用飞利浦（中国）投资有限公司（“飞利浦”）提供的飞利浦微信飞凡孕妈小程序或服务之前，请仔细阅读本许可协议与我们的隐私政策（<text class="YinSi" bindtap="YinSi">可在此获取：隐私政策</text>）。本许可协议对我们提供的每一项应用或服务许可您使用的方式作出了规定。</view>
+
+    <view class="TitleConA">1. 简介</view>
+    <view class="conSuo">1. 您应用的飞利浦微信飞凡孕妈小程序或服务以及随附的任何在线或电子文档（合称为“飞凡孕妈小程序”）由飞利浦制作并系飞利浦所有。在本许可协议中，“我们”和“我们的”指飞利浦。我们的办公地址为中国上海静安区灵石路718号A1幢。如果您希望联系我们，您可以已拨打4008 800 008联系我们的官方热线。</view>
+    <view class="conSuo">2. 以下条款和条件列明了您和我们就飞凡孕妈小程序的使用达成的协议，请仔细阅读。</view>
+    <view class="conSuo">3. 您下载和使用飞凡孕妈小程序即表明您同意受本许可协议和隐私政策的约束，并成为本许可协议和隐私政策的一方。如果您不完全同意本许可协议或隐私政策的条款，您不应当使用飞凡孕妈小程序。</view>
+
+    <view class="TitleConA">2. 重要条款</view>
+    <view class="conSuo bold">1. 对飞凡孕妈小程序的所有使用仅可由用户根据本许可协议进行。明确禁止不按照本许可协议使用、复制或转发飞凡孕妈小程序的情况。</view>
+    <view class="conSuo bold">2. 本许可协议中关于飞利浦的责任限制列于下文第15条。</view>
+    <view class="conSuo bold">3. 如果您不满18周岁，请避免在下载、安装和使用飞凡孕妈小程序。</view>
+    <view class="conSuo bold">4. 请注意，飞凡孕妈小程序的使用仅供参考，其不提供医学建议或诊断，并且并非旨在取代或替代关于您或您子女的任何医学建议。 如果您在任何时候需要获得任何医学相关的建议，您应当联系您的医学顾问。这不是决策支持应用，不提供辅助诊断及用药建议等决策。</view>
+
+    <view class="TitleConA">3. 关于飞凡孕妈小程序</view>
+    <view class="conSuo">1. <text class="bold">飞凡孕妈小程序</text>使您可以存储和记录关于您的胎儿和孕期的所有信息。<text class="bold">飞凡孕妈小程序</text>也提供您可能认为有用的怀孕和育儿方面的一般信息。<text class="bold">飞凡孕妈小程序</text>并非旨在取代您从医学顾问获得的建议。</view>
+    <view class="conSuo">2. 隐私政策是我们使用我们从您使用<text class="bold">飞凡孕妈小程序</text>获得的个人信息和匿名信息所适用的重要文件。我们根据我们的隐私政策使用这些数据，请仔细阅读并理解这一文件。</view>
+
+    <view class="TitleConA">4. 开发者条款</view>
+    <view style="margin:20rpx 0">微信用户：</view>
+    <view class="conSuo">1. 确认</view>
+    <view class="conSuo">您和我们确认，本许可协议仅由您和我们订立，而非与腾讯微信.的任何子公司或关联公司订立。此外，您确认我们对飞凡孕妈小程序及其内容独自承担责任。应飞凡孕妈小程序运营在腾讯微信平台上，您也承诺腾讯微信的平台使用说明。请在已下连接查看腾讯平台的说明： <text class="underline"> https://mp.weixin.qq.com/cgi-bin/announce?action=getannouncement&key=1503979103&version=1&lang=zh_CN&platform=2。</text> </view>
+    <view class="conSuo">2. 许可的授予</view>
+    <view class="conSuo">在您遵守本许可协议全部条款的前提下，作为您遵守该等条款的对价，我们向您授予一项非独占的、可撤销的、不可转让的许可，以在相关移动应用设定的条款所规定的使用规则准许的范围内，根据隐私政策在您拥有或控制的设备上终身使用<text class="bold">飞凡孕妈小程序</text>和内容。</view>
+    <view class="conSuo">3. 维护和支持</view>
+    <view class="conSuo">我们独自负责为<text class="bold">飞凡孕妈小程序</text>提供支持和维护。</view>
+    <view class="conSuo">4. 第三方协议条款</view>
+    <view class="conSuo">我们在<text class="bold">飞凡孕妈小程序</text>内使用微信提供的第三方软件和服务。因此，使用<text class="bold">飞凡孕妈小程序</text>的前提是您接受和遵守该等第三方条款，并且您同意在使用<text class="bold">飞凡孕妈小程序</text>时遵守适用的第三方条款和条件。</view>
+    
+    <view class="TitleConA">5. 您对飞凡孕妈小程序的使用</view>
+    <view class="conSuo">1. 您使用<text class="bold">飞凡孕妈小程序</text>即表明您确认您已经年满18周岁，<text class="bold">如果您不满18周岁，请避免在下载、安装和使用飞凡孕妈小程序。 </text> </view>
+    <view class="conSuo">2. 您理解，<text class="bold">飞凡孕妈小程序</text>并非旨在向您提供医学建议、诊断或治疗。如果您认为您可能发生了紧急医疗情况，您应当立即拨打您的医生或紧急医疗专业人员的电话。永远不要因为您通过<text class="bold">飞凡孕妈小程序</text>阅读的任何内容而忽视或延迟寻求专业的医学建议。如果您对潜在的健康状况有任何问题或关切，您应当始终寻求具备资格的医疗专业人员的建议。我们不推荐或支持可能通过<text class="bold">飞凡孕妈小程序</text>提及的任何具体的测试、医疗服务提供商、医生、产品、治疗、疗法、药物、设备、程序、意见或其他信息。</view>
+    <view class="conSuo">3. 您确认，我们无法控制其他用户如何使用<text class="bold">飞凡孕妈小程序</text>，因此我们无法控制在服务上发布的信息的质量。我们不对通过<text class="bold">飞凡孕妈小程序</text>和整体服务提供的任何内容的准确性或可靠性作出任何保证或陈述。</view>
+    <view class="conSuo">4. 我们通过阿里云（参见<text class="underline">https://www.aliyun.com</text>）备份在飞凡孕妈小程序上创建的内容。阿里云的使用受限于各自不时有效的适用条款和条件，包括以下网址所列的条款：<text class="underline">https://www.alibabacloud.com/zh/trust-center(中文)</text> 和<text class="underline">https://www.alibabacloud.com/trust-center </text>（英语）。您同意在阿里云上备份您的数据。</view>
+    <view class="conSuo">5. 受限于您在<text class="bold">飞凡孕妈小程序</text>内设置的隐私设置，我们可能在您的设备安装<text class="bold">飞凡孕妈小程序</text>期间向设备发送推送通知，包括<text class="bold">飞凡孕妈小程序</text>未在前台或后台运行期间。. </view>
+
+    <view class="TitleConA">6. 飞凡孕妈小程序和内容的所有权</view>
+    <view class="conSuo">1. <text class="bold">飞凡孕妈小程序</text>内的所有知识财产均归我们和/或我们的许可方所有。</view>
+    <view class="conSuo">2. <text class="bold">飞凡孕妈小程序</text>与<text class="bold">飞凡孕妈小程序</text>上内容的所有知识产权均归我们和/或我们的许可方所有，该等内容包括所有音乐样本、文本、人工智能、软件、脚本、代码、设计、图形、图片、声音、音乐、视频、应用程序、交互功能和所有其他内容（“内容”）。我们保留所有权利。</view>
+    <view class="conSuo">3. 我们未向您出售<text class="bold">飞凡孕妈小程序</text>或任何内容，而是根据第4.2条的条款向您授予一项为自身非商业的私人娱乐目的使用<text class="bold">飞凡孕妈小程序</text>或内容的专属的、受限制的、全球范围的、可撤销的许可。</view>
+
+    <view class="TitleConA">7. 网站和第三方服务的链接</view>
+    <view class="conSuo">1. 如果我们在<text class="bold">飞凡孕妈小程序</text>内提供其他网站或应用的链接，该等链接仅为您的便利作为参考提供。我们不对链接的网站或应用的内容或性能承担责任，您有责任对链接的网站或应用的使用条款进行审阅。</view>
+    <view class="conSuo">2. <text class="bold">飞凡孕妈小程序</text>可能向您提供与第三方服务（例如微信）共享数据（定义见下文第8条）的功能。您有责任确保您在共享数据时遵守该等第三方平台的条款和条件。由于互联网的性质，您共享的图片或其他信息并不能每次都可以永久删除，因此您应当考虑您希望共享的数据的类型。</view>
+
+    <view class="TitleConA">8. 上传数据</view>
+    <view class="conSuo">1. 如果<text class="bold">飞凡孕妈小程序</text>允许您上传任何文本、图片、数据或其他信息（“数据”），您确认，我们可以对数据进行复制、存储、改编、修改和使用，以便我们能够向您提供<text class="bold">飞凡孕妈小程序</text>和数据。</view>
+    <view class="conSuo">2. 我们不会将您上传的任何数据提供给<text class="bold">飞凡孕妈小程序</text>的其他用户，除非您明确选择参与与其他用户共享数据，例如您的朋友或家庭成员。</view>
+    <view class="conSuo">3. 我们根据第3.2条所列的隐私政策与本许可协议使用您的数据。</view>
+    <view class="conSuo">4. 您确认，您的数据不得侵犯任何第三方的知识产权或隐私权，亦不得对任何人进行诽谤。您同意对我们可能因您违反本确认所引起的第三方索赔而遭受的任何损失向我们做出赔偿。</view>
+    <view class="conSuo">5. 您同意，您不得使用<text class="bold">飞凡孕妈小程序</text>发送任何侮辱性或攻击性材料或我们认为通常会导致异议的其他材料，或将<text class="bold">飞凡孕妈小程序</text>用于任何商业目的。</view>
+    <view class="conSuo">6. 在您删除账户之后，您的数据将作为备份系统的一部分在我们的服务器上保留一定时间。</view>
+
+    <view class="TitleConA">9. 进一步内容和升级</view>
+    <view class="conSuo">1. 我们可能向<text class="bold">飞凡孕妈小程序</text>提供进一步的应用内内容和升级（“进一步内容”）供您在<text class="bold">飞凡孕妈小程序</text>内使用。对于您在<text class="bold">飞凡孕妈小程序</text>内使用的进一步内容，我们向您授予一项非独占的、专属的、可撤销的、不可转让的使用许可。</view>
+
+    <view class="TitleConA">10. 系统要求</view>
+    <view class="conSuo">1. <text class="bold">飞凡孕妈小程序</text>在开发时被设计为在发布时最新版本的微信操作系统上运行。微信营商可能不时更新其软件（视适用情形），我们将尽力但无义务对<text class="bold">飞凡孕妈小程序</text>进行更新（如适用），以确保其功能和性能在发布的最新版本的微信软件上得以持续。您有义务确保您使用的是微信软件最新的公开发布版本。</view>
+
+    <view class="TitleConA">11. 赔偿/补偿</view>
+    <view class="conSuo">1. 对于因您使用<text class="bold">飞凡孕妈小程序</text>引起的或与其有关的、或因您违反或涉嫌违反本许可协议、违反任何法律或侵犯任何第三方权利引起的所有索赔、损害、支出、费用和责任（包括合理的法律费用），您同意向我们做出赔偿（补偿），为我们抗辩，并使我们免受损害。</view>
+
+    <view class="TitleConA">12. 期限和终止</view>
+    <view class="conSuo">1. 本许可协议在您使用<text class="bold">飞凡孕妈小程序</text>时生效，并且持续有效，直至您或我们终止本许可协议。您可以通过在使用<text class="bold">飞凡孕妈小程序</text>的设备上删除<text class="bold">飞凡孕妈小程序</text>的方式终止本许可协议。如果您不遵守本许可协议的任何条款或条件，本许可协议应自动终止。在本许可协议终止时，您应停止对<text class="bold">飞凡孕妈小程序</text>的所有使用并删除<text class="bold">飞凡孕妈小程序</text>的所有副本。</view>
+    <view class="conSuo">2. 我们保留经通知或不经通知修改、中止或停止<text class="bold">飞凡孕妈小程序</text>和相关服务的权利。您不得因任何该等修改或停止追究我们的责任。</view>
+    <view class="conSuo">3. 本许可协议的以下条款在终止后继续有效：第6条（所有权）、第11条（赔偿/补偿）、第12条（期限和终止）、第14条（一般条款）、第15条（责任限制）、第18条（可分割性）和第19条（司法管辖权）。</view>
+
+    <view class="TitleConA">13. 支持；联系我们</view>
+    <view class="conSuo">1.如果您需要任何帮助和支持，您可以已拨打4008 800 008联系我们的官方热线，我们将努力向您提供协助。</view>
+
+    <view class="TitleConA">14. 一般条款</view>
+    <view class="conSuo">1. 本许可协议列明了我们与您达成的完整谅解和协议，并且仅可由我们以书面形式修订或放弃。我们放弃追究您不遵守或不履行本许可协议任何规定的情形不得被视为对您先前或后续的任何不遵守或不履行的放弃追究。如果本许可协议的任何规定被认定无效或不可执行，则其他规定应继续充分有效。 </view>
+    <view class="conSuo">2. 本许可协议专属于您。您不得转让、分许可、让与或处置在本许可协议项下许可的权利。</view>
+    <view class="conSuo">3. 您仅可将<text class="bold">飞凡孕妈小程序</text>用于个人的私人非商业用途。您不得以任何方式复制、分发、公开展示或执行、翻译、修改、改编、创作衍生作品、解构、逆向工程、反编译或反汇编<text class="bold">飞凡孕妈小程序</text>或其任何部分，包括但不限于软件使用的任何字符、图形、相关软件或专用通信协议或由此派生的任何实用程序、应用程序、模拟器或工具，但无法依据法律排除该等权利的除外。</view>
+    <view class="conSuo">4. 您同意，您不会访问或试图访问其他用户的账户，或穿透或试图穿透<text class="bold">飞凡孕妈小程序</text>的安全措施，或转移包含病毒、木马程序或其他有害程序的文件。</view>
+
+    <view class="TitleConA">15. 我们的责任限制</view>
+    <view class="conSuo bold">1. 飞凡孕妈小程序“按现状”且“按可用情况”提供，我们未作出任何种类的陈述、认可或保证，包括但不限于关于适销性、质量令人满意、适合特定用途、不侵权、兼容性、安全性和/或准确性的默示保证。 </view>
+    <view class="conSuo bold">2. 我们不保证： (i) 飞凡孕妈小程序不会存在错误、病毒、缺陷或其他瑕疵；或 (ii) 飞凡孕妈小程序或通过飞凡孕妈小程序或在文档中展示或分发的信息将准确或完整；或 (iii) 飞凡孕妈小程序中的瑕疵将得到改正。</view>
+    <view class="conSuo bold">3. 您确认，您在依赖任何该等信息时将自行承担全部风险。</view>
+    <view class="conSuo bold">4. 本许可协议的任何内容均不得排除或限制我们对欺诈性虚假陈述或因我们或我们的员工或代理人的过失引起的人身伤亡承担的责任。</view>
+    <view class="conSuo bold">5. 在法律（包括您所在司法管辖区的法律）允许的最大范围内，我们不承担关于任何损失或损害的任何其他责任，包括关于任何设备或计算机系统的任何责任或损害。</view>
+    <view class="conSuo bold">6. 本许可协议的任何内容均不得限制您享有的、无法依据法律放弃的法定消费者权利。</view>
+
+    <view class="TitleConA">16. 许可协议的变更</view>
+    <view class="conSuo">1. 我们可能因法律、监管或安全原因，或为遵守腾讯微信可能要求的变更，或出于我们决定的其他原因对本许可协议作出变更。我们将就任何变更向您发送通知，您在继续使用<text class="bold">飞凡孕妈小程序</text>之前需要接受该等变更。</view>
+
+    <view class="TitleConA">17. 越狱设备</view>
+    <view class="conSuo">1. 本小程序并非旨在用于操作系统不再符合默认标准的设备（<text class="bold">“越狱设备”</text>）。您同意，您不会试图在任何越狱设备上安装或使用<text class="bold">飞凡孕妈小程序</text>。试图在越狱设备使用<text class="bold">飞凡孕妈小程序</text>将构成对本许可协议的违反，并可能致使我们经自主决定终止您的账户而不退款。对于因在越狱设备上使用引起的任何损害，我们不承担任何责任。</view>
+
+    <view class="TitleConA">18. 可分割性</view>
+    <view class="conSuo">1. 如果法院或监管机构判定本许可协议的任何规定无效或不可执行，本许可协议的其他规定应继续适用。</view>
+
+    <view class="TitleConA">19. 适用法律和司法管辖权</view>
+    <view class="conSuo">1. 受限于您所在地的消费者、个人信息保护法和电信法律，您与我们之间关于本许可协议和/或您使用<text class="bold">飞凡孕妈小程序</text>的任何争议将适用中华人民共和国法律。您同意，如果我们无法解决我们与您的争议，则应在中国上海的法院进行诉讼。您在居住国的消费者保护法律、个人信息保护法和电信法律项下享有的法定权利不受此法律选择的影响。双方特此同意，本条款不适用《联合国国际货物销售合同公约》。</view>
+
+  </view>
+</view>

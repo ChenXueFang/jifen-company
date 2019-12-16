@@ -1,0 +1,432 @@
+/* pages/dailyRecord/gestationTotal/gestationTotal.wxss */
+page{
+  height:100%;
+  background-color: #F4F4F4;
+}
+.tabMain{
+  width: 100%;
+  background-color: #FFF;
+}
+.swiper-tab{
+    width: 98%;
+    margin:auto;
+    /* border-bottom: 2rpx solid #ccc; */
+    text-align: center;
+    height: 88rpx;
+    line-height: 88rpx;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;  
+}
+.swiper-tab-item{
+    color:#666666;
+}
+.active{
+  color: #B64C9B;
+}
+.textIndent{
+  text-indent: 60rpx!important;
+}
+.show{
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+.hidden{
+  display: none;
+}
+.totalMain{
+  background-color: #F4F4F4;
+  padding: 30rpx 0;
+}
+
+.weightTitle{
+  width: 340rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  background-color: #FFF;
+  text-align: center;
+  margin: auto;
+  border-radius: 40rpx;
+  color: #FFF;
+}
+
+.wtLeft{
+  background-color: #B6B6B6;
+  border-top-left-radius:40rpx;
+  border-bottom-left-radius:40rpx;
+   width: 170rpx;
+  display: inline-block;
+}
+.wtRight{
+  background-color: #B6B6B6;  
+  border-top-right-radius:40rpx;
+  border-bottom-right-radius:40rpx;
+   width: 170rpx;
+  display: inline-block;
+}
+.wtActivty{
+  background-color: #B64C9B; 
+}
+.weightContent{
+  margin-top: 20rpx;
+  position: relative;
+}
+.wcTitle{
+  background-color: #FFF;
+  border-radius: 8rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  padding: 0 20rpx;
+  margin-bottom: 1rpx;
+}
+.recorddate{
+  display: inline-block;
+  width: 45%
+}
+.recordTime{
+    display: inline-block;
+  width: 35%
+}
+.weightNum{
+   display: inline-block;
+  width: 20%
+}
+.recorddate2{
+   display: inline-block;
+  width: 45%
+}
+.recordTime2{
+  display: inline-block;
+  width: 35%
+}
+.weightNum2{
+  display: inline-block;
+  width: 20%
+}
+.movedate{
+display: inline-block;
+width: 35%
+}
+.moveTime{
+display: inline-block;
+width: 40%
+}
+.moveNum{
+display: inline-block;
+width: 25%
+}
+.weightRecord{
+  width: 90%;
+}
+.weightdesc{
+  width: 95%;
+  margin: auto;
+  margin-top: 20rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  vertical-align: middle;
+  padding-left: 30rpx;
+  color: #b64c9b;
+  background-color: #f3e2ef;
+	box-shadow: 0rpx 0rpx 13rpx
+		rgba(150, 33, 120, 0.25);
+    position: relative;
+}
+.dr_down{
+  width: 26rpx;
+  height: 16rpx;
+  position: absolute;
+  top: 45rpx;
+  right:50rpx;
+}
+.weightdesc2{
+  width: 95%;
+  margin: auto;
+  margin-top: 20rpx;
+  padding-left: 30rpx;
+  color: #b64c9b;
+  background-color: #f3e2ef;
+	box-shadow: 0rpx 0rpx 13rpx
+		rgba(150, 33, 120, 0.25);
+    position: relative;
+}
+.weightdesc2_title{
+  height: 100rpx;
+  line-height: 100rpx;
+  vertical-align: middle;
+}
+.weightdesc2_content{
+  width: 95%;
+  display: block;
+  padding-bottom: 30rpx;
+}
+.taidongRecord{
+  margin-top: 30rpx;
+  padding: 20rpx;
+  color: #b64c9b;
+  background-color: #f3e2ef;
+	box-shadow: 0 0 20rpx 
+		rgba(150, 33, 120, 0.25);
+	border-radius: 30rpx;
+}
+.sportt{
+  padding-left: 60rpx;
+}
+.sportdate{
+ width: 75%;
+ display: inline-block
+}
+.sporttime{
+  width: 25%;
+  display: inline-block
+}
+.sporttimeNum{
+ width: 25%;
+ display: inline-block
+}
+.timeSel{
+  width: 100%;
+  text-align: center;
+  height: 100rpx;
+  line-height: 100rpx;
+  background-color: #FFF;
+  margin-top: 30rpx;
+}
+picker{
+  display: inline-block
+}
+.startTime_down{
+  width: 26rpx;
+  height: 16rpx;
+  
+}
+.endtime_down{
+  width: 26rpx;
+  height: 16rpx;
+}
+.split_font{
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+}
+.tjweek_left{
+  width: 22rpx;
+  height: 22rpx;
+  border-left: solid 2px #b64c9b;
+  border-bottom: solid 2px #b64c9b;
+  display: inline-block;
+  transform: rotate(45deg);
+  
+  margin-top: 15rpx;
+  margin-right: 20rpx;
+}
+.tjweek_right{
+  width: 22rpx;
+  height: 22rpx;
+  border-right: solid 2px #b64c9b;
+  border-bottom: solid 2px #b64c9b;
+  display: inline-block;
+  transform: rotate(-45deg);
+ 
+  margin-top: 15rpx;
+  margin-left: 20rpx;
+}
+.tjweek_center{
+  font-size: 32rpx;
+}
+.showopacity{
+  pointer-events: none;
+  opacity: 0.4;
+}
+radio{transform:scale(0.8);}
+
+
+radio .wx-radio-input{ 
+  /* 自定义样式.... */
+    height: 40rpx; 
+    width: 40rpx;
+    margin-top: -4rpx;
+    border-radius: 50%;
+    border: 2rpx solid #999;
+    background: transparent;
+}
+radio .wx-radio-input.wx-radio-input-checked{
+   border: none;
+   background: #b64c9b;
+}
+/* 选中后的 对勾样式 （白色对勾 可根据UI需求自己修改） */
+radio .wx-radio-input.wx-radio-input-checked::before{
+   border-radius: 50%;/* 圆角 */
+   width: 40rpx; /* 选中后对勾大小，不要超过背景的尺寸 */
+   height: 40rpx; /* 选中后对勾大小，不要超过背景的尺寸 */
+   line-height: 40rpx;
+   text-align: center;
+   font-size:30rpx; /* 对勾大小 30rpx */
+   color:#fff; /* 对勾颜色 白色 */
+   background: #b64c9b;
+   transform:translate(-50%, -50%) scale(1);
+   -webkit-transform:translate(-50%, -50%) scale(1);
+}
+.dw{
+  background-color: #FFF;
+  color: #999999;
+  font-size: 24rpx;
+  padding-left: 30rpx;
+}
+
+.AddweightRecom{
+  width: 95%;
+  margin: auto;
+  margin-top: 20rpx;
+  height: 125rpx;
+  vertical-align: middle;
+  padding-left: 30rpx;
+  color: #b64c9b;
+  background-color: #f3e2ef;
+	box-shadow: 0rpx 0rpx 13rpx
+		rgba(150, 33, 120, 0.25);
+  position: relative;
+  padding-top: 20rpx;
+  font-size: 30rpx;
+}
+.addRecomLeftText{
+  height: 100rpx;
+  vertical-align: middle;
+  display: inline-block;
+  width: 70%;
+}
+.addRecomrightText{
+  text-decoration: underline;
+  position: absolute;
+  top: 40rpx;
+  right: 40rpx;
+}
+
+
+.RSZhezhao {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+  top: 0;
+  left: 0;
+}
+
+.isRSShow {
+  display: block;
+}
+
+.isRSHide {
+  display: none;
+}
+
+.xqcontent {
+   width: 94%;
+  height: 555rpx;
+  background: #FFF;
+  margin: 35% auto;
+  border-radius: 5rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+  background-color: #F3E2EF;
+}
+
+.rsc_tt {
+  height: 95rpx;
+  text-align: left;
+  padding-left: 38rpx;
+  display: block;
+  width: 97%;
+  padding-top: 30rpx;
+  color: #b64c9b;
+}
+.text{
+  display: inline-block;
+  width: 80%;
+  white-space: pre-wrap;
+}
+.selRS {
+  width: 25rpx;
+  height: 26rpx;
+  position: absolute;
+  margin-top: -75rpx;
+  right: 40rpx;
+}
+.bqrsc_cot {
+  height: 400rpx;
+}
+.addRecom{
+  width: 359rpx;
+  height: 342rpx;
+  position: absolute;
+  left: 25rpx;
+  margin-top: 8rpx;
+}
+.QA{
+  margin-top: 20rpx;
+  position: absolute;
+  width: 260rpx;
+  margin-left: 400rpx;
+}
+.submitSel{
+  width: 250rpx;
+  margin-top: 30rpx;
+  line-height: 55rpx;
+  height: 55rpx;
+  text-align: center;
+  border-radius: 40rpx;
+  color: #FFF;
+  background-color: #b64c9b;
+}
+.que{
+  display: inline-block;
+  width: 260rpx;
+  white-space: pre-wrap;
+}
+.splitline{
+   width: 100%;
+    height: 2rpx;
+    background-color:#CCC;
+}
+.radioStyle{
+  width: 30rpx;
+  height: 30rpx;
+  border: 1rpx solid #b64c9b;
+  border-radius: 20rpx;
+  display: inline-block;
+  position: absolute;
+  margin-top: 7rpx;
+  text-align: center;
+}
+.radioText{
+  margin-left: 35rpx;
+}
+.radioSelStyle{
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 10rpx;
+  background: #b64c9b;
+  position: absolute;
+  top: 5rpx;
+  left: 5rpx;
+}
+.isHidd {
+  display: none;
+}
+
+/**echarts**/
+.echart_panel{
+  width: 100%;
+  height: 500rpx;
+  background-color: #FFF;
+}
+ec-canvas {
+  width: 96% !important;
+  height: 100%;
+}
+.prow{
+  display: inline-block
+}

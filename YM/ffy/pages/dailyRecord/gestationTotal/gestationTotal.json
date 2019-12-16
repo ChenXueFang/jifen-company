@@ -1,0 +1,10 @@
+{
+  "navigationBarBackgroundColor": "#FFF",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "孕期统计",
+  "backgroundColor": "#FFF",
+  "backgroundTextStyle": "light",
+  "usingComponents": {
+    "ec-canvas": "../../../ec-canvas/ec-canvas"
+  }
+}

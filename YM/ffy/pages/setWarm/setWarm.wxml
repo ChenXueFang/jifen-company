@@ -1,0 +1,42 @@
+<!--pages/setWarm/setWarm.wxml-->
+<page>
+  <view class="Box">
+    <!-- 公众号  hidden="{{isfocus ? true : false}}"-->
+    <view class="officialBox" wx:if="{{!isfocus}}">
+      <view>温馨提示：关注公众号后才能收到提醒</view>
+      <!-- border:1rpx solid #dbdbdb; -->
+      <official-account style="position:absolute;top:95rpx;width:88%;height:163rpx;z-index: 999;"></official-account>
+    </view>
+
+    <!-- 设置提醒 wx:else -->
+    <view wx:else>
+      
+      <!-- 提醒时间 -->
+      <view class="section">
+        <picker mode="multiSelector" bindchange="setChange" value="{{multiIndex}}" range="{{multiArray}}">
+          <view class="sectionCon">
+            <view>提醒时间</view>
+            <view class="picker selecttipZi">
+              {{selectvalue}}
+              <text class='selecttip' wx:if="{{isDisplay}}">
+              <text class="selecttipZi" wx:if="{{isHave}}">请选择日期</text>
+              <text class="selecttipZi" wx:else>{{resul}} {{timesplit}}</text>
+              </text>
+              <image class="selectSp" src="../../images/selectSp.png" mode="widthFix"></image>
+            </view>
+          </view>
+        </picker>
+      </view>
+
+
+      <!-- 开关按钮 -->
+      <view class="switch">
+        <view class='switch-group'>
+          <view class='switch-title'>是否提醒</view>
+          <switch class='green' checked="{{switchchecked}}" bindchange="switchChange"></switch>
+        </view>
+      </view>
+    </view>
+
+  </view>
+</page>

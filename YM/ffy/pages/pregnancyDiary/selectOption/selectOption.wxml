@@ -1,0 +1,54 @@
+<view class='selop'>
+  <view class='tips'>
+    <text>点击以下选项 编辑孕期相册</text>
+  </view>
+
+  <view class='content'>
+    <view class='leftcon'>
+      <text class='tit'>包含的内容</text>
+      <view>
+        <checkbox-group bindchange="cbContentChange">
+          <view class="checkboxview" wx:for="{{selContents}}">
+            <checkbox value="{{item.value}},{{item.name}}" checked="{{item.checked}}" disabled="{{!isShowBtn}}"/>
+            <text class='itemname'>{{item.name}}</text>
+          </view>
+        </checkbox-group>
+      </view>
+    </view>
+    <view class='rightcon'>
+      <text class='tit'>风格选项</text>
+      <view>
+        <checkbox-group bindchange="cbStyleChange">
+          <view class="checkboxview" wx:for="{{selStyles}}">
+            <checkbox value="{{item.value}},{{item.name}}" checked="{{item.checked}}" disabled="{{!isShowBtn}}"/>
+            <text class='itemname'>{{item.name}}</text>
+          </view>
+        </checkbox-group>
+      </view>
+    </view>
+  </view>
+
+  <view class='content'>
+    <view class='typeleft'>
+      <view class="{{isShowBtn==false?'noClick':''}}">
+        <radio-group class="radio-group" bindchange="photochange">
+          <view class="photosradio" wx:for="{{phontsItems}}">
+            <radio value="{{item.value}}" checked="{{item.value==photoid}}"/>
+            <text class="{{item.value==photoid ? 'phontsitemnamesel':'phontsitemname'}}">{{item.name}}</text>
+          </view>
+        </radio-group>
+      </view>
+    </view>
+    <view class='typeright'>
+        <image class="selOption" src="https://www.mylife.philips.com.cn/ffymadnim/upload/pic/selOption.png"></image>
+    </view>
+  </view>
+
+  <view class='comming'>
+    <image class="smilepic" src="https://www.mylife.philips.com.cn/ffymadnim/upload/pic/smile.png"></image>
+    <view class='mess'>感谢您的支持！该功能即将上线，</view>
+    <view class='mess'>请先记录一下想要的风格和内容。上线后我们会第一时间通知您。</view>
+    <view class='surebtn' bindtap='back' wx:if="{{isShowBtn}}">确 认</view>
+  </view>
+
+</view>

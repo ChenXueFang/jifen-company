@@ -1,0 +1,32 @@
+/* pages/MyMemberInvite/MyMemberInvite.wxss */
+.indexPic{
+  width: 80%;
+}
+.indexfont{
+  margin-top: 10%;
+}
+.indexText{
+  font-size: 40rpx;
+  font-weight: 500;
+}
+.indexBtn{
+  margin-top: 10%;
+  width:84%;
+  height: auto;
+  left: 8%;
+}
+
+.indexBtn button{
+  width: 100%;
+  margin-top: 30rpx;
+  border-radius: 50rpx;
+  border: 1rpx solid rgb(167, 56, 139);
+}
+.Mbtn{
+  background-color: rgb(167, 56, 139);
+  color: #FFF;
+}
+.Dbtn{
+  background-color: #FFF;
+  color: rgb(167, 56, 139);
+}

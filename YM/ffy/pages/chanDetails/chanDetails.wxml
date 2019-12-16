@@ -1,0 +1,81 @@
+<!--pages/chanDetails/chanDetails.wxml-->
+<import src="../../wxParse/wxParse.wxml" />
+
+<page>
+  <view class="container">
+    <view>
+      <image class="CJReadings" src="../../images/CJReadings.png" bindtap='toCJReadings'></image>
+    </view>
+    <!-- 产检时间 -->
+    <!-- <view class="timeBox">
+      <view class="timeCon">
+        <view class="timeTitle">产检时间</view>
+        <view class="time">{{Time.InspectionDate}}</view>
+      </view>
+    </view> --> 
+    
+    <!-- 产检模板 -->
+    <view class="TempBox">
+      <view class="TempCon">
+        <template class="TempZi" is="wxParse" data="{{wxParseData:article.nodes}}" />
+      </view>
+    </view>
+    <!-- 产检报告备份 -->
+    <view class="picBox">
+      <view class="picCon">
+        <view class="picTitle">产检报告备份</view>
+        <view class="imgBox">
+          <view class="submitImg" wx:if='{{isSubmit}}'>
+            <block>
+              <view class="weui-uploader__file">
+                <image class="weui-uploader__img" src="{{imageList[0]}}" data-src="{{image}}" bindtap="previewImage"></image>
+              </view>
+            </block>
+          </view>
+          <image wx:else bindtap="chooseImage" class="submitPic" src="../../images/submitPic.png"></image>
+        </view>
+      </view>
+      <view class='cjQuestion' wx:if="{{isConsultingExpert==null||isConsultingExpert==''}}">
+    <view>关于产检报告结果，您是否有疑问需要咨询专家？
+        <radio-group class="radio-group" bindchange="cjQuestionChange" style="display:inline">
+            <radio class="radio" wx:for-items="{{selitems}}" wx:key="name" value="{{item.value}}" checked="{{item.checked}}" color="#b64c9b">
+                <text>{{item.name}}</text>
+            </radio>
+        </radio-group>
+        <text class='submitCjQuestion' bindtap='submitCjQuestion'>提交</text>
+      </view>
+    </view>
+
+    </view>
+
+    <!-- <view style="margin-top:400rpx" bindtap="submit">提交</view> -->
+
+    <!--上传产检报告弹窗-->
+    <view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+    <view class="modal-dialog" wx:if="{{showModal}}">
+      <view class="modal-title">
+        <!-- 获取图片 -->
+        <view class="submitImgMask">
+          <block wx:for="{{imageList}}" wx:for-item="image">
+            <view class="weui-uploader__file">
+              <image class="weui-uploader__img smallImg" src="{{imageList[0]}}" data-src="{{image}}" bindtap="previewImage"></image>
+              <!-- <image class="weui-uploader__img smallImg" src="../../images/submitPic.png"></image> -->
+            </view>
+          </block>
+        </view>
+        <!-- 获取图片 -->
+      </view>
+      <view class="modal-content">
+        <view class="modal-input">
+          是否确定提交？
+        </view>
+      </view>
+      <view class="modal-footer">
+        <view class="btn-cancel" bindtap="chooseImage" data-status="cancel">重新上传</view>
+        <view class="btn-confirm" bindtap="submit" data-status="confirm">确认提交</view>
+      </view>
+    </view>
+    <!-- 上传产检报告弹窗 -->
+
+  </view>
+</page>

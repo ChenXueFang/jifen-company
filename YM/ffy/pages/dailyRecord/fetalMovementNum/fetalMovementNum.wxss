@@ -1,0 +1,141 @@
+page{
+  height: 100%;
+  background-image: linear-gradient(0deg, 
+		rgba(208, 136, 211, 0.8) 0%, 
+		#b64c9b 100%);
+}
+#container{
+  width: 100%;
+}
+.tdMain{
+  width: 90%;
+  margin: auto;
+}
+.tdM_top{
+  text-align: center;
+  margin-top: 40rpx;
+}
+.tdM_tt{
+  color: #FFF;
+  margin-top: 20rpx;
+  display: block;
+}
+.tdnumbg{
+  width: 298rpx;
+  height: 298rpx;
+  margin-top: 30rpx;
+}
+.TDbtn{
+  margin-top: 50rpx;
+}
+.TDbtn text{
+  width:200rpx; 
+  height: 60rpx; 
+  line-height: 60rpx;
+  display: inline-block;
+  margin-right: 50rpx;
+  margin-left: 25rpx;
+}
+.resetbtn{
+  background-color: #ffffff;
+	box-shadow: 0px 0px 32px 0px 
+		rgba(126, 0, 94, 0.71);
+	border-radius: 30px;
+	border: solid 1px #b64c9b;
+  color: #b64c9b;
+}
+.surebtn{
+  background-color: #b64c9b;
+	box-shadow: 0px 0px 32px 0px 
+		rgba(126, 0, 94, 0.71);
+	border-radius: 30px;
+  color: #FFF;
+}
+.tddesc{
+  margin-top: 100rpx;
+  color: #FFF;
+  font-size: 30rpx;
+}
+.tddesc text{
+  display: block;
+  margin-top: 25rpx;
+}
+.clickStart{
+  position: absolute;
+  width: 80rpx;
+  margin-top: 120rpx;
+  left: 45%;
+}
+.tdjs{
+  position: absolute;
+  top: 208rpx;
+  left: 35%;
+  font-size: 28rpx;
+  width: 225rpx;
+  height: 152rpx;
+  padding-top: 65rpx;
+}
+.explain{
+  margin-top: 100rpx;
+  text-align: center;
+  text-decoration: underline;
+  color: #b64c9b;
+}
+.tdsend{
+  width: 118rpx;
+  height: 100rpx;
+  position: absolute;
+  top: 40rpx;
+}
+.tdstip{
+  position: absolute;
+  top: 135rpx;
+}
+.tdsbtn{
+  position: absolute;
+  top: 270rpx;
+}
+.tdsbtn text{
+  width: 250rpx;
+  display: inline-block;
+  text-align: center;
+  border-radius: 40rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #FFF;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+.gey{
+  background-color: #C5C5C5;
+}
+.pur{
+  background-color: #b64c9b;
+}
+.RSZhezhao {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+  top: 0;
+  left: 0;
+}
+.isRSShow {
+  display: block;
+}
+.isRSHide {
+  display: none;
+}
+.rscontent{
+  width: 80%;
+  height: 370rpx;
+  background: #FFF;
+  margin: 52% auto;
+  border-radius: 5rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}

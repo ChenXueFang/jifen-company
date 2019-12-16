@@ -1,0 +1,82 @@
+/* pages/privacyStatement/privacyStatement.wxss */
+.box{
+  width: 90%;
+  margin: 0 auto;
+  font-size: 28rpx;
+  padding-bottom: 100rpx;
+  word-break: break-word;
+}
+.conBox{
+  line-height: 40rpx;
+}
+.centerTitle{
+  text-align: left;
+  margin-bottom: 30rpx;
+}
+.titleA{
+  font-size: 40rpx;
+	color: #b64c9b;
+}
+.titleB{
+	color: #b64c9b;
+}
+.titleA,.titleConA,.titleConB{
+  font-weight: bold;
+}
+.titleConA{
+  font-size: 32rpx;
+}
+.underline{
+  text-decoration: underline;
+}
+.YinSi{
+  color: #0000ff;
+  text-decoration: underline;
+}
+.con{
+  position: relative;
+  margin-bottom: 30rpx;
+}
+.img{
+  width: 10rpx;
+  height: 10rpx;
+  position: absolute;
+  top: 16rpx;
+  left: 0;
+}
+.dian{
+  text-indent: 40rpx;
+}
+.imgBox{
+  width: 28%;
+}
+/* .huaCon{
+  width: 
+} */
+.imgHua{
+  width: 22rpx;
+  height: 22rpx;
+}
+.huaBox{
+  display: flex;
+}
+.indexBtn{
+  display: flex;
+}
+.indexBtn button{
+  width: 29%;
+  height: 72rpx;
+  line-height: 72rpx;
+  border-radius: 50rpx;
+  margin-top: 60rpx;
+}
+.Mbtn{
+  font-weight: bold;
+  background-color: #fbf6fa;
+  color: rgb(167, 56, 139);
+  border: solid 1rpx #b64c9b;
+}
+.Dbtn{
+  background-color: #b64c9b;
+  color: #FFF;
+}

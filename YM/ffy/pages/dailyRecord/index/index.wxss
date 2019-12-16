@@ -1,0 +1,1014 @@
+/* pages/dailyRecord/index/index.wxss */
+
+page {
+  height: 100%;
+  background-color: #f4f4f4;
+  position: relative;
+}
+
+.topti {
+  position: absolute;
+  top: 100rpx;
+  width: 100%;
+  display: block;
+  height: 35rpx;
+}
+
+.myFaTitle {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.drbg {
+  width: 750rpx;
+  height: 748rpx;
+}
+
+.selectsp {
+  width: 18rpx;
+  height: 33rpx;
+  position: absolute;
+  left: 30rpx;
+  margin-top: 10rpx;
+}
+
+.drtitle {
+  text-align: center;
+}
+
+.sign_con {
+  width: 100%;
+  align-items: flex-start;
+  padding: 0;
+  display: block !important;
+}
+
+.calendar_con {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  position: absolute;
+  top: 145rpx;
+}
+
+.calendar {
+  width: 90%;
+  padding: 20rpx 40rpx;
+  overflow: hidden;
+  text-align: center;
+}
+
+.calendar_choose {
+  color: #fff;
+  border-radius: 25rpx;
+  text-align: center;
+  font-size: 26rpx;
+  line-height: 60rpx;
+}
+
+
+.signimg {
+  width: 60rpx;
+  height: 60rpx;
+  position: absolute;
+  margin-top: 10rpx;
+  right: 75rpx;
+}
+
+.week, .date {
+  width: 100%;
+  text-align: left;
+}
+
+.week_item, .date_item, .date_item text {
+  /* flex-basis: 15%; */
+  color: #fff;
+  padding: 10rpx 0;
+  display: inline-block;
+  width: 14%;
+  text-align: center;
+}
+
+.week, .date {
+  width: 100%;
+  /* display: flex;
+  flex-direction: row;
+  justify-content: center; */
+  text-align: left;
+}
+
+.week_item, .date_item, .date_item text {
+  /* flex-basis: 15%; */
+  color: #fff;
+  padding: 10rpx 0;
+  display: inline-block;
+  width: 14%;
+  text-align: center;
+}
+
+.date_item text {
+  width: 40rpx;
+  height: 40rpx;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 40rpx;
+  font-size: 26rpx;
+}
+
+.date_item text.active {
+  background-color: #b64c9b;
+  border-radius: 50%;
+  padding: 0;
+  color: #fff;
+  border: 4rpx solid #b64c9b;
+}
+
+.date_item text.currentDay {
+  border: 4rpx solid #b64c9b;
+  border-radius: 50%;
+  color: #fff;
+  padding: 0;
+}
+
+.dowmmore {
+  width: 80rpx;
+  height: 20rpx;
+  position: absolute;
+  margin-left: -45rpx;
+}
+
+.drds {
+  width: 16rpx;
+  height: 9rpx;
+  vertical-align: middle;
+  margin-left: 5rpx;
+}
+
+.drDetail {
+  background-color: #fff;
+  position: relative;
+  width: 86%;
+  margin: auto;
+  padding: 30rpx 50rpx 45rpx 50rpx;
+}
+
+.drDetailItem {
+  height: 80rpx;
+  line-height: 80rpx;
+  position: relative;
+}
+
+.dr1 {
+  width: 35rpx;
+  height: 35rpx;
+  position: absolute;
+  margin-top: 25rpx;
+}
+
+.drDec {
+  padding-left: 60rpx;
+  position: absolute;
+}
+
+.xqList {
+  position: absolute;
+  right: 0rpx;
+  top: 13rpx;
+}
+.xqText {
+  position: absolute;
+  right: 0rpx;
+  color: #666666;
+}
+
+.xq {
+  width: 85rpx;
+  height: 85rpx;
+}
+.viewPic{
+  display: inline-block;
+  text-align: center;
+  width: 17%;
+}
+.qrBtn{
+  width: 60%;
+  background-color: #b64c9b;
+  color: #FFF;
+  display: inline-block;
+  margin-left: 23rpx;
+  margin-top: 60rpx;
+  text-align: center;
+  font-size: 30rpx;
+  border-radius: 30rpx;
+  padding: 10rpx 0;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+
+.nWeight {
+  /* display: none; */
+  visibility: hidden;
+  height: 60rpx;
+  position: relative;
+  margin-top: -33rpx;
+  margin-bottom: 30rpx;
+}
+
+.nWeightShow {
+  height: 60rpx;
+  position: relative;
+  margin-top: -33rpx;
+  margin-bottom: 30rpx;
+}
+
+.nearWeight text {
+  width: 105rpx;
+  display: inline-block;
+  font-size: 25rpx;
+  color: #fff;
+  border-radius: 30rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  margin-right: 3rpx;
+}
+
+.weightHeight {
+  height: 120rpx;
+}
+
+.tipStyle {
+  width: 360rpx;
+  height: 80rpx;
+  text-align: right;
+  position: absolute;
+  right: 20rpx;
+  font-size: 25rpx;
+  color: #999;
+  top: -19rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.selectSp2 {
+  width: 15rpx;
+  height: 25rpx;
+  position: absolute;
+  right: -55rpx;
+  top: 11rpx;
+}
+
+.syncStepNum {
+  font-size: 25rpx;
+  color: #fff;
+  background-color: #b64c9b;
+  position: absolute;
+  top: 5rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  border-radius: 30rpx;
+  right: 55rpx;
+  width: 260rpx;
+  text-align: center;
+}
+
+.lightColor {
+  background-color: #d088d3;
+}
+
+.weightColor {
+  background-color: #b64c9b;
+}
+
+.RSZhezhao {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+  top: 0;
+  left: 0;
+}
+
+.isRSShow {
+  display: block;
+}
+
+.isRSHide {
+  display: none;
+}
+
+.rscontent {
+  width: 100%;
+  height: 985rpx;
+  background: #fff;
+  bottom: 0;
+  border-radius: 5rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+}
+
+.rsc_tt {
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+
+.selRS {
+  width: 25rpx;
+  height: 26rpx;
+  position: absolute;
+  left: 50rpx;
+  margin-top: 38rpx;
+}
+
+
+.rsText {
+  width: 26%;
+  display: inline-block;
+  border: 1rpx solid #ccc;
+  margin-left: 30rpx;
+  margin-right: 15rpx;
+  margin-top: 30rpx;
+  text-align: center;
+  color: #999;
+  font-size: 25rpx;
+  border-radius: 15rpx;
+  padding: 10rpx 0;
+} 
+
+.rsc_add {
+  width: 86%;
+  margin: auto;
+  margin-top: 30rpx;
+  text-align: left;
+}
+.rsc_oper {
+  width: 220rpx;
+  display: block;
+  text-align: center;
+  line-height: 50rpx;
+  height: 50rpx;
+  border-radius: 15rpx;
+  margin-top: 20rpx;
+  border: 1rpx solid #b64c9b;
+  color: #b64c9b !important;
+}
+
+.res_checkShow {
+  font-size: 20rpx;
+  color: #999;
+}
+
+.rsc_oper2 {
+  width: 220rpx;
+  display: block;
+  text-align: center;
+  line-height: 50rpx;
+  height: 50rpx;
+  border-radius: 30rpx;
+  margin-top: 20rpx;
+  border: 1rpx solid #b64c9b;
+}
+
+.rsc_oper3 {
+  padding-left: 10rpx;
+}
+
+/* 步数授权 */
+
+.commodity_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.2;
+  overflow: hidden;
+  z-index: 1000;
+  color: #fff;
+}
+
+/*对话框 */
+
+.commodity_attr_box {
+  height: 500rpx;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+  background: #fff;
+  padding-top: 20rpx;
+}
+
+.floatDiv {
+  width: 90%;
+  margin: auto;
+}
+
+.authlogo {
+  width: 46rpx;
+  height: 46rpx;
+}
+
+.authTitle {
+  position: absolute;
+  margin-left: 20rpx;
+  margin-top: 5rpx;
+}
+
+.authDesc {
+  position: absolute;
+  margin-left: 180rpx;
+  margin-top: 5rpx;
+}
+
+.authMsg {
+  margin-top: 20rpx;
+  font-size: 40rpx;
+  font-weight: 500;
+}
+
+.authBtn {
+  margin-top: 160rpx;
+  height: auto;
+  left: 8%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.authBtn button {
+  width: 45%;
+  font-size: 30rpx;
+}
+
+/* 给妈妈的留言 */
+
+.toMotherMess {
+  margin-top: 50rpx;
+}
+
+.toMMtt {
+  font-weight: 500;
+}
+
+.toMMtip {
+  font-size: 25rpx;
+  color: #999;
+  margin-left: 10rpx;
+}
+
+.toSendMM {
+  font-size: 25rpx;
+  color: #b64c9b;
+  position: absolute;
+  right: 55rpx;
+  display: block;
+  width: 125rpx;
+  text-align: center;
+  border: 1rpx solid #b64c9b;
+  margin-top: -45rpx;
+  border-radius: 10rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+
+.toMMcont {
+  margin-top: 20rpx;
+  height: 260rpx;
+  box-shadow: 0px 0px 13px 0px rgba(150, 33, 120, 0.25);
+  border-radius: 20rpx;
+  border: solid 1rpx #b64c9b;
+}
+
+.detailText {
+  width: 90%;
+  margin: auto;
+  margin-top: 20rpx;
+  height: 200rpx;
+  font-size: 25rpx;
+}
+
+.toMMSubBtn {
+  position: absolute;
+  width: 200rpx;
+  display: inline-block;
+  background-color: #b64c9b;
+  color: #fff;
+  border-radius: 30rpx;
+  text-align: center;
+  height: 60rpx;
+  line-height: 60rpx;
+  left: 36%;
+}
+
+.MMView {
+  margin-top: 20rpx;
+  height: 310rpx;
+  /* box-shadow: 0px 0px 13px 0px rgba(150, 33, 120, 0.25); */
+  border-radius: 10rpx;
+  border: solid 1rpx #b64c9b;
+  /* padding: 30rpx; */
+  font-size: 25rpx;
+  color: #666;
+  position: relative;
+}
+
+.messtime {
+  position: absolute;
+  right: 35rpx;
+  top: 190rpx;
+}
+
+.showweek {
+  height: 410rpx;
+}
+
+.showtop {
+  top: -268rpx;
+}
+
+.checked {
+  /* background-color: #b64c9b; */
+  border: solid 1rpx #b64c9b;
+  color: #b64c9b !important;
+}
+
+.newPrRecord {
+  position: absolute;
+  right: 20rpx;
+  margin-top: -18rpx;
+  font-size: 25rpx;
+}
+
+.newrecord {
+  color: #35bf7c;
+  margin-left: 10rpx;
+}
+
+.showwxstep {
+  position: absolute;
+  right: 0;
+}
+
+.showwxstep2 {
+  position: absolute;
+  right: -50rpx;
+  margin-top: 10rpx;
+}
+.showwxstep3{
+   position: absolute;
+  right: 0;
+}
+/* 爸爸留言模态框 */
+
+.modal-mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+  z-index: 9000;
+  color: #fff;
+}
+
+.modal-dialog {
+  width: 620rpx;
+  height: 476rpx;
+  overflow: hidden;
+  position: fixed;
+  top: 28%;
+  left: 9%;
+  z-index: 9999;
+  background: #fff;
+  border-radius: 10rpx;
+}
+
+.modal-title {
+  padding-top: 50rpx;
+  text-align: center;
+}
+
+.modal-title>image {
+  width: 122rpx;
+  height: 96rpx;
+}
+
+.modal-content {
+  padding: 50rpx 32rpx;
+}
+
+.modal-input {
+  text-align: center;
+  width: 509rpx;
+  height: 78rpx;
+  margin: 0 auto;
+  font-size: 32rpx;
+  color: #333;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: space-around;
+  height: 86rpx;
+  font-size: 34rpx;
+  line-height: 86rpx;
+  margin-top: 35rpx;
+}
+
+.btn-cancel {
+  width: 260rpx;
+  height: 66rpx;
+  line-height: 66rpx;
+  text-align: center;
+  background-color: #c5c5c5;
+  border-radius: 33rpx;
+  font-size: 32rpx;
+  color: #fff;
+}
+
+.btn-confirm {
+  width: 260rpx;
+  height: 66rpx;
+  line-height: 66rpx;
+  text-align: center;
+  background-color: #b64c9b;
+  border-radius: 33rpx;
+  font-size: 32rpx;
+  color: #fff;
+}
+
+.addinfo{
+  width: 46rpx;
+  height: 46rpx;
+}
+
+/**心情**/
+.xqcontent {
+  width: 100%;
+  height: 550rpx;
+  background: #fff;
+  border-radius: 5rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+}
+.xqrsc_cot {
+  width: 100%;
+  background-color: #FbF6Fa;
+  text-align: center;
+  height: 400rpx;
+  padding-top: 50rpx;
+}
+.noselectedxq{
+  padding: 15rpx 0 10rpx 0;
+  border:1rpx solid #FbF6Fa;
+  border-radius: 15rpx;
+}
+.selectedxq{
+  padding: 15rpx 0 10rpx 0;
+  background-color: #FFF;
+  border:1rpx solid #b64c9b;
+  border-radius: 15rpx;
+}
+.selicon{
+  width: 36rpx !important;
+  height: 36rpx !important;
+  position: absolute;
+  margin-top: -30rpx;
+  margin-left: 80rpx;
+}
+/**体重**/
+.tzcontent {
+  width: 100%;
+  height: 65%;
+  background: #fff;
+  border-radius: 5rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+}
+.rsc_cot {
+  width: 100%;
+  background-color: #FbF6Fa;
+  text-align: center;
+  height: 83%;
+  padding-top: 50rpx;
+}
+
+.rsc_cotSel {
+  width: 100%;
+  background-color: #FbF6Fa;
+  text-align: center;
+  height: 89%;
+}
+.cot_tzMain{
+  position: relative;
+}
+.inputTZ{
+  border-bottom: 1px solid #aaaaaa;
+  margin: auto;
+  width: 200rpx;
+}
+.inputDW{
+  position: absolute;
+  top: -10rpx;
+  margin-left: 110rpx;
+}
+.cot_tzNear{
+  margin-top: 40rpx;
+  margin-bottom: 20rpx;
+}
+.changeSelect{
+  color: #b64c9b;
+  margin-left: 150rpx;
+  position: absolute;
+  font-size: 26rpx;
+}
+/**妊娠反应**/
+.rstc_cot {
+  width: 100%;
+  background-color: #FbF6Fa;
+  text-align: left;
+  height: 88%;
+  padding-top: 20rpx;
+}
+.rsselicon{
+  width: 36rpx;
+  height: 36rpx;
+  position: absolute;
+  margin-left: -35rpx;
+  margin-top: 15rpx;
+}
+.rsfyList{
+  position: relative;
+}
+
+/**消息**/
+.msgsy-content {
+  /* display: inline-block; */
+  border-radius: 10rpx;
+  color: #333;
+  padding: 15rpx;
+  vertical-align: top;
+  font-size: 30rpx;
+  position: relative;
+  margin: 0px 16rpx;
+  max-width: 93%;
+  min-width: 125rpx;
+  /* float: left; */
+  text-align: left;
+  height: 40rpx;
+  line-height: 40rpx;
+  word-break: break-all;
+  background-color: #FbF6Fa;
+  margin-bottom: 30rpx;
+  width: 125rpx;
+}
+ .msgsy-content .msg-content-arrow {
+  position: absolute;
+  border-right: none;
+  border-top: none;
+  background-color: #FbF6Fa;
+  width: 20rpx;
+  height: 20rpx;
+  left: -10rpx;
+  top: 6rpx;
+  -webkit-transform: rotateZ(45deg);
+  transform: rotateZ(45deg);
+}
+
+.msg-content {
+  /* display: inline-block; */
+  border-radius: 10rpx;
+  color: #333;
+  padding: 15rpx;
+  vertical-align: top;
+  font-size: 30rpx;
+  position: relative;
+  margin: 0px 16rpx;
+  max-width: 93%;
+  min-width: 70rpx;
+  float: left;
+  text-align: left;
+  /* height: 140rpx; */
+  word-break: break-all;
+  background-color: #FbF6Fa;
+}
+
+.msg-content-image {
+  max-width: 300rpx;
+  vertical-align: middle;
+}
+
+.msg-content .msg-content-inner {
+  overflow-x: hidden;
+}
+
+ .msg-content .msg-content-arrow {
+  position: absolute;
+  border-right: none;
+  border-top: none;
+  background-color: #FbF6Fa;
+  width: 20rpx;
+  height: 20rpx;
+  left: -10rpx;
+  top: 6rpx;
+  -webkit-transform: rotateZ(45deg);
+  transform: rotateZ(45deg);
+}
+
+.msg-item-self .msg-user, .msg-item-self .msg-content {
+  float: right;
+}
+
+.msg-item-self .msg-content .msg-content-arrow {
+  left: auto;
+  right: -10rpx;
+  -webkit-transform: rotateZ(225deg);
+  transform: rotateZ(225deg);
+}
+
+.msg-item-self .msg-content, .msg-item-self .msg-content .msg-content-arrow {
+  background-color: #cc8ad5;
+  color: #333;
+  border-color: #cc8ad5;
+}
+.sound{
+  width: 22rpx;
+  height: 31rpx;
+}
+.fatherInput{
+  width: 100%;
+  border-top: 1rpx solid #cc8ad5;
+  position: absolute;
+  bottom: 0;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.showmessToMa{
+   padding: 30rpx;
+   display: block;
+}
+.showMessage2{
+  padding: 30rpx;
+  height: 181rpx;
+  overflow-y: auto;
+}
+.showMessage{
+  padding: 30rpx;
+  height: 190rpx;
+  overflow-y: auto;
+}
+.messSound{
+  width: 29rpx;
+  height: 35rpx;
+  position: absolute;
+  left: 30rpx;
+  top: 13rpx;
+}
+.messWenzi{
+  width: 38rpx;
+  height: 38rpx;
+  position: absolute;
+  left: 30rpx;
+  top: 12rpx;
+}
+.faceicon{
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  left: 90rpx;
+  top: 10rpx;
+}
+.inpMess{
+  display: inline-block !important;
+  position: absolute;
+  left: 170rpx;
+  margin-top: 6rpx;
+  width: 325rpx;
+  background-color: #FbF6Fa;
+  border-radius: 20rpx;
+  padding-left: 10rpx;
+}
+.btnMess{
+  position: absolute;
+  left: 520rpx;
+  display: block;
+  width: 110rpx;
+  text-align: center;
+  color: #FFF;
+  background-color: #b64c9b;
+  height: 49rpx;
+  line-height: 49rpx;
+  margin-top: 4rpx;
+  border-radius: 15rpx;
+  font-size: 24rpx;
+}
+.bqrsc_cot {
+  width: 99%;
+  background-color: #FbF6Fa;
+  height: 430rpx;
+  padding-top: 20rpx;
+  text-align: center;
+  padding-left: 12rpx;
+}
+.BQPic{
+  display: inline-block;
+  text-align: center;
+  height: 80rpx;
+  width: 80rpx;
+}
+.bqBtn{
+  width: 60%;
+  background-color: #b64c9b;
+  color: #FFF;
+  display: inline-block;
+  margin-left: 23rpx;
+  margin-top: 20rpx;
+  text-align: center;
+  font-size: 30rpx;
+  border-radius: 30rpx;
+  padding: 10rpx 0;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+.bqitem{
+  border: 1rpx solid #FbF6Fa;
+  width: 62rpx;
+  height: 55rpx;
+  text-align: center;
+}
+.bqitemSel{
+  border: 1rpx solid #ccc;
+  background-color: #FFF;
+  border-radius: 8rpx;
+}
+.bt{
+  width: 58%;
+  height:60rpx;
+  line-height: 60rpx;
+  background-color: #cc8ad5 !important;
+}
+ 
+.btTouch{
+  background: #e2e2e2 !important;
+  color: #333333 !important;
+  width:58%;
+  height:60rpx;
+  line-height: 60rpx;
+}
+.btnMess2{
+  position: absolute;
+  left: 520rpx;
+  display: block;
+  width: 110rpx;
+  text-align: center;
+  color: #FFF;
+  background-color: #b64c9b;
+  height: 49rpx;
+  line-height: 49rpx;
+  margin-top: 4rpx;
+  border-radius: 15rpx;
+  font-size: 24rpx;
+  top: 4rpx;
+}
+
+.setst{
+  width: 84rpx;
+  height: 51rpx;
+  position: absolute;
+  top: 12rpx;
+  left: 200rpx;
+}
+.rsSelectFont{
+  display: block;
+  width: 350rpx;
+  height: 60rpx;
+  text-align: right;
+  overflow: hidden;
+}
+.clickDaily{
+  width: 100%;
+  height: 30rpx;
+  position: absolute;
+  margin-left: -50%;
+}

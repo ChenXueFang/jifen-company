@@ -1,0 +1,42 @@
+
+<!--pages/form/form1.wxml-->
+<view>
+  <view>
+    <view style='text-align:center;margin-top:40rpx;'>
+      <image bindtap="prevWeek" class="dLeft" src="../../images/dialeft.png" style="position:absolute;margin-left:-90rpx;"></image>
+      <text class='currentYZ'>当前孕周 {{week}}周</text>
+      <image bindtap="nextWeek" class="dLeft" src="../../images/diaright.png" style="position:absolute;;margin-left:28rpx;"></image>
+    </view>
+    <view style="width:92%;height:600rpx;border-radius: 20rpx;">
+    <canvas class="canvas"  bindtouchstart="start" bindtouchmove="move" bindtouchend="end" canvas-id="myCanvas" style='width:85%;height:72%;' />
+    </view>
+
+  <canvas hidden="{{showbigimg}}" bindtouchstart="start" bindtouchmove="move" bindtouchend="end" canvas-id="bigCanvas" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:99" />
+   <cover-image hidden="{{showbigimg}}" bindtap="closeBigImg" class="closeBigImg" src="../../images/delete.png" ></cover-image>
+
+  <view style="position:absolute;bottom:134rpx;width:100%;text-align:center;color:#cc88d4;">
+    <view style='display: inline-block;position:absolute;margin-left:-45rpx;margin-top:5rpx;'><image class='dia3d' src="../../images/dia3d.png"></image></view>
+    <view style='display: inline-block;'>点击<text bindtap='viewBigPic' style='color:#FF0000;text-decoration: underline;'>放大</text>可以查看宝宝的3D图呦！</view>
+  </view>
+  </view>
+
+
+<view id='container' bindtap='hideCH'>
+  <view class='inputDia' wx:if="{{myRole=='Mather' || myRole=='Father' || isLogin==false}}" >  
+   <!-- <view class='dia' bindtap='toDetail' wx:if="{{myRole=='Mather'}}"> 输入想要对宝宝说的话</view>
+     <text  class='dia2' bindtap='toDetail' wx:else>查看妈妈与宝宝的对话</text> -->
+      <view class='dia' bindtap='toDetail'>输入想要对宝宝说的话</view>
+  </view>
+
+  <cover-view class="RSZhezhao {{isRSShow?'isRSShow':'isRSHide'}}">
+    <cover-view class='rscontent'>
+        <cover-image class="smilepic" src="https://www.mylife.philips.com.cn/ffymadnim/upload/pic/smile.png"></cover-image>
+        <cover-view class='msstip'>尊敬的用户，该对话功能是我们为您设置的虚拟场景哦，不可代替真实情况</cover-view>
+        <cover-view class='mssbtn' bindtap="hideRS">知道了</cover-view>
+    </cover-view>
+  </cover-view>
+</view>
+
+<cover-image class="diaDeyd {{isYDPic1?'isisYDPic1':'isisYDPic1Hide'}}" src="https://www.mylife.philips.com.cn/ffymadnim/upload/bgimages/ydPic1.png" bindtap="hidePic1"></cover-image>
+<cover-image class="diaDeyd {{isYDPic2?'isYDPic2':'isYDPic2Hide'}}" src="https://www.mylife.philips.com.cn/ffymadnim/upload/bgimages/ydPic2.png" bindtap="hidePic2"></cover-image> 
+</view>

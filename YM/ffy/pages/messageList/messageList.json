@@ -1,0 +1,8 @@
+{
+  "navigationBarBackgroundColor": "#FFF",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "来自爸爸的留言",
+  "backgroundColor": "#FFF",
+  "backgroundTextStyle": "light",
+  "disableScroll": true
+}

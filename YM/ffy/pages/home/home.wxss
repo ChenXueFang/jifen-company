@@ -1,0 +1,462 @@
+/**index.wxss**/
+
+#container {
+  width: 100%;
+}
+
+.indexPic {
+  width: 100vw;
+  height: 100vh;
+}
+
+.enterPro {
+  width: 150rpx;
+  height: 120rpx;
+  position: absolute;
+  top: 60rpx;
+  right: -15rpx;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.welcomeEnter {
+  color: #fff;
+  position: absolute;
+  top: 3%;
+  width: 80%;
+  border: 1px solid #cb88d4;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  border-radius: 30rpx;
+  background-color: #cb88d4;
+  height: 50rpx;
+  line-height: 50rpx;
+  margin-top: 30rpx;
+  box-shadow: 0 0 15rpx 5rpx #fff;
+}
+
+.indexMid {
+  margin-top: 11%;
+  width: 90%;
+}
+
+.mainNav {
+  margin-top:6%;
+  width: 100%;
+}
+
+.nav1 {
+  width: 25%;
+  height: 220rpx;
+  border: 1px solid #b24e9d;
+  background-color: #b24e9d;
+  box-shadow: 0 0 20rpx 5rpx #fff;
+  border-radius: 20rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.navPic {
+  width: 65rpx;
+  height: 59rpx;
+  margin-top: 32rpx;
+  margin-left: -138rpx;
+}
+
+.navCj {
+  text-align: center;
+  margin-top: 66rpx;
+  margin-left: -70rpx;
+  width: 82rpx !important;
+  height: 155rpx;
+  overflow: hidden;
+}
+
+.nav2 {
+  width: 48%;
+  height: 100rpx;
+  border: 1px solid #b24e9d;
+  background-color: #b24e9d;
+  box-shadow: 0 0 20rpx 5rpx #fff;
+  border-radius: 20rpx;
+  position: absolute;
+  margin-top: -220rpx;
+  margin-left: 28%;
+}
+
+.navPic2 {
+  width: 72rpx;
+  height: 72rpx;
+  margin-top: 15rpx;
+  margin-left: -60%;
+}
+
+.navPic3 {
+  width: 60rpx;
+  height: 62rpx;
+  margin-top: 10rpx;
+  margin-left: -60%;
+}
+
+.navPic4 {
+  width: 95rpx;
+  height: 81rpx;
+  margin-top: 35rpx;
+}
+
+.navjl {
+  position: absolute;
+  margin-top: -25rpx;
+  margin-left: 30rpx;
+}
+
+.nav3 {
+  width: 48%;
+  height: 100rpx;
+  border: 1px solid #b24e9d;
+  background-color: #b24e9d;
+  box-shadow: 0 0 20rpx 5rpx #fff;
+  border-radius: 20rpx;
+  position: absolute;
+  margin-top: -100rpx;
+  margin-left: 28%;
+}
+
+.nav4 {
+  width: 20%;
+  height: 220rpx;
+  border: 1px solid #b24e9d;
+  background-color: #b24e9d;
+  box-shadow: 0 0 20rpx 5rpx #fff;
+  border-radius: 20rpx;
+  position: absolute;
+  margin-top: -220rpx;
+  margin-left: 79%;
+}
+
+.navdh {
+  position: absolute;
+  width: 100%;
+  margin-left: -2rpx;
+  margin-top: 75rpx;
+}
+
+.navdh2 {
+  position: absolute;
+  width: 100%;
+  margin-left: -2rpx;
+  margin-top: 115rpx;
+}
+
+.leftMess {
+  position: absolute;
+  width: 59rpx;
+  height: 70rpx;
+  top: 70rpx;
+  left: -20rpx;
+}
+
+.rightScore {
+  position: absolute;
+  width: 79rpx;
+  height: 79rpx;
+  top: 65rpx;
+  right: 0rpx;
+}
+
+.adds {
+  position: absolute;
+  right: -30rpx;
+  font-size: 25rpx;
+  top: 80rpx;
+}
+
+.leftSp {
+  margin-left: -90%;
+}
+
+.centerView {
+  width: 30%;
+  background-color: #cb88d4;
+  position: absolute;
+  margin-top: -13%;
+  margin-left: 35%;
+  border-radius: 15rpx;
+  border: 1px solid #fff;
+  color: #fff;
+  box-shadow: 0 0 15rpx 5rpx #fff;
+}
+
+.rightSp {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.isHidd {
+  display: none;
+}
+
+.isRSShow, .isisYDPic1, .isYDPic2 {
+  display: block;
+}
+
+.isRSHide, .isisYDPic1Hide, .isYDPic2Hide {
+  display: none;
+}
+
+.rscontent {
+  width: 80%;
+  height: 370rpx;
+  background: #fff;
+  margin: 70% auto;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+.redpoint {
+  width: 12rpx;
+  height: 12rpx;
+  position: absolute;
+  top: 70rpx;
+  left: 10rpx;
+}
+
+/* 登录注册模态框 */
+
+.modalBox .modal-mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+  z-index: 9000;
+  color: #fff;
+}
+
+.modalBox .modal-dialog {
+  width: 620rpx;
+  height: 520rpx;
+  overflow: hidden;
+  position: fixed;
+  top: 28%;
+  left: 9%;
+  z-index: 9999;
+  background: #fff;
+  border-radius: 10rpx;
+}
+
+.modalBox .modal-title {
+  padding-top: 50rpx;
+  text-align: center;
+}
+
+.modalBox .modal-title>image {
+  width: 122rpx;
+  height: 96rpx;
+}
+
+.modalBox .modal-content {
+  padding: 35rpx 32rpx;
+}
+.modal-conTitle{
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20rpx;
+  font-size: 35rpx;
+}
+.modalBox .modal-input {
+  width: 509rpx;
+  height: 78rpx;
+  margin: 0 auto;
+  font-size: 32rpx;
+  text-align: left;
+  color: #333;
+}
+
+.modalBox .modal-footer {
+  display: flex;
+  justify-content: space-around;
+  height: 86rpx;
+  font-size: 34rpx;
+  line-height: 86rpx;
+  margin-top: 108rpx;
+}
+
+.modalBox .btn-cancel {
+  width: 250rpx;
+  height: 66rpx;
+  line-height: 66rpx;
+  text-align: center;
+  background-color: #c5c5c5;
+  border-radius: 33rpx;
+  font-size: 32rpx;
+  color: #fff;
+}
+
+.modalBox .btn-confirm {
+  width: 250rpx;
+  height: 66rpx;
+  line-height: 66rpx;
+  text-align: center;
+  background-color: #b64c9b;
+  border-radius: 33rpx;
+  font-size: 32rpx;
+  color: #fff;
+}
+
+/* 登录注册模态框 */
+
+
+.diaDeyd{
+  position: fixed;
+  z-index: 999;
+  width:100%;
+  height: 100%;
+  top: 0;
+}
+
+/*引导页*/
+
+.ydPic1 {
+  /* position: absolute;
+  bottom: 0;
+  width: 93%;
+  height: 587rpx;
+  margin-left: 20rpx; */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+.pic1bottom{
+  position: absolute;
+  bottom:0;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.ydPic2 {
+  position: absolute;
+  width: 529rpx;
+  height: 294rpx;
+  bottom: 0;
+  right: 65rpx;
+  margin: auto;
+}
+
+.RSZhezhao {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+  top: 0;
+  left: 0;
+}
+
+.itemnav{
+  width: 275rpx;
+	height: 115rpx;
+	background-color: #cc88d4;
+	border: solid 2rpx #ffffff;
+  display: inline-block;
+  margin:20rpx 10rpx 0 10rpx;
+  border-radius: 25rpx;
+}
+.dia{
+  position: absolute;
+  margin-left: 13rpx;
+  margin-top: 32rpx;
+}
+.dia1{
+  position: absolute;
+  margin-left: 10rpx;
+  margin-top: 5rpx;
+}
+.dia2{
+  position: absolute;
+  margin-left: 35rpx;
+  margin-top: 32rpx;
+}
+
+.inviteRecord {
+  width: 164rpx;
+  height: 89rpx;
+  position: absolute;
+  top: 60rpx;
+  right: -15rpx;
+}
+.fourColor{
+  width: 150rpx;
+  height: 150rpx;
+  position: absolute;
+  margin-left: -170rpx;
+  margin-top: 157rpx;
+}
+.yhqimgStyle{
+  width: 78rpx;
+  height: 77rpx;
+}
+
+.modalBox .modal-dialog2 {
+  width: 620rpx;
+  height: 540rpx;
+  overflow: hidden;
+  position: fixed;
+  top: 28%;
+  left: 9%;
+  z-index: 9999;
+  background: #fff;
+  border-radius: 10rpx;
+}
+.modalBox .modal-content2 {
+  text-align: center;
+  margin-top: 15rpx;
+}
+.yhqbg{
+  width: 620rpx;
+  height: 430rpx;
+}
+.yhqName{
+  position: absolute;
+  margin-top: -195rpx;
+  margin-left: 210rpx;
+  color: #c0900e;
+  font-size: 45rpx;
+}
+.discount{
+  font-size: 20rpx;
+}
+.tolq{
+  width: 430rpx;
+  background-color: #be7fc2;
+	border-radius: 33rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  color: #FFF;
+  margin-left: 100rpx;
+}
+.yhqclose{
+  width: 46rpx;
+  height: 46rpx;
+  position: absolute;
+  margin-left: -55rpx;
+  margin-top: 15rpx;
+}

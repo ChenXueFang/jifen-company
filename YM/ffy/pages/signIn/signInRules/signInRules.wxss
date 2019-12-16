@@ -1,0 +1,92 @@
+/* pages/myIntegral/myIntegral.wxss */
+page{
+  height:100%;
+  background-color: #FFF;
+}
+#container{
+  width: 100%;
+  display: flex;
+  flex-direction:column;
+  padding-bottom: 155rpx;
+}
+.integralMain{
+  width: 92%;
+  margin: auto;
+}
+.integralTotal{
+  background-color: #FFF;
+  margin-top: 20rpx;
+  height: 150rpx;
+  text-align: center;
+  border-radius: 15rpx;
+}
+.madeBtnImg{
+  width: 702rpx;
+	height: 202rpx;
+}
+.jfContent{
+  margin-top: 10%;
+}
+.jsTDesc{
+  display: block;
+  border-left: 6rpx solid #B24E9D;
+  padding-left: 20rpx;
+  font-weight: bold;
+  margin-top: 96rpx;
+}
+.jfpoint{
+  width: 26rpx;
+  height: 22rpx;
+  margin-top: 13rpx;
+}
+.jfdecBox{
+  width: 95%;
+  margin-left: 30rpx;
+  color: #B24E9D;
+}
+.jfdec{
+  display: flex;
+  margin-top: 5%;
+}
+.jf{
+  width: 93%;
+  display: inline-block;
+  margin-left: 21rpx;
+}
+.gouBox{
+  margin-top: 15rpx;
+  margin-left: 45rpx;
+}
+.gouImg{
+  width: 29rpx;
+	height: 29rpx;
+  margin-top: 13rpx;
+}
+.toViewPro{
+  display: inline-block;
+  font-weight: 500;
+  text-decoration: underline;
+}
+.jfnum{
+  width: 32rpx;
+  height: 34rpx;
+  position: absolute;
+  margin-top: 16rpx;
+  margin-left: -60rpx;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,80 @@
+<page>
+  <view class="container">
+    <!-- tab切换 --> 
+    <view class="tab-box">
+        <view class="tab-nav {{curIndex === 0 ?'on':''}}" bindtap="bindTap" data-index="0">每日知识</view>
+        <view class="tab-nav {{curIndex === 1 ?'on':''}}" bindtap="bindTap" data-index="1">孕期宝典</view>
+        <!-- 我的收藏 -->
+        <view class="favoriteBox" bindtap='toFavorite'>
+          <image class="lovePic" src="../../images/lovePic.png"></image>
+          <view class="collectZi">收藏</view>
+        </view>
+        <view class="tab-content">
+            <!-- 0每日知识 -->
+            <view class="tabCon" wx:if="{{curIndex === 0}}">
+              <!-- 三个板块 -->
+              <view class="threeBox">
+                <view class="three">
+                  <image class="threeImg" src="https://www.mylife.philips.com.cn/ffymadnim/upload/bgimages/three11.png"></image>
+                  <view class="threeIntr">{{Three.Develop}}</view>
+                </view>
+                <view class="three">
+                  <image class="threeImg" src="https://www.mylife.philips.com.cn/ffymadnim/upload/bgimages/three21.png"></image>
+                  <view class="threeIntr">{{Three.Nutrition}}</view>
+                </view>
+                <view class="three">
+                  <image class="threeImg" src="https://www.mylife.philips.com.cn/ffymadnim/upload/bgimages/three31.png"></image>
+                  <view class="threeIntr">{{Three.Sport}}</view>
+                </view>
+              </view>
+              <!-- 今日推荐 -->
+              <view class="todayBox">
+                <view class="todayTitle">今日推荐</view>
+                <view class="ziBox" bindtap="bindViewTap" data-id="{{Today.ArticleId}}">
+                  <view class="zi">
+                    <view class="title">{{Today.Title}}</view>
+                    <!-- <text class="author">作者：{{Today.Author}}</text> -->
+                  </view>
+                  <view class="Img"><image class="indexPic" src="{{Today.TitleImage}}"></image></view>
+                </view>
+              </view>
+            </view>
+            <!-- 0每日知识 -->
+            <!-- 1孕期宝典文章列表 -->
+            <view class="tabCon" wx:if="{{curIndex === 1}}">
+              <!-- 搜索框 -->
+              <view class="searchBox">
+                <input bindinput="getInp" bindconfirm="search" bindblur="bindblur" value='{{Inp}}' class="search" placeholder="搜索" placeholder-style="color:#999" type="text" />
+                <image class="searchIcon" src="../../images/search.png"></image>
+              </view>
+              <!-- 文章列表 -->
+              <view class="ziBox" bindtap="bindViewTap" data-id="{{item.ArticleId}}" wx:for="{{GetList}}">
+                <view class="zi">
+                  <view class="title">{{item.Title}}</view>
+                  <!-- <text class="author">作者：{{item.Author}}</text> -->
+                </view>
+                <view class="Img"><image class="indexPic" src="{{item.TitleImage}}"></image></view>
+              </view>
+              <!-- 搜索不到 -->
+              <view class="sorry" wx:if="{{issorry}}"><image class="sorryImg" src="https://www.mylife.philips.com.cn/ffymadnim/upload/pic/sorry.png"></image></view>
+              <!-- 列表到底了 -->
+              <view class="toBottom" wx:if="{{toBottom}}">糟糕~已经到底了</view>
+            </view>
+            <!-- 1孕期宝典文章列表 -->
+        </view>
+    </view>
+    <!-- tab切换 -->
+
+      
+      
+
+
+
+
+
+
+
+
+
+  </view>
+</page>
