@@ -1,7 +1,7 @@
 <!--index.wxml-->
 <view id='container'>
   <view class='indexMain'>
-    <image class="indexPic" src="../../images/index_bg.png"></image>
+    <image class="indexPic" src="https://www.mylife.philips.com.cn/ffymadnim/upload/pic/index_bg.png"></image>
 
     <view class='welcomeEnter'>
       <view wx:if="{{isshowweekdanday}}">
@@ -50,12 +50,12 @@
         </view>
       </view>
       <!-- 登录注册模态框 -->
-
-      <image class="indexMid" src="https://www.mylife.philips.com.cn/ffymadnim/upload/pic/index_mid.png" mode="widthFix" wx:if="{{!homeBgFour}}"></image>
+      <image class="fourColor" src="https://www.mylife.philips.com.cn/ffymadnim/upload/pic/fourColor.png" bindtap='toFourColor'  wx:if="{{homeBgFour}}"></image>
+      <!-- <image class="indexMid" src="https://www.mylife.philips.com.cn/ffymadnim/upload/pic/index_mid.png" mode="widthFix" wx:if="{{!homeBgFour}}"></image>
       <div wx:else>
       <image class="indexMid" src="https://www.mylife.philips.com.cn/ffymadnim/upload/pic/index_mid2.png" mode="widthFix"></image>
       <image class="fourColor" src="https://www.mylife.philips.com.cn/ffymadnim/upload/pic/fourColor.png" bindtap='toFourColor'></image>
-      </div>
+      </div> -->
 
       <view class='mainNav'>
         <view class='itemnav' catchtap='toDialogue'>
@@ -75,8 +75,8 @@
 
 
     <view class="{{isYDPic1?'isisYDPic1':'isisYDPic1Hide'}}" bindtap='hidePic1'>
-      <image wx:if="{{bigSr}}" class="pic1bottom"  src="https://www.mylife.philips.com.cn/ffymadnim/upload/pic/homeydPic1_big.png"></image>
-      <image wx:else class="pic1bottom"  src="https://www.mylife.philips.com.cn/ffymadnim/upload/pic/homeydPic1.png"></image>
+      <!-- <image wx:if="{{bigSr}}" class="pic1bottom"  src="https://www.mylife.philips.com.cn/ffymadnim/upload/pic/homeydPic1_big.png"></image> -->
+      <image class="pic1bottom"  src="https://www.mylife.philips.com.cn/ffymadnim/upload/pic/homeydPic1.png"></image>
     </view>
     <!-- <view class="RSZhezhao {{isYDPic2?'isYDPic2':'isYDPic2Hide'}}" bindtap='hidePic2'>
       <image class="ydPic2" src="../../images/homeydPic2.png"></image>
@@ -98,15 +98,29 @@
 <view class="modalBox">
   <view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showyhq}}"></view>
   <view class="modal-dialog2" wx:if="{{showyhq}}">
-    <image class='yhqbg' src='../../images/yhqbg.png'></image>
+    <image class='yhqbg' src='https://ffy.crmclick.com/adnim/upload/pic/yhqbg.png'></image>
     <image class='yhqclose' src='../../images/yhqclose.png' bindtap='closeyhq'></image>
      <view class="yhqName">6<text class='discount'>折</text> 优惠券</view>
-    <view class="modal-content2">
-      <view class='tolq' bindtap='tolq'>前往领取</view>
-    </view>
+     <view class='tolq' bindtap='tolq'>前往领取</view>
+    <!-- <view class="modal-content2">
+    </view> -->
   </view>
 </view>
 <!-- --优惠券领取弹窗 -->
+
+<!--优惠券领取引导弹窗 -->
+<view class="modalBox">
+  <view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showToRFyhq}}"></view>
+  <view class="modal-dialog2" wx:if="{{showToRFyhq}}">
+    <image class='yhqbg' src='https://ffy.crmclick.com/adnim/upload/pic/yhqToR.png'></image>
+    <image class='yhqclose' src='../../images/yhqclose.png' bindtap='closeToRei'></image>
+     <view class="yhqName2">立享<text class='discount2'>6</text>折优惠券</view>
+     <view class='tolq' bindtap='toRegi'>注册我的家庭</view>
+    <!-- <view class="modal-content2">
+    </view> -->
+  </view>
+</view>
+<!-- --优惠券领取引导弹窗 -->
 </view>
 
 <image class="diaDeyd {{isYDPic2?'isYDPic2':'isYDPic2Hide'}}" src="https://www.mylife.philips.com.cn/ffymadnim/upload/pic/homeydPic2.png" bindtap="hidePic2"></image> 

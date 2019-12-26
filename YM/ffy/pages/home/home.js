@@ -18,7 +18,8 @@ Page({
     isconnectweb:false,
     showIslogin: false,
     showIsInvite:false,
-    showyhq:false,
+    showyhq: false,//前往领取优惠券
+    showToRFyhq: false,//注册前引导(优惠券)
     yhqRF:false,
     showModal: false,
     yWeek: '',
@@ -78,7 +79,7 @@ Page({
       toLink: "toLaborChart"
     },
     openid: '',
-    isYDPic1: true,
+    isYDPic1: false,
     isYDPic2: false,
     isHasNewMessage:false,
     bigScreen:false,
@@ -306,7 +307,7 @@ Page({
       //检查是否弹出优惠券
       var hr = await ulrApi.UserLinkRecord.checkTCSelected({
         UserId: wx.getStorageSync("wxauth").userid,
-        LinkCode: '135',
+        LinkCode: '133', //前往领取过了
         PageSize: 10,
         PageIndex: 1
       });
@@ -316,11 +317,29 @@ Page({
           showyhq: false
         })
       }else{
-        app.getEventLog(135)
-        this.setData({
-          yhqRF: false,
-          showyhq: true
-        })
+        // app.getEventLog(135)
+        // this.setData({
+        //   yhqRF: false,
+        //   showyhq: true
+        // })
+        var hr = await ulrApi.UserLinkRecord.checkTCSelected({
+          UserId: wx.getStorageSync("wxauth").userid,
+          LinkCode: '134', //关闭次数>=2
+          PageSize: 10,
+          PageIndex: 1
+        });
+        if (hr.state == 1 && hr.rows && hr.rows.length>1) {
+          this.setData({
+            yhqRF: false,
+            showyhq: false
+          })
+        } else {
+          // app.getEventLog(135)
+          this.setData({
+            yhqRF: false,
+            showyhq: true
+          })
+        }
       }
     }else{
       var logininfo = wx.getStorageSync("wxauth")
@@ -335,7 +354,17 @@ Page({
         isshowweekdanday: false
       })
     }
-
+    if (wx.getStorageSync("homeShowTip") == null || wx.getStorageSync("homeShowTip") == "") {
+      wx.setStorageSync('homeShowTip', { userid: wx.getStorageSync("wxauth").userid, showtip: false })
+      this.setData({
+        isYDPic1: true
+      })
+    } else {
+      this.setData({
+        isYDPic1: false,
+        isYDPic2: false
+      })
+    }
     this.getInviteRec();
   },
   //查询是否有新消息
@@ -368,10 +397,30 @@ Page({
     })
   },
   //关闭引导页2
-  hidePic2: function () {
+  hidePic2:async function () {
     this.setData({
       isYDPic2: false
     })
+    if (wx.getStorageSync("familyId") == "" || wx.getStorageSync("familyId") == null){
+      console.log("没有家庭组")
+      //检查是否弹出优惠券注册引导。未注册只弹出一次，已注册不弹
+      var hr = await ulrApi.UserLinkRecord.checkTCSelected({
+        UserId: wx.getStorageSync("wxauth").userid,
+        LinkCode: '137',
+        PageSize: 10,
+        PageIndex: 1
+      });
+      if (hr.state == 1 && hr.rows && hr.rows.length > 0) {
+        this.setData({
+          showToRFyhq: false
+        })
+      } else {
+        app.getEventLog(137)
+        this.setData({
+          showToRFyhq: true
+        })
+      }
+    }
   },
   //检查20-24周 是否已选择套餐
   checkTC: async function () {
@@ -502,35 +551,47 @@ Page({
   // },
 
   //打开领取优惠券
-  bingshowyhq:function(){
+  bingshowyhq:async function(){
     app.getEventLog(135)
     this.setData({
-      showyhq:true
+      showyhq: true,
+      yhqRF: false
     })
   },
   //关闭优惠券领取窗
   closeyhq:async function(){
-    app.getEventLog(134)
-
     var hr = await ulrApi.UserLinkRecord.checkTCSelected({
       UserId: wx.getStorageSync("wxauth").userid,
       LinkCode: '134',
       PageSize: 10,
       PageIndex: 1
     });
-    if (hr.state == 1 && hr.rows && hr.rows.length > 1) {
-      this.setData({
-        yhqRF:false
-      })
+    if (hr.state == 1 && hr.rows.length>0) {
+      var hrs = await ulrApi.UserLinkRecord.checkTCSelected({
+        UserId: wx.getStorageSync("wxauth").userid,
+        LinkCode: '135',
+        PageSize: 10,
+        PageIndex: 1
+      });
+      if (hrs.state == 1 && hr.rows && hr.rows.length > 0){
+        app.getEventLog(134)
+        this.setData({
+          showyhq: false,
+          yhqRF: false
+        })
+      }else{
+        this.setData({
+          showyhq: false,
+          yhqRF: true
+        })
+      }
     }else{
+      app.getEventLog(134)
       this.setData({
+        showyhq: false,
         yhqRF: true
       })
     }
-
-    this.setData({
-      showyhq: false
-    })
   },
   //前往领取优惠券
   tolq:function(){
@@ -549,6 +610,22 @@ Page({
       success(res) {
         // 打开成功
       }
+    })
+  },
+
+  //关闭优惠券弹窗去注册，关闭
+  closeToRei: async function () {
+    app.getEventLog(138)
+    this.setData({
+      showToRFyhq: false
+    })
+  },
+  //关闭优惠券弹窗去注册
+  toRegi:function(){
+    app.getEventLog(139)
+    this.setData({
+      showToRFyhq: false,
+      showModal: true
     })
   },
   
@@ -602,14 +679,14 @@ Page({
           this.getNewsMessage();
         }
       }
-      if (wx.getStorageSync("homeShowTip") == null || wx.getStorageSync("homeShowTip") == "") {
-        wx.setStorageSync('homeShowTip', { userid: wx.getStorageSync("wxauth").userid, showtip: false })
-      } else {
-        this.setData({
-          isYDPic1: false,
-          isYDPic2: false
-        })
-      }
+      // if (wx.getStorageSync("homeShowTip") == null || wx.getStorageSync("homeShowTip") == "") {
+      //   wx.setStorageSync('homeShowTip', { userid: wx.getStorageSync("wxauth").userid, showtip: false })
+      // } else {
+      //   this.setData({
+      //     isYDPic1: false,
+      //     isYDPic2: false
+      //   })
+      // }
       this.setData({
         showIslogin: false
       })

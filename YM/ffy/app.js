@@ -1,4 +1,4 @@
-﻿//app.js
+//app.js
 //appid:wx4c528ff2aabe915b 孕妈的
 import regeneratorRuntime from './libs/regenerator-runtime/runtime-module';
 import authApi from './services/dataapi'
@@ -7,17 +7,17 @@ const setting = require("./utils/setting.js");
 const util = require("./utils/util.js");
 
 var apiUrl = setting.defaultUrl; //正式环境
-var apiUrlDev = "https://www.mylife.philips.com.cn/ffymwebapi"; //开发环境
-// var apiUrlDev = "http://localhost:8090"; //开发环境，本地测试每日签到功能//开发环境https://ffy.crmclick.com/webapi
+var apiUrlDev = "https://ffy.crmclick.com/webapi"; //开发环境
+// var apiUrlDev = "http://localhost:8090"; //开发环境，本地测试每日签到功能
 
 var apiImgUrl = setting.defaultImgUrl; //正式环境-图片
-var apiImgUrlDev = "https://www.mylife.philips.com.cn/ffymadnim/"; //开发环境
+var apiImgUrlDev = "https://ffy.crmclick.com/adnim/"; //开发环境
 
 App({
   onLaunch: async function (options) {
     let that=this;
     wx.request({
-      url: "https://ffy.crmclick.com/webapi/api/CheckEnv/GetHeaders",
+      url: "https://www.mylife.philips.com.cn/ffymwebapi/api/CheckEnv/GetHeaders",//"https://ffy.crmclick.com/webapi/api/CheckEnv/GetHeaders",
       method:'POST',
       header: {
         'content-type': 'application/json' // 默认值

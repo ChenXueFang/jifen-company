@@ -1,12 +1,16 @@
 /**index.wxss**/
-
+page{
+  background-color: #ffc8d4;
+}
 #container {
   width: 100%;
+  height: 100%;
 }
-
 .indexPic {
-  width: 100vw;
-  height: 100vh;
+  /* width: 100vw;
+  height: 100vh; */
+  width: 100%;
+  height: 1165rpx;
 }
 
 .enterPro {
@@ -49,8 +53,11 @@
 }
 
 .mainNav {
-  margin-top:6%;
-  width: 100%;
+  /* margin-top:6%;
+  width: 100%; */
+  position: fixed;
+  bottom: 40rpx;
+  left:0rpx;
 }
 
 .nav1 {
@@ -160,7 +167,7 @@
   position: absolute;
   width: 59rpx;
   height: 70rpx;
-  top: 70rpx;
+  top: 90rpx;
   left: -20rpx;
 }
 
@@ -168,7 +175,7 @@
   position: absolute;
   width: 79rpx;
   height: 79rpx;
-  top: 65rpx;
+  top: 86rpx;
   right: 0rpx;
 }
 
@@ -379,6 +386,7 @@
   display: inline-block;
   margin:20rpx 10rpx 0 10rpx;
   border-radius: 25rpx;
+  box-shadow: 0 0 15rpx 5rpx #FFF;
 }
 .dia{
   position: absolute;
@@ -404,11 +412,14 @@
   right: -15rpx;
 }
 .fourColor{
-  width: 150rpx;
-  height: 150rpx;
-  position: absolute;
+  width: 250rpx;
+  height: 250rpx;
+  /* position: absolute;
   margin-left: -170rpx;
-  margin-top: 157rpx;
+  margin-top: 157rpx; */
+  position: fixed;
+  bottom: 300rpx;
+  margin-left: 75rpx;
 }
 .yhqimgStyle{
   width: 78rpx;
@@ -417,7 +428,7 @@
 
 .modalBox .modal-dialog2 {
   width: 620rpx;
-  height: 540rpx;
+  height: 557rpx;
   overflow: hidden;
   position: fixed;
   top: 28%;
@@ -432,17 +443,29 @@
 }
 .yhqbg{
   width: 620rpx;
-  height: 430rpx;
+  height: 558rpx;
 }
 .yhqName{
   position: absolute;
-  margin-top: -195rpx;
   margin-left: 210rpx;
+  top: 280rpx;
   color: #c0900e;
   font-size: 45rpx;
 }
+.yhqName2{
+  position: absolute;
+  margin-left: 165rpx;
+  top: 268rpx;
+  font-size: 45rpx;
+  font-weight: 500;
+  color: #ccaf00;
+}
 .discount{
   font-size: 20rpx;
+}
+.discount2{
+  font-size: 60rpx;
+  letter-spacing: 0px;
 }
 .tolq{
   width: 430rpx;
@@ -452,6 +475,9 @@
   line-height: 60rpx;
   color: #FFF;
   margin-left: 100rpx;
+  position: absolute;
+  top: 445rpx;
+  text-align: center;
 }
 .yhqclose{
   width: 46rpx;

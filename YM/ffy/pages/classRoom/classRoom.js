@@ -117,13 +117,23 @@ Page({
     this.getList();
   },
 
-  // 三大板块 == null ? "" : 1
+  // 三大板块 
   getThree: async function() {
+    if (this.data.PDay == null || this.data.PDay < 36 ){
+      this.setData({
+        PDay: 36
+      })
+    }
+    if (this.data.PDay > 287){
+      this.setData({
+        PDay: 287
+      })
+    }
     var that = this;
     var hr = await dataApi.GetThree.GetListBySC({
       PageSize: 1,
       PageIndex: 1,
-      PDay: this.data.PDay == null ? "" : 36
+      PDay: this.data.PDay
     });
     if (hr.rows != null && hr.rows.length > 0) {
       that.setData({
@@ -132,13 +142,13 @@ Page({
     }
   },
 
-  // 今日推荐 ==null?"":1
+  // 今日推荐 
   getToday: async function() {
     var that = this;
     var hr = await dataApi.ClassRomm.GetListBySC({
       PageSize: 1,
       PageIndex: 1,
-      SortNum: this.data.SortNum == null ? "" : 1
+      SortNum: this.data.SortNum == null ? 1 : this.data.SortNum
     });
     if (hr.rows != null && hr.rows.length > 0) {
       that.setData({
