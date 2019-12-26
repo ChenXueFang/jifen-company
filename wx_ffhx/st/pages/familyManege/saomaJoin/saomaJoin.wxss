@@ -1,0 +1,90 @@
+/* pages/familyManege/saomaJoin/saomaJoin.wxss */
+.Box{
+  width: 100%;
+  text-align: center;
+  font-size: 44rpx;
+  font-weight: 500;
+  color: #484848;
+}
+.title{
+  margin-top: 40%;
+}
+.infoBox{
+  font-size: 34rpx;
+  color: #484848;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 32rpx 0;
+}
+.photo{
+  width: 86rpx;
+  height: 86rpx;
+  border-radius: 50%;
+  margin-right: 30rpx;
+}
+.btnBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80rpx;
+}
+.btn{
+  width: 38%;
+  height: 84rpx;
+  line-height: 84rpx;
+  color: #fff;
+  border-radius: 8rpx;
+  background-color: #4e4e4e;
+}
+.know{
+  background: #1b96da;
+}
+
+
+.pcolor{
+  color: #1b96da;
+}
+.checkGroup{
+  display: flex;
+}
+.check_wrap {
+  text-align: left;
+  width: 80%;
+  margin: auto;
+  font-size: 28rpx;
+  line-height: 1.33;
+  color: #787878;
+  margin-top: 60rpx;
+}
+
+.checkbox {
+  margin-top: 20rpx;
+  width: 80%;
+  font-size: 28rpx;
+}
+
+checkbox .wx-checkbox-input {
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;/* 圆角 */
+  border: 1rpx solid #787878;
+}
+checkbox .wx-checkbox-input.wx-checkbox-input-checked{
+  border: 1rpx solid #1b96da;
+  background: #1b96da;
+}
+/* 选中后的 对勾样式 （白色对勾 可根据UI需求自己修改） */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before{
+  border-radius: 50%;/* 圆角 */
+  width: 40rpx;/* 选中后对勾大小，不要超过背景的尺寸 */
+  height: 40rpx;/* 选中后对勾大小，不要超过背景的尺寸 */
+  line-height: 40rpx;
+  text-align: center;
+  font-size:30rpx; /* 对勾大小 30rpx */
+  color:#fff; /* 对勾颜色 白色 */
+  background: transparent;
+  transform:translate(-50%, -50%) scale(1);
+  -webkit-transform:translate(-50%, -50%) scale(1);
+}
+

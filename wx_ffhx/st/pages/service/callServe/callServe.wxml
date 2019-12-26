@@ -1,0 +1,8 @@
+<!--pages/vipServe/inviteCode/inviteCode.wxml-->
+<view class="box">
+  <image class="warn" src="../../../images/callServe.png"></image>
+  <view class="title">咨询须知</view>
+  <view class="tip">电话咨询内容主要包括设备使用，设备保养，故障处理及异常数据解答。电话咨询不可替代专业临床医疗问诊，仅作为建议参考。</view>
+
+  <button class='btn know' bindtap="call">开始咨询</button>
+</view>

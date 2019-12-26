@@ -1,0 +1,8 @@
+<!--pages/vipServe/inviteCode/inviteCode.wxml-->
+<view class="box">
+  <image class="warn" src="../../../images/warnYellow.png"></image>
+  <view class="title">申请须知</view>
+  <view class="tip">预约内容主要包含，标准装机，消毒和耗材更换，报告解读等服务，预约成功后1日内，您将收到飞利浦客户体验中心的来电，请保持手机顺畅。</view>
+
+  <button class='btn know' bindtap="toOrderForm">开始预约</button>
+</view>

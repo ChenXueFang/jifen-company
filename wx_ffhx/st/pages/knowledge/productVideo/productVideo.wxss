@@ -1,0 +1,4 @@
+/* pages/knowledge/productVideo/productVideo.wxss */
+#myVideo{
+  width: 100%;
+}

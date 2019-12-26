@@ -1,0 +1,33 @@
+
+page{
+  height: 100%
+}
+.con_tit{
+  width: 100%;
+  text-align: center;
+  font-size: 44rpx;
+  font-weight: bold;
+  margin-top: 50rpx;
+}
+swiper{
+  height: 99% !important;
+}
+.zjgs-1{
+  height: 400rpx;
+}
+swiper-item{
+  text-align: center
+}
+.desc{
+  text-align: left;
+  padding: 30rpx 50rpx;
+}
+.desc_tit{
+  color: #0070C0;
+  font-size: 38rpx;
+  font-weight: bold;
+  margin-bottom: 50rpx;
+}
+.desc_item{
+  margin-top: 10rpx;
+}

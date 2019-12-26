@@ -1,0 +1,224 @@
+page{
+  height: 100%;
+}
+.container{
+  width: 100%;
+}
+.part1{
+  width: 85%;
+  margin: auto;
+  text-align: left;
+  margin-top: 148rpx;
+}
+.tit{
+  font-size: 50rpx;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.84;
+  letter-spacing: normal;
+  color: #000000;
+}
+.inputsn{
+  margin-top: 184rpx;
+  position: relative;
+  height: 80rpx;
+  border-bottom: 2px solid #D0D0D0;
+}
+.inputsn input{
+  width: 490rpx;
+  height: 75rpx;
+}
+.smzc{
+  position: absolute;
+  right: 45rpx;
+  top: 12rpx;
+}
+.smzc text{
+  font-size: 32rpx;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #0c0c0c;
+}
+.btnGroup{
+  margin-top: 110rpx;
+  text-align: center;
+}
+.nextbtn{
+  width: 100%;
+  height: 84rpx;
+  opacity: 0.4;
+  border-radius: 4px;
+  background-color: #1b96da;
+  color: #FFFFFF;
+}
+.nextbtn2{
+  width: 100%;
+  height: 84rpx;
+  border-radius: 4px;
+  background-color: #1b96da;
+  color: #FFFFFF;
+}
+.joinFamGroup{
+  margin-top: 52rpx;
+  width: 100%;
+  height: 84rpx;
+  border-radius: 4px;
+  background-color: #4e4e4e;
+  color: #FFFFFF;
+  margin-bottom: 16rpx;
+}
+.question{
+  font-size: 30rpx;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 1px;
+  color: #626262;
+}
+.fixbottom{
+  width: 85%;
+  height: 52rpx;
+  position: fixed;
+  bottom: 25rpx;
+  font-size: 30rpx;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #1072e5;
+}
+
+/*弹窗*/
+.RSZhezhao {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+  top: 0;
+  left: 0;
+}
+.isRSShow {
+  display: block;
+}
+.isRSHide {
+  display: none;
+}
+.rscontent {
+  width: 560rpx;
+  height: 335rpx;
+  background: #fff;
+  margin: 50% auto;
+  border-radius: 5rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  padding: 0 30rpx;
+}
+.xlhcontent {
+  width: 560rpx;
+  height: 605rpx;
+  background: #fff;
+  margin: 50% auto;
+  border-radius: 5rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  padding: 0 30rpx;
+}
+.rsc_tt{
+  border-bottom: 1px solid #F0F0F0;
+  margin-top: 40rpx;
+  width: 100%;
+  height: 235rpx;
+}
+.xlh_tt{
+  border-bottom: 1px solid #F0F0F0;
+  margin-top: 40rpx;
+  width: 100%;
+  height: 505rpx;
+}
+.drclose {
+  right: 115rpx;
+  top: 25rpx;
+}
+.drsure {
+  right: 20rpx;
+  top: 25rpx;
+}
+.qtit{
+  width: 100%;
+  font-size: 34rpx;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+  display: block;
+}
+.qdesc{
+  width: 90%;
+  margin: auto;
+  margin-top: 22rpx;
+  margin-bottom: 35rpx;
+  font-size: 28rpx;
+  line-height: 1.71;
+  color: #888888;
+}
+.closeWin{
+  font-size: 34rpx;
+  font-weight: 500;
+  text-align: center;
+  color: #1575e5;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.closeWin2{
+  font-size: 34rpx;
+  font-weight: 500;
+  height: 100rpx;
+  line-height: 100rpx;
+  width: 100%;
+}
+.cwleft{
+  width: 49%;
+  height: 100rpx;
+  text-align: center;
+  display: inline-block;
+  border-right: 1px solid #F0F0F0;
+}
+.cwright{
+  color: #1575e5;
+  width: 50%;
+  height: 100rpx;
+  text-align: center;
+  display: inline-block;
+}
+.ques{
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  margin-top: 25rpx;
+  margin-left: 10rpx;
+}
+.scan{
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  margin-left: 5rpx;
+}
+.xlh{
+  width: 505rpx;
+  height: 325rpx;
+}

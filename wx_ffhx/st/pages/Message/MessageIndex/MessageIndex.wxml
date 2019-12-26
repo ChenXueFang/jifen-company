@@ -1,0 +1,50 @@
+<view class='Box'>
+  <view class="swiper-tab">
+    <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">最新活动</view>
+    <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">设备维护</view>
+    <view class="swiper-tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="clickTab">服务通知</view>
+  </view>
+
+  <!--市场活动--3--->
+  <view class = "{{currentTab == 0 ? 'show':'hidden'}}" >
+    <!--市场活动文章列表-->
+    <view class='newslist' wx:for="{{activityList}}" wx:key="index">
+      <view class="newTime" wx:if="{{item.Remark?true:false}}">{{item.Remark}}</view>
+      <view class='newCon' bindtap="tomessageDetails" data-guid="{{item.ArticleIdGuid}}" data-classtype="3">
+        <view class="newZi">{{item.Title}}</view>
+        <image class="newImg" src="{{item.TitleImage}}"></image>
+      </view>
+    </view>
+    <!--市场活动文章列表 end-->
+  </view>
+  <!--市场活动end-->
+
+  <!--设备维护--4--->
+  <view class = "{{currentTab == 1 ? 'show':'hidden'}}" >
+    <!--设备维护文章列表-->
+    <view class='newslist' wx:for="{{equipmentList}}" wx:key="index">
+      <view class="newTime" wx:if="{{item.Remark?true:false}}">{{item.Remark}}</view>
+      <view class='newCon' bindtap="tomessageDetails" data-guid="{{item.ArticleIdGuid}}" data-classtype="4">
+        <view class="{{item.TitleImage?'newZi':'newZi2'}}">{{item.Title}}</view>
+        <image class="newImg" src="{{item.TitleImage}}" wx:if="{{item.TitleImage}}"></image>
+      </view>
+    </view>
+    <!--设备维护文章列表 end-->
+  </view>
+  <!--设备维护end--->
+
+  <!--服务通知--->
+  <view class = "{{currentTab == 2 ? 'show':'hidden'}}" >
+    <!--服务通知文章列表-->
+    <view class='newslist' wx:for="{{informList}}" wx:key="index">
+      <view class="newTime" wx:if="{{item.Remark?true:false}}">{{item.Remark}}</view>
+      <view class='newCon' bindtap="tomessageDetails" data-guid="{{item.ExtensionId}}" data-id="{{item.RemindId}}" data-remindtype="{{item.RemindType}}">
+        <view class="{{item.TitleImg?'newZi':'newZi2'}}">{{item.Title}}</view>
+        <image class="newImg" src="{{item.TitleImg}}" wx:if="{{item.TitleImg}}"></image>
+      </view>
+      <view style='padding-bottom:10rpx'  wx:if="{{item.Status==-1}}"><image class="importantimg" src="../../../images/important.png"></image></view>
+    </view>
+    <!--服务通知文章列表 end-->
+  </view>
+  <!--服务通知end--->
+</view>

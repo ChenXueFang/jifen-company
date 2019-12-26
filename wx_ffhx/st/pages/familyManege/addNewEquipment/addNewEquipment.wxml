@@ -1,0 +1,42 @@
+<view class='container'>
+  <view class='part1'>
+    <view class='tit'>
+      <text>请输入添加设备的序列号</text>
+    </view>
+
+    <view class='inputsn'>
+      <input placeholder="请输入SN号" value='{{snNumber}}' bindinput='onInputValue'/>
+      <view class='smzc' bindtap='showDesc'>
+        <text>扫码注册</text>
+        <image class="scan" src="../../../images/scan.png"></image>
+      </view>
+    </view>
+
+    <view class='btnGroup'>
+      <button class="nextbtn" wx:if="{{snNumber==''}}">下一步</button>
+      <button class="nextbtn2" wx:else bindtap='toNextStep'>下一步</button>
+    </view>
+
+    <view class='fixbottom' bindtap='toCall'>
+      <text>客服 400-820-6665</text>
+    </view>
+
+    <!--扫描提示弹窗-->
+    <view class="RSZhezhao {{isShowDesc?'isRSShow':'isRSHide'}}">
+       <view class='xlhcontent'>
+          <view class='xlh_tt'>
+            <text class='qtit'>扫描机身上的二维码</text>
+            <view class='qdesc'>
+              <image class="xlh" src="../../../images/xuliehao2.png"></image>
+              <text>扫描呼吸机底部的条形码</text>
+            </view>
+          </view>
+          <view class='closeWin'>
+            <text bindtap="toSM">知道了</text>
+          </view>
+        </view>
+    </view>
+    <!--扫描提示弹窗end-->
+
+  </view>
+</view>

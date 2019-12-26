@@ -1,0 +1,86 @@
+{
+  "pages": [
+    
+    "pages/index/index",
+    "pages/license/license",
+    "pages/protocol/protocol",
+    "pages/service/orderForm2/orderForm2",
+    "pages/logRecord/main",
+    "pages/service/orderKnow/orderKnow",
+    "pages/service/orderSuccess/orderSuccess",
+    "pages/service/callServe/callServe",
+    "pages/service/vipRights/vipRights",
+    "pages/service/serviceIndex/serviceIndex",
+    "pages/vipServe/inviteCode/inviteCode",
+    "pages/vipServe/alreadyOpen/alreadyOpen",
+    "pages/knowledge/search/search",
+    "pages/knowledge/productEssay/productEssay",
+    "pages/knowledge/illnessEssay/illnessEssay",
+    "pages/knowledge/productVideo/productVideo",
+    "pages/knowledge/knowledgeIndex/knowledgeIndex",
+    "pages/knowledge/productDescription/productDescription",
+    "pages/Message/messageDetails/messageDetails",
+    "pages/Message/MessageIndex/MessageIndex",
+    "pages/familyManege/equipment/equipment",
+    "pages/familyManege/saomaJoin/saomaJoin",
+    "pages/familyManege/personalPage/personalPage",
+    "pages/familyManege/teamList/teamList",
+    "pages/indexDataEChart/indexDataEChart",
+    "pages/logs/logs",
+    "pages/register/stepOne/stepOne",
+    "pages/register/stepTwo/stepTwo",
+    "pages/register/stepThree/stepThree",
+    "pages/joinFamilyGroup/stepOne/stepOne",
+    "pages/joinFamilyGroup/stepTwo/stepTwo",
+    "pages/joinFamilyGroup/stepThree/stepThree",
+    "pages/indexDataExplain/indexDataExplain",
+    "pages/applyInformation/leaderAgree/leaderAgree",
+    "pages/SelectDate/SelectDate",
+    "pages/familyMsg/familyMsg",
+    "pages/logRecord/selDailyDate/selDailyDate",
+    "pages/logRecord/questionnaire/questionnaire",
+    "pages/knowledge/productIntro/productIntro",
+    "pages/familyManege/addNewEquipment/addNewEquipment",
+    "pages/familyManege/completeAddNewEquip/completeAddNewEquip"
+   
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序天气信息的显示"
+    }
+  },
+  "tabBar": {
+    "list": [
+      {
+        "iconPath": "images/index.png",
+        "pagePath": "pages/index/index",
+        "text": "今天",
+        "selectedIconPath": "images/index_sel.png"
+      },
+      {
+        "iconPath": "images/knowledge.png",
+        "pagePath": "pages/knowledge/knowledgeIndex/knowledgeIndex",
+        "text": "知识",
+        "selectedIconPath": "images/knowledge_sel.png"
+      },
+      {
+        "iconPath": "images/service.png",
+        "pagePath": "pages/service/serviceIndex/serviceIndex",
+        "text": "服务",
+        "selectedIconPath": "images/service_sel.png"
+      }
+    ],
+    "color": "#bababa",
+    "selectedColor": "#5da0de"
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "飞畅呼吸",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "navigateToMiniProgramAppIdList": [
+    "wxaf72a47464d8f40a"
+  ]
+}

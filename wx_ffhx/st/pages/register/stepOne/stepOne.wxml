@@ -1,0 +1,98 @@
+<view class='container'>
+  <view class='part1'>
+    <view class='tit'>
+      <text>步骤 1/2 \n</text>
+      <text>输入产品序列号</text>
+      <image class="ques" src="../../../images/regiques.png" bindtap='showSearch'></image>
+    </view>
+
+    <view class='inputsn'>
+      <input placeholder="请输入SN号" value='{{snNumber}}' bindinput='onInputValue'/>
+      <view class='smzc' bindtap='showDesc'>
+        <text>扫码注册</text>
+        <image class="scan" src="../../../images/scan.png"></image>
+      </view>
+    </view>
+
+    <view class='btnGroup'>
+      <button class="nextbtn" wx:if="{{snNumber==''}}">下一步</button>
+      <!-- <button class="nextbtn2" wx:else open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">下一步</button> -->
+      <button class="nextbtn2" wx:else open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="getUserInfo">下一步</button>
+      <button class='joinFamGroup' bindtap='toJoinGroup'>加入家庭组</button>
+      <!-- <button bindtap='showExit'>打开序列号已存在弹窗</button> -->
+      <text class='question' bindtap="showRS">什么是家庭组？</text>
+    </view>
+
+    <view class='fixbottom' bindtap='toCall'>
+      <text>客服 400-820-6665</text>
+    </view>
+
+    <!--什么是家庭组弹窗-->
+    <view class="RSZhezhao {{isRSShow?'isRSShow':'isRSHide'}}">
+       <view class='rscontent'>
+          <view class='rsc_tt'>
+            <text class='qtit'>什么是家庭组？</text>
+            <view class='qdesc'>
+              <text>一次绑定家人共享更安心，绑定家庭组后即可同步呼吸机简报及消息提醒。</text>
+            </view>
+          </view>
+          <view class='closeWin'>
+            <text bindtap="hideRS">知道了</text>
+          </view>
+        </view>
+    </view>
+    <!--什么是家庭组弹窗end-->
+
+    <!--如何找到产品序列号弹窗-->
+    <view class="RSZhezhao {{isSearchShow?'isRSShow':'isRSHide'}}">
+       <view class='xlhcontent'>
+          <view class='xlh_tt'>
+            <text class='qtit'>如何找到产品序列号？</text>
+            <view class='qdesc'>
+              <image class="xlh" src="../../../images/xuliehao1.png"></image>
+              <text>设备底部靠近电源插口侧查看序列号</text>
+            </view>
+          </view>
+          <view class='closeWin'>
+            <text bindtap="hideSearch">知道了</text>
+          </view>
+        </view>
+    </view>
+    <!--如何找到产品序列号弹窗end-->
+
+    <!--序列号已存在弹窗-->
+    <view class="RSZhezhao {{isExist?'isRSShow':'isRSHide'}}">
+       <view class='rscontent'>
+          <view class='rsc_tt'>
+            <text class='qtit'>{{snNumber}}</text>
+            <view class='qdesc'>
+              <text>此序列号已注册，是否申请加入该序列号所在的家庭组？</text>
+            </view>
+          </view>
+          <view class='closeWin2'>
+            <text class='cwleft' bindtap="hideExit">取消</text>
+            <text class='cwright' bindtap="toJoinFamilyGroup">申请加入家庭组</text>
+          </view>
+        </view>
+    </view>
+    <!--序列号已存在弹窗end-->
+
+    <!--扫描提示弹窗-->
+    <view class="RSZhezhao {{isShowDesc?'isRSShow':'isRSHide'}}">
+       <view class='xlhcontent'>
+          <view class='xlh_tt'>
+            <text class='qtit'>扫描机身上的二维码</text>
+            <view class='qdesc'>
+              <image class="xlh" src="../../../images/xuliehao2.png"></image>
+              <text>扫描呼吸机底部的条形码</text>
+            </view>
+          </view>
+          <view class='closeWin'>
+            <text bindtap="toSM">知道了</text>
+          </view>
+        </view>
+    </view>
+    <!--扫描提示弹窗end-->
+
+  </view>
+</view>

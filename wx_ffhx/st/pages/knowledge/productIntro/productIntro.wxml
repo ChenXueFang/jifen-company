@@ -1,0 +1,15 @@
+
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{dataSource.length}}" wx:key="{{index}}">
+    <swiper-item>
+      <view class="swiper-item" >
+        <view class='con_tit'>{{dataSource[index].Title}}</view>
+        <image class="zjgs-1" src="{{dataSource[index].TitleImage}}"></image>
+        
+        <view class='desc'>
+          <rich-text nodes="{{dataSource[index].Content}}" ></rich-text>
+        </view>
+      </view>
+    </swiper-item>
+  </block>
+</swiper>

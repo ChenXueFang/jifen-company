@@ -1,0 +1,60 @@
+<view class='serviceMain'>
+  <!--开启VIP服务  catch:tap="tovipServe"-->
+  <view class='vipServiceBox' bindtap="tovipRights" wx:if='{{!IsVIP}}'>
+    <view>
+      <image class="serviceImg" src="../../../images/serviceIndex.png"></image>
+      <!-- <view class="open">开启VIP服务</view> -->
+      <view class="open">解锁专属会员服务</view>
+      <!-- <view class="vipBtn" wx:if='{{!IsVIP}}'>了解详情</view> -->
+      <view class="vipBtn" wx:if='{{!IsVIP}}'>查看权益</view>
+    </view>
+  </view>
+  <view class='vipServiceBox alreadyVipBox' bindtap="tovipRights" wx:else>
+    <view class="alreadyVip">
+      <image class="serviceImg1" src="../../../images/inviteCode.png"></image>
+      <view class="open">您已成为专属会员</view>
+      <view class="vipBtn" catch:tap="tovipRights">“{{nickName}}”欢迎回来</view>
+    </view>
+  </view>
+  <!--开启VIP服务end-->
+
+  <!--电话咨询-->
+  <view class="outerCallinfo">
+    <view class='callinfo' bindtap="tocallServe">
+      <view class='callinfo_left'>
+      <image class="logo logo1" src="../../../images/icon1.png"></image>
+        <view class='callinfo_title'>电话咨询</view>
+        <!-- <view>远程报告解读，RTcall</view> -->
+        <view></view>
+      </view>
+      <text class="iconfont icon-right"></text>
+    </view>
+  </view>
+  <!--电话咨询end-->
+
+  <!--上门服务-->
+  <view class="outerCallinfo">
+    <view class='callinfo' bindtap="toOrderKnow">
+      <view class='callinfo_left'>
+      <image class="logo logo2" src="../../../images/icon2.png"></image>
+        <view class='callinfo_title'>预约服务</view>
+        <view></view>
+      </view>
+      <text class="iconfont icon-right"></text>
+    </view>
+  </view>
+  <!--上门服务end-->
+
+  <!--在线商城-->
+  <view class="outerCallinfo">
+    <view class='callinfo' bindtap="toStore">
+      <view class='callinfo_left'>
+      <image class="logo logo3" src="../../../images/icon3.png"></image>
+        <view class='callinfo_title'>会员活动</view>
+        <!-- <view>耗材，配件购买</view> -->
+      </view>
+      <text class="iconfont icon-right"></text>
+    </view>
+  </view>
+  <!--在线商城end-->
+</view>

@@ -1,0 +1,53 @@
+<view class='ques'>
+  <view class='detail'>
+    <view class='item'>
+      <view class='item_ti'>1.您感觉咳嗽较前一周明显增多吗？</view>
+      <view class="section section_gap">
+        <radio-group class="radio-group" bindchange="t1change">
+            <radio class="radio" wx:for-items="{{items}}" wx:key="name" value="{{item.name}}" checked="{{item.name==t1answer}}" disabled="{{todayDate!=choiceDate}}">
+                <view>{{item.value}}</view>
+            </radio>
+        </radio-group>
+      </view>
+    </view>
+
+    <view class='item'>
+      <view class='item_ti'>2.您感觉痰量较前一周明显增多吗？</view>
+      <view class="section section_gap">
+        <radio-group class="radio-group" bindchange="t2change">
+            <radio class="radio" wx:for-items="{{items}}" wx:key="name" value="{{item.name}}" checked="{{item.name==t2answer}}" disabled="{{todayDate!=choiceDate}}">
+                <view>{{item.value}}</view>
+            </radio>
+        </radio-group>
+      </view>
+    </view>
+
+    <view class='item'>
+      <view class='item_ti'>3.您感觉有较前一周加重的气促喘憋吗？</view>
+      <view class="section section_gap">
+        <radio-group class="radio-group" bindchange="t3change">
+            <radio class="radio" wx:for-items="{{items}}" wx:key="name" value="{{item.name}}" checked="{{item.name==t3answer}}" disabled="{{todayDate!=choiceDate}}">
+                <view>{{item.value}}</view>
+            </radio>
+        </radio-group>
+      </view>
+    </view>
+
+    <view class='item'>
+      <view class='item_ti'>4.有因疾病或其他症状感到心情低落吗？</view>
+      <view class="section section_gap">
+        <radio-group class="radio-group" bindchange="t4change">
+            <radio class="radio" wx:for-items="{{items}}" wx:key="name" value="{{item.name}}" checked="{{item.name==t4answer}}" disabled="{{todayDate!=choiceDate}}">
+                <view>{{item.value}}</view>
+            </radio>
+        </radio-group>
+      </view>
+    </view>
+
+  <view class="commit" wx:if="{{todayDate==choiceDate}}">
+    <view class='commitBtn' bindtap='commit'>提  交</view>
+  </view>
+  <view class='cbottom'></view>
+
+  </view>
+</view>

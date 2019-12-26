@@ -1,0 +1,13 @@
+<!--pages/essay/essay.wxml-->
+<import src="../../../wxParse/wxParse.wxml" />
+
+<page>
+  <view class="box">
+    <view class="container">
+      <view class="essayBox">
+        <view class="title">{{Act.Title}}</view>
+        <template class="essayZi" is="wxParse" data="{{wxParseData:article.nodes}}" />
+      </view>
+    </view>
+  </view>
+</page>

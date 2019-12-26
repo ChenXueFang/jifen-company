@@ -1,0 +1,19 @@
+<!--pages/applyInformation/leaderAgree/leaderAgree.wxml-->
+<view class="box">
+  <!-- 头像行 -->
+  <view class="lineBox">
+    <image class="photo" src="{{familyMsg.msgList.MPHeadImg}}"></image>
+    <view class="wxInfo">
+      <view>{{familyMsg.msgList.MPNickName}}</view>
+    </view>
+  </view>
+
+  <view class="lineBox">
+    <text>申请时间</text>
+    <view>{{familyinfo}}</view>
+  </view>
+
+  <button class="btn agree" bindtap="agreejoin">同意</button>
+  <button class="btn" bindtap="refusejoin">拒绝</button>
+
+</view>

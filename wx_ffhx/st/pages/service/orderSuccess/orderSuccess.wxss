@@ -1,0 +1,39 @@
+/* pages/applyInformation/alreadyExit/alreadyExit.wxss */
+.box{
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+}
+.warn{
+  width: 170rpx;
+  height: 170rpx;
+  margin-top: 100rpx;
+}
+.title{
+  font-size: 44rpx;
+  font-weight: 500;
+  color: #484848;
+  margin-top: 80rpx;
+}
+.tip{
+  width: 574rpx;
+  margin: 0 auto;
+  font-size: 34rpx;
+  color: #484848;
+  text-align: left;
+  margin-bottom: 152rpx;
+  margin-top: 90rpx;
+}
+.btn{
+  width: 62r0px;
+  height: 84rpx;
+  line-height: 84rpx;
+  color: #fff;
+  border-radius: 8rpx;
+  background-color: #4e4e4e;
+}
+.know{
+  background: #1b96da;
+  margin-top: 150rpx;
+  margin-bottom: 20rpx;
+}

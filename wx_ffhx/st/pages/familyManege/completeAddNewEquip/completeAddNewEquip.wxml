@@ -1,0 +1,26 @@
+<view class='container'>
+  <view class='part1'>
+    <view class='tit'>
+      <text>已完成申请 \n</text>
+      <text>请耐心等待服务商开通</text>
+    </view>
+
+    <view class='inputsn'>
+      <view>
+        <image class="machine" src="../../../images/machine.png"></image>
+      </view>
+      <view class='fontDetail'>
+        <text class='fontdesc'>数据功能需要等待后台审核后开发，请耐心等待。您也可以直接联系飞利浦官方全国服务热线询问开通进度。</text>
+        <view class='contactus' bindtap='toCall'>
+          <image class="telpic" src="../../../images/tel.png"></image>
+          <text>400-820-6665</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="btnGroup">
+      <button class='nextbtn' bindtap='goHome'>知道了</button>
+    </view>
+
+  </view>
+</view>

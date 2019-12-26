@@ -1,0 +1,54 @@
+/* pages/service/vipRights/vipRights.wxss */
+.vipServiceBox{
+  width: 100%;
+  height: 440rpx;
+  margin: 0 auto;
+  overflow: auto;
+  position: relative;
+  padding-left: 52rpx;
+  box-sizing: border-box;
+}
+.serviceImg{
+  width: 100%;
+  height: 484rpx;
+  position: absolute;
+  top: -48rpx;
+  left: 0rpx;
+  z-index: -1;
+}
+.open{
+  font-size: 42rpx;
+  font-weight: 500;
+  color: #a06d22;
+  margin-top: 166rpx;
+}
+.listBox{
+  width: 100%;
+  margin-top: -33rpx;
+  border-radius: 28rpx 28rpx 0 0;
+  background-color: #ffffff;
+}
+.oneBox{
+  padding: 52rpx;
+  box-sizing: border-box;
+  border-bottom: solid 2rpx #dbdbdb;
+}
+.oneTitle{
+  font-size: 34rpx;
+  color: #363636;
+  margin-bottom: 20rpx;
+}
+.oneCon{
+  font-size: 28rpx;
+  color: #484848;
+  line-height: 50rpx;
+}
+
+
+
+
+
+
+
+
+

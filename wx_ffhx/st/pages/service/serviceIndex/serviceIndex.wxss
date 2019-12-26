@@ -1,0 +1,129 @@
+.serviceMain{
+  width: 100%;
+  margin: auto;
+  padding-bottom: 50rpx;
+}
+.serviceMain .outerCallinfo:nth-child(2){
+  border-top: solid 2rpx #e0e0e0;
+  margin-top: 50rpx;
+}
+.outerCallinfo{
+  border-bottom: solid 2rpx #e0e0e0;
+}
+.callinfo{
+  width: 660rpx;
+  height: 168rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 34rpx 46rpx;
+  box-sizing: border-box;
+  font-size: 28rpx;
+  color: #959595;
+  /* border-radius: 8rpx; */
+  /* border: solid 2rpx #e0e0e0; */
+  /* background-color: #f7f7f7; */
+  /* margin-top: 40rpx; */
+}
+.callinfo_title{
+  font-size: 34rpx;
+  font-weight: 500;
+  color: #363636;
+  margin-bottom: 18rpx;
+}
+.callinfo_left{
+  position:relative;
+}
+.logo{
+  position: absolute;
+  top:6rpx;
+  left:-50rpx;
+  width: 30rpx;
+  height: 38rpx;
+}
+.logo1{
+  width: 30rpx;
+  height: 38rpx;
+}
+.logo2{
+  left:-49rpx;
+  width: 41rpx;
+  height: 41rpx;
+}
+.logo3{
+  width: 38rpx;
+  height: 38rpx;
+}
+.icon-right{
+  font-size: 40rpx;
+  margin-right: -20rpx;
+  color: #b1b1b1;
+}
+.vipServiceBox{
+  width: 660rpx;
+  /* height:fit-content; */
+  height: 484rpx;
+  margin: 0 auto;
+  margin-top: 50rpx;
+  overflow: auto;
+  position: relative;
+  padding-left: 46rpx;
+  box-sizing: border-box;
+}
+.alreadyVipBox{
+  height: 206rpx;
+}
+.alreadyVip{
+  background-color: #f7f2ed;
+  width: 660rpx;
+  height: 206rpx;
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+  z-index: -1;
+  overflow: hidden;
+}
+.serviceImg1{
+  width: 170rpx;
+  height: 140rpx;
+  position:absolute;
+  bottom: -8px;
+  right: 28rpx;
+}
+.alreadyVip .open, .alreadyVip .vipBtn{
+  margin-left: 46rpx;
+}
+.alreadyVip .open{
+  margin-top: 40rpx;
+}
+.alreadyVip .vipBtn{
+  margin-top: 26rpx;
+}
+.serviceImg{
+  width: 660rpx;
+  height: 484rpx;
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+  z-index: -1;
+}
+.open{
+  font-size: 42rpx;
+  font-weight: 500;
+  color: #a06d22;
+  margin-top: 80rpx;
+}
+.vipBtn{
+  display: inline-block;
+  text-align: center;
+  color: #fff;
+  font-size: 28rpx;
+  font-weight: 500;
+  border-radius: 25rpx;
+  background-color: #dab37a;
+  padding: 7rpx 27rpx;
+  margin-top: 22rpx;
+}
+
+

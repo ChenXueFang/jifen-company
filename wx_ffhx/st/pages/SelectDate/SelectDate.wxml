@@ -1,0 +1,28 @@
+<view >
+  <view>
+  <view class="calendar_con">
+      <view class="calendar">
+      <view class="week">
+          <text class="week_item">日</text>
+          <text class="week_item">一</text>
+          <text class="week_item">二</text>
+          <text class="week_item">三</text>
+          <text class="week_item">四</text>
+          <text class="week_item">五</text>
+          <text class="week_item">六</text>
+        </view>
+        <view class="calendar_choose">
+          <text class='goLast' decode='true' bindtap="golastmonth">&lt;</text>
+          <text>{{year}}年{{month}}月</text>
+          <text class='goNext'  decode='true' bindtap="gonextmonth">&gt;</text> 
+        </view>
+        
+        <view class="date">
+          <view class="date_item" wx:for="{{datelist}}" wx:key="index">
+            <text class="{{item.isCheck?'currentDay':''}} {{item.day!=''?(isSelDay==item.day?'active':''):''}}" bindtap='selDay' data-selday='{{item.day}}' data-selyear='{{year}}' data-selmonth='{{month}}'>{{item.day}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

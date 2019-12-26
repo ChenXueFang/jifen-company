@@ -1,0 +1,10 @@
+<!--pages/vipServe/inviteCode/inviteCode.wxml-->
+<view class="box">
+  <image class="warn" src="../../../images/success.png"></image>
+  <!-- <view class="title">您已开启VIP服务</view> -->
+  <view class="title">您已申请开启专属会员服务</view>
+  <!-- <view class="tip">您的VIP服务套餐已经开通成功，1个工作日之内，您将收到来自飞利浦呼吸睡眠中心（4008006665）的确认来电，请保持手机传统。</view> -->
+  <view class="tip">您的预约服务已提交成功，1个工作日之内，您将收到来自飞利浦睡眠呼吸中心的确认来电，请保持手机畅通。</view>
+
+  <button class='btn know' bindtap="toBack">确定</button>
+</view>

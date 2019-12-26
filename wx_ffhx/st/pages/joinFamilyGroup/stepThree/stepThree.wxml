@@ -1,0 +1,39 @@
+<view class='container'>
+  <view class='part1'>
+    <view class='tit'>
+      <text>已申请加入家庭组， \n</text>
+      <text>请耐心等待组长通过审核。</text>
+    </view>
+
+    <view class='inputsn'>
+      <view class='applytime'>
+        <text>申请时间：{{applytime}}</text>
+      </view>
+      <view>
+        <image class="machine" src="../../../images/machine.png"></image>
+      </view>
+      
+      <view class='indexMain'>
+        <view class='t1'>
+          <view class='t1_right'>
+            <view class='t1_right_headimg'>
+               <image class='familyGr' src="{{zzheadimg}}"></image>
+            </view>
+          </view>
+          <view class='t1_left'>
+            <text>{{zzwechatName}}</text>
+          </view>        
+        </view>
+      </view>
+      
+      <view class='applyinfo'>
+        <text>申请时间：{{applytime}}\n</text>
+        <text>家庭组号：{{familyName}}</text>
+      </view>
+    </view>
+
+    <view class="btnGroup {{isshowStart?'':'hid'}}">
+      <button class='nextbtn' bindtap='goHome'>开始</button>
+    </view>
+  </view>
+</view>

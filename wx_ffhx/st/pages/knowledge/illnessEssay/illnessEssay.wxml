@@ -1,0 +1,122 @@
+<!--pages/essay/essay.wxml-->
+<import src="../../../wxParse/wxParse.wxml" />
+
+<page>
+  <view class="box">
+    <!-- 返回头部  -->
+    <!-- <view class='myFaTitle'>
+      <view class="selectsp" bindtap='goknowledgeIndex'>
+        <image class="backImg" src="../../../images/selectBack.png" mode="widthFix"></image>
+      </view>
+      <text class="titlePage">飞畅呼吸</text>
+    </view> -->
+
+    <view class="essayBox">
+      <!-- 文章标题 -->
+      <view class="title">{{illnessEssay.Title}}</view>
+      <!-- 文章作者，及发布时间, 行为 -->
+      <view class="subBox">
+        <view class="authorBox">
+          <text class="author">{{illnessEssay.Author}}</text>
+          <text class="author time">{{time}}</text>
+        </view>
+        <button class="behavior" bindtap="share" open-type="share">分享</button>
+      </view>
+      <!-- 文章内容 -->
+      <template class="essayZi" is="wxParse" data="{{wxParseData:article.nodes}}" />
+      <!-- 文章来源,标签 -->
+      <view class="fastBox">
+        <view class="source" wx:if="{{illnessEssay.Source}}"  id = "wdy">
+
+          <div wx:if="{{sourceMore}}" class='lessSource' bindtap='showSourceMore'>
+            <text>文章内容来源于 </text>
+            <text wx:if="{{classtype==2}}">\n</text>          
+            <text>{{illnessEssay.Source}}</text>
+            <image class="sourceless" src="../../../images/sourceless.png"></image>
+          </div>
+          <div wx:else bindtap="{{colNum<=4?'':'hideSourceMore'}}">
+            <text>文章内容来源于 </text>
+            <text wx:if="{{classtype==2}}">\n</text>          
+            <text>{{illnessEssay.Source}}</text>
+          </div>
+          
+         
+          <!-- <text>文章内容来源于 </text>
+          <text wx:if="{{classtype==2}}">\n</text>          
+          <text>{{illnessEssay.Source}}</text> -->
+          <!-- 辅助信息辅助信息 -->
+        </view>
+        <view class="labelBox {{!illnessEssay.Source?'labelBox2':''}}">
+          <view class="label" wx:for="{{labelList}}" wx:key="index">{{item}}</view>
+        </view>
+      </view>
+      <!-- <view class="pay">打赏作者</view> -->
+      <!-- 是否喜欢 -->
+      <view class="likeBox">
+        <view class='like {{isLike==true?"choose":""}}' bindtap="bindLike" data-likechoose="{{true}}">喜欢
+          <text>{{likeCount}}</text>
+        </view>
+        <view class='like {{isLike==false?"choose":""}}' bindtap="bindLike" data-likechoose="{{false}}">不喜欢</view>
+      </view>
+      <!-- 是否有帮助 -->
+      <view>
+        <view class="yesTitle2">您认为此文是否有帮助？</view>
+        <view class="likeBox">
+          <view class='like {{isUseful==true?"choose":""}}' bindtap="bindUseful" data-usefulchoose="{{true}}">是</view>
+          <view class='like {{isUseful==false?"choose":""}}' bindtap="bindUseful" data-usefulchoose="{{false}}">否</view>
+        </view>
+      </view>
+
+      <!-- vip文章选择题 -->
+      <view wx:if='{{classtype==2}}'>
+        <!-- 单选题 -->
+        <radio-group class="radio-group" wx:if="{{surveyType==1}}">
+          <view class="yesTitle chooseTitle" wx:if="{{illnessEssay.SurveyTitle!=null}}">{{illnessEssay.SurveyTitle}}</view>
+          <label class="radio" bindtap="survey" wx:for="{{radioList}}" wx:key="index" data-index="{{index}}">
+            <view class="itemConBox">
+              <radio value='{{item.index}}' checked="{{item.checked}}" />
+              <view>{{item.Content}}</view>
+            </view>
+          </label>
+          <view class='like2 {{isSubmit==true?"choose":""}}' bindtap="submit">点击提交</view>
+        </radio-group>
+
+        <!-- 多选题 -->
+        <checkbox-group class="checkbox-group radio-group" bindchange="checkboxChange" wx:if="{{surveyType==2}}">
+          <view class="yesTitle chooseTitle">{{illnessEssay.SurveyTitle}}</view>
+          <label class="checkbox" wx:for="{{radioList}}" wx:key="{{index}}" data-index="{{index}}">
+            <view class="itemConBox">
+              <checkbox value='{{item.SurveyId}}' checked="{{item.checked}}" />
+              <view>{{item.Content}}</view>
+            </view>
+          </label>
+          <view class='like2 {{isSubmit==true?"choose":""}}' bindtap="submit">点击提交</view>
+        </checkbox-group>
+      </view>
+      <!-- vip文章选择题 end-->
+    </view>
+    <!-- essayBox End,居中的盒子 -->
+
+    <!-- 相关文章推荐分割线 -->
+    <view class="line"></view>
+    <!--相关文章推荐列表-->
+    <view class='newslist reading'>相关阅读</view>
+    <view class='newslist' bindtap="toIllnessEssay" data-guid="{{item.ArticleIdGuid}}" data-classtype="{{classtype}}" wx:for="{{illnessList}}" wx:key="{{index}}">
+      <view class='newCon'>
+        <view class="newZi">{{item.Title}}</view>
+        <image class="newImg" src="{{item.TitleImage}}"></image>
+      </view>
+    </view>
+    <!--相关文章推荐列表 end-->
+
+<!--提示文字弹窗-->
+<view class="modalBox">
+  <view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showySurveyTip}}"></view>
+  <view class="modal-dialog2" wx:if="{{showySurveyTip}}">
+    <image class='yhqclose' src='../../../images/yhqclose.png' bindtap='hideModal'></image>
+    <view class='modal-content'>{{surveyTip}}</view>
+  </view>
+</view>
+<!---->
+  </view>
+</page>

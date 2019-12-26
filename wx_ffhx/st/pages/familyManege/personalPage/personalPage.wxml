@@ -1,0 +1,24 @@
+<!--pages/familyManege/personalPage/personalPage.wxml-->
+<view class="box">
+  <!-- 头像行 -->
+  <view class="lineBox">
+    <image class="photo" src="{{personalInfo.HeadImage}}"></image>
+    <view class="wxInfo">
+      <view>{{personalInfo.NickName}}</view>
+    </view>
+  </view>
+
+  <view class="lineBox">
+    <text>入组时间</text>
+    <view>{{personalInfo.JoinTime}}</view>
+  </view>
+
+  <view class="lineBox">
+    <text>入组方式</text>
+    <view>{{personalInfo.JoinType}}</view>
+  </view>
+
+  <button class='btn know' bindtap="index" wx:if="{{isChecked}}">知道了</button>
+  <button class="btn remove" bindtap="remove" wx:if="{{isLeader}}">移出家庭组</button>
+
+</view>
