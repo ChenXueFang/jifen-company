@@ -50,7 +50,7 @@ Page({
     var that = this;
     var hr = await dataApi.familyApi.getUnlimited({
       scene: this.data.uId + '_' + this.data.fId,   //组长userid,familyId
-      page: ""               //pages/familyManege/saomaJoin/saomaJoin
+      page: "pages/familyManege/saomaJoin/saomaJoin"               //pages/familyManege/saomaJoin/saomaJoin
     });
     if (hr.state == 1 && hr.data){
       this.setData({

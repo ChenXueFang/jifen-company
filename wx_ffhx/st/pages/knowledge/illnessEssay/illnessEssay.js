@@ -52,12 +52,14 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function(options) {
+  onLoad:async function(options) {
     this.setData({
       guid: options.guid,
       classtype: options.classtype,
       pageto: options.pageto
     });
+    let hr = await authApi.wxApi.wxLoginCheck();
+
     app.getEventLog("illnessEssay-page", options.guid)
     this.getEssayCon();
   },
@@ -270,7 +272,7 @@ Page({
   // 疾病教育文章
   toIllnessEssay(e) {
     wx.navigateTo({
-      url: `../illnessEssay/illnessEssay?guid=${e.currentTarget.dataset.guid}&classtype=${e.currentTarget.dataset.classtype}`,
+      url: `../illnessEssay/illnessEssay?guid=${e.currentTarget.dataset.guid}&classtype=${e.currentTarget.dataset.classtype}&pageto=`,
     })
   },
 

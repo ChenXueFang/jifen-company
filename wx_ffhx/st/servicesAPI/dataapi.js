@@ -3,6 +3,9 @@ import wxr from '../utils/wxRequest';
 import {
   setting
 } from '../utils/setting';
+setting.url = wx.getStorageSync("apiurl") == '' ? setting.defaultUrl : wx.getStorageSync("apiurl");
+setting.urlImg = wx.getStorageSync("apiImgurl") == '' ? setting.defaultImgUrl : wx.getStorageSync("apiImgurl");
+
 const wxApi = {
   // 设置我是妈妈
   SetMother: async(postdata) => {
@@ -45,55 +48,69 @@ const wxApi = {
 
   wxLoginCheck: async(source) => {
     // debugger
+    if(source==undefined){
+      source=''
+    }
     let wxauth = wx.getStorageSync('wxauth');
-    console.log("wxLoginCheck wxauth+")
-    console.log(wxauth)
-    if (wxauth == null || wxauth == '') {
+    let checkSession = await new Promise((resolve, reject) => {
+
+      wx.checkSession({
+        success() {
+          //session_key 未过期，并且在本生命周期一直有效
+          resolve(true);
+        },
+        fail() {
+          // session_key 已经失效，需要重新执行登录流程
+          resolve(false)
+        }
+      })
+    });//Promise
+    if (checkSession == false || wxauth == null || wxauth == '') {
       let res2 = await new Promise((resolve, reject) => {
 
-
         wx.login({
-
           success: res => {
-            // 发送 res.code 到后台换取 openId, sessionKey, unionId
-            // wx.showToast({
-            //   title: "登录成功！", //res.data.msg,
-            //   icon: 'none',
-            //   duration: 2000
-            // })
             if (res.code) {
-              // debugger;
               resolve(res);
 
             } else {
-              // console.log('登录失败！' + res.errMsg)
               reject(res)
             }
           }
         })
-      });//Promise
-      console.log("res2 :" + res2)
-      // console.log('wxLoginCheck：检查是否登录');
+      }); //Promise
       let loginInfo = await wxApi.wxLogin(res2, source);
-     wxauth=loginInfo;
-    }//if wxauth
+      wxauth = loginInfo;
+    }
     return wxauth;
-  },//wxLoginCheck
+  }, 
 
   //登录
   wxLogin: async(res,source) => {
+    // console.log("setting.url:"+setting.url)
+    // var hr = await wxr.post(`${setting.url}/api/MiniApp/wxLogin?code=${res.code}&source=${source}`)
 
-
-    var hr = await wxr.post(`${setting.url}/api/MiniApp/wxLogin?code=${res.code}&source=${source}`)
-
-    wx.setStorage({
-      key: 'wxauth',
-      data: hr.data,
-    })
-    // debugger
-    console.info('wxLogin:' + JSON.stringify(hr))
+    // wx.setStorage({
+    //   key: 'wxauth',
+    //   data: hr.data,
+    // })
+    // return hr;
+    let wxauth = wx.getStorageSync('wxauth');
+    if (wxauth == '' || wxauth == null || wxauth == undefined) {
+      setting.url = wx.getStorageSync("apiurl") == '' ? setting.defaultUrl : wx.getStorageSync("apiurl");
+      var hr = await wxr.post(`${setting.url}/api/MiniApp/wxLogin?code=${res.code}&source=${source}`)
+      if (hr.data != null && hr.data.userid != null) {
+        wx.setStorage({
+          key: 'wxauth',
+          data: hr.data,
+        })
+      }
+      return hr;
+    } else {
+      return wxauth;
+    }
     return hr;
-  }, //end wxLogin
+  },
 
   //获取手机号
   wxPhoneNumber: async(res, cb) => {

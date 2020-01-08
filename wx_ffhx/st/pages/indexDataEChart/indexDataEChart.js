@@ -183,7 +183,7 @@ Page({
   // 疾病教育文章
   toIllnessEssay(e) {
     wx.navigateTo({
-      url: `../knowledge/illnessEssay/illnessEssay?guid=${e.currentTarget.dataset.guid}&classtype=${e.currentTarget.dataset.classtype}`,
+      url: `../knowledge/illnessEssay/illnessEssay?guid=${e.currentTarget.dataset.guid}&classtype=${e.currentTarget.dataset.classtype}&pageto=`,
     })
   },
   //分享弹窗
@@ -730,6 +730,8 @@ Page({
       }else{
         this.createEchar('lineCanvas', windowWidth, whiteData, blackData);
       }
+    } else if (hrCharData.state == -1){
+      this.nologinShowData()
     }
   },
 
@@ -756,7 +758,7 @@ Page({
         }
       },
       yAxis: {
-        max: this.data.iteid == 3 ? 10 : '',
+        max: 10,//this.data.iteid == 3 ? 10 : '',
         min: 0,
         // splitNumber: 5,
         format: function (val) {
@@ -800,7 +802,7 @@ Page({
         }
       },
       yAxis: {
-        max: this.data.iteid==3?10:'',
+        max: 10,//this.data.iteid==3?10:'',
         min: 0,
         // splitNumber: 5,
         format: function(val) {

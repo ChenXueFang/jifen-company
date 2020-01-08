@@ -1,9 +1,12 @@
 var setting = {
   //测试站
   isDebug:false,
-  url: "https://st.crmclick.com/stMiniAppWebapi", //正式
-  //url:"http://localhost:4720/stapi",
-  urlImg: "https://st.crmclick.com/stadnim/", //正式
+  url: wx.getStorageSync("apiurl"), 
+  urlImg: wx.getStorageSync("apiImgurl"),
+  defaultUrl: 'https://stapp.philipswechat.com/stMiniAppWebapi/',
+  defaultImgUrl: 'https://stapp.philipswechat.com/stadnim/',
+  // url: "https://st.crmclick.com/stMiniAppWebapi", //正式
+  // urlImg: "https://st.crmclick.com/stadnim/", //正式
   appid: "wxf738199cd27e9ad1",//"wxca854fb450069cea",
   token: "A256FCAA-0609-JIFEN-610-321D58AB4308",
   unionidKey: "unionidKey",

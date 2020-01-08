@@ -190,6 +190,7 @@ Page({
         invituserid: options.invituserid,
         source:options.source==undefined?'':options.source
       });
+      console.log("onload ：" + this.data.source)
     }
 
     // let hr = await authApi.wxApi.wxLoginCheck()
@@ -836,6 +837,15 @@ Page({
 
     let hr = await authApi.wxApi.wxLoginCheck(this.data.source)
     app.getEventLog("index-page")
+    if (this.data.source != "") {
+      var hrss = await register.UserRegister.SaveScanQRLog({
+        userId: wx.getStorageSync("wxauth").uid,
+        source: this.data.source
+      });
+      if (hrss.state == 1) {
+        console.log("source数据保存成功")
+      }
+    }
     if ((hr.data != undefined && hr.data.isLogin == false) || hr.isLogin == false) {
       this.setData({
         isUserLogin: false
@@ -844,6 +854,7 @@ Page({
       this.setData({
         isUserLogin: true
       })
+
       this.getVIPState();
       // 获取家庭消息
       this.getFamilyMsg();
@@ -951,7 +962,7 @@ Page({
     //1市场推广 2消息提醒(不需要详情) 3教育文章
     if (msgtype == 3) {
       wx.navigateTo({
-        url: `../knowledge/illnessEssay/illnessEssay?guid=${e.currentTarget.dataset.guid}&classtype=${2}`
+        url: `../knowledge/illnessEssay/illnessEssay?guid=${e.currentTarget.dataset.guid}&classtype=${2}&pageto=`
       })
     } 
     else if (msgtype ==1) {

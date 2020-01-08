@@ -4,8 +4,36 @@ import authApi from './servicesAPI/dataapi'
 const setting = require("./utils/setting.js");
 const util = require("./utils/util.js");
 
+var apiUrl = setting.defaultUrl; //正式环境
+var apiUrlDev = "https://st.crmclick.com/stMiniAppWebapi"; //开发环境
+
+var apiImgUrl = setting.defaultImgUrl; //正式环境-图片
+var apiImgUrlDev = "https://st.crmclick.com/stadnim/"; //开发环境
+
 App({
-  onLaunch: function () {
+  onLaunch: async function (options) {
+    let that = this;
+    wx.request({
+      url: "https://stapp.philipswechat.com/stMiniAppWebapi/api/CheckEnv/GetHeaders",
+      method: 'POST',
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success: res => {
+        if (res.data.data == "devtools" || res.data.data == "0") {
+          wx.setStorageSync("apiurl", apiUrlDev);
+          wx.setStorageSync("apiImgurl", apiImgUrlDev);
+        }
+        else {
+          //正式
+          wx.setStorageSync("apiurl", apiUrl);
+          wx.setStorageSync("apiImgurl", apiImgUrl);
+        }
+      }
+    })
+
+
+
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -13,12 +41,12 @@ App({
     var systemInfo = wx.getSystemInfoSync();
     wx.setStorageSync('systemInfo', systemInfo)
 
-    // 登录
-    wx.login({
-      success: res => {
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
-      }
-    })
+    // // 登录
+    // wx.login({
+    //   success: res => {
+    //     // 发送 res.code 到后台换取 openId, sessionKey, unionId
+    //   }
+    // })
     // 获取用户信息
     wx.getSetting({
       success: res => {
@@ -46,7 +74,7 @@ App({
     currentTab:"",
     time1:""
   },
-
+  
   // 页面访问次数 + 按钮点击次数
   getEventLog: async function (linkcode, openid) {
     var that = this;

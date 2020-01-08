@@ -180,7 +180,7 @@ Page({
     // 跳转到vip文章页面 classtype= 2  RemindType= 3
     if (e.currentTarget.dataset.remindtype==3){
       wx.navigateTo({
-        url: `../../knowledge/illnessEssay/illnessEssay?guid=${e.currentTarget.dataset.guid}&classtype=${2}`
+        url: `../../knowledge/illnessEssay/illnessEssay?guid=${e.currentTarget.dataset.guid}&classtype=${2}&pageto=`
       })
     }else{
       wx.navigateTo({

@@ -29,7 +29,7 @@
       <image class="deStyle3" src="../../images/de3.png"></image>
     </view>
     <view class='exContent_dec'>
-      <view>此设备暂时无法进行无线数据传输，您可以通过寄送SD卡，预约数据解读。<text class='viewMore' bindtap='toViewMore3'>了解详情</text></view>
+      <view>此设备暂时无法进行无线数据传输。</view>
     </view>
   </view>
 

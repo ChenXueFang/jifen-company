@@ -23,7 +23,8 @@ Page({
   toViewMore2:function(){
     app.getEventLog("indexDataExplain-M2-button")
     wx.navigateTo({
-       url: `../service/orderKnow/orderKnow`,
+      //  url: `../service/orderKnow/orderKnow`,
+      url: '../service/orderForm2/orderForm2',
     })
   },
   toViewMore3:function(){

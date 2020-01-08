@@ -29,13 +29,10 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function(options) {
+  onLoad: async function(options) {
     // this.setData({
     //   currentTab: options.currentTab
     // })
-    this.getProductList();
-    this.gerIllnessList();
-    
 
   },
 
@@ -207,7 +204,7 @@ Page({
   // 疾病，vip教育文章
   toIllnessEssay(e) {
     wx.navigateTo({
-      url: `../illnessEssay/illnessEssay?guid=${e.currentTarget.dataset.guid}&classtype=${e.currentTarget.dataset.classtype}`,
+      url: `../illnessEssay/illnessEssay?guid=${e.currentTarget.dataset.guid}&classtype=${e.currentTarget.dataset.classtype}&pageto=`,
     })
   },
 
@@ -221,9 +218,20 @@ Page({
     }
     // 跳转到视频页面
     if (e.currentTarget.dataset.isonlyvideo == true) {
-      wx.navigateTo({
-        url: `../productVideo/productVideo?productid=${e.currentTarget.dataset.productid}`,
-      })
+      // wx.navigateTo({
+      //   url: `../productVideo/productVideo?productid=${e.currentTarget.dataset.productid}`,
+      // })
+      app.getEventLog("video-button")
+      setTimeout(() => {
+        wx.showToast({
+          title: '尚未发布',
+          icon: 'none',
+          duration: 3000
+        });
+        setTimeout(() => {
+          wx.hideToast();
+        }, 2000)
+      }, 200);
     }
   },
 
@@ -251,6 +259,8 @@ Page({
     this.setData({
       time1: util.formatTime(new Date())
     })
+    this.getProductList();
+    this.gerIllnessList();
   },
 
   /**

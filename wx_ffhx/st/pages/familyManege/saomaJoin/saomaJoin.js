@@ -19,7 +19,6 @@ Page({
     uid: "",
     fid: "",
     leaderInfo:{},
-    scene:"",
     time1: "",//进入页面时间
     time2: "",//离开页面时间
   },
@@ -65,6 +64,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: async function(options) {
+    let hr = await authApi.wxApi.wxLoginCheck();
     this.setData({
       uid: options.scene.split("_")[0],  //组长userid
       fid: options.scene.split("_")[1],  //familyId
@@ -164,7 +164,6 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: async function() {
-    let hr = await authApi.wxApi.wxLoginCheck();
     app.getEventLog("saomaJoin-page")
     // 记录进入页面的时间
     this.setData({

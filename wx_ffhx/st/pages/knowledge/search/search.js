@@ -83,9 +83,20 @@ Page({
     });
     // 老款呼吸机，一级标题跳转到视频页面
     if (this.data.producttype == 2) {
-      wx.navigateTo({
-        url: `../productVideo/productVideo?guid=${e.currentTarget.dataset.guid}`,
-      })
+      // wx.navigateTo({
+      //   url: `../productVideo/productVideo?guid=${e.currentTarget.dataset.guid}`,
+      // })
+      app.getEventLog("video-button")
+      setTimeout(() => {
+        wx.showToast({
+          title: '尚未发布',
+          icon: 'none',
+          duration: 3000
+        });
+        setTimeout(() => {
+          wx.hideToast();
+        }, 2000)
+      }, 200);
     }
   },
 

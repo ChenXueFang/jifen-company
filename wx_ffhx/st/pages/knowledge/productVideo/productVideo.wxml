@@ -1,9 +1,0 @@
-<!--pages/knowledge/productVideo/productVideo.wxml-->
-<view class="section tc">
-  <video id="myVideo" src="{{videoUrl}}" controls show-mute-btn></video>
-  <!-- <view class="btn-area">
-    <button bindtap="bindButtonTap">获取视频</button>
-    <input bindblur="bindInputBlur"/>
-    <button bindtap="bindSendDanmu">发送弹幕</button>
-  </view> -->
-</view>

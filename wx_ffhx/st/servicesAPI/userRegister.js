@@ -78,6 +78,14 @@ const UserRegister = {
     })
     return hr;
   },
+
+  //保存source
+  SaveScanQRLog: async (postdata) => {
+    var hr = await wxr.get(`${setting.url}/api/MiniApp/saveScanQRLog`, {
+      data: postdata,
+    })
+    return hr;
+  },
 };
 
 

@@ -159,7 +159,7 @@ Page({
   tomessageDetails(e) {
     wx.navigateTo({
       // url: `../../knowledge/illnessEssay/illnessEssay?guid=${e.currentTarget.dataset.guid}`
-      url: `../messageDetails/messageDetails?guid=${e.currentTarget.dataset.guid}&classtype=${e.currentTarget.dataset.classtype}`,
+      url: `../messageDetails/messageDetails?guid=${e.currentTarget.dataset.guid}&classtype=${e.currentTarget.dataset.classtype}&pageto=`,
     })
   },
 

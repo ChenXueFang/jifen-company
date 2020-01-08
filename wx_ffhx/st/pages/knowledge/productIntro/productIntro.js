@@ -11,6 +11,7 @@ Page({
    */
   data: {
     background: ['demo-text-1', 'demo-text-2', 'demo-text-3'],
+    menuid:'',
     indicatorDots: true,
     vertical: false,
     autoplay: false,
@@ -73,7 +74,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    app.getEventLog("productIntro-page", options.menuid)
+    app.getEventLog("productIntro-page", this.data.menuid)
     // 记录进入页面的时间
     this.setData({
       time1: util.formatTime(new Date())

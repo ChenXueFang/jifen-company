@@ -16,7 +16,6 @@
     "pages/knowledge/search/search",
     "pages/knowledge/productEssay/productEssay",
     "pages/knowledge/illnessEssay/illnessEssay",
-    "pages/knowledge/productVideo/productVideo",
     "pages/knowledge/knowledgeIndex/knowledgeIndex",
     "pages/knowledge/productDescription/productDescription",
     "pages/Message/messageDetails/messageDetails",
