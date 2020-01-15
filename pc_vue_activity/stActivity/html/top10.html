@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>家庭组邀请进度</title>
+    <link rel="stylesheet" href="../css/myStyle.css">
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/vue.min.js"></script>
+    <script>
+        window.history.forward(1); 
+    </script>
+</head>
+
+<body>
+    <div id="top10" class="index">
+        <img src="../images/top10Bg.png" class="bgImg">
+        <!-- 中间内容居中盒子 -->
+        <div class="container">
+            <!-- 标题 -->
+            <div class="titleBox">
+                <h1 class="title">家庭组邀请进度</h1>
+                <img src="../images/titleBorder.png" class="titleBorder">
+            </div>
+            <!-- top10 -->
+            <div v-if="!showRate" style="margin-top: 10vh;">
+                <div class="ratetop10"><img src="../images/top10Number.png" style="height: 7vh;"></div>
+                <div class="top10Box top10Box2">
+                    <div class="top10Con" v-for="item in top10List" :key='item.nickName'>
+                        <div class="barBox">
+                            <div class="memberNum" style="font-size: 4vh;">{{item.num}}</div>
+                            <div :class="item.num == 1?'bar1':(item.num == 2?'bar2':'bar')"></div>
+                        </div>
+                        <img class="photo" :src="item.photo">
+                        <div class="nickName">{{item.nickName}}</div>
+                        <p>用时<span style="color: #eeac3a;font-size: 3vh;">{{item.time}}</span>秒</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="top10Box" v-else>
+                <img src="../images/top10load.png" class="top10load">
+                <div class="top10Intro">每个组长邀请三个组员，用时越少排名越高，赶快试试吧~</div>
+            </div>
+            <!-- 三个按钮 -->
+            <div class="top10ThreeBtn threeBtn top10BtnBox">
+                <!-- 开始暂停 -->
+                <div class="begin">
+                    <div @click="beginBg" v-if="!isBegin"><img src="../images/triangle.png" class="stopImg" ></div>
+                    <div @click="stopActivity" v-else :class="gray"><img src="../images/stop.png" class="stopImg"></div>
+                </div>
+                <!-- 下一页 -->
+                <!-- <a class="next1Box" href="voteEssay.html"><img src="../images/nextArr.png" class="nextArrImg"></a> -->
+                <div class="next1Box" @click="tonext"><img src="../images/nextArr.png" class="nextArrImg"></div>
+            </div>
+
+            <!-- 模态框-->
+            <div :class="ModalState">
+                <div class="ModalCon">
+                    <p class="ModalTitle">提示</p>
+                    <p class="ModalTips">是否确定停止?</p>
+                    <div class="ModalBtnBox">
+                        <p class="ModalCancel" @click="ModalCancel">取消</p>
+                        <p class="ModalSure" @click="ModalSure">确定</p>
+                    </div>
+                </div>
+            </div>
+            <!--  模态框-->
+
+            <!-- 模态框-->
+            <div :class="ModalState2">
+                <div class="ModalCon">
+                    <p class="ModalTitle">提示</p>
+                    <p class="ModalTips">是否确定终止本环节?</p>
+                    <div class="ModalBtnBox">
+                        <p class="ModalCancel" @click="Modal2Cancel">取消</p>
+                        <p class="ModalSure" @click="Modal2Sure">确定</p>
+                    </div>
+                </div>
+            </div>
+            <!--  模态框-->
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var app = new Vue({
+            el: "#top10",
+            data: {
+                top10List:[],
+                showbegin:true,
+                timeName: null,
+                ModalState: 'closeModal',// 模态框样式判断 showModal closeModal
+                ModalState2:'closeModal',
+                isBegin: false, 
+                gray:'',
+                showRate:true,
+                barBox:'',
+                webConfig:[],
+                goToNext:false,
+                numFlag:0,
+            },
+            created: function () {
+                let that = this;
+                $.getJSON("../js/config.json", function (data) {
+                    that.webConfig=data;
+                });
+            },
+            computed: {
+            },
+            // mounted () {
+            //     if (window.history && window.history.pushState) {
+            //         // 向历史记录中插入了当前页
+            //         history.pushState(null, null, document.URL);
+            //         window.addEventListener('popstate', this.goBack, false);
+            //     }
+            // },
+            // destroyed () {
+            //     window.removeEventListener('popstate', this.goBack, false);
+            // },
+            methods: {
+                // goBack () {
+                //     console.log("点击了浏览器的返回按钮");
+                //     history.pushState(null, null, document.URL);
+                // },
+                tonext: function () {
+                    // window.location.href = "voteEssay.html"
+                    if(this.goToNext==true){
+                        window.location.href = "voteEssay.html"
+                    }else{
+                        if(this.gray!='gray'){
+                            this.ModalState2 = 'showModal';  //显示模态框
+                        }else{
+                            window.location.href = "voteEssay.html"
+                        }
+                    }
+                },
+                //开始
+                beginBg: function () {
+                    var that = this;
+                    this.isBegin = true;
+                    this.showRate=false;
+                    
+                    $.ajax({
+                        type: "get",
+                        url: that.webConfig[0].webUrl+"api/Active/SetJoinInFamilyState",
+                        data: { sn: that.webConfig[0].sn, source: that.webConfig[0].source,state:'0' },
+                        dataType: 'JSON',
+                        success: function (res) {
+                            console.log("开始活动")
+                            that.timeName = setInterval(function () {
+                                that.Instance();
+                            }, 2000);
+                            
+                        },
+                        error: function (errors) {
+
+                        }
+                    });
+                },
+                //停止
+                stopActivity:function(){
+                    if(this.gray!='gray'){
+                        this.ModalState = 'showModal';  //显示模态框
+                    }
+                },
+                // 点击返回（模态框）
+                ModalCancel: function () {
+                    console.log('点击取消')
+                    this.ModalState = 'closeModal';
+                },
+                // 点击确定（模态框）
+                ModalSure: function () {
+                    this.ModalState = 'closeModal';
+                    this.gray='gray'; //背景颜色变灰
+                    this.clearAnimation(); //清除动画
+                    clearInterval(this.timeName); //清除定时器
+                    // 停止接口
+                    let that = this;
+                    $.ajax({
+                        type: "get",
+                        url: that.webConfig[0].webUrl+"api/Active/SetJoinInFamilyState",
+                        data: { sn: that.webConfig[0].sn, source: that.webConfig[0].source,state:'1' },
+                        dataType: 'JSON',
+                        success: function (res) {
+                            console.log("停止活动")
+                        },
+                        error: function (errors) {
+
+                        }
+                    });
+                },
+                // 点击返回（模态框）
+                Modal2Cancel: function () {
+                    console.log('点击取消')
+                    this.ModalState2 = 'closeModal';
+                },
+                // 点击确定（模态框）
+                Modal2Sure: function () {
+                    this.ModalState2 = 'closeModal';
+                    window.location.href = "voteEssay.html"
+                },
+                //清除定时调用
+                clearAnimation: function () {
+                    $.each(this.top10List, function (i, value) {
+                        value.animation = 0
+                    })
+                },
+                //调用家庭组数据
+                Instance: function () {
+                    let that = this;
+                    $.ajax({
+                        type: "get",
+                        url: that.webConfig[0].webUrl+"api/Active/QueryTop10FamilyMemberCount",
+                        data: { sn: that.webConfig[0].sn, source: that.webConfig[0].source },
+                        dataType: 'JSON',
+                        success: function (res) {
+                            console.log(res)
+                            that.numFlag=0
+                            var top10Lists=[]  //有数据先清空
+                           
+                            if(res.state==1 && res.data && res.data.length > 0){
+                                for(var i=0;i<res.data.length;i++){
+                                    var familyGroupInfo={}
+                                    familyGroupInfo.num=res.data[i].MemberCount
+                                    familyGroupInfo.photo=res.data[i].HeadImage
+                                    familyGroupInfo.nickName=res.data[i].NickName
+                                    familyGroupInfo.time=res.data[i].AvgAgreeTime
+                                    
+                                    if(res.data[i].MemberCount>=3){
+                                        that.numFlag=that.numFlag+1
+                                    }
+                                    top10Lists.push(familyGroupInfo)
+                                    that.top10List=top10Lists
+                                }
+                                this.barBox='barBox'
+                                // console.log("--------------")
+                                // console.log(that.numFlag)
+                                if( that.numFlag==10){
+                                    that.ModalSure()
+                                }
+                            }
+                        },
+                        error: function (errors) {
+
+                        }
+                    });
+                },
+            }
+        });
+    </script>
+</body>
+
+</html>

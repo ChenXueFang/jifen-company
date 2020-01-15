@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>测试页面</title>
+    <link rel="stylesheet" href="../css/myStyle.css">
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/vue.min.js"></script>
+    <style>
+        .testCon {
+            margin-top: 9vh;
+            margin-left: 25vw;
+        }
+
+        .testBox {
+            color: #fff;
+            font-size: 3vh;
+            margin-top: 4vh;
+        }
+
+        .input {
+            width: 7vw;
+            height: 3vh;
+            font-size: 3vh;
+            padding-left: 0.5vw;
+        }
+
+        .submit {
+            width: 4vw;
+            height: 3vh;
+            line-height: 3vh;
+            font-size: 2.7vh;
+        }
+        .success{
+            font-size: 2.5vh;
+            margin-left: 1vw;
+            color: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="index">
+        <img src="../images/bg0.png" class="bgImg">
+        <!-- 中间内容居中盒子 -->
+        <div class="container">
+            <!-- 标题 -->
+            <div class="titleBox">
+                <h1 class="title">测试页面</h1>
+                <img src="../images/titleBorder.png" class="titleBorder">
+            </div>
+
+            <!-- 测试内容 -->
+            <div class="testCon">
+                <!-- 注册用户500 -->
+                <div class="testBox">
+                    <p>测试扫码进入小程序人数500：</p>
+                    次数：<input type="text" class="input" v-model="joinNum">，间隔（ms）<input type="text" class="input"
+                        v-model="joinTime">，<button class="submit" @click="joinSubmit">提交</button><span v-if="success=='join'" class="success">执行成功</span>
+                </div>
+                <!-- 注册家庭100 -->
+                <div class="testBox">
+                    <p>测试绑定人数100：</p>
+                    次数：<input type="text" class="input" v-model="bindNum">，间隔（ms）<input type="text" class="input"
+                        v-model="bindTime">，<button class="submit" @click="bindSubmit">提交</button><span v-if="success=='bind'" class="success">执行成功</span>
+                </div>
+                <!-- 随机加入家庭10 -->
+                <div class="testBox">
+                    <p>top10测试数据：</p>
+                    次数：<input type="text" class="input" v-model="top10Num">，间隔（ms）<input type="text" class="input"
+                        v-model="top10Time">，<button class="submit" @click="top10Submit">提交</button><span v-if="success=='top10'" class="success">执行成功</span>
+                </div>
+                <!-- 点赞30 -->
+                <div class="testBox">
+                    <p>30文章测试数据：</p>
+                    次数：<input type="text" class="input" v-model="voteNum">，间隔（ms）<input type="text" class="input"
+                        v-model="voteTime">，<button class="submit" @click="voteSubmit">提交</button><span v-if="success=='vote'" class="success">执行成功</span>
+                </div>
+                <!-- 删除测试数据按钮 -->
+                <div class="testBox">
+                    <span>删除所有测试数据：</span>
+                    <button class="submit" @click="clearBtn">提交</button><span v-if="success=='clear'" class="success">执行成功</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var app = new Vue({
+            el: ".index",
+            data: {
+                joinNum: "",
+                joinTime: "",
+                bindNum: "",
+                bindTime: "",
+                top10Num: "",
+                top10Time: "",
+                voteNum: "",
+                voteTime: "",
+                webConfig:[],
+                success: '',
+            },
+            created: function () {
+                let that = this;
+                $.getJSON("../js/config.json", function (data) {
+                    that.webConfig=data;
+                });
+            },
+            methods: {
+                // 关注人数500
+                joinSubmit: function () {
+                    var that = this;
+                    if (this.joinNum < 0) {
+                        alert("次数应大于0")
+                    }
+                    else if (this.joinTime < 300) {
+                        alert("间隔时间不能低于300ms")
+                    }
+                    else if (this.joinTime >= 300 && this.joinNum >= 0 && this.joinNum <= 500) {
+                        // 询问框
+                        var r = confirm("确定提交吗？")
+                        if (r == true) {
+                            $.ajax({
+                                type: "get",
+                                url: that.webConfig[0].webUrl+"api/Test/testRegist",
+                                data: {
+                                    count: this.joinNum,
+                                    sleepTime: this.joinTime,
+                                    sn: that.webConfig[0].sn,
+                                    source: that.webConfig[0].source
+                                },
+                                dataType: 'JSON',
+                                success: function (res) {
+                                    if(res.state==1){
+                                        that.success='join'
+                                    }
+                                },
+                                error: function (errors) {
+
+                                }
+                            });
+                        }
+                    }
+                },
+                // 绑定人数100
+                bindSubmit: function () {
+                    var that = this;
+                    if (this.bindNum < 0 || this.bindjNum > 110) {
+                        alert("次数限定在0-110之间")
+                    }
+                    else if (this.bindTime < 300) {
+                        alert("间隔时间不能低于300ms")
+                    }
+                    else if (this.bindTime >= 300 && this.bindNum >= 0 && this.bindNum <= 110) {
+                        // 询问框
+                        var r = confirm("确定提交吗？")
+                        if (r == true) {
+                            $.ajax({
+                                type: "get",
+                                url: that.webConfig[0].webUrl+"api/Test/testSN",
+                                data: {
+                                    count: this.bindNum,
+                                    sleepTime: this.bindTime,
+                                    sn: that.webConfig[0].sn,
+                                    source: that.webConfig[0].source
+                                },
+                                dataType: 'JSON',
+                                success: function (res) {
+                                    if(res.state==1){
+                                        that.success='bind'
+                                    }
+                                },
+                                error: function (errors) {
+
+                                }
+                            });
+                        }
+                    }
+                },
+                // top10
+                top10Submit: function () {
+                    var that = this;
+                    if (this.top10Num < 0 || this.top10jNum > 500) {
+                        alert("次数限定在0-500之间")
+                    }
+                    else if (this.top10Time < 300) {
+                        alert("间隔时间不能低于300ms")
+                    }
+                    else if (this.top10Time >= 300 && this.top10Num >= 0 && this.top10Num <= 500) {
+                        // 询问框
+                        var r = confirm("确定提交吗？")
+                        if (r == true) {
+                            $.ajax({
+                                type: "get",
+                                url: that.webConfig[0].webUrl+"api/Test/testJoinFamily",
+                                data: {
+                                    count: this.top10Num,
+                                    sleepTime: this.top10Time,
+                                    sn: that.webConfig[0].sn,
+                                    source:  that.webConfig[0].source
+                                },
+                                dataType: 'JSON',
+                                success: function (res) {
+                                    if(res.state==1){
+                                        that.success='top10'
+                                    }
+                                },
+                                error: function (errors) {
+
+                                }
+                            });
+                        }
+                    }
+                },
+                // 投票
+                voteSubmit: function () {
+                    var that = this;
+                    if (this.voteNum < 0 || this.votejNum > 1000) {
+                        alert("次数限定在0-1000之间")
+                    }
+                    else if (this.voteTime < 300) {
+                        alert("间隔时间不能低于300ms")
+                    }
+                    else if (this.voteTime >= 300 && this.voteNum >= 0 && this.voteNum <= 1000) {
+                        // 询问框
+                        var r = confirm("确定提交吗？")
+                        if (r == true) {
+                            $.ajax({
+                                type: "get",
+                                url: that.webConfig[0].webUrl+"api/Test/testLikeArticle",
+                                data: {
+                                    count: this.voteNum,
+                                    sleepTime: this.voteTime,
+                                    source:  that.webConfig[0].source
+                                },
+                                dataType: 'JSON',
+                                success: function (res) {
+                                    if(res.state==1){
+                                        that.success='vote'
+                                    }
+                                },
+                                error: function (errors) {
+
+                                }
+                            });
+                        }
+                    }
+                },
+                // 清空数据
+                clearBtn: function () {
+                    var that = this;
+                    // 询问框
+                    var r = confirm("确定要清空数据吗？")
+                    if (r == true) {
+                        $.ajax({
+                            type: "get",
+                            url: that.webConfig[0].webUrl+"api/Test/testDeleteData",
+                            data: {
+                                source:  that.webConfig[0].source
+                            },
+                            dataType: 'JSON',
+                            success: function (res) {
+                                if(res.state==1){
+                                    that.success='clear'
+                                }
+                            },
+                            error: function (errors) {
+
+                            }
+                        });
+                    }
+                },
+
+
+            }
+        });
+    </script>
+</body>
+
+</html>

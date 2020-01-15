@@ -1,0 +1,242 @@
+﻿[
+    {
+        "articleIndex": 1,
+        "animation": 0,
+        "likeCount": 0,
+        "articleId": 38,
+        "title": "慢性阻塞性肺病的负担",
+        "articleImg": "../images/articleImages/38.png"
+    },
+    {
+        "articleIndex": 2,
+        "animation": 0,
+        "likeCount": 0,
+        "articleId": 39,
+        "title": "慢阻肺(COPD)气道阻塞严重程度的分级",
+        "articleImg": "../images/articleImages/39.png"
+    },
+    {
+        "articleIndex": 3,
+        "animation": 0,
+        "likeCount": 0,
+        "articleId": 40,
+        "title": "什么是慢性阻塞性肺病？",
+        "articleImg": "../images/articleImages/40.png"
+    },
+    {
+        "articleIndex": 4,
+        "animation": 0,
+        "likeCount": 0,
+        "articleId": 41,
+        "title": "医生如何诊断慢性阻塞性肺病(COPD)",
+        "articleImg": "../images/articleImages/41.png"
+    },
+    {
+        "articleIndex": 5,
+        "animation": 0,
+        "likeCount": 0,
+        "articleId": 42,
+        "title": "吸烟是引起慢阻肺的重要危险因素吗？",
+        "articleImg": "../images/articleImages/42.png"
+    },
+    {
+        "articleIndex": 6,
+        "animation": 0,
+        "likeCount": 0,
+        "articleId": 43,
+        "title": "为什么会患慢性阻塞性肺病？",
+        "articleImg": "../images/articleImages/43.png"
+    },
+    {
+        "articleIndex": 7,
+        "animation": 0,
+        "likeCount": 0,
+        "articleId": 44,
+        "title": "为什么慢阻肺呈现家族性高发？",
+        "articleImg": "../images/articleImages/44.png"
+    },
+    {
+        "articleIndex": 8,
+        "animation": 0,
+        "likeCount": 0,
+        "articleId": 45,
+        "title": "慢性阻塞性肺疾病患者的气道为什么会狭窄？",
+        "articleImg": "../images/articleImages/45.png"
+    },
+    {
+        "articleIndex": 9,
+        "animation": 0,
+        "likeCount": 0,
+        "articleId": 46,
+        "title": "慢性阻塞性肺病病人的肺和正常人有什么不一样?",
+        "articleImg": "../images/articleImages/46.png"
+    },
+    {
+        "articleIndex": 10,
+        "animation": 0,
+        "likeCount": 0,
+        "articleId": 48,
+        "title": "患者不适宜运动？",
+        "articleImg": "../images/articleImages/48.png"
+    },
+    {
+        "articleIndex": 11,
+        "animation": 0,
+        "likeCount": 0,
+        "articleId": 49,
+        "title": "慢阻肺（COPD）的常用药物",
+        "articleImg": "../images/articleImages/49.png"
+    },
+    {
+        "articleIndex": 12,
+        "animation": 0,
+        "likeCount": 0,
+        "articleId": 50,
+        "title": "提高COPD患者的生活质量需要做到哪些？",
+        "articleImg": "../images/articleImages/50.png"
+    },
+    {
+        "articleIndex": 13,
+        "animation": 0,
+        "likeCount": 0,
+        "articleId": 58,
+        "title": "为什么慢阻肺病人要戒烟？",
+        "articleImg": "../images/articleImages/58.png"
+    },
+    {
+        "articleIndex": 14,
+        "animation": 0,
+        "likeCount": 0,
+        "articleId": 59,
+        "title": "呼吸机戴上后就要戴一辈子吗？",
+        "articleImg": "../images/articleImages/59.png"
+    },
+    {
+        "articleIndex": 15,
+        "animation": 0,
+        "likeCount": 0,
+        "articleId": 60,
+        "title": "接收长期氧疗的患者还能吸烟吗？",
+        "articleImg": "../images/articleImages/60.png"
+    },
+    {
+        "articleIndex": 16,
+        "animation": 0,
+        "likeCount": 0,
+        "articleId": 61,
+        "title": "长期氧疗对COPD病人有哪些好处？",
+        "articleImg": "../images/articleImages/61.png"
+    },
+    {
+        "articleIndex": 17,
+        "animation": 0,
+        "likeCount": 0,
+        "articleId": 62,
+        "title": "您如何在日常生活中保存体力？",
+        "articleImg": "../images/articleImages/62.png"
+    },
+    {
+        "articleIndex": 18,
+        "animation": 0,
+        "likeCount": 0,
+        "articleId": 63,
+        "title": "怎样的才算是好的营养摄取？",
+        "articleImg": "../images/articleImages/63.png"
+    },
+    {
+        "articleIndex": 19,
+        "animation": 0,
+        "likeCount": 0,
+        "articleId": 64,
+        "title": "慢性阻塞性肺病患者的食物禁忌和饮食注意",
+        "articleImg": "../images/articleImages/64.png"
+    },
+    {
+        "articleIndex": 20,
+        "animation": 0,
+        "likeCount": 0,
+        "articleId": 65,
+        "title": "为什么慢性阻塞性肺病患者需要营养治疗？",
+        "articleImg": "../images/articleImages/65.png"
+    },
+    {
+        "articleIndex": 21,
+        "animation": 0,
+        "likeCount": 0,
+        "articleId": 66,
+        "title": "造成慢性阻塞性肺病患者营养不良的原因及其影响",
+        "articleImg": "../images/articleImages/66.png"
+    },
+    {
+        "articleIndex": 22,
+        "animation": 0,
+        "likeCount": 0,
+        "articleId": 67,
+        "title": "怎样评估和监测慢阻肺急性加重？",
+        "articleImg": "../images/articleImages/67.png"
+    },
+    {
+        "articleIndex": 23,
+        "animation": 0,
+        "likeCount": 0,
+        "articleId": 68,
+        "title": "急性加重的后果严重吗？",
+        "articleImg": "../images/articleImages/68.png"
+    },
+    {
+        "articleIndex": 24,
+        "animation": 0,
+        "likeCount": 0,
+        "articleId": 69,
+        "title": "急性加重患者在医院需要做哪些检查？",
+        "articleImg": "../images/articleImages/69.png"
+    },
+    {
+        "articleIndex": 25,
+        "animation": 0,
+        "likeCount": 0,
+        "articleId": 70,
+        "title": "如何预防慢阻肺COPD急性加重？",
+        "articleImg": "../images/articleImages/70.png"
+    },
+    {
+        "articleIndex": 26,
+        "animation": 0,
+        "likeCount": 0,
+        "articleId": 71,
+        "title": "腹式呼吸",
+        "articleImg": "../images/articleImages/71.png"
+    },
+    {
+        "articleIndex": 27,
+        "animation": 0,
+        "likeCount": 0,
+        "articleId": 72,
+        "title": "呼吸功能康复训练-上篇",
+        "articleImg": "../images/articleImages/72.png"
+    },
+    {
+        "articleIndex": 28,
+        "animation": 0,
+        "likeCount": 0,
+        "articleId": 73,
+        "title": "呼吸功能康复训练-下篇",
+        "articleImg": "../images/articleImages/73.png"
+    },
+    {
+        "articleIndex": 29,
+        "animation": 0,
+        "likeCount": 0,
+        "articleId": 74,
+        "title": "缩唇呼吸训练",
+        "articleImg": "../images/articleImages/74.png"
+    },
+    {
+        "articleIndex": 30,
+        "animation": 0,
+        "likeCount": 0,
+        "articleId": 75,
+        "title": "如何有效地咳痰？",
+        "articleImg": "../images/articleImages/75.png"
+    }
+]
