@@ -186,15 +186,8 @@ Page({
         isRSShow: true
       })
     }else{
-      wx.setStorageSync("jishuBeginTime", '')
-      wx.setStorageSync("jishu", '')
       isLock = false;
       clearInterval(intervalId)
-      this.setData({
-        showtime: true,
-        jishi: '60:00',
-        tdsNum: 0
-      })
 
       var that = this;
       var hr = await dataApi.DayRecord.AddPregnantMoveRecord({
@@ -218,6 +211,14 @@ Page({
 
         wx.showToast({ title: hr.msg, icon: 'none' });
       }
+
+      wx.setStorageSync("jishuBeginTime", '')
+      wx.setStorageSync("jishu", '')
+      this.setData({
+        showtime: true,
+        jishi: '60:00',
+        tdsNum: 0
+      })
     }  
     
   },

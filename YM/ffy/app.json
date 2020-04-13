@@ -2,6 +2,7 @@
   "pages": [
     
     "pages/home/home",
+    "pages/fcolorUltrasound/fcolorUltrasound",
     "pages/signIn/dailySign/dailySign",
     "pages/signIn/customMade/customMade",
     "pages/signIn/signInRules/signInRules",

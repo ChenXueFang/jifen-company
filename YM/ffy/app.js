@@ -7,7 +7,7 @@ const setting = require("./utils/setting.js");
 const util = require("./utils/util.js");
 
 var apiUrl = setting.defaultUrl; //正式环境
-var apiUrlDev = "https://ffy.crmclick.com/webapi"; //开发环境
+var apiUrlDev = "https://ffy.crmclick.com/webapi"; //开发环境"https://www.mylife.philips.com.cn/ffymwebapi";//
 // var apiUrlDev = "http://localhost:8090"; //开发环境，本地测试每日签到功能
 
 var apiImgUrl = setting.defaultImgUrl; //正式环境-图片
