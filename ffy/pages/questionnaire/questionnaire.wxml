@@ -1,0 +1,19 @@
+<view>
+<image class="quet_bg" src="https://www.mylife.philips.com.cn/ffymadnim/upload/pic/ques_bg.png"></image>
+
+  <view class='fontDetail'>
+    <image class="font_bg" src="https://www.mylife.philips.com.cn/ffymadnim/upload/pic/fontbg.png"></image>
+    <view class='fdcontent'>
+      <text>每一次你做的选择，\n</text>
+      <text>都是在为你想要的世界投票，\n</text>
+      <text>让世界成为更好的世界，\n</text>
+      <text>让你成为更好的你，\n</text>
+      <text>你的孕期让我们携手度过！\n</text>
+    </view>
+  </view>
+
+  <view class='writeDetail'>
+   <image class="write_bg" src="https://www.mylife.philips.com.cn/ffymadnim/upload/pic/writebg.png"></image>
+   <button bindtap='toWrite'><image class='toWrite' src="https://www.mylife.philips.com.cn/ffymadnim/upload/pic/toWrite.png"></image></button>
+  </view>
+</view>

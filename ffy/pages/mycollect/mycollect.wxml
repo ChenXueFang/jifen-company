@@ -1,0 +1,20 @@
+<!--pages/mycollect/mycollect.wxml-->
+<page>
+  <view class="box">
+    <!-- 文章列表 -->
+    <view class="ziBox" bindtap="bindViewTap" data-id="{{item.ArticleId}}" wx:for="{{GetList}}"  wx:if="{{GetList.length>0}}">
+      <view class="zi">
+        <view class="title">{{item.Title}}</view>
+        <!-- <text class="author">作者：{{item.Author}}</text> -->
+      </view>
+      <view class="Img">
+        <image class="indexPic" src="{{item.TitleImage}}"></image>
+      </view>
+    </view>
+
+    <!--无收藏记录-->
+    <view class="norecord" wx:if="{{GetList.length<=0}}">
+      暂无收藏
+    </view>
+  </view>
+</page>

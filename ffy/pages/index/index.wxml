@@ -1,0 +1,35 @@
+<!--index.wxml-->
+<view id='container'>
+  <view class='indexMain'>
+    <image class="indexPic" src="../../images/index_bg.png"></image>
+
+    <view class='welcomeEnter'>
+      <text>欢迎来到飞凡孕妈！</text>
+
+      <image class="indexMid" src="https://www.mylife.philips.com.cn/ffymadnim/upload/pic/index_mid.png" mode="widthFix"></image>
+
+      <view class='mainNav' bindtap='toEnterPro'>
+        <view class='nav1'>
+          <image class='navPic' src="../../images/nav_cj_icon.png" mode="widthFix"></image>
+          <text class='navCj'>\n产检</text>
+        </view>
+
+        <view class='nav2' bindtap='toEnterPro'>
+          <image class='navPic2' src="../../images/nav_jl_icon.png" mode="widthFix"></image>
+          <text class='navjl'>\n每日记录</text>
+        </view>
+
+        <view class='nav3' bindtap='toEnterPro'>
+          <image class='navPic2' src="../../images/nav_kt_icon.png" mode="widthFix"></image>
+          <text class='navjl'>\n每日一读</text>
+        </view>
+
+        <view class='nav4' bindtap='toEnterPro'>
+          <image class='navPic' src="../../images/nav_dh_icon.png" mode="widthFix"></image>
+          <text class='navdh'>\n与宝宝</text>
+          <text class='navdh2'>\n“对话”</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

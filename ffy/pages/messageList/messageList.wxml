@@ -1,0 +1,19 @@
+<view id='container'>
+<view class='messMain'>
+  <view class='messlist' wx:for="{{messages}}" wx:key="index" bindtap='toDaliyRecord' data-levetime='{{item.Remark}}' data-leveid='{{item.LeaveMsgId}}'>
+    <view class='messText'> <!--Status 1未读 2已读-->
+        <image class="redpoint {{item.Status==1?'':'isshow'}}" src="../../images/redPoint.png"></image>
+      <text>{{item.LeaveMsg}}\n</text>
+      <text class='messDate'>{{item.Remark}}\n
+      </text>
+    </view>
+    <image class="messpic" src="../../images/messagepic.png"></image> 
+  </view>
+
+  <view class='nomess' wx:if="{{messages==null ||messages.length<=0}}">
+    <view class='nomesscon'> 
+        暂无数据
+    </view>
+  </view>
+</view>
+</view>

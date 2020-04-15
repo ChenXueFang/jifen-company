@@ -1,0 +1,11 @@
+<!--pages/pregnancyDiary/diaryTips/diaryTips.wxml-->
+<view class="container soon">
+<view class="content">
+ <image class="smilepic" src="https://www.mylife.philips.com.cn/ffymadnim/upload/pic/smile.png"></image>
+ <text class="msstip">怀孕的过程很辛苦也很美好，在这里记录下您和宝宝的每一个重要瞬间，将来多一份美好的回忆。 </text>
+<text class="msstip">在这里您可以将孕期日记导出并自动排版成书，我们会为您提供不同的材质选择，为您生成专属的人日记。 </text>
+<image class="tipimg" src="https://www.mylife.philips.com.cn/ffymadnim/upload/bgimages/tipsimg.png"></image>
+  <text class='mssbtn' bindtap="commingsoon">点击查看详情及价格</text>
+</view>
+</view>
+

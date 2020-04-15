@@ -1,0 +1,173 @@
+/* pages/chanDetails/chanDetails.wxss */
+@import "/wxParse/wxParse.wxss";
+
+page{
+  height: 100%;
+  background: #f4f4f4;
+}
+.container{
+  min-height:100%;
+}
+.wxParse-inline {
+  font-size: 32rpx;
+}
+/* 产检模板 */
+.TempBox,.picBox,.timeBox{
+  width: 100%;
+	background-color: #ffffff;
+  padding: 40rpx 0;
+}
+.TempCon,.picCon,.timeCon{
+  width: 90%;
+  margin: 0 auto;
+}
+/* 产检报告备份 */
+.picBox{
+  height: 100%;
+  margin-top: 20rpx;
+}
+.imgBox{
+  width: 100%;
+  height: 300rpx;
+  background-color: #f8edf5;
+	border-radius: 10px;
+}
+.picTitle,.timeTitle{
+  font-size: 35rpx;
+	font-weight: bold;
+	color: #333333;
+  margin-bottom: 30rpx;
+}
+.submitPic{
+  width: 100%;
+  height: 300rpx;
+}
+.submitImg{
+  width: 100%;
+  height: 300rpx;
+  line-height: 300rpx;
+  overflow: hidden;
+  text-align: center;
+}
+.time{
+  font-size: 30rpx;
+  margin-top: -10rpx;
+}
+/* 上传报告模态框 */
+.modal-mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+  z-index: 9000;
+  color: #fff;
+}
+.modal-dialog {
+  width: 620rpx;
+	height: 476rpx;
+  overflow: hidden;
+  position: fixed;
+  top: 28%;
+  left: 9%;
+  z-index: 9999;
+  background: #fff;
+  border-radius: 10rpx;
+}
+.modal-title {
+  padding-top: 50rpx;
+  text-align: center;
+}
+.modal-title>image{
+  width: 122rpx;
+  height: 96rpx;
+}
+.modal-input {
+  font-size: 32rpx;
+  font-weight: bold;
+  text-align: center;
+	color: #333333;
+  margin-top: 30rpx;
+}
+.modal-footer {
+  display: flex;
+  justify-content: space-around;
+  height: 86rpx;
+  font-size: 34rpx;
+  line-height: 86rpx;
+  margin-top: 20rpx;
+}
+.btn-cancel {
+  width: 260rpx;
+	height: 66rpx;
+  line-height: 66rpx;
+  text-align: center;
+	background-color: #c5c5c5;
+	border-radius: 33rpx;
+  font-size: 32rpx;
+	color: #ffffff;
+}
+.btn-confirm {
+  width: 260rpx;
+	height: 66rpx;
+  line-height: 66rpx;
+  text-align: center;
+	background-color: #b64c9b;
+	border-radius: 33rpx;
+  font-size: 32rpx;
+	color: #ffffff;
+}
+.submitImgMask{
+  width: 330rpx;
+	height: 250rpx;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	border: solid 1rpx #b64c9b;
+}
+.smallImg{
+  width: 293rpx;
+	height: 217rpx;
+}
+.weui-uploader__img {
+  display: block;
+  width: 670rpx;
+  height: 300px;
+}
+/*产检解读*/
+.CJReadings{
+  position: absolute;
+  width: 180rpx;
+  height: 66rpx;
+  margin-top: 40rpx;
+  margin-left: 150rpx;
+}
+.cjQuestion{
+  width:82%;
+  margin: auto;
+  margin-top: 20rpx;
+  background-color: #f3e2ef;
+  padding: 20rpx 30rpx;
+  font-size: 32rpx;
+  color: #b64c9b;
+}
+radio {
+  transform:scale(0.8);
+}
+.submitCjQuestion{
+  display: inline-block;
+  width: 100rpx;
+  height: 40rpx;
+  line-height: 38rpx;
+  background-color:  #b64c9b;
+  color: #FFF;
+  text-align: center;
+  border-radius: 20rpx;
+  margin-left: 120rpx;
+  font-size: 26rpx;
+}

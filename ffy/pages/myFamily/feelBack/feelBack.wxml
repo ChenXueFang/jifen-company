@@ -1,0 +1,40 @@
+<view class='container' bindtap='hideCH'>
+  <view class="diaMain" id='diaMain'>
+    <view wx:if="{{istop}}" class='ddtop'>到顶了</view>
+
+    <view class='messagelist' catchtap='inbtn'>
+      <view wx:key="index" class="msg-item {{item.UserContent==null? '' : 'msg-item-self' }}" wx:for='{{nowtalkList}}'>
+        <!-- 时间段 -->
+        <view class="timeBox" wx:if="{{item.Remark!=null}}">{{item.Remark}}</view>
+        <!-- 聊天内容 -->
+        <view class="msg-content">
+          <view class="{{item.UserContent==null? 'leftheadimg' : 'rightheadimg' }}">
+            <image class="nickImg" src="{{item.UserContent==null?'../../../images/dueDatelogo.png':headImage}}"></image>
+          </view>
+          <view class="msg-content-inner">
+            <view bindlongtap='cxoper' data-selmess="{{item.FeedId}}">{{item.UserContent==null? item.SystemContent : item.UserContent }}</view>
+          </view>
+          <view class="msg-content-arrow"></view>
+        </view>
+      </view>
+
+    </view>
+
+  </view>
+
+  <view class='inputDia'>
+    <input class='dia' placeholder="输入反馈小程序功能使用过程中遇到的问题" bindinput="inputMess" value='{{inputInit}}' />
+    <!-- 发送按钮 -->
+    <view class="sendBox" bindtap="sendMessage" wx:if="{{!isSendSucc}}">
+      <image class="diasend" src="../../../images/diasend.png"></image>
+      <text class='sendbtn'>发送</text>
+    </view>
+    <!-- <div wx:if="{{!isSendSucc}}">
+      <image class="diasend" src="../../images/diasend.png"></image>
+      <text class='sendbtn' bindtap='sendMessage'>发送</text>
+    </div> -->
+    <div wx:else>
+      <text class='sendbtn2'>发送中...</text>
+    </div>
+  </view>
+</view>

@@ -1,0 +1,52 @@
+<view class='sizeContent'>
+
+<view style='width:20%;display: inline-block;'>
+  <view class='week'>周</view>
+  <picker-view indicator-style="height: 35px;color: #b64c9b;" style="width: 100%; height: 200px;background-color:#ca7bc5;" value="{{yweekindex}}" bindchange="bindChange">
+    <picker-view-column class="columnv">
+      <view wx:for="{{badySizeList}}" style="line-height: 35px;text-align: center;" class="{{yweekindex==index?'selectedclass':''}}" >{{item.WeekTitle}}</view>
+    </picker-view-column>
+  </picker-view>
+</view>
+
+<view style='width:70%;display: inline-block;margin-left:5%;'>
+<picker-view indicator-style="height: 200px;border-top:0;border-bottom:0" style="width: 100%; height: 200px;" value="{{yweekindex}}" bindchange="bindPicChange">
+    <picker-view-column>
+      <view wx:for="{{badySizeList}}" class="{{yweekindex==index?'columnpic':''}}">
+        <image class='animal' src="{{selectIndex==0?item.EqualObjectImage2:item.EqualObjectImage1}}" ></image>
+      </view>
+    </picker-view-column>
+  </picker-view>
+</view>
+
+  <image class='gesture' src='../../images/gesture.png'></image>
+
+  <view class='animalName' wx:for="{{badySizeList}}" wx:if="{{index==yweekindex}}">{{selectIndex==0?item.EqualObject2:item.EqualObject1}}</view>
+  <view class='changeType'>
+    <picker bindchange="bindSelect" value="{{selectIndex}}" range="{{selectArray}}">
+      <view class="picker">
+        {{selectArray[selectIndex]}}
+      </view>
+      <view class='sel'></view>
+    </picker>
+  </view>
+
+  <view class='babynfo'>
+    <view class='leftWeight'>
+      <text>宝宝体重\n</text>
+      <text class='number'>{{babyWeight}}\n</text>
+      <text class='dw'>克</text>
+    </view>
+    <view class='rightHeight'>
+      <text>宝宝身长\n</text>
+      <text class='number'>{{babyHeight}}\n</text>
+      <text class='dw'>厘米</text>
+    </view>
+  </view>
+
+  <!--注意事项-->
+  <view class='tips'>
+    <image class='babytips' src="../../images/babytips.png" ></image>
+    <rich-text>{{noticeItme}}</rich-text>
+  </view>
+</view>

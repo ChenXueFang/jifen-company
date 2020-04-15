@@ -1,0 +1,58 @@
+.container{
+  width: 100%;
+}
+.sddMain{
+  width: 85%;
+  margin: auto;
+  text-align: center;
+}
+.dlogo{
+  width: 25%;
+  height: 25%;
+  margin-top: 60rpx;
+}
+.selectDiv{
+  text-align: left;
+  margin-top: 60rpx;
+  font-weight: 500;
+  font-size: 35rpx;
+}
+
+.uItem{
+  margin-top: 50rpx;
+}
+.selecticon{
+  width: 6%;
+  position: absolute;
+  margin-left: -320rpx;
+}
+.selecttip{
+  color: #999999;
+}
+.section{
+  margin-top: 10rpx;
+  width: 87%;
+  height: 60rpx;
+  border-bottom: 1px solid #dcdcdc;
+  /*position: absolute;
+  margin-left: -230rpx;
+  margin-top: -30rpx; */
+  text-align: left;
+  padding-left: 80rpx;
+  
+}
+.selectSp{
+  width: 2%;
+  position: absolute;
+  margin-left: 300rpx;
+  margin-top: -47rpx;
+}
+.Saveinfo{
+  margin-top: 60rpx;
+}
+.Mbtn{
+  width: 45%;
+  background-color: rgb(167, 56, 139);
+  color: #FFF;
+  border-radius: 50rpx;
+}

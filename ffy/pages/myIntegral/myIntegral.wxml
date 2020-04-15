@@ -1,0 +1,35 @@
+<view id='container'>
+  <view class='integralMain'>
+    <view class='integralTotal'>
+      <text class='nowJf'>当前积分\n</text>
+      <image class="jfnum" src="../../images/jfnum.png"></image>
+      <text class='nowjfNum'>{{myscore}}</text>
+    </view>
+
+    <view class='jfContent'>
+      <text class='jsTDesc'>相关说明</text>
+      
+      <view>
+      
+        <view class='jfdec'>
+          <image class="jfpoint" src="../../images/jfpoint.png"></image>
+          <text class='jf'>尊敬的用户，飞凡孕妈的积分规则和积分兑换功能还在积极开发中，当前仅支持妈妈每日积分签到哦（每日签到可获10积分），未来爸爸和家庭成员将可以参与到家庭积分中。</text>
+        </view>
+
+        <view class='jfdec'>
+          <image class="jfpoint" src="../../images/jfpoint.png"></image>
+          <text class='jf'>我们将会开通的积分任务包括邀请亲友加入小程序、分享朋友圈/分享给朋友或群聊、打卡每日记录/新增日记、完成运动目标等等，敬请期待！</text>
+        </view>
+
+        <view class='jfdec'>
+          <image class="jfpoint" src="../../images/jfpoint.png"></image>
+          <view class='jf'>未来累计的积分可以兑换商品，如果想浏览未来可兑换的产品，<view class='toViewPro' bindtap="store">点此进入</view>吧！</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='collectFormId' bindtap='tocollect' wx:if="{{isShowCollect}}">
+  收集formid
+  </view>
+</view>

@@ -1,0 +1,126 @@
+<!--index.wxml-->
+<view id='container'>
+  <view class='indexMain'>
+    <image class="indexPic" src="https://www.mylife.philips.com.cn/ffymadnim/upload/pic/index_bg.png"></image>
+
+    <view class='welcomeEnter'>
+      <view wx:if="{{isshowweekdanday}}">
+        <text class='leftSp'>《\n</text>
+        <view class='centerView'>
+          <text>今天是孕\n</text>
+          <text>{{yWeek}}周+{{yDay}}天</text>
+        </view>
+        <text class='rightSp'>》 \n</text>
+        <image class="leftMess" wx:if="{{myRole=='Mather'}}" src="../../images/newMess.png" bindtap='toMessageList'></image>
+        <image class="redpoint" wx:if="{{myRole=='Mather'&&isHasNewMessage}}" src="../../images/redPoint.png"></image>
+
+        <view wx:if="{{myRole=='Mather'||myRole=='Father'}}">
+          <!-- 幸运星 -->
+          <image class="rightScore" src="../../images/scoresign.png" bindtap='addScore'></image>
+          <!-- <view class="adds {{ishidd?'isHidd':''}}" animation="{{ani}}">
+            <text>+10</text>
+          </view> -->
+        </view>
+      </view>
+      <text wx:else>欢迎来到飞凡孕妈！</text>
+      <!-- 游客登录按钮 class="{{showIslogin?'show':'hide'}}" -->
+      <view  wx:if="{{showIslogin}}">
+        <image class="enterPro" src="../../images/enterPro.png" bindtap="showDialogBtn"></image>
+      </view>
+      <view wx:if="{{showIsInvite}}">
+        <image class="inviteRecord"  src="../../images/inviteRecord.png" bindtap="inviteRecordBtn"></image>
+      </view>
+      <!-- 登录注册模态框 -->
+      <view class="modalBox">
+        <view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+        <view class="modal-dialog" wx:if="{{showModal}}">
+          <view class="modal-title">
+            <image src="https://www.mylife.philips.com.cn/ffymadnim/upload/pic/smile.png"></image>
+          </view>
+          <view class="modal-content">
+            
+            <view class="modal-input">
+              <view class="modal-conTitle">您尚未登录注册</view>注册家庭可以体验更多功能，赶紧前往组建家庭吧！
+            </view>
+          </view>
+          <view class="modal-footer">
+            <view class="btn-cancel" bindtap="onCancel" data-status="cancel">暂不注册</view>
+            <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">立即注册</view>
+          </view>
+        </view>
+      </view>
+      <!-- 登录注册模态框 -->
+      <image class="fourColor" src="https://www.mylife.philips.com.cn/ffymadnim/upload/pic/fourColor.png" bindtap='toFourColor'  wx:if="{{homeBgFour}}"></image>
+      <!-- <image class="indexMid" src="https://www.mylife.philips.com.cn/ffymadnim/upload/pic/index_mid.png" mode="widthFix" wx:if="{{!homeBgFour}}"></image>
+      <div wx:else>
+      <image class="indexMid" src="https://www.mylife.philips.com.cn/ffymadnim/upload/pic/index_mid2.png" mode="widthFix"></image>
+      <image class="fourColor" src="https://www.mylife.philips.com.cn/ffymadnim/upload/pic/fourColor.png" bindtap='toFourColor'></image>
+      </div> -->
+
+      <view class='mainNav'>
+        <view class='itemnav' catchtap='toDialogue'>
+          <image class='navPic' src="../../images/himg1.png"></image>
+          <text class='dia1'>与宝宝\n“对话”</text></view>
+        <view class='itemnav' catchtap='toDailyRecord'>
+          <image class='navPic' src="../../images/himg2.png"></image>
+          <text class='dia'>每日记录</text></view>
+        <view class='itemnav' catchtap='toLaborChart'>
+          <image class='navPic' src="../../images/himg3.png"></image>
+          <text class='dia2'>产检</text></view>
+        <view class='itemnav' catchtap='toClassRoom'>
+          <image class='navPic' src="../../images/himg4.png"></image>
+          <text class='dia'>每日一读</text></view>
+      </view>
+    </view>
+
+
+    <view class="{{isYDPic1?'isisYDPic1':'isisYDPic1Hide'}}" bindtap='hidePic1'>
+      <!-- <image wx:if="{{bigSr}}" class="pic1bottom"  src="https://www.mylife.philips.com.cn/ffymadnim/upload/pic/homeydPic1_big.png"></image> -->
+      <image class="pic1bottom"  src="https://www.mylife.philips.com.cn/ffymadnim/upload/pic/homeydPic1.png"></image>
+    </view>
+    <!-- <view class="RSZhezhao {{isYDPic2?'isYDPic2':'isYDPic2Hide'}}" bindtap='hidePic2'>
+      <image class="ydPic2" src="../../images/homeydPic2.png"></image>
+    </view> -->
+  </view>
+
+
+<!--优惠券-->
+<view wx:if="{{yhqRF}}">
+  <movable-area style="pointer-events: none;height: 80%;width: 78rpx;position:absolute;right:0px;top:20%;">
+    <movable-view direction="all" style="pointer-events: auto;height: 77rpx; width: 78rpx; " bindtap='bingshowyhq'>
+      <image src='../../images/yhq.png' class="yhqimgStyle"></image>
+    </movable-view>
+  </movable-area>
+</view>
+<!--优惠券-->
+
+<!--优惠券领取弹窗 -->
+<view class="modalBox">
+  <view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showyhq}}"></view>
+  <view class="modal-dialog2" wx:if="{{showyhq}}">
+    <image class='yhqbg' src='https://ffy.crmclick.com/adnim/upload/pic/yhqbg.png'></image>
+    <image class='yhqclose' src='../../images/yhqclose.png' bindtap='closeyhq'></image>
+     <view class="yhqName">6<text class='discount'>折</text> 优惠券</view>
+     <view class='tolq' bindtap='tolq'>前往领取</view>
+    <!-- <view class="modal-content2">
+    </view> -->
+  </view>
+</view>
+<!-- --优惠券领取弹窗 -->
+
+<!--优惠券领取引导弹窗 -->
+<view class="modalBox">
+  <view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showToRFyhq}}"></view>
+  <view class="modal-dialog2" wx:if="{{showToRFyhq}}">
+    <image class='yhqbg' src='https://ffy.crmclick.com/adnim/upload/pic/yhqToR.png'></image>
+    <image class='yhqclose' src='../../images/yhqclose.png' bindtap='closeToRei'></image>
+     <view class="yhqName2">立享<text class='discount2'>6</text>折优惠券</view>
+     <view class='tolq' bindtap='toRegi'>注册我的家庭</view>
+    <!-- <view class="modal-content2">
+    </view> -->
+  </view>
+</view>
+<!-- --优惠券领取引导弹窗 -->
+</view>
+
+<image class="diaDeyd {{isYDPic2?'isYDPic2':'isYDPic2Hide'}}" src="https://www.mylife.philips.com.cn/ffymadnim/upload/pic/homeydPic2.png" bindtap="hidePic2"></image> 

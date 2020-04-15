@@ -1,0 +1,74 @@
+
+<view class='container' bindtap='hideCH'>
+  <view class="diaMain" id='diaMain'>
+    <view wx:if="{{istop}}" class='ddtop'>到顶了</view>
+
+    <view class='messagelist'  catchtap='inbtn' >
+      <!--妈妈的消息wx:if="{{mmcont!=''}}"-->
+      <view  wx:key="index" class="msg-item {{item.UserRole==myRole? 'msg-item-self' : (item.UserRole==''?'':'msg-item-other') }}"  wx:for='{{nowtalkList}}'>
+       
+        <view class="msg-content" >
+          <view class="{{item.UserRole==myRole? 'rightNickName' : 'leftNickName' }}">
+            <text>{{item.MmContent==''? '宝宝' : (item.UserRole=='Mather'?'妈妈':'爸爸') }}</text>
+          </view>
+          <view class="{{item.UserRole==myRole? 'rightheadimg' : 'leftheadimg' }}">
+            <image class='userheadimg' wx:if="{{item.MmContent==''}}" src="https://www.mylife.philips.com.cn/ffymadnim/upload/bgimages/bbHeadImg.png" ></image>
+            <image class='userheadimg' wx:else src="{{item.msgList.userHeadImg}}" ></image>
+          </view>
+          <view class="msg-content-inner">
+            <div wx:if="{{item.MmContent==''}}"> 
+              <view>{{item.BbContent }}</view>
+            </div>
+            <div wx:else>
+              <view bindlongtap='cxoper' data-selmess="{{item.TalkId}}" wx:if="{{item.VoicePath==null||item.VoicePath==''}}">{{item.MmContent}}</view>
+              <view bindlongtap='cxoper' data-selmess="{{item.TalkId}}" wx:else bindtap='playv' data-src="{{item.VoicePath}}">
+                <image class='sound' src="../../images/diavoice.png" ></image>
+                <text class='soundplay'>点击播放语音</text>  
+              </view>
+            </div>
+            
+          </view>
+          <view class="msg-content-arrow"></view>
+        </view>
+
+        <view class="msg-changeFont" hidden="{{(item.VoicePath==null||item.VoicePath=='')}}">
+          <view class="msg-content-inner">
+            <view>{{item.MmContent==''?  item.BbContent : item.MmContent }}</view>
+          </view>
+        </view>
+    
+        <view wx:if="{{index==nowtalkList.length-1}}" class="delMess {{item.isCXShow ? 'isRSShow':'isRSHide'}}" hidden="{{item.MmContent==''}}" bindtap='revocation' data-delid="{{item.TalkId}}">
+          <view>
+            <view>撤回</view>
+          </view>
+          <view class="msg-content-arrow"></view>
+        </view>
+      </view>
+      </view>
+  </view>
+
+
+<!-- wx:if="{{myRole=='Mather'}}" -->
+  <view class='inputDia'>
+    <div wx:if="{{!showSendVoice}}">
+      <image class="diayuyin" src="../../images/diayuyin.png"  bindtap="changeSend"></image>
+      <input class='dia'  bindinput="inputMess"  value='{{inputInit}}'/>
+      <image class="diaat" src="../../images/diaat.png" bindtap="atOther"></image>
+      <div wx:if="{{!isSendSucc}}">
+      <image class="diasend" src="../../images/diasend.png"></image>
+      <text class='sendbtn' bindtap='sendMessage'>发送</text>
+      </div>
+      <div wx:else>
+        <text class='sendbtn2'>发送中...</text>
+      </div>
+    </div>
+    
+    <div wx:else>
+      <image class="diayuyin" src="../../images/diayuyin.png"  bindtap="changeSend"></image>
+      <button class="{{luStatu?'btTouch':'bt'}}"  bind:touchstart="touchStart" bind:touchend="touchEnd"  type='primary'>   
+ <text wx:if="{{luStatu}}">松开结束</text> <text wx:else>按住说话 </text> </button>
+    </div>
+  </view>
+</view>
+
+<image class="diaDeyd {{isYDPic1?'isisYDPic1':'isisYDPic1Hide'}}" src="https://www.mylife.philips.com.cn/ffymadnim/upload/bgimages/diaDeyd.png" bindtap="hidePic"></image>

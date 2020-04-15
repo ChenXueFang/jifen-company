@@ -1,0 +1,42 @@
+<view id='container'>
+  <view class='tdMain'>
+    <view class='tdM_top'>
+      <text class='tdM_tt'>有效胎动\n</text>
+      <text class='tdM_tt'>{{tdsNum}}\n</text>
+      <image class="tdnumbg" src="https://www.mylife.philips.com.cn/ffymadnim/upload/pic/tdNum_bg.png"></image>
+      <text class='clickStart' bindtap='clickSt' wx:if='{{showtime}}'>点击开始</text>
+      <view class='tdjs' wx:else bindtap='showEnd'>
+        <text>{{jishi}}\n</text>
+        <text>动一下，点一下</text>
+      </view>
+      <text>\n1小时内的记录才有效哦！</text>
+
+      <view class='TDbtn'>
+        <text class='resetbtn' bindtap='resetTime'>重置</text>
+        <text class='surebtn' bindtap='complateNum'>完成</text>
+      </view>
+    </view>
+   
+   <view class='tddesc'>
+    <text>1.建议每天早中晚的饭后、运动后进行胎动记录\n</text>
+    <text>2.胎动次数少，可试着站起来走一走唤醒宝宝\n</text>
+    <text>3.单个动作、连续动作都算一次胎动，我们每五分钟只记录1次有效胎动哦\n</text>
+   </view>
+
+   <view class='explain' bindtap='toTDExplain'>
+    <text>胎动说明</text>
+   </view>
+  </view>
+
+  <!--提前结束弹窗-->
+  <view class="RSZhezhao {{isRSShow?'isRSShow':'isRSHide'}}">
+      <view class='rscontent'>
+        <image class="tdsend" src="https://www.mylife.philips.com.cn/ffymadnim/upload/pic/tdsend.png"></image>
+        <text class='tdstip'>\n提前结束，本次记录将无法保存！\n</text>
+        <view class='tdsbtn'>
+          <text class='gey' bindtap="hideEnd">取消</text>
+          <text class='pur' bindtap="comitEnd">确定结束</text>
+        </view>
+      </view>
+  </view>
+</view>

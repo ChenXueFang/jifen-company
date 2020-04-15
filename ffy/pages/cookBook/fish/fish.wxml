@@ -1,0 +1,56 @@
+<!--pages/cookBook/greenPeppers/greenPeppers.wxml-->
+<view class="Box">
+  <image class="imgB" src="{{urlImg}}{{img[0]}}"></image>
+  <view class="bigTitle">清蒸鲈鱼</view>
+  <text class="bigTitle2" decode="{{true}}">制作时间：约20分钟&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;烹饪难度：简单</text>
+  
+  <!-- 标签 -->
+  <view class="labelBox">
+    <button>锌</button>
+    <button>硒</button>
+    <button>磷</button>
+    <button class="label2">优质蛋白质</button>
+  </view>
+  
+  <!-- 热量说明 -->
+  <view class="hotBox">
+    <view class="hotTitle">
+      <text>热量</text>
+      <text class="hotNum">95千卡</text>
+    </view>
+    <!-- 进度条 -->
+    <view class="progressBot"><view class="progressTop"></view></view>
+  </view>
+  <view class="hotIntro">鲈鱼富含优质蛋白质以及锌、硒、磷等矿物元素<text class="hotIntro_Small"><text class="biao">[1]</text></text>。孕中期妇女在孕前平衡膳食的基础上，需要增加蛋白质的摄入量。同样重量的鱼类与畜禽肉类相比，提供的优质蛋白相差无几，但是鱼类所含脂肪和能量明显少于畜禽类。中国居民膳食指南推荐每周最好食用2~3次的鱼类<text class="hotIntro_Small"><text class="biao">[2]</text></text>。</view>
+  
+  <!-- 材料 -->
+  <view class="menuBox">
+    <view class="wayTitle"><text class="lineLeft"></text><text>材料</text></view>
+    <view class="wayCon">鲈鱼100g，植物油4g，调料（葱、姜、蒜等）适量。</view>
+  </view>
+
+  <!-- 制作方法 -->
+  <view class="menuBox">
+    <view class="wayTitle"><text class="lineLeft"></text><text>制作方法</text></view>
+    <view class="wayCon">
+      <text>1. 姜切片 ，葱切段。将姜片夹在鱼背滑刀处，葱段放鱼下面；
+2. 上锅开水后蒸6分钟，虚焖3分钟，去掉蒸鱼时的葱姜，滗去盘里的水分；
+3. 放适量葱丝在鱼上，再淋上少许热油即可。</text>
+    </view>
+  </view>
+  
+  <!-- 烹饪建议 -->
+  <view class="menuBox">
+    <view class="wayTitle"><text class="lineLeft"></text><text>烹饪建议</text></view>
+    <view class="wayCon">也可以用电饭煲在焖饭的同时焖鱼，既能节省能源，又无须另起炉灶，免受事后洗锅的困扰<text class="hotIntro_Small"><text class="biao biao2">[3]</text></text>。 </view>
+  </view>
+
+  <!-- 参考文献 -->
+  <view class="referenceBox">
+    <view class="referenceTitle">参考文献</view>
+    <text class="referenceCon">[1] 中国食物成分表（2004）
+[2] 中国居民膳食指南（2016）
+[3] 王兴国, 腾越, 孙岗. 长胎不长肉的孕期营养餐单[M]. 中国妇女出版社. 2013</text>
+  </view>
+
+</view>

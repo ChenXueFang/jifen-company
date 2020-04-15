@@ -1,0 +1,8 @@
+{
+  "navigationBarBackgroundColor": "#FFF",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "功能导航",
+  "backgroundColor": "#FFF",
+  "backgroundTextStyle": "light",
+  "disableScroll": true
+}

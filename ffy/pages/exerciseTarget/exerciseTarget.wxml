@@ -1,0 +1,21 @@
+<view id='container'>
+  <view class='targetMain'>      
+      <image class="targetpic" src="../../images/exerciseTar.png"></image>
+      
+      
+      <view class="section">
+        <picker mode="date" value="{{date}}" disabled='disabled'  bindchange="bindDateChange">
+        <text>当前日期</text>
+          <view class="picker">
+            {{date}}
+          </view>
+        </picker>
+      </view>
+      <!-- <input type="number" maxlength="5"  class='targetNumger' disabled="{{myRole!='Mather'}}" placeholder="请输入目标步数" bindinput="getTarNum" value='{{targetNum}}'/> -->
+       <input type="number" maxlength="5"  class='targetNumger' wx:if="{{myRole=='Mather'||moRenRole}}" disabled="{{myRole!='Mather'&&!moRenRole}}" placeholder="请输入目标步数" bindinput="getTarNum" value='{{targetNum}}'/>
+      <view class='targetNumger' wx:else>{{targetNum==""?'妈妈没有设定目标':targetNum}}</view>
+      <view class='sumbitBtn' bindtap='submitTargetNum' wx:if="{{myRole=='Mather'||moRenRole}}">
+        <text>提交</text>
+      </view>
+  </view>
+</view>

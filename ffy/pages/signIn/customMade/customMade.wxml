@@ -1,0 +1,25 @@
+<!--pages/signIn/customMade/customMade.wxml-->
+<page>
+  <image class="bgImg" src="{{urlImg}}{{img[0]}}"></image>
+  <view class="Box">
+    <view class="conBox">
+      <view class="introduce">定制化奶瓶将为您留下一段美好回忆，并专属于您。在这里您可以选择不同大小或颜色的奶瓶，刻上宝宝的名字，或者您想对宝宝说的话，纪念从怀孕到最后见到宝宝的辛勤却又快乐的旅程。</view>
+
+      <input placeholder-class="phcolor" disabled="{{disabled}}" class="input" maxlength="5" placeholder="请输入制定名称" bindinput="bindinput" value="{{answerRemark}}" />
+
+      <view class="radioBox">
+        <view class="radioTitle">奶瓶容量</view>
+        <radio-group class="radio-group" bindchange="radioChange">
+          <label class="radio" wx:for="{{checkitems}}" wx:key="{{index}}" data-index="{{index}}">
+            <radio value='{{item.index}}' disabled="{{disabled}}" checked="{{item.checked}}" /> {{item.content}}
+          </label>
+        </radio-group>
+      </view>
+
+      <view class="madeBox" wx:if="{{!disabled}}">
+        <button class="madeBtn" bindtap="madeBottle">定制奶瓶</button>
+      </view>
+
+    </view>
+  </view>
+</page>
