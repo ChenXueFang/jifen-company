@@ -1,8 +1,0 @@
-<!--pages/vipServe/inviteCode/inviteCode.wxml-->
-<view class="box">
-  <image class="warn" src="../../../images/success.png"></image>
-  <view class="title">预约成功</view>
-  <view class="tip">您的预约服务已提交成功，1个工作日之内您将收到来自飞利浦睡眠呼吸中心的确认来电，请保持手机畅通。</view>
-
-  <button class='btn know' bindtap="toService">确定</button>
-</view>

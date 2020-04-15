@@ -1,8 +1,0 @@
-<!--pages/pregnancyDiary/commingsoon/commingsoon.wxml-->
-<view class="container soon">
-<view class="content">
- <image class="smilepic" src="https://www.mylife.philips.com.cn/ffymadnim/upload/pic/smile.png"></image>
- <text class="msstip">感谢您的支持！该功能即将上线，敬请期待。 </text>
-  <text class='mssbtn' bindtap="goback">返回</text>
-</view>
-</view>
