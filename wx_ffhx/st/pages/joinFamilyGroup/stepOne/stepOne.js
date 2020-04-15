@@ -11,11 +11,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-    snNumber:'',
+    snNumber: '',
     isSearchShow: false,
     isExist: false,
-    time1: "",//进入页面时间
-    time2: "",//离开页面时间
+    isNextBtn: false, //下一步按钮是否可点
+    time1: "", //进入页面时间
+    time2: "", //离开页面时间
   },
   //电话
   toCall: function () {
@@ -30,6 +31,9 @@ Page({
     console.log(e)
 
     if (e.detail.userInfo != undefined) {
+      this.setData({
+        isNextBtn: false, //下一步按钮是否可点
+      })
       // 获取用户信息接口
       let hr = await authApi.wxApi.wxUserInfo(e);
       app.globalData.userInfo = e.detail.userInfo
@@ -38,7 +42,7 @@ Page({
         wx.setStorageSync("nickName", app.globalData.userInfo.nickName);
         wx.setStorageSync("avatarUrl", app.globalData.userInfo.avatarUrl);
       }
-      
+
       //检查家庭组或sn是否存在
       var hrs = await register.UserRegister.CheckHasSN({
         SN: this.data.snNumber,
@@ -52,34 +56,52 @@ Page({
             isExist: true
           })
         } else {
-          if (hrs.rows[0].ApprovState == 0 || hrs.rows[0].ApprovState == 1) {
+          // ApprovState == 0，完成了第一步，检查sn, 可申请绑定
+          if (hrs.rows[0].ApprovState == 0) {
+            this.setData({
+              isExist: true
+            })
+          }else if ( hrs.rows[0].ApprovState == 1) {  //完成注册，提交申请
             this.setData({
               isSearchShow: true
             })
-          } else if (hrs.rows[0].ApprovState == 2) {
+          } else if (hrs.rows[0].ApprovState == 2) {  //后台审核通过，创建了家庭组
             //根据家庭组名查询sn号
             var hrss = await register.UserRegister.SelectFamily({
               snorfamilyNo: this.data.snNumber
             });
             if (hrss.state == 1 && hrss.rows.length > 0) {
+              this.setData({
+                isNextBtn: false, //下一步按钮是否可点
+              })
               wx.navigateTo({
                 url: '../stepTwo/stepTwo?famGroId=' + hrss.rows[0].FamilyName
               })
             } else {
-              wx.showToast({
-                title: hrss.msg,
-                icon: 'none',
-                duration: 2000
+              this.setData({
+                isNextBtn: true, //下一步按钮是否可点
               })
+              // setTimeout(function () {
+                wx.showToast({
+                  title: hrss.msg,
+                  icon: 'none',
+                  duration: 2000
+                })
+              // }, 900)
             }
           }
         }
       } else {
-        wx.showToast({
-          title: hrs.msg,
-          icon: 'none',
-          duration: 2000
+        this.setData({
+          isNextBtn: true, //下一步按钮是否可点
         })
+        setTimeout(function () {
+          wx.showToast({
+            title: hrs.msg,
+            icon: 'none',
+            duration: 2000
+          })
+        }, 900)
       }
     }
     var that = this;
@@ -112,17 +134,88 @@ Page({
     })
   },
   //序列号不存在
-  toRegister:function(){
+  toRegister: async function () {
+    var that = this;
+    setTimeout(function () {
+      wx.showLoading({
+        title: '加载中...',
+      })
+    },850)
+    //检查sn号
+    var hrs = await register.UserRegister.CheckSN({
+      userId: wx.getStorageSync("wxauth").userid,
+      sn: this.data.snNumber,
+      isFirst:true
+    });
+    console.log(hrs)
+    if (hrs.state == 1) {
+      this.setData({
+        isNextBtn: false, //下一步按钮是否可点
+      })
+      setTimeout(function () {
+        wx.hideLoading();
+        //带参数：患者本人
+        wx.navigateTo({
+          url: '../../register/stepTwo/stepTwo?deviceId=' + hrs.rows[0].DeviceIdGuid
+        })
+      },900)
+    } else if (hrs.state == -2 && hrs.msg == "该sn号已被绑定，请选择其他sn号") {
+      // 有家庭组信息
+      if (hrs.data) {
+        setTimeout(function () {
+          wx.hideLoading();
+        }, 900)
+        this.setData({
+          isExist: true,
+          familyName: hrs.data.FamilyName,
+          familyid: hrs.data.FamilyIdGuid,
+          isNextBtn: true, //下一步按钮是否可点
+        })
+        console.log('家庭id：' + this.data.familyid + ",家庭名：" + this.data.familyName)
+      }else{  // 没有家庭组信息
+        setTimeout(function () {
+          wx.hideLoading();
+          wx.showToast({
+            title: hrs.msg,
+            icon: 'none',
+            duration: 2000
+          })
+        }, 900)
+      }
+    } else {
+      setTimeout(function () {
+        wx.hideLoading();
+      },900)
+      this.setData({
+        isNextBtn: true, //下一步按钮是否可点
+      })
+      setTimeout(function () {
+        wx.showToast({
+          title: hrs.msg,
+          icon: 'none',
+          duration: 2000
+        })
+        that.setData({
+          isExist: false
+        })
+      },900)
+    }
+
     //带参数：患者本人
-    wx.navigateTo({
-      url: '../../register/stepTwo/stepTwo?deviceId=' + this.data.snNumber
-    })
+    // wx.navigateTo({
+    //   url: '../../register/stepTwo/stepTwo?deviceId=' + this.data.snNumber
+    // })
   },
   //输入sn码或组长信息
   onInputValue: function (e) {
     this.setData({
       snNumber: e.detail.value
     })
+    if(e.detail.value){
+      this.setData({
+        isNextBtn: true, //下一步按钮是否可点
+      })
+    }
   },
   //组长申请在审核弹窗
   showSearch: function () {
@@ -153,7 +246,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+
   },
 
   /**

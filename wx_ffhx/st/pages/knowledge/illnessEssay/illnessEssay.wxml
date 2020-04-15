@@ -51,15 +51,15 @@
         </view>
       </view>
       <!-- <view class="pay">打赏作者</view> -->
-      <!-- 是否喜欢 -->
-      <view class="likeBox">
+      <!-- 是否喜欢    最新消息3，设备维护4，无是否喜欢，无相关文章-->
+      <view class="likeBox" wx:if="{{classtype!=3 && classtype!=4}}">
         <view class='like {{isLike==true?"choose":""}}' bindtap="bindLike" data-likechoose="{{true}}">喜欢
           <text>{{likeCount}}</text>
         </view>
         <view class='like {{isLike==false?"choose":""}}' bindtap="bindLike" data-likechoose="{{false}}">不喜欢</view>
       </view>
       <!-- 是否有帮助 -->
-      <view>
+      <view wx:if="{{classtype!=3 && classtype!=4}}">
         <view class="yesTitle2">您认为此文是否有帮助？</view>
         <view class="likeBox">
           <view class='like {{isUseful==true?"choose":""}}' bindtap="bindUseful" data-usefulchoose="{{true}}">是</view>
@@ -98,13 +98,15 @@
     <!-- essayBox End,居中的盒子 -->
 
     <!-- 相关文章推荐分割线 -->
-    <view class="line"></view>
+    <view class="line" wx:if="{{classtype!=3 && classtype!=4}}"></view>
     <!--相关文章推荐列表-->
-    <view class='newslist reading'>相关阅读</view>
-    <view class='newslist' bindtap="toIllnessEssay" data-guid="{{item.ArticleIdGuid}}" data-classtype="{{classtype}}" wx:for="{{illnessList}}" wx:key="{{index}}">
-      <view class='newCon'>
-        <view class="newZi">{{item.Title}}</view>
-        <image class="newImg" src="{{item.TitleImage}}"></image>
+    <view wx:if="{{classtype!=3 && classtype!=4}}">
+      <view class='newslist reading'>相关阅读</view>
+      <view class='newslist' bindtap="toIllnessEssay" data-guid="{{item.ArticleIdGuid}}" data-classtype="{{classtype}}" wx:for="{{illnessList}}" wx:key="{{index}}">
+        <view class='newCon'>
+          <view class="newZi">{{item.Title}}</view>
+          <image class="newImg" src="{{item.TitleImage}}"></image>
+        </view>
       </view>
     </view>
     <!--相关文章推荐列表 end-->

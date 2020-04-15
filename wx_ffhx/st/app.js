@@ -5,10 +5,10 @@ const setting = require("./utils/setting.js");
 const util = require("./utils/util.js");
 
 var apiUrl = setting.defaultUrl; //正式环境
-var apiUrlDev = "https://st.crmclick.com/stMiniAppWebapi"; //开发环境
+var apiUrlDev = "https://st.crmclick.com:5001"; //开发环境
 
 var apiImgUrl = setting.defaultImgUrl; //正式环境-图片
-var apiImgUrlDev = "https://st.crmclick.com/stadnim/"; //开发环境
+var apiImgUrlDev = "https://st.crmclick.com:5004/"; //开发环境
 
 App({
   onLaunch: async function (options) {

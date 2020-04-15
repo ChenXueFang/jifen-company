@@ -14,10 +14,10 @@ Page({
     index: 0,
     array: ['患者家属'],
     buttonClicked: false,
-    deviceIdGuid:'',
-    familyId:'',
-    time1: "",//进入页面时间
-    time2: "",//离开页面时间
+    deviceIdGuid: '',
+    familyId: '',
+    time1: "", //进入页面时间
+    time2: "", //离开页面时间
   },
   //电话
   toCall: function () {
@@ -33,7 +33,7 @@ Page({
     })
   },
   //完成注册
-  compRegister:async function () {
+  compRegister: async function () {
     if (this.data.isselected == true) {
       //根据家庭组名查询sn号
       var hr = await register.UserRegister.SelectFamily({
@@ -46,27 +46,31 @@ Page({
           userId: wx.getStorageSync("wxauth").userid,
           sn: hr.data.SN,
           userRole: this.data.array[this.data.index],
-          familyId:0
+          familyId: 0
         });
         if (hrs.state == 1) {
           wx.navigateTo({
             url: '../stepThree/stepThree'
           })
         } else {
+          setTimeout(function () {
+            wx.showToast({
+              title: hrs.msg,
+              icon: 'none',
+              duration: 2000
+            })
+          }, 900)
+        }
+      } else {
+        setTimeout(function () {
           wx.showToast({
-            title: hrs.msg,
+            title: hr.msg,
             icon: 'none',
             duration: 2000
           })
-        }
-      } else {
-        wx.showToast({
-          title: hr.msg,
-          icon: 'none',
-          duration: 2000
-        })
+        }, 900)
       }
-    }else{
+    } else {
       wx.showToast({
         title: "请阅读并同意用户许可协议及隐私条款", //res.data.msg,
         icon: 'none',
@@ -81,6 +85,19 @@ Page({
       url: '/pages/index/index'
     })
   },
+  //license 许可
+  license: function () {
+    wx.navigateTo({
+      url: '../../license/license'
+    })
+  },
+  //protocol 隐私
+  protocol: function () {
+    wx.navigateTo({
+      url: '../../protocol/protocol'
+    })
+  },
+
 
   //点击同意隐私协议 
   checkboxChange: function (e) {

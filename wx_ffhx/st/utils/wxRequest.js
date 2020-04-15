@@ -34,9 +34,15 @@ const wxRequest = async (url, params = {}) => {
   let method = params.method || 'GET'
   // hideLoading可以控制是否显示加载状态
   if ((data.hideLoading != '' || data.hideLoading != null) && !data.hideLoading) {
-    wx.showLoading({
-      title: '加载中...',
-    })
+    // 避免多次出现加载动画
+    setTimeout(function () {
+      wx.showLoading({
+        title: '加载中...',
+      })
+    },350)
+    setTimeout(function () {
+      wx.hideLoading()
+    },750)
   
   }
  

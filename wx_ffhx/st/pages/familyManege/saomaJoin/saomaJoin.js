@@ -110,11 +110,13 @@ Page({
           url: '/pages/index/index'
         })
       } else {
-        wx.showToast({
-          title: hrs.msg,
-          icon: 'none',
-          duration: 2000
-        })
+        setTimeout(function () {
+          wx.showToast({
+            title: hrs.msg,
+            icon: 'none',
+            duration: 2000
+          })
+        },900)
         setTimeout(function () {
           wx.switchTab({
             url: '/pages/index/index'

@@ -17,6 +17,8 @@ Page({
     equipmentList:[],
     informList:[],
     index: 1,
+    indexActivity: 1,
+    indexEquipment:1,
     showModal: false,
     isLogin:false,
     itemindex:"",
@@ -39,16 +41,15 @@ Page({
         isLogin:true
       })
     }
-    
   },
 
   // 获取服务通知列表
   getServiceNoticeList: async function () {
     var that = this;
     let lastDay = '';
-    for (let i = this.data.activityList.length - 1; i >= 0; i--) {
-      if (that.data.activityList[i].msgList != null && that.data.activityList[i].msgList.thisDate != null) {
-        lastDay = that.data.activityList[i].msgList.thisDate;
+    for (let i = this.data.informList.length - 1; i >= 0; i--) {
+      if (that.data.informList[i].msgList != null && that.data.informList[i].msgList.thisDate != null) {
+        lastDay = that.data.informList[i].msgList.thisDate;
         break;
       }
     }
@@ -81,7 +82,7 @@ Page({
     var hr = await dataApi.knowledgeApi.gerArticleList({
       ClassType: 3,
       PageSize: 8,
-      PageIndex: this.data.index,
+      PageIndex: this.data.indexActivity,
       SortName: "CreatedTime",
       SortOrder: "desc",
       Q: "1",
@@ -90,7 +91,7 @@ Page({
     if (hr.state == 1 && hr.rows.length > 0) {
       that.setData({
         activityList: this.data.activityList.concat(hr.rows),
-        index: this.data.index + 1
+        indexActivity: this.data.indexActivity + 1
       })
     }
   },
@@ -108,7 +109,7 @@ Page({
     var hr = await dataApi.knowledgeApi.gerArticleList({
       ClassType: 4,
       PageSize: 8,
-      PageIndex: this.data.index,
+      PageIndex: this.data.indexEquipment,
       SortName: "CreatedTime",
       SortOrder: "desc",
       Q: "1",
@@ -117,40 +118,56 @@ Page({
     if (hr.state == 1 && hr.rows.length > 0) {
       that.setData({
         equipmentList: this.data.equipmentList.concat(hr.rows),
-        index: this.data.index + 1
+        indexEquipment: this.data.indexEquipment + 1
       })
     }
   },
 
   //下拉刷新
   onPullDownRefresh: function () {
-    // console.log(111);
-    this.setData({
-      activityList: [],
-      equipmentList: [],
-      index: 1,
-    })
-    wx.stopPullDownRefresh(); //停止下拉刷新 
-    this.gerActivityList();
-    this.getEquipmentList();
-    // 登录了就调服务通知列表
-    if (this.data.isLogin==true){
+    // 最新活动
+    if(this.data.currentTab == 0){
       this.setData({
-        informList: [],
-        index: 1,
+        activityList: [],
+        indexActivity: 1,
       })
-      this.getServiceNoticeList();
+      this.gerActivityList();
     }
+    // 设备维护
+    if(this.data.currentTab == 1){
+      this.setData({
+        equipmentList: [],
+        indexEquipment:1,
+      })
+      this.getEquipmentList();
+    }
+    // 登录了就调服务通知列表
+    if(this.data.currentTab == 2){
+      if (this.data.isLogin==true){
+        this.setData({
+          informList: [],
+          index: 1,
+        })
+        this.getServiceNoticeList();
+      }
+    }
+    wx.stopPullDownRefresh(); //停止下拉刷新 
   },
   //上拉加载
   onReachBottom: function () {
-    // console.log(222);
-    var that = this;
-    this.gerActivityList();
-    this.getEquipmentList();
+    // 最新活动
+    if(this.data.currentTab == 0){
+      this.gerActivityList();
+    }
+    // 设备维护
+    if(this.data.currentTab == 1){
+      this.getEquipmentList();
+    }
     // 登录了就调服务通知列表
-    if (this.data.isLogin == true) {
-      this.getServiceNoticeList();
+    if(this.data.currentTab == 2){
+      if (this.data.isLogin == true) {
+        this.getServiceNoticeList();
+      }
     }
   },
 
@@ -175,9 +192,9 @@ Page({
     }
   },
 
-  // 消息详情
+  //服务通知 （包含vip文章和服务通知）
   tomessageDetails(e) {
-    // 跳转到vip文章页面 classtype= 2  RemindType= 3
+    // 跳转到vip文章页面 classtype=3  RemindType= 3
     if (e.currentTarget.dataset.remindtype==3){
       wx.navigateTo({
         url: `../../knowledge/illnessEssay/illnessEssay?guid=${e.currentTarget.dataset.guid}&classtype=${2}&pageto=`
@@ -187,6 +204,13 @@ Page({
         url: `../messageDetails/messageDetails?id=${e.currentTarget.dataset.id}`,
       })
     }
+  },
+
+  // 文章  最新活动classtype=3 设备维护classtype=4
+  toIllnessEssay(e) {
+    wx.navigateTo({
+      url: `../../knowledge/illnessEssay/illnessEssay?guid=${e.currentTarget.dataset.guid}&classtype=${e.currentTarget.dataset.classtype}&pageto=`,
+    })
   },
 
   /**

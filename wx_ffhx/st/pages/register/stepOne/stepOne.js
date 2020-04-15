@@ -13,12 +13,13 @@ Page({
    */
   data: {
     isRSShow: false,
-    isSearchShow:false,
-    isExist:false,
-    isShowDesc:false,
+    isSearchShow: false,
+    isExist: false,
+    isShowDesc: false,
     snNumber: '',
-    familyName:'',
-    familyid:'',
+    familyName: '',
+    familyid: '',
+    isNextBtn: false, //下一步按钮是否可点
     time1: "",//进入页面时间
     time2: "",//离开页面时间
   },
@@ -27,7 +28,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+
   },
 
   toCall: function () {
@@ -39,9 +40,13 @@ Page({
   //授权后跳转到第二步
   // 授权头像信息
   getUserInfo: async function (e) {
+    var that = this;
     console.log(e)
 
     if (e.detail.userInfo != undefined) {
+      this.setData({
+        isNextBtn: false, //下一步按钮是否可点
+      })
       // 获取用户信息接口
       let hr = await authApi.wxApi.wxUserInfo(e);
       app.globalData.userInfo = e.detail.userInfo
@@ -50,29 +55,62 @@ Page({
         wx.setStorageSync("nickName", app.globalData.userInfo.nickName);
         wx.setStorageSync("avatarUrl", app.globalData.userInfo.avatarUrl);
       }
+      setTimeout(function () {
+        wx.showLoading({
+          title: '加载中...',
+        })
+      }, 850)
       //检查sn号
       var hrs = await register.UserRegister.CheckSN({
         userId: wx.getStorageSync("wxauth").userid,
         sn: this.data.snNumber,
-        isFirst:true
+        isFirst: true
       });
       console.log(hrs)
       if (hrs.state == 1) {
-        wx.navigateTo({
-          url: '../stepTwo/stepTwo?deviceId=' + hrs.rows[0].DeviceIdGuid
-        })
-      } else if (hrs.state == -2 && hrs.msg == "该sn号已被绑定，请选择其他sn号") {
         this.setData({
-          isExist: true,
-          familyName: hrs.data.FamilyName,
-          familyid: hrs.data.FamilyIdGuid
+          isNextBtn: false, //下一步按钮是否可点
         })
-        console.log('家庭id：' + this.data.familyid + ",家庭名：" + this.data.familyName)
+        setTimeout(function () {
+          wx.hideLoading();
+          wx.navigateTo({
+            url: '../stepTwo/stepTwo?deviceId=' + hrs.rows[0].DeviceIdGuid
+          })
+        }, 900)
+      } else if (hrs.state == -2 && hrs.msg == "该sn号已被绑定，请选择其他sn号") {
+        // 有家庭组信息
+        if (hrs.data) {
+          setTimeout(function () {
+            wx.hideLoading();
+          }, 900)
+          this.setData({
+            isExist: true,
+            familyName: hrs.data.FamilyName,
+            familyid: hrs.data.FamilyIdGuid,
+            isNextBtn: true, //下一步按钮是否可点
+          })
+          console.log('家庭id：' + this.data.familyid + ",家庭名：" + this.data.familyName)
+        }else{  // 没有家庭组信息
+          setTimeout(function () {
+            wx.hideLoading();
+            wx.showToast({
+              title: hrs.msg,
+              icon: 'none',
+              duration: 2000
+            })
+          }, 900)
+        }
       } else {
-        wx.showToast({
-          title: hrs.msg,
-          icon: 'none',
-          duration: 2000
+        setTimeout(function () {
+          wx.hideLoading();
+          wx.showToast({
+            title: hrs.msg,
+            icon: 'none',
+            duration: 2000
+          })
+        }, 900)
+        this.setData({
+          isNextBtn: true, //下一步按钮是否可点
         })
       }
 
@@ -106,17 +144,22 @@ Page({
     })
   },
   //序列号存在的情况下申请加入家庭组
-  toJoinFamilyGroup:function(){
+  toJoinFamilyGroup: function () {
     //需要带上参数
     wx.navigateTo({
       url: '../../joinFamilyGroup/stepTwo/stepTwo?famGroId=' + this.data.familyName
     })
   },
   //输入sn码
-  onInputValue:function(e){
+  onInputValue: function (e) {
     this.setData({
       snNumber: e.detail.value
     })
+    if (e.detail.value) {
+      this.setData({
+        isNextBtn: true, //下一步按钮是否可点
+      })
+    }
   },
   //打开扫码提示弹窗
   showDesc: function () {
@@ -128,7 +171,7 @@ Page({
   //扫码
   toSM: function () {
     this.setData({
-      isShowDesc:false
+      isShowDesc: false
     })
     var that = this;
     wx.scanCode({

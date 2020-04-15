@@ -121,14 +121,19 @@ Page({
       that.setData({
         illnessEssay: hr.data,
         likeCount: hr.data.msgList.LikeCount,
-        lableLike: hr.data.Lable,
-        labelList: hr.data.Lable.split(','),
         articleId: hr.data.ArticleId,
         articleIdGuid: hr.data.ArticleIdGuid,
         surveyType: hr.data.SurveyType,
-        time: hr.data.PublishTime.substring(5, 10),
+        time: (hr.data.PublishTime == null || hr.data.PublishTime=='')?'':hr.data.PublishTime.substring(5, 10),
         surveyTip: hr.data.SurveyTip
       })
+      // 判断是否有标签
+      if (hr.data.Lable){
+        that.setData({
+          lableLike: hr.data.Lable,
+          labelList: hr.data.Lable.split(','),
+        })
+      }
       this.changeReadCount();
       this.getRadioList();
       this.getBehavior();

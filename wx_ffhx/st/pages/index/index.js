@@ -38,7 +38,7 @@ Page({
    */
   data: {
     isselected: false,
-    hiddenmodalput:true,
+    hiddenmodalput: true,
     isUserLogin: false,
     isHasMsg: false,
     isbindMac: '',
@@ -61,13 +61,13 @@ Page({
     yewan: '今夜',
     last_time: '',
     is_show: true,
-    indexDayList: { UseSeconds: 0, MaskFit: 0, TidalVolume: 0, AHI: 0, PercentPeriodicBreathing: 0, PeriodicBreathingMinutes:0},
+    indexDayList: { UseSeconds: 0, MaskFit: 0, TidalVolume: 0, AHI: 0, PercentPeriodicBreathing: 0, PeriodicBreathingMinutes: 0 },
     indexNightList: { UseSeconds: 0, MaskFit: 0, TidalVolume: 0, AHI: 0, PercentPeriodicBreathing: 0, PeriodicBreathingMinutes: 0 },
-    articleLists:[],
+    articleLists: [],
     time1: "",//进入页面时间
     time2: "",//离开页面时间
-    time3:"",//邀请弹出时间
-    time4:"",//邀请同意加入
+    time3: "",//邀请弹出时间
+    time4: "",//邀请同意加入
   },
 
   //点击同意隐私协议 
@@ -102,7 +102,7 @@ Page({
   },
 
   //邀请拒绝
-  cancelM:async function (e) {
+  cancelM: async function (e) {
     this.setData({
       hiddenmodalput: true,
     })
@@ -168,7 +168,7 @@ Page({
           icon: 'none'
         })
       }
-    }else{
+    } else {
       wx.showToast({
         title: "请阅读并同意用户许可协议及隐私条款", //res.data.msg,
         icon: 'none',
@@ -179,7 +179,7 @@ Page({
   /** 
    * 生命周期函数--监听页面加载
    */
-  onLoad: async function(options) {
+  onLoad: async function (options) {
     this.showDayOrNight();
 
     // 接收分享邀请传过来的参数
@@ -188,7 +188,7 @@ Page({
         share: options.share,
         familyid: options.familyid,
         invituserid: options.invituserid,
-        source:options.source==undefined?'':options.source
+        source: options.source == undefined ? '' : options.source
       });
       console.log("onload ：" + this.data.source)
     }
@@ -302,9 +302,9 @@ Page({
         })
       }
       this.setData({
-        hiddenmodalput:false
+        hiddenmodalput: false
       })
-      if(this.data.hiddenmodalput==false){
+      if (this.data.hiddenmodalput == false) {
         // 记录邀请弹窗时间
         this.setData({
           time3: util.formatTime(new Date())
@@ -366,19 +366,19 @@ Page({
   },
 
   //根据用户id获取首页六大数据
-  getRemoateData:async function(){
+  getRemoateData: async function () {
     var hr = await dataApi.familyApi.getRemoateData({
       userId: wx.getStorageSync("wxauth").userid
     });
     console.log("六大数据")
     console.log(hr)
     if (hr.data && hr.data.length > 0) {
-      for (var i = 0; i < hr.data.length;i++){
-        if (hr.data[i].Status=="1"){
+      for (var i = 0; i < hr.data.length; i++) {
+        if (hr.data[i].Status == "1") {
           //白天
           var daylist = hr.data[i]
           daylist.UseSeconds = (daylist.UseSeconds / 3600).toFixed(1);
-          daylist.PercentPeriodicBreathing = (daylist.PercentPeriodicBreathing *100).toFixed(0)
+          daylist.PercentPeriodicBreathing = (daylist.PercentPeriodicBreathing * 100).toFixed(0)
           daylist.MaskFit = (daylist.MaskFit * 100).toFixed(0)
           daylist.PeriodicBreathingMinutes = parseInt(daylist.PeriodicBreathingMinutes)
           daylist.TidalVolume = Math.ceil(daylist.TidalVolume)
@@ -395,7 +395,7 @@ Page({
           daylist.MaskFit = (daylist.MaskFit * 100).toFixed(0)
           daylist.PeriodicBreathingMinutes = parseInt(daylist.PeriodicBreathingMinutes)
           daylist.TidalVolume = Math.ceil(daylist.TidalVolume)
-          daylist.AHI = (daylist.AHI*1).toFixed(1);
+          daylist.AHI = (daylist.AHI * 1).toFixed(1);
           this.setData({
             indexNightList: daylist
           })
@@ -408,35 +408,35 @@ Page({
   },
 
   //检查当日日志是否已填
-  checkdaily: async function(){
-    if (wx.getStorageSync("familyidguid")!=""){
-    var d = new Date();
-    var currentMonth = d.getMonth() + 1;
-    var currentYear = d.getFullYear();
-    var currentDay = d.getDate();
+  checkdaily: async function () {
+    if (wx.getStorageSync("familyidguid") != "") {
+      var d = new Date();
+      var currentMonth = d.getMonth() + 1;
+      var currentYear = d.getFullYear();
+      var currentDay = d.getDate();
 
-    var hr = await dailyTask.DailyTask.GetDailysByYM({
-      // userGuid: wx.getStorageSync("wxauth").userid,
-      familyIdGuid: wx.getStorageSync("familyidguid").FamilyId,
-      year: currentYear,
-      month: currentMonth,
-      day: currentDay
-    });
-    console.log(hr)
-    if (hr.rows && hr.rows.length > 0){
-      this.setData({
-        showRedPoint: false
-      })
-    }else{
-      this.setData({
-        showRedPoint:true
-      })
+      var hr = await dailyTask.DailyTask.GetDailysByYM({
+        // userGuid: wx.getStorageSync("wxauth").userid,
+        familyIdGuid: wx.getStorageSync("familyidguid").FamilyId,
+        year: currentYear,
+        month: currentMonth,
+        day: currentDay
+      });
+      console.log(hr)
+      if (hr.rows && hr.rows.length > 0) {
+        this.setData({
+          showRedPoint: false
+        })
+      } else {
+        this.setData({
+          showRedPoint: true
+        })
+      }
     }
-    } 
   },
 
   //加载消息
-  loadIndexMess:async function(){
+  loadIndexMess: async function () {
     // var hr = await dailyTask.DailyTask.GetIndexMessage({
     //   userId: wx.getStorageSync("wxauth").userid
     // });
@@ -448,7 +448,7 @@ Page({
       SortOrder: "desc",
     });
     console.log(hr)
-    if (hr.state==1 && hr.rows.length > 0) {
+    if (hr.state == 1 && hr.rows.length > 0) {
       this.setData({
         articleLists: hr.rows
       })
@@ -463,58 +463,60 @@ Page({
       url: '../Message/MessageIndex/MessageIndex',
     })
   },
-  
-  // 获取家庭组信息，首页顶上消息弹框
-  getFamilyMsg: async function() {
-    var hr = await dataApi.familyApi.getFamilyMsg({
-      UserIdGuid: wx.getStorageSync("wxauth").userid,
-      PageSize: 1,
-      PageIndex: 1,
-      SortName: "createdtime",
-      SortOrder: "desc",
-      IsRead: false
-    });
-    if (hr.rows && hr.rows.length > 0) {
-      this.setData({
-        familyMsg: hr.rows[0],
-        familyidguid: hr.rows[0].FamilyIdGuid,
-        isHasMsg: true,
-        closeMsg: true 
-      })
 
-      // 判断背景颜色
-      if (hr.rows[0].MsgType == 2 || hr.rows[0].MsgType == 3 || hr.rows[0].MsgType == 5) {
+  // 获取家庭组信息，首页顶上消息弹框
+  getFamilyMsg: async function () {
+    if (wx.getStorageSync("wxauth").userid) {
+      var hr = await dataApi.familyApi.getFamilyMsg({
+        UserIdGuid: wx.getStorageSync("wxauth").userid,
+        PageSize: 1,
+        PageIndex: 1,
+        SortName: "createdtime",
+        SortOrder: "desc",
+        IsRead: false
+      });
+      if (hr.rows && hr.rows.length > 0) {
         this.setData({
-          tipbgcolor: true,
+          familyMsg: hr.rows[0],
+          familyidguid: hr.rows[0].FamilyIdGuid,
+          isHasMsg: true,
+          closeMsg: true
         })
-      } else {
+
+        // 判断背景颜色 
+        if (hr.rows[0].MsgType == 2 || hr.rows[0].MsgType == 3 || hr.rows[0].MsgType == 5) {
+          this.setData({
+            tipbgcolor: true,
+          })
+        } else {
+          this.setData({
+            tipbgcolor: false
+          })
+        }
+        // 组员收到 10s关闭
+        if (hr.rows[0].MsgType == 5 || hr.rows[0].MsgType == 6 || hr.rows[0].MsgType == 4) {
+          this.setData({
+            isEnter: false,
+          })
+          this.topCountdown();
+        }
+        // 组长收到，进入查看
+        if (hr.rows[0].MsgType == 1 || hr.rows[0].MsgType == 2 || hr.rows[0].MsgType == 3 || hr.rows[0].MsgType == 7 || hr.rows[0].MsgType == 8) {
+          this.setData({
+            isEnter: true,
+            is_show: false,
+          })
+        }
+      } else if (hr.rows && hr.rows.length == 0) {
         this.setData({
-          tipbgcolor: false
+          isHasMsg: false
         })
       }
-      // 组员收到 10s关闭
-      if (hr.rows[0].MsgType == 5 || hr.rows[0].MsgType == 6 || hr.rows[0].MsgType == 4) {
-        this.setData({
-          isEnter: false,
-        })
-        this.topCountdown();
-      }
-      // 组长收到，进入查看
-      if (hr.rows[0].MsgType == 1 || hr.rows[0].MsgType == 2 || hr.rows[0].MsgType == 3 || hr.rows[0].MsgType == 7 || hr.rows[0].MsgType == 8) {
-        this.setData({
-          isEnter: true,
-          is_show: false,
-        })
-      }
-    } else if (hr.rows && hr.rows.length == 0) {
-      this.setData({
-        isHasMsg: false
-      })
     }
   },
 
   //消息标为已读 put  this.readed();
-  readed: async function() {
+  readed: async function () {
     var hr = await dataApi.familyApi.readed({
       MsgIdGuid: this.data.familyMsg.MsgIdGuid,
       IsRead: true
@@ -522,7 +524,7 @@ Page({
   },
 
   // 家庭消息跳转
-  familyMsg: async function(e) {
+  familyMsg: async function (e) {
     // 组长收到，进入查看详情页
     if (this.data.familyMsg.MsgType == 1 || this.data.familyMsg.MsgType == 7 || this.data.familyMsg.MsgType == 8) {
       wx.navigateTo({
@@ -551,7 +553,7 @@ Page({
   },
 
   // 点击头像，跳转到添加设备页
-  equipment: async function(e) {
+  equipment: async function (e) {
     if (!this.data.isApprovalUser) {
       wx.showToast({
         title: "请绑定设备或加入家庭组。若已申请，请等待审核通过！",
@@ -589,7 +591,7 @@ Page({
     // }
   },
   //显示星期，天气
-  showWeather: function() {
+  showWeather: function () {
     var that = this
     wx.getSetting({ //检测用户权限
       success: (res) => {
@@ -607,7 +609,7 @@ Page({
         // } else 
         if (res.authSetting['scope.userLocation'] == true) { // 地理位置授权过了
           wx.getLocation({
-            success: async function(res) {
+            success: async function (res) {
 
               //调用天气接口
               var hrWeather = await register.UserRegister.GetWeather({
@@ -631,13 +633,13 @@ Page({
   },
 
   //授权地理位置显示天气
-  getLocationData: async function(e) {
+  getLocationData: async function (e) {
     var that = this;
     wx.getSetting({
-      success: function(res) {
-        if (typeof(res.authSetting['scope.userLocation']) == "undefined") { // 从未触发过授权的情况
+      success: function (res) {
+        if (typeof (res.authSetting['scope.userLocation']) == "undefined") { // 从未触发过授权的情况
           wx.getLocation({ // 用户同意授权地理位置
-            success: async function(res) {
+            success: async function (res) {
               that.setData({
                 latitude: res.latitude,
                 longitude: res.longitude
@@ -661,12 +663,12 @@ Page({
               }
 
             },
-            fail: function(err) { // 用户拒绝授权地理位置
+            fail: function (err) { // 用户拒绝授权地理位置
               wx.showModal({ //弹出模态框，询问
                 title: '是否授权当前位置',
                 content: '如需正常使用天气信息，请按确定并在授权管理中选中“地理位置”，然后点按返回即可正常使用。',
                 cancelColor: '#f00',
-                success: function(res) {
+                success: function (res) {
                   if (res.confirm) { //同意授权
                     wx.openSetting({})
                   }
@@ -676,7 +678,7 @@ Page({
           })
         } else if (res.authSetting['scope.userLocation'] == true) { // 地理位置授权过了
           wx.getLocation({
-            success: async function(res) {
+            success: async function (res) {
               //that.getShopInfo_nearby(res.latitude, res.longitude);
 
               console.log("经度：" + res.latitude + ";维度：" + res.longitude)
@@ -703,40 +705,40 @@ Page({
   },
 
   //日志
-  toLogRecord:function(){
+  toLogRecord: function () {
     wx.navigateTo({
       url: '../logRecord/main'
     })
   },
   //点击显示白天详情
-  showDetail: function() {
+  showDetail: function () {
     this.setData({
       todaymorn: !this.data.todaymorn,
       todayafte: !this.data.todayafte
     })
   },
   //点击显示夜晚详情
-  showafterDetail: function() {
+  showafterDetail: function () {
     this.setData({
       todaymorn: !this.data.todaymorn,
       todayafte: !this.data.todayafte
     })
   },
   //数据说明
-  toDataExplain: function() {
+  toDataExplain: function () {
     wx.navigateTo({
       url: '../indexDataExplain/indexDataExplain'
     })
   },
   //注册绑定设备
-  toRegi: function() {
+  toRegi: function () {
     app.getEventLog("startBindDevice-button")
     wx.navigateTo({
       url: '../register/stepOne/stepOne'
     })
   },
   // 授权头像信息
-  getUserInfo: async function(e) {
+  getUserInfo: async function (e) {
     console.log(e)
 
     if (e.detail.userInfo != undefined) {
@@ -761,7 +763,7 @@ Page({
         title: '温馨提示',
         showCancel: false,
         content: '您点击了拒绝授权，将无法进入小程序，请授权之后再进入!',
-        success: function(res) {
+        success: function (res) {
           wx.switchTab({
             url: '../index/index'
           })
@@ -773,20 +775,20 @@ Page({
   },
 
   //家庭组组长查看申请进度
-  toRegiInfo: function() {
+  toRegiInfo: function () {
     app.getEventLog("bindApplied-button")
     wx.navigateTo({
       url: '../register/stepThree/stepThree?viewid=zz'
     })
   },
   //成员查看申请进度
-  toJoinFamGroup: function() {
+  toJoinFamGroup: function () {
     wx.navigateTo({
       url: '../joinFamilyGroup/stepThree/stepThree?viewid=zy'
     })
   },
   //点击查看图标详情
-  toChartDetail: function(e) {
+  toChartDetail: function (e) {
     var itemid = e.currentTarget.dataset.itemid;
     var lotype = e.currentTarget.dataset.lotype;
     wx.navigateTo({
@@ -795,7 +797,7 @@ Page({
   },
 
   //根据当前时间显示今日或今夜
-  showDayOrNight: function() {
+  showDayOrNight: function () {
     var date = new Date();
     var currenthour = date.getHours();
     if (currenthour >= 7 && currenthour < 19) {
@@ -816,7 +818,7 @@ Page({
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function() {
+  onReady: function () {
 
   },
 
@@ -843,6 +845,9 @@ Page({
         source: this.data.source
       });
       if (hrss.state == 1) {
+        this.setData({
+          source: ''
+        })
         console.log("source数据保存成功")
       }
     }
@@ -937,7 +942,7 @@ Page({
     }
     //显示天气
     this.showWeather();
-    
+
   },
   // 查询是否开启vip
   getVIPState: async function () {
@@ -964,12 +969,12 @@ Page({
       wx.navigateTo({
         url: `../knowledge/illnessEssay/illnessEssay?guid=${e.currentTarget.dataset.guid}&classtype=${2}&pageto=`
       })
-    } 
-    else if (msgtype ==1) {
+    }
+    else if (msgtype == 1) {
       wx.navigateTo({
         url: `../Message/messageDetails/messageDetails?guid=${e.currentTarget.dataset.guid}&classtype=${3}`
       })
-    } 
+    }
     else {
       wx.navigateTo({
         url: `../Message/messageDetails/messageDetails?id=${e.currentTarget.dataset.id}&guid=&classtype=&source=`,
@@ -981,49 +986,49 @@ Page({
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide: function() {
+  onHide: function () {
     if (this.data.time1 != "" && this.data.time1 != null) {
       var vtime = this.data.time1;
       this.setData({
         time1: null,
         time2: util.formatTime(new Date())
       })
-      app.getPageTimer("index-page","", vtime, this.data.time2);
+      app.getPageTimer("index-page", "", vtime, this.data.time2);
     }
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
-  onUnload: function() {
+  onUnload: function () {
     if (this.data.time1 != "" && this.data.time1 != null) {
       var vtime = this.data.time1;
       this.setData({
         time1: null,
         time2: util.formatTime(new Date())
       })
-      app.getPageTimer("index-page", "",vtime, this.data.time2);
+      app.getPageTimer("index-page", "", vtime, this.data.time2);
     }
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-  onPullDownRefresh: function() {
+  onPullDownRefresh: function () {
 
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
-  onReachBottom: function() {
+  onReachBottom: function () {
 
   },
 
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function() {
+  onShareAppMessage: function () {
     app.getPageShare("index-page", "", "pages/index/index")
     return {
       title: '管理更智能，关护更贴心',

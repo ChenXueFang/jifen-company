@@ -291,7 +291,7 @@ Page({
     return new Promise(function (resolve, reject) {
       var _this = this;
       wx.request({
-        url: 'https://st.crmclick.com/stMiniAppWebapi/100000_province.json',//json数据地址
+        url: wx.getStorageSync("apiurl")+'/100000_province.json',//json数据地址
         headers: {
           'Content-Type': 'application/json'
         },
@@ -317,7 +317,7 @@ Page({
     })
     var _this = this
     wx.request({
-      url: 'https://st.crmclick.com/stMiniAppWebapi/' + this.data.provicelist[e.detail.value].adcode+'_city.json',//json数据地址
+      url: wx.getStorageSync("apiurl") +'/'+ this.data.provicelist[e.detail.value].adcode+'_city.json',//json数据地址
       headers: {
         'Content-Type': 'application/json'
       },

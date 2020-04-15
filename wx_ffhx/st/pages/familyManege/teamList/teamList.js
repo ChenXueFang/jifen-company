@@ -109,7 +109,11 @@ Page({
                 return a.Status == 1 && a.UserId != hr.data.familyName.UserId
               })
             })
-          }
+          }else{  // 移除唯一的一个组员，组员列表清空
+            that.setData({
+              memberList: []
+            })
+          }        
           // 审核通过,待审核为空
           if (this.data.checkList.length == 0) {
             this.setData({
@@ -188,10 +192,12 @@ Page({
         that.getMyFamily();
       }, 1500)
     } else {
-      wx.showToast({
-        title: hr.msg,
-        icon: 'none'
-      })
+      setTimeout(function () {
+        wx.showToast({
+          title: hr.msg,
+          icon: 'none'
+        })
+      },900)
     }
   },
 
@@ -215,10 +221,12 @@ Page({
         that.getMyFamily();
       },1500)
     } else {
-      wx.showToast({
-        title: hr.msg,
-        icon: 'none'
-      })
+      setTimeout(function () {
+        wx.showToast({
+          title: hr.msg,
+          icon: 'none'
+        })
+      },900)
     }
   },
 

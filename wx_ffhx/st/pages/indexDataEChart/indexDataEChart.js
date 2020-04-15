@@ -113,7 +113,7 @@ Page({
     } else if (item == "1") {
       app.getEventLog("maskFit-button")
       explanItem.tit = "面罩贴合度的含义？"
-      explanItem.dec = "面罩与您的面部贴合程度。贴合越紧漏气就越少，治疗效果越佳。"
+      explanItem.dec = "面罩与您面部的贴合程度，调整佩戴，提高贴合度，治疗效果越佳。"
       explanItem.keywords = "面罩"
     } else if (item == "2") {
       app.getEventLog("airNumber-button")

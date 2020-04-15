@@ -5,26 +5,26 @@
     <view class="swiper-tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="clickTab">服务通知</view>
   </view>
 
-  <!--市场活动--3--->
+  <!--最新活动--3--->
   <view class = "{{currentTab == 0 ? 'show':'hidden'}}" >
-    <!--市场活动文章列表-->
+    <!--最新活动文章列表-->
     <view class='newslist' wx:for="{{activityList}}" wx:key="index">
       <view class="newTime" wx:if="{{item.Remark?true:false}}">{{item.Remark}}</view>
-      <view class='newCon' bindtap="tomessageDetails" data-guid="{{item.ArticleIdGuid}}" data-classtype="3">
+      <view class='newCon' bindtap="toIllnessEssay" data-guid="{{item.ArticleIdGuid}}" data-classtype="3">
         <view class="newZi">{{item.Title}}</view>
         <image class="newImg" src="{{item.TitleImage}}"></image>
       </view>
     </view>
-    <!--市场活动文章列表 end-->
+    <!--最新活动文章列表 end-->
   </view>
-  <!--市场活动end-->
+  <!--最新活动end-->
 
   <!--设备维护--4--->
   <view class = "{{currentTab == 1 ? 'show':'hidden'}}" >
     <!--设备维护文章列表-->
     <view class='newslist' wx:for="{{equipmentList}}" wx:key="index">
       <view class="newTime" wx:if="{{item.Remark?true:false}}">{{item.Remark}}</view>
-      <view class='newCon' bindtap="tomessageDetails" data-guid="{{item.ArticleIdGuid}}" data-classtype="4">
+      <view class='newCon' bindtap="toIllnessEssay" data-guid="{{item.ArticleIdGuid}}" data-classtype="4">
         <view class="{{item.TitleImage?'newZi':'newZi2'}}">{{item.Title}}</view>
         <image class="newImg" src="{{item.TitleImage}}" wx:if="{{item.TitleImage}}"></image>
       </view>

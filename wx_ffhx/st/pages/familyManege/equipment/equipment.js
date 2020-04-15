@@ -37,9 +37,6 @@ Page({
     this.setData({
       familyidguid: options.familyidguid
     })
-    if (options.familyidguid != null && options.familyidguid != undefined && options.familyidguid != '' && options.familyidguid != 0){
-      this.getApplyNum();
-    }
     this.getMyFamily();
 
   },
@@ -84,7 +81,9 @@ Page({
           isNull:true
         })
       }else{
-        isNull: false
+        that.setData({
+          isNull:false
+        })
       }
     }
   },
@@ -166,6 +165,10 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+    if (this.data.familyidguid != null && this.data.familyidguid != undefined && this.data.familyidguid != '' && this.data.familyidguid != 0){
+      this.getApplyNum();
+    }
+
     app.getEventLog("equipment-page")
     // 记录进入页面的时间
     this.setData({

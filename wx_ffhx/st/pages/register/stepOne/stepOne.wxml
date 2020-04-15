@@ -15,7 +15,7 @@
     </view>
 
     <view class='btnGroup'>
-      <button class="nextbtn" wx:if="{{snNumber==''}}">下一步</button>
+      <button class="nextbtn" wx:if="{{snNumber==''||isNextBtn==false}}">下一步</button>
       <!-- <button class="nextbtn2" wx:else open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">下一步</button> -->
       <button class="nextbtn2" wx:else open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="getUserInfo">下一步</button>
       <button class='joinFamGroup' bindtap='toJoinGroup'>加入家庭组</button>

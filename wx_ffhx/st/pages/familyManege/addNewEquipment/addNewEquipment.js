@@ -1,4 +1,3 @@
-
 import regeneratorRuntime from '../../../libs/regenerator-runtime/runtime-module';
 import authApi from '../../../servicesAPI/dataapi'
 import register from '../../../servicesAPI/userRegister'
@@ -19,15 +18,15 @@ Page({
     snNumber: '',
     familyName: '',
     familyid: '',
-    time1: "",//进入页面时间
-    time2: "",//离开页面时间
+    time1: "", //进入页面时间
+    time2: "", //离开页面时间
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+
   },
 
   toCall: function () {
@@ -69,24 +68,35 @@ Page({
     console.log(this.data.snNumber)
   },
   //下一步
-  toNextStep:async function(){
+  toNextStep: async function () {
+    setTimeout(function () {
+      wx.showLoading({
+        title: '加载中...',
+      })
+    },850)
     var hrs = await register.UserRegister.CheckSN({
       userId: wx.getStorageSync("wxauth").userid,
       sn: this.data.snNumber,
       isFirst: false
     });
     console.log(hrs)
-    if (hrs.state == 1){
+    if (hrs.state == 1) {
       app.getEventLog("completeAddNewEquip-button")
-      wx.navigateTo({
-        url: '../completeAddNewEquip/completeAddNewEquip'
-      })
-    }else{
+      setTimeout(function () {
+        wx.hideLoading();
+        wx.navigateTo({
+          url: '../completeAddNewEquip/completeAddNewEquip'
+        })
+      },900)
+    } else {
+      setTimeout(function () {
+        wx.hideLoading();
         wx.showToast({
-        title: hrs.msg,
-        icon: 'none',
-        duration: 2000
-      })
+          title: hrs.msg,
+          icon: 'none',
+          duration: 2000
+        })
+      }, 900)
     }
   },
 
@@ -101,7 +111,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    app.getEventLog("addNewEquipment-page") 
+    app.getEventLog("addNewEquipment-page")
     // 记录进入页面的时间
     this.setData({
       time1: util.formatTime(new Date())

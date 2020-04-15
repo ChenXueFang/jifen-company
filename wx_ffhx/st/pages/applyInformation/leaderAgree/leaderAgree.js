@@ -13,13 +13,13 @@ Page({
    */
   data: {
     msgidguid: 0,
-    familymemberid:0,
+    familymemberid: 0,
     familyMsg: {},
-    useridFamily:0,
-    familyinfo:"",
-    applyid:0,
-    time1: "",//进入页面时间
-    time2: "",//离开页面时间
+    useridFamily: 0,
+    familyinfo: "",
+    applyid: 0,
+    time1: "", //进入页面时间
+    time2: "", //离开页面时间
     disabled: false,
   },
 
@@ -27,10 +27,10 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    if (options.msgidguid != null && options.msgidguid != undefined && options.msgidguid!=''){
-        this.setData({
-          msgidguid: options.msgidguid
-        })
+    if (options.msgidguid != null && options.msgidguid != undefined && options.msgidguid != '') {
+      this.setData({
+        msgidguid: options.msgidguid
+      })
       this.getFamilyMsgInfo();
     }
   },
@@ -39,7 +39,7 @@ Page({
   readed: async function () {
     var hr = await dataApi.familyApi.readed({
       MsgIdGuid: this.data.msgidguid,
-      IsRead:true
+      IsRead: true
     });
   },
 
@@ -116,10 +116,12 @@ Page({
           })
         }, 1500)
       } else {
-        wx.showToast({
-          title: hr.msg,
-          icon: 'none'
-        })
+        setTimeout(function () {
+          wx.showToast({
+            title: hr.msg,
+            icon: 'none'
+          })
+        }, 900)
         setTimeout(function () {
           wx.navigateBack({
             delta: 1
@@ -131,7 +133,7 @@ Page({
 
   // 组长拒绝好友加入
   refusejoin: async function () {
-    if (this.data.disabled==false){
+    if (this.data.disabled == false) {
       this.readed();
       var that = this;
       var hr = await dataApi.familyApi.dealJoinFamily({
@@ -155,10 +157,12 @@ Page({
           })
         }, 1500)
       } else {
-        wx.showToast({
-          title: hr.msg,
-          icon: 'none'
-        })
+        setTimeout(function () {
+          wx.showToast({
+            title: hr.msg,
+            icon: 'none'
+          })
+        }, 900)
         setTimeout(function () {
           wx.navigateBack({
             delta: 1

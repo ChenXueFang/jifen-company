@@ -42,7 +42,6 @@ Page({
     })
     // 有文章guid，就调文章内容
     if (options.guid){
-      console.log("333333")
       this.getEssayCon();
     }
 
@@ -174,7 +173,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function() {
-    app.getEventLog("messageDetails-page", options.guid)
+    app.getEventLog("messageDetails-page", this.data.guid)
     // 记录进入页面的时间
     this.setData({
       time1: util.formatTime(new Date())

@@ -4,7 +4,7 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": false,
+		"urlCheck": true,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
@@ -23,7 +23,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.8.1",
 	"appid": "wxf738199cd27e9ad1",
-	"projectname": "stminiapp",
+	"projectname": "st",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},

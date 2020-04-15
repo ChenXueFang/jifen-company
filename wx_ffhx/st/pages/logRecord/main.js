@@ -163,12 +163,13 @@ Page({
         TaskId: this.data.taskId,
         TaskIdGuid: this.data.taskIdGuid,
       });
-      wx.showToast({
-        title: hr.msg,
-        icon: 'none',
-        duration: 2000
-      })
-
+      setTimeout(function () {
+        wx.showToast({
+          title: hr.msg,
+          icon: 'none',
+          duration: 2000
+        })
+      },900)
     }else{
       //新增
       var hrs = await dailyTask.DailyTask.InsertDailyTask({
@@ -202,11 +203,13 @@ Page({
           iteid: colorid
         })
       }
-      wx.showToast({
-        title: hrs.msg,
-        icon: 'none',
-        duration: 2000
-      })
+      setTimeout(function () {
+        wx.showToast({
+          title: hrs.msg,
+          icon: 'none',
+          duration: 2000
+        })
+      },900)
     }
   },
   //查询日志

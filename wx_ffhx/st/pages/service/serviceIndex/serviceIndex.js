@@ -114,11 +114,13 @@ Page({
             })
           }
         } else {
-          wx.showToast({
-            title: "您还没有注册，请返回首页绑定设备。",
-            icon: 'none',
-            duration: 2000
-          })
+          setTimeout(function () {
+            wx.showToast({
+              title: "您还没有注册，请返回首页绑定设备。",
+              icon: 'none',
+              duration: 2000
+            })
+          },900)
           setTimeout(function () {
             wx.switchTab({
               url: '../../index/index',
