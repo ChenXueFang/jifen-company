@@ -1,0 +1,168 @@
+/**collection.wxss**/
+/* page{background-color:#E6E6E6;}   */
+.collection{
+  width:100%;
+  height: 100%;
+  flex-direction: column;
+  box-sizing: border-box;
+  position: relative;
+}
+.header1{
+  height: 200rpx;
+  box-shadow:none;
+}
+.headerTitle text{
+  letter-spacing: 0;
+  color: #6a6a6a;
+  font-weight: 600;
+}
+.collectionContent{
+  width:100%;
+  height: auto;
+  margin-top: 200rpx;
+  overflow-y: auto;
+}
+.collectionList{
+  width: 682rpx;
+	height: 332rpx;
+	background-color: #ffffff;
+	border-radius: 10rpx;
+  margin: 20rpx auto 16rpx;   
+}
+.collectionImg{
+  width:100%;
+  height: 266rpx;
+	background-color: #ffffff;
+	border-radius: 10rpx;
+  box-shadow: -1rpx 1rpx 10rpx 0px rgba(0, 0, 0, 0.26);
+}
+.collectionImg .name{
+  width: 115rpx;
+	height: 240rpx;
+  position: relative;
+  margin-top:14rpx;
+}
+.collectionImg .name text{
+  writing-mode:vertical-lr;
+  text-align: center;
+  width: 32rpx;
+	height: 100%;
+	font-family: MicrosoftYaHei;
+	font-size: 30rpx;
+	color: #252525;
+  word-wrap: break-word;
+  line-height: 34rpx;
+  margin-left: 41.5rpx;
+  overflow: hidden;
+}
+.collectionImg image{
+  width: 567rpx;
+	height: 266rpx;
+  border-radius:10rpx;
+  background-color: #ffffff;
+  display: inline-block;
+}
+.collectionIntro{
+  width:100%;
+  height:66rpx;
+  position: relative;
+}
+.collectionList:nth-child(3n+1) .flag{
+  background-color: #5de6bc!important;
+}
+.collectionList:nth-child(3n+2) .flag{
+  background-color: #1ddaf3!important;
+}
+.collectionList:nth-child(3n) .flag{
+  background-color: #ffa2a2!important;
+}
+.flag{
+  width: 32rpx;
+	height: 60rpx;
+  position: absolute;
+  left:41.5rpx;
+  top:0rpx;
+}
+.flag .triangle{
+  border-style: solid;
+  border-width: 16rpx 16rpx 16rpx 16rpx;
+  border-color: transparent transparent white transparent;
+  width: 0px;
+  height: 0px;
+	position: absolute;
+  left:0;
+  bottom:0;
+}
+.IntroName{
+  width:92%;
+  height:66rpx;
+  margin: 0 auto;
+}
+.IntroName .collected{
+  height:66rpx;
+  line-height:72rpx;
+  color: #5b5b5b;
+  font-size: 24rpx;
+  vertical-align: middle;
+  margin-right: 15rpx;
+}
+.IntroName .evaluate{
+  height:66rpx;
+  line-height:70rpx;
+  text-align: right;
+  vertical-align: middle;
+}
+.evaluate image{
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 15rpx;
+}
+.collectedNum{
+  width:92%;
+  height:50rpx;
+  font-size: 24rpx;
+  margin: 0 auto;
+  color: #888888;
+}
+.gray{
+  -webkit-filter: grayscale(100%); /* Webkit */  
+  filter: gray; /* IE6-9 */    
+  filter: grayscale(1); /* W3C */  
+}
+.noCollection,.noLogin{
+  width:100%;
+  height: auto;
+  text-align: center;
+  margin-top:580rpx; 
+}
+.noCollection text{
+  font-size: 28rpx;
+	color: #302d48;
+}
+.noCollection .btn{
+ width: 249rpx;
+	height: 72rpx;
+	background-color: #ff9555;
+	border-radius: 36rpx;
+  font-size: 34rpx;
+  line-height: 72rpx;
+  color: #fff;
+  margin: 16rpx auto 0;
+  text-align: center;
+}
+.noLogin text{
+  font-size: 30rpx;
+	color: #302d48;
+}
+.noLogin .btn{
+ 	width: 270rpx;
+	height: 72rpx;
+	background-color: #7dc9df;
+	border-radius: 36rpx;
+  font-size: 34rpx;
+  line-height: 72rpx;
+  color: #fff;
+  letter-spacing: 8rpx;
+  margin: 16rpx auto 0;
+  text-align: center;
+}

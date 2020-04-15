@@ -1,0 +1,20 @@
+{
+  "tabBar": {
+    "color": "#dadada",
+    "selectedColor": "#09bb07",
+    "backgroundColor": "#fff",
+    "borderStyle": "#f6f6f6",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath":"../../images/collecte1.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日志",
+        "iconPath": "../../images/share.png"
+      }
+    ]
+  }
+}

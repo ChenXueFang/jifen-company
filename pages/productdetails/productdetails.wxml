@@ -1,0 +1,97 @@
+<!--productdetails.wxml-->
+
+<import src="../../wxParse/wxParse.wxml" />
+
+<view class="productdetails">
+  <view class='header'>
+    <image class='philipsLogo' bindtap='goindex' src='../../images/PhilipsLogo.png'></image>
+  </view>
+  <!-- style='height:{{detailsHeight}}px' -->
+  <view class='detailsWrap'>
+    <view class='foodEvaluate clearfloat'>
+      <view class='foodName fl'>
+        <text>{{detailsList.CookBookName}}</text>
+      </view>
+      <view class='imgwrap fr'>
+        <view class='cookVideo' wx:if='{{detailsList.Resource!=null&&detailsList.Resource.Url!=""}}'>
+          <view class='videoArea' bindtap="bindplay" wx:if="{{!showVideo}}">
+            <image class='cover' src="{{ImgURL+detailsList.ImageUrl}}"></image>
+            <view class='videoMask'>
+              <image class='playBtn' src="../../images/play.png"></image>
+            </view>
+          </view>
+          <view class='videoContent' bindtap="bindplay" wx:if="{{showVideo}}">
+            <video id="myVideo" src="{{detailsList.Resource.Url}}" objectFit="fill" controls bindplay='bindplay' bindpause='bindpause'></video>
+          </view>
+        </view>
+        <image class='mainImg' wx:else src='{{ImgURL+detailsList.ImageUrl}}'></image>
+        <view class='opinion'>
+          <view class='flag'>
+            <view class='triangle'></view>
+          </view>
+          <view class='IntroName clearfloat'>
+            <view class='fr evaluate'>
+              <block wx:for="{{[1, 2, 3, 4, 5]}}" wx:for-item="i" wx:key="key">
+                <image wx:if="{{myEvaluate>=i}}" data-index="{{i}}" bindtap="saveEvaluate" src='../../images/active.png'></image>
+                <image wx:else data-index="{{i}}" bindtap="saveEvaluate" src='../../images/noactive.png'></image>
+              </block>
+            </view>
+            <view class='fr collected'>这道菜谱您还满意吗？</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='relatedProduct'>
+      <view class='productList clearfloat' wx:for="{{productList}}"  wx:key="key"  bindtap="goProduct">
+        <view class='productImg fl'>
+          <view class='triangle'></view>
+          <image src='{{ImgURL+item.Image}}'></image>
+        </view>
+        <view class='productIntro fr'>
+          <view class='name'>{{item.Name}}</view>
+          <view class='type'>{{item.CTN}}</view>
+          <view class='explain' style="white-space: pre-line;">{{item.Describe}}</view>
+          <view class='btn'>更多飞利浦选择 GO</view>
+        </view>
+      </view>
+    </view>
+
+    <view class='cookWays'>
+      <view class='cookSteps'>
+        <view class='mainFood'>
+          <text>配料：</text>{{detailsList.CookBatching}}</view>
+        <view class='waysDeatils'>
+          <view class='steps'>制作步骤</view>
+          <view class='stepIntro'>
+            <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+          </view>
+        </view>
+         <view class='flag'>
+            <view class='triangle'></view>
+          </view>
+      </view>
+    </view>
+  </view>
+  <view class='footer clearfloat'>
+    <view class='tabwrap'>
+      <form bindsubmit="formSubmitShare" report-submit="true">
+        <button class='sharebtn' open-type="share" form-type="submit"></button>
+        <view class='tabList fl'>
+          <image mode='aspectFit' src="../../images/share1.png" />
+        </view>
+      </form>
+      <form bindsubmit="delCollect" report-submit="true" wx:if="{{isFavite}}">
+        <view class='tabList fl'>
+          <image mode='aspectFit' src="../../images/storeup1.png" />
+          <button form-type="submit"></button>
+        </view>
+      </form>
+      <form bindsubmit="saveCollect" report-submit="true" wx:else>
+        <view class='tabList fl'>
+          <image mode='aspectFit' src="../../images/storeup.png" />
+          <button form-type="submit"></button>
+        </view>
+      </form>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,20 @@
+<!--pages/components/foodlist/foodlist.wxml-->
+<view class='collectionList'>
+  <view class='collectionImg'>
+    <image src='../../../images/food1.png'></image>
+  </view>
+  <view class='collectionIntro'>
+    <view class='IntroName clearfloat'>
+      <view class='fl name'>青木瓜银耳羹</view>
+      <view class='fr evaluate'>
+        <image src='../../../images/star.png'></image>
+        <image src='../../../images/star.png'></image>
+        <image src='../../../images/star.png'></image>
+        <image src='../../../images/star.png'></image>
+        <image src='../../../images/star.png'></image>
+      </view>
+    </view>
+    <view class='collectedNum'>201人已收藏</view>
+  </view>
+  <slot></slot>
+</view>

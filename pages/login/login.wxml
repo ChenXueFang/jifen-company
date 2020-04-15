@@ -1,0 +1,33 @@
+<!--login.wxml-->
+<view class="login">
+  <view class='header1'>
+    <image class='philipsLogo' src='../../images/PhilipsLogo.png'></image>
+    <view class='headerTitle'>
+      <!-- <view class='leftIcon' bindtap="goBack">
+        <image src='../../images/left.png'></image>
+      </view> -->
+      <text>登录</text>
+    </view>
+  </view>
+  <view class='loginContent'>
+    <view class='loinWrap'>
+      <input class='mobile' bindinput="getPhone" maxlength='11' cursor="15" type='number' placeholder='手机号' />
+      <view class='mobileTip' wx:if="{{isEmpty}}">*请输入您的手机号码</view>
+      <view class='mobileTip' wx:if="{{isWrong}}">*您的手机号码格式不正确</view>
+      <view class='btn' bindtap="showMask">收取验证码</view>
+    </view>
+  </view>
+  <view class='mask' wx:if="{{isShow}}">
+    <view class='alert'>
+      <view class='textWrap'>
+        <view class='title'>确认手机号码</view>
+        <view class='tips'>我们将发送短信验证码到这个号码：</view>
+        <view class='tips'>+86 {{mobile}}</view>
+      </view>
+      <view class='btnWrap clearfloat'>
+        <view class='fl' bindtap="hideMask">取消</view>
+        <view class='fr' style='color:#009900' bindtap="getCode">确认</view>
+      </view>
+    </view>
+  </view>
+</view>

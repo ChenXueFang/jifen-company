@@ -1,0 +1,402 @@
+/**productdetails.wxss**/
+@import "/wxParse/wxParse.wxss";
+page{background-color: #EDEDF5;}
+.productdetails {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.header {
+  height: 115rpx;
+  background-color: #EDEDF5;
+}
+
+.detailsWrap {
+  width: 100%;
+  /* padding-bottom: 200rpx; */
+}
+
+.foodEvaluate {
+  width: 100%;
+  height: 452rpx;
+  background-color: #fff;
+}
+.imgwrap{
+  width: 608rpx;
+	height: 428rpx;
+  margin-top: 24rpx;
+}
+.mainImg {
+  width: 608rpx;
+	height: 343rpx;
+  display: block;
+}
+
+.foodName{
+  width: 140rpx;
+	height: 390rpx;
+}
+.foodName text{
+  writing-mode:vertical-lr;
+  text-align: center;
+  width: 54rpx;
+	height: 100%;
+	font-family: MicrosoftYaHei;
+	font-size: 42rpx;
+	color: #302d48;
+  word-wrap: break-word;
+  letter-spacing: 2rpx;
+  margin-left: 49rpx;
+  overflow: hidden;
+}
+.opinion{
+  width:100%;
+  height:85rpx;
+  position: relative;
+}
+.opinion .flag{
+  width: 32rpx;
+	height: 60rpx;
+  background-color: #ff9555;
+  position: absolute;
+  left:36rpx;
+  top:0rpx;
+}
+.opinion .flag .triangle{
+  border-style: solid;
+  border-width: 16rpx 16rpx 16rpx 16rpx;
+  border-color: transparent transparent white transparent;
+  width: 0px;
+  height: 0px;
+	position: absolute;
+  left:0;
+  bottom:0;
+}
+.IntroName{
+  width:90%;
+  height:66rpx;
+  margin: 0 auto;
+}
+.IntroName .collected{
+  height:66rpx;
+  line-height:72rpx;
+  color: #5b5b5b;
+  font-size: 27rpx;
+  vertical-align: middle;
+}
+.IntroName .evaluate{
+  height:66rpx;
+  line-height:70rpx;
+  text-align: right;
+  vertical-align: middle;
+}
+.evaluate image{
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 15rpx;
+}
+.gray{
+  -webkit-filter: grayscale(100%); /* Webkit */  
+  filter: gray; /* IE6-9 */    
+  filter: grayscale(1); /* W3C */  
+}
+
+.relatedProduct {
+  width: 100%;
+  height: auto;
+  margin-top: 30rpx;
+}
+
+.relatedProduct .productList {
+  width: 674rpx;
+  min-height: 274rpx;
+  height: auto;
+  background-color: #fff;
+  margin: 0 auto 30rpx;
+}
+
+.productImg {
+  width: 260rpx;
+  height: 274rpx;
+  position: relative;
+}
+.productImg .triangle{
+  border-style: solid;
+  border-width: 18rpx 18rpx 18rpx 18rpx;
+  border-color: #5de6bc transparent transparent #5de6bc;
+  width: 0px;
+  height: 0px;
+	position: absolute;
+  left:14rpx;
+  top:20rpx;
+  z-index: 9;
+}
+.productImg image {
+  width: 232rpx;
+  height: 234rpx;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.productIntro {
+  width: 406rpx;
+  height: auto;
+  padding:0 8rpx 0 0;
+}
+
+.name {
+  font-size: 38rpx;
+  color: #252525;
+  margin-top: 20rpx;
+   word-break: break-word; 
+  overflow: hidden;
+  text-overflow: ellipsis; /*可以用来多行文本的情况下，用省略号“...”隐藏超出范围的文本 */
+  -webkit-line-clamp: 2; /*限制在一个块元素显示的文本的行数*/
+  display: -webkit-box; /*必须结合的属性，将对象作为弹性伸缩盒子模型显示 */
+  -webkit-box-orient: vertical; /*必须结合的属性，设置或检索伸缩盒对象的子元素的排列方式 */
+}
+
+.type {
+  font-size: 32rpx;
+  color: #252525;
+  font-weight: 600;
+  margin-bottom: 12rpx;
+}
+
+.explain {
+  font-size: 20rpx;
+  line-height: 32rpx;
+  color: #302d48;
+  word-break: break-all;
+  margin-top: 5rpx;
+}
+
+.btn {
+  width: 204rpx;
+	height: 48rpx;
+	background-color: #ff9555;
+	border-radius: 20rpx;
+  font-size: 20rpx;
+  line-height: 48rpx;
+  color: #fff;
+  text-align: center;
+  margin: 15rpx 0 20rpx 0;
+}
+
+.cookWays {
+  width: 674rpx;
+  height: auto;
+  margin:30rpx auto 0;
+}
+
+.cookSteps {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.cookVideo{
+  width: 608rpx;
+	height: 343rpx;
+}
+.videoTitle {
+  text-align: center;
+  font-size: 30rpx;
+  color: #5d5d5d;
+}
+.videoContent{
+  width: 100%;
+  height: 343rpx;
+  position: relative;
+}
+.videoArea{
+  width:100%;
+  height: 343rpx;
+  position: relative;
+}
+.videoArea .cover{
+  width: 100%;
+  height: 100%;
+}
+.videoMask{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top:0;
+  background: rgba(0,0,0,0.6);
+}
+.playBtn{
+  width:120rpx;
+  height: 120rpx;
+  position: absolute;
+  left:0;
+  top:0;
+  right:0;
+  bottom:0;
+  margin: auto;
+}
+.cookVideo video {
+  width: 100%;
+  height: 343rpx;
+}
+.posterWrap{
+  width: 100%;
+  height: 343rpx;
+}
+.controls {
+  position: relative;
+  display: flex;
+}
+.videoIntro {
+  width: 100%;
+  height: auto;
+  font-family: MicrosoftYaHei;
+  font-size: 24rpx;
+  line-height: 36rpx;
+  color: #252525;
+  margin: 10rpx auto;
+}
+
+.mainFood {
+  width: 634rpx;
+	height: auto;
+	background-color: #ffffff;
+  font-size: 22rpx;
+  color: #312f48;
+  margin: 0 auto;
+  padding: 15rpx 20rpx;
+}
+
+.mainFood text, .steps {
+  font-size: 28rpx;
+  color: #312f48;
+  font-weight: 600;
+}
+
+.steps {
+  margin: 12rpx 0 15rpx 0;
+}
+
+.waysDeatils{
+  width: 634rpx;
+  height: auto;
+  background-color: #fff;
+  padding: 15rpx 20rpx;
+  margin-top: 30rpx;
+}
+.stepIntro {
+  width: 100%;
+  height: auto;
+  margin: 15rpx 0 25rpx 0;
+}
+
+.stepIntro image {
+  width: 100%;
+  height: auto;
+}
+
+.stepText {
+  font-size: 24rpx;
+  line-height: 30rpx;
+  color: #252525;
+}
+
+.stepText text {
+  display: inline-block;
+  width: 6rpx;
+  height: 21rpx;
+  background-image: linear-gradient(0deg, #e54f55 0%, #fc8781 100%);
+  margin-right: 8rpx;
+}
+.cookWays .flag{
+  width: 32rpx;
+	height: 60rpx;
+  background-color: #ff9555;
+  position: relative;
+  left:38rpx;
+  top:0;
+}
+.cookWays .flag .triangle{
+  border-style: solid;
+  border-width: 16rpx 16rpx 16rpx 16rpx;
+  border-color: transparent transparent #EDEDF5 transparent;
+  width: 0px;
+  height: 0px;
+	position: absolute;
+  left:0;
+  bottom:0;
+}
+.footer {
+  width: 100%;
+  height: 180rpx;
+  position: relative;
+  /* background-color: white;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  border-top: 1rpx solid #e0e0e0;
+  z-index: 9; */
+}
+
+.clearfloat::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.tabwrap {
+  width: 80%;
+  height: 90rpx;
+  margin: 0 auto;
+  margin-top: 34rpx;
+}
+
+.tabList {
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.tabList image {
+  width: 226rpx;
+	height: 82rpx;
+}
+.tabwrap .sharebtn{
+  width: 300rpx;
+  height: 90rpx;
+  background: pink;
+  position: absolute;
+  left: 7.5%;
+  top:34rpx;
+  z-index: 9;
+  opacity: 0;
+}
+.tabList button{
+  width: 226rpx;
+	height: 82rpx;
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  margin: 0 auto;
+  opacity: 0;
+  background:none;
+}

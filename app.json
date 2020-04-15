@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/accredit/accredit",
+    "pages/register/register",
+    "pages/getmobile/getmobile",
+    "pages/productdetails/productdetails",
+    "pages/login/login",
+    "pages/validation/validation",
+    "pages/product/product",
+    "pages/recipe/recipe",
+    "pages/collection/collection",
+    "pages/registerCode/registerCode",
+    "pages/memberCardRule/memberCardRule",
+    "pages/privacyPolicy/privacyPolicy",
+    "pages/searchresult/searchresult",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "飞利浦厨房家电美味菜谱",
+    "navigationBarTextStyle": "black"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "navigateToMiniProgramAppIdList": [
+    "wxef057181a9632e93"
+  ],
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}

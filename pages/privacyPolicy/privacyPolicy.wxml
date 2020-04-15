@@ -1,0 +1,28 @@
+<!--pages/privacyPolicy/privacyPolicy.wxml-->
+<view id='container'>
+  <view class='policyMain'>
+    <view class='policyTitle'>
+      <text class='bTitle'>{{title}}\n</text>
+      <text class='pUdate'>上次更新日期：[{{lastUpdateTime}}]</text>
+    </view>
+
+    <view class='pDesc'>
+      <rich-text nodes="{{comment}}"></rich-text>
+    </view>
+
+    <view wx:for="{{D}}" wx:key="index" wx:for-index="pindex">
+      <view class='Infoitems' bindtap='showDec' data-index="{{pindex}}">
+        <image class='itemspic' src="../../images/privacybg.png"></image>
+        <view>
+          <image class='itemicon' src="{{domainImageUrl}}{{item.icon}}"></image>
+          <text class='itemTitle'>{{item.title}}</text>
+          <text class='itemMove'>阅读更多 </text>
+        </view>
+      </view>
+      <view class='itemdec' hidden="{{item.hidden}}">
+        <rich-text nodes="{{item.content}}"></rich-text>
+      </view>
+    </view>
+
+  </view>
+</view>

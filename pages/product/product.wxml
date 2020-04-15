@@ -1,0 +1,22 @@
+<!--product.wxml-->
+<view class="product">
+  <view class='top'>
+    <image class='philipsLogo' src='../../images/PhilipsLogo.png'></image>
+    <view class='headerTitle'>
+      <!-- <view class='leftIcon' bindtap="goIndex" >
+        <image src='../../images/left.png'></image>
+      </view> -->
+      <text>为您推荐</text>
+    </view>
+  </view>
+  <!-- style='height:{{scrollHeight}}px' -->
+  <view class='productContent'>
+   <view class='productWrap clearfloat'>
+      <view class='productList fl' wx:for="{{productList}}" wx:key="key"  wx:if="{{item.TypeID == 1}}" data-name="{{item.SubTypeName}}"  data-typeid="{{item.TypeID}}" data-subtypeid="{{item.SubTypeID}}"  bindtap="goSearchResult">
+        <view class='productImg'>
+          <image src="{{url+item.ImageUrl}}" ></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

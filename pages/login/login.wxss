@@ -1,0 +1,105 @@
+/**login.wxss**/
+page{background-color:#ffffff;}  
+.login{
+  width:100%;
+  height: 100%;
+  flex-direction: column;
+  box-sizing: border-box;
+  position: relative;
+}
+.header1{
+  box-shadow: none;
+}
+.headerTitle text{
+  font-weight: 600;
+  color: #6a6a6a;
+}
+.loginContent{
+  width:100%;
+  height: auto;
+  margin-top: 212rpx;
+  position: relative;
+}
+.loinWrap{
+  width:610rpx;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 50rpx;
+  background: white;
+}
+.loinWrap input{
+  width:590rpx;
+  height:76rpx;
+  padding: 0 10rpx;
+  color:#302d48;
+  font-size: 36rpx;
+  line-height: 76rpx;
+  border-bottom: 1px solid #888;
+}
+.mobileTip{
+  font-size: 30rpx;
+  color: red;
+  margin-top: 18rpx;
+}
+.loinWrap .btn{
+  width: 270rpx;
+	height: 72rpx;
+	background-color: #7dc9df;
+	border-radius: 36rpx;
+  font-size: 32rpx;
+  line-height: 72rpx;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  left:0;
+  right:0;
+  top:330rpx;
+  margin: 0 auto;
+}
+.mask{
+  width:100%;
+  height:100%;
+  position: fixed;
+  left:0;
+  top:0;
+  background: rgba(0,0,0,0.4);
+  z-index: 10;
+}
+.alert{
+  width: 520rpx;
+  height:290rpx;
+  background: white;
+  border-radius: 8rpx;
+  margin: 350rpx auto 0;
+  text-align: center;
+}
+.textWrap{
+  width:100%;
+  height: 210rpx;
+  border-bottom: 1rpx solid #e0e0e0;
+}
+.textWrap .title{
+  font-size: 30rpx;
+  color:#000;
+  font-weight: 600;
+  padding: 32rpx 0 18rpx 0;
+}
+.textWrap .tips{
+  color: #888;
+  font-size: 28rpx;
+  line-height: 45rpx;
+}
+.btnWrap{
+  width: 100%;
+  height: 79rpx;
+  line-height: 80rpx;
+  font-size: 28rpx;
+}
+.btnWrap view{
+  width: 259rpx;
+  height: 100%;
+  text-align: center;
+}
+.btnWrap view:nth-child(1){
+  border-right: 1rpx solid #e0e0e0;
+}

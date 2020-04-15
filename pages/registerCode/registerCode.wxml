@@ -1,0 +1,34 @@
+<!--register.wxml-->
+<view class="container">
+  <image class="logo" src="../../images/RegisterLogo.png"></image>
+  <view class="intro_tips">
+    <!-- <view class="text1">会员注册</view> -->
+    <view class="text2">请输入您的手机号码注册/登录会员账户</view>
+  </view>
+  <form bindsubmit="registeredSubmit" report-submit="true">
+    <view class="section">
+      <input type="number" maxlength="11" placeholder="手机号" bindinput="getPhone" />
+      <view class='mobileTip' wx:if="{{isEmpty}}">*请输入您的手机号码</view>
+      <view class='mobileTip' wx:if="{{isWrong}}">*您的手机号码格式不正确</view>
+      <view class="code_con">
+        <input class="code" type="number" maxlength="4" placeholder="输入验证码" bindinput="getCodeNumber" />
+        <view class='getcode' wx:if="{{isget}}">{{codetype}}</view>
+        <view class="getcode" wx:else bindtap="getcode">获取验证码</view>
+      </view>
+    </view>
+    <view class="check_wrap">
+      <checkbox-group name="checkbox" bindchange="checkboxChange">
+        <label class="checkbox">
+          <checkbox value='rule' checked="{{isChecked}}" />
+          <view class="agreetext">我已阅读并同意飞利浦健康生活俱乐部
+            <text catch:tap="memberCardRule">《会员服务协议》</text> 及
+            <text catch:tap="privacyPolicy">《隐私政策》</text>
+          </view>
+        </label>
+      </checkbox-group>
+    </view>
+    <button class="register_btn" disabled="{{disabled}}" form-type="submit">登录/注册</button>
+  </form>
+  <!-- <image class="bg" src="../../images/login_bg.png"></image> -->
+
+</view>

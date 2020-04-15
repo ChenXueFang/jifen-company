@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "food-component": "/pages/components/foodlist/foodlist"
+  }
+}

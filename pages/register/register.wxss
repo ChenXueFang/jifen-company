@@ -1,0 +1,74 @@
+/* pages/register.wxss */
+page{background-color:#ffffff;}  
+.register{
+  width:100%;
+  height: 100%;
+  flex-direction: column;
+  box-sizing: border-box;
+  position: relative;
+  text-align: center;
+}
+.logo {
+  width: 106rpx;
+	height: 134rpx;
+  margin: 100rpx auto 50rpx;
+}
+.content{
+  width: 88%;
+  height: auto;
+  margin:0 auto;
+}
+.infolist{
+  width: 98%;
+	height: 84rpx;
+	border-radius: 10rpx;
+	border: solid 2rpx #dbdbdb;
+  box-sizing: content-box;
+  text-align: left;
+  font-size: 32rpx;
+  padding-left: 2%;
+  margin-bottom: 36rpx;
+  position: relative;
+}
+.infolist input{
+  width: 100%;
+  height: 100%;
+}
+.getcode{
+  width: 230rpx;
+	height: 84rpx;
+  line-height: 84rpx;
+	background-color: #0189c5;
+	border-radius: 0px 10rpx 10rpx 0px;
+  color: #fff;
+  font-size: 30rpx;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 10；
+}
+.time{
+  width: 230rpx;
+	height: 84rpx;
+  line-height: 84rpx;
+	background-color: #e0e0e0;
+	border-radius: 0px 10rpx 10rpx 0px;
+  color: #5d5d5d;
+  font-size: 30rpx;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 10；
+}
+.register button{
+  width: 100%;
+  height: 84rpx;
+  color:#fff;
+  line-height: 84rpx;
+	background-color: #0189c5!important;
+	border-radius: 10rpx;
+  font-size: 34rpx;
+  margin-top: 90rpx;
+}

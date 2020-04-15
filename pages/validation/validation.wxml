@@ -1,0 +1,25 @@
+<!--validation.wxml-->
+<view class="login">
+  <view class='header1'>
+    <image class='philipsLogo' src='../../images/PhilipsLogo.png'></image>
+    <view class='headerTitle'>
+      <!-- <view class='leftIcon' bindtap="goBack" >
+        <image src='../../images/left.png'></image>
+      </view> -->
+      <text></text>
+    </view>
+  </view>
+  <view class='loginContent'>
+    <view class='validationWrap'>
+      <view class='tip'>短信验证码已经发送，请填写验证码</view>
+      <view class='tip'>+86 {{mobile}}</view>
+      <view class='validation'>
+         <input maxlength='8'  bindinput="getMobileCode" cursor="15" type='number' placeholder='请输入短信验证码' />
+         <view class='time' wx:if="{{!isget}}">{{codetype}}</view>
+         <view class='getcode' wx:else bindtap="getCode">获取验证码</view>
+         <view class='mobileTip' wx:if="{{isEmpty}}">*请输入您的短信验证码</view>
+      </view>
+      <view class='btn' bindtap="register">下一步</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,30 @@
+/* pages/getmobile.wxss */
+page{background-color:#ffffff;}  
+.mobile{
+  width:100%;
+  height: 100%;
+  flex-direction: column;
+  box-sizing: border-box;
+  position: relative;
+}
+.banner{
+  width: 100%;
+  height:460rpx;
+}
+.title{
+  width: 88%;
+  margin: -20rpx auto 75rpx;
+  font-size: 32rpx;
+  line-height: 50rpx;
+  color: #414141;
+}
+.mobile button{
+  width: 88%;
+  height: 80rpx;
+  color:#fff;
+  line-height: 80rpx;
+	background-color: #0189c5!important;
+	border-radius: 10rpx;
+  font-size: 32rpx;
+  margin-bottom: 40rpx;
+}
