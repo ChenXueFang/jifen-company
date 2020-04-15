@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title key-title="emailPersonalPageTitle">Email Personal Info</title>
+    <link type="image/x-icon" href="/favicon.ico" rel="icon" />
+    <link rel="stylesheet" type="text/css" href="/css/icon.css"/>
+    <link href="/css/bootstrap.min.css"rel="stylesheet">
+    <link href="/css/reset.css"rel="stylesheet">
+    <link href="/css/recruitmentprocess.css"rel="stylesheet">
+    <link href="/css/error404.css"rel="stylesheet">
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/common.js"></script>
+    <script src="/js/common-index.js"></script>
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+        <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+    <div style="position: relative;">
+        <header id="header">
+        </header>
+    </div>
+    <!-- 内容 -->
+    <div class="phs-manage-personal-information-area ph-widget-box container">
+        <div class="phs-widget-heading infoHeading sc-content">
+            <h1>Profile Information</h1>
+        </div>
+        <div class="personal-information-area">
+            <div class="phs-sub-heading sc-content">
+                <h2>About Personal Information</h2>
+            </div>
+            <div class="personal-info-desc">
+                <div class="sc-content">
+                    <p>"Personal Data" are data that identify you as an individual or relate to an identifiable
+                        individual.&nbsp;
+                        <br><br>For the purposes of the Talent Newsflash, the following personal data will be
+                        collected:&nbsp;
+                        <br><br>Full name;&nbsp;
+                        <br>Email address;&nbsp;
+                        <br>Country of residence;&nbsp;
+                        <br>Areas of interest;&nbsp;
+                        <br>Incomplete application;&nbsp;
+                        <br><br>For the purposes of the Job Alert Subscription on the Philips Career Website:&nbsp;
+                        <br>E-mail address.&nbsp;
+                        <br><br>For the purposes of the personalized job recommendations on the Philips Career
+                        Website:&nbsp;
+                        <br>Public LinkedIn profile.&nbsp;
+                        <br><br>If you would like to:&nbsp;
+                        <br>(i) ask questions about how we handle Personal Data;&nbsp;
+                        <br><br>(ii) request to review, correct, update, suppress or restrict the use of your Personal
+                        Data;&nbsp;
+                        <br><br>(iii) request that your Personal Data be removed from our database;&nbsp;
+                        <br><br>(iv) withdraw your consent to our use of your Personal Data, without affecting the
+                        lawfulness that use prior to this withdrawal;&nbsp;
+                        <br><br>(v) object to our use of Personal Data for direct marketing purposes or for our
+                        legitimate business interests, or&nbsp;
+                        <br><br>(vi) request to receive an electronic copy of your Personal Data for purposes of
+                        transmitting it to another company (to the extent this right to data portability is provided to
+                        you by applicable law), please contact us at
+                        <u><a class="mailto cke-link au-target" href="mailto:privacy@philips.com" target="_self">privacy@philips.com</a></u>. We will
+                        respond to your request consistent with applicable law.&nbsp;
+                        <br><br>Your rights&nbsp;
+                        <br><br>Under the Philips Privacy Rules and many local privacy laws, you have the right to
+                        request access to your personal data. When your personal data are incorrect, incomplete or not
+                        processed in compliance with applicable law or the Philips Privacy Rules, you have the right to
+                        have this data rectified, deleted or blocked.&nbsp;
+                        <br>Fill in our form to file a privacy question or give privacy feedback
+                        <u><a href="https://www.philips.com/c-e/questions-and-feedback.html" target="_blank" class="feedbackLink cke-link au-target">https://www.philips.com/c-e/questions-and-feedback.html</a></u><br><br>Additional
+                        information on Philip’s commitment to protecting your privacy can be found at <u><a class="privacyNoticeLink"
+                                href="https://www.philips.com/a-w/people-privacy-notice.html"
+                                target="_blank">https://www.philips.com/a-w/people-privacy-notice.html</a></u><a class="mailto" 
+                            title="mailto:privacy@philips.com" href="https://mailto:privacy@philips.com" target="_blank"
+                            class="cke-link au-target"></a><u><a class="mailto"  title="mailto:privacy@philips.com"
+                                href="https://mailto:privacy@philips.com" target="_blank"
+                                class="cke-link au-target"><br></a></u> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部按钮 -->
+    <div class="job-section">
+        <div class="container ">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 section-card">
+                    <a href="/cookiesettings.html"class="cookieSettingsBtn card-content">
+                        <span>Career Site Cookie Settings</span> </a>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6">
+                    <a href="/emailpersonalinfo.html"class="personalInformationBtn card-content">
+                        <span>Personal Information</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(function () {
+            // 底部Career Site Cookie Settings 按钮埋点
+            $(".cookieSettingsBtn").click(function () {
+                userLinkRecord(hrpageid, 'button', 'cookieSettingsBtn')
+            })
+
+            // 底部Personal Information 按钮埋点
+            $(".personalInformationBtn").click(function () {
+                userLinkRecord(hrpageid, 'button', 'personalInformationBtn')
+            })
+
+            // mailto发送邮件 按钮埋点
+            $(".mailto").click(function () {
+                userLinkRecord(hrpageid, 'button', 'mailtoBtn')
+            })
+
+            // feedback页面链接 按钮埋点
+            $(".feedbackLink").click(function () {
+                userLinkRecord(hrpageid, 'button', 'emailpersonalinfo-feedbackLink')
+            })
+
+            // privacyNotice页面链接 按钮埋点
+            $(".privacyNoticeLink").click(function () {
+                userLinkRecord(hrpageid, 'button', 'emailpersonalinfo-privacyNoticeLink')
+            })
+        })
+    </script>
+
+</body>
+
+</html>

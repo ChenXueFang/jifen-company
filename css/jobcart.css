@@ -1,0 +1,136 @@
+.banner img{
+	width: 100%;
+	}
+	.jobcontainer{
+		margin: 30px 0;
+	}
+.jt{
+	font-size: 26px;
+	padding-bottom: 20px;
+}	
+.no-result{
+	text-align: center;
+	    padding: 3% 0;
+		display: none;
+}
+.no-result p{
+	    font-size: 20px;
+	    margin-top: 20px;
+	    color: #323232;
+}
+.no-result p a{
+	    color: #1372a9;
+		cursor: pointer;
+}
+.no-result p a:hover{
+	    color: #1372a9;
+}
+.joblist{
+	    margin: 0;
+	    padding: 0;
+	    list-style: none;
+}
+.joblist_item{
+	    display: table;
+	    width: 100%;
+	    padding: 35px 15px;
+	    overflow: hidden;
+	    border-bottom: 1px solid #D8D8D8;
+}
+
+.joblist_item:last-child {
+	border-bottom: none
+}
+
+.joblist_item:hover {
+	box-shadow: 0 .5px 13px 0 #d1d1d1;
+	border-radius: 3px
+}
+.information{
+	    display: table-cell;
+	    vertical-align: top;
+	    padding-left: 15px;
+	    float: left;
+}
+.information h4 {
+    margin: 0 0 5px;
+    color: #1372a9;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+}
+.information span{
+    color: #727272;
+    font-size: 12px;
+    padding-right: 15px;
+    padding-top: 10px;
+    display: inline-block;
+	}
+.information .icon{
+	    color: #909090;
+	    font-size: 14px;
+	    padding-right: 5px;
+}	
+	
+.favourite {
+	    display: table-cell;
+	    width: 1%;
+	    padding-right: 20px;
+	    vertical-align: top;
+	    position: relative;
+	    top: 15px;
+	    float: right;
+	}
+	.location img,.time img{
+		    height: 15px;
+		    vertical-align: -3px;
+			margin-right: 2px;
+	}
+.favourite i {
+    color: #888888;
+    font-size: 20px;
+}	
+.favourite img{
+	width: 25px;
+}
+.job-section{
+		width: 100%;
+	    background-color: #a03126 !important;
+	}
+.section-card{
+	border-right: 1px solid #F5C372;
+}
+.card-content span{
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding: 20px;
+	font-size: 16px;
+	color: #fff;
+}
+@media (max-width: 767px){
+.section-card{
+    border-right: none;
+    border-bottom: 1px solid #F5C372;
+}
+.favourite i{
+	font-size: 18px;
+	}
+	.inner-container {
+		width: 94%;
+		max-width: 100%;
+	}
+}
+@media only screen and (max-width: 420px){
+.joblist_item .information {
+    width: 80%;
+}
+.joblist_item {
+    display: block;
+    padding: 15px 0;
+}
+.joblist_item .favourite {
+    right: 20px;
+}
+}
+

@@ -1,0 +1,64 @@
+.quote_box{
+    background-image: linear-gradient(283deg, #ffd873, #fca71e, #fba51a);
+}
+.job-add{
+    background-image: linear-gradient(283deg, #ffd873, #fca71e, #fba51a);
+        padding-top: 50px;
+        padding-bottom: 50px;
+}
+.job-add-info{ 
+display: table-cell;
+    vertical-align: middle;
+    /* padding-right: 15px; */
+    padding:0 8px;
+    color: #fff;
+    /* letter-spacing: .6px; */
+        word-wrap: break-word;
+        font-size: 24px;
+}
+.action-btn-add{
+    text-align: right;
+}
+.job-add-btn{
+    padding: 10px 35px;
+    border-radius: 2px;
+    font-size: 23px;
+    font-weight: 600;
+    margin-top: 10px;
+    height: 48px;
+    max-width: 400px;
+    min-width: 256px;
+    /* width: 100%; */
+    color: #ffffff;
+    text-align: center;
+    background: none;
+    background-color: #0089C4;
+    border: 1px solid #0089c4;
+    line-height: 100%;
+    
+}
+.img_box .play-icon{
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+    cursor: pointer;
+}
+/* cooking */
+.ph-component-cntr {
+    background-color: #a03126 !important;
+}
+.cookingBox .cookingLft {
+    border-right: 1px solid #F5C372;
+}
+.banner_img .text-section2 {
+    top: 15%;
+    /* bottom: 5%; */
+}
+@media (max-width: 767px){
+    .cookingBox .cookingLft {
+        border-bottom: 1px solid #F5C372;
+}
+.action-btn-add{
+    text-align: left;
+}
+}

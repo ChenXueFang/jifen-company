@@ -1,0 +1,42 @@
+.banner img{
+	width: 100%;
+	}
+	.jtc-thankyou-box{
+		    padding: 0 10px;
+		    margin: 50px 0;
+		    font-size: 18px;
+			color: #828282;
+	}
+	.jtc-thankyou-box p{
+		margin: 0 0 10px !important;
+	}
+	.jtc-thankyou-box p a{
+		color: #0fb251;
+	}
+	
+	.job-section{
+			width: 100%;
+		    background-color: #15636f !important;
+		}
+	.section-card{
+		border-right: 1px solid #1e9d8b;
+	}
+	.card-content span{
+		display: block;
+		width: 100%;
+		text-align: center;
+		padding: 20px;
+		font-size: 16px;
+		color: #fff;
+	}
+	@media (max-width: 767px){
+	.section-card{
+	    border-right: none;
+	    border-bottom: 1px solid #1e9d8b;
+	}
+	.inner-container {
+		width: 94%;
+		max-width: 100%;
+	}
+	}
+	

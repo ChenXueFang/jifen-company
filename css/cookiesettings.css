@@ -1,0 +1,147 @@
+/* emailpersonalinfo.html */
+*{
+    font-family: FZLTHK_regular;
+}
+.phs-manage-personal-information-area {
+    padding-top: 190px;
+}
+.infoHeading {
+    border-bottom: 2px solid #cdcdcd !important;
+}
+.phs-manage-personal-information-area .phs-widget-heading h1 {
+    margin: 48px 0;
+    color: #555555;
+    font-size: 32px;
+    letter-spacing: -0.4px;
+    font-family: FZLTHK_regular;
+}
+.phs-manage-personal-information-area .personal-information-area {
+    max-width: 750px;
+}
+.phs-manage-personal-information-area .personal-information-area .phs-sub-heading h2 {
+    margin: 32px 0;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: .8px;
+    color: #555555;
+}.phs-manage-personal-information-area .personal-information-area .personal-info-desc {
+    padding-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.64;
+    letter-spacing: .4px;
+    color: #212121;
+}.phs-manage-personal-information-area .personal-information-area .personal-info-desc u a {
+    font-weight: bold !important;
+    color: #000;
+    white-space:normal; 
+    word-break:break-all;
+    display: block;
+}
+.manage-cookies-area{
+    border-bottom: 2px solid #cdcdcd;
+}
+label.input-check-group input {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    height: inherit;
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: inherit;
+}
+label.input-check-group .checkbox, label.input-check-group .radio {
+    margin: 0 10px 0 0;
+    padding: 0;
+    background-color: rgba(103,121,134,0.4);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #1372a9;
+    display: inline-block;
+    height: 16px;
+    margin-right: 10px;
+    margin-top: 5px;
+    width: 16px;
+    float: left;
+}
+
+.ph-cookie-popup-v2-view1-default .phs-cookie-settings-area .info label.input-check-group.disabled {
+    opacity: 1;
+}
+label.input-check-group {
+    position: relative;
+    font-weight: normal;
+    margin-top: 10px;
+    cursor: pointer;
+}
+label.input-check-group.disabled{
+cursor: not-allowed;
+}
+label.input-check-group input:checked+.checkbox::before {
+    border-color: #1372a9 !important;
+    left: 4px !important;
+    top: 9px !important;
+}
+.cookie-heading-text {
+    color: #212121;
+    font-weight: 600;
+    letter-spacing: .3px;
+    font-size: 14px;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0;
+}
+
+label.input-check-group .checkbox::before, label.input-check-group .radio::before {
+    content: "";
+    border-color: #fff;
+    border-image: none;
+    border-style: solid;
+    border-width: 0 0 2px 2px;
+    height: 5px;
+    left: 14px;
+    position: absolute;
+    top: 1px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg) !important;
+    -ms-transform: rotate(-45deg) !important;
+    -o-transform: rotate(-45deg) !important;
+    width: 8px;
+    z-index: 2;
+}
+.cookie-description {
+    color: #212121;
+    margin: 16px 0;
+    letter-spacing: .3px;
+    line-height: 1.64;
+    font-size: 14px;
+}
+.cookie-sub-heading-text {
+    color: #9e9e9e;
+    margin: 16px 0 32px!important;
+    line-height: 1.64;
+    letter-spacing: .3px;
+}
+label.input-check-group input:checked+.checkbox2 {
+    background-color: #000000!important;
+}
+.checkbox2{
+    background-color: #fff!important;
+}
+.personal-information-area .personal-information-area {
+    color: #212121;
+    line-height: 1.64;
+    letter-spacing: .3px;
+}
+/* .job-section {
+    width: 100%;
+    background-color: #15636f!important;
+}
+.section-card {
+    border-color: #1e9d8b!important;
+} */
+
+
+

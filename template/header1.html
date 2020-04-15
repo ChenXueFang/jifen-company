@@ -1,0 +1,599 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <!-- Bootstrap -->
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/reset.css" rel="stylesheet">
+  <link href="/css/icon.css" rel="stylesheet">
+  <link href="/css/student.css"rel="stylesheet">
+  <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <meta keywords="">
+  <meta description="">
+  <script>window.hrpageid = 0</script>
+</head>
+
+<body>
+  <!-- banner -->
+  <div class="bannerBox container-fluid">
+    <header id="header">
+      <div class="pc_header clearfix">
+        <div class="header_logo">
+          <a title="主页" href="/home.html">
+            <div class="logo_content">
+              <img alt="主页" class="img-responsive" title="主页" src="/images/philips-logo-new.png">
+              <span class="logo_text_field" title="主页">主页</span>
+              <h3 class="logo_sub_text_field" title="主页">社会英才</h3>
+            </div>
+          </a>
+        </div>
+        <div class="header_nav">
+          <div class="nav_menus">
+            <ul>
+              <li class="">
+                <a href="/about-professional.html"title="关于飞利浦">
+                  <span>关于飞利浦</span>
+                </a>
+              </li>
+              <li class="">
+                <a href="/pro-workingatphilips.html"title="在飞利浦工作">
+                  <span>在飞利浦工作</span>
+                </a>
+              </li>
+              <li class="menu-link">
+                <a href="#" title="">
+                  <span>专业领域</span>
+                </a>
+                <ul class="menupanel">
+                  <li class="li-menu-item">
+                    <a href="/careerinquality.html">质量法规</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="/careerinprocurement.html">采购</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="/careerinsales.html">销售</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="/careerinrandd.html">研发</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="/careerinengineering.html">工程</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="/careerinmarketing.html">市场营销</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="/softwaredevelopment.html">软件工程师</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="">
+                <a href="/blog.html"title="员工博客">
+                  <span>员工博客</span>
+                </a>
+              </li>
+              <li class="menu-link">
+                <a href="#" title="">
+                  <span>搜寻职位</span>
+                </a>
+                <ul class="menupanel">
+                  <li class="li-menu-item">
+                    <a href="/search-results-professional.html">搜寻职位</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="/recruitmentprocess.html">飞利浦招聘流程</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="/faq.html">飞利浦招聘的常见问题</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="https://www.philips.com.cn/a-w/careers/healthtech/contact.html">联系我们</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="nav_links">
+            <ul>
+              <li>
+                <a href="https://philips.wd3.myworkdayjobs.com/zh-CN/jobs-and-careers/login" target="_blank" title="">
+                  <i class="icon icon-bigger-profile"></i> </a>
+              </li>
+              <li class="starLi">
+                <a href="/jobcart.html"target="_blank" title=""> 
+                  <i class="au-target icon icon-star-empty"></i>
+              </li>
+              <li>
+                <a href="javascript:;" title="搜寻职位" class="bigger-search" onclick="openSearch(this)">
+                  <i class="icon icon-bigger-search"></i>
+                </a>
+                <div id="header-search" class="header-search">
+                  <div class="job-filter">
+                    <input type="text" placeholder="输入职位名称或工作地点" onfocus="openSearchList()">
+                    <!--<a href="javascript:;" class="search-icon">
+                       <i class="icon icon-bigger-search"  class="phs-keysearch-clear"></i> 
+                    </a>-->
+                    <a href="javascript:;" class="phs-keysearch-clear">
+                      <!-- <i class="icon icon-bigger-search"  class=""></i> -->
+                      <i class="icon icon-cancel"></i>  <!-- 新2 -->
+                    </a>
+                    <div class="phs-search-suggestions">
+                      <div style="width:100%;">
+                        <div class="phs-categorys">
+                          <h3>
+                            职位类别
+                          </h3>
+                          <ul class="phs-search-category-list">
+                          </ul>
+                        </div>
+                        <div class="phs-jobs-suggested">
+                          <h3>
+                            职位
+                          </h3>
+                          <ul class="phs-search-category-list">
+                          </ul>
+                        </div>
+                        <div class="phs-locations-suggested">
+                          <h3>
+                            工作地点
+                          </h3>
+                          <ul class="phs-search-category-list">
+                          </ul>
+                        </div>
+                        <div class="phs-categorys-suggested">
+                          <h3>
+                            类别
+                          </h3>
+                          <ul class="phs-search-category-list">
+                          </ul>
+                        </div>
+                        <div class="phs-recentsearches-suggested">
+                          <h3>
+                            近期搜索
+                          </h3>
+                          <ul class="phs-search-category-list">
+                          </ul>
+                        </div>
+                        <div class="phs-suggested-keywords-suggested">
+                          <h3>
+                            Suggested Keywords
+                          </h3>
+                          <ul class="phs-search-category-list">
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="input-group-btn">
+                    <button class="clearInput">
+                      <i class="icon icon-search"></i>
+                      <!-- <i class="icon icon-cancel" style="font-size: 20px;"></i> -->
+                    </button>
+                  </span>
+                </div>
+              </li>
+              <li class="country-link">
+                <a href="javascript:;" onclick="openCountry()" title="">China <i
+                    class="icon icon-down-arrow"></i> </a>
+                <ul class="menupanel">
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/aun/en">ANZ (English)</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/africa/en">Africa (English)</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/apac/en">Asia Pacific (English)</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/cee/en">CEE (English)</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/de/de">DACH (German)</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/fr/en">France (English)</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/global/en">Global (English)</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/gb/en">Great Britain (English)</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/in/en">India (English)</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/id/en">Indonesia (English)</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/il/en">Israel (English)</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/jp/ja">Japan (Japanese)</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/latam/pt">Latin America (Portuguese) </a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/latam/es">Latin America (Spanish)</a>
+                  </li>
+
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/my/en">Malaysia (English)</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/xe/en">Middle East & Turkey (English)</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/nl/nl">Netherlands (Dutch)</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/nl/en">Netherlands (English)</a>
+                  </li>
+
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/nrd/en"> Nordic (English)</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/na/en">North America (English)</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/na/fr">North America (French)</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/ph/en">Philippines (English)</a>
+                  </li>
+
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/ru/ru">Russia (Russian)</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/sg/en">Singapore (English)</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/kr/kr">South Korea (Korea)</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/th/en">Thailand (English)</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/vn/en">Vietnam (English)</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="mobile_header">
+        <div class="blue_grad_bg">
+          <div class="mobile_logo_content clearfix">
+            <div class="mobile_logo">
+              <a title="主页" href="/home.html">
+                <div class="logo_content">
+                  <img alt="主页" class="img-responsive" title="主页" src="/images/philips-logo-new.png">
+                  <h3 class="logo_sub_text_field" title="主页">主页</h3>
+                </div>
+              </a>
+            </div>
+            <div class="mobile_header_icons">
+              <ul>
+                <li>
+                  <a href="https://philips.wd3.myworkdayjobs.com/zh-CN/jobs-and-careers/login" target="_blank"
+                    title="我的申请状态">
+                    <i class="icon icon-bigger-profile">
+                    </i>
+                  </a>
+                </li>
+                <li class="starLi">
+                  <a href="/jobcart.html"target="_blank" title="">
+                    <i class="au-target icon icon-star-empty"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;" title="搜寻职位" class="bigger-search" onclick="openSearch(this)">
+                    <i class="icon icon-bigger-search"></i>
+                  </a>
+                  <div id="header-search" class="header-search">
+                    <div class="job-filter">
+                      <input type="text" placeholder="输入职位名称或工作地点" onfocus="openSearchList()">
+                      <!-- <a href="javascript:;" class="search-icon">
+                        <i class="icon icon-bigger-search"  class="phs-keysearch-clear"></i>
+                      </a> -->
+                      <a href="javascript:;" class="phs-keysearch-clear">
+                        <!-- <i class="icon icon-bigger-search"  class=""></i> -->
+                        <i class="icon icon-cancel"></i>  <!-- 新2 -->
+                      </a>
+                      <div class="phs-search-suggestions">
+                        <div style="width:100%;">
+                          <div class="phs-categorys">
+                            <h3>
+                              职位类别
+                            </h3>
+                            <ul class="phs-search-category-list">
+                            </ul>
+                          </div>
+                          <div class="phs-jobs-suggested">
+                            <h3>
+                              职位
+                            </h3>
+                            <ul class="phs-search-category-list">
+                            </ul>
+                          </div>
+                          <div class="phs-locations-suggested">
+                            <h3>
+                              工作地点
+                            </h3>
+                            <ul class="phs-search-category-list">
+                            </ul>
+                          </div>
+                          <div class="phs-categorys-suggested">
+                            <h3>
+                              类别
+                            </h3>
+                            <ul class="phs-search-category-list">
+                            </ul>
+                          </div>
+                          <div class="phs-recentsearches-suggested">
+                            <h3>
+                              近期搜索
+                            </h3>
+                            <ul class="phs-search-category-list">
+                            </ul>
+                          </div>
+                          <div class="phs-suggested-keywords-suggested">
+                            <h3>
+                              Suggested Keywords
+                            </h3>
+                            <ul class="phs-search-category-list">
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <span class="input-group-btn">
+                      <button class="clearInput">
+                        <i class="icon icon-search"></i>
+                        <!-- <i class="icon icon-cancel" style="font-size: 20px;"></i> -->
+                      </button>
+                      <!-- <button class="clearInput">
+                        <i class="icon icon-cancel" style="font-size: 20px;"></i>
+                      </button> -->
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  <a href="javascript:;" onclick="toggle_visibility()" title="">
+                    <i class="icon icon-menu"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="ph-navigation">
+              <nav class="navbar-nav">
+                <ul>
+                  <li> <a href="/about-professional.html">关于飞利浦</a></li>
+                  <li> <a href="/pro-workingatphilips.html">在飞利浦工作</a></li>
+                  <li> <a href="#" onclick="toggle_visibility2()">专业领域</a>
+                    <nav class="navbar-nav navbar-nav2">
+                      <ul class="">
+                        <li class="">
+                          <a href="/careerinquality.html">质量法规</a>
+                        </li>
+                        <li class="">
+                          <a href="/careerinprocurement.html">采购</a>
+                        </li>
+                        <li class="">
+                          <a href="/careerinsales.html">销售</a>
+                        </li>
+                        <li class="">
+                          <a href="/careerinrandd.html">研发</a>
+                        </li>
+                        <li class="">
+                          <a href="/careerinengineering.html">工程</a>
+                        </li>
+                        <li class="">
+                          <a href="/careerinmarketing.html">市场营销</a>
+                        </li>
+                        <li class="">
+                          <a href="/softwaredevelopment.html">软件工程师</a>
+                        </li>
+                      </ul>
+                    </nav>
+                    
+                  </li>
+                  <li>
+                    <a href="/blog.html">Blog</a>
+                  </li>
+                  <li> <a href="#" onclick="toggle_visibility3()">Get Started</a>
+                    <nav class="navbar-nav navbar-nav3">
+                      <ul class="">
+                        <li class="">
+                          <a href="/search-results-professional.html">搜寻职位</a>
+                        </li>
+                        <li class="">
+                          <a href="/recruitmentprocess.html">飞利浦招聘流程</a>
+                        </li>
+                        <li class="">
+                          <a href="/faq.html">飞利浦招聘的常见问题</a>
+                        </li>
+                        <li class="">
+                          <a href="https://www.philips.com.cn/a-w/careers/healthtech/contact.html">联系我们</a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </li>
+                  <li> <a href="#" onclick="toggle_visibility4()" class="visibility4">China <i
+                    class="icon icon-down-arrow"></i></a>
+                    <nav class="navbar-nav navbar-nav4">
+                      <ul class="">
+                        <li class="">
+                          <a href="https://www.careers.philips.com/aun/en">ANZ (English)</a>
+                        </li>
+                        <li class="">
+                          <a href="https://www.careers.philips.com/africa/en">Africa (English)</a>
+                        </li>
+                        <li>
+                          <a href="https://www.careers.philips.com/apac/en">Asia Pacific (English)</a>
+                        </li>
+                        <li>
+                          <a href="https://www.careers.philips.com/cee/en">CEE (English)</a>
+                        </li>
+                        <li>
+                          <a href="https://www.careers.philips.com/de/de">DACH (German)</a>
+                        </li>
+                        <li>
+                          <a href="https://www.careers.philips.com/fr/en">France (English)</a>
+                        </li>
+                        <li>
+                          <a href="https://www.careers.philips.com/global/en">Global (English)</a>
+                        </li>
+                        <li>
+                          <a href="https://www.careers.philips.com/gb/en">Great Britain (English)</a>
+                        </li>
+                        <li>
+                          <a href="https://www.careers.philips.com/in/en">India (English)</a>
+                        </li>
+                        <li>
+                          <a href="https://www.careers.philips.com/id/en">Indonesia (English)</a>
+                        </li>
+                        <li>
+                          <a href="https://www.careers.philips.com/il/en">Israel (English)</a>
+                        </li>
+                        <li>
+                          <a href="https://www.careers.philips.com/jp/ja">Japan (Japanese)</a>
+                        </li>
+                        <li>
+                          <a href="https://www.careers.philips.com/latam/pt">Latin America (Portuguese) </a>
+                        </li>
+                        <li>
+                          <a href="https://www.careers.philips.com/latam/es">Latin America (Spanish)</a>
+                        </li>
+      
+                        <li>
+                          <a href="https://www.careers.philips.com/my/en">Malaysia (English)</a>
+                        </li>
+                        <li>
+                          <a href="https://www.careers.philips.com/xe/en">Middle East & Turkey (English)</a>
+                        </li>
+                        <li>
+                          <a href="https://www.careers.philips.com/nl/nl">Netherlands (Dutch)</a>
+                        </li>
+                        <li>
+                          <a href="https://www.careers.philips.com/nl/en">Netherlands (English)</a>
+                        </li>
+      
+                        <li>
+                          <a href="https://www.careers.philips.com/nrd/en"> Nordic (English)</a>
+                        </li>
+                        <li>
+                          <a href="https://www.careers.philips.com/na/en">North America (English)</a>
+                        </li>
+                        <li>
+                          <a href="https://www.careers.philips.com/na/fr">North America (French)</a>
+                        </li>
+                        <li>
+                          <a href="https://www.careers.philips.com/ph/en">Philippines (English)</a>
+                        </li>
+      
+                        <li>
+                          <a href="https://www.careers.philips.com/ru/ru">Russia (Russian)</a>
+                        </li>
+                        <li>
+                          <a href="https://www.careers.philips.com/sg/en">Singapore (English)</a>
+                        </li>
+                        <li>
+                          <a href="https://www.careers.philips.com/kr/kr">South Korea (Korea)</a>
+                        </li>
+                        <li>
+                          <a href="https://www.careers.philips.com/th/en">Thailand (English)</a>
+                        </li>
+                        <li>
+                          <a href="https://www.careers.philips.com/vn/en">Vietnam (English)</a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div style="clear:both;"></div>
+          <div class="mobile_logo_text">
+            <span>社会英才</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <div class="bannerBox container-fluid  sc-content">
+      <img class="col-12 bigImg img-responsive" src="/images/banner-student.jpg" alt="">
+    </div>
+
+  </div>
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/header.js"></script>
+  <script>
+
+  </script>
+</body>
+
+</html>
+<footer id="footer">
+  <div class="footer-block">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 p-footer">
+          <div class="p-grid-no-gutter">
+            <div class="p-grid-item p-footer-social p-m-two-fifths">
+              <h3 class="p-body-copy-02">关注我们</h3>
+              <div>
+                <ul>
+                  <li> <a href="https://www.facebook.com/philips"><i class="icon icon1"></i></a> </li>
+                  <li> <a href="https://www.flickr.com/photos/philips_newscenter"><i class="icon icon2"></i></a></li>
+                  <li><a href="https://www.instagram.com/philips"><i class="icon icon3"></i></a></li>
+                  <li><a href="https://www.linkedin.com/company/philips/careers"><i class="icon icon4"></i></a></li>
+                  <li><a href="https://www.pinterest.com/philipsglobal"><i class="icon icon5"></i></a></li>
+                  <li><a href="https://www.twitter.com/LifeAtPhilips"><i class="icon icon6"></i></a></li>
+                  <li><a href=""><i class="icon icon7"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="p-grid-item p-one-whole p-m-one-fifth p-philips-shield"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row terms">
+        <ul class="col-12 text-center">
+          <li><a href="https://www.philips.com/a-w/about/investor.html">投资者关系</a></li>
+          <li><a href="">招贤纳士</a></li>
+          <li><a href="https://www.philips.com.cn/a-w/careers/healthtech/contact.html">联系飞利浦</a></li>
+          <li><a href="https://www.philips.com.cn/a-w/about-philips/company-profile.html">关于飞利浦</a></li>
+          <li><a href="https://www.philips.com.cn/a-w/cookie-notice.html">Cookie 政策</a></li>
+          <li><a href="https://www.philips.com/a-w/people-privacy-notice.html">隐私权声明</a></li>
+          <li><a href="https://www.philips.com.cn/a-w/terms-of-use.html">使用条款</a></li>
+        </ul>
+        <div class="col-12 text-center section-copyright">
+          <span>
+            ©
+            Koninklijke Philips N.V., 2004 - 2020.
+          </span>
+          <span>保留所有权利。</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</footer>

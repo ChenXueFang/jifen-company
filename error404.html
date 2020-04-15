@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title data-ph-id="ph-page-element-page3-9" key="external-default-recruitement-process-title">404-网页无法找到 | 校招 |
+        飞利浦招贤纳士</title>
+    <link type="image/x-icon" href="/favicon.ico" rel="icon" />
+    <link href="/css/bootstrap.min.css"rel="stylesheet">
+    <link href="/css/reset.css"rel="stylesheet">
+    <link href="/css/icon.css"rel="stylesheet">
+    <link href="/css/recruitmentprocess.css"rel="stylesheet">
+    <link href="/css/error404.css"rel="stylesheet">
+    <link href="/css/common.css"rel="stylesheet">
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/common.js"></script>
+    <script src="/js/common-index.js"></script>
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+        <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body class="error404Page">
+    <!-- banner -->
+    <div class="bannerBox container-fluid sc-content">
+        <div class="bannerBox container-fluid"><img class="col-sm-12 bigImg img-fluid" src="/images/banner-apply.jpg"
+                alt=""></div>
+    </div>
+    <!-- 404 -->
+    <div as-element="ph-html-v1">
+        <div class="container ph-widget-box">
+            <div class="error-text sc-content">
+                <h1>404</h1>
+                <p class="error-info">哎呀。 某些东西可能已经改变</p>
+                <p class="error-info-description">无法找到您正在查找的网页。
+                    它可能已移至新位置或可能已被移除。 使用搜索或上面的菜单找到你要找的东西
+                </p>
+                <p>
+                    也许你想考虑下面的工作类别 :
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- 工作推荐 -->
+    <div class="phs-category-area ph-widget-box">
+        <div class="container au-target">
+            <div class="phs-widget-heading">
+                <h2>您希望从事什么岗位的工作</h2>
+            </div>
+            <div class="content-block recommendBox">
+                <div class="au-target showMore">
+                    <div class="row jobListBox au-target category-column-4">
+                        <!-- <div class="au-target col-lg-3 col-md-4 col-sm-6 col-6 content-list-item">
+                            <a ref="linkEle"
+                                class="au-target category-1 list-item-link"
+                                href="search-results.html">
+                                    <div class="transparent-bg">
+                                    </div>
+                                    <img class="img-fluid au-target"
+                                        src="/images/recommendPic.jpg">
+                                <div class="category-info">
+                                    <h3 class="title au-target"
+                                        title="工程">工程 <i class="icon icon-right-open"></i> </h3>
+                                    <p>26 <span>机会</span> </p>
+                                </div>
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部按钮 -->
+    <div class="job-section">
+        <div class="container ">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 section-card">
+                    <a href="/cookiesettings.html"class="cookieSettingsBtn card-content">
+                        <span>Career Site Cookie Settings</span> </a>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6">
+                    <a href="/emailpersonalinfo.html"class="personalInformationBtn card-content">
+                        <span>Personal Information</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(function () {
+            getJobList();
+
+            // 底部Career Site Cookie Settings 按钮埋点
+            $(".cookieSettingsBtn").click(function () {
+                userLinkRecord(hrpageid, 'button', 'cookieSettingsBtn')
+            })
+
+            // 底部Personal Information 按钮埋点
+            $(".personalInformationBtn").click(function () {
+                userLinkRecord(hrpageid, 'button', 'personalInformationBtn')
+            })
+        });
+        // 职位推荐
+        function compare(property) {
+            return function (a, b) {
+                var value1 = a[property];
+                var value2 = b[property];
+                return value2 - value1;
+            }
+        }
+        function getJobList() {
+            $.getJSON(domainUrl + "/hrapi/api/PositionType/GetPositionTypeCount?jobType=03&typeName=",
+                function (data) {
+                    let temp = data.data.sort(compare("PositionCount"))
+                    $.each(temp, function (index, item) {
+                        $('.jobListBox').append(
+                            '<div class="au-target col-lg-3 col-md-4 col-sm-6 col-6 content-list-item">' +
+                            '<a class="au-target category-1 list-item-link" href="/search-results-professional.html?TypeId=' + item.TypeId + '"><img class="img-fluid au-target" src="' + item.TypeImage + '">' +
+                            '<div class="category-info">' +
+                            '<h3 class="title au-target" title="工程">' + item.TypeName +
+                            '<i class="icon icon-right-open"></i> </h3>' +
+                            '<p>' + item.PositionCount + '<span> 个机会</span> </p></div></a></div>'
+                        )
+                    })
+                });
+        }
+    </script>
+
+</body>
+
+</html>

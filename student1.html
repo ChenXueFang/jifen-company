@@ -1,0 +1,520 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link type="image/x-icon" href="/favicon.ico" rel="icon">
+    <link href="/css/reset.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"> -->
+    <link href="/css/recruitmentprocess.css" rel="stylesheet">
+    <link href="/css/icon.css" rel="stylesheet">
+    <link href="/css/blog.css" rel="stylesheet">
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/common.js"></script>
+    <script src="/js/blogDetails.js"></script>
+    <script id="jspageid">window.hrpageid=87</script>
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+        <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+    <style>
+        .labelBox {
+            list-style-type: none;
+        }
+
+        .labelBox li {
+            display: inline-block;
+            padding: 12px 20px;
+            background-color: #f3f2f2;
+            margin: 15px 12px 15px 0;
+            color: #5a5a5a;
+            letter-spacing: 1px;
+        }
+@media only screen and (max-width: 480px){
+.blog-list-item-info .blog-title {
+    margin: 0px auto 24px!important;
+}}
+
+.blog-details-banner-info {
+    top: 80%!important;}
+.content-block {
+    margin-top: 0px!important;
+}
+         .bannerHidden{
+            width: 100% !important;
+max-height: unset!important;
+        }
+		.bannerHidden img{
+            width: 100% !important;
+            height: auto;
+min-height:0!important;
+        }   
+    </style>
+<meta keywords=""><meta description=""><meta keywords=""><meta description=""><meta keywords=""><meta description=""><meta keywords=""><meta description=""><meta keywords=""><meta description=""><meta keywords=""><meta description=""><meta keywords=""><meta description=""><meta keywords=""><meta description=""><meta keywords=""><meta description=""><meta keywords=""><meta description=""><meta keywords=""><meta description=""><meta keywords=""><meta description=""><meta keywords=""><meta description=""><meta keywords=""><meta description=""><meta keywords=""><meta description=""><meta keywords=""><meta description=""><meta keywords=""><meta description=""><meta keywords=""><meta description=""><meta keywords=""><meta description=""><meta keywords=""><meta description=""><meta keywords=""><meta description=""><meta keywords=""><meta description=""><meta keywords=""><meta description=""><meta keywords=""><meta description=""><meta keywords=""><meta description=""><meta keywords=""><meta description=""><meta keywords=""><meta description=""><meta keywords=""><meta description=""><meta keywords=""><meta description=""><meta keywords="好奇心与创造力: 我与飞利浦的故事"><meta description="好奇心与创造力: 我与飞利浦的故事"><meta keywords="好奇心与创造力: 我与飞利浦的故事"><meta description="好奇心与创造力: 我与飞利浦的故事"><meta keywords="好奇心与创造力: 我与飞利浦的故事"><meta description="好奇心与创造力: 我与飞利浦的故事"><meta keywords="好奇心与创造力: 我与飞利浦的故事"><meta description="好奇心与创造力: 我与飞利浦的故事"><meta keywords="好奇心与创造力: 我与飞利浦的故事"><meta description="好奇心与创造力: 我与飞利浦的故事"><meta keywords="好奇心与创造力: 我与飞利浦的故事"><meta description="好奇心与创造力: 我与飞利浦的故事"><meta keywords="好奇心与创造力: 我与飞利浦的故事"><meta description="好奇心与创造力: 我与飞利浦的故事"></head>
+
+<body>
+    <!-- banner -->
+    <div class="bannerBox container-fluid blogBannerBox"><header id="header">
+      <div class="pc_header clearfix">
+        <div class="header_logo">
+          <a title="主页" href="/home.html">
+            <div class="logo_content">
+              <img alt="主页" class="img-responsive" title="主页" src="/images/philips-logo-new.png">
+              <span class="logo_text_field" title="主页">主页</span>
+              <h3 class="logo_sub_text_field" title="主页">主页</h3>
+            </div>
+          </a>
+        </div>
+        <div class="header_nav">
+          <div class="nav_menus">
+            <ul>
+              <li class="">
+                <a href="/about.html" title="关于飞利浦">
+                  <span>关于飞利浦</span>
+                </a>
+              </li>
+              <li class="">
+                <a href="/professional.html" title="社会精英">
+                  <span>社会精英</span>
+                </a>
+              </li>
+              <li class="">
+                <a href="/executive.html" title="高管精英">
+                  <span>高管精英</span>
+                </a>
+              </li>
+              <li class="">
+                <a href="/student.html" title="校园英才">
+                  <span>校园英才</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav_links">
+            <ul>
+              <li>
+                <a href="https://philips.wd3.myworkdayjobs.com/zh-CN/jobs-and-careers/login" target="_blank" title="">
+                  <i class="icon icon-bigger-profile"></i> </a>
+              </li>
+              <li class="country-link">
+                <a href="javascript:;" onclick="openCountry()" title="">China <i class="icon icon-down-arrow"></i> </a>
+                <ul class="menupanel">
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/aun/en">ANZ (English)</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/africa/en">Africa (English)</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/apac/en">Asia Pacific (English)</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/cee/en">CEE (English)</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/de/de">DACH (German)</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/fr/en">France (English)</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/global/en">Global (English)</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/gb/en">Great Britain (English)</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/in/en">India (English)</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/id/en">Indonesia (English)</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/il/en">Israel (English)</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/jp/ja">Japan (Japanese)</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/latam/pt">Latin America (Portuguese) </a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/latam/es">Latin America (Spanish)</a>
+                  </li>
+
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/my/en">Malaysia (English)</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/xe/en">Middle East & Turkey (English)</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/nl/nl">Netherlands (Dutch)</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/nl/en">Netherlands (English)</a>
+                  </li>
+
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/nrd/en"> Nordic (English)</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/na/en">North America (English)</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/na/fr">North America (French)</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/ph/en">Philippines (English)</a>
+                  </li>
+
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/ru/ru">Russia (Russian)</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/sg/en">Singapore (English)</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/kr/kr">South Korea (Korea)</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/th/en">Thailand (English)</a>
+                  </li>
+                  <li class="li-menu-item">
+                    <a href="https://www.careers.philips.com/vn/en">Vietnam (English)</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="mobile_header">
+        <div class="blue_grad_bg">
+          <div class="mobile_logo_content clearfix">
+            <div class="mobile_logo">
+              <a title="主页" href="/home.html">
+                <div class="logo_content">
+                  <img alt="主页" class="img-responsive" title="主页" src="/images/philips-logo-new.png">
+                  <h3 class="logo_sub_text_field" title="主页">主页</h3>
+                </div>
+              </a>
+            </div>
+            <div class="mobile_header_icons">
+              <ul>
+                <li>
+                  <a href="https://philips.wd3.myworkdayjobs.com/zh-CN/jobs-and-careers/login" target="_blank" title="我的申请状态">
+                    <i class="icon icon-bigger-profile">
+                    </i>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;" onclick="toggle_visibility()" title="">
+                    <i class="icon icon-menu"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="ph-navigation">
+              <nav class="navbar-nav">
+                <ul>
+                  <li> <a href="about.html">关于飞利浦</a></li>
+                  <li> <a href="professional.html">社会精英</a></li>
+                  <li>
+                    <a href="executive.html">高管精英</a>
+                  </li>
+                  <li>
+                    <a href="student.html">校园英才</a>
+                  </li>
+                  <li> <a href="#" onclick="toggle_visibility4()" class="visibility4">China <i class="icon icon-down-arrow"></i></a>
+                    <nav class="navbar-nav navbar-nav4">
+                      <ul class="">
+                        <li class="">
+                          <a href="https://www.careers.philips.com/aun/en">ANZ (English)</a>
+                        </li>
+                        <li class="">
+                          <a href="https://www.careers.philips.com/africa/en">Africa (English)</a>
+                        </li>
+                        <li>
+                          <a href="https://www.careers.philips.com/apac/en">Asia Pacific (English)</a>
+                        </li>
+                        <li>
+                          <a href="https://www.careers.philips.com/cee/en">CEE (English)</a>
+                        </li>
+                        <li>
+                          <a href="https://www.careers.philips.com/de/de">DACH (German)</a>
+                        </li>
+                        <li>
+                          <a href="https://www.careers.philips.com/fr/en">France (English)</a>
+                        </li>
+                        <li>
+                          <a href="https://www.careers.philips.com/global/en">Global (English)</a>
+                        </li>
+                        <li>
+                          <a href="https://www.careers.philips.com/gb/en">Great Britain (English)</a>
+                        </li>
+                        <li>
+                          <a href="https://www.careers.philips.com/in/en">India (English)</a>
+                        </li>
+                        <li>
+                          <a href="https://www.careers.philips.com/id/en">Indonesia (English)</a>
+                        </li>
+                        <li>
+                          <a href="https://www.careers.philips.com/il/en">Israel (English)</a>
+                        </li>
+                        <li>
+                          <a href="https://www.careers.philips.com/jp/ja">Japan (Japanese)</a>
+                        </li>
+                        <li>
+                          <a href="https://www.careers.philips.com/latam/pt">Latin America (Portuguese) </a>
+                        </li>
+                        <li>
+                          <a href="https://www.careers.philips.com/latam/es">Latin America (Spanish)</a>
+                        </li>
+      
+                        <li>
+                          <a href="https://www.careers.philips.com/my/en">Malaysia (English)</a>
+                        </li>
+                        <li>
+                          <a href="https://www.careers.philips.com/xe/en">Middle East & Turkey (English)</a>
+                        </li>
+                        <li>
+                          <a href="https://www.careers.philips.com/nl/nl">Netherlands (Dutch)</a>
+                        </li>
+                        <li>
+                          <a href="https://www.careers.philips.com/nl/en">Netherlands (English)</a>
+                        </li>
+      
+                        <li>
+                          <a href="https://www.careers.philips.com/nrd/en"> Nordic (English)</a>
+                        </li>
+                        <li>
+                          <a href="https://www.careers.philips.com/na/en">North America (English)</a>
+                        </li>
+                        <li>
+                          <a href="https://www.careers.philips.com/na/fr">North America (French)</a>
+                        </li>
+                        <li>
+                          <a href="https://www.careers.philips.com/ph/en">Philippines (English)</a>
+                        </li>
+      
+                        <li>
+                          <a href="https://www.careers.philips.com/ru/ru">Russia (Russian)</a>
+                        </li>
+                        <li>
+                          <a href="https://www.careers.philips.com/sg/en">Singapore (English)</a>
+                        </li>
+                        <li>
+                          <a href="https://www.careers.philips.com/kr/kr">South Korea (Korea)</a>
+                        </li>
+                        <li>
+                          <a href="https://www.careers.philips.com/th/en">Thailand (English)</a>
+                        </li>
+                        <li>
+                          <a href="https://www.careers.philips.com/vn/en">Vietnam (English)</a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div style="clear:both;"></div>
+          <div class="mobile_logo_text">
+            <span>主页</span>
+          </div>
+        </div>
+      </div>
+    </header>
+        <div class="bannerBox container-fluid sc-content bannerHidden                                   "><img alt="" style="width:100%;" src="/Image/20200217/114634648.jpg" srcset="/Image/20200217/114634648.jpg 1305w"></div>
+        <!-- banner图上的文字 -->
+        <div class="slick-list blog-details-banner-Box">
+            <div class="blog-list-item-info container au-target blog-details-banner-info">
+                <div class="sc-content    "><h1>&nbsp; &nbsp;&nbsp;</h1><h1></h1><h3>&nbsp;&nbsp;</h3><p>FEATURED ARTICLE&nbsp;</p><h1 class="blog-title au-target">好奇心与创造力: 我与飞利浦的故事&nbsp;&nbsp;</h1></div>
+                <div class="blog-header sc-content                                   "><h1>&nbsp; &nbsp;</h1><h6></h6></div>
+            </div>
+        </div>
+    </div>
+    <!-- banner end-->
+
+    <!-- blog文章内容 -->
+    <div class="widget-container">
+        <div class="content-block">
+            <div class="ph-blog-description-area">
+                <div class="phs-widget-block-area ph-widget-box">
+                    <div class="blog-description au-target sc-content                                   "><p style="margin:0cm 0cm 0.0001pt; text-align:justify">在人类一次又一次摸索创新的道路上，好奇心与创造力总是必不可少的。飞利浦作为一家将创新视为发展力的企业，也格外重视对员工好奇心与创造力的培养。今天，我们故事的主人公李姝就将这两种品质在工作中运用到了极致。&nbsp;                        </p><p style="margin:0cm 0cm 0.0001pt; text-align:justify" aria-hidden="true">&nbsp;</p><p style="margin:0cm 0cm 0.0001pt; text-align:justify">李姝 Flora，飞利浦市场部经理&nbsp;</p><p style="margin:0cm 0cm 0.0001pt; text-align:justify" aria-hidden="true">&nbsp;</p><p style="margin:0cm 0cm 0.0001pt; text-align:justify"><strong>我和飞利浦</strong></p><p style="margin:0cm 0cm 0.0001pt; text-align:justify">2015年研究生毕业后，我就直接加入飞利浦这个大家庭。如今，已经是我在这里工作的第三年零五个月了。&nbsp;                        </p><p style="margin:0cm 0cm 0.0001pt; text-align:justify" aria-hidden="true">&nbsp;</p><p style="margin:0cm 0cm 0.0001pt; text-align:justify">当时正逢飞利浦两年轮岗制管培生项目在招聘，我就果断抓住了这个机会。我和飞利浦的故事，就这样开始了。&nbsp;                        </p><p style="margin:0cm 0cm 0.0001pt; text-align:justify" aria-hidden="true">&nbsp;</p><img alt="" style="width:100%;" src="/Image/20200217/114843739.jpg" srcset="/Image/20200217/114843739.jpg 1305w"><p style="margin:0cm 0cm 0.0001pt; text-align:justify" aria-hidden="true">&nbsp;</p><p style="margin:0cm 0cm 0.0001pt; text-align:justify"><strong>职场新手也可以发光发热&nbsp;&nbsp;</strong>
+&nbsp;</p><p style="margin:0cm 0cm 0.0001pt; text-align:justify">&nbsp;</p><p style="margin:0cm 0cm 0.0001pt; text-align:justify" aria-hidden="true">在加入飞利浦5个月左右，我所在的产品小组通过调研与消费者观察，发现市场上并没有出现国际大品牌开发的、具有功能多样性的宝宝理发器产品。于是我们萌生了给中国的爸爸妈妈打造一款值得信赖的宝宝理发产品的想法。没想到这个提议立刻得到公司领导的大力支持，迅速得以立项。&nbsp;&nbsp;</p><p>作为一个刚加入公司不久的年轻人，能得到上司这样的信任很令我既开心又惊讶，不确定没有丰富工作经验的我是否能担得起这个担子。<strong>因此，我暗暗下定决心要从前期的市场调研，到后期的产品研发与市场推广，充满干劲的跑完整个流程，每一个环节都做到最好，真正肩负起一份事业与责任。&nbsp;</strong></p><p>后来又工作了一段时间，我才了解到，<strong>就算是管培生也一样可以是一个独立项目的负责人，这在公司里是非常稀松平常的事情。</strong>不过这又是后话了。</p><p><strong>挑战也许是生活最意想不到的馈赠</strong>&nbsp;</p><p>项目展开的是从了解客户需求的开始的。其中着实有许多出人意料的地方。&nbsp;</p><p>因为自己尚未为人父母，总以为孩子再小总还是可控的。但没想到跟消费者真实地近距离交流，得到实际情况的反馈却是：给宝宝理发时，由于不熟悉的、嗡嗡作响的理发器总在脑袋周围绕来绕去，宝宝会非常害怕、不停哭闹，对家长和孩子都是一种难以忍受的折磨。&nbsp;</p><p>所以家长对于宝宝理发器最大的诉求就是“快、安静、省心”，特别是做到静音，这样家长甚至可以在宝宝睡觉的时候，悄无声息地完成理发。然而，这个听上去简单的静音功能实现起来却是相当困难。毕竟要求马达有充沛动力的同时，又要最大限度地弱化其发出的声响，是看似非常矛盾的事情。&nbsp;&nbsp;</p><p><strong>不过，生活不就是由一连串最不相干、最出乎意料、最自相矛盾、最胡乱拼凑的事情组合在一起的吗。也正是这样，我们的每一天才充满了未知与挑战</strong>。&nbsp;</p><p>我们团队虽然一度为如何攻克这个技术难题绞尽脑汁，但幸运的是，在飞利浦，只要是大家认定的方向，所有团队都会抱着“can do”的态度竭尽所能地相互帮助，团结协作。<strong>研发部门为此和我们密切沟通，每一位成员倾注了各自所有热情。&nbsp;</strong></p><p>记得在这段时间里，与微信里的理发器项目讨论群无数次在深夜或凌晨响起消息提醒，那一定是市场推广团队想出了什么新的推广渠道，或是某位工程师提出了一个更好的解决方案，需要与大家分享讨论。也正因为有这群敬业的好同事的存在，我们才有可能只花了短短9个月时间，就成功研制出宝宝理发器，并带来了极佳的市场反响。&nbsp;</p><p><strong>自此，同类产品也成功帮助公司理容品类销售额增长了67%，开拓了这个领域的市场，打响了飞利浦的知名度。</strong>&nbsp;</p><div class="sc-html"><img class="col-12 img-fluid" src="/images/banner-workingatphilips.jpg" style="width: 100%;height: auto;margin: 15px 0;padding: 0;"></div><p><strong>每个人都是自己岗位上的大角色&nbsp;&nbsp;</strong></p><p style="margin:0cm 0cm 0.0001pt; text-align:justify"><p style="margin:0cm 0cm 0.0001pt; text-align:justify">这段独立带领团队完成项目的经历，是我在管培生项目里收获的最宝贵的财富，并激励着我在今后的职场生涯中不断拼搏、坚持创新。&nbsp;                        </p><p>回顾整个做出宝宝理发器的过程，从我们确定这一增长点，到实地调研、和消费者交谈采访，找到合适的需求、痛点，再到后期对消费者产品使用的反馈收集，<strong>无论是知识和技能上，我都汲取到了许多新东西、新方法，这对我而言是非常有挑战性和成就感的。&nbsp;</strong></p><p>一直以来，我都是一个好奇心很强的人。来到飞利浦之后，我的这种好奇心反而被加强了。&nbsp;</p><p style="margin:0cm 0cm 0.0001pt; text-align:justify" aria-hidden="true">&nbsp;&nbsp;</p><p style="margin:0cm 0cm 0.0001pt; text-align:justify">•
+                                    对不同的消费者好奇，也会好奇为什么他们会有各自特定的需求，怎样才能满足这些需求；&nbsp;</p><p style="margin:0cm 0cm 0.0001pt; text-align:justify">•
+                                    对来自全国各地、拥有不同文化烙印的同事好奇，好奇各种文化之间可以碰撞出什么样的智慧火花；&nbsp;</p><p style="margin:0cm 0cm 0.0001pt; text-align:justify">•
+                                    对自己好奇，好奇自己的潜能与上限，有什么新的领域是可以尝试的。&nbsp;                        </p><p style="margin:0cm 0cm 0.0001pt; text-align:justify" aria-hidden="true">&nbsp;&nbsp;</p><p style="margin:0cm 0cm 0.0001pt; text-align:justify">大家都说好奇心害死猫。<strong>可是恰恰是因为这份蠢蠢欲动的好奇心与创造力，人类历史的发展轨迹才会在某个十字路口不经意的拐弯，走向新的征程。</strong>&nbsp;</p><p>从男士理容部到健康家居产品事业部，从初入职场的新人到市场经理，在飞利浦工作的这三年多来，我职业发展上的每一步，都离不开飞利浦对我的支持与包容。&nbsp;</p><p>这不断加深了我对它的主动性与责任感，让我坚信我们每个人都是自己岗位上的大角色！&nbsp;                        </p><p style="margin:0cm 0cm 0.0001pt; text-align:justify" aria-hidden="true">&nbsp;</p><img alt="" style="width:0%;" class="col-6 offset-3 col-md-4 offset-md-4 img-fluid" src="/images/blogDetailsRq.jpg" srcset="/images/blogDetailsRq.jpg 285w"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- blog文章内容 end -->
+
+    <!-- 跳转栏 -->
+    <div class="article-button preNextBox clearfix">
+        <div>
+            <a title="BLOG HOME PAGE" class="au-target phs-back-blog-page" href="/blog.html">
+                &lt; 员工故事主页</a>
+        </div>
+        <div>
+            <a title="PREVIOUS ARTICLE" class="au-target article-previous" href="">
+                &lt; 前一篇员工故事</a>
+        </div>
+        <div>
+            <a title="NEXT ARTICLE" class="au-target article-next float-right" href="">
+                下一篇员工故事 &gt;
+            </a>
+        </div>
+    </div>
+    <!-- 跳转栏 end -->
+
+    <!-- 可能喜欢推荐 -->
+    <div class="phs-widget-block-area ph-widget-box blogRecommend">
+        <div class="widget-container">
+            <div class="content-block">
+                <div class="ph-blogs-block">
+                    <div class="similar-blog-header sc-content                                   ">
+                        <p>其他相关故事</p>
+                    </div>
+                    <ul class="row blogList">
+                        <!-- <li class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="blog-list-item">
+                                <a class="blog-list-item-link au-target"
+                                    href="https://www.careers.philips.com/cn/zh/blogarticle/-rewards"
+                                    title="薪酬福利部门，你最想知道的“秘密&quot;!">
+                                    <div class="ph-image-block sc-content">
+                                        <img class="img-fluid au-target ae-img" src="/images/blogLIke1.jpg"
+                                            alt="薪酬福利部门，你最想知道的“秘密&quot;!">
+                                    </div>
+                                    <div class="information au-target">
+                                        <div class="article-info">
+                                            <div class="info-header">
+                                                <div class="category-name sc-content">
+                                                    职场建议
+                                                </div>
+                                            </div>
+                                            <div class="article-name sc-content" style="word-break: break-word;">
+                                                薪酬福利部门，你最想知道的“秘密"!
+                                            </div>
+                                            <div class="article-description sc-content" style="word-break: break-word;">
+                                                <p>
+                                                    在求职面试的过程中，薪酬福利一直都是敏感话题。利浦大中华区薪酬福利部门经理Wilson，为你揭开神秘面纱，并进行一系列关于薪酬福利问题的解答。
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 可能喜欢推荐 end-->
+
+
+    <!-- 底部按钮 -->
+    <div class="job-section">
+        <div class="container ">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 section-card">
+                    <a href="/cookiesettings.html" class="card-content">
+                        <span>Career Site Cookie Settings</span> </a>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6">
+                    <a href="/emailpersonalinfo.html" class="card-content">
+                        <span>Personal Information</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer id="footer"><div class="footer-block blue-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 p-footer">
+          <div class="p-grid-no-gutter">
+            <div class="p-grid-item p-footer-social p-m-two-fifths">
+              <h3 class="p-body-copy-02">关注我们</h3>
+              <div>
+                <ul>
+                  <!-- <li> <a href="https://www.facebook.com/philips"><i class="icon icon1"></i></a> </li>
+                  <li> <a href="https://www.flickr.com/photos/philips_newscenter"><i class="icon icon2"></i></a></li>
+                  <li><a href="https://www.instagram.com/philips"><i class="icon icon3"></i></a></li> -->
+                  <li><a href="https://www.linkedin.com/company/1090/admin/"><i class="icon icon4"></i></a></li>
+                  <!-- <li><a href="https://www.pinterest.com/philipsglobal"><i class="icon icon5"></i></a></li>
+                  <li><a href="https://www.twitter.com/LifeAtPhilips"><i class="icon icon6"></i></a></li>-->
+                  <li onclick="showWeixin()"><a href="javascrip:;"><i class="icon icon7"></i></a></li> 
+                  <div class="weixinPop">
+                    
+                </div>
+                <div class="weixinBox">
+                  <a class="weixin_close" onclick="closeWeixin()" href="#">X</a>
+                  <div>
+                      <img src="/images/weixin_code.jpg" alt="">
+                  </div>
+              </div>
+                </ul>
+              </div>
+            </div>
+            <div class="p-grid-item p-one-whole p-m-one-fifth p-philips-shield"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row terms">
+        <ul class="col-12 text-center">
+          <li><a href="https://www.philips.com/a-w/about/investor.html">投资者关系</a></li>
+          <li><a href="">招贤纳士</a></li>
+          <li><a href="https://www.philips.com.cn/a-w/careers/healthtech/contact.html">联系飞利浦</a></li>
+          <li><a href="https://www.philips.com.cn/a-w/about-philips/company-profile.html">关于飞利浦</a></li>
+          <li><a href="https://www.philips.com.cn/a-w/cookie-notice.html">Cookie 政策</a></li>
+          <li><a href="https://www.philips.com/a-w/people-privacy-notice.html">隐私权声明</a></li>
+          <li><a href="https://www.philips.com.cn/a-w/terms-of-use.html">使用条款</a></li>
+        </ul>
+        <div class="col-12 text-center section-copyright">
+          <span>
+            ©
+            Koninklijke Philips N.V., 2004 - 2020.
+          </span>
+          <span>保留所有权利。</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer><div id="floatBox" class="floatBox">
+    <ul>
+        <li class="ewm">
+            <a href="javascript:void(0);" class="a2">
+                <div class="float-mask">
+                    扫二<br>维码
+                </div>
+                <div class="pop-ewm">
+                    <img src="/images/pop-ewm.png">
+                </div>
+            </a>
+        </li>
+        <li>
+            <a onclick="$(&quot;html,body&quot;).animate({scrollTop:0}, 500);" class="a3">
+                <div class="float-mask">
+                    返回<br>顶部
+                </div>
+            </a>
+        </li>
+    </ul>
+</div></body>
+
+
+
+</html>

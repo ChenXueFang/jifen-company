@@ -1,0 +1,228 @@
+/* 404背景图 */
+.error404Page{
+    background-color: #ffffff;
+    background-image: url(../images/404_bg.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 70%;
+}
+@media (max-width: 991px){
+    .error404Page{
+        background-size: 47%;
+    }
+}
+/* 404文字 */
+.icon{
+    font-size: 16px;
+}
+.error-text {
+    text-align: left;
+    /* padding-bottom: 25px; */
+}
+.error-text h1 {
+    color: #1372a9;
+    font-size: 10em;
+    font-family: 'CentraleSans Regular';
+    font-weight: 300;
+    margin: 0;
+    text-align: center;
+}
+.error-text .error-info {
+    color: #545662;
+    font-size: 2.625em;
+    margin-bottom: 5px;
+    font-family: 'CentraleSans Bold';
+}
+.error-text .error-info-description {
+    font-size: 1.5em;
+    color: #545662;
+    font-weight: 600;
+}
+.error-text p {
+    color: #545662;
+    font-size: 1.5em;
+    margin-top: 25px;
+}
+/* 工作推荐 */
+.phs-category-area .content-block .content-list-item {
+    min-height: 125px;
+}
+.ph-category-overview-v3-default-default .phs-category-area .content-block .content-list-item {
+    position: relative;
+    padding: 0 10px;
+}
+.phs-category-area .content-block .content-list-item .list-item-link {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 1em;
+    text-align: center;
+}
+a.list-item-link, a.list-item-link {
+    text-decoration: none;
+}
+.phs-category-area .content-block .content-list-item .list-item-link .category-info {
+    top: 40%;
+    font-size: 1.5em;
+    color: #fff;
+    width: 100%;
+    text-align: left;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+.phs-category-area .content-block .content-list-item .list-item-link .category-info .title {
+    font-size: 17px;
+    color: #0089c4;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+}
+.phs-category-area .content-block .content-list-item .list-item-link .category-info p {
+    font-size: 14px;
+    color: #3c3c3c;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+}
+.recommendBox{
+    padding-bottom: 35px;
+}
+.recommendBox .col-md-3,.recommendBox .col-sm-4,.recommendBox .col-xs-6 {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.phs-category-area .phs-widget-heading {
+    padding-top: 0;
+}
+.phs-category-area .phs-widget-heading {
+    margin-bottom: 24px;
+    padding: 0px 0 5px;
+}
+.phs-category-area .phs-widget-heading h2 {
+    font-size: 34px;
+    color: #323232;
+    padding: 15px 0 0;
+}
+.cookingBox_404 {
+    background-color: #15636f !important;
+}
+/* faq常见问题 */
+/* 文字说明 */
+.ph-html-v1-normal-text-default p.text {
+    padding-bottom: 0;
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-block-start: 0;
+}
+.ph-html-v1-normal-text-default p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 2;
+}
+.ph-html-v1-normal-text-default p.sub-text {
+    padding-top: 0;
+    margin-block-start: 0;
+}
+/* 了解更多 */
+.knowMoreImg{
+    display: flex;
+    justify-content: center;
+}
+.knowMore .content {
+    padding: 20px 0;
+    text-align: left;
+    color: #545662;
+}
+.knowMoreA .content .knowMoreMeta {
+    background-color: transparent;
+    font-size: 21px;
+    line-height: 1.2;
+    color: #545662;
+    margin-block-start: 0;
+    margin-bottom: 0;
+}
+.knowMoreA .description {
+    display: block;
+    background-color: transparent;
+    font-size: .95em;
+    line-height: 1.8;
+    color: #545662;
+    font-family: 'CentraleSans Regular';
+    font-weight: normal;
+    margin-top: 20px;
+}
+.knowMoreA .content .icon{
+    font-size: 8px;
+}
+.knowMore .phs-widget-heading h2{
+    color: #545662;
+}
+@media (max-width: 991px){
+    .knowMore .phs-widget-heading h2 {
+    margin-top: -35px;
+}
+}
+/* emailpersonalinfo.html */.phs-manage-personal-information-area {
+    padding-top: 190px;
+}
+.infoHeading {
+    border-bottom: 2px solid #cdcdcd !important;
+}
+.phs-manage-personal-information-area .phs-widget-heading h1 {
+    margin: 48px 0;
+    color: #555555;
+    font-size: 32px;
+    letter-spacing: -0.4px;
+}
+.phs-manage-personal-information-area .personal-information-area {
+    max-width: 750px;
+}
+.phs-manage-personal-information-area .personal-information-area .phs-sub-heading h2 {
+    margin: 32px 0;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: .8px;
+    color: #555555;
+}.phs-manage-personal-information-area .personal-information-area .personal-info-desc {
+    padding-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.64;
+    letter-spacing: .4px;
+    color: #212121;
+}.phs-manage-personal-information-area .personal-information-area .personal-info-desc u a {
+    font-weight: bold !important;
+    color: #000;
+    white-space:normal; 
+    word-break:break-all;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

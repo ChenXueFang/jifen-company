@@ -1,0 +1,552 @@
+
+		<!-- 职业推荐 -->
+		<div class="container-fluid">
+			<div class="job-rec">
+				<div class="container">
+					<div class="resume resume-start">
+						<div class="resume-info">
+							根据您的兴趣和职业设置职位推荐
+						</div>
+						<div class="action-btn ph-a11y-action-btn">
+							<button class="upload-action-btn" onclick="startcustomize()">开始定制</button>
+						</div>
+					</div>
+					<div class="resume resume-result" style="display:none">
+						<div class="user-profile-icon">
+							<span class="user-name-prefix">
+								<i class="icon icon-user-1"></i>
+							</span>
+						</div>
+						<div class="resume-info">
+							<p class="errorCon">目前，我们没有任何符合您的兴趣的职位。</p>
+							<p class="right">您的个性化网站和职位推荐已就绪。</p>
+						</div>
+						<div class="action-btn ph-a11y-action-btn">
+							<div class="dropdown">
+								<button class="btn dropdown-toggle errorCon" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+								 aria-expanded="false">
+									<i class="icon icon-error error errorCon"></i>编辑个人资料
+								</button>
+								<button class="btn dropdownbtn right" type="button" onclick="edit()">
+									编辑个人资料
+								</button>
+								<div class="linked">
+									<span><i class="au-target icon icon-linkedin"></i>已关联</span>|
+								<span class="quit" onclick="quitLinkin()">退出</span></div>
+								<div class="reset" onclick="reset()"><img src="/images/refresh.png">重置个性化设置</div>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a onclick="showmodel(1)" class="dropdown-item resumeUrl" href="#"> <i class="icon icon-error error errorCon"></i>完整的简历信息</a>
+									<a class="dropdown-item" style="position: relative;" href="#">使用新简历
+										<input type="file" class="inputfile"  onchange="handleFile(this)" accept=".doc, .docx, .pdf, .txt"/>
+									</a>
+									<a onclick="showmodel(3)" class="dropdown-item resettext" href="#">重置</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="resume-step">
+				<div class="container">
+					<h2 class="resume-steps phs-heading">选择定制方式</h2>
+					<div class="p-text">
+						您可以上传简历文件，或者通过领英等其他渠道登录
+					</div>
+					<div class="buttons-wrapper">
+						<div class="dropzone-area desktop-hide">
+							<button class="btn plain-button other-btn " onclick="handleFindYourFit('profileQues')">
+								通过领英等其他渠道登录
+							</button>
+							<p class="or-text">
+								或者
+							</p>
+						</div>
+						<div class="dropzone-area">
+							<!-- import resume -->
+							<div class="ph-dropzone-area">
+								<button id="ph-dropzone" class="plain-button">
+									<input type="file" class="inputfile" onchange="handleFile(this)"  accept=".doc, .docx, .pdf, .txt"/>
+									<div class="dropzone-content">
+										<div class="content-holder">
+											<span>
+												上传简历文件
+											</span>
+										</div>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="inner-wrapper mobile-hide">
+							<p class="or-text">
+								或者
+							</p>
+							<button class="btn ae-button" onclick="handleFindYourFit('profileQues')">
+								通过领英等其他渠道登录
+							</button>
+						</div>
+					</div>
+					<div class="checkbox">
+						<label class="input-checkbox-label ae-label">
+							<input id="ReciveMsg" type="checkbox" class="au-target" onchange="SaveCustomJobMark()">
+							<span class="checkbox-text">
+								我想获得飞利浦新闻速递
+							</span>
+						</label>
+					</div>
+					<button class="close au-target ae-button" onclick="closePopup()" aria-label="Choose your path close" data-ph-at-id="close-link">
+						<img src="/images/close.png">
+					</button>
+				</div>
+			</div>
+			<div class="container widget-container">
+				<div class="widget-box">
+					<div class="resume-login">
+						<div class="show-loader au-target aurelia-hide"></div>
+						<div class="ph-container-content-block au-target">
+							<div class="fyf-step-block">
+								<div class="phs-aseertive sr-only"></div>
+								<div class="show-loader au-target aurelia-hide"></div>
+								<div class="fyf-step-container">
+									<div class="heading-block">
+										<div class="ph-a11y-fyf-step-block">
+											<span class="sr-only">blank</span></div>
+										<h2 class="phs-heading ph-a11y-heading">
+											登录以保存您的信息，以备将来使用
+										</h2>
+										<div class="sub-heading">
+											<i class="icon icon-lock"></i>
+											我们非常重视您的隐私。 我们绝不向您的社交帐号发布任何内容。
+										</div>
+									</div>
+									<section class="ph-widget">
+										<div class="au-target">
+											<div class="show-loader au-target aurelia-hide"></div>
+											<div class="ph-social-connect-area au-target">
+												<!-- <div class="widget-container"> -->
+												<div class="content-block">
+													<ul class="login-link-list">
+														<li class="login-link-item au-target">
+															<a href="javascript:void(0);" onclick="doProfileLogin()" class="au-target sc-btn btn-linkedIn">
+																<div class="icon-block">
+																	<i class="au-target icon icon-linkedin"></i>
+																</div>
+																<div class="text-block"> 使用 Linkedin 帐号登录</div>
+															</a>
+														</li>
+														<!-- <li class="login-link-item au-target">
+															<a href="javascript:void(0);" onclick="doProfileLogin(eachSocial)" class="au-target sc-btn btn-facebook">
+																<div class="icon-block">
+																	<i aria-hidden="true" class="au-target icon icon-facebook"></i>
+																</div>
+																<div class="text-block"> 使用 Facebook 帐号登录</div>
+															</a>
+														</li> -->
+														<!-- <li class="login-link-item au-target">
+															<a href="javascript:void(0);" onclick="doProfileLogin(eachSocial)" class="au-target sc-btn btn-google">
+																<div class="icon-block">
+																	<i aria-hidden="true" class="au-target icon icon-google"></i>
+																</div>
+																<div class="text-block"> 使用 Google 帐号登录</div>
+															</a>
+														</li> -->
+													</ul>
+												</div>
+												<!-- </div> -->
+											</div>
+										</div>
+									</section>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="prev-next-wrap">
+						<div class="prev" onclick="prev()">
+							<a href="javascript:void(0)" class="prev-btn au-target">
+								<span>
+									<img src="/images/left-prev.png">
+								</span>
+							</a>
+						</div>
+						<div class="skip" onclick="skip()">
+							<a href="javascript:void(0);" class="ph-a11y-skip au-target">
+								<span>跳过
+								</span>
+							</a>
+						</div>
+					</div>
+
+					<div class="step1 step">
+						<h2 class="phs-heading heading-block">
+							您对什么感兴趣？
+						</h2>
+						<div class="categories-block categoriesCon">
+							<!-- <div class="categories-item">
+								<span class="item-text categories-text">销售</span>
+							</div> -->
+							<!-- <div class="categories-item">
+								<span class="item-text categories-text">市场营销及电商</span>
+							</div>
+							<div class="categories-item">
+								<span class="item-text categories-text">销售</span>
+							</div>
+							<div class="categories-item">
+								<span class="item-text categories-text">市场营销及电商</span>
+							</div>
+							<div class="categories-item">
+								<span class="item-text categories-text">市场营销及电商</span>
+							</div> -->
+						</div>
+					</div>
+					<div class="step2 step">
+						<h2 class="phs-heading heading-block">
+							您最近的职位
+						</h2>
+						<div class="recent-title-block">
+							<div class="ph-autocomplete-input-wrapper ph-combobox-dropdown-area">
+								<div class="input-group">
+									<input id="searchinput1" oninput="changeval(this)" onblur="blurval(this)"  type="search" class="form-control searchinput" placeholder="您最近的职位">
+								</div>
+								<ul class="search-dropdown-list" id="serachlist1">
+									<!-- <li class="search-list-item" onclick="choosejob(this)">33333</li> -->
+								</ul>
+							</div>
+							<div class="radio-btn-block">
+								<label class="input-radio-group ae-label">
+									<input type="checkbox" id="startjob" onchange="changestartjob(this)" >
+									<span class="radio-text">
+										刚开始我的职业生涯
+									</span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="step3 step">
+						<h2 class="phs-heading heading-block">
+							告诉我们您真正擅长什么。
+						</h2>
+						<div class="recent-title-block">
+							<div class="ph-autocomplete-input-wrapper ph-combobox-dropdown-area">
+								<ul class="input-group ability" id="ability">
+									<!-- <li class="ablilityitem">
+									<span>22</span>
+									<img src="/images/close.png" >
+								</li> -->
+									<li id="searchli" class="searchli">
+										<input type="search" id="searchinput2" oninput="changeval1(this)" 
+										onblur="blurval1(this)" class="form-control searchinput1 muti" placeholder="您的技能"></li>
+								</ul>
+								<ul class="search-dropdown-list serachlist2">
+									<!-- <li class="search-list-item" onclick="chooseitem(this,'searchli')">33333</li> -->
+								</ul>
+							</div>
+							<div class="recomend-ability">
+								<div class="recomend-title recomend-title1">根据您的兴趣和职位推荐的技能</div>
+								<div class="recomend-ability-list">
+									<!-- <span class="ability-list-item" onclick="chooseitem(this,'searchli')">mangement<i class="icon icon-plus add"></i>
+									</span> -->
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="step4 step">
+						<h2 class="phs-heading heading-block">
+							您有多少年的工作经验？
+						</h2>
+						<div class="categories-block yearCon">
+							<div class="categories-item year-item">
+								<span class="item-text year-text" onclick="chooseyear('01',this)">0-3<br>年</span>
+							</div>
+							<div class="categories-item year-item">
+								<span class="item-text year-text" onclick="chooseyear('02',this)">4-8<br>年</span>
+							</div>
+							<div class="categories-item year-item">
+								<span class="item-text year-text" onclick="chooseyear('03',this)">9-14<br>年</span>
+							</div>
+							<div class="categories-item year-item">
+								<span class="item-text year-text" onclick="chooseyear('04',this)">15+<br>年</span>
+							</div>
+						</div>
+					</div>
+					<div class="step5 step">
+						<h2 class="phs-heading heading-block">
+							您的首选工作地点是哪里？
+						</h2>
+						<div class="recent-title-block">
+							<div class="ph-autocomplete-input-wrapper ph-combobox-dropdown-area">
+								<ul class="input-group ability" id="loaction">
+									<!-- <li class="ablilityitem">
+									<span>22</span>
+									<img src="/images/close.png" >
+								</li> -->
+									<li id="searchli1" class="searchli">
+										<input id="searchinput3" type="search" oninput="changeval1(this)" onblur="blurval2(this)" class="form-control searchinput1" placeholder="您首选的工作地点"></li>
+								</ul>
+								<ul class="search-dropdown-list serachlist3">
+									<!-- <li class="search-list-item" onclick="chooseitem(this,'searchli1')">33333</li> -->
+								</ul>
+							</div>
+						</div>
+						<!-- <div class="recent-title-block">
+							<div class="ph-autocomplete-input-wrapper ph-combobox-dropdown-area">
+								<div class="input-group">
+									<input type="search" class="form-control searchinput" placeholder="您首选的工作地点">
+								</div>
+								<ul class="search-dropdown-list">
+									<li class="search-list-item">33333</li>
+								</ul>
+							</div>
+						</div> -->
+					</div>
+					<div class="step submit">
+						<p class="submit-heading errorCon">目前，我们没有任何适合您的个人资料的职位</p>
+						<p class="submit-heading right">完成！您的个性化职位推荐如下所示。</p>
+						<h2 class="phs-heading heading-block">
+							如果找到合适的职位，我们如何联系您？
+						</h2>
+						<div class="final_context">
+							<form action="">
+								<div class="form-group">
+									<label for="name">全名<span>*</span></label>
+									<div style="position: relative;">
+										<input class="form-control" onblur="changinput(this)" type="text" id="name" placeholder="在此输入您的姓名">
+										<span class="none">名称不应为空</span>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="email">电子邮件<span>*</span></label>
+									<div style="position: relative;">
+										<input class="form-control" onblur="changinput(this)" type="text" id="email" placeholder="name@domain.com">
+										<span class="none">电子邮件不应为空</span>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="phone">电话</label>
+									<input class="form-control" type="text" name="" id="phone" placeholder="(000) 000-0000">
+									<div>
+										<span><i class="icon icon-lock"></i>我们非常重视您的隐私。</span>
+									</div>
+
+								</div>
+							</form>
+							<button class="step-next btn btn-primary" type="button" onclick="submit()">提交</button>
+						</div>
+					</div>
+					<div class="step-show">
+						<button class="step-next btn btn-primary" type="button" onclick="nexstep()">下一步</button>
+						<div class="progress step-progress">
+							<div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="100" aria-valuemin="0"
+							 aria-valuemax="100"></div>
+						</div>
+						<div class="progress-text"></div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="container-fluid recomend-box">
+			<div class="container">
+				<h2 class="recomend-title">基于您的个人资料的推荐</h2>
+				<div class="list_block">
+					<ul>
+						
+					</ul>
+				</div>
+			</div>
+			</div>
+			<div class="modal fade in show default_dialog" id="Modal1" role="dialog">
+				<div class="modal-dialog">
+					<div class="upload-contact-details">
+						<button class="ph-a11y-popup-start-focus close au-target ae-button" onclick="showmodel(2)">
+							<i class="icon icon-cancel"></i>
+						</button>
+						<div class="contact-details-inner-wrapper">
+							<p class="phs-sub-heading">
+								招聘网站已根据您的简历进行了个性化设置
+							</p>
+							<h2 class="phs-heading">
+								但我们注意到以下信息缺失。请完成以下内容
+							</h2>
+							<div>
+								<form role="form" class="ae-form">
+									<div class="au-target form-group">
+										<div>
+											<label for="email1" class="ae-label">
+												<span class="sr-only">电子邮件</span>
+												<span class="">电子邮件
+												</span>
+											</label>
+											<div class="input-group">
+												<input type="text" class="form-control" id="email1" placeholder="your@mail.com" onblur="changinput1(this)">
+												<span class="none">电子邮件不应为空</span>
+											</div>
+										</div>
+									</div>
+									<div class="au-target form-group">
+										<div>
+											<label for="phone" class="ae-label">
+												<span class="sr-only">电话</span>
+												<span class="">电话
+												</span>
+											</label>
+											<div class="input-group">
+												<input type="text" class="form-control" id="phone1" placeholder="输入您的电话号码">
+											</div>
+										</div>
+									</div>
+								</form>
+								<div>
+									<button onclick="submit1()" class="btn btn-primary">提交
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade in show default_dialog" id="Modal2" role="dialog">
+				<div class="modal-dialog">
+					<div class="upload-contact-details">
+						<button class="ph-a11y-popup-start-focus close au-target ae-button" onclick="closemodel1()">
+							<i class="icon icon-cancel"></i>
+						</button>
+						<div class="contact-details-inner-wrapper">
+							<div>
+								<div class="fyf-step-container">
+									<div class="heading-block" style="padding-bottom: 0px;">
+										<div class="ph-a11y-fyf-step-block">
+											<span class="sr-only">blank</span></div>
+										<h2 class="phs-heading ph-a11y-heading">
+											登录并保留您的数据，以备将来使用
+										</h2>
+									</div>
+									<section class="ph-widget">
+										<div class="au-target">
+											<div class="show-loader au-target aurelia-hide"></div>
+											<div class="ph-social-connect-area au-target">
+												<!-- <div class="widget-container"> -->
+												<div class="content-block">
+													<ul class="login-link-list">
+														<li class="login-link-item au-target">
+															<a href="javascript:void(0);" onclick="doProfileLogin()" class="au-target sc-btn btn-linkedIn">
+																<div class="icon-block">
+																	<i class="au-target icon icon-linkedin"></i>
+																</div>
+																<div class="text-block"> 使用 Linkedin 帐号登录</div>
+															</a>
+														</li>
+														<!-- <li class="login-link-item au-target">
+															<a href="javascript:void(0);" onclick="doProfileLogin(eachSocial)" class="au-target sc-btn btn-facebook">
+																<div class="icon-block">
+																	<i aria-hidden="true" class="au-target icon icon-facebook"></i>
+																</div>
+																<div class="text-block"> 使用 Facebook 帐号登录</div>
+															</a>
+														</li> -->
+														<!-- <li class="login-link-item au-target">
+															<a href="javascript:void(0);" onclick="doProfileLogin(eachSocial)" class="au-target sc-btn btn-google">
+																<div class="icon-block">
+																	<i aria-hidden="true" class="au-target icon icon-google"></i>
+																</div>
+																<div class="text-block"> 使用 Google 帐号登录</div>
+															</a>
+														</li> -->
+													</ul>
+												</div>
+												<!-- </div> -->
+											</div>
+										</div>
+									</section>
+									<div class="sub-heading">
+										<i class="icon icon-lock"></i>
+										未经您的许可我们绝不会发布任何内容
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade in show default_dialog" id="Modal3" role="dialog">
+				<div class="modal-dialog">
+					<div class="upload-delete">
+						<button onclick="closemodel()" class="ph-a11y-popup-start-focus close au-target ae-button">
+							<i class="icon icon-cancel"></i>
+						</button>
+						<div class="delete-img-block">
+							<i class="icon icon-remove-file"></i>
+							<span class="sr-only">reset
+								icon</span>
+						</div>
+						<div>
+							<div class="p-text">
+								重置个性化设置后，您将失去个性化的职位推荐
+							</div>
+							<div class="social-login-close">
+								<div class="delete-link">
+									<button onclick="reset()" class="btn warning-button au-target ae-button">
+										重置
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade in show default_dialog" id="Modal4" role="dialog">
+				<div class="modal-dialog">
+					<div class="upload-delete">
+						<button onclick="closemodel()" class="ph-a11y-popup-start-focus close au-target ae-button">
+							<i class="icon icon-cancel"></i>
+						</button>
+						<div class="delete-img-block">
+							<i class="icon icon-happy-file"></i>
+							<!-- <i class="icon icon-remove-file"></i> -->
+							<!-- <span class="sr-only">reset
+								icon</span> -->
+						</div>
+						<div>
+							<div class="p-text">
+								<span style="font-size: 18px;">非常棒</span><br>
+								您的文件已成功上传<br>
+								享受个性化的工作
+							</div>
+							<div class="social-login-close">
+								<div class="delete-link">
+									<button onclick="closemodel()" style="margin-top: 0;" class="btn btn-primary step-next">
+										关闭
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade in show default_dialog" id="Modal5" role="dialog">
+							<div class="modal-dialog">
+								<div class="upload-delete">
+									<button onclick="closemodel()" class="ph-a11y-popup-start-focus close au-target ae-button">
+										<i class="icon icon-cancel"></i>
+									</button>
+									<div class="delete-img-block">
+										<i class="icon icon-sad-file"></i>
+									</div>
+									<div>
+										<div class="p-text">
+											<span style="font-size: 24px;">糟糕，格式无效...</span><br>
+											请上传以下文件格式之一：pdf、docx、txt
+										</div>
+										<div class="social-login-close">
+											<div class="delete-link" style="position: relative;">
+												<input type="file" class="inputfile"  onchange="handleFile(this)" accept=".doc, .docx, .pdf, .txt"/>
+												<button style="margin-top: 0;" class="btn btn-primary step-next">
+													再试一次
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+</div>

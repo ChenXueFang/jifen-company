@@ -1,0 +1,498 @@
+body, html {
+    /* overflow-x:hidden; */
+    background-color: #ffffff;
+    font-size: 1em;
+    color: #828282;
+}
+.row{
+    margin-right: 0px !important;
+    margin-left: 0px !important; 
+} 
+.modal-content{
+    width: 30%;
+    margin: auto;  
+}
+@media (max-width: 580px){
+    p {
+        font-size: 1.2em;
+    }
+}
+a{ color:#1372a9;text-decoration:none} 
+a:hover{color:#1372a9; text-decoration:none;} 
+.bannerBox{
+    position: relative;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+h2{
+    color: #545662;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.container {
+    max-width: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.widget-container{
+    margin: 0 auto;
+    max-width: 100%;
+    width: 960px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 60px;
+}
+@media only screen and (max-width: 1151px){
+    .widget-container {
+        width: 960px;
+        padding-top: 15px;
+        padding-bottom: 60px;
+    }
+    .modal-content{
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 1151px){
+    .widget-container {
+        width: 960px;
+        padding-top: 15px;
+        padding-bottom: 60px;
+    }
+    .modal-content{
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 991px){
+    .widget-container {
+        width: 96%;
+        padding-top: 22px;
+        padding-bottom: 40px;
+    }
+    .modal-content{
+        width: 60%;
+    }
+    .topCon{
+        margin-top: -60px;
+    }
+    .recruTopCon{
+        margin-top: -50px;
+    }
+}
+@media only screen and (max-width: 767px){
+    .widget-container {
+        width: 96%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .modal-content{
+        width: 70%;
+    }
+}
+@media (max-width: 580px){
+    .widget-container{
+        max-width: 96%;
+        width: auto;
+    }
+    .modal-content{
+        width: 80%;
+    }
+}
+@media (max-width: 320px){
+    .modal-content{
+        width: 90%;        
+    }
+    .banner_text .banner_heading{
+        font-size: 20px;
+        line-height: 32px;
+    }
+}
+@media (min-width: 320px){
+    .widget-container {
+        max-width: 100%;
+        padding-left: 8px;
+        padding-right: 8px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.fromModal {
+    padding-right: 0 !important;
+}
+/* 招聘流程 */
+.bigImg{
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+img {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.banner_text {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    color: #fff;
+}
+
+.faqBanner {
+    top: 55%;
+}
+
+.banner_heading {
+    color: #fff;
+    font-size: 46px;
+    line-height: 52px;
+    font-weight: bold;
+    margin-bottom: 0;
+    padding-top: 15px;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.2), 0 0 60px rgba(0, 0, 0, 0.4);
+}
+
+.bannerInfo {
+    padding: 20px 0;
+    color: #fff;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.2), 0 0 60px rgba(0, 0, 0, 0.4);
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+.bannerInfo2 {
+    margin-top: -25px;
+}
+/* banner文字 */
+@media only screen and (max-width: 991px) {
+    .banner_text {
+        position: relative;
+        padding-bottom: 25px;
+    }
+}
+/* container */
+@media (min-width: 320px) {
+    .container {
+        max-width: 100%;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 960px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .container {
+        width: 96%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .container {
+        width: 96%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+/* banner文字标题 */
+@media only screen and (max-width: 991px) {
+    .banner_heading, .bannerInfo {
+        color: #828282;
+        text-shadow: none;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .banner_heading {
+        font-size: 42px;
+        line-height: 60px;
+    }
+}
+
+@media only screen and (max-width:1030px) {
+    .banner_text .banner_heading {
+        font-size: 40px;
+        line-height: 44px
+    }
+}
+
+@media only screen and (max-width:925px) {
+    .banner_text .banner_heading {
+        font-size: 36px;
+        line-height: 40px
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .banner_text .banner_heading {
+        font-size: 30px;
+        line-height: 34px
+    }
+}
+/* 申请与初选 */
+.ph-html-v1-normal-text-default.ph-widget-box {
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+.font-bold {
+    font-family: FZLTHK_regular;
+}
+.ph-html-v1-normal-text-default p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 2;
+}
+.font-bold {
+    font-size: 1.25em !important;
+    font-weight: 600;
+}
+/* 申请提示 */
+.ph-html-v1-popular-testimonial-default.ph-widget-box {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: linear-gradient(283deg, #ffd873, #ffd873, #ffd873);
+}
+.ph-html-v1-popular-testimonial-default .quote-section {
+    padding-left: 25px;
+}
+.ph-html-v1-popular-testimonial-default .quote-section .quote {
+    font-family: FZLTHK_regular;
+    font-style: italic;
+}
+.ph-html-v1-popular-testimonial-default .quote-section .quote {
+    font-family: CentraleSans Regular Italic;
+}
+.ph-html-v1-popular-testimonial-default .quote-section .quote {
+    font-size: 2em;
+    color: #fff;
+    font-family: 'CentraleSans Regular Italic';
+}
+
+.ph-html-v1-popular-testimonial-default .quote-section .name {
+    font-size: 1.5em;
+    margin: 0;
+    font-family: 'CentraleSans Thin Italic';
+    display: none;
+}
+
+.quote-section .name {
+    display: none !important;
+}
+.applyTitle{
+    display: block;
+    font-style: italic;
+}
+.quote-img{
+    width: 65px;
+    margin-top: -14px;
+}
+@media only screen and (max-width: 767px){
+.quote-img {
+    display: block;
+    width: 62px;
+    margin: 0 auto ;
+    margin-top: -14px;
+    margin-bottom: 30px;
+}
+}
+@media only screen and (max-width: 767px){
+.ph-html-v1-popular-testimonial-default .quote-section .quote {
+    font-size: 2em;
+}}
+/* 特点 */
+.ph-html-v1-left-image-right-content-default.ph-widget-box {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+ol{
+    padding-inline-start: 40px;
+}
+.ph-html-v1-left-image-right-content-default .content-right ol.content-sub-list li {
+    padding-top: 15px;
+    font-size: 1em;
+    line-height: 1.8;
+}
+@media only screen and (max-width: 767px){
+.ph-html-v1-left-image-right-content-default .content-right p {
+    font-size: 1.2em;
+    line-height: inherit;
+}
+}
+/* 初选 */
+.ph-html-v1-popular-testimonial-default.ph-widget-box {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: linear-gradient(283deg, #ffd873, #ffd873, #ffd873);
+}
+.ph-html-v1-popular-testimonial-default .points-section .point {
+    font-size: 1.25em;
+    color: #fff;
+    font-family: 'CentraleSans Regular';
+    line-height: 1.8;
+    word-wrap: break-word;
+}
+.ph-html-v1-popular-testimonial-default .points-section .point {
+    font-size: 1.25em;
+    color: #fff;
+    font-family: 'CentraleSans Regular';
+    line-height: 1.8;
+    word-wrap: break-word;
+}
+.inline-comma {
+    margin-left: -10px;
+}
+/* 决定录用 */
+.ph-widget-box{
+    padding: 10px;
+}
+.ph-container .ph-container-heading-block {
+    display: table;
+    width: 100%;
+}
+.ph-container .ph-container-heading-block .heading-block-actions {
+    text-align: right;
+    margin-bottom: 30px;
+}
+.ph-card .image {
+    display: flex;
+    justify-content: center;
+}
+div[ph-container="box"] .ph-card {
+    padding: 8px;
+}
+.ph-card {
+    max-width: 100%;
+    position: relative;
+    padding: 8px;
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+}
+.ph-media-default .meta {
+    font-size: 21px;
+    color: #545662;
+    line-height: 1.2;
+}
+.ph-media-default .description {
+    font-size: .85em;
+    color: #545662;
+    line-height: 1.8;
+    margin-top: 5px;
+    height: auto;
+    overflow: hidden;
+}
+/* 大图大字说明 */
+.ph-html-v1-highlight-content-default .text-section p {
+    color: #ffffff;
+    font-size: 3.5em;
+    line-height: 1.2;
+    font-family: 'CentraleSans Extra Thin';
+    font-weight: 600;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.2), 0 0 60px rgba(0, 0, 0, 0.4);
+}
+.ph-html-v1-highlight-content-default .text-section {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+}
+
+@media only screen and (max-width: 991px){
+.ph-html-v1-highlight-content-default .text-section p {
+    font-size: 2em !important;
+}}
+@media only screen and (max-width: 767px){
+    .ph-html-v1-highlight-content-default .image-section img {
+        min-height: 300px;
+    }
+    .ph-html-v1-highlight-content-default .text-section p {
+        font-size: 1.5em !important;
+    }
+    .ph-html-v1-highlight-content-default .text-section {
+        top: 4% !important;
+    }
+    .ph-html-v1-left-content-right-image-default .content-left p {
+        font-size: 1.2em;
+        line-height: inherit;
+    }
+}
+.ae-img{
+    width: 100%;
+}
+/* 左字右图 */
+.ph-html-v1-left-content-right-image-default.ph-widget-box {
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+.ph-component-cntr {
+    background-color: #1474a4 !important;
+}
+/* cooking */
+.cookingBox .action-link {
+    color: #ffffff;
+    font-size: 1rem;
+    display: block;
+}
+.cookingBox .action-link:hover {
+    color: #ffffff;
+}
+.cookingBox .cardTwo{
+    text-align: center;
+}
+.cookingBox .ph-card{
+    padding: 0;
+}
+.cookingBox .ph-media-cc-view1{
+    padding: 20px;
+}
+
+/* 底部按钮 */
+.job-section{
+    width: 100%;
+    background-color: #1474a4!important;
+}
+.section-card{
+    border-right: 1px solid #000000;
+}
+.section-card {
+    display: block;
+    border-right: 1px solid #000000;
+}
+@media (max-width: 767px){
+    .section-card{
+    border-right: none;
+    border-bottom: 1px solid #000000;
+}}
+@media (max-width: 576px){
+    .section-card{
+    border-right: none;
+    border-bottom: 1px solid #000000;
+}}
+.card-content span{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    color: #fff;
+}
+/* 底部按钮 */
+.professionalBg{
+    background-color: #a03126 !important;
+}
+.studentBg{
+    background-color: #15636f !important;
+}
+.threeBox{
+    margin-top: 10px;
+    margin-bottom: 25px;
+}

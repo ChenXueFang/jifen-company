@@ -1,0 +1,58 @@
+.quote_box{
+    background-image: linear-gradient(283deg, #690da5, #0f204b, #3E0F5C);
+}
+.job-add{
+    background-image: linear-gradient(283deg, #ffd873, #fca71e, #fba51a);
+        padding-top: 50px;
+        padding-bottom: 50px;
+}
+.job-add-info{
+display: table-cell;
+    vertical-align: middle;
+    padding-right: 15px;
+    color: #fff;
+    letter-spacing: .6px;
+        word-wrap: break-word;
+        font-size: 24px;
+}
+.action-btn-add{
+    text-align: right;
+}
+.job-add-btn{
+    padding: 10px 35px;
+    border-radius: 2px;
+    font-size: 23px;
+    font-weight: 600;
+    margin-top: 10px;
+    /* height: 48px; */
+    /* max-width: 400px; */
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    background: none;
+    background-color: #0089C4;
+    border: 1px solid #0089c4;
+    line-height: 100%;
+    
+}
+.banner_img .text-section{
+    position: absolute; 
+    bottom: 5%;
+    top: auto!important;
+    width: 100%;
+        }
+        .banner_text {
+            top: auto;
+            bottom: 5%;
+        }
+/* cooking */
+.ph-component-cntr {
+    background-color: #a03126 !important;
+}
+.cookingBox .cookingLft {
+    border-right: 1px solid #F5C372;
+}
+@media (max-width: 767px){
+    .cookingBox .cookingLft {
+        border-bottom: 1px solid #F5C372;
+}}
