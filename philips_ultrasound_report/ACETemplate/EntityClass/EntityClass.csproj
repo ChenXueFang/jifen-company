@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{44FC6190-D60D-4450-B4C0-BC9076BEEC96}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EntityClass</RootNamespace>
+    <AssemblyName>EntityClass</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.ActiveRecord">
+      <HintPath>..\ACETemplate\lib\Castle.ActiveRecord.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Components.Validator">
+      <HintPath>..\ACETemplate\lib\Castle.Components.Validator.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core">
+      <HintPath>..\ACETemplate\lib\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.Data, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationBlocks.Data.2.0.0\lib\net45\Microsoft.ApplicationBlocks.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\ACETemplate\lib\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.Castle">
+      <HintPath>..\ACETemplate\lib\NHibernate.ByteCode.Castle.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.Search">
+      <HintPath>..\ACETemplate\lib\NHibernate.Search.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AOPLog.cs" />
+    <Compile Include="AOPLog.designer.cs">
+      <DependentUpon>AOPLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AreaMappingActual.cs" />
+    <Compile Include="AreaMappingActual.designer.cs">
+      <DependentUpon>AreaMappingActual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AreaMappingTarget.cs" />
+    <Compile Include="AreaMappingTarget.designer.cs">
+      <DependentUpon>AreaMappingTarget.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseItem.cs" />
+    <Compile Include="BCIntegrate.cs" />
+    <Compile Include="BCIntegrate.designer.cs">
+      <DependentUpon>BCIntegrate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ByDistrictClinicalInfo.cs" />
+    <Compile Include="ByDistrictClinicalInfo.designer.cs">
+      <DependentUpon>ByDistrictClinicalInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ByDistrictHospital.cs" />
+    <Compile Include="ByDistrictHospital.designer.cs">
+      <DependentUpon>ByDistrictHospital.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ByDistrictInfo.cs" />
+    <Compile Include="ByDistrictInfo.designer.cs">
+      <DependentUpon>ByDistrictInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ByProductInfo.cs" />
+    <Compile Include="ByProductInfo.designer.cs">
+      <DependentUpon>ByProductInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerMappingActual.cs" />
+    <Compile Include="CustomerMappingActual.designer.cs">
+      <DependentUpon>CustomerMappingActual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerMappingTarget.cs" />
+    <Compile Include="CustomerMappingTarget.designer.cs">
+      <DependentUpon>CustomerMappingTarget.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DateTimeFormat.cs" />
+    <Compile Include="DiscountIntegrate.cs" />
+    <Compile Include="DiscountIntegrate.designer.cs">
+      <DependentUpon>DiscountIntegrate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExportSqlHelper.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="FCSTAccuracy.cs" />
+    <Compile Include="FCSTAccuracy.designer.cs">
+      <DependentUpon>FCSTAccuracy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCSTCMActual.cs" />
+    <Compile Include="FCSTCMActual.designer.cs">
+      <DependentUpon>FCSTCMActual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCSTCMTarget.cs" />
+    <Compile Include="FCSTCMTarget.designer.cs">
+      <DependentUpon>FCSTCMTarget.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCSTN2MActual.cs" />
+    <Compile Include="FCSTN2MActual.designer.cs">
+      <DependentUpon>FCSTN2MActual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCSTN2MTarget.cs" />
+    <Compile Include="FCSTN2MTarget.designer.cs">
+      <DependentUpon>FCSTN2MTarget.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FunnelActual.cs" />
+    <Compile Include="FunnelActual.designer.cs">
+      <DependentUpon>FunnelActual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FunnelTarget.cs" />
+    <Compile Include="FunnelTarget.designer.cs">
+      <DependentUpon>FunnelTarget.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IBInfo.cs" />
+    <Compile Include="IBInfo.designer.cs">
+      <DependentUpon>IBInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImportFile.cs" />
+    <Compile Include="ImportFile.designer.cs">
+      <DependentUpon>ImportFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MonthMapping.cs" />
+    <Compile Include="MonthMapping.designer.cs">
+      <DependentUpon>MonthMapping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OITSales.cs" />
+    <Compile Include="OITSales.designer.cs">
+      <DependentUpon>OITSales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OOHActual.cs" />
+    <Compile Include="OOHActual.designer.cs">
+      <DependentUpon>OOHActual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OOHTarget.cs" />
+    <Compile Include="OOHTarget.designer.cs">
+      <DependentUpon>OOHTarget.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderDetailActual.cs" />
+    <Compile Include="OrderDetailActual.designer.cs">
+      <DependentUpon>OrderDetailActual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderDetailTarget.cs" />
+    <Compile Include="OrderDetailTarget.designer.cs">
+      <DependentUpon>OrderDetailTarget.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderYearMonthActual.cs" />
+    <Compile Include="OrderYearMonthActual.designer.cs">
+      <DependentUpon>OrderYearMonthActual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderYearMonthTarget.cs" />
+    <Compile Include="OrderYearMonthTarget.designer.cs">
+      <DependentUpon>OrderYearMonthTarget.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductMappingActual.cs" />
+    <Compile Include="ProductMappingActual.designer.cs">
+      <DependentUpon>ProductMappingActual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductMappingTarget.cs" />
+    <Compile Include="ProductMappingTarget.designer.cs">
+      <DependentUpon>ProductMappingTarget.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PromotionIntegrate.cs" />
+    <Compile Include="PromotionIntegrate.designer.cs">
+      <DependentUpon>PromotionIntegrate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RealTimeActual.cs" />
+    <Compile Include="RealTimeActual.designer.cs">
+      <DependentUpon>RealTimeActual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RealTimeTarget.cs" />
+    <Compile Include="RealTimeTarget.designer.cs">
+      <DependentUpon>RealTimeTarget.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegionMapping.cs" />
+    <Compile Include="RegionMapping.designer.cs">
+      <DependentUpon>RegionMapping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportBatch.cs" />
+    <Compile Include="ReportBatch.designer.cs">
+      <DependentUpon>ReportBatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportHelper.cs" />
+    <Compile Include="TargetHelper.cs" />
+    <Compile Include="Test.cs" />
+    <Compile Include="Test.designer.cs">
+      <DependentUpon>Test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestType.cs" />
+    <Compile Include="TestType.designer.cs">
+      <DependentUpon>TestType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Test_Type.cs" />
+    <Compile Include="Test_Type.designer.cs">
+      <DependentUpon>Test_Type.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThreeRateDealer.cs" />
+    <Compile Include="ThreeRateDealer.designer.cs">
+      <DependentUpon>ThreeRateDealer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThreeRateProvince.cs" />
+    <Compile Include="ThreeRateProvince.designer.cs">
+      <DependentUpon>ThreeRateProvince.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserList.cs" />
+    <Compile Include="UserList.designer.cs">
+      <DependentUpon>UserList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserRegionMapping.cs" />
+    <Compile Include="UserRegionMapping.designer.cs">
+      <DependentUpon>UserRegionMapping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="V_OrderDetailTarget.cs" />
+    <Compile Include="V_OrderDetailTarget.designer.cs">
+      <DependentUpon>V_OrderDetailTarget.cs</DependentUpon>
+    </Compile>
+    <Compile Include="V_ThreeRateProvince.cs" />
+    <Compile Include="V_ThreeRateProvince.designer.cs">
+      <DependentUpon>V_ThreeRateProvince.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

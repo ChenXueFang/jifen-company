@@ -1,0 +1,430 @@
+﻿##FILENAME:${table.GetClassName()}Edit.aspx
+##
+## Inspired by http://sqlblog.com/blogs/rhundhausen/archive/2007/09/18/code-that-writes-code-or-tsql-that-writes-asp-net.aspx
+##
+## Generate an ASP.Net 2.0 web form
+## More work is needed, as I do not have a functional page, just a sketch-up.
+## It is missing proper support for non-string datatypes.  This template also
+## needs lookup support for related tables, with either a listed description
+## field or a drop-down selection of choices for "small" tables.
+##
+    <%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/adnim/SiteAdmin.Master" CodeBehind="${table.GetClassName()}Edit.aspx.cs"  Inherits="$namespace.${table.GetClassName()}Edit" %>
+
+    <%@ Register Src="~/adnim/include/HeadNavigation.ascx" TagPrefix="uc1" TagName="HeadNavigation" %>
+	
+	<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+
+		    <link href="css/element-ui.css" rel="stylesheet" />
+
+	<style>
+		.avatar-uploader .el-upload {
+			border: 1px dashed #d9d9d9;
+			border-radius: 6px;
+			cursor: pointer;
+			position: relative;
+			overflow: hidden;
+		}
+		
+		.avatar-uploader .el-upload:hover {
+			border-color: #20a0ff;
+		}
+		
+		.avatar-uploader-icon {
+			font-size: 28px;
+			color: #8c939d;
+			width: 178px;
+			height: 178px;
+			line-height: 178px;
+			text-align: center;
+		}
+		
+		.avatar {
+			width: 178px;
+			height: 178px;
+			display: block;
+		}
+		
+		.el-upload__input {
+			display: none !important;
+		}
+	</style>
+
+	</asp:Content>
+     <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+         <uc1:HeadNavigation runat="server" ID="HeadNavigation" /> 
+
+ <div class="page-content top-page" vue="${table.GetClassName()}" v-cloak>
+      <el-form id="form1" :model="ruleForm" label-width="150px" :rules="rules" ref="ruleForm" label-position="right">
+#set ($n = 0)
+#set ($nimg=0)
+
+#foreach($f in $fields)
+	#if (!$f.IsPrimaryKey())
+		#if ( $f.GetPropertyName() !="CreateTime"  &&   $f.GetPropertyName() !="IsDelete"  && !$f.GetNoEdit())
+		#set ($flen = $f.Character_Maximum_Length)
+		#if ($flen < 20)
+			#set ($n = 100)
+		#else
+			#if ($flen < 50)
+				#set ($n = 200)
+			#else
+				#set ($n = 400)
+			#end
+		#end
+	
+		#if(${f.GetNetType()}=="string" && $f.GetJsonType()!="img")
+		
+				
+				  <el-form-item label="${f.GetColunmCNName()}" prop="${f.GetPropertyName()}">   
+		    	#if($flen<=50)
+				 <el-input v-model="ruleForm.${f.GetPropertyName()}" id="${f.GetPropertyName()}" v-bind:maxlength="${f.Character_Maximum_Length}" name="${f.GetPropertyName()}"  style="width:50%;" ></el-input>
+			
+				#else
+				    <el-input type="textarea" v-model="ruleForm.${f.GetPropertyName()}" id="${f.GetPropertyName()}" v-bind:maxlength="${f.Character_Maximum_Length}" name="${f.GetPropertyName()}"  style="width:50%;" ></el-input>
+				#end
+				 </el-form-item>
+		  
+		<div class="space-4"></div>
+		#end
+		#if(${f.GetNetType()}=="string" && $f.GetJsonType()=="img")
+			##头像输出
+			#set ($nimg=1)
+            
+				  <el-form-item label="${f.GetColunmCNName()}" prop="${f.GetPropertyName()}">   
+				 <el-upload class="avatar-uploader" action="handler/information.ashx?_op=${table.GetClassName()}Upload" :show-file-list="false" :on-success="handleSuccess${f.GetPropertyName()}" :before-upload="beforeUpload${f.GetPropertyName()}">
+					 <img v-if="ruleForm.${f.GetPropertyName()}" :src="ruleForm.${f.GetPropertyName()}" class="avatar">
+					<i v-else class="el-icon-plus avatar-uploader-icon"></i>
+				 </el-upload>
+			 </el-form-item>
+			 	<div class="space-4"></div>
+		#end
+
+		#if(${f.GetNetType()}=="int?" || ${f.GetNetType()}=="int"  ||  ${f.GetNetType()}=="double"   ||  ${f.GetNetType()}=="double?"   )
+			##如果是int? 或者 int ,或者float
+				
+
+				 <el-form-item label="${f.GetColunmCNName()}" prop="${f.GetPropertyName()}">   
+				#if($f.GetJsonType()=="select")
+
+				 <el-select v-model="ruleForm.${f.GetPropertyName()}" clearable  placeholder="Choose a ...">
+			 <el-option v-for="item in ruleForm.${f.GetSelectUrl()}Select " :label="item.${f.GetSelectValueField()}"
+				 :value="item.${f.GetSelectKeyField()}"> </el-option>
+			 </el-select>
+		 
+				#else				
+				  	  <el-input-number v-model="ruleForm.${f.GetPropertyName()}" id="${f.GetPropertyName()}" v-bind:maxlength="9"  :min="0"  :max="1000000000"  name="${f.GetPropertyName()}"  style="width:50%;" ></el-input-number>		
+				#end
+				  </el-form-item>
+		   <div class="space-4"></div>
+		#end
+		#if(${f.GetNetType()}=="float?" || ${f.GetNetType()}=="float"  ||  ${f.GetNetType()}=="demical"   ||  ${f.GetNetType()}=="demical?"   )
+
+					  <el-form-item label="${f.GetColunmCNName()}" prop="${f.GetPropertyName()}">   
+						 <el-input v-model="ruleForm.${f.GetPropertyName()}" id="${f.GetPropertyName()}" v-bind:maxlength="12" name="${f.GetPropertyName()}"  style="width:50%;" ></el-input>
+		               </el-form-item>>
+		  <div class="space-4"></div>
+		#end
+		#if(${f.GetNetType()}=="DateTime?" || ${f.GetNetType()}=="DateTime"  )
+		
+				  <el-form-item label="${f.GetColunmCNName()}" prop="${f.GetPropertyName()}">   
+				<div class="block ">                  
+                <el-date-picker clearable v-model="ruleForm.${f.GetPropertyName()}" type="date"  placeholder="select date" :picker-options="pickerOptions0"></el-date-picker>
+                  </div>
+                      </el-form-item>
+
+		  <div class="space-4"></div>
+		#end
+		#if(${f.GetNetType()}=="bool?" || ${f.GetNetType()}=="bool"  )
+		
+				  <el-form-item label="${f.GetColunmCNName()}" > 
+				 <el-switch id="${f.GetPropertyName()}" name="${f.GetPropertyName()}"   v-model="ruleForm.${f.GetPropertyName()}" >
+					  </el-form-item>
+
+		  <div class="space-4"></div>
+		  
+		#end
+		#end
+	#end
+	
+#end
+
+				    <el-form-item>
+				     <el-button type="primary" :loading="IsLoading" @click="submitForm('ruleForm')" style="margin-left:12%;" >{{BtnText}}</el-button>
+					</el-form-item>
+        		
+		</el-form>
+</div>
+</asp:Content>  
+    <asp:Content ID="Content3" ContentPlaceHolderID="ScriptBlock" runat="server">
+
+		<script src="js/element.js"></script>
+
+		   <script src="js/lodash.js"></script>
+
+    <script src="js/OperItem.js"></script>
+    <script src="js/searchFiter.js"></script>
+
+<script>
+	var vm=null;
+
+
+
+
+var id = <%=Id%>;
+
+ 
+ #set($key="") 
+ vm= new Vue({
+	el:"div[vue=${table.GetClassName()}]",
+	data:{
+	ruleForm:{
+	#foreach($f in $fields)
+		#if ($f.IsPrimaryKey())
+ 			#set($key=${f.GetPropertyName()}) 
+			${f.GetPropertyName()}:id,
+		#else
+			#if(${f.GetNetType()}=="bool?" || ${f.GetNetType()}=="bool"  )
+				${f.GetPropertyName()}:false,
+			#else
+				#if(${f.GetNetType()}=="int?" || ${f.GetNetType()}=="int")
+					${f.GetPropertyName()}:0,
+				#else
+				${f.GetPropertyName()}:"",
+				#end
+			#end		
+			#if($f.GetJsonType()=="select")
+				${f.GetSelectUrl()}Select:[],
+			#end
+			
+		#end
+	
+	#end
+	},
+	  pickerOptions0: {
+                disabledDate(time) {
+                    return time.getTime() < Date.now() - 8.64e7;
+                }
+            },
+	   IsLoading:false,
+	  
+	    rules: {
+		#foreach($f in $fields)
+		#if($f.GetJsonType()=="select")
+		 ${f.GetPropertyName()}: [
+                { required: true, type:'number', message: '请输入${f.GetColunmCNName()}', trigger: 'change' }, ],		
+			  #else
+			  #if(${f.GetNetType()}=="DateTime?" || ${f.GetNetType()}=="DateTime")
+				 ${f.GetPropertyName()}: [
+                { required: true, type:'date', message: '请输入${f.GetColunmCNName()}', trigger: 'change' },],			
+			    #else
+			
+				 #if(!$f.IsPrimaryKey())
+		                ${f.GetPropertyName()}: [
+                                { required: true, message: '请输入${f.GetColunmCNName()}' },],
+			
+			#end
+			#end
+			  #end
+			   #end
+		  },		 
+	},
+	created:function (){
+	
+   if (id <= 0) {
+		#foreach($f in $fields)
+		#if($f.GetJsonType()=="select")
+		this.Load${f.GetPropertyName()}();	
+		#end
+		#end
+		}
+else{
+	this.LoadActivity();
+}
+	},
+	 computed:{
+            BtnText:function(){
+                return this.ruleForm.${key}>0?"修改":"添加"
+            }
+        },
+	methods:{
+		
+		LoadActivity:function () {
+                 var datas = getSearch();
+                 datas.rows = 1;
+		 datas.needforeignkey=true;
+		 
+                 #foreach($f in $fields)
+					#if($f.IsPrimaryKey())
+						datas.fiters.rulesAdd("${f.GetPropertyName()}", "=", id);
+					#end
+				 #end
+                 jQuery.ajax({
+                     url: 'handler/information.ashx?_op=${table.GetClassName()}Query',
+                     type: 'GET',
+                     dataType: "json",
+                     data: getSearchParams(datas),
+                     success: function (data) {
+                         var d = data;
+                         if (d.success) {
+                             jQuery.extend(vm.ruleForm, d.rows[0]);
+
+							    
+                         }
+                         else {
+
+                             mygritter.errorgrit("错误", d.msg);
+                            
+                         }
+                     },
+                     error: function (err) {
+                           mygritter.errorgrit("网络错误",err.statusText);
+
+
+                     }
+
+                 });
+             } ,
+		
+
+
+	 	#foreach($f in $fields)
+					#if($f.GetJsonType()=="select")
+						Load${f.GetPropertyName()}(){
+						HttpAjax.ajaxget("handler/information.ashx?_op=${f.GetSelectUrl}Query",{page:1,rows:1000},function(data){
+						var d = data;
+						if (d.success) {
+							vm.ruleForm.${f.GetSelectUrl()}Select=d.rows;
+						
+
+						}
+						else {
+							mygritter.errorgrit("错误", d.msg);
+							//  setTimeout(LoadArray, 300);
+						}
+						
+							})
+						
+						},
+
+					#end
+				#end
+
+					#foreach($f in $fields)
+					#if(${f.GetNetType()}=="string" && $f.GetJsonType()=="img")
+						handleSuccess${f.GetPropertyName()}:function(res, file){
+						  if(res.success){
+						  vm.ruleForm.${f.GetPropertyName()} = res.data.SaveFileNamePath  
+						 }
+						else{
+						   mygritter.errorgrit("上传失败","上传失败")
+					 }
+            
+				 },
+			beforeUpload${f.GetPropertyName()}:function(file){
+   
+                const isJPG = file.type === 'image/jpeg' ||  file.type==='image/png';
+                const isLt2M = file.size / 1024 / 1024 < 2;
+
+                if (!isJPG) {
+                    this.$message.error('上传头像图片只能是 JPG 格式和PNG格式!');
+                    return false;
+                }
+                if (!isLt2M) {
+                    this.$message.error('上传头像图片大小不能超过 2MB!');
+                    return false;
+                }
+                //return isJPG && isLt2M;;
+            },
+
+		 #end
+		 #end
+		 submitForm:function(formName) {
+			    this.$refs[formName].validate((valid) => {
+			        if (valid) {
+			           
+			            this.Save();
+			        } else {
+			            console.log('error submit!!');
+			            return false;
+			        }
+			    });
+			},
+			Save:function(){
+			
+			    vm.IsLoading=true;
+			    var post = null;
+			    if (id > 0) {
+			        post = OperItem.EditOper(getPost());
+                        
+			    }
+			    else {  post = OperItem.AddOper(getPost()); }
+			    //post移除不需要绑定字段
+			   
+
+			    jQuery.ajax({
+			        url: 'handler/information.ashx?_op=${table.GetClassName()}',
+			        data:post,
+			        type: 'POST',
+			        dataType: "json",
+			        success: function (data) {
+			            vm.IsLoading=false;
+			            var d = data;
+			            if(d.success){
+							  					  				
+			                #foreach($f in $fields)
+					
+							  #if($f.GetJsonType()=="select")
+				
+							    d.data=_.omit(d.data, '${f.GetSelectUrl()}Select');  
+								 #end
+								 #end
+								    
+                                jQuery.extend(vm.ruleForm, d.data);
+                            	
+                                 mygritter.successgrit("成功", "操作成功");
+								 #foreach($f in $fields)
+								 #if($f.IsPrimaryKey())
+										id=vm.ruleForm.${f.GetPropertyName()};
+									#end
+								 #end	
+			            }
+			            else{
+			                mygritter.errorgrit("失败", "操作失败");
+			            }
+			        },
+			        error: function (err) {
+			            vm.IsLoading=false;
+			            mygritter.errorgrit("失败",err.status);
+			        }
+
+			    });
+			
+			},
+	}
+	});
+	#set ($ns = 0)
+
+			function getPost(){
+				var post={};
+					#foreach($f in $fields)
+						#if(!$f.GetNoEdit())
+							 #if(${f.GetNetType()}=="DateTime?" || ${f.GetNetType()}=="DateTime")
+											post.${f.GetPropertyName()}=  new Date(vm.ruleForm.${f.GetPropertyName()}).Format("yyyy-MM-dd"); 	
+							#else
+							post.${f.GetPropertyName()}=vm.ruleForm.${f.GetPropertyName()};			
+							#end						
+							
+						#end
+					#end
+				return post;
+			}
+
+            </script>
+
+	  
+	    #if($nimg>0)
+	   
+			#end
+		
+</asp:Content>  

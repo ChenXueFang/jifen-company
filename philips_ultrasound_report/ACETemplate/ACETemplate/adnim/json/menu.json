@@ -1,0 +1,77 @@
+﻿[
+  {
+    "Title": "账号管理",
+    "Icon": "icon-book",
+
+    "Menu": [
+      {
+        "ID": "UserListGrid",
+        "Url": "userlistgrid1.aspx",
+        "Title": "现有用户列表",
+        "Roles": 1
+
+      }
+    ]
+  },
+  {
+    "Title": "数据管理",
+    "Icon": "icon-book",
+    "Menu": [
+      {
+        "ID": "ReportManagement",
+        "Url": "ReportManagement.aspx",
+        "Title": "报告数据管理",
+        "Roles": 2
+
+      }
+    ]
+  },
+    {
+    "Title": "报表管理",
+    "Icon": "icon-book",
+      "Menu": [
+        {
+        "ID": "DashBoard",
+        "Url": "DashBoard.aspx",
+        "Title": "业务DashBoard",
+        "Roles": 4
+      },
+        {
+          "ID": "areaChart",
+          "Url": "areaChart.aspx",
+          "Title": "区域",
+          "Roles":4
+        },
+        {
+          "ID": "productChart",
+          "Url": "productChart.aspx",
+          "Title": "产品",
+          "Roles": 4
+        },
+        {
+          "ID": "byClinicalChart",
+          "Url": "byClinicalChart.aspx",
+          "Title": "by 区域&Clinical",
+          "Roles": 4
+        },
+        {
+          "ID": "ThreerateAnalysis",
+          "Url": "ThreerateAnalysis.aspx",
+          "Title": "三率分析",
+          "Roles": 4
+        },
+        {
+          "ID": "IBIndicatorPerformance",
+          "Url": "IBIndicatorPerformance.aspx",
+          "Title": "IB分析",
+          "Roles": 4
+        },
+        {
+          "ID": "SalesPromotion",
+          "Url": "SalesPromotion.aspx",
+          "Title": "其他分析",
+          "Roles": 4
+        }
+      ]
+  }
+]

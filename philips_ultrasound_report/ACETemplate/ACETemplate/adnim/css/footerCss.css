@@ -1,0 +1,100 @@
+﻿.footer .row {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+    box-sizing:padding-box;
+}
+.fl {
+    float: left;
+}
+.fr{
+    float:right;
+}
+.footer img{
+    vertical-align:middle;
+}
+.footer .cn-flp {
+    width: 150px;
+    padding-top: 20px;
+}
+.footer a {
+    text-decoration: none;
+    color: #fff;
+}
+.footer .cn-flp img {
+    display: block;
+    margin-top: 10px;
+}
+.footer .ctc {
+    margin-left: 389px;
+}
+.footer .lang {
+    line-height: 25px;
+    padding-top: 20px;
+}
+.footer .lang a {
+    display: block;
+    color: #b3c8e6;
+}
+.footer .lang a .sp1 {
+    color: #fff;
+    margin-left: 10px;
+}
+.chooseZhan {
+    background: #fff;
+    margin-top: 10px;
+    padding: 14px 20px 14px 20px;
+    width: 146px;
+    position: absolute;
+    top: 110px;
+    right: 450px;
+    text-align: left;
+    display: none;
+}
+.underLine {
+    width: 85px;
+    height: 1px;
+    background: black;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    display: none;
+}
+.ft-link {
+    clear: both;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.ft-link li {
+    display: inline-block;
+    padding: 0 5px;
+    border-right: 1px solid #fff;
+    font-size: 14px;
+}
+.footer{
+    background: linear-gradient(to bottom right,#003655 0,#0066a1 50%,#0096ee 100%);
+    background-blend-mode: normal,normal;
+    opacity: .97;
+    min-width: 1000px;
+    color: #fff;
+    font-size: 16px;
+    position: absolute;
+    width:100%;
+    left:0px;
+    bottom:0px;
+}
+.chooseWrap {
+    text-align: right;
+}
+.chooseZhan li a {
+    color: black!important;
+}
+.footer .ctc img{
+    height:100px;
+}
+.ft-link{
+    padding-bottom:0px;
+}
+

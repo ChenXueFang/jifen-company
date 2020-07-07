@@ -1,0 +1,66 @@
+﻿##FILENAME:${table.GetClassName()}.cs
+##
+## Castle ActiveRecord entity class
+##
+#if ($namespace != "")
+namespace $namespace
+{
+#end
+// Business class ${table.GetClassName()} generated from ${table}
+// $developer [$date] Created
+
+using System;
+    using System.Collections.Generic;
+    using NHibernate.Criterion;
+	public $Partial class ${table.GetClassName()}
+	{
+		#region Constructors
+		public ${table.GetClassName()}()
+		{
+		}
+		#endregion
+
+
+	##如果包含IsDelete 属性，就重写delete
+	
+	#foreach ($f in $fields)
+		#if($f.GetPropertyName()=="IsDelete" ||$f.GetPropertyName()=="IsDeleted")			
+		    public override void Delete()
+			{
+					var n = ${table.GetClassName()}.Find(${table.GetPkField().GetPropertyName()});
+					n.IsDelete = true;
+					n.Update();				
+			}
+		#end
+		##如果包含外键，就生成外键属性
+		#if($f.GetJsonType()=="select")
+			private ${f.GetSelectUrl()}[] _${f.GetSelectUrl()}Select;
+			public ${f.GetSelectUrl()}[] ${f.GetSelectUrl()}Select{
+				get{return _${f.GetSelectUrl()}Select;}
+				set{_${f.GetSelectUrl()}Select=value;}
+			}
+		#end
+	#end
+		#foreach ($f in $table.GetRelateRemark())
+			private ${f.RelateTable}[] _${f.RelateTable}List;
+			public ${f.RelateTable}[] ${f.RelateTable}List{
+				get{return _${f.RelateTable}List;}
+				set{_${f.RelateTable}List=value;}
+			}
+			##放弃使用关系表，使用选择的值列表
+			private List<int> _${f.MiddleTable}SelectList;
+			public List<int> ${f.MiddleTable}SelectList{
+				get{return _${f.MiddleTable}SelectList;}
+				set{_${f.MiddleTable}SelectList=value;}
+			}
+
+		#end
+		} 
+
+	
+
+	// ${table.GetClassName()}
+
+#if ($namespace != "")
+}
+#end

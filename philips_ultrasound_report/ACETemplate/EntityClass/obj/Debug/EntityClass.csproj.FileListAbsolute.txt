@@ -1,0 +1,16 @@
+C:\Users\liuxi\Desktop\项目\BI\philips_ultrasound_report\ACETemplate\EntityClass\bin\Debug\EntityClass.dll
+C:\Users\liuxi\Desktop\项目\BI\philips_ultrasound_report\ACETemplate\EntityClass\bin\Debug\EntityClass.pdb
+C:\Users\liuxi\Desktop\项目\BI\philips_ultrasound_report\ACETemplate\EntityClass\bin\Debug\Castle.ActiveRecord.dll
+C:\Users\liuxi\Desktop\项目\BI\philips_ultrasound_report\ACETemplate\EntityClass\bin\Debug\Castle.Components.Validator.dll
+C:\Users\liuxi\Desktop\项目\BI\philips_ultrasound_report\ACETemplate\EntityClass\bin\Debug\Castle.Core.dll
+C:\Users\liuxi\Desktop\项目\BI\philips_ultrasound_report\ACETemplate\EntityClass\bin\Debug\Microsoft.ApplicationBlocks.Data.dll
+C:\Users\liuxi\Desktop\项目\BI\philips_ultrasound_report\ACETemplate\EntityClass\bin\Debug\Newtonsoft.Json.dll
+C:\Users\liuxi\Desktop\项目\BI\philips_ultrasound_report\ACETemplate\EntityClass\bin\Debug\NHibernate.ByteCode.Castle.dll
+C:\Users\liuxi\Desktop\项目\BI\philips_ultrasound_report\ACETemplate\EntityClass\bin\Debug\NHibernate.dll
+C:\Users\liuxi\Desktop\项目\BI\philips_ultrasound_report\ACETemplate\EntityClass\bin\Debug\NHibernate.Search.dll
+C:\Users\liuxi\Desktop\项目\BI\philips_ultrasound_report\ACETemplate\EntityClass\bin\Debug\Iesi.Collections.dll
+C:\Users\liuxi\Desktop\项目\BI\philips_ultrasound_report\ACETemplate\EntityClass\obj\Debug\EntityClass.dll
+C:\Users\liuxi\Desktop\项目\BI\philips_ultrasound_report\ACETemplate\EntityClass\obj\Debug\EntityClass.pdb
+C:\Users\liuxi\Desktop\项目\BI\philips_ultrasound_report\ACETemplate\EntityClass\obj\Debug\EntityClass.csprojResolveAssemblyReference.cache
+C:\Users\liuxi\Desktop\项目\BI\philips_ultrasound_report\ACETemplate\EntityClass\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\liuxi\Desktop\项目\BI\philips_ultrasound_report\ACETemplate\EntityClass\bin\Debug\Newtonsoft.Json.xml

@@ -1,0 +1,266 @@
+﻿*{
+    margin:0;
+    padding:0;
+}
+ [v-cloak]{
+    display:none;
+}
+ .clearfloat::after{
+    content:"";
+    display:block;
+    clear:both;
+ }
+.surveyedit{
+    padding-left:10%;
+    padding-top:1%;
+}
+.QuestionType .el-input{
+    width:100%;
+}
+.theSame,.titleContent{
+    margin-bottom:15px;
+}
+.el-select{
+    width:40%;
+}
+.SortNO .el-input{
+    width:40%;
+}
+.theSame label{
+    width:80px;
+    text-align:right;
+    padding-right:10px;
+}
+
+.title label{
+    width:80px;
+}
+.title .el-button{
+    margin-left:5px;
+}
+.titleOption{
+    padding-left:40px;
+}
+.titleOption .optionList{
+    margin:10px 0;
+}
+.titleOption .optionList textarea{
+    width: 41%;
+    height: 36px;
+    margin-left: 15px;
+}
+.titleOption .optionList input{
+    
+}
+.deleteBtn,.userWrite{
+    border:none;
+    background-color:#20a0ff;
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 4px;
+    outline: 0;
+    color:#fff;
+    margin:0 10px;
+}
+.deleteBtn{
+    background-color:#d5d5d5;
+}
+.titleIndex{
+    width:30px;
+    display:inline-block;
+}
+.titleOption .optionList textarea{
+    vertical-align:middle;
+    resize:vertical;
+}
+.writeContent{
+    display:inline-block;
+    height:36px;
+    width:41%;
+    margin-left:45px;
+    margin-top:15px;
+
+}
+.saveData{
+    margin-bottom:20px;
+    padding-left:10%;
+}
+.isMust{
+    color:#ff4949;
+    margin-right:10px;
+}
+#ActiveKey{
+    margin-right:20px;
+}
+.col-xs-10 .el-select{
+    width:41.5%;
+}
+.row{
+    margin-bottom:20px;
+}
+ .el-upload input[type="file"] {
+    display: none;
+}
+ .avatar-uploader .el-upload {
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+ }
+.avatar-uploader .el-upload:hover {
+    border-color: #20a0ff;
+}
+ .avatar-uploader-icon {
+    font-size: 28px;
+    color: #8c939d;
+    text-align: center;
+ }
+.avatar {
+    display: block;
+}
+.el-upload__input {
+    display: none !important;
+}
+.el-textarea{
+    width:40%;
+    vertical-align:top;
+}
+/*预览*/
+.previewList{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.3);
+    z-index:99;
+}
+.previewSurvey{
+    background-color:#f7f7f7;
+    width:40%;
+    margin-left:50%;
+    transform:translate(-50%,-50%);
+    margin-top:21.5%;
+    border-radius:5px;
+    overflow-y: auto;
+    height: 80%;
+}
+.closeBtn{
+    width:150px;
+    height:40px;
+    background-color:#20a0ff;
+    color:#fff;
+    border-radius:5px;
+    text-align:center;
+    line-height:40px;
+    cursor:pointer;
+    margin-left:50%;
+    transform:translate(-50%,0);
+    margin-bottom:30px;
+    margin-top:20px;
+}
+.SurveyContent .Surveyheader{
+    text-align: center;
+    padding: 10px 40px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.SurveyContent{
+    padding:0 20px;
+}
+.SurveyContent .subSurvey button{
+    background-color:#0089c4;
+    text-align:center;
+    line-height:0.7rem;
+    color:#fff;
+    border-radius:0.1rem;
+    border:none;
+    width:100%;
+    font-size:0.28rem;
+    outline:none;
+}
+.SurveyContent .SingleQuestion{
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 0px 5px 10px 5px;
+    margin-bottom: 15px;
+}
+.SurveyContent .el-checkbox{
+    display:block;
+    margin-bottom:0.25rem;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+.SurveyContent .el-checkbox+.el-checkbox{
+    margin-left:0rem;
+}
+.SurveyContent .el-checkbox__inner{
+    width: 20px;
+    height: 20px;
+    border-color:#999999;
+}
+.SurveyContent .QuestionTitle{
+    line-height: 30px;
+    color: #333;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e5e5e5;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+.SurveyContent .OptionList{
+    margin-top:10px;
+}
+.SurveyContent .el-checkbox__label{
+    
+    padding-left: 10px;
+    color:#666;
+    width: 90%;
+    display: inline-block;
+    word-wrap: break-word;
+    overflow: hidden;
+    vertical-align: top;
+}
+.el-checkbox__input.is-checked .el-checkbox__inner{
+    background-color:transparent;
+    border:1px solid #999999;
+}
+.SurveyContent .el-checkbox__inner:hover{
+    border-color:#999999;
+}
+
+.SurveyContent .QuestionTitle span{
+    margin-left:0.1rem;
+} 
+.SurveyContent .OptionList .textWrite{
+    width: 100%;
+    outline: none;
+    border: none;
+    border: 1px dashed #e5e5e5;
+    height: 70px;
+    border-radius:5px!important;
+    color: #666;
+    text-indent: 5px;
+    line-height: 15px;
+    resize: none;
+    display: block;
+    margin-top: 8px;
+}
+.SurveyContent .write{
+    width: 100%;
+    outline: none;
+    border: none;
+    border: 1px dashed #e5e5e5;
+    height: 70px;
+    border-radius:5px!important;
+    color: #666;
+    text-indent: 5px;
+    line-height: 15px;
+    resize: none;
+    display: block;
+    margin-top: 8px;
+    
+}
+.typeName{
+    text-align: center;
+    margin-bottom: 10px;
+    color: #0089c4;
+}
+

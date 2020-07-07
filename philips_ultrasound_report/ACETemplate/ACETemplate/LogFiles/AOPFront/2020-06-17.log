@@ -1,0 +1,1739 @@
+2020-06-17 09:42:24:317		进入 lnt3wr1ukfl3knvullimcdyl /adnim/areaChart.aspx
+
+2020-06-17 09:42:24:318		离开 lnt3wr1ukfl3knvullimcdyl /adnim/areaChart.aspx
+
+2020-06-17 09:42:26:828		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 09:42:27:34		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 09:43:01:867		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=loginform:[{username:admin},{password:123456},{code:2656},]
+
+2020-06-17 09:43:01:938		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=login
+
+2020-06-17 09:43:02:612		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592358182600&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 09:43:02:803		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592358182600&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 09:43:03:190		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 09:43:03:285		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 09:43:03:691		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 09:43:03:811		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 09:47:03:207		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592358423196&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 09:47:03:664		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592358423196&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 09:47:03:771		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 09:47:03:782		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 09:47:03:786		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 09:47:03:801		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 09:50:26:427		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592358626414&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 09:50:26:565		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592358626414&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 09:50:27:48		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 09:50:27:64		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 09:50:27:566		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 09:50:27:567		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 09:50:50:929		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592358650916&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 09:50:51:75		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592358650916&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 09:50:51:517		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 09:50:51:525		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 09:50:51:533		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 09:50:51:543		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 09:51:01:675		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592358661661&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 09:51:01:797		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592358661661&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 09:51:02:262		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 09:51:02:271		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 09:51:02:776		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 09:51:02:790		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 09:51:06:281		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 09:51:06:282		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 09:51:06:783		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 09:51:06:792		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 09:52:45:331		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 09:52:45:333		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 09:52:45:834		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 09:52:45:841		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 09:52:49:717		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592358769707&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 09:52:49:824		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592358769707&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 09:52:50:295		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 09:52:50:301		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 09:52:50:307		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 09:52:50:317		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 09:52:51:752		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592358771742&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 09:52:51:885		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592358771742&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 09:52:52:322		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 09:52:52:330		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 09:52:52:822		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 09:52:52:838		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 09:53:20:708		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592358800674&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 09:53:21:252		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592358800674&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 09:53:21:280		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 09:53:21:297		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 09:53:21:794		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 09:53:21:804		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 09:53:40:73		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592358820060&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 09:53:40:203		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592358820060&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 09:53:40:663		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 09:53:40:665		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 09:53:40:683		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 09:53:40:704		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 09:54:56:768		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 09:54:56:769		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 09:54:57:269		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 09:54:57:277		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 09:55:57:773		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 09:55:57:786		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 09:55:58:276		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 09:55:58:287		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 09:59:01:520		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 09:59:01:536		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 09:59:02:24		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 09:59:02:31		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:00:08:839		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:00:08:850		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:00:09:341		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:00:09:349		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:01:22:567		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:01:22:668		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:01:23:59		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:01:23:96		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:02:02:964		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:02:02:982		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:02:03:486		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:02:03:494		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:03:44:696		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:03:44:710		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:03:45:198		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:03:45:206		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:11:46:183		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:11:46:225		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:11:46:237		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:11:46:238		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:12:42:296		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:12:42:304		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:12:42:827		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:12:42:836		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:13:13:149		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:13:13:226		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:13:13:640		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:13:13:656		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:14:58:777		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:14:58:803		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:14:59:283		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:14:59:315		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:15:46:118		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:15:46:157		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:15:46:659		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:15:46:674		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:16:54:354		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:16:54:366		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:16:54:858		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:16:54:859		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:17:09:953		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592360229929&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 10:17:10:266		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592360229929&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 10:17:10:528		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:17:10:537		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:17:10:542		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:17:10:556		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:17:17:568		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ImportReport_Queryform:[{year:2019},{month:1},]
+
+2020-06-17 10:17:17:677		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:17:17:689		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:17:18:185		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:17:18:202		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:17:19:582		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ImportReport_Query
+
+2020-06-17 10:19:45:127		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ImportReport_Queryform:[{year:2019},{month:1},]
+
+2020-06-17 10:19:45:295		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:19:45:306		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:19:45:945		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:19:45:974		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:19:46:904		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ImportReport_Query
+
+2020-06-17 10:20:37:671		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ImportReport_Queryform:[{year:2019},{month:1},]
+
+2020-06-17 10:20:37:809		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:20:37:920		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:20:38:311		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:20:38:357		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:20:39:264		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ImportReport_Query
+
+2020-06-17 10:21:02:610		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ImportReport_Queryform:[{year:2019},{month:1},]
+
+2020-06-17 10:21:02:771		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:21:02:796		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:21:03:273		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:21:03:283		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:21:04:653		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ImportReport_Query
+
+2020-06-17 10:21:25:39		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ImportReport_Queryform:[{year:2019},{month:1},]
+
+2020-06-17 10:21:25:182		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:21:25:195		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:21:25:686		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:21:25:698		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:21:26:313		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ImportReport_Query
+
+2020-06-17 10:23:03:959		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ImportReport_Queryform:[{year:2019},{month:1},]
+
+2020-06-17 10:23:04:99		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:23:04:109		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:23:04:600		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:23:04:611		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:23:05:104		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ImportReport_Query
+
+2020-06-17 10:24:42:898		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ImportReport_Queryform:[{year:2019},{month:1},]
+
+2020-06-17 10:24:42:994		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:24:43:8		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:24:43:496		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:24:43:505		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:24:44:167		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ImportReport_Query
+
+2020-06-17 10:26:10:834		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ImportReport_Queryform:[{year:2019},{month:1},]
+
+2020-06-17 10:26:10:950		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:26:10:964		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:26:11:472		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:26:11:491		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:26:12:207		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ImportReport_Query
+
+2020-06-17 10:26:18:860		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ImportReport_Queryform:[{year:2019},{month:1},]
+
+2020-06-17 10:26:18:996		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:26:19:8		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:26:19:499		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:26:19:509		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:26:20:27		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ImportReport_Query
+
+2020-06-17 10:27:09:757		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ImportReport_Queryform:[{year:2019},{month:1},]
+
+2020-06-17 10:27:09:895		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:27:09:988		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:27:10:430		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:27:10:472		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:27:11:767		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ImportReport_Query
+
+2020-06-17 10:33:13:469		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ImportReport_Queryform:[{year:2019},{month:1},]
+
+2020-06-17 10:33:13:597		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:33:13:611		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:33:13:620		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:33:13:621		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:33:14:792		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ImportReport_Query
+
+2020-06-17 10:34:11:116		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ImportReport_Queryform:[{year:2019},{month:1},]
+
+2020-06-17 10:34:11:222		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:34:11:234		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:34:11:730		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:34:11:748		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:34:12:578		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ImportReport_Query
+
+2020-06-17 10:34:15:462		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 10:34:15:548		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 10:34:58:807		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ImportReport_Queryform:[{year:2019},{month:1},]
+
+2020-06-17 10:34:58:920		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:34:58:928		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:34:59:430		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:34:59:436		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:35:01:758		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ImportReport_Query
+
+2020-06-17 10:35:08:904		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryThreeRateProvinceform:[{year:2020},{month:1,2,3,4,5,6},]
+
+2020-06-17 10:35:08:923		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByDistrictform:[{year:2020},{month:1,2,3,4,5,6},{type:1},]
+
+2020-06-17 10:35:08:928		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ByDistrictClinicalQueryform:[{year:2020},{month:1,2,3,4,5,6},]
+
+2020-06-17 10:35:08:979		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryHomeAreaform:[{year:2020},{month:1,2,3,4,5,6},]
+
+2020-06-17 10:35:09:177		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryFCSTAccuracyform:[{year:2020},{month:1,2,3,4,5,6},]
+
+2020-06-17 10:35:09:449		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryFCSTAccuracy
+
+2020-06-17 10:35:09:460		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:35:09:462		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:35:09:539		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:35:09:540		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:35:09:554		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProduct
+
+2020-06-17 10:35:09:660		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryHomeArea
+
+2020-06-17 10:35:09:679		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryThreeRateProvince
+
+2020-06-17 10:35:09:689		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByDistrict
+
+2020-06-17 10:35:09:737		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ByDistrictClinicalQuery
+
+2020-06-17 10:35:12:825		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryFCSTAccuracyform:[{year:2020},{month:1,2,3,4,5,6},]
+
+2020-06-17 10:35:12:841		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByDistrictform:[{year:2020},{month:1,2,3,4,5,6},]
+
+2020-06-17 10:35:12:869		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryDistrictHospitalform:[{year:2020},{month:1,2,3,4,5,6},]
+
+2020-06-17 10:35:12:922		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:35:12:923		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:35:12:944		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryFCSTAccuracy
+
+2020-06-17 10:35:12:945		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:35:12:946		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:35:13:51		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByDistrict
+
+2020-06-17 10:35:13:139		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryDistrictHospital
+
+2020-06-17 10:35:17:914		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 10:35:17:976		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 10:36:45:42		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryFCSTAccuracyform:[{year:2020},{month:1,2,3,4,5,6},]
+
+2020-06-17 10:36:45:50		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryDistrictHospitalform:[{year:2020},{month:1,2,3,4,5,6},]
+
+2020-06-17 10:36:45:52		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByDistrictform:[{year:2020},{month:1,2,3,4,5,6},]
+
+2020-06-17 10:36:45:165		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryFCSTAccuracy
+
+2020-06-17 10:36:45:182		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:36:45:187		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:36:45:232		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:36:45:258		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:36:45:258		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryDistrictHospital
+
+2020-06-17 10:36:45:366		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByDistrict
+
+2020-06-17 10:36:47:945		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 10:36:48:7		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 10:38:33:50		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByDistrictform:[{year:2020},{month:1,2,3,4,5,6},]
+
+
+2020-06-17 10:38:33:53		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryDistrictHospitalform:[{year:2020},{month:1,2,3,4,5,6},]
+
+2020-06-17 10:38:33:103		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:38:33:201		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:38:33:816		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:38:33:864		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:38:33:971		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryDistrictHospital
+
+2020-06-17 10:38:33:977		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryFCSTAccuracy
+
+2020-06-17 10:38:34:129		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByDistrict
+
+2020-06-17 10:38:41:315		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 10:38:41:386		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 10:42:54:894		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryFCSTAccuracyform:[{year:2020},{month:1,2,3,4,5,6},]
+
+2020-06-17 10:42:54:895		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByDistrictform:[{year:2020},{month:1,2,3,4,5,6},]
+
+2020-06-17 10:42:54:897		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryDistrictHospitalform:[{year:2020},{month:1,2,3,4,5,6},]
+
+2020-06-17 10:42:54:993		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:42:54:997		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:42:55:73		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryFCSTAccuracy
+
+2020-06-17 10:42:55:108		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:42:55:110		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:42:55:274		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryDistrictHospital
+
+2020-06-17 10:42:55:309		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByDistrict
+
+2020-06-17 10:42:57:666		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 10:42:57:724		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 10:44:01:396		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryDistrictHospitalform:[{year:2020},{month:1,2,3,4,5,6},]
+
+2020-06-17 10:44:01:409		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByDistrictform:[{year:2020},{month:1,2,3,4,5,6},]
+
+2020-06-17 10:44:01:476		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:44:01:477		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:44:01:511		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:44:01:524		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:44:01:546		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryFCSTAccuracy
+
+2020-06-17 10:44:01:557		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryDistrictHospital
+
+2020-06-17 10:44:01:814		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByDistrict
+
+2020-06-17 10:44:03:531		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 10:44:03:584		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 10:44:34:1		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryFCSTAccuracyform:[{year:2020},{month:1,2,3,4,5,6},]
+
+2020-06-17 10:44:34:25		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryDistrictHospitalform:[{year:2020},{month:1,2,3,4,5,6},]
+
+2020-06-17 10:44:34:43		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByDistrictform:[{year:2020},{month:1,2,3,4,5,6},]
+
+2020-06-17 10:44:34:152		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryFCSTAccuracy
+
+2020-06-17 10:44:34:154		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:44:34:217		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryDistrictHospital
+
+2020-06-17 10:44:34:220		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:44:34:233		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:44:34:278		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByDistrict
+
+2020-06-17 10:44:36:724		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 10:44:36:782		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 10:45:09:767		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryFCSTAccuracyform:[{year:2020},{month:1,2,3,4,5,6},]
+
+2020-06-17 10:45:09:782		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByDistrictform:[{year:2020},{month:1,2,3,4,5,6},]
+
+2020-06-17 10:45:09:839		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:45:09:853		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:45:09:859		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryDistrictHospitalform:[{year:2020},{month:1,2,3,4,5,6},]
+
+2020-06-17 10:45:09:928		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryFCSTAccuracy
+
+2020-06-17 10:45:10:60		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByDistrict
+
+2020-06-17 10:45:10:341		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:45:10:358		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:45:12:631		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 10:45:12:703		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 10:45:13:275		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryDistrictHospital
+
+2020-06-17 10:45:55:975		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByDistrictform:[{year:2020},{month:1,2,3,4,5,6},]
+
+2020-06-17 10:45:55:976		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryFCSTAccuracyform:[{year:2020},{month:1,2,3,4,5,6},]
+
+2020-06-17 10:45:56:0		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryDistrictHospitalform:[{year:2020},{month:1,2,3,4,5,6},]
+
+2020-06-17 10:45:56:82		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:45:56:380		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:45:56:468		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryDistrictHospital
+
+2020-06-17 10:45:56:494		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryFCSTAccuracy
+
+2020-06-17 10:45:56:591		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:45:56:603		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:45:56:726		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByDistrict
+
+2020-06-17 10:45:58:882		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 10:45:58:946		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 10:46:27:759		进入 lnt3wr1ukfl3knvullimcdyl /adnim/login.aspx?loginout=true
+
+2020-06-17 10:46:27:770		离开 lnt3wr1ukfl3knvullimcdyl /adnim/login.aspx?loginout=true
+
+2020-06-17 10:46:28:217		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 10:46:28:335		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 10:48:09:575		进入 lnt3wr1ukfl3knvullimcdyl /adnim/login.aspx?loginout=true
+
+2020-06-17 10:48:09:588		离开 lnt3wr1ukfl3knvullimcdyl /adnim/login.aspx?loginout=true
+
+2020-06-17 10:48:09:885		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 10:48:09:951		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 10:48:16:790		进入 lnt3wr1ukfl3knvullimcdyl /adnim/login.aspx?loginout=true
+
+2020-06-17 10:48:16:798		离开 lnt3wr1ukfl3knvullimcdyl /adnim/login.aspx?loginout=true
+
+2020-06-17 10:48:17:99		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 10:48:17:265		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 10:48:32:378		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=loginform:[{username:admin},{password:123456},{code:2584},]
+
+2020-06-17 10:48:32:436		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=login
+
+2020-06-17 10:48:32:898		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592362112874&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 10:48:33:359		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592362112874&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 10:48:33:473		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:48:33:496		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:48:33:982		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:48:33:996		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:48:35:356		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 10:48:35:419		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 10:50:23:555		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592362223540&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 10:50:23:692		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592362223540&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 10:50:24:161		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:50:24:178		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:50:24:666		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:50:24:668		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:50:25:893		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 10:50:25:950		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 10:50:41:286		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592362241273&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 10:50:41:397		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592362241273&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 10:50:41:866		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:50:41:873		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:50:41:885		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:50:41:894		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:50:43:689		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 10:50:43:752		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 10:50:48:749		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592362248738&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 10:50:48:898		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592362248738&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 10:50:49:328		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:50:49:337		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:50:49:353		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:50:49:354		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:50:50:994		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 10:50:51:49		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 10:51:13:351		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592362273339&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 10:51:13:487		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592362273339&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 10:51:13:951		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:51:13:960		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:51:14:463		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:51:14:464		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:51:17:348		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 10:51:17:398		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 10:51:30:111		进入 lnt3wr1ukfl3knvullimcdyl /adnim/login.aspx?loginout=true
+
+2020-06-17 10:51:30:119		离开 lnt3wr1ukfl3knvullimcdyl /adnim/login.aspx?loginout=true
+
+2020-06-17 10:51:30:876		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 10:51:30:928		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 10:53:30:727		进入 lnt3wr1ukfl3knvullimcdyl /adnim/login.aspx?loginout=true
+
+2020-06-17 10:53:30:737		离开 lnt3wr1ukfl3knvullimcdyl /adnim/login.aspx?loginout=true
+
+2020-06-17 10:53:31:111		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 10:53:31:162		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 10:53:43:384		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=loginform:[{username:admin},{password:123456},{code:0058},]
+
+2020-06-17 10:53:43:436		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=login
+
+2020-06-17 10:53:43:960		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592362423950&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 10:53:44:363		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592362423950&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 10:53:44:533		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:53:44:534		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:53:45:34		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:53:45:35		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:53:49:64		进入 lnt3wr1ukfl3knvullimcdyl /adnim/login.aspx?loginout=true
+
+2020-06-17 10:53:49:71		离开 lnt3wr1ukfl3knvullimcdyl /adnim/login.aspx?loginout=true
+
+2020-06-17 10:53:49:336		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 10:53:49:385		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 10:54:27:542		进入 lnt3wr1ukfl3knvullimcdyl /adnim/login.aspx?loginout=true
+
+2020-06-17 10:54:27:550		离开 lnt3wr1ukfl3knvullimcdyl /adnim/login.aspx?loginout=true
+
+2020-06-17 10:54:27:820		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 10:54:27:873		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 10:54:39:558		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=loginform:[{username:admin},{password:123456},{code:1802},]
+
+2020-06-17 10:54:39:626		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=login
+
+2020-06-17 10:54:40:89		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592362480080&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 10:54:40:218		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592362480080&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 10:54:40:660		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:54:40:669		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:54:40:694		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:54:40:702		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:54:44:79		进入 lnt3wr1ukfl3knvullimcdyl /adnim/login.aspx?loginout=true
+
+2020-06-17 10:54:44:80		离开 lnt3wr1ukfl3knvullimcdyl /adnim/login.aspx?loginout=true
+
+2020-06-17 10:54:44:355		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 10:54:44:595		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 10:55:52:709		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=loginform:[{username:admin},{password:123456},{code:2230},]
+
+2020-06-17 10:55:52:759		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=login
+
+2020-06-17 10:55:53:224		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592362553212&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 10:55:53:362		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592362553212&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 10:55:53:785		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:55:53:786		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 10:55:54:287		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:55:54:296		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 10:55:56:645		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 10:55:56:729		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 10:56:49:110		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=GetUserInfo&id=12
+
+2020-06-17 10:56:49:221		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=GetUserInfo&id=12
+
+2020-06-17 11:26:23:636		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592364383603&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 11:26:24:0		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592364383603&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 11:26:24:298		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 11:26:24:301		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 11:26:24:806		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 11:26:24:825		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 11:28:50:0		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592364529989&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 11:28:50:124		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592364529989&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 11:28:50:603		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 11:28:50:616		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 11:28:51:104		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 11:28:51:120		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 11:35:40:814		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592364940801&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 11:35:41:2		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592364940801&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 11:35:41:512		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 11:35:41:513		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 11:35:41:999		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 11:35:42:7		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 11:36:30:365		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592364990352&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 11:36:30:493		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592364990352&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 11:36:30:945		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 11:36:30:953		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 11:36:30:965		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 11:36:30:977		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 11:39:20:248		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592365160235&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 11:39:20:320		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592365160235&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 11:39:20:335		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 11:39:20:338		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 11:39:20:348		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 11:39:20:351		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 11:41:58:129		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592365318114&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 11:41:58:219		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592365318114&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 11:41:58:706		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 11:41:58:721		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 11:41:59:220		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 11:41:59:221		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 11:42:35:48		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592365355034&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 11:42:35:119		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592365355034&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 11:42:35:140		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 11:42:35:156		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 11:42:35:641		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 11:42:35:653		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 11:43:25:772		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592365405757&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 11:43:25:849		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592365405757&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 11:43:26:341		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 11:43:26:352		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 11:43:26:358		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 11:43:26:373		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 11:45:06:686		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592365506673&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 11:45:06:778		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592365506673&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 11:45:07:261		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 11:45:07:264		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 11:45:07:287		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 11:45:07:288		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 11:48:38:276		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryFCSTAccuracyform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 11:48:38:277		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByDistrictform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 11:48:38:320		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryDistrictHospitalform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 11:48:38:340		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 11:48:38:341		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 11:48:38:378		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 11:48:38:414		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 11:48:38:496		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryFCSTAccuracy
+
+2020-06-17 11:48:38:525		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryDistrictHospital
+
+2020-06-17 11:48:38:559		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByDistrict
+
+2020-06-17 11:48:42:707		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProductform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 11:48:42:716		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProductform:[{year:2020},]
+
+2020-06-17 11:48:42:793		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 11:48:42:841		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 11:48:42:862		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 11:48:42:865		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 11:48:42:915		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProduct
+
+2020-06-17 11:48:42:919		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProduct
+
+2020-06-17 11:49:45:713		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProductform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 11:49:45:741		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProductform:[{year:2020},]
+
+2020-06-17 11:49:45:773		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProduct
+
+2020-06-17 11:49:45:793		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 11:49:45:795		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 11:49:45:816		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProduct
+
+2020-06-17 11:49:45:819		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 11:49:45:820		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 11:49:56:964		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProductform:[{year:2020},]
+
+h:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 11:49:57:32		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProduct
+
+2020-06-17 11:49:57:38		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 11:49:57:39		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 11:49:57:70		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProduct
+
+2020-06-17 11:49:57:82		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 11:49:57:94		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 11:50:08:731		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProductform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 11:50:08:759		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProductform:[{year:2020},]
+
+2020-06-17 11:50:08:812		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 11:50:08:825		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 11:50:08:872		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProduct
+
+2020-06-17 11:50:08:882		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProduct
+
+2020-06-17 11:50:09:342		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 11:50:09:359		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 11:50:22:775		进入 1cfwpzcwlnpguqdvs4bd0asd /adnim/productChart.aspx
+
+2020-06-17 11:50:22:793		离开 1cfwpzcwlnpguqdvs4bd0asd /adnim/productChart.aspx
+
+2020-06-17 11:50:23:425		进入 1cfwpzcwlnpguqdvs4bd0asd /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 11:50:23:491		离开 1cfwpzcwlnpguqdvs4bd0asd /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 11:50:35:209		进入 1cfwpzcwlnpguqdvs4bd0asd /adnim/handler/GobalHandler.ashx?_op=loginform:[{username:admin},{password:123456},{code:8810},]
+
+2020-06-17 11:50:35:239		离开 1cfwpzcwlnpguqdvs4bd0asd /adnim/handler/GobalHandler.ashx?_op=login
+
+2020-06-17 11:50:35:697		进入 1cfwpzcwlnpguqdvs4bd0asd /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592365835684&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 11:50:35:777		离开 1cfwpzcwlnpguqdvs4bd0asd /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592365835684&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 11:50:36:271		进入 1cfwpzcwlnpguqdvs4bd0asd /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 11:50:36:278		离开 1cfwpzcwlnpguqdvs4bd0asd /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 11:50:36:287		进入 1cfwpzcwlnpguqdvs4bd0asd /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 11:50:36:309		离开 1cfwpzcwlnpguqdvs4bd0asd /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 11:50:39:141		进入 1cfwpzcwlnpguqdvs4bd0asd /adnim/handler/information.ashx?_op=QueryByProductform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 11:50:39:169		进入 1cfwpzcwlnpguqdvs4bd0asd /adnim/handler/information.ashx?_op=QueryByProductform:[{year:2020},]
+
+2020-06-17 11:50:39:213		离开 1cfwpzcwlnpguqdvs4bd0asd /adnim/handler/information.ashx?_op=QueryByProduct
+
+2020-06-17 11:50:39:233		进入 1cfwpzcwlnpguqdvs4bd0asd /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 11:50:39:235		离开 1cfwpzcwlnpguqdvs4bd0asd /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 11:50:39:251		离开 1cfwpzcwlnpguqdvs4bd0asd /adnim/handler/information.ashx?_op=QueryByProduct
+
+2020-06-17 11:50:39:262		进入 1cfwpzcwlnpguqdvs4bd0asd /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 11:50:39:273		离开 1cfwpzcwlnpguqdvs4bd0asd /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 11:50:57:233		进入 1cfwpzcwlnpguqdvs4bd0asd /adnim/handler/information.ashx?_op=QueryByProductform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 11:50:57:335		进入 1cfwpzcwlnpguqdvs4bd0asd /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 11:50:57:342		离开 1cfwpzcwlnpguqdvs4bd0asd /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 11:50:57:393		离开 1cfwpzcwlnpguqdvs4bd0asd /adnim/handler/information.ashx?_op=QueryByProduct
+
+2020-06-17 11:50:57:393		离开 1cfwpzcwlnpguqdvs4bd0asd /adnim/handler/information.ashx?_op=QueryByProduct
+
+2020-06-17 11:50:57:406		进入 1cfwpzcwlnpguqdvs4bd0asd /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 11:50:57:407		离开 1cfwpzcwlnpguqdvs4bd0asd /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 11:51:54:327		进入 1cfwpzcwlnpguqdvs4bd0asd /adnim/handler/information.ashx?_op=QueryByProductform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 11:51:54:349		进入 1cfwpzcwlnpguqdvs4bd0asd /adnim/handler/information.ashx?_op=QueryByProductform:[{year:2020},]
+
+2020-06-17 11:51:54:388		进入 1cfwpzcwlnpguqdvs4bd0asd /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 11:51:54:389		离开 1cfwpzcwlnpguqdvs4bd0asd /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 11:51:54:413		离开 1cfwpzcwlnpguqdvs4bd0asd /adnim/handler/information.ashx?_op=QueryByProduct
+
+2020-06-17 11:51:54:524		离开 1cfwpzcwlnpguqdvs4bd0asd /adnim/handler/information.ashx?_op=QueryByProduct
+
+2020-06-17 11:51:54:890		进入 1cfwpzcwlnpguqdvs4bd0asd /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 11:51:54:919		离开 1cfwpzcwlnpguqdvs4bd0asd /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 13:19:16:465		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 13:19:16:590		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 13:19:21:976		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592371161958&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 13:19:22:80		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592371161958&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 13:19:22:108		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 13:19:22:138		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 13:19:22:614		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 13:19:22:635		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 13:19:30:131		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592371170117&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 13:19:30:203		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592371170117&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 13:19:30:241		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 13:19:30:245		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 13:19:30:762		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 13:19:30:770		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 13:22:37:237		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592371357223&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 13:22:37:315		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592371357223&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 13:22:37:356		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 13:22:37:358		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 13:22:37:374		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 13:22:37:384		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 13:23:43:200		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592371423187&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 13:23:43:257		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592371423187&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 13:23:43:279		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 13:23:43:291		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 13:23:43:781		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 13:23:43:782		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 13:24:06:622		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592371446613&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 13:24:06:728		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592371446613&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 13:24:07:220		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 13:24:07:235		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 13:24:07:727		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 13:24:07:729		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 13:26:15:60		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592371575049&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 13:26:15:118		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1592371575049&rows=10&page=1&sidx=&sord=asc
+
+2020-06-17 13:26:15:165		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 13:26:15:173		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 13:26:15:689		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 13:26:15:691		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 13:28:30:669		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 13:28:30:726		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=getyearmonth
+
+2020-06-17 16:13:15:553		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProductform:[{year:2020},]
+
+h:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 16:13:15:636		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 16:13:15:639		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 16:13:15:836		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProduct
+
+2020-06-17 16:13:15:943		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProduct
+
+2020-06-17 16:13:16:153		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 16:13:16:155		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 16:13:44:824		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ByDistrictClinicalQueryform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 16:13:44:889		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 16:13:44:898		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 16:13:45:153		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ByDistrictClinicalQuery
+
+2020-06-17 16:13:45:397		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 16:13:45:399		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 16:15:00:721		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProductform:[{year:2020},]
+
+2020-06-17 16:15:00:722		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProductform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 16:15:00:857		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProduct
+
+2020-06-17 16:15:00:857		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 16:15:00:859		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 16:15:00:986		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProduct
+
+2020-06-17 16:15:01:357		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 16:15:01:358		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 16:15:16:457		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryFCSTAccuracyform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 16:15:16:479		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryDistrictHospitalform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 16:15:16:511		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByDistrictform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 16:15:16:552		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 16:15:16:553		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 16:15:16:609		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryDistrictHospital
+
+2020-06-17 16:15:16:734		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryFCSTAccuracy
+
+2020-06-17 16:15:16:746		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByDistrict
+
+2020-06-17 16:15:17:62		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 16:15:17:74		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 16:17:10:197		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ByDistrictClinicalQueryform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 16:17:10:269		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 16:17:10:283		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 16:17:10:430		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ByDistrictClinicalQuery
+
+2020-06-17 16:17:10:770		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 16:17:10:771		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 16:19:40:999		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryThreeRateProvinceform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 16:19:41:11		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryThreeRateDealerform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 16:19:41:91		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 16:19:41:92		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 16:19:41:421		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryThreeRateProvince
+
+2020-06-17 16:19:41:576		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryThreeRateDealer
+
+2020-06-17 16:19:41:593		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 16:19:41:603		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 16:19:44:55		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProductform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 16:19:44:64		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProductform:[{year:2020},]
+
+2020-06-17 16:19:44:114		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 16:19:44:115		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 16:19:44:213		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProduct
+
+2020-06-17 16:19:44:348		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProduct
+
+2020-06-17 16:19:44:620		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 16:19:44:629		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 16:20:47:744		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProductform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 16:20:47:748		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProductform:[{year:2020},]
+
+2020-06-17 16:20:47:815		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 16:20:47:977		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 16:20:48:958		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 16:20:48:994		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 16:20:49:238		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProduct
+
+2020-06-17 16:20:49:287		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProduct
+
+2020-06-17 16:21:40:186		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryThreeRateProvinceform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 16:21:40:190		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ByDistrictClinicalQueryform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 16:21:40:239		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryHomeAreaform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 16:21:40:260		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByDistrictform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},{type:1},]
+
+2020-06-17 16:21:40:262		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryFCSTAccuracyform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 16:21:40:268		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProductform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 16:21:40:462		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProduct
+
+2020-06-17 16:21:40:533		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 16:21:40:534		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 16:21:40:571		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryThreeRateProvince
+
+2020-06-17 16:21:40:697		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 16:21:40:699		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 16:21:40:784		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryFCSTAccuracy
+
+2020-06-17 16:21:40:867		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ByDistrictClinicalQuery
+
+2020-06-17 16:21:42:348		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryHomeArea
+
+2020-06-17 16:21:42:349		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByDistrict
+
+2020-06-17 16:21:44:289		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryFCSTAccuracyform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 16:21:44:301		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryDistrictHospitalform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 16:21:44:364		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 16:21:44:365		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 16:21:44:435		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryFCSTAccuracy
+
+2020-06-17 16:21:44:440		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByDistrictform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 16:21:44:481		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 16:21:44:513		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 16:21:44:544		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryDistrictHospital
+
+2020-06-17 16:21:44:701		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByDistrict
+
+2020-06-17 16:23:39:333		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ByDistrictClinicalQueryform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 16:23:39:410		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 16:23:39:412		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 16:23:39:421		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 16:23:39:422		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 16:23:39:538		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ByDistrictClinicalQuery
+
+2020-06-17 16:45:09:473		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ByDistrictClinicalQueryform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 16:45:09:548		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 16:45:09:549		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 16:45:10:52		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 16:45:10:54		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 16:45:11:46		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ByDistrictClinicalQuery
+
+2020-06-17 16:50:42:286		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ByDistrictClinicalQueryform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 16:50:42:400		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 16:50:42:418		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 16:50:42:526		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ByDistrictClinicalQuery
+
+2020-06-17 16:50:42:901		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 16:50:42:917		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 16:50:55:411		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ByDistrictClinicalQueryform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 16:50:55:480		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 16:50:55:491		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 16:50:55:608		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ByDistrictClinicalQuery
+
+2020-06-17 16:50:55:982		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 16:50:55:989		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 16:51:29:399		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ByDistrictClinicalQueryform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 16:51:29:440		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 16:51:29:445		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 16:51:29:631		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ByDistrictClinicalQuery
+
+2020-06-17 16:51:29:954		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 16:51:29:957		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 16:54:45:84		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ByDistrictClinicalQueryform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 16:54:45:140		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 16:54:45:152		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 16:54:45:279		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ByDistrictClinicalQuery
+
+2020-06-17 16:54:45:653		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 16:54:45:655		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 16:56:59:658		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ByDistrictClinicalQueryform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 16:56:59:732		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 16:56:59:743		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 16:57:00:75		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ByDistrictClinicalQuery
+
+2020-06-17 16:57:00:238		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 16:57:00:239		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 16:57:09:112		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProductform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 16:57:09:123		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProductform:[{year:2020},]
+
+2020-06-17 16:57:09:191		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 16:57:09:192		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 16:57:09:283		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProduct
+
+2020-06-17 16:57:09:401		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProduct
+
+2020-06-17 16:57:09:696		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 16:57:09:725		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 16:59:19:939		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ByDistrictClinicalQueryform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 16:59:20:67		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 16:59:20:183		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 16:59:20:582		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 16:59:20:605		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 16:59:20:663		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ByDistrictClinicalQuery
+
+2020-06-17 17:03:04:420		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ByDistrictClinicalQueryform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 17:03:04:486		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 17:03:04:498		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 17:03:04:623		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ByDistrictClinicalQuery
+
+2020-06-17 17:03:04:989		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 17:03:04:991		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 17:03:34:509		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ByDistrictClinicalQueryform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 17:03:34:565		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 17:03:34:570		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 17:03:34:731		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ByDistrictClinicalQuery
+
+2020-06-17 17:03:35:85		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 17:03:35:86		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 17:04:16:455		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryIBform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 17:04:16:535		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 17:04:16:547		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 17:04:16:784		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryIB
+
+2020-06-17 17:04:17:58		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 17:04:17:59		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 17:05:00:854		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryThreeRateProvinceform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 17:05:00:868		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryThreeRateDealerform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 17:05:00:961		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 17:05:00:963		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 17:05:01:465		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 17:05:01:477		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 17:05:02:454		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryThreeRateProvince
+
+2020-06-17 17:05:02:953		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryThreeRateDealer
+
+2020-06-17 17:06:19:909		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProductform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 17:06:19:919		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProductform:[{year:2020},]
+
+2020-06-17 17:06:19:988		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 17:06:19:998		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 17:06:20:76		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProduct
+
+2020-06-17 17:06:20:435		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProduct
+
+2020-06-17 17:06:20:490		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 17:06:20:492		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 17:09:46:688		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ByDistrictClinicalQueryform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 17:09:46:779		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 17:09:46:780		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 17:09:46:980		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ByDistrictClinicalQuery
+
+2020-06-17 17:09:47:288		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 17:09:47:289		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 17:14:16:25		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ByDistrictClinicalQueryform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 17:14:16:94		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 17:14:16:107		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 17:14:16:371		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ByDistrictClinicalQuery
+
+2020-06-17 17:14:16:598		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 17:14:16:609		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 17:26:11:877		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProductform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 17:26:11:928		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 17:26:11:930		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 17:26:12:349		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProduct
+
+2020-06-17 17:26:12:432		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 17:26:12:443		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 17:26:12:528		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProduct
+
+2020-06-17 17:27:32:117		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProductform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 17:27:32:127		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProductform:[{year:2020},]
+
+2020-06-17 17:27:32:172		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 17:27:32:174		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 17:27:32:199		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 17:27:32:201		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 17:27:32:294		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProduct
+
+2020-06-17 17:27:32:303		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProduct
+
+2020-06-17 17:28:09:846		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProductform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 17:28:09:847		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProductform:[{year:2020},]
+
+2020-06-17 17:28:09:916		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 17:28:09:945		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 17:28:09:964		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProduct
+
+2020-06-17 17:28:09:975		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 17:28:09:976		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 17:28:10:6		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProduct
+
+2020-06-17 17:29:28:686		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProductform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 17:29:28:686		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProductform:[{year:2020},]
+
+2020-06-17 17:29:28:746		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 17:29:28:759		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 17:29:28:795		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProduct
+
+2020-06-17 17:29:28:817		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProduct
+
+2020-06-17 17:29:29:248		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 17:29:29:250		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 17:30:05:609		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProductform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 17:30:05:618		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProductform:[{year:2020},]
+
+2020-06-17 17:30:05:667		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 17:30:05:689		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 17:30:05:715		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 17:30:05:739		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProduct
+
+06-17 17:30:05:739		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProduct
+
+2020-06-17 17:30:42:586		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryFCSTAccuracyform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 17:30:42:594		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByDistrictform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 17:30:42:608		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryDistrictHospitalform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 17:30:42:659		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 17:30:42:664		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 17:30:42:712		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 17:30:42:712		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 17:30:42:754		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryFCSTAccuracy
+
+2020-06-17 17:30:42:897		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByDistrict
+
+2020-06-17 17:30:44:855		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryDistrictHospital
+
+2020-06-17 17:46:42:599		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProductform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 17:46:42:600		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProductform:[{year:2020},]
+
+2020-06-17 17:46:42:655		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 17:46:42:656		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 17:46:42:667		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 17:46:42:668		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 17:46:43:57		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProduct
+
+2020-06-17 17:46:43:163		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProduct
+
+2020-06-17 17:47:01:254		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ByDistrictClinicalQueryform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 17:47:01:315		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 17:47:01:336		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 17:47:01:514		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ByDistrictClinicalQuery
+
+2020-06-17 17:47:01:816		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 17:47:01:832		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 17:54:38:221		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProductform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 17:54:38:232		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProductform:[{year:2020},]
+
+2020-06-17 17:54:38:291		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 17:54:38:293		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 17:54:38:310		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 17:54:38:311		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 17:54:38:458		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProduct
+
+2020-06-17 17:54:38:769		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByProduct
+
+2020-06-17 17:56:38:826		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ByDistrictClinicalQueryform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 17:56:38:900		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 17:56:38:915		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 17:56:39:70		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ByDistrictClinicalQuery
+
+2020-06-17 17:56:39:405		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 17:56:39:414		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 17:56:46:773		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryFCSTAccuracyform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 17:56:46:784		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByDistrictform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 17:56:46:792		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryDistrictHospitalform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 17:56:46:867		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 17:56:46:869		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 17:56:46:877		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 17:56:46:878		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 17:56:46:994		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryFCSTAccuracy
+
+2020-06-17 17:56:47:45		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryDistrictHospital
+
+2020-06-17 17:56:47:381		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=QueryByDistrict
+
+2020-06-17 17:56:55:591		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ByDistrictClinicalQueryform:[{year:2020},{month:1,2,3,4,5,6,7,8,9,10,11,12},]
+
+2020-06-17 17:56:55:658		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 17:56:55:669		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-17 17:56:55:918		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/information.ashx?_op=ByDistrictClinicalQuery
+
+2020-06-17 17:56:56:160		进入 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-17 17:56:56:168		离开 lnt3wr1ukfl3knvullimcdyl /adnim/handler/GobalHandler.ashx?_op=userinfo
+

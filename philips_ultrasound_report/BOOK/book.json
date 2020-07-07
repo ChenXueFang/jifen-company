@@ -1,0 +1,31 @@
+﻿{
+  "title": "ACE-Teamplate 中文指南",
+  "description": "",
+  "language": "zh",
+  "plugins": [
+    "disqus",
+    "github",
+    "editlink",
+    "prism",
+    "-highlight",
+    "baidu",
+    "splitter"
+
+  ],
+  "pluginsConfig": {
+    "disqus": {
+      "shortName": "webpack-handbook"
+    },
+    "github": {
+      "url": "http://github.crmclick.com/Bruce/ACE-Template/"
+    },
+    "editlink": {
+      "base": "https://github.com/zhaoda/webpack-handbook/blob/master/content",
+      "label": "编辑本页"
+    },
+    "baidu": {
+        "token": "a9787f0ab45d5e237bab522431d0a7ec"
+    }
+
+  }
+}

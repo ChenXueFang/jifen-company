@@ -1,0 +1,577 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>ACE后台数据管理</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/jquery.gritter.css" />
+
+    <link rel="stylesheet" href="assets/css/jquery-ui-1.10.3.full.min.css" />
+    <link rel="stylesheet" href="assets/css/datepicker.css" />
+    <link rel="stylesheet" href="assets/css/ui.jqgrid.css" />
+
+    <!-- ace styles -->
+
+    <link rel="stylesheet" href="assets/css/ace.min.css" />
+    <link rel="stylesheet" href="assets/css/ace-rtl.min.css" />
+    <link rel="stylesheet" href="assets/css/ace-skins.min.css" />
+    <link rel="stylesheet" href="assets/js/ladda/css/demo.css" />
+
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+    <!--[if lte IE 8]>
+          <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
+        <![endif]-->
+    <!-- inline styles related to this page -->
+    <!-- ace settings handler -->
+    <script src="assets/js/ace-extra.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="assets/js/html5shiv.js"></script>
+        <script src="assets/js/respond.min.js"></script>
+        <![endif]-->
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="stylesheet" href="css/animate.css" />
+    <script src="js/vue.min.js"></script>
+    <style>
+        a {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body style="Overflow-y: hidden">
+    <script type="text/javascript">
+        window.jQuery || document.write("<script src='assets/js/jquery-2.0.3.min.js'>" + "<" + "/script>");
+    </script>
+
+    <div class="navbar navbar-default" id="navbar">
+        <script type="text/javascript">
+            try { ace.settings.check('navbar', 'fixed') } catch (e) { }
+        </script>
+
+        <div class="navbar-container" id="navbar-container">
+            <div class="navbar-header pull-left">
+                <a href="#" class="navbar-brand">
+                    <small>
+                        <i class="icon-leaf"></i>
+                        ACE后台数据管理
+                    </small>
+                </a>
+                <!-- /.brand -->
+            </div>
+            <!-- /.navbar-header -->
+
+            <div class="navbar-header pull-right" role="navigation">
+                <ul class="nav ace-nav">
+                    <li class="light-blue">
+                        <a data-toggle="dropdown" href="#" class="dropdown-toggle">
+                           
+                            <i class="icon-user" style="vertical-align:middle;">  </i>
+                            <small>Welcome,</small>
+                            <label id="labeluser" runat="server"></label>
+
+                            <i class="icon-caret-down"></i>
+                        </a>
+
+                        <ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+                            <li>
+                                <a data-id="ResetPassword.aspx" data-sub="重置密码">
+                                    <i class="icon-cog"></i>
+                                    修改密码
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <i class="icon-user"></i>
+                                    个人资料
+                                </a>
+                            </li>
+
+                            <li class="divider"></li>
+
+                            <li>
+                                <a href="#" onclick="return logout();">
+                                    <i class="icon-off"></i>
+                                    退出
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- /.ace-nav -->
+            </div>
+            <!-- /.navbar-header -->
+        </div>
+        <!-- /.container -->
+    </div>
+
+    <div class="main-container" id="main-container">
+        <script type="text/javascript">
+            try { ace.settings.check('main-container', 'fixed') } catch (e) { }
+        </script>
+
+        <div class="main-container-inner">
+            <a class="menu-toggler" id="menu-toggler" href="#">
+                <span class="menu-text"></span>
+            </a>
+
+            <div class="sidebar" id="sidebar">
+                <script type="text/javascript">
+                    try { ace.settings.check('sidebar', 'fixed') } catch (e) { }
+                </script>
+
+                <!-- #sidebar-shortcuts -->
+
+                <ul class="nav nav-list" id="nav-list">
+                    <li>
+                        <a>
+                            <i class="icon-dashboard"></i>
+                            <span class="menu-text">控制台 </span>
+                        </a>
+                    </li>
+
+                    <template v-for="item in menu">
+
+                        <li>
+                            <a href="#" class="dropdown-toggle">
+                                <i class='{{item.Icon==""?"icon-edit":item.Icon}}'></i>
+                                <span class="menu-text">{{item.Title}}</span>
+                                <b class="arrow icon-angle-down"></b>
+                            </a>
+                            <ul class="submenu">
+                                <li v-for="item1 in item.Menu">
+                                    <a v-bind:data-id="item1.ID">
+                                        <i class="icon-double-angle-right"></i> {{item1.Title}}
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </template>
+                </ul>
+                <!-- /.nav-list -->
+
+                <div class="sidebar-collapse" id="sidebar-collapse">
+                    <i class="icon-double-angle-left" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right"></i>
+                </div>
+
+                <script type="text/javascript">
+
+                    try { ace.settings.check('sidebar', 'collapsed') } catch (e) { }
+                </script>
+            </div>
+
+            <div class="main-content">
+                <div class="breadcrumbs" id="breadcrumbs">
+                    <div class="content-tabs">
+                        <button class="roll-nav roll-left J_tabLeft" id="leftPage">
+                            <i class="fa fa-backward"></i>
+                        </button>
+                        <nav class="page-tabs J_menuTabs" id="taps">
+                            <div class="page-tabs-content" id="tapsDiv"></div>
+                        </nav>
+                        <button class="roll-nav roll-right J_tabRight" id="rightPage">
+                            <i class="fa fa-forward"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="main-content2" id="main-content"></div>
+            </div>
+
+            <!-- /.main-content -->
+        </div>
+        <!-- /.main-container-inner -->
+
+        <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+            <i class="icon-double-angle-up icon-only bigger-110"></i>
+        </a>
+    </div>
+    <!-- /.main-container -->
+    <!-- basic scripts -->
+    <!--[if !IE]> -->
+    <!-- <![endif]-->
+    <!--[if IE]>
+    <script type="text/javascript">
+     window.jQuery || document.write("<script src='assets/js/jquery-1.10.2.min.js'>"+"<"+"/script>");
+    </script>
+    <![endif]-->
+
+    <script type="text/javascript">
+        if ("ontouchend" in document) document.write("<script src='assets/js/jquery.mobile.custom.min.js'>" + "<" + "/script>");
+    </script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/typeahead-bs2.min.js"></script>
+
+    <!-- page specific plugin scripts -->
+    <!--[if lte IE 8]>
+          <script src="assets/js/excanvas.min.js"></script>
+        <![endif]-->
+
+    <script src="assets/js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="assets/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="assets/js/chosen.jquery.min.js"></script>
+    <script src="assets/js/fuelux/fuelux.spinner.min.js"></script>
+    <script src="assets/js/date-time/bootstrap-datepicker.min.js"></script>
+    <script src="assets/js/date-time/bootstrap-timepicker.min.js"></script>
+    <script src="assets/js/date-time/moment.min.js"></script>
+    <script src="assets/js/date-time/daterangepicker.min.js"></script>
+    <script src="assets/js/bootstrap-colorpicker.min.js"></script>
+    <script src="assets/js/jquery.knob.min.js"></script>
+    <script src="assets/js/jquery.autosize.min.js"></script>
+    <script src="assets/js/jquery.inputlimiter.1.3.1.min.js"></script>
+    <script src="assets/js/jquery.maskedinput.min.js"></script>
+    <script src="assets/js/bootstrap-tag.min.js"></script>
+
+    <!-- ace scripts -->
+
+    <script src="assets/js/ace-elements.min.js"></script>
+    <script src="assets/js/ace.min.js"></script>
+
+    <script src="assets/js/jquery.gritter.min.js"></script>
+    <script src="js/mygritter.js"></script>
+
+    <script src="js/myfunction.js"></script>
+    <script src="js/global.js"></script>
+    <script src="js/HttpAjax.js"></script>
+    <script src="js/index.js"></script>
+    <script type="text/javascript">
+
+        jQuery(function ($) {
+            $('#recent-box [data-rel="tooltip"]').tooltip({ placement: tooltip_placement });
+            function tooltip_placement(context, source) {
+                var $source = $(source);
+                var $parent = $source.closest('.tab-content')
+                var off1 = $parent.offset();
+                var w1 = $parent.width();
+
+                var off2 = $source.offset();
+                var w2 = $source.width();
+
+                if (parseInt(off2.left) < parseInt(off1.left) + parseInt(w1 / 2)) return 'right';
+                return 'left';
+            }
+
+            //Android's default browser somehow is confused when tapping on label which will lead to dragging the task
+            //so disable dragging when clicking on label
+            var agent = navigator.userAgent.toLowerCase();
+            if ("ontouchstart" in document && /applewebkit/.test(agent) && /android/.test(agent))
+                $('#tasks').on('touchstart', function (e) {
+                    var li = $(e.target).closest('#tasks li');
+                    if (li.length == 0) return;
+                    var label = li.find('label.inline').get(0);
+                    if (label == e.target || $.contains(label, e.target)) e.stopImmediatePropagation();
+                });
+        })
+        //$(".nav-list").find("li").removeClass("active open");
+
+        function logout() {
+            if (confirm("确定要退出？")) {
+                window.location = "login.aspx?loginout=true";
+                sessionStorage.removeItem("selectYear")
+                sessionStorage.removeItem("selectMonth")
+                return false;
+            }
+        }
+    </script>
+
+    <script type="text/javascript">
+
+        var vue = new Vue({
+            el: "#nav-list",
+            data: {
+                menu: []
+            }
+        })
+        var menu = new Index({ url: "world" });
+        menu.init(function (data) {
+            vue.menu = data;
+        });
+
+        //var menuUrls=[];
+        //menuUrls["menu_user_list"]={url:"pages/user_list.html",title:"用户列表"};
+        //menuUrls["menu_role_list"]={url:"pages/role_list.html",title:"角色列表"};
+        //menuUrls["menu_modify_password"]={url:"pages/modify_password.html",title:"修改密码"};
+
+        //menuUrls["menu_modify_page__password"]={url:"pages/test.html",title:"测试页面"};
+
+        var getHeight = 0;
+
+        //设置内容显示区高度
+        function setMainContentHeight() {
+            var clientHeight = document.documentElement.clientHeight;
+            var tapsHieghtStr = $("#taps").css("height");
+            var tapsHieght = Number(tapsHieghtStr.substring(0, tapsHieghtStr.length - 2));
+            var navbarHeightStr = $("#navbar").css("height");
+            var navbarHeight = Number(navbarHeightStr.substring(0, navbarHeightStr.length - 2));
+            $("#main-content").css("width", "100%");
+            $("#main-content").css("height", (clientHeight - tapsHieght - navbarHeight - 20) + "px");
+            getHeight = (clientHeight - tapsHieght - navbarHeight - 22);
+        }
+        var tapsPage = 1;//标签滑动页面
+        $(function () {
+            var nickName = getCookie("nickName");
+            var token = getCookie("token");
+            if (nickName !== null && nickName !== "" && token !== null && token !== "") {
+                $("#nickName").html(nickName);
+            }
+
+            var currentId = window.location.hash;
+            if (currentId) {
+                currentId = currentId.substring(1, currentId.length);
+                if (menu.find(currentId) == null) {
+                    addIframe("menu_user_list");
+                } else {
+                    addIframe(currentId);
+                }
+            } else {
+                for (var key in menu.menulist) {
+
+                    if ($("#" + key.id + "_li").parent().css("display") != "none") {
+                        addIframe(key.id);
+                        break;
+                    }
+                }
+
+            }
+            setMainContentHeight();
+            $("#rightPage").on("click", function () {
+                var sumStr = $("#tapsDiv").css("width");
+                var sumLength = Number(sumStr.substring(0, sumStr.length - 2));
+
+                var pmStr = $("#breadcrumbs").css("width");
+                var pmLength = Number(pmStr.substring(0, pmStr.length - 2));
+
+                var leftPageStr = $("#leftPage").css("width");
+                var leftPageLength = Number(leftPageStr.substring(0, leftPageStr.length - 2));
+
+                var rightPageStr = $("#rightPage").css("width");
+                var rightPageLength = Number(rightPageStr.substring(0, rightPageStr.length - 2));
+
+                var pageWidth = (pmLength - rightPageLength - leftPageLength) * tapsPage;
+                if (sumLength - pageWidth <= 0) {
+                    return;
+                }
+                $("#tapsDiv").animate({ right: pageWidth + 'px' });
+                tapsPage++;
+            });
+
+            $("#leftPage").on("click", function () {
+                if (tapsPage <= 1) {
+                    tapsPage = 1;
+                    $("#tapsDiv").animate({ right: '0px' });
+                    return;
+                }
+                tapsPage--;
+                var sumStr = $("#tapsDiv").css("width");
+                var sumLength = Number(sumStr.substring(0, sumStr.length - 2));
+
+                var pmStr = $("#breadcrumbs").css("width");
+                var pmLength = Number(pmStr.substring(0, pmStr.length - 2));
+
+                var leftPageStr = $("#leftPage").css("width");
+                var leftPageLength = Number(leftPageStr.substring(0, leftPageStr.length - 2));
+
+                var rightPageStr = $("#rightPage").css("width");
+                var rightPageLength = Number(rightPageStr.substring(0, rightPageStr.length - 2));
+
+                var pageWidth = (pmLength - rightPageLength - leftPageLength) * (tapsPage - 1);
+                $("#tapsDiv").animate({ right: pageWidth + 'px' });
+            });
+
+            //$("#logout").on("click",function(){
+            //	$.ajax({
+            //		type:"get",
+            //		url:ctxPath+'/user/logout',
+            //		dataType:'json',
+            //		success:function(data){
+            //			delCookie("nickName");
+            //			delCookie("token");
+            //			window.location.href="login.html";
+            //		}
+            //	})
+            //});
+        })
+
+        $("body").on("click", "a[data-id]", function (e) {
+            addIframe($(this).data("id"), e, $(this).data("sub"));
+
+        })
+
+        var I64BIT_TABLE =
+        'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_-'.split('');
+
+        function hash(input) {
+            var hash = 5381;
+            var i = input.length - 1;
+
+            if (typeof input == 'string') {
+                for (; i > -1; i--)
+                    hash += (hash << 5) + input.charCodeAt(i);
+            }
+            else {
+                for (; i > -1; i--)
+                    hash += (hash << 5) + input[i];
+            }
+            var value = hash & 0x7FFFFFFF;
+
+            var retValue = '';
+            do {
+                retValue += I64BIT_TABLE[value & 0x3F];
+            }
+            while (value >>= 6);
+
+            return retValue;
+        }
+        function addIframe(id, e, sub) {
+            var event = e || window.event;
+            var obj = menu.find(id);
+            if (obj == null) {
+                if (!sub) {
+                    event.stopPropagation();    //  阻止事件冒泡
+                    return;
+                }
+                else {
+
+                    var x = hash(id)
+                    obj = menu.find(x);
+
+                    //先移除
+
+                    if (obj == null) {
+                        //添加到menu菜单列表
+                        var menu1 = new Menu(x, id, sub);
+                        obj = menu1;
+                        menu.menulist.push(menu1)
+                    }
+                }
+            }
+            if (document.getElementById(obj.id) === null) {
+                $(".J_iframe").css("display", "none");
+                var html = "";
+                html += '<iframe height="100%" scroll="auto" width="100%" class="J_iframe" id="' + obj.id + '" frameborder="0" src="' + obj.url + '">'
+                html += '</iframe>';
+                $("#main-content").append(html);
+                $(".J_menuTab").removeClass("selectedTab");
+                var titleHtml = "";
+                titleHtml += '<a href="javascript:;" data-id=' + obj.id + ' id="tab_' + obj.id + '" class="J_menuTab selectedTab"';
+                titleHtml += '	data-id="form_validate.html">' + obj.title + '<i';
+                titleHtml += '	class="fa fa-times-circle" onclick="delIframe(this,\'' + obj.id + '\')"></i></a>	';
+                $("#tapsDiv").append(titleHtml);
+            } else {
+                $(".J_iframe").css("display", "none");
+                $(".J_menuTab").removeClass("selectedTab");
+                $("#" + obj.id).css("display", "block");
+                if (!!sub) {
+                    $("#" + obj.id).attr('src', $("#" + obj.id).attr('src'));
+                }
+                $("#tab_" + obj.id).addClass("selectedTab");
+            }
+
+            if ($(".nav-list a[data-id=" + obj.id + "]").length > 0) {
+                //  $(".nav-list").find("li").removeClass("open");
+                $(".active").removeClass("active");
+                //   $(".nav-list").find("li").removeClass("active open");
+
+                // $(".nav-list a[data-id=" + obj.id + "]").parent().parent().parent().addClass("open");
+
+                $(".nav-list a[data-id=" + obj.id + "]").parent().addClass("active");
+            }
+            //$("#"+id+"_li").parent().addClass("active");
+
+            var url = window.location.href;
+            if (url.indexOf("#") != -1) {
+                url = url.substring(0, url.indexOf("#"));
+            }
+            window.location.href = url + "#" + id;
+
+        }
+
+        function delIframe(obj, id) {
+            var nextShowObj = $("#" + id).next();
+            var nextId = $(nextShowObj).attr("id");
+            if (nextId === undefined) {
+                nextShowObj = $("#" + id).prev();
+                nextId = $(nextShowObj).attr("id");
+            }
+            if (nextId !== undefined) {
+                addIframe(nextId);
+            }
+
+            $("#" + id).remove();
+            $(obj).parent().remove();
+            var event = window.event;
+            event.stopPropagation();    //  阻止事件冒泡
+        }
+    </script>
+    <script>
+        /**
+ * cookie操作
+ */
+        function setCookie(name, value, time) {
+            var exp = new Date();
+            if (time == 0) {
+                time = 1000 * 60 * 60 * 24 * 360;
+            }
+            if (time != null) {
+                exp.setTime(exp.getTime() + time);
+                document.cookie = name + "=" + escape(value) + ";expires="
+                        + exp.toGMTString();
+            } else {
+                document.cookie = name + "=" + escape(value);
+            }
+
+        }
+
+        function getCookie(name) {
+            var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+            if (arr = document.cookie.match(reg))
+                return unescape(arr[2]);
+            else
+                return null;
+        }
+
+        function delCookie(name) {
+            var exp = new Date();
+            exp.setTime(exp.getTime() - 1);
+            var cval = getCookie(name);
+            if (cval != null) {
+                document.cookie = name + "=" + cval + ";expires=" + exp.toGMTString();
+            }
+        }
+
+        function getRequest(pathName) {
+            var url = location.search; // 获取url中"?"符后的字串
+            var theRequest = new Object();
+            if (url.indexOf("?") != -1) {
+                var str = url.substr(1);
+                strs = str.split("&");
+                for (var i = 0; i < strs.length; i++) {
+                    theRequest[strs[i].split("=")[0]] = decodeURI((strs[i].split("=")[1]));
+                }
+            }
+            return theRequest[pathName];
+        }
+        getUserInfo();
+        function getUserInfo() {
+            var url = "handler/GobalHandler.ashx?_op=userinfo";
+            HttpAjax.ajaxget(url, "", function (data) {
+                $("#labeluser").text(data.data.UserName);
+            })
+        }
+        window.onresize = function () {
+            setMainContentHeight();
+            console.log("变化" + document.body.offsetHeight
+);
+        }
+    </script>
+</body>
+</html>

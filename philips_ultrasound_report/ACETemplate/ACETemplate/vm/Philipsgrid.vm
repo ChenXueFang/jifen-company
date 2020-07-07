@@ -1,0 +1,800 @@
+﻿##FILENAME:${table.GetClassName()}GRID.aspx
+##
+## Inspired by http://sqlblog.com/blogs/rhundhausen/archive/2007/09/18/code-that-writes-code-or-tsql-that-writes-asp-net.aspx
+##
+## Generate an ASP.Net 2.0 web form
+## More work is needed, as I do not have a functional page, just a sketch-up.
+## It is missing proper support for non-string datatypes.  This template also
+## needs lookup support for related tables, with either a listed description
+## field or a drop-down selection of choices for "small" tables.
+##
+<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/adnim/SiteAdmin.Master" CodeBehind="${table.GetClassName()}Grid.aspx.cs"  Inherits="$namespace.${table.GetClassName()}Grid" %>
+
+<%@ Register Src="~/adnim/include/HeadNavigation.ascx" TagPrefix="uc1" TagName="HeadNavigation" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+   <link  href="css/element-ui.css" rel="stylesheet" />
+
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+    <uc1:HeadNavigation runat="server" ID="HeadNavigation"  />
+	<div class="page-content">
+		<div id="app" class="pageform">
+<el-form :inline="true" :model="Form" class="demo-form-inline"  @submit.prevent.stop.native="onSubmit" >
+#foreach($f in $fields)
+					#if(${f.GetSearch()})
+						#if(${f.GetNetType()}=="string"  )
+							 <el-form-item v-bind:label="Form.${f.GetPropertyName()}.label">
+								<el-input v-model="Form.${f.GetPropertyName()}.value" v-bind:placeholder="Form.${f.GetPropertyName()}.label"></el-input>
+							  </el-form-item>
+						#end
+						#if(${f.GetNetType()}=="int" || ${f.GetNetType()}=="int?"  || ${f.GetNetType()}=="float?" || ${f.GetNetType()}=="float"  || ${f.GetNetType()}=="demical" || ${f.GetNetType()}=="demical?" )
+							#if(${f.GetJsonType()}=="select")
+								<el-form-item  v-bind:label="Form.${f.GetPropertyName()}.label">
+								<el-select v-model="Form.${f.GetPropertyName()}.value" clearable filterable  v-bind:placeholder="Form.${f.GetPropertyName()}.label">
+								   <el-option
+								  v-for="item in Form.${f.GetPropertyName()}.values"
+								  :label="item.${f.GetSelectValueField()}"
+								  :value="item.${f.GetSelectKeyField()}">
+								</el-option>
+								</el-select>
+								</el-form-item>
+							#else
+								 <el-form-item v-bind:label="Form.${f.GetPropertyName()}.label">
+								<el-input v-model="Form.${f.GetPropertyName()}.value" v-bind:placeholder="Form.${f.GetPropertyName()}.label"></el-input>
+							  </el-form-item>
+				
+							#end
+						#end
+						#if(${f.GetNetType()}=="DateTime?" || ${f.GetNetType()}=="DateTime")
+						<el-form-item  v-bind:label="Form.${f.GetPropertyName()}.label">
+									<el-date-picker v-model=" Form.${f.GetPropertyName()}.value" format="yyyy/MM/dd" type="daterange" align="right" placeholder="选择日期范围" >
+								</el-date-picker>
+							  </el-form-item>
+						#end
+						#if(${f.GetNetType()}=="bool" || ${f.GetNetType()}=="bool?"   )
+							<el-form-item  v-bind:label="Form.${f.GetPropertyName()}.label">
+								<el-switch v-model=" Form.${f.GetPropertyName()}.value"></el-switch>
+							  </el-form-item>
+						#end
+					#end
+				
+			   #end
+
+	<el-form-item>
+ <img class="queryAndExportIcon" src="assets/images/query.png"  @click="onSubmit" />	
+  </el-form-item>
+   <img class="addData" src="assets/images/adddata.png" @click="Add" />
+</el-form>
+    <div style="clear:both"></div>
+</div>
+        <!-- /.page-header -->
+        <div class="row">
+            <div class="col-xs-12">
+                <table id="grid-table"></table>
+                <div id="grid-pager"></div>
+                   <!-- PAGE CONTENT ENDS -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+	</div>
+    <!-- /.page-content -->
+
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="ScriptBlock" runat="server">
+    <script src="assets/js/jqGrid/jquery.jqGrid.min.js"></script>
+    <script src="assets/js/jqGrid/i18n/grid.locale-cn.js"></script>
+	<script src="js/element.js"></script>
+    <script src="js/GridModel.js"></script>
+
+	 <script src="js/page/bootpag.js"></script>
+    <script src="js/page/NewPage.js"></script>
+
+    <script type="text/javascript">
+        var grid_selector = "#grid-table";
+        var pager_selector = "#grid-pager";
+
+		        var viewoption = {
+            //view record form
+            recreateForm: true,
+            beforeShowForm: function (e) {
+                var form = $(e[0]);
+                form.closest('.ui-jqdialog').find('.ui-jqdialog-title').wrap('<div class="widget-header" />')
+                //  form.find("tr:eq(3)").hide();
+                form.parent().parent().parent().width('35%');
+
+                form.find(':input').width('30%');
+            }
+        }
+        var eqoption = {
+            //edit record form
+            //closeAfterEdit: true,
+            recreateForm: true,
+            beforeShowForm: function (e) {
+
+                var form = $(e[0]);
+                form.closest('.ui-jqdialog').find('.ui-jqdialog-titlebar').wrapInner('<div class="widget-header" />')
+                style_edit_form(form);
+                //  aceSwitch(null, null, e);
+
+            },
+            afterSubmit: function (response, postdata) {
+                var data = jQuery.parseJSON(response.responseText);
+                if (data.success) {
+                    return true;
+                } else {
+                    //alert(data.msg);
+                    return [false, data.msg];
+                }
+            },
+            //closeAfterAdd: true,//Closes the add window after add
+            closeAfterEdit: true,
+            closeOnEscape: true,//Closes the popup on pressing escape key
+            reloadAfterSubmit: true,
+
+        };
+
+        function viewRows(data) {
+            jQuery(grid_selector).viewGridRow(data, viewoption);
+
+        }
+
+        function editRows1(data) {
+
+            jQuery(grid_selector).editGridRow(data, eqoption);
+
+        }
+
+        function delRows1(data) {
+          
+            jQuery(grid_selector).delGridRow(data, deloption);
+        }
+
+      
+      //  $(function () {
+        	var mygridinfo = {
+		    url: 'handler/information.ashx?_op=${table.GetClassName()}Query',
+		    editurl: 'handler/information.ashx?_op=${table.GetClassName()}',
+		    caption:''
+				}
+			 #set ($nselect = 0)	
+			 #set($ns="")
+			 #foreach($f in $fields)
+				#if((${f.GetNetType()}=="int?" || ${f.GetNetType()}=="int" ) &&  ${f.GetJsonType()}=="select"  )                   	
+						#set($nselect=$nselect+1)
+						#if($nselect>1)
+							#set($ns=$nselect)
+						#end
+						
+						var edurl${ns}= '${f.GetSelectUrl()}';
+						if(edurl${ns}.indexOf(".") == -1) {
+							edurl${ns} = 'handler/information.ashx?_op=' + edurl${ns} + "Query&rows=1000";
+						}
+
+			    var editeq${ns} = {
+                dataUrl: edurl${ns},
+                buildSelect: function (data) {
+
+                    var t = jQuery.parseJSON(data);
+                    var t2 = t.rows;
+                    //  JSON.parse(data);
+                    var t1 = mycustomfunction.getgridselecthtml(t2, '${f.GetSelectKeyField()}', '${f.GetSelectValueField()}');
+                    var t3 = $(t1)
+                    setTimeout(function () {
+
+                        $(".chosen-select").trigger("liszt:updated");
+
+                        $(".chosen-select").chosen().on("change", function (evt, params) {
+                        
+                        });
+                        $(".chosen-container").width("80%");
+                    }, 10);
+                    return t3.prop('outerHTML');
+
+                }
+            };
+            var selecteq${ns} = jQuery.extend(editeq${ns}, { sopt: ['eq'] });
+
+			#end
+			#end
+
+        	var deloption = {
+		    //delete record form
+		    recreateForm: true,
+		    beforeShowForm: function (e) {
+		        var form = $(e[0]);
+		        if (form.data('styled')) return false;
+
+		        form.closest('.ui-jqdialog').find('.ui-jqdialog-titlebar').wrapInner('<div class="widget-header" />')
+		        style_delete_form(form);
+
+		        form.data('styled', true);
+		    },
+		    afterSubmit: function (data, postdata) {
+		        debugger;
+		        var jsonResponse = jQuery.parseJSON(data.responseText);
+		        if (jsonResponse.success) {
+		            return [true, ""];
+		        } else
+		            // alert("afterSubmit");
+		            return [false, "提交错误"]; //è?????0è?¨?¤o?-￡???
+		    },
+		}
+
+ 			 #set ($nselect1 = 0)	
+			 #set($ns1="")
+            function gridload() {
+                jQuery(grid_selector).jqGrid({
+                	ajaxSelectOptions: { type: "GET" },
+                    //direction: "rtl",
+                    datatype: "json",
+                    mytype: 'POST',
+                    url: mygridinfo.url,
+                    postData: {
+                        name: ""
+                    },
+
+		 #foreach($f in $fields)
+			 	                
+		       #if($f.IsPrimaryKey())
+			sortname: "${f.GetPropertyName()}"  ,
+		#end
+		#end
+				
+			    sortorder: "desc" ,
+                    // multiselect: true,
+                    //multikey: "ctrlKey",
+                    //multiboxonly: true,
+                    sortable: false,
+					 height: true,
+                    scrollOffset: 2,
+                    colNames: [
+                    #foreach($f in $fields)
+						#if(${f.GetPropertyName()}!='IsDeleted' && ${f.GetPropertyName()}!='IsDelete')
+						'${f.GetLabel()}',
+						#end
+					#end
+					'Action'
+                    ],
+                    colModel: [
+                        //{
+                        //    name: 'myac', index: '', width: 150, fixed: true
+                        //},
+                   #set( $keyfiled='')
+                   #foreach($f in $fields)
+			
+			 #set($ishiden="")
+			 #set($isedit="true")
+                         #if($f.GetHide())
+			 	#set($ishiden=" hidden:true, ")
+				#end
+			 #if($f.GetNoEdit())
+				#set($isedit="false")
+			 #end			 	                
+		       #if($f.IsPrimaryKey())
+				#set ($keyfiled=${f.GetPropertyName()})
+	                    	{ name: '${f.GetPropertyName()}', index: '${f.GetPropertyName()}', width: 90, hidden: true, key: true , formatter: 'actions',
+                        key: true,
+                        formatoptions: {
+                            editformbutton:true,
+                            delbutton:true,
+                            delOptions: deloption,
+                         
+                        }},
+
+							
+	                    #else
+							#if(${f.GetPropertyName()}!='IsDeleted' && ${f.GetPropertyName()}!='IsDelete' )
+		                  	#if(${f.GetNetType()}=="DateTime?" || ${f.GetNetType()}=="DateTime"  )
+								 	{ ${ishiden} name: '${f.GetPropertyName()}', index: '${f.GetPropertyName()}', editable: ${isedit},width: 90,  search: true, searchoptions: {
+                                  dataInit: searchdate, attr: { title: 'select date' }, sopt: ['eq', 'lt' ,'gt']
+                              }, searchtype: 'text',searchrules:{required:true},formatter: 'date', formatoptions: { srcformat: 'Y-m-d H:i:s', newformat: 'Y/m/d' } },
+		                    #else
+		                     	#if(${f.GetNetType()}=="bool" || ${f.GetNetType()}=="bool?"   )
+		                     							{ ${ishiden} name:'${f.GetPropertyName()}',index:'${f.GetPropertyName()}', width:70,   search: true, searchoptions: {
+                                 dataUrl: '/data/checkbox.html', sopt: ['eq']
+                             } 
+		                , stype: 'select',editable: ${isedit},edittype:"checkbox",editoptions: {value:"true:false"},unformat: aceSwitch2,formatter:aceSwitch1},
+		
+		                     	#else
+		                     		##数据类型
+										#if(${f.GetNetType()}=="float?" || ${f.GetNetType()}=="float"  ||  ${f.GetNetType()}=="demical"   ||  ${f.GetNetType()}=="demical?" ||${f.GetNetType()}=="int?" || ${f.GetNetType()}=="int"  ||  ${f.GetNetType()}=="double"   ||  ${f.GetNetType()}=="double?"     )
+			                     			{ ${ishiden}  name: '${f.GetPropertyName()}', index: '${f.GetPropertyName()}', width: 70, search: true, editable: ${isedit},editrules:{number:true},
+												
+												#if(${f.GetJsonType()}=="select")
+													#set($nselect1=$nselect1+1)
+						#if($nselect1>1)
+							#set($ns1=$nselect1)
+						#end
+												    edittype: "select",
+													 editoptions: editeq${ns1},
+													searchoptions: selecteq${ns1}
+                          				    		,stype: 'select',
+											
+												#else
+														searchoptions: {sopt: ['eq', 'lt' ,'gt','ge','le']}
+                          				    	,searchtype: 'text',
+												#end
+                          				    	#if(${f.GetNetType()}=="int?" || ${f.GetNetType()}=="int"  ||  ${f.GetNetType()}=="double"   ||  ${f.GetNetType()}=="double?" )
+                          				    		 searchrules:{integer:true,required:true},
+                          				    	#else
+                                    				 searchrules:{number:true,required:true},
+
+                          				    	#end
+                
+                							},
+		                     			#else
+		                     		
+			                     		#if( $f.Character_Maximum_Length<=255)
+			                     				{ ${ishiden}  name: '${f.GetPropertyName()}', index: '${f.GetPropertyName()}', width: 90 ,searchoptions: {sopt:['cn', 'eq', 'ne', 'bw', 'ew']},editable: ${isedit}},
+										#else
+												{ ${ishiden}  name: '${f.GetPropertyName()}', index: '${f.GetPropertyName()}', width: 120,formatter:stringFomart ,unformat:unstringFomart,searchoptions: {sopt: ['cn', 'eq', 'ne', 'bw', 'ew']},editable: ${isedit},edittype:"textarea", editoptions:{rows:"5"}},
+										#end
+									#end
+		                     	#end
+		              
+		                     #end
+		                     #end
+	                    
+						#end
+				
+                    #end 
+                    {
+                             width: 90, viewable: false, sortable: false,
+                             formatter: function (data,v,row) {
+				 var key=row.${keyfiled}	
+                                 var view = `<div title="" style="float:left;cursor:pointer;display:;margin-left:5px; " class="ui-pg-div ui-inline-edit" id="jEditButton_1" onclick="viewRows(${key})" onmouseover="jQuery(this).addClass('ui-state-hover');" onmouseout="jQuery(this).removeClass('ui-state-hover');" data-original-title="查看"><span class="ui-icon icon-zoom-in grey"></span></div>`
+                                 return `<div style="margin-left:8px;"><div title="" style="float:left;cursor:pointer;" class="ui-pg-div ui-inline-edit" id="jEditButton_1" onclick="editRows1(${key})" onmouseover="jQuery(this).addClass('ui-state-hover');" onmouseout="jQuery(this).removeClass('ui-state-hover');" data-original-title="编辑"><span class="ui-icon ui-icon-pencil"></span></div><div title="" style="float:left;margin-left:5px;" class="ui-pg-div ui-inline-del" id="jDeleteButton_1" onclick="delRows1(${key})" onmouseover="jQuery(this).addClass('ui-state-hover');" onmouseout="jQuery(this).removeClass('ui-state-hover');" data-original-title="删除"><span class="ui-icon ui-icon-trash"></span></div><div title="" style="float:left;display:none" class="ui-pg-div ui-inline-save" id="jSaveButton_1" onclick="jQuery.fn.fmatter.rowactions.call(this,'save');" onmouseover="jQuery(this).addClass('ui-state-hover');" onmouseout="jQuery(this).removeClass('ui-state-hover');" data-original-title="Submit"><span class="ui-icon ui-icon-disk"></span></div><div title="" style="float:left;display:none;margin-left:5px;" class="ui-pg-div ui-inline-cancel" id="jCancelButton_1" onclick="jQuery.fn.fmatter.rowactions.call(this,'cancel');" onmouseover="jQuery(this).addClass('ui-state-hover');" onmouseout="jQuery(this).removeClass('ui-state-hover');" data-original-title="Cancel"><span class="ui-icon ui-icon-cancel"></span></div>${view}</div>`
+                             }
+
+                         },
+
+                    ],
+                   // ondblClickRow:editRows,
+                    viewrecords: true,
+                    rowNum: 10,
+                    rowList: [10, 20, 50],
+                    pager: pager_selector,
+                    altRows: true,
+                    //toppager: true,
+
+                    //loadonce: true,
+
+                    loadComplete: function (res) {
+                        var table = this;
+                        var ids = jQuery(grid_selector).jqGrid('getDataIDs');
+                  
+                        //    var cl = ids[i];
+                        //    //var rowData = $("#grid-table").getRowData(cl);
+                        //    ed = '<button class="btn-minier btn-info" style="height:22px;width:50px;margin-left:5px;" type="button" onclick="editRow(' + cl + ')">编辑</button>';
+                        //    de = "<button class='btn-minier btn-danger' style='height:22px;width:50px;margin-left:5px;' type='button' onclick=\'delRow(" + cl + ")' >删除</button>";
+                        //    jQuery(grid_selector).jqGrid('setRowData', ids[i], { myac: ed + de });
+
+                       if (ids == 0 || ids == null) {
+					    if ($(".norecords").html() == null) {
+					        jQuery(grid_selector).parent().append("<div class=\"norecords\">暂无数据</div>");
+					    }
+					} else {
+					    $(".norecords").css("display", "none");
+					}
+
+					$(this).jqGrid("initPagination", res);
+
+                        setTimeout(function () {
+                        //    updatePagerIcons(table);
+                            styleCheckbox(table);
+                            updateActionIcons(table);
+                            updatePagerIcons(table);
+                            enableTooltips(table);
+                        }, 0);
+                    },
+
+                    editurl:mygridinfo.editurl,//nothing is saved
+                    caption: mygridinfo.caption,
+                    autowidth: true
+          
+                    
+
+                });
+            }
+
+            gridload();
+
+				var addoption = {
+			    //new record form
+			    //closeAfterAdd: true,
+			    //recreateForm: true,
+			    //viewPagerButtons: false,
+			    closeAfterAdd: true,
+			    recreateForm: true,
+			    viewPagerButtons: false,
+			    beforeShowForm: function (e) {
+			        var form = $(e[0]);
+			        form.closest('.ui-jqdialog').find('.ui-jqdialog-titlebar').wrapInner('<div class="widget-header" />')
+			        style_edit_form(form);
+			        //debugger;
+			        // aceSwitch(null,null,e);
+			    }
+                     ,
+			    afterSubmit: function (response, postdata) {
+			        var data = jQuery.parseJSON(response.responseText);
+			        if (data.success) {
+			            return true;
+			        } else {
+			            //errorgrit("Error", data.msg);
+			            return [false, data.msg];
+			        }
+			    }
+			}
+
+          
+            var eqoption = {
+                //edit record form
+                //closeAfterEdit: true,
+                recreateForm: true,
+                beforeShowForm: function (e) {
+
+                    var form = $(e[0]);
+                    form.closest('.ui-jqdialog').find('.ui-jqdialog-titlebar').wrapInner('<div class="widget-header" />')
+                    style_edit_form(form);
+                  //  aceSwitch(null, null, e);
+
+                },
+                afterSubmit: function (response, postdata) {
+                    var data = jQuery.parseJSON(response.responseText);
+                    if (data.success) {
+                        return true;
+                    } else {
+                        //alert(data.msg);
+                        return [false,"操作失败"];
+                    }
+                },
+                //closeAfterAdd: true,//Closes the add window after add
+                closeAfterEdit: true,
+                closeOnEscape: true,//Closes the popup on pressing escape key
+                reloadAfterSubmit: true,
+				viewPagerButtons: false,
+            };
+
+
+
+            //navButtons
+            jQuery(grid_selector).jqGrid('navGrid', pager_selector,
+                { 	//navbar options
+                    edit: false,
+                    editicon: 'icon-pencil blue',
+                    add: false,
+                    //addfunc: function () { alert("d"); },
+
+                    addicon: 'icon-plus-sign purple',
+
+                    del: false,
+                    delicon: 'icon-trash red',
+                    search: false,
+                    searchicon: 'icon-search orange',
+               
+                    refresh: false,
+                    refreshicon: 'icon-refresh green',
+
+                    view: false,
+                    viewicon: 'icon-zoom-in grey',
+                },
+                //eidtoptions
+               addoption,
+               eqoption,
+                deloption,
+                {
+
+
+                    //search form
+                    recreateForm: true,
+                    afterShowSearch: function (e) {
+                        var form = $(e[0]);
+                        form.closest('.ui-jqdialog').find('.ui-jqdialog-title').wrap('<div class="widget-header" />')
+                        style_search_form(form);
+                        //   style_search_filters(form);
+
+                    },
+                    afterRedraw: function () {
+                        style_search_filters($(this));
+                    }
+                    ,
+                                        multipleSearch: true,
+
+                    /**
+                    multipleGroup:true,
+                    
+                    */
+                },
+                {
+                    //view record form
+                    recreateForm: true,
+                    beforeShowForm: function (e) {
+                        var form = $(e[0]);
+                        form.closest('.ui-jqdialog').find('.ui-jqdialog-title').wrap('<div class="widget-header" />')
+                    }
+                }
+            )
+
+
+       
+
+    
+            //enable search/filter toolbar
+            //jQuery(grid_selector).jqGrid('filterToolbar',{defaultSearch:true,stringResult:true})
+
+            //switch element when editing inline
+            function aceSwitch(cellvalue, options, cell) {
+                setTimeout(function () {
+                    $(cell).find('input[type=checkbox]')
+                            .wrap('<label class="inline" />')
+                        .addClass('ace ace-switch ace-switch-5')
+                        .after('<span class="lbl"></span>');
+                }, 0);
+            }
+  		 function aceSwitch1(cellvalue, options, cell) {
+
+
+			    var s = "";
+			    if (cellvalue == true) {
+			        //return '<span class="label label-xlg label-primary arrowed-in-right arrowed-in"">YES</span>';
+					 return '<span >YES</span>';
+
+			    }
+			    else {
+			       // return '<span class="label  label-xlg label-grey arrowed-in-right arrowed-in"">NO</span>';
+				    return '<span >NO</span>';
+			    }
+			    return s;
+			}
+			function aceSwitch2(cellvalue, options, cell) {
+			   // return "true";
+			    if (cellvalue == "YES") {
+			        return "true";
+			    }
+			    return "false";
+			    //return $(cellvalue).val();
+			}
+            function pickDate(cellvalue, options, cell) {
+                setTimeout(function () {
+                    $(cell).find('input[type=text]')
+                            .datepicker({ format: 'yyyy-mm-dd', autoclose: true });
+                }, 0);
+            }
+			
+		
+           function searchdate(cell) {
+
+		            setTimeout(function () {
+		                $(cell)
+							.datepicker({ format: 'yyyy-mm-dd', autoclose: true });
+		            }, 0);
+		        }
+
+            function editRows() {
+                var rowKey = jQuery(grid_selector).getGridParam("selrow");
+                if (rowKey) {
+                    jQuery(grid_selector).editGridRow(rowKey, eqoption);
+                }
+                else {
+                    alert("No rows are selected");
+                }
+            }
+            function style_edit_form(form) {
+
+			
+                form.parent().parent().parent().width('35%');
+
+                form.find(':input').width('70%');
+            	
+            	  #foreach($f in $fields)
+		                  	#if(${f.GetNetType()}=="DateTime?" || ${f.GetNetType()}=="DateTime"  )
+							form.find('input[name=${f.GetPropertyName()}]').datepicker({ format: 'yyyy-mm-dd', autoclose: true });
+							
+							#end
+		                     #if(${f.GetNetType()}=="bool" || ${f.GetNetType()}=="bool?"   )
+                        	 form.find('input[name=${f.GetPropertyName()}]')
+                        		.addClass('ace ace-switch ace-switch-5').wrap('<label class="inline" />').after('<span class="lbl"></span>');
+							#end
+                    #end 
+                //enable datepicker on "sdate" field and switches for "stock" field
+                //form.find('input[name=sdate]').datepicker({ format: 'yyyy-mm-dd', autoclose: true })
+                //    .end()
+
+                //form.find('input[name=Role1]')
+                        // .addClass('ace ace-switch ace-switch-5').wrap('<label class="inline" />').after('<span class="lbl"></span>');
+                //form.find('input[name=Role2]')
+                     //.addClass('ace ace-switch ace-switch-5').wrap('<label class="inline" />').after('<span class="lbl"></span>');
+               // form.find('input[name=Role3]')
+                    // .addClass('ace ace-switch ace-switch-5').wrap('<label class="inline" />').after('<span class="lbl"></span>');
+                ////update buttons classes
+                var buttons = form.next().find('.EditButton .fm-button');
+                buttons.addClass('btn btn-sm').find('[class*="-icon"]').remove();//ui-icon, s-icon
+                buttons.eq(0).addClass('btn-primary').prepend('<i class="icon-ok"></i>');
+                buttons.eq(1).prepend('<i class="icon-remove"></i>')
+
+                buttons = form.next().find('.navButton a');
+                buttons.find('.ui-icon').remove();
+                buttons.eq(0).append('<i class="icon-chevron-left"></i>');
+                buttons.eq(1).append('<i class="icon-chevron-right"></i>');
+            }
+
+            function style_delete_form(form) {
+                var buttons = form.next().find('.EditButton .fm-button');
+                buttons.addClass('btn btn-sm').find('[class*="-icon"]').remove();//ui-icon, s-icon
+                buttons.eq(0).addClass('btn-danger').prepend('<i class="icon-trash"></i>');
+                buttons.eq(1).prepend('<i class="icon-remove"></i>')
+            }
+
+            function style_search_filters(form) {
+                form.find('.delete-rule').val('X');
+                form.find('.add-rule').addClass('btn btn-xs btn-primary');
+                form.find('.add-group').addClass('btn btn-xs btn-success');
+                form.find('.delete-group').addClass('btn btn-xs btn-danger');
+            }
+            function style_search_form(form) {
+                var dialog = form.closest('.ui-jqdialog');
+                var buttons = dialog.find('.EditTable')
+                buttons.find('.EditButton a[id*="_reset"]').addClass('btn btn-sm btn-info').find('.ui-icon').attr('class', 'icon-retweet');
+                buttons.find('.EditButton a[id*="_query"]').addClass('btn btn-sm btn-inverse').find('.ui-icon').attr('class', 'icon-comment-alt');
+                buttons.find('.EditButton a[id*="_search"]').addClass('btn btn-sm btn-purple').find('.ui-icon').attr('class', 'icon-search');
+            }
+
+            function beforeDeleteCallback(e) {
+                var form = $(e[0]);
+                if (form.data('styled')) return false;
+
+                form.closest('.ui-jqdialog').find('.ui-jqdialog-titlebar').wrapInner('<div class="widget-header" />')
+                style_delete_form(form);
+
+                form.data('styled', true);
+            }
+
+            function beforeEditCallback(e) {
+                var form = $(e[0]);
+                form.closest('.ui-jqdialog').find('.ui-jqdialog-titlebar').wrapInner('<div class="widget-header" />')
+                style_edit_form(form);
+            }
+
+
+          
+            function styleCheckbox(table) {
+                /**
+                    $(table).find('input:checkbox').addClass('ace')
+                    .wrap('<label />')
+                    .after('<span class="lbl align-top" />')
+            
+            
+                    $('.ui-jqgrid-labels th[id*="_cb"]:first-child')
+                    .find('input.cbox[type=checkbox]').addClass('ace')
+                    .wrap('<label />').after('<span class="lbl align-top" />');
+                */
+            }
+
+
+            //unlike navButtons icons, action icons in rows seem to be hard-coded
+            //you can change them like this in here if you want
+            function updateActionIcons(table) {
+                /**
+                var replacement = 
+                {
+                    'ui-icon-pencil' : 'icon-pencil blue',
+                    'ui-icon-trash' : 'icon-trash red',
+                    'ui-icon-disk' : 'icon-ok green',
+                    'ui-icon-cancel' : 'icon-remove red'
+                };
+                $(table).find('.ui-pg-div span.ui-icon').each(function(){
+                    var icon = $(this);
+                    var $class = $.trim(icon.attr('class').replace('ui-icon', ''));
+                    if($class in replacement) icon.attr('class', 'ui-icon '+replacement[$class]);
+                })
+                */
+            }
+
+            //replace icons with FontAwesome icons like above
+            function updatePagerIcons(table) {
+                var replacement =
+                {
+                    'ui-icon-seek-first': 'icon-double-angle-left bigger-140',
+                    'ui-icon-seek-prev': 'icon-angle-left bigger-140',
+                    'ui-icon-seek-next': 'icon-angle-right bigger-140',
+                    'ui-icon-seek-end': 'icon-double-angle-right bigger-140'
+                };
+                $('.ui-pg-table:not(.navtable) > tbody > tr > .ui-pg-button > .ui-icon').each(function () {
+                    var icon = $(this);
+                    var $class = jQuery.trim(icon.attr('class').replace('ui-icon', '')); //lost this
+
+                    if ($class in replacement) icon.attr('class', 'ui-icon ' + replacement[$class]);
+                })
+            }
+
+            function enableTooltips(table) {
+                $('.navtable .ui-pg-button').tooltip({ container: 'body' });
+                $(table).find('.ui-pg-div').tooltip({ container: 'body' });
+            }		
+          
+       // });    
+    </script>
+
+		<script>
+	var vue=new Vue({
+	   el:"#app",
+	   data:{
+		   Form:{	
+			   #foreach($f in $fields)
+					#if(${f.GetSearch()})
+						#if(${f.GetNetType()}=="string"  )
+							${f.GetPropertyName()}:{name:"${f.GetPropertyName()}",label: "${f.GetLabel()}", value: '', op: "like", data: "string" },
+						#end
+						#if(${f.GetNetType()}=="int" || ${f.GetNetType()}=="int?"  || ${f.GetNetType()}=="float?" || ${f.GetNetType()}=="float"  || ${f.GetNetType()}=="demical" || ${f.GetNetType()}=="demical?" )
+							#if(${f.GetJsonType()}=="select")
+								${f.GetPropertyName()}:{name:"${f.GetPropertyName()}",label: "${f.GetLabel()}", value: '',values:[], op: "=", data: "select" },
+							#else
+								${f.GetPropertyName()}:{name:"${f.GetPropertyName()}",label: "${f.GetLabel()}", value: '', op: "=", data: "string" },
+				
+							#end
+						#end
+						#if(${f.GetNetType()}=="DateTime?" || ${f.GetNetType()}=="DateTime")
+							${f.GetPropertyName()}:{name:"${f.GetPropertyName()}",label: "${f.GetLabel()}", value: [], op: "", data: "date" },
+						#end
+						#if(${f.GetNetType()}=="bool" || ${f.GetNetType()}=="bool?"   )
+								${f.GetPropertyName()}:{name:"${f.GetPropertyName()}",label: "${f.GetLabel()}", value: false, op: "=", data: "bool" },
+						#end
+					#end
+				
+			   #end
+			 }
+	   },
+	   created: function () {
+			
+			  #foreach($f in $fields)	
+				#if(${f.GetNetType()}=="int" || ${f.GetNetType()}=="int?"  || ${f.GetNetType()}=="float?" || ${f.GetNetType()}=="float"  || ${f.GetNetType()}=="demical" || ${f.GetNetType()}=="demical?" )
+					#if(${f.GetJsonType()}=="select")
+						
+					var url = '${f.GetSelectUrl()}';
+						if(url.indexOf(".") == -1) {
+							url = 'handler/information.ashx?_op=' + url + "Query&rows=1000";
+						}
+					  jQuery.ajax({
+								url: url,
+								type: 'get',
+								dataType: "json",
+								success: function (data) {
+									vue.Form.${f.GetPropertyName()}.values = data.rows||data;
+								},
+								error: function (err) {
+									mygritter.errorgrit("失败",err.status);
+                    
+								}
+
+							});
+					
+					#end
+				
+				#end
+			#end
+				
+              
+             
+            },
+            methods: {
+                onSubmit() {
+                  var t1 =jQuery.SearchToSql(this.Form);
+                  jQuery("#grid-table").jqGrid("getGridParam", "postData").filters = JSON.stringify(t1);
+                  jQuery("#grid-table").jqGrid("setGridParam", { search: true }).trigger("reloadGrid", [{ page: 1 }]);
+                },
+				Add:function(){
+				 jQuery(grid_selector).editGridRow("new", addoption);
+				}
+            }
+	   
+	})
+	
+	</script>
+
+
+
+     </asp:Content>

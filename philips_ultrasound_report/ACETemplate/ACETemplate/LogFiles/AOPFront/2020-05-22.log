@@ -1,0 +1,2940 @@
+2020-05-22 10:21:15:890		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/Login.aspx
+
+2020-05-22 10:21:15:891		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/Login.aspx
+
+2020-05-22 10:23:24:257		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=loginform:[{username:admin},{password:111111},]
+
+2020-05-22 10:23:24:357		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=login
+
+2020-05-22 10:23:25:238		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/information.ashx?_op=V_VedioQuery&name=&_search=false&nd=1590114205230&rows=10&page=1&sidx=Sort&sord=desc
+
+2020-05-22 10:23:25:240		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/information.ashx?_op=V_VedioQuery&name=&_search=false&nd=1590114205230&rows=10&page=1&sidx=Sort&sord=desc
+
+2020-05-22 10:23:25:299		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 10:23:25:307		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 10:23:25:808		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 10:23:25:836		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 10:24:49:413		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 10:24:49:413		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 10:24:49:917		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 10:24:49:920		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 10:24:54:658		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/information.ashx?_op=TestTypeQuery&page=1&rows=1000
+
+2020-05-22 10:24:54:659		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/information.ashx?_op=TestTypeQuery&page=1&rows=1000
+
+2020-05-22 10:24:54:665		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/information.ashx?_op=TestTypeQuery&page=1&rows=1000
+
+2020-05-22 10:24:54:665		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/information.ashx?_op=TestTypeQuery&page=1&rows=1000
+
+2020-05-22 10:24:54:730		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 10:24:54:732		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 10:24:55:236		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 10:24:55:239		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 10:25:04:723		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/information.ashx?_op=TestTypeQuery&page=1&rows=1000
+
+2020-05-22 10:25:04:723		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/information.ashx?_op=TestTypeQuery&page=1&rows=1000
+
+2020-05-22 10:25:04:727		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/information.ashx?_op=TestTypeQuery&page=1&rows=1000
+
+2020-05-22 10:25:04:727		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/information.ashx?_op=TestTypeQuery&page=1&rows=1000
+
+2020-05-22 10:25:04:811		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 10:25:04:812		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 10:25:05:314		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 10:25:05:315		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 10:25:10:675		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1590114310668&rows=10&page=1&sidx=&sord=asc
+
+2020-05-22 10:25:10:733		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1590114310668&rows=10&page=1&sidx=&sord=asc
+
+2020-05-22 10:25:15:695		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/information.ashx?_op=TestTypeQuery&page=1&rows=1000
+
+2020-05-22 10:25:15:696		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/information.ashx?_op=TestTypeQuery&page=1&rows=1000
+
+2020-05-22 10:25:15:699		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/information.ashx?_op=TestTypeQuery&page=1&rows=1000
+
+2020-05-22 10:25:15:700		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/information.ashx?_op=TestTypeQuery&page=1&rows=1000
+
+2020-05-22 10:25:15:753		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 10:25:15:754		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 10:25:16:267		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 10:25:16:269		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 10:25:33:75		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 10:25:33:76		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 10:25:33:581		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 10:25:33:584		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 10:25:49:224		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1590114349216&rows=10&page=1&sidx=&sord=asc
+
+2020-05-22 10:25:49:257		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1590114349216&rows=10&page=1&sidx=&sord=asc
+
+2020-05-22 10:37:47:288		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 10:37:47:290		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 10:37:47:794		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 10:37:47:796		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 10:56:04:790		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/Login.aspx
+
+2020-05-22 10:56:04:792		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/Login.aspx
+
+2020-05-22 10:56:21:599		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=loginform:[{username:admin},{password:111111},]
+
+2020-05-22 10:56:21:691		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=login
+
+2020-05-22 10:56:22:98		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/information.ashx?_op=V_VedioQuery&name=&_search=false&nd=1590116182093&rows=10&page=1&sidx=Sort&sord=desc
+
+2020-05-22 10:56:22:100		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/information.ashx?_op=V_VedioQuery&name=&_search=false&nd=1590116182093&rows=10&page=1&sidx=Sort&sord=desc
+
+2020-05-22 10:56:22:172		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 10:56:22:178		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 10:56:22:673		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 10:56:22:680		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 10:58:00:528		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/information.ashx?_op=V_VedioQuery&name=&_search=false&nd=1590116280523&rows=10&page=1&sidx=Sort&sord=desc
+
+2020-05-22 10:58:00:529		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/information.ashx?_op=V_VedioQuery&name=&_search=false&nd=1590116280523&rows=10&page=1&sidx=Sort&sord=desc
+
+2020-05-22 10:58:00:597		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 10:58:00:599		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 10:58:01:100		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 10:58:01:100		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 10:58:08:801		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/information.ashx?_op=V_VedioQuery&name=&_search=false&nd=1590116288798&rows=10&page=1&sidx=Sort&sord=desc
+
+2020-05-22 10:58:08:802		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/information.ashx?_op=V_VedioQuery&name=&_search=false&nd=1590116288798&rows=10&page=1&sidx=Sort&sord=desc
+
+2020-05-22 10:58:08:845		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 10:58:08:847		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 10:58:09:349		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 10:58:09:351		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 10:58:10:598		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 10:58:10:598		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 10:58:11:100		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 10:58:11:101		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 10:58:14:85		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 10:58:14:86		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 10:58:14:595		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 10:58:14:596		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:04:06:38		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:04:06:40		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:04:06:539		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:04:06:539		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:09:21:417		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:09:21:479		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:09:21:913		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:09:21:918		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:25:04:813		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:25:04:814		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:25:05:313		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:25:05:314		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:25:06:169		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:25:06:170		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:25:06:671		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:25:06:672		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:27:51:212		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1590118071206&rows=10&page=1&sidx=&sord=asc
+
+2020-05-22 11:27:51:369		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1590118071206&rows=10&page=1&sidx=&sord=asc
+
+2020-05-22 11:27:53:73		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:27:53:74		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:27:53:576		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:27:53:576		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:27:54:662		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:27:54:663		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:27:55:164		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:27:55:164		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:27:57:504		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:27:57:505		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:27:57:508		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:27:57:509		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:27:59:486		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:27:59:487		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:27:59:988		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:27:59:989		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:28:02:615		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:28:02:617		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:28:03:118		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:28:03:119		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:28:07:434		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:28:07:435		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:28:07:937		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:28:07:937		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:28:38:753		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:28:38:755		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:28:39:267		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:28:39:268		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:28:49:151		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:28:49:153		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:28:49:665		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:28:49:668		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:31:25:608		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:31:25:610		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:31:26:114		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:31:26:117		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:31:31:723		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:31:31:725		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:31:32:226		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:31:32:226		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:31:33:454		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:31:33:455		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:31:33:956		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:31:33:956		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:31:35:212		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:31:35:213		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:31:35:723		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:31:35:726		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:31:39:170		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:31:39:171		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:31:39:675		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:31:39:675		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:31:41:3		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1590118300998&rows=10&page=1&sidx=&sord=asc
+
+2020-05-22 11:31:41:32		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1590118300998&rows=10&page=1&sidx=&sord=asc
+
+2020-05-22 11:31:44:141		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:31:44:142		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:31:44:644		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:31:44:646		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:31:46:78		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:31:46:79		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:31:46:581		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:31:46:582		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:31:48:364		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/information.ashx?_op=TestTypeQuery&page=1&rows=1000
+
+2020-05-22 11:31:48:366		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/information.ashx?_op=TestTypeQuery&page=1&rows=1000
+
+2020-05-22 11:31:48:371		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/information.ashx?_op=TestTypeQuery&page=1&rows=1000
+
+2020-05-22 11:31:48:373		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/information.ashx?_op=TestTypeQuery&page=1&rows=1000
+
+2020-05-22 11:31:48:427		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:31:48:428		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:31:48:930		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:31:48:930		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:31:56:829		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/information.ashx?_op=TestTypeQuery&page=1&rows=1000
+
+2020-05-22 11:31:56:830		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/information.ashx?_op=TestTypeQuery&page=1&rows=1000
+
+2020-05-22 11:31:56:836		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/information.ashx?_op=TestTypeQuery&page=1&rows=1000
+
+2020-05-22 11:31:56:837		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/information.ashx?_op=TestTypeQuery&page=1&rows=1000
+
+2020-05-22 11:31:56:901		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:31:56:902		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:31:57:405		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:31:57:405		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:32:02:324		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:32:02:325		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:32:02:829		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:32:02:831		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:32:03:638		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:32:03:639		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:32:04:140		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:32:04:140		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:41:01:952		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:41:02:28		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:41:02:447		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:41:02:454		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:43:44:157		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:43:44:158		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:43:44:661		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:43:44:661		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:44:30:351		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:44:30:352		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:44:30:354		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:44:30:355		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:46:30:238		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:46:30:239		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:46:30:743		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:46:30:744		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:48:59:198		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:48:59:199		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:48:59:701		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:48:59:702		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:56:06:330		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:56:06:332		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 11:56:06:832		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 11:56:06:832		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 13:09:05:415		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 13:09:05:417		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 13:09:05:920		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 13:09:05:924		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 13:09:24:12		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 13:09:24:13		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 13:09:24:518		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 13:09:24:521		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 13:09:55:822		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 13:09:55:824		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 13:09:56:332		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 13:09:56:334		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 13:45:46:916		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1590126346906&rows=10&page=1&sidx=&sord=asc
+
+2020-05-22 13:45:47:232		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1590126346906&rows=10&page=1&sidx=&sord=asc
+
+2020-05-22 13:45:49:859		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 13:45:49:862		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 13:45:50:365		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 13:45:50:366		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 13:45:52:473		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 13:45:52:475		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 13:45:52:979		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 13:45:52:982		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 13:48:48:674		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 13:48:48:675		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 13:48:48:677		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 13:48:48:678		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 13:48:52:868		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 13:48:52:869		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 13:48:53:370		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 13:48:53:370		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:01:00:815		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:01:00:816		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:01:00:820		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:01:00:821		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:01:31:566		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:01:31:567		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:01:31:570		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:01:31:571		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:02:07:519		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:02:07:520		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:02:07:522		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:02:07:523		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:02:44:639		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:02:44:640		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:02:44:643		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:02:44:644		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:03:01:412		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:03:01:413		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:03:01:416		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:03:01:417		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:05:21:637		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:05:21:638		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:05:22:141		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:05:22:141		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:06:40:804		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:06:40:805		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:06:40:807		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:06:40:808		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:09:47:692		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:09:47:693		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:09:48:198		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:09:48:200		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:13:14:212		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:13:14:214		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:13:14:721		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:13:14:723		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:14:09:793		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:14:09:794		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:14:09:797		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:14:09:798		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:15:32:691		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:15:32:693		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:15:33:199		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:15:33:202		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:17:54:456		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:17:54:458		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:17:54:462		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:17:54:465		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:19:01:875		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:19:01:876		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:19:01:878		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:19:01:879		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:20:09:684		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:20:09:685		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:20:10:190		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:20:10:193		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:21:37:337		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:21:37:338		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:21:37:840		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:21:37:840		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:23:10:721		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:23:10:722		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:23:10:725		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:23:10:726		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:23:15:450		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:23:15:452		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:23:15:456		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:23:15:457		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:25:37:932		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:25:37:933		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:25:38:435		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:25:38:436		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:36:50:593		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:36:50:677		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:36:51:86		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:36:51:96		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:38:22:194		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:38:22:196		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:38:22:699		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:38:22:700		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:39:10:213		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:39:10:214		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:39:10:216		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:39:10:217		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:39:18:872		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:39:18:873		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:39:18:875		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:39:18:876		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:39:55:270		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:39:55:271		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:39:55:274		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:39:55:275		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:40:16:960		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:40:16:961		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:40:16:963		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:40:16:964		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:49:11:574		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:49:11:575		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:49:12:75		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:49:12:76		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:51:40:0		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:51:40:1		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:51:40:503		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:51:40:504		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:51:42:50		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:51:42:51		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:51:42:55		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:51:42:56		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:54:32:488		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:54:32:490		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:54:33:3		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:54:33:3		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:54:43:622		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:54:43:623		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:54:43:626		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:54:43:627		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:54:45:363		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:54:45:364		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:54:45:867		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:54:45:867		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:55:25:209		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:55:25:210		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:55:25:213		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:55:25:214		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:59:11:491		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:59:11:492		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:59:11:494		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:59:11:495		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:59:23:804		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:59:23:805		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 14:59:23:808		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 14:59:23:809		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:00:07:496		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:00:07:497		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:00:07:501		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:00:07:502		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:00:09:142		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:00:09:143		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:00:09:587		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:00:09:588		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:00:09:591		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:00:09:591		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:00:09:644		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:00:09:645		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:00:10:94		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:00:10:96		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:00:10:99		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:00:10:100		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:00:43:949		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:00:43:950		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:00:43:952		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:00:43:953		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:00:45:137		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:00:45:138		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:00:45:563		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:00:45:564		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:00:45:566		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:00:45:567		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:00:45:642		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:00:45:644		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:00:46:26		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:00:46:28		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:00:46:547		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:00:46:549		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:01:45:312		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:01:45:313		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:01:45:317		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:01:45:319		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:02:33:236		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:02:33:237		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:02:33:239		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:02:33:240		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:02:47:887		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:02:47:888		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:02:47:890		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:02:47:891		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:03:52:64		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:03:52:65		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:03:52:67		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:03:52:68		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:04:15:887		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:04:15:888		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:04:15:891		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:04:15:892		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:04:35:973		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:04:35:974		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:04:36:476		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:04:36:476		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:06:14:814		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:06:14:815		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:06:14:821		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:06:14:822		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:06:16:454		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:06:16:455		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:06:16:958		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:06:16:959		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:06:25:481		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:06:25:482		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:06:25:984		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:06:25:984		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:06:58:311		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:06:58:313		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:06:58:319		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:06:58:319		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:07:00:305		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:07:00:306		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:07:00:310		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:07:00:311		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:07:00:736		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:07:00:737		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:07:01:238		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:07:01:238		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:07:21:378		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:07:21:379		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:07:21:381		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:07:21:382		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:08:05:53		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:08:05:54		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:08:05:56		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:08:05:57		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:08:24:912		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:08:24:913		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:08:24:915		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:08:24:915		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:08:31:943		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:08:31:944		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:08:32:446		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:08:32:446		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:09:14:295		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:09:14:296		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:09:14:298		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:09:14:299		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:10:10:361		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:10:10:363		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:10:10:367		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:10:10:368		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:10:34:75		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:10:34:76		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:10:34:580		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:10:34:583		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:10:35:363		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:10:35:364		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:10:35:835		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:10:35:836		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:10:35:838		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:10:35:839		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:10:35:868		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:10:35:868		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:10:36:416		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:10:36:417		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:10:36:813		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:10:36:815		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:10:36:920		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:10:36:921		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:10:37:319		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:10:37:320		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:10:56:724		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:10:56:725		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:10:56:727		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:10:56:728		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:11:13:96		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:11:13:97		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:11:13:101		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:11:13:102		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:13:05:921		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:13:05:922		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:13:05:925		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:13:05:926		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:13:45:679		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:13:45:681		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:13:45:685		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:13:45:686		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:14:03:179		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:14:03:180		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:14:03:690		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:14:03:692		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:14:47:251		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:14:47:253		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:14:47:258		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:14:47:259		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:15:20:788		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:15:20:790		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:15:20:795		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:15:20:796		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:15:22:786		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:15:22:787		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:15:22:790		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:15:22:791		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:15:23:336		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:15:23:337		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:15:23:814		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:15:23:816		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:15:23:819		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:15:23:820		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:15:23:846		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:15:23:848		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:15:50:628		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:15:50:629		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:15:51:131		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:15:51:131		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:15:51:756		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:15:51:757		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:15:51:760		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:15:51:761		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:16:42:330		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:16:42:403		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:16:42:824		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:16:42:832		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:17:31:501		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:17:31:503		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:17:32:6		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:17:32:7		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:17:53:116		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:17:53:117		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:17:53:621		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:17:53:623		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:18:50:272		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:18:50:274		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:18:50:776		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:18:50:777		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:20:11:956		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:20:11:958		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:20:12:462		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:20:12:464		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:20:51:556		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:20:51:557		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:20:51:560		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:20:51:561		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:21:15:502		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:21:15:503		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:21:15:505		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:21:15:506		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:21:53:915		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:21:53:916		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:21:53:918		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:21:53:919		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:22:06:609		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:22:06:610		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:22:06:613		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:22:06:613		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:23:16:368		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:23:16:370		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:23:16:871		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:23:16:871		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:23:18:76		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:23:18:77		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:23:18:579		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:23:18:581		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:23:44:539		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:23:44:541		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:23:44:544		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:23:44:545		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:23:50:982		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:23:50:983		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:23:51:484		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:23:51:485		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:23:53:566		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:23:53:567		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:23:54:71		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:23:54:73		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:24:34:591		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:24:34:591		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:24:34:594		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:24:34:594		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:25:24:893		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:25:24:894		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:25:25:397		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:25:25:398		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:26:03:756		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:26:03:757		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:26:03:765		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:26:03:766		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:26:37:276		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:26:37:277		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:26:37:279		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:26:37:280		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:26:55:97		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:26:55:98		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:26:55:603		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:26:55:606		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:27:59:112		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:27:59:113		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:27:59:616		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:27:59:618		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:28:32:78		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:28:32:80		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:28:32:83		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:28:32:84		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:29:19:536		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:29:19:538		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:29:19:541		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:29:19:542		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:29:28:940		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:29:28:942		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:29:28:946		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:29:28:948		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:32:11:643		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:32:11:645		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:32:11:647		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:32:11:648		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:35:05:477		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:35:05:478		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:35:05:980		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:35:05:981		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:38:49:181		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:38:49:182		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:38:49:685		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:38:49:686		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:39:28:775		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:39:28:778		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:39:28:783		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:39:28:784		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:43:52:554		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:43:52:556		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:43:53:59		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:43:53:61		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:44:51:145		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:44:51:147		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:44:51:151		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:44:51:152		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:45:11:650		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:45:11:652		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:45:12:168		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:45:12:168		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:47:52:684		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:47:52:685		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:47:52:688		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:47:52:689		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:48:42:266		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:48:42:267		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:48:42:270		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:48:42:271		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:49:34:898		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:49:34:899		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:49:34:901		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:49:34:902		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:49:45:140		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:49:45:222		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:49:45:631		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:49:45:639		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:52:02:335		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:52:02:337		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:52:02:345		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:52:02:346		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:53:22:544		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:53:22:545		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:53:23:52		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:53:23:55		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:53:32:50		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:53:32:52		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:53:32:565		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:53:32:569		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:54:16:377		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:54:16:379		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:54:16:382		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:54:16:383		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:54:18:88		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:54:18:89		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:54:18:591		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:54:18:596		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:54:44:761		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:54:44:762		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 15:54:45:278		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 15:54:45:278		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:00:37:967		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:00:37:968		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:00:38:470		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:00:38:471		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:01:40:824		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:01:40:825		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:01:41:328		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:01:41:330		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:01:43:846		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:01:43:847		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:01:43:850		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:01:43:851		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:01:44:871		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:01:44:872		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:01:45:384		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:01:45:385		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:03:54:320		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:03:54:321		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:03:54:824		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:03:54:825		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:04:23:115		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:04:23:116		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:04:23:119		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:04:23:121		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:04:57:564		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:04:57:565		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:04:57:570		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:04:57:571		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:12:47:955		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:12:47:957		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:12:48:458		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:12:48:458		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:14:59:667		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:14:59:668		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:14:59:672		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:14:59:672		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:15:35:23		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:15:35:24		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:15:35:26		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:15:35:27		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:17:55:237		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:17:55:238		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:17:55:740		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:17:55:741		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:18:34:576		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:18:34:577		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:18:34:581		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:18:34:582		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:28:28:506		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:28:28:508		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:28:29:19		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:28:29:22		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:28:47:786		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:28:47:788		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:28:48:290		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:28:48:292		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:28:49:699		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:28:49:700		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:28:50:204		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:28:50:207		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:29:08:315		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:29:08:316		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:29:08:818		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:29:08:819		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:29:09:948		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:29:09:949		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:29:10:453		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:29:10:455		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:29:10:811		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:29:10:812		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:29:11:109		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:29:11:110		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:29:11:314		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:29:11:315		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:29:11:335		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:29:11:335		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:29:11:611		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:29:11:611		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:29:11:848		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:29:11:849		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:29:31:526		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:29:31:526		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:29:32:29		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:29:32:29		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:33:43:714		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:33:43:715		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:33:44:230		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:33:44:231		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:34:05:705		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:34:05:706		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:34:06:209		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:34:06:209		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:35:57:606		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:35:57:607		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:35:58:110		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:35:58:111		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:36:01:221		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:36:01:222		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:36:01:224		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:36:01:225		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:37:03:626		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:37:03:627		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:37:03:630		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:37:03:632		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:46:49:198		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:46:49:199		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:46:49:201		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:46:49:202		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:47:12:999		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:47:13:0		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:47:13:3		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:47:13:4		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:47:29:242		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:47:29:243		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:47:29:245		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:47:29:246		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:47:50:196		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:47:50:272		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:47:50:688		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:47:50:697		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:47:59:644		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:47:59:645		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:47:59:647		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:47:59:648		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:50:28:389		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:50:28:390		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:50:28:892		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:50:28:893		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:52:28:644		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:52:28:645		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:52:28:648		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:52:28:650		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:53:23:952		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:53:23:954		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:53:24:455		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:53:24:456		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:54:36:180		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:54:36:181		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:54:36:186		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:54:36:187		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:54:59:561		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:54:59:562		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:54:59:564		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:54:59:565		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:59:01:263		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:59:01:264		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:59:01:767		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:59:01:767		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:59:22:494		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:59:22:495		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:59:23:1		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:59:23:2		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:59:24:137		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:59:24:139		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 16:59:24:142		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 16:59:24:144		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:01:03:370		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:01:03:372		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:01:03:899		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:01:03:900		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:01:33:63		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:01:33:65		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:01:33:68		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:01:33:69		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:02:45:17		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:02:45:18		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:02:45:521		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:02:45:522		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:03:21:610		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:03:21:611		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:03:21:614		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:03:21:615		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:04:00:893		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:04:00:895		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:04:01:398		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:04:01:399		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:04:04:171		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:04:04:172		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:04:04:174		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:04:04:176		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:05:02:913		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:05:02:915		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:05:02:919		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:05:02:919		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:06:22:315		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:06:22:316		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:06:22:318		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:06:22:319		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:07:07:988		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:07:07:989		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:07:07:992		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:07:07:992		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:07:56:665		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:07:56:667		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:07:56:670		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:07:56:670		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:08:39:670		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:08:39:672		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:08:40:175		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:08:40:176		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:08:42:737		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:08:42:739		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:08:42:742		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:08:42:743		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:09:12:827		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:09:12:829		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:09:13:333		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:09:13:334		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:09:29:43		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:09:29:44		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:09:29:546		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:09:29:546		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:09:30:649		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:09:30:650		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:09:31:153		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:09:31:154		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:10:01:92		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:10:01:94		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:10:01:597		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:10:01:598		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:10:01:731		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:10:01:732		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:10:02:241		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:10:02:242		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:11:04:252		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:11:04:253		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:11:04:257		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:11:04:258		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:11:31:312		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:11:31:313		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:11:31:316		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:11:31:316		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:12:50:27		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:12:50:28		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:12:50:540		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:12:50:541		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:13:08:99		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:13:08:100		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:13:08:604		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:13:08:607		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:13:12:587		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:13:12:589		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:13:13:101		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:13:13:103		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:13:30:996		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:13:30:997		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:13:31:0		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:13:31:1		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:14:42:137		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:14:42:138		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:14:42:141		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:14:42:141		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:16:16:746		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:16:16:748		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:16:16:752		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:16:16:753		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:17:32:308		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:17:32:309		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:17:32:311		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:17:32:311		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:18:34:208		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:18:34:209		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:18:34:712		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:18:34:712		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:18:56:452		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:18:56:453		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:18:56:456		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:18:56:456		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:19:11:582		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:19:11:583		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:19:11:586		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:19:11:587		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:19:16:478		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:19:16:479		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:19:16:482		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:19:16:483		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:19:29:416		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:19:29:417		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:19:29:919		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:19:29:919		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:19:31:807		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:19:31:808		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:19:32:310		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:19:32:311		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:19:33:850		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:19:33:851		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:19:34:356		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:19:34:357		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:21:04:473		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:21:04:475		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:21:04:477		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:21:04:479		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:21:31:366		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:21:31:367		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:21:31:370		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:21:31:371		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:23:09:18		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:23:09:137		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:23:09:522		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:23:09:532		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:23:49:583		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:23:49:585		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:23:49:587		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:23:49:588		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:25:34:15		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:25:34:16		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:25:34:18		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:25:34:19		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:27:54:517		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:27:54:518		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:27:55:21		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:27:55:23		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:29:36:715		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:29:36:716		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:29:37:220		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:29:37:220		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:29:54:463		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:29:54:465		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:29:54:971		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:29:54:973		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:31:32:453		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:31:32:454		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:31:32:955		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:31:32:956		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:32:12:466		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:32:12:467		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:32:12:970		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:32:12:970		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:33:31:769		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:33:31:770		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:33:32:274		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:33:32:276		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:34:33:82		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:34:33:83		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:34:33:85		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:34:33:86		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:39:12:209		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:39:12:211		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:39:12:715		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:39:12:715		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:41:40:257		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:41:40:258		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:41:40:260		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:41:40:260		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:43:21:652		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:43:21:653		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 17:43:21:656		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 17:43:21:657		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:00:01:666		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:00:01:667		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:00:02:168		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:00:02:168		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:07:29:953		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:07:29:954		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:07:30:458		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:07:30:459		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:08:13:855		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:08:13:856		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:08:13:861		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:08:13:862		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:10:02:687		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:10:02:688		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:10:03:205		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:10:03:205		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:18:03:47		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:18:03:48		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:18:03:51		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:18:03:52		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:19:06:585		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:19:06:587		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:19:07:89		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:19:07:90		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:19:18:93		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:19:18:94		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:19:18:596		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:19:18:597		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:20:06:853		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:20:06:855		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:20:07:377		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:20:07:377		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:22:26:407		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:22:26:408		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:22:26:911		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:22:26:912		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:22:41:314		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:22:41:422		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:22:41:818		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:22:41:833		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:24:17:232		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:24:17:233		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:24:17:237		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:24:17:238		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:24:34:802		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:24:34:803		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:24:34:806		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:24:34:807		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:25:43:365		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:25:43:367		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:25:43:872		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:25:43:873		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:27:03:427		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:27:03:430		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:27:03:934		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:27:03:936		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:27:15:751		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:27:15:752		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:27:16:254		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:27:16:255		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:27:41:229		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:27:41:230		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:27:41:234		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:27:41:235		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:31:14:407		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:31:14:409		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:31:14:411		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:31:14:412		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:31:53:305		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:31:53:306		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:31:53:309		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:31:53:310		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:38:58:531		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:38:58:532		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:38:58:535		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:38:58:536		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:40:51:579		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:40:51:580		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:40:52:81		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:40:52:82		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:41:44:839		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:41:44:840		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:41:44:844		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:41:44:845		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:42:35:139		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:42:35:140		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:42:35:142		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:42:35:143		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:42:55:525		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:42:55:527		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:42:55:529		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:42:55:530		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:42:59:968		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:42:59:969		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:43:00:471		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:43:00:472		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:43:08:86		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:43:08:87		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:43:08:89		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:43:08:90		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:43:39:209		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:43:39:210		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:43:39:213		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:43:39:214		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:44:13:501		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:44:13:502		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:44:13:505		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:44:13:506		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:44:46:806		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:44:46:807		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:44:46:809		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:44:46:810		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:45:02:982		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:45:02:983		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:45:02:988		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:45:02:989		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:45:05:299		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:45:05:300		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:45:05:803		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:45:05:803		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:49:16:153		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:49:16:220		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:49:16:652		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:49:16:665		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:49:31:989		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:49:31:990		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:49:32:501		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:49:32:502		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:50:01:511		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:50:01:513		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:50:02:16		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:50:02:17		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:50:16:421		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:50:16:422		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:50:16:924		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:50:16:925		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:50:36:673		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:50:36:675		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:50:37:183		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:50:37:183		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:51:15:560		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:51:15:561		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:51:15:563		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:51:15:564		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:52:32:736		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:52:32:737		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:52:33:244		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:52:33:245		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:52:47:125		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:52:47:126		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:52:47:129		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:52:47:129		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:53:53:102		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:53:53:103		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:53:53:615		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:53:53:616		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:54:03:996		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:54:03:998		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:54:04:499		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:54:04:499		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:54:05:638		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:54:05:639		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:54:05:641		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:54:05:642		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:54:16:602		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:54:16:603		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:54:16:606		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:54:16:607		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:54:17:65		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:54:17:67		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:54:17:569		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:54:17:569		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:54:38:65		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:54:38:67		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:54:38:69		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:54:38:70		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:54:55:203		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:54:55:205		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:54:55:208		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:54:55:209		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:55:21:331		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:55:21:332		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:55:21:334		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:55:21:335		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:55:45:948		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:55:45:949		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:55:45:952		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:55:45:954		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:56:33:563		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:56:33:565		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:56:33:569		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:56:33:570		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:56:54:629		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:56:54:631		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:56:54:634		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:56:54:635		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:57:05:950		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:57:05:952		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:57:06:454		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:57:06:454		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:57:12:909		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:57:12:911		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:57:13:423		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:57:13:424		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:57:56:726		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:57:56:727		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:57:57:235		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:57:57:236		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:59:25:686		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:59:25:771		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 18:59:26:183		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 18:59:26:195		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:00:25:56		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:00:25:57		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:00:25:558		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:00:25:558		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:00:53:131		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:00:53:133		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:00:53:641		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:00:53:642		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:01:12:987		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:01:12:989		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:01:13:492		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:01:13:493		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:01:30:107		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:01:30:108		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:01:30:111		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:01:30:111		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:01:45:596		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:01:45:597		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:01:45:599		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:01:45:600		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:02:28:411		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:02:28:412		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:02:28:415		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:02:28:416		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:02:51:947		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:02:51:948		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:02:52:452		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:02:52:454		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:03:24:812		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:03:24:815		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:03:24:818		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:03:24:819		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:03:47:989		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:03:47:990		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:03:48:493		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:03:48:493		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:04:17:274		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:04:17:275		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:04:17:279		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:04:17:279		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:04:45:648		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:04:45:650		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:04:45:654		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:04:45:655		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:05:35:64		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:05:35:65		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:05:35:569		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:05:35:570		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:08:40:107		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:08:40:168		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:08:40:601		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:08:40:620		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:08:46:118		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:08:46:119		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:08:46:619		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:08:46:620		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:08:52:272		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:08:52:273		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:08:52:784		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:08:52:784		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:09:27:155		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:09:27:208		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:09:27:650		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:09:27:659		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:09:29:107		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:09:29:108		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:09:29:608		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:09:29:608		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:09:40:462		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:09:40:463		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:09:40:971		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:09:40:972		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:09:46:836		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:09:46:837		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:09:47:340		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:09:47:342		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:09:48:804		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:09:48:805		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:09:49:309		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:09:49:311		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:11:31:810		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:11:31:811		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:11:31:813		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:11:31:813		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:11:33:533		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:11:33:534		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:11:34:37		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:11:34:38		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:14:13:247		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:14:13:248		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:14:13:752		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:14:13:753		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:15:18:706		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:15:18:706		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:15:19:222		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:15:19:222		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:15:49:952		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:15:49:953		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:15:50:456		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:15:50:456		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:16:08:894		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:16:08:896		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:16:09:396		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:16:09:397		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:19:09:252		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:19:09:253		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:19:09:759		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:19:09:761		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:21:26:191		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:21:26:192		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:21:26:200		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:21:26:201		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:21:51:485		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:21:51:487		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:21:51:992		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:21:51:994		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:24:29:158		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:24:29:159		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:24:29:161		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:24:29:162		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:25:28:552		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:25:28:554		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:25:28:557		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:25:28:558		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:26:05:534		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:26:05:536		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:26:05:539		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:26:05:539		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:26:56:246		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:26:56:247		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:26:56:249		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:26:56:250		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:28:13:650		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:28:13:651		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:28:13:655		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:28:13:656		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:28:43:773		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:28:43:774		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:28:43:776		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:28:43:777		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:29:06:480		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:29:06:481		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:29:06:483		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:29:06:484		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:29:33:983		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:29:34:60		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:29:34:480		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:29:34:486		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:30:18:23		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:30:18:24		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:30:18:26		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:30:18:27		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:30:51:844		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:30:51:846		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:30:52:348		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:30:52:348		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:31:07:287		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:31:07:288		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:31:07:292		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:31:07:293		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:31:25:540		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:31:25:542		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:31:26:44		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:31:26:44		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:31:44:842		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:31:44:844		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:31:44:847		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:31:44:848		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:33:52:568		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:33:52:569		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:33:52:572		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:33:52:573		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:34:45:582		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:34:45:584		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:34:45:587		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:34:45:588		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:35:12:227		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:35:12:228		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:35:12:230		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:35:12:231		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:36:06:494		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:36:06:495		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:36:06:498		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:36:06:499		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:36:28:540		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:36:28:541		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:36:29:55		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:36:29:56		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:40:24:51		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:40:24:52		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:40:24:54		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:40:24:55		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:40:48:983		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:40:48:984		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:40:48:988		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:40:48:990		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:41:06:371		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:41:06:373		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:41:06:375		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:41:06:375		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:41:30:191		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:41:30:192		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:41:30:705		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:41:30:706		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:41:51:857		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:41:51:928		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-05-22 19:41:52:352		进入 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-05-22 19:41:52:359		离开 wxttaze4ltzb4cbd5uuaxomt /adnim/handler/GobalHandler.ashx?_op=userinfo
+

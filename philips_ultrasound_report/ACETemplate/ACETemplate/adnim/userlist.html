@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<script src="assets/js/jquery-2.0.3.min.js"></script>
+<body>
+    <a  data-href="product.aspx?id=1">产品1</a>
+    <a data-href="product.aspx?id=2">产品2</a>
+    <a data-href="product.aspx?id=3">产品1</a>
+    <a data-href="product.aspx?id=12">产品1</a>
+    <a data-href="product.aspx?id=21">产品2</a>
+    
+    <a data-href="product.aspx?id=1">产品1</a>
+<a data-href="product.aspx?id=22">产品2</a><a data-href="product.aspx?id=12">产品1</a>
+<a data-href="product.aspx?id=32">产品2</a><a data-href="product.aspx?id=31">产品1</a>
+<a data-href="product.aspx?id=2">产品2</a><a data-href="product.aspx?id=122">产品1</a>
+<a data-href="product.aspx?id=32">产品2</a><a data-href="product.aspx?id=123">产品1</a>
+<a data-href="product.aspx?id=22">产品2</a>
+    <a data-href="product.aspx?id=2">产品2</a>
+</body>
+<Script>
+    $("a").click(function (e) {
+
+        window.parent.addIframe($(this).data("href"), e, "产品1");
+
+    })
+
+</Script>
+</html>

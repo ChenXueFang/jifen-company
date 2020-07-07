@@ -1,0 +1,52 @@
+2020-06-01 14:58:16:879		进入 wog4slkqavypnwwicbrgho1l /adnim/byClinicalChart.aspx
+
+2020-06-01 14:58:16:881		离开 wog4slkqavypnwwicbrgho1l /adnim/byClinicalChart.aspx
+
+2020-06-01 14:58:40:779		进入 wog4slkqavypnwwicbrgho1l /adnim/handler/GobalHandler.ashx?_op=loginform:[{username:admin},{password:111111},]
+
+2020-06-01 14:58:41:670		离开 wog4slkqavypnwwicbrgho1l /adnim/handler/GobalHandler.ashx?_op=login
+
+2020-06-01 14:58:42:567		进入 wog4slkqavypnwwicbrgho1l /adnim/handler/information.ashx?_op=V_VedioQuery&name=&_search=false&nd=1590994722553&rows=10&page=1&sidx=Sort&sord=desc
+
+2020-06-01 14:58:42:580		离开 wog4slkqavypnwwicbrgho1l /adnim/handler/information.ashx?_op=V_VedioQuery&name=&_search=false&nd=1590994722553&rows=10&page=1&sidx=Sort&sord=desc
+
+2020-06-01 14:58:42:686		进入 wog4slkqavypnwwicbrgho1l /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-01 14:58:42:710		离开 wog4slkqavypnwwicbrgho1l /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-01 14:58:43:199		进入 wog4slkqavypnwwicbrgho1l /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-01 14:58:43:354		离开 wog4slkqavypnwwicbrgho1l /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-01 14:58:47:161		进入 wog4slkqavypnwwicbrgho1l /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-01 14:58:47:181		离开 wog4slkqavypnwwicbrgho1l /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-01 14:58:47:193		进入 wog4slkqavypnwwicbrgho1l /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-01 14:58:47:217		离开 wog4slkqavypnwwicbrgho1l /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-01 15:02:11:501		进入 wog4slkqavypnwwicbrgho1l /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1590994931488&rows=10&page=1&sidx=&sord=asc
+
+2020-06-01 15:02:11:692		离开 wog4slkqavypnwwicbrgho1l /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1590994931488&rows=10&page=1&sidx=&sord=asc
+
+2020-06-01 15:02:12:31		进入 wog4slkqavypnwwicbrgho1l /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-01 15:02:12:78		离开 wog4slkqavypnwwicbrgho1l /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-01 15:02:12:579		进入 wog4slkqavypnwwicbrgho1l /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-01 15:02:12:580		离开 wog4slkqavypnwwicbrgho1l /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-01 15:02:18:878		进入 wog4slkqavypnwwicbrgho1l /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1590994938860&rows=10&page=1&sidx=&sord=asc
+
+2020-06-01 15:02:18:976		离开 wog4slkqavypnwwicbrgho1l /adnim/handler/newshandler.ashx?_op=userquery&name=&_search=false&nd=1590994938860&rows=10&page=1&sidx=&sord=asc
+
+2020-06-01 15:02:19:443		进入 wog4slkqavypnwwicbrgho1l /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-01 15:02:19:454		离开 wog4slkqavypnwwicbrgho1l /adnim/handler/gobalhandler.ashx?_op=getmenu
+
+2020-06-01 15:02:19:473		进入 wog4slkqavypnwwicbrgho1l /adnim/handler/GobalHandler.ashx?_op=userinfo
+
+2020-06-01 15:02:19:486		离开 wog4slkqavypnwwicbrgho1l /adnim/handler/GobalHandler.ashx?_op=userinfo
+

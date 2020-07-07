@@ -1,0 +1,867 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1EF674BD-356A-445A-87CF-0C51C091950A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ACETemplate</RootNamespace>
+    <AssemblyName>ACETemplate</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TypeScriptToolsVersion>2.4</TypeScriptToolsVersion>
+    <DontImportPostSharp>True</DontImportPostSharp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.ActiveRecord, Version=3.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Castle.ActiveRecord.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Components.Validator, Version=2.5.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Castle.Components.Validator.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core, Version=2.5.1.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.DataAccess, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Common.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Json, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Common.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.UI, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Common.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Utility, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Common.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>lib\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.0.1011, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.0\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.1.2.3\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.1.2.3\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.1.2.3\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.1.2.3\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.1.2.3\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=1.2.3.490, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.1.2.3\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.Castle, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\NHibernate.ByteCode.Castle.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.Search, Version=0.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\NHibernate.Search.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI">
+      <HintPath>lib\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML">
+      <HintPath>lib\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net">
+      <HintPath>lib\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats">
+      <HintPath>lib\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="PostSharp, Version=4.3.20.0, Culture=neutral, PublicKeyToken=b13fd38b8f9c99d7, processorArchitecture=MSIL">
+      <HintPath>..\packages\PostSharp.4.3.20\lib\net35-client\PostSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Spire.License, Version=1.3.8.46, Culture=neutral, PublicKeyToken=b1144360237c8b3f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FreeSpire.XLS.10.1.0\lib\net46\Spire.License.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Spire.Pdf, Version=6.1.4.2046, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\FreeSpire.XLS.10.1.0\lib\net46\Spire.Pdf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Spire.XLS, Version=10.1.4.61046, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\FreeSpire.XLS.10.1.0\lib\net46\Spire.XLS.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="UeditorUpload, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\UeditorUpload.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="adnim\AccountManage.aspx" />
+    <Content Include="adnim\Aoplogedit.aspx" />
+    <Content Include="adnim\AOPLogGrid.aspx" />
+    <Content Include="adnim\AOPLogGRID1.aspx" />
+    <Content Include="adnim\areaChart.aspx" />
+    <Content Include="adnim\assets\images\adddata.png" />
+    <Content Include="adnim\assets\images\alladd1.png" />
+    <Content Include="adnim\assets\images\alldel.png" />
+    <Content Include="adnim\assets\images\back.png" />
+    <Content Include="adnim\assets\images\braces.png" />
+    <Content Include="adnim\assets\images\btndel.png" />
+    <Content Include="adnim\assets\images\daoru.png" />
+    <Content Include="adnim\assets\images\download.png" />
+    <Content Include="adnim\assets\images\exportdata.png" />
+    <Content Include="adnim\assets\images\jifen.png" />
+    <Content Include="adnim\assets\images\loginbg.png" />
+    <Content Include="adnim\assets\images\logo.png" />
+    <Content Include="adnim\assets\images\logo1.png" />
+    <Content Include="adnim\assets\images\myloading.gif" />
+    <Content Include="adnim\assets\images\QQ图片20200616105039.png" />
+    <Content Include="adnim\assets\images\query.png" />
+    <Content Include="adnim\assets\images\scale.png" />
+    <Content Include="adnim\assets\images\tem2.png" />
+    <Content Include="adnim\assets\images\video.png" />
+    <Content Include="adnim\assets\images\xiazai.png" />
+    <Content Include="adnim\assets\js\jqGrid\jquery.jqGrid.js" />
+    <Content Include="adnim\assets\js\jqGrid\jquery.jqGrid.min.js" />
+    <Content Include="adnim\assets\js\jqGrid\jquery.jqGrid.min2.js" />
+    <Content Include="adnim\assets\js\myUpload\jquery.ajaxfileupload.js" />
+    <Content Include="adnim\assets\js\myUpload\myFileUpload.js" />
+    <Content Include="adnim\component\cascader.js" />
+    <Content Include="adnim\component\lineECharts.js" />
+    <Content Include="adnim\component\lineECharts2.js" />
+    <Content Include="adnim\component\pieECharts.js" />
+    <Content Include="adnim\component\plus-minus.js" />
+    <Content Include="adnim\component\stackBlock.js" />
+    <Content Include="adnim\css\active_surveyedit.css" />
+    <Content Include="adnim\css\areaChart.css" />
+    <Content Include="adnim\css\dashBoard.css" />
+    <Content Include="adnim\css\element-ui.css" />
+    <Content Include="adnim\css\fonts\fontawesome-webfont.svg" />
+    <Content Include="adnim\css\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="adnim\css\footerCss.css" />
+    <Content Include="adnim\css\productChart.css" />
+    <Content Include="adnim\css\salesPromotion.css" />
+    <Content Include="adnim\DashBoard.aspx" />
+    <Content Include="adnim\byClinicalChart.aspx" />
+    <Content Include="adnim\FCSTCMGRID.aspx" />
+    <Content Include="adnim\FCSTN2MGRID.aspx" />
+    <Content Include="adnim\FunnelGRID.aspx" />
+    <Content Include="adnim\Header.ascx" />
+    <Content Include="adnim\IBIndicatorPerformance.aspx" />
+    <Content Include="adnim\include\HeadNavigation.ascx" />
+    <Content Include="adnim\js\CityHelper.js" />
+    <Content Include="adnim\js\component.js" />
+    <Content Include="adnim\js\echarts.js" />
+    <Content Include="adnim\js\echarts\china.js" />
+    <Content Include="adnim\js\echarts\echarts.china.js" />
+    <Content Include="adnim\js\echarts\echarts.min.js" />
+    <Content Include="adnim\js\echats.4.7.0.min.js" />
+    <Content Include="adnim\js\element1.2.8.js" />
+    <Content Include="adnim\js\GridModel.js" />
+    <Content Include="adnim\js\element.js" />
+    <Content Include="adnim\js\HttpAjax.js" />
+    <Content Include="adnim\js\index.js" />
+    <Content Include="adnim\js\jquery.js" />
+    <Content Include="adnim\js\lodash.js" />
+    <Content Include="adnim\js\page\bootpag.js" />
+    <Content Include="adnim\js\page\jquery.pagination.js" />
+    <Content Include="adnim\js\page\NewPage.js" />
+    <Content Include="adnim\js\page\pagination.css" />
+    <Content Include="adnim\js\PushWeixinList.js" />
+    <Content Include="adnim\js\vue - 复制.js" />
+    <Content Include="adnim\js\vue-debug.js" />
+    <Content Include="adnim\js\vue.js" />
+    <Content Include="adnim\js\vue.min.1.0.js" />
+    <Content Include="adnim\js\VueComponent.js" />
+    <Content Include="adnim\OOHTargetGRID.aspx" />
+    <Content Include="adnim\OrderDetailTargetGRID.aspx" />
+    <Content Include="adnim\product.aspx" />
+    <Content Include="adnim\ReportManagement.aspx" />
+    <Content Include="adnim\productChart.aspx" />
+    <Content Include="adnim\ResetPassword.aspx" />
+    <Content Include="adnim\SalesPromotion.aspx" />
+    <Content Include="adnim\TestEdit.aspx" />
+    <Content Include="adnim\TestEdit2.aspx" />
+    <Content Include="adnim\TestGRID.aspx" />
+    <Content Include="adnim\ThreerateAnalysis.aspx" />
+    <Content Include="adnim\UserListData.aspx" />
+    <Content Include="adnim\UserListGrid.aspx" />
+    <Content Include="adnim\userlist.html" />
+    <Content Include="adnim\UserListGRID1.aspx" />
+    <Content Include="adnim\VCode.aspx" />
+    <Content Include="adnim\VedioGRID.aspx" />
+    <Content Include="adnim\VTestGRID.aspx" />
+    <Content Include="data\CheckBox.html" />
+    <Content Include="Global.asax" />
+    <Content Include="adnim\Login.aspx" />
+    <Content Include="lib\Common.UI.dll" />
+    <Content Include="lib\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="lib\NPOI.dll" />
+    <Content Include="lib\NPOI.OOXML.dll" />
+    <Content Include="lib\NPOI.OpenXml4Net.dll" />
+    <Content Include="lib\NPOI.OpenXmlFormats.dll" />
+    <Content Include="lib\UeditorUpload.dll" />
+    <Content Include="packages.config" />
+    <Content Include="adnim\assets\avatars\Thumbs.db" />
+    <Content Include="adnim\assets\bootstrap-fileinput\.bower.json" />
+    <Content Include="adnim\assets\bootstrap-fileinput\bower.json" />
+    <Content Include="adnim\assets\bootstrap-fileinput\CHANGE.md" />
+    <Content Include="adnim\assets\bootstrap-fileinput\LICENSE.md" />
+    <Content Include="adnim\assets\bootstrap-fileinput\nuget\build.bat" />
+    <Content Include="adnim\assets\bootstrap-fileinput\nuget\Package.nuspec" />
+    <Content Include="adnim\assets\bootstrap-fileinput\package.json" />
+    <Content Include="adnim\assets\bootstrap-fileinput\README.md" />
+    <Content Include="adnim\assets\bootstrap-fileinput\sass\fileinput.scss" />
+    <Content Include="adnim\assets\css\images\Thumbs.db" />
+    <Content Include="adnim\assets\font\fontawesome-webfont.woff" />
+    <Content Include="adnim\assets\js\JSON-js-master\README" />
+    <Content Include="adnim\assets\js\ladda\css\ladda-themed.scss" />
+    <Content Include="adnim\assets\js\ladda\css\ladda.scss" />
+    <Content Include="adnim\css\bootstrap-theme.css.map" />
+    <Content Include="adnim\css\bootstrap.css.map" />
+    <Content Include="adnim\css\css.rar" />
+    <Content Include="adnim\json\menu.json" />
+    <Content Include="adnim\handler\GobalHandler.ashx" />
+    <Content Include="ARConfig.config" />
+    <Content Include="adnim\handler\newshandler.ashx" />
+    <Content Include="Log4net.config" />
+    <Content Include="adnim\Web.config" />
+    <Content Include="adnim\handler\information.ashx" />
+    <Content Include="adnim\SiteAdmin.Master" />
+    <Content Include="databak\asc_template.bak" />
+    <Content Include="data\Checkbox.json" />
+    <Content Include="adnim\js\vue.min.2.24js" />
+    <Content Include="adnim\css\fonts\element-icons.woff" />
+    <Content Include="adnim\css\fonts\element-icons.ttf" />
+    <Content Include="adnim\handler\ueditorController.ashx" />
+    <Content Include="vm\Class_AR.vm" />
+    <Content Include="vm\Class_Customized.vm" />
+    <Content Include="vm\TypeScriptClass.vm" />
+    <Content Include="vm\Philipsgrid.vm" />
+    <Content Include="vm\Philipsgrid_cs.vm" />
+    <Content Include="vm\Philipsgrid_design.vm" />
+    <Content Include="vm\VueEdit_New.vm" />
+    <Content Include="vm\VueEdit_New_cs.vm" />
+    <Content Include="vm\VueEdit_New_design.vm" />
+    <Content Include="adnim\handler\ImportHandler.ashx" />
+    <Content Include="Upload\TemExcel\OrderDetail.xlsx" />
+    <Content Include="Upload\TemExcel\FunnelDetail.xlsx" />
+    <Content Include="Upload\TemExcel\FCSTCMDetail.xlsx" />
+    <Content Include="Upload\TemExcel\FCSTN2MDetail.xlsx" />
+    <Content Include="adnim\handler\ExportHandler.ashx" />
+    <Content Include="Upload\TemExcel\三率省份.xls" />
+    <Content Include="Upload\TemExcel\OOH.xls" />
+    <Content Include="README.md" />
+    <Content Include="Upload\TemExcel\OrderYearMonth.xlsx" />
+    <Content Include="Upload\TemExcel\Realtime.xlsx" />
+    <Content Include="Upload\TemExcel\ThreeRateDealer.xlsx" />
+    <Content Include="Upload\TemExcel\ThreeRateProvince.xlsx" />
+    <Content Include="Upload\TemExcel\FCSTAccuracy.xls" />
+    <Content Include="Upload\TemExcel\IB.xlsx" />
+    <Content Include="adnim\js\HttpAjax.js.map" />
+    <Content Include="adnim\js\index.js.map" />
+    <Content Include="adnim\css\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="adnim\css\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="adnim\css\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="adnim\css\fonts\FontAwesome.otf" />
+    <Content Include="adnim\css\fonts\fontawesome-webfont.woff" />
+    <Content Include="adnim\css\fonts\fontawesome-webfont.ttf" />
+    <Content Include="adnim\css\fonts\fontawesome-webfont.eot" />
+    <None Include="Properties\PublishProfiles\BIReport.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="adnim\assets\avatars\avatar.png" />
+    <Content Include="adnim\assets\avatars\avatar1.png" />
+    <Content Include="adnim\assets\avatars\avatar2.png" />
+    <Content Include="adnim\assets\avatars\avatar3.png" />
+    <Content Include="adnim\assets\avatars\avatar4.png" />
+    <Content Include="adnim\assets\avatars\avatar5.png" />
+    <Content Include="adnim\assets\avatars\profile-pic.jpg" />
+    <Content Include="adnim\assets\avatars\user.jpg" />
+    <Content Include="adnim\assets\bootstrap-fileinput\css\bootstap3.css" />
+    <Content Include="adnim\assets\bootstrap-fileinput\css\fileinput.css" />
+    <Content Include="adnim\assets\bootstrap-fileinput\css\fileinput.min.css" />
+    <Content Include="adnim\assets\bootstrap-fileinput\img\loading-sm.gif" />
+    <Content Include="adnim\assets\bootstrap-fileinput\img\loading.gif" />
+    <Content Include="adnim\assets\bootstrap-fileinput\js\fileinput.js" />
+    <Content Include="adnim\assets\bootstrap-fileinput\js\fileinput.min.js" />
+    <Content Include="adnim\assets\bootstrap-fileinput\js\locales\ar.js" />
+    <Content Include="adnim\assets\bootstrap-fileinput\js\locales\bg.js" />
+    <Content Include="adnim\assets\bootstrap-fileinput\js\locales\ca.js" />
+    <Content Include="adnim\assets\bootstrap-fileinput\js\locales\cr.js" />
+    <Content Include="adnim\assets\bootstrap-fileinput\js\locales\cz.js" />
+    <Content Include="adnim\assets\bootstrap-fileinput\js\locales\da.js" />
+    <Content Include="adnim\assets\bootstrap-fileinput\js\locales\de.js" />
+    <Content Include="adnim\assets\bootstrap-fileinput\js\locales\el.js" />
+    <Content Include="adnim\assets\bootstrap-fileinput\js\locales\es.js" />
+    <Content Include="adnim\assets\bootstrap-fileinput\js\locales\fa.js" />
+    <Content Include="adnim\assets\bootstrap-fileinput\js\locales\fi.js" />
+    <Content Include="adnim\assets\bootstrap-fileinput\js\locales\fr.js" />
+    <Content Include="adnim\assets\bootstrap-fileinput\js\locales\hu.js" />
+    <Content Include="adnim\assets\bootstrap-fileinput\js\locales\id.js" />
+    <Content Include="adnim\assets\bootstrap-fileinput\js\locales\it.js" />
+    <Content Include="adnim\assets\bootstrap-fileinput\js\locales\ja.js" />
+    <Content Include="adnim\assets\bootstrap-fileinput\js\locales\LANG.js" />
+    <Content Include="adnim\assets\bootstrap-fileinput\js\locales\nl.js" />
+    <Content Include="adnim\assets\bootstrap-fileinput\js\locales\pl.js" />
+    <Content Include="adnim\assets\bootstrap-fileinput\js\locales\pt-BR.js" />
+    <Content Include="adnim\assets\bootstrap-fileinput\js\locales\pt.js" />
+    <Content Include="adnim\assets\bootstrap-fileinput\js\locales\ro.js" />
+    <Content Include="adnim\assets\bootstrap-fileinput\js\locales\ru.js" />
+    <Content Include="adnim\assets\bootstrap-fileinput\js\locales\sk.js" />
+    <Content Include="adnim\assets\bootstrap-fileinput\js\locales\th.js" />
+    <Content Include="adnim\assets\bootstrap-fileinput\js\locales\tr.js" />
+    <Content Include="adnim\assets\bootstrap-fileinput\js\locales\uk.js" />
+    <Content Include="adnim\assets\bootstrap-fileinput\js\locales\zh-TW.js" />
+    <Content Include="adnim\assets\bootstrap-fileinput\js\locales\zh.js" />
+    <Content Include="adnim\assets\bootstrap-fileinput\js\plugins\canvas-to-blob.js" />
+    <Content Include="adnim\assets\bootstrap-fileinput\js\plugins\canvas-to-blob.min.js" />
+    <Content Include="adnim\assets\bootstrap-fileinput\js\plugins\purify.js" />
+    <Content Include="adnim\assets\bootstrap-fileinput\js\plugins\purify.min.js" />
+    <Content Include="adnim\assets\bootstrap-fileinput\js\plugins\sortable.js" />
+    <Content Include="adnim\assets\bootstrap-fileinput\js\plugins\sortable.min.js" />
+    <Content Include="adnim\assets\bootstrap-fileinput\themes\fa\fa.js" />
+    <Content Include="adnim\assets\bootstrap-fileinput\themes\gly\gly.js" />
+    <Content Include="adnim\assets\css\ace-ie.min.css" />
+    <Content Include="adnim\assets\css\ace-rtl.min.css" />
+    <Content Include="adnim\assets\css\ace-skins.min.css" />
+    <Content Include="adnim\assets\css\ace.min.css" />
+    <Content Include="adnim\assets\css\bootstrap-editable.css" />
+    <Content Include="adnim\assets\css\bootstrap-timepicker.css" />
+    <Content Include="adnim\assets\css\bootstrap.min.css" />
+    <Content Include="adnim\assets\css\chosen.css" />
+    <Content Include="adnim\assets\css\colorbox.css" />
+    <Content Include="adnim\assets\css\colorpicker.css" />
+    <Content Include="adnim\assets\css\datepicker.css" />
+    <Content Include="adnim\assets\css\daterangepicker.css" />
+    <Content Include="adnim\assets\css\dropzone.css" />
+    <Content Include="adnim\assets\css\font-awesome-ie7.min.css" />
+    <Content Include="adnim\assets\css\font-awesome.min.css" />
+    <Content Include="adnim\assets\css\fullcalendar.css" />
+    <Content Include="adnim\assets\css\images\loading.gif" />
+    <Content Include="adnim\assets\css\jquery-ui-1.10.3.custom.min.css" />
+    <Content Include="adnim\assets\css\jquery-ui-1.10.3.full.min.css" />
+    <Content Include="adnim\assets\css\jquery.gritter.css" />
+    <Content Include="adnim\assets\css\select2.css" />
+    <Content Include="adnim\assets\css\ui.jqgrid.css" />
+    <Content Include="adnim\assets\images\gallery\image-1.jpg" />
+    <Content Include="adnim\assets\images\gallery\image-2.jpg" />
+    <Content Include="adnim\assets\images\gallery\image-3.jpg" />
+    <Content Include="adnim\assets\images\gallery\image-4.jpg" />
+    <Content Include="adnim\assets\images\gallery\image-5.jpg" />
+    <Content Include="adnim\assets\images\gallery\image-6.jpg" />
+    <Content Include="adnim\assets\images\gallery\thumb-1.jpg" />
+    <Content Include="adnim\assets\images\gallery\thumb-2.jpg" />
+    <Content Include="adnim\assets\images\gallery\thumb-3.jpg" />
+    <Content Include="adnim\assets\images\gallery\thumb-4.jpg" />
+    <Content Include="adnim\assets\images\gallery\thumb-5.jpg" />
+    <Content Include="adnim\assets\images\gallery\thumb-6.jpg" />
+    <Content Include="adnim\assets\js\ace-elements.min.js" />
+    <Content Include="adnim\assets\js\ace-extra.min.js" />
+    <Content Include="adnim\assets\js\ace.min.js" />
+    <Content Include="adnim\assets\js\additional-methods.min.js" />
+    <Content Include="adnim\assets\js\avalon\avalon.js" />
+    <Content Include="adnim\assets\js\bootbox.min.js" />
+    <Content Include="adnim\assets\js\bootstrap-colorpicker.min.js" />
+    <Content Include="adnim\assets\js\bootstrap-tag.min.js" />
+    <Content Include="adnim\assets\js\bootstrap-wysiwyg.min.js" />
+    <Content Include="adnim\assets\js\bootstrap.min.js" />
+    <Content Include="adnim\assets\js\chosen.jquery.min.js" />
+    <Content Include="adnim\assets\js\date-time\bootstrap-datepicker.min.js" />
+    <Content Include="adnim\assets\js\date-time\bootstrap-timepicker.min.js" />
+    <Content Include="adnim\assets\js\date-time\daterangepicker.min.js" />
+    <Content Include="adnim\assets\js\date-time\moment.min.js" />
+    <Content Include="adnim\assets\js\dropzone.min.js" />
+    <Content Include="adnim\assets\js\excanvas.min.js" />
+    <Content Include="adnim\assets\js\flot\jquery.flot.min.js" />
+    <Content Include="adnim\assets\js\flot\jquery.flot.pie.min.js" />
+    <Content Include="adnim\assets\js\flot\jquery.flot.resize.min.js" />
+    <Content Include="adnim\assets\js\fuelux\data\fuelux.tree-sampledata.js" />
+    <Content Include="adnim\assets\js\fuelux\fuelux.spinner.min.js" />
+    <Content Include="adnim\assets\js\fuelux\fuelux.tree.min.js" />
+    <Content Include="adnim\assets\js\fuelux\fuelux.wizard.min.js" />
+    <Content Include="adnim\assets\js\fullcalendar.min.js" />
+    <Content Include="adnim\assets\js\html5shiv.js" />
+    <Content Include="adnim\assets\js\jqGrid\i18n\grid.locale-cn.js" />
+    <Content Include="adnim\assets\js\jqGrid\i18n\grid.locale-en.js" />
+    <Content Include="adnim\assets\js\jqGrid\jquery.jqGrid.min_.js" />
+    <Content Include="adnim\assets\js\jquery-1.10.2.min.js" />
+    <Content Include="adnim\assets\js\jquery-2.0.3.min.js" />
+    <Content Include="adnim\assets\js\jquery-ui-1.10.3.custom.min.js" />
+    <Content Include="adnim\assets\js\jquery-ui-1.10.3.full.min.js" />
+    <Content Include="adnim\assets\js\jquery.autosize.min.js" />
+    <Content Include="adnim\assets\js\jquery.colorbox-min.js" />
+    <Content Include="adnim\assets\js\jquery.dataTables.bootstrap.js" />
+    <Content Include="adnim\assets\js\jquery.dataTables.min.js" />
+    <Content Include="adnim\assets\js\jquery.easy-pie-chart.min.js" />
+    <Content Include="adnim\assets\js\jquery.gritter.min.js" />
+    <Content Include="adnim\assets\js\jquery.hotkeys.min.js" />
+    <Content Include="adnim\assets\js\jquery.inputlimiter.1.3.1.min.js" />
+    <Content Include="adnim\assets\js\jquery.knob.min.js" />
+    <Content Include="adnim\assets\js\jquery.maskedinput.min.js" />
+    <Content Include="adnim\assets\js\jquery.mobile.custom.min.js" />
+    <Content Include="adnim\assets\js\jquery.nestable.min.js" />
+    <Content Include="adnim\assets\js\jquery.slimscroll.min.js" />
+    <Content Include="adnim\assets\js\jquery.sparkline.min.js" />
+    <Content Include="adnim\assets\js\jquery.ui.touch-punch.min.js" />
+    <Content Include="adnim\assets\js\jquery.validate.min.js" />
+    <Content Include="adnim\assets\js\JSON-js-master\cycle.js" />
+    <Content Include="adnim\assets\js\JSON-js-master\json2.js" />
+    <Content Include="adnim\assets\js\JSON-js-master\json_parse.js" />
+    <Content Include="adnim\assets\js\JSON-js-master\json_parse_state.js" />
+    <Content Include="adnim\assets\js\ladda\css\demo.css" />
+    <Content Include="adnim\assets\js\ladda\js\ladda.jquery.js" />
+    <Content Include="adnim\assets\js\ladda\js\ladda.js" />
+    <Content Include="adnim\assets\js\ladda\js\spin.js" />
+    <Content Include="adnim\assets\js\markdown\bootstrap-markdown.min.js" />
+    <Content Include="adnim\assets\js\markdown\markdown.min.js" />
+    <Content Include="adnim\assets\js\respond.min.js" />
+    <Content Include="adnim\assets\js\select2.min.js" />
+    <Content Include="adnim\assets\js\typeahead-bs2.min.js" />
+    <Content Include="adnim\assets\js\x-editable\ace-editable.min.js" />
+    <Content Include="adnim\assets\js\x-editable\bootstrap-editable.min.js" />
+    <Content Include="adnim\css\animate.css" />
+    <Content Include="adnim\css\bootstrap-theme.css" />
+    <Content Include="adnim\css\bootstrap-theme.min.css" />
+    <Content Include="adnim\css\bootstrap.css" />
+    <Content Include="adnim\css\bootstrap.min.css" />
+    <Content Include="adnim\css\font-awesome.min.css" />
+    <Content Include="adnim\css\head.css" />
+    <Content Include="adnim\css\index.css" />
+    <Content Include="adnim\css\ny.css" />
+    <Content Include="adnim\css\style.css" />
+    <Content Include="adnim\js\apiajax.js" />
+    <Content Include="adnim\js\Global.js" />
+    <Content Include="adnim\js\jquery-validate.js" />
+    <Content Include="adnim\js\moment.js" />
+    <Content Include="adnim\js\myfunction.js" />
+    <Content Include="adnim\js\mygritter.js" />
+    <Content Include="adnim\js\OperItem.js" />
+    <Content Include="adnim\js\SearchFiter.js" />
+    <Content Include="adnim\js\vue.min.js" />
+    <Content Include="adnim\UserManagmentAdvance.aspx" />
+    <Content Include="adnim\Index.html" />
+    <Content Include="scripts\ai.0.15.0-build58334.js" />
+    <Content Include="scripts\ai.0.15.0-build58334.min.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adnim\AccountManage.aspx.cs">
+      <DependentUpon>AccountManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adnim\AccountManage.aspx.designer.cs">
+      <DependentUpon>AccountManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adnim\Aoplogedit.aspx.cs">
+      <DependentUpon>Aoplogedit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adnim\Aoplogedit.aspx.designer.cs">
+      <DependentUpon>Aoplogedit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adnim\AOPLogGrid.aspx.cs">
+      <DependentUpon>AOPLogGrid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adnim\AOPLogGrid.aspx.designer.cs">
+      <DependentUpon>AOPLogGrid.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adnim\AOPLogGRID1.aspx.cs">
+      <DependentUpon>AOPLogGRID1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adnim\AOPLogGRID1.aspx.designer.cs">
+      <DependentUpon>AOPLogGRID1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adnim\areaChart.aspx.cs">
+      <DependentUpon>areaChart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adnim\areaChart.aspx.designer.cs">
+      <DependentUpon>areaChart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adnim\DashBoard.aspx.cs">
+      <DependentUpon>DashBoard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adnim\DashBoard.aspx.designer.cs">
+      <DependentUpon>DashBoard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adnim\byClinicalChart.aspx.cs">
+      <DependentUpon>byClinicalChart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adnim\byClinicalChart.aspx.designer.cs">
+      <DependentUpon>byClinicalChart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adnim\FCSTCMGRID.aspx.cs">
+      <DependentUpon>FCSTCMGRID.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adnim\FCSTCMGRID.aspx.designer.cs">
+      <DependentUpon>FCSTCMGRID.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adnim\FCSTN2MGRID.aspx.cs">
+      <DependentUpon>FCSTN2MGRID.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adnim\FCSTN2MGRID.aspx.designer.cs">
+      <DependentUpon>FCSTN2MGRID.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adnim\FunnelGRID.aspx.cs">
+      <DependentUpon>FunnelGRID.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adnim\FunnelGRID.aspx.designer.cs">
+      <DependentUpon>FunnelGRID.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adnim\handler\ExcelHelper.cs" />
+    <Compile Include="adnim\handler\ExportHandler.ashx.cs">
+      <DependentUpon>ExportHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="adnim\handler\GobalHandler.ashx.cs">
+      <DependentUpon>GobalHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="adnim\handler\ImportHandler.ashx.cs">
+      <DependentUpon>ImportHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="adnim\handler\information.ashx.cs">
+      <DependentUpon>information.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="adnim\Header.ascx.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adnim\Header.ascx.designer.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="adnim\IBIndicatorPerformance.aspx.cs">
+      <DependentUpon>IBIndicatorPerformance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adnim\IBIndicatorPerformance.aspx.designer.cs">
+      <DependentUpon>IBIndicatorPerformance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adnim\include\HeadNavigation.ascx.cs">
+      <DependentUpon>HeadNavigation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adnim\include\HeadNavigation.ascx.designer.cs">
+      <DependentUpon>HeadNavigation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="adnim\OOHTargetGRID.aspx.cs">
+      <DependentUpon>OOHTargetGRID.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adnim\OOHTargetGRID.aspx.designer.cs">
+      <DependentUpon>OOHTargetGRID.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adnim\OrderDetailTargetGRID.aspx.cs">
+      <DependentUpon>OrderDetailTargetGRID.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adnim\OrderDetailTargetGRID.aspx.designer.cs">
+      <DependentUpon>OrderDetailTargetGRID.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adnim\product.aspx.cs">
+      <DependentUpon>product.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adnim\product.aspx.designer.cs">
+      <DependentUpon>product.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adnim\ReportManagement.aspx.cs">
+      <DependentUpon>ReportManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adnim\ReportManagement.aspx.designer.cs">
+      <DependentUpon>ReportManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adnim\productChart.aspx.cs">
+      <DependentUpon>productChart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adnim\productChart.aspx.designer.cs">
+      <DependentUpon>productChart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adnim\ResetPassword.aspx.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adnim\ResetPassword.aspx.designer.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adnim\SalesPromotion.aspx.cs">
+      <DependentUpon>SalesPromotion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adnim\SalesPromotion.aspx.designer.cs">
+      <DependentUpon>SalesPromotion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adnim\SiteAdmin.Master.cs">
+      <DependentUpon>SiteAdmin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adnim\SiteAdmin.Master.designer.cs">
+      <DependentUpon>SiteAdmin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="adnim\TestEdit.aspx.cs">
+      <DependentUpon>TestEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adnim\TestEdit.aspx.designer.cs">
+      <DependentUpon>TestEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adnim\TestEdit2.aspx.cs">
+      <DependentUpon>TestEdit2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adnim\TestEdit2.aspx.designer.cs">
+      <DependentUpon>TestEdit2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adnim\TestGrid.aspx.cs">
+      <DependentUpon>TestGRID.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adnim\TestGrid.aspx.designer.cs">
+      <DependentUpon>TestGRID.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adnim\ThreerateAnalysis.aspx.cs">
+      <DependentUpon>ThreerateAnalysis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adnim\ThreerateAnalysis.aspx.designer.cs">
+      <DependentUpon>ThreerateAnalysis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adnim\UserListData.aspx.cs">
+      <DependentUpon>UserListData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adnim\UserListData.aspx.designer.cs">
+      <DependentUpon>UserListData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adnim\UserListGrid.aspx.cs">
+      <DependentUpon>UserListGrid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adnim\UserListGrid.aspx.designer.cs">
+      <DependentUpon>UserListGrid.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adnim\UserListGRID1.aspx.cs">
+      <DependentUpon>UserListGRID1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adnim\UserListGRID1.aspx.designer.cs">
+      <DependentUpon>UserListGRID1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adnim\UserManagmentAdvance.aspx.cs">
+      <DependentUpon>UserManagmentAdvance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adnim\UserManagmentAdvance.aspx.designer.cs">
+      <DependentUpon>UserManagmentAdvance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adnim\VCode.aspx.cs">
+      <DependentUpon>VCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adnim\VCode.aspx.designer.cs">
+      <DependentUpon>VCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adnim\VedioGRID.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>VedioGRID.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adnim\VedioGRID.aspx.designer.cs">
+      <DependentUpon>VedioGRID.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adnim\VTestGRID.aspx.cs">
+      <DependentUpon>VTestGRID.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adnim\VTestGrid.aspx.designer.cs">
+      <DependentUpon>VTestGRID.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="adnim\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adnim\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SiteHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="adnim\plugin\" />
+    <Folder Include="Config\" />
+    <Folder Include="Upload\ALL\" />
+    <Folder Include="Upload\ExportExcel\" />
+    <Folder Include="Upload\ImportExcel\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Com.Utility\Com.Utility.csproj">
+      <Project>{2192bc0a-d3d7-48f0-ba2a-969ad42fb695}</Project>
+      <Name>Com.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.Object\Common.Object.csproj">
+      <Project>{aa07be90-7035-4ef2-a395-a74d2044aee8}</Project>
+      <Name>Common.Object</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EntityClass\EntityClass.csproj">
+      <Project>{44fc6190-d60d-4450-b4c0-bc9076beec96}</Project>
+      <Name>EntityClass</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="adnim\js\HttpAjax.ts" />
+    <TypeScriptCompile Include="adnim\js\index.ts" />
+    <TypeScriptCompile Include="adnim\js\jquery.d.ts" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>8779</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:8879/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <Import Project="..\packages\PostSharp.4.3.20\tools\PostSharp.targets" Condition="Exists('..\packages\PostSharp.4.3.20\tools\PostSharp.targets')" />
+  <Target Name="EnsurePostSharpImported" BeforeTargets="BeforeBuild" Condition="'$(PostSharp30Imported)' == ''">
+    <Error Condition="!Exists('..\packages\PostSharp.4.3.20\tools\PostSharp.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://www.postsharp.net/links/nuget-restore." />
+    <Error Condition="Exists('..\packages\PostSharp.4.3.20\tools\PostSharp.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://www.postsharp.net/links/nuget-restore." />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

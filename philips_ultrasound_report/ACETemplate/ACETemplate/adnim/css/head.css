@@ -1,0 +1,112 @@
+body{font-family:'微软雅黑' ;    margin-left: 20px;
+    margin-right: 20px;}
+
+a{cursor: pointer}
+.fl{float: left}
+.fr{float: right}
+.fz_12{font-size: 12px;}
+.fz_14{font-size: 14px;}
+.fz_16{font-size: 16px;}
+.fz_20{font-size: 20px;}
+.fz_24{font-size: 24px;}
+.fz_28{font-size: 28px;}
+.color_fff{color: #fff;}
+.color_07a2e7{color: #07a2e7;}
+.color_484848{color: #484848;}
+.color_ffd902{color: #ffd902;}
+
+.mt_10{padding-top: 10px}
+.mt_20{padding-top: 20px}
+.mt_20{padding-top: 20px}
+.mr_10{margin-right: 10px}
+.mr_20{margin-right: 20px}
+
+.top_nav{  width: 100%;    min-width: 1140px;}
+.top_nav .nav{width: 400px}
+.top_height{min-height:100px; background:#fff;border:none ; font-size: 18px;}
+.top_height .navbar-collapse{  margin-top: 30px;}
+.navbar-inverse .navbar-toggle{background:#0B95E1 !important;border:1px solid #0B95E1 }
+.navbar-inverse .navbar-toggle:hover,.navbar-inverse .navbar-toggle:active{background: #1976d3 !important;}
+.navbar-inverse .navbar-collapse{border: none}
+.top_height  ul li a{background-color: none; color: #00a0e9;text-decoration: no-underline; font-size: 18px; }
+.top_height   ul li a:hover{color: #65bcee !important; ; text-decoration: underline }
+.top_height .login{margin-top: 10px}
+.login li{display: inline-block; width: 70px; text-align: center;position: relative }
+.login li i{width: 1px; height: 20px; float: right; background: #000; display: block; position: absolute; right: 0; top:5px;}
+
+
+
+
+
+.footer{background: #f2f2f2; }
+.footer .navbar-brand{margin-top:30px }
+.footer .row{ font-size: 18px;   line-height: 160px; width: 1140px; background: #f2f2f2;}
+.footer .row div{display:inline-block; float: left}
+.footer .row a{color: #333; padding-right: 20px;}
+.footer  .fz_14{font-size: 14px;}
+.color_a4a4a5{color: #a4a4a5}
+
+
+
+
+
+
+
+
+
+.modal-content{box-shadow: none;border-radius: inherit;}
+/* popup */
+.modal.in .modal-dialog{ ;}
+.p_title{height: 70px; background: #1192e7; color: #fff;  margin: 0px;}
+.p_title a{color: #fff;}
+.p_title li{width: auto; line-height: 70px;}
+.p_title .close{color: #fff; font-size: 40px;opacity:1}
+.popup_l{clear: both; margin-top: 10px;  height: auto;  overflow: hidden; }
+.popup_l .sr-only{width: 30%; display: block; height: 50px; line-height: 50px; position: relative; text-align: center}
+.popup_l .form-control{width: 50%; height:48px; border-radius: inherit ; line-height: 48px}
+.popup_l .eamil{background: url("../images/email.jpg") no-repeat 95% 16px}
+.popup_l .lock{background: url("../images/lock.jpg") no-repeat 95% 9px}
+
+.popup_l .yzm{width: 24%}
+.popup_l .yzm_txt{width: 24%; height: 48px; text-align: center; background: #f4f4f4; color: #343434; line-height: 48px; border: 1px solid #cccccc; margin-left: 2%; cursor: pointer}
+.wjmm{width: 80%}
+.p_btn{width: 50%; margin-left: 30%}
+.p_btn a{text-decoration: underline}
+.p_btn .btn{height: 45px; background: #3b87ef;}
+.p_btn .btn:hover{background: #3574d1;}
+.lhdl{padding: 10% 5% 6%}
+
+.login .l_line{border-left:2px solid #e3e3e3;padding-bottom: 20px;}
+.m_login{height: auto; overflow: hidden}
+.m_login .col-md-6{padding-top: 20px; width: 47% }
+.nav li{float: left}
+
+@media (max-width: 768px){
+    .navbar-brand{padding: 5px 15px}
+    .top_height .navbar-collapse{margin-top: 0px}
+    .login{  padding: 0;}
+    .login li{display: block; text-align: left; line-height: 40px}
+    .login li i{width: 0}
+
+    .modal-dialog{ width: 80% !important; margin: auto}
+    .login .l_line{border: none; }
+    .l_line .form-signin{border-top: 2px solid #e3e3e3;padding-top: 10px;}
+    .modal-content{box-shadow: none;border-radius: inherit;}
+    .p_title li{width: auto; line-height: 70px;}
+    .m_login .col-md-6{padding-top: 20px; width: 100% }
+
+}
+@media (min-width: 768px){
+    .modal-dialog{ width: 1140px;}
+    .container,nav{width: 1140px;}
+   nav{width: 100%}
+    .navbar-nav{float: left}
+    .navbar-right{  float: right!important}
+}
+
+@media (max-width: 1140px){
+    .modal-dialog{ width: 80% !important; margin: auto}
+    .login .l_line{border: none;    }
+    .m_login .col-md-6{padding-top: 20px; width: 100% }
+
+}

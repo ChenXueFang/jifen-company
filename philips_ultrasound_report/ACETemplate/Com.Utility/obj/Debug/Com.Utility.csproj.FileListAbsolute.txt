@@ -1,0 +1,7 @@
+C:\Users\liuxi\Desktop\项目\BI\philips_ultrasound_report\ACETemplate\Com.Utility\bin\Debug\Com.Utility.dll
+C:\Users\liuxi\Desktop\项目\BI\philips_ultrasound_report\ACETemplate\Com.Utility\bin\Debug\Com.Utility.pdb
+C:\Users\liuxi\Desktop\项目\BI\philips_ultrasound_report\ACETemplate\Com.Utility\obj\Debug\Com.Utility.Resource1.resources
+C:\Users\liuxi\Desktop\项目\BI\philips_ultrasound_report\ACETemplate\Com.Utility\obj\Debug\Com.Utility.csproj.GenerateResource.Cache
+C:\Users\liuxi\Desktop\项目\BI\philips_ultrasound_report\ACETemplate\Com.Utility\obj\Debug\Com.Utility.dll
+C:\Users\liuxi\Desktop\项目\BI\philips_ultrasound_report\ACETemplate\Com.Utility\obj\Debug\Com.Utility.pdb
+C:\Users\liuxi\Desktop\项目\BI\philips_ultrasound_report\ACETemplate\Com.Utility\obj\Debug\Com.Utility.csprojResolveAssemblyReference.cache

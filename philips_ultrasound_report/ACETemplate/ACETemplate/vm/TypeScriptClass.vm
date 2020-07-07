@@ -1,0 +1,37 @@
+##FILENAME:${table.GetClassName()}.ts
+##
+## Castle ActiveRecord entity class
+##
+export interface I${table.GetClassName()}
+{
+#foreach ($f in $fields)
+#if($f.GetRemark()!="")		
+	/**
+	*  ${f.GetRemark()}
+	*/
+#end
+#set ($AnyType=0)
+#if(${f.GetNetType()}=="string")
+	${f.GetPropertyName()}: ${f.GetNetType()}
+#set ($AnyType=1)
+#end
+#if(${f.GetNetType()}=="int?" || ${f.GetNetType()}=="int"  ||  ${f.GetNetType()}=="double"   ||  ${f.GetNetType()}=="double?"   || ${f.GetNetType()}=="float?" || ${f.GetNetType()}=="float"  ||  ${f.GetNetType()}=="demical"   ||  ${f.GetNetType()}=="demical?" )
+	${f.GetPropertyName()}: number 
+#set ($AnyType=1)
+#end
+#if(${f.GetNetType()}=="DateTime?" || ${f.GetNetType()}=="DateTime"  )
+	${f.GetPropertyName()}: Date
+#set ($AnyType=1)
+#end
+#if(${f.GetNetType()}=="bool?" || ${f.GetNetType()}=="bool"  )
+	${f.GetPropertyName()}: boolean
+#set ($AnyType=1)
+#end
+#if($AnyType==0)	
+	${f.GetPropertyName()}: any 
+#end
+#end
+ 
+} // ${table.GetClassName()}
+
+

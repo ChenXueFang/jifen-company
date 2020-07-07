@@ -1,0 +1,110 @@
+﻿##FILENAME:${table.GetClassName()}.designer.cs
+##
+## Castle ActiveRecord entity class
+##
+#if ($namespace != "")
+namespace $namespace
+{
+#end
+// Business class ${table.GetClassName()} generated from ${table}
+// $developer [$date] Created
+
+using System;
+using System.ComponentModel;
+using Castle.ActiveRecord;
+using NHibernate.Criterion;
+using Newtonsoft.Json;
+[ActiveRecord("$table")]
+public $Partial class ${table.GetClassName()}: ActiveRecordBase<${table.GetClassName()}> 
+#if ($PropChange)
+	, INotifyPropertyChanged
+#end
+{
+
+## property names (to avoid mis-spelling in an NHibernate Criteria)
+#if ($PropChange)
+	#region Property_Names
+
+	#foreach ($f in $fields)
+	public static string Prop_${f.GetPropertyName()} = "${f.GetPropertyName()}";
+	#end
+
+	#endregion
+#end
+
+## private variables
+	#region Private_Variables
+
+#foreach ($f in $fields)
+	private ${f.GetNetType()} ${f.GetPrivateVariableName()};
+#end
+
+	#endregion
+
+	#region Properties
+
+##-- declare properties (getters / setters)
+#foreach ($f in $fields)
+	#if($f.GetRemark()!="")
+		/// <summary>
+        /// ${f.GetRemark()}
+        /// </summary>
+		#end
+	#if( ${f.GetNetType()}=="DateTime")
+		        [JsonConverter(typeof(DateTimeFormat))]
+
+	#end
+	${f.GetFieldAttribute()}
+	public ${f.GetNetType()} ${f.GetPropertyName()}
+	{
+		get { return ${f.GetPrivateVariableName()}; }
+	##if (!${f.IsPrimaryKey()})
+		#if ($PropChange)
+		set
+		{
+			if (${f.GetInEqualityTest()})
+			{
+			
+				${f.GetPrivateVariableName()} = value;
+			
+				NotifyPropertyChanged(${table.GetClassName()}.Prop_${f.GetPropertyName()});
+			}
+		}
+		#else
+		set { ${f.GetPrivateVariableName()} = value; }
+		#end
+	##end
+	}
+
+#end
+##TODO: map [hasmany()] properties using foreign key references
+	#endregion
+
+#if ($PropChange)
+	#region INotifyPropertyChanged Members
+
+	public event PropertyChangedEventHandler PropertyChanged;
+
+	private void NotifyPropertyChanged(String info)
+	{
+		PropertyChangedEventHandler localPropertyChanged = PropertyChanged;
+		if (localPropertyChanged != null)
+		{
+			localPropertyChanged(this, new PropertyChangedEventArgs(info));
+		}
+	}
+
+	#endregion
+
+#end
+
+    public static Int64 RecordCount(params ICriterion[] criteria)
+    {
+        return ${table.GetClassName()}.Count(criteria);
+    }
+} // ${table.GetClassName()}
+
+#if ($namespace != "")
+}
+#end
+

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Symbols LinesOfCode="5566" PostSharpLinesOfCode="0" EnhancedTypesCount="3" xmlns="http://schemas.postsharp.org/2.0/symbols">
+  <Class Class="#1=T:[Common.Object]Common.Object.Attribute.HttpRequestAOPLog">
+    <Instance Declaration="#2=M:[ACETemplate]ACETemplate.Login::Page_Load(System.Object, System.EventArgs)" Id="3568952482d9b2a2">
+      <Target>
+        <JoinPoint Advising="#1" Description="#3=Wrapped by advice(s) OnEntry, OnException, OnExit" Ordinal="0" />
+      </Target>
+    </Instance>
+  </Class>
+  <Class Class="#4=T:[Common.Object]Common.Object.Attribute.UserListRoleAttribute">
+    <Instance Declaration="#5=M:[ACETemplate]ACETemplate.adnim.handler.GobalHandler::userinfo()" Id="35689524973ec1f8">
+      <Target>
+        <JoinPoint Advising="#4" Description="#6=Wrapped by advice(s) OnEntry, OnExit" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#7=M:[ACETemplate]ACETemplate.adnim.handler.GobalHandler::_usermodifypassword()" Id="35689524f35fa9a0">
+      <Target>
+        <JoinPoint Advising="#4" Description="#6" Ordinal="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#8=M:[ACETemplate]ACETemplate.adnim.handler.GobalHandler::getmenu()" Id="356895240e408eff">
+      <Target>
+        <JoinPoint Advising="#4" Description="#6" Ordinal="3" />
+      </Target>
+    </Instance>
+  </Class>
+  <Class Class="#9=T:[Common.Object]Common.Object.Attribute.OperAOPAttribute">
+    <Instance Declaration="#10=M:[ACETemplate]ACETemplate.adnim.handler.information::Test_Upload()" Id="35689524d2f0b520">
+      <Target>
+        <JoinPoint Advising="#9" Description="#6" Ordinal="4" />
+      </Target>
+    </Instance>
+  </Class>
+  <Annotation Target="#11=M:[Common.Object]Common.Object.Attribute.HttpRequestAOPLog::OnEntry(PostSharp.Aspects.MethodExecutionArgs)" Arguments="#12=2" Description="#13=PostSharp estimates that 2 line(s) of code are saved every time this advice is applied. Use the [LinesOfCodeAvoided] attribute on the aspect or specify the LinesOfCodeAvoided property on the advice attribute to override this value." />
+  <Annotation Target="#14=M:[Common.Object]Common.Object.Attribute.HttpRequestAOPLog::OnExit(PostSharp.Aspects.MethodExecutionArgs)" Arguments="#12" Description="#13" />
+  <Annotation Target="#15=M:[Common.Object]Common.Object.Attribute.HttpRequestAOPLog::OnException(PostSharp.Aspects.MethodExecutionArgs)" Arguments="#12" Description="#13" />
+  <Annotation Target="#16=M:[Common.Object]Common.Object.Attribute.UserListRoleAttribute::OnEntry(PostSharp.Aspects.MethodExecutionArgs)" Arguments="#12" Description="#13" />
+  <Annotation Target="#17=M:[Common.Object]Common.Object.Attribute.UserListRoleAttribute::OnExit(PostSharp.Aspects.MethodExecutionArgs)" Arguments="#12" Description="#13" />
+  <Annotation Target="#18=M:[Common.Object]Common.Object.Attribute.OperAOPAttribute::OnEntry(PostSharp.Aspects.MethodExecutionArgs)" Arguments="#12" Description="#13" />
+  <Annotation Target="#19=M:[Common.Object]Common.Object.Attribute.OperAOPAttribute::OnExit(PostSharp.Aspects.MethodExecutionArgs)" Arguments="#12" Description="#13" />
+</Symbols>
