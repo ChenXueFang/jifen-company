@@ -1,0 +1,84 @@
+.charOneBox{
+    margin-bottom: 10px;
+}
+.stackCon{
+    padding-left: 30px;
+}
+.stackTable{
+    width: auto;
+}
+.stackTable td{
+    width: 110px;
+}
+.stackUl{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 6px;
+    margin-left: 0px;
+    box-sizing: border-box;
+}
+.stackUl li{
+    width: 50px;
+    height: 40px;
+    background-color: #2b7dbc;
+    border-radius: 4px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.stackUl li:nth-child(2){
+    width: 30px;
+    background-color: #5291c1;
+}
+.stackUl li:nth-child(3){
+    width: 50px;
+    background-color: #6fb0ea;;
+}
+.stackUl li:nth-child(4){
+    width: 40px;
+    background-color: #89c3f7;
+}
+.stackUl li:nth-child(5){
+    width: 50px;
+    background-color: #c1e4ff;
+}
+.AccuracyBox{
+    /* width: 250px; */
+    margin: 0;
+    margin-right: 65px;
+}
+.AccuracyTitle{
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+.twoTableBox{
+    display: flex;
+    margin-top: 30px;
+}
+.top5Table{
+    text-align: center;
+    border: solid 1px #e6e6e6;
+}
+.top5Table td,.top5Table th{
+    width: 130px;
+    height: 54px;
+    text-align: center;
+    color: #333;
+    font-weight: normal;
+}
+.top5Table th{
+    background: #f5f5f5;
+}
+
+
+
+
+
+
+
+
+

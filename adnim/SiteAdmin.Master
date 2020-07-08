@@ -1,0 +1,803 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SiteAdmin.master.cs" Inherits="Web.adnim.SiteAdmin" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title><%=ACETemplate.SiteHelper.SiteName %></title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- basic styles -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/jquery.gritter.css" />
+    <link rel="stylesheet" href="assets/css/ui.jqgrid.css" />
+    <link rel="stylesheet" href="assets/css/ace.min.css" />
+    <link rel="stylesheet" href="assets/css/ace-rtl.min.css" />
+    <link rel="stylesheet" href="assets/css/ace-skins.min.css" />
+    <link rel="stylesheet" href="css/element-ui.css" />
+
+    <script src="assets/js/ace-extra.min.js"></script>
+    <script src="assets/js/jquery-2.0.3.min.js"></script>
+<%--    <script src="assets/js/chosen.jquery.min.js"></script>--%>
+
+   <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+    <link href="css/animate.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+
+    <script src="js/vue.js"></script>
+
+       <script>
+        Date.prototype.Format = function (fmt) { //author: meizz 
+            var o = {
+                "M+": this.getMonth() + 1, //月份 
+                "d+": this.getDate(), //日 
+                "h+": this.getHours(), //小时 
+                "H+": this.getHours(), //小时     
+                "m+": this.getMinutes(), //分 
+                "s+": this.getSeconds(), //秒 
+                "q+": Math.floor((this.getMonth() + 3) / 3), //季度 
+                "S": this.getMilliseconds() //毫秒 
+            };
+            if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+            for (var k in o)
+                if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+            return fmt;
+        }
+
+        var ColorArray = ["#428fb9"]
+</script>
+
+    <style>
+        
+        li[class*="item-"] {
+    border: 0px solid #DDD !important;
+    border-left-width: 0px !important;
+}
+
+
+           [v-cloak] {
+            display:none
+        }
+        a {
+            cursor: pointer;
+        }
+        input[readonly] {
+			color: #939192;
+			background: white!important;
+			cursor: default
+		}
+         .logoImg{
+            vertical-align: middle;
+            position: absolute;
+            height: 56px;
+            top: 0px;
+            left: 38px;
+        }
+         .navbar{
+            position:relative;
+            padding:5px 0px;
+        }
+          .ace-nav>li.open.light-blue>a{
+            background:transparent !important;
+        }
+       .dropdown-toggle{
+            background:transparent !important;
+        }
+        .el-date-editor .el-range-separator {
+            width:7% !important;
+        }
+
+        .el-dialog__header{
+            background-color:#2b7dbc;
+            padding: 0;
+            line-height: 50px;
+            font-size:18px
+        }
+        .el-dialog__header .el-dialog__title{
+            color:#fff
+        }
+        .el-dialog__headerbtn{
+            top:0;
+            font-size:18px
+        }
+        .v-modal{
+            z-index:1 !important;
+        }
+        .el-dialog__body{
+            font-size:18px
+        }
+        .el-dialog__headerbtn .el-dialog__close,.el-dialog__headerbtn .el-dialog__close:hover{
+            color:#fff
+        }
+        .confirmbtn.el-button--primary{
+            background-color:#2b7dbc;
+            border-color:#2b7dbc;
+            margin-left:20px
+        }
+        .cancelbtn.el-button--primary{
+            background-color:#bbbbbb;
+            border-color:#bbbbbb;
+        }
+
+        .dialog-footer .el-button{
+            width:140px
+        }
+
+          .norecords {  
+    border-width: 2px !important;  
+    font-weight: bold;  
+    font-size:15px;
+    left: 45%;  
+    margin: 5px;  
+    padding: 6px;  
+    text-align: center;  
+    top: 45%;  
+    width: auto;  
+    z-index: 102;  
+    }
+
+    .navbar-header-title{
+    position: absolute;
+    left: 200px;
+    font-size: 20px;
+    color: #fff;
+    top: 50%;
+    transform: translate(0,-50%);
+    }
+
+/*省略号的形式*/
+    .ui-jqgrid tr.jqgrow td {
+text-overflow : ellipsis !important;
+
+}
+     
+    </style>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+</head>
+<body >
+    <%--  <script type="text/javascript">
+        window.jQuery || document.write("<script src='assets/js/jquery-2.0.3.min.js'>" + "<" + "/script>");
+    </script>--%>
+
+    <div class="navbar navbar-default" id="navbar">
+        <script type="text/javascript">
+            try { ace.settings.check('navbar', 'fixed') } catch (e) { }
+        </script>
+
+        <div class="navbar-container" id="navbar-container">
+            <div class="navbar-header pull-left">
+                <a href="#" class="navbar-brand">
+                    <small>
+                          <img class="logoImg" src="assets/images/logo.png"  />
+                        <%--<i class="icon-leaf"></i>--%>
+                    </small>
+                </a>
+                <span class="navbar-header-title"><%=ACETemplate.SiteHelper.SiteName  %></span>
+                <!-- /.brand -->
+            </div>
+            <!-- /.navbar-header -->
+
+            <div class="navbar-header pull-right" role="navigation">
+                
+                <ul class="nav ace-nav vueapp">
+                    <li class="light-blue">
+                        <a data-toggle="dropdown" href="#" class="dropdown-toggle">
+                             <i class="icon-user" style="vertical-align:middle;">  </i>
+                                <label>您好,</label>
+                                <label id="labeluser" runat="server"></label>
+                            <i class="icon-caret-down"></i>                           
+                        </a>
+
+                        <ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+                            <li>
+                                <a href="../adnim/ResetPassword.aspx" data-sub="重置密码">
+                                    <i class="icon-cog"></i>
+                                    修改密码
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                             <%--<li>
+                                <a href="/adnim/AccountManage.aspx" data-sub="账号管理">
+                                    <i class="icon-cog"></i>
+                                    账号管理
+                                </a>
+                            </li>--%>
+                         <%--   <li>
+                                <a href="#">
+                                    <i class="icon-user"></i>
+                                    个人资料
+                                </a>
+                            </li>--%>
+
+                            <li @click="dialogVisible = true">
+                                <a href="javascript:;" data-sub="切换报表">
+                                    <i class="el-icon-s-order"></i>
+                                    切换报表
+                                </a>
+                            </li>
+
+                            <li class="divider"></li>
+
+                            <li>
+                                <a href="#" onclick="return logout();">
+                                    <i class="icon-off"></i>
+                                    退出
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <el-dialog center title="切换报表" :visible.sync="dialogVisible" width="400px" top="15%">
+                      <div>
+                          <common-cascader v-on:cascader='cascader' class="cascader" style="margin-left: 20px;" />
+                      </div>
+                      <span slot="footer" class="dialog-footer">
+                        <el-button class="cancelbtn" type="primary" v-on:click="dialogVisible = false">取 消</el-button>
+                        <el-button class="confirmbtn" type="primary" v-on:click="dialogSure">确 定</el-button>
+                      </span>
+                    </el-dialog>
+                </ul>
+                <!-- /.ace-nav -->
+            </div>
+            <!-- /.navbar-header -->
+        </div>
+        <!-- /.container -->
+    </div>
+
+    
+
+    <div class="main-container  vueCon" id="main-container">
+        <script type="text/javascript">
+            try { ace.settings.check('main-container', 'fixed') } catch (e) { }
+        </script>
+
+        <div class="main-container-inner">
+            <a class="menu-toggler" id="menu-toggler" href="#">
+                <span class="menu-text"></span>
+            </a>
+
+            <div class="sidebar" id="sidebar">
+                <script type="text/javascript">
+                    try { ace.settings.check('sidebar', 'fixed') } catch (e) { }
+                </script>
+
+                <!-- #sidebar-shortcuts -->
+
+                <ul class="nav nav-list" id="nav-list">
+                    <%--<li>
+                        <a>
+                            <i class="icon-home"></i>
+                            <span class="menu-text">飞利浦伟康学院 </span>
+                        </a>
+                    </li>--%>
+
+                    <template v-for="item in menu">
+
+                        <li>
+                            <a href="#" class="dropdown-toggle">
+                                <i  v-bind:class="item.Icon" ></i>
+                                <span class="menu-text">{{item.Title}}</span>
+                                <b class="arrow icon-angle-down"></b>
+                            </a>
+                            <ul class="submenu">
+                                <li v-for="item1 in item.Menu">
+                                    <a v-bind:data-id="item1.ID" :href="item1.Url" rel="2" v-bind:class="{'dropdown-toggle':item1.Menu}">
+                                        <i class="icon-double-angle-right"></i> {{item1.Title}}
+                                        										<b  v-if="item1.Menu" class="arrow icon-angle-down"></b>
+
+                                    </a>
+                                    <ul  class="submenu" v-if="item1.Menu">
+                                            <li v-for="item2 in item1.Menu">
+                                                    <a v-bind:data-id="item2.ID" :href="item2.Url" rel="3" style="text-decoration:none;">
+                                                        <i class="dropdown-toggle"></i> {{item2.Title}}
+                                                    </a>
+                                                </li>
+
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </template>
+                </ul>
+                <!-- /.nav-list -->
+
+                <div class="sidebar-collapse" id="sidebar-collapse">
+                    <i class="icon-double-angle-left" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right"></i>
+                </div>
+
+                <script type="text/javascript">
+
+                    try { ace.settings.check('sidebar', 'collapsed') } catch (e) { }
+                </script>
+            </div>
+
+            <div class="main-content">
+                      <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            <div class="main-content2" id="main-content"></div>
+                    </asp:ContentPlaceHolder>
+                                     
+            </div>
+            <!-- /.main-content -->
+        </div>
+        <!-- /.main-container-inner -->
+
+    <%--    <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+            <i class="icon-double-angle-up icon-only bigger-110"></i>
+        </a>--%>
+    </div>
+    <!-- /.main-container -->
+    <!-- basic scripts -->
+    <!--[if !IE]> -->
+    <!-- <![endif]-->
+    <!--[if IE]>
+    <script type="text/javascript">
+     window.jQuery || document.write("<script src='assets/js/jquery-1.10.2.min.js'>"+"<"+"/script>");
+    </script>
+    <![endif]-->
+
+    
+    <script type="text/javascript">
+        if ("ontouchend" in document) document.write("<script src='assets/js/jquery.mobile.custom.min.js'>" + "<" + "/script>");
+    </script>
+
+
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/typeahead-bs2.min.js"></script>
+    <!-- page specific plugin scripts -->
+    <!--[if lte IE 8]>
+          <script src="assets/js/excanvas.min.js"></script>
+        <![endif]-->
+        <script src="assets/js/date-time/bootstrap-datepicker.min.js"></script>
+
+
+
+  <%--   <script src="assets/js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="assets/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="assets/js/chosen.jquery.min.js"></script>
+    <script src="assets/js/fuelux/fuelux.spinner.min.js"></script>
+    <script src="assets/js/date-time/bootstrap-timepicker.min.js"></script>
+    <script src="assets/js/date-time/moment.min.js"></script>
+              <script src="assets/js/date-time/daterangepicker.min.js"></script>
+
+    <script src="assets/js/bootstrap-colorpicker.min.js"></script>
+    <script src="assets/js/jquery.knob.min.js"></script>
+    <script src="assets/js/jquery.autosize.min.js"></script>
+    <script src="assets/js/jquery.inputlimiter.1.3.1.min.js"></script>
+    <script src="assets/js/jquery.maskedinput.min.js"></script>
+    <script src="assets/js/bootstrap-tag.min.js"></script>--%>
+
+        <!-- ace scripts -->
+
+    <script src="assets/js/ace-elements.min.js"></script>
+    <script src="assets/js/ace.min.js"></script>
+
+    
+    <script src="assets/js/jquery.gritter.min.js"></script>
+    <script src="js/mygritter.js"></script>
+
+    <script src="js/myfunction.js"></script>
+     <script src="js/Global.js"></script>
+    <script src="js/HttpAjax.js"></script>
+    <script src="js/index.js"></script>
+
+     <script src="js/searchFiter.js"></script>
+    <script src="js/OperItem.js"></script>
+    <script src="js/element.js"></script>
+    <script src="js/lodash.js"></script>
+    <!--引入公共组件,年月选择-->
+	<script type="text/javascript" src="component/cascader.js"></script>
+
+
+
+    <asp:ContentPlaceHolder ID="ScriptBlock" runat="server">
+
+    </asp:ContentPlaceHolder>
+
+   <script type="text/javascript">
+
+        jQuery(function ($) {
+
+            var done = _.after($("#sidebar-collapse").click, function () {
+              
+                if ($("#grid-table")) {
+                    $("#grid-table").setGridWidth($(".page-content").width() * 0.99);
+                }
+            });
+
+            $(window).resize(function () {
+                if (jQuery("#grid-table").setGridWidth) {
+                
+                    $("#grid-table").setGridWidth($(".page-content").width() * 0.99);            
+                }
+                //  $("#grid-table").setGridWidth($(window).width() * 0.99);
+            });
+
+
+            $("#sidebar-collapse").on("click", done)
+
+            $('#recent-box [data-rel="tooltip"]').tooltip({ placement: tooltip_placement });
+            function tooltip_placement(context, source) {
+                var $source = $(source);
+                var $parent = $source.closest('.tab-content')
+                var off1 = $parent.offset();
+                var w1 = $parent.width();
+
+                var off2 = $source.offset();
+                var w2 = $source.width();
+
+                if (parseInt(off2.left) < parseInt(off1.left) + parseInt(w1 / 2)) return 'right';
+                return 'left';
+            }
+
+            //Android's default browser somehow is confused when tapping on label which will lead to dragging the task
+            //so disable dragging when clicking on label
+            var agent = navigator.userAgent.toLowerCase();
+            if ("ontouchstart" in document && /applewebkit/.test(agent) && /android/.test(agent))
+                $('#tasks').on('touchstart', function (e) {
+                    var li = $(e.target).closest('#tasks li');
+                    if (li.length == 0) return;
+                    var label = li.find('label.inline').get(0);
+                    if (label == e.target || $.contains(label, e.target)) e.stopImmediatePropagation();
+                });
+        })
+        //$(".nav-list").find("li").removeClass("active open");
+
+        function logout() {
+            if (confirm("你确定想要退出吗？")) {
+                window.location = "login.aspx?loginout=true";
+                sessionStorage.removeItem("selectYear")
+                sessionStorage.removeItem("selectMonth")
+                return false;
+            }
+        }
+    </script>
+
+    <script type="text/javascript">
+        var errorgrit = function (title, text) {
+            $.gritter.add({
+                title: title,
+                text: text,
+                class_name: 'gritter-error ' + ' gritter-light',
+                time: '5000',
+
+            });
+
+            // return false;
+        }
+        var vueapp = new Vue({
+            el: ".vueapp",
+            data: {
+                dialogVisible: false,
+                selectYear: null,
+                selectMonth: null,
+            },
+            methods: {
+                cascader(year, month) {
+                    this.selectYear = year
+                    this.selectMonth = month
+                },
+                dialogSure() {
+                    if (this.selectYear && this.selectMonth) {
+                        sessionStorage.setItem("selectYear", this.selectYear)
+                        sessionStorage.setItem("selectMonth", this.selectMonth)
+                        this.dialogVisible = false
+                    } else {
+                        errorgrit("错误", "请选择报表年月");
+                        return;
+                    }
+                },
+            }
+        })
+    </script>
+
+    <script type="text/javascript">
+        var myvue = new Vue({
+            el: "#nav-list",
+            data: {
+                menu: [],
+            },
+            methods: {
+                sethref: function () {
+
+                    $(".nav-list").find("li").removeClass("active open");
+                    $(".nav-list").find("a").each(function () {
+                        if ($(this).attr("href") != null) {
+
+                            if (window.location.href.toLocaleLowerCase().indexOf($(this).attr("href").toLocaleLowerCase()) != -1) {
+                                $(this).parent().addClass("active");
+                                if ($(this).attr("rel") == "2") {
+                                    $(this).parent().parent().parent().addClass("active open");
+                                }
+
+                                if ($(this).attr("rel") == "3") {
+                                    $(this).parent().parent().parent().addClass("active open");
+
+                                    //在打开上级的
+                                    $(this).parent().parent().parent().parent().addClass("active open");
+                                    $(this).parent().parent().parent().parent().parent().addClass("active open");
+
+
+                                }
+
+
+                            }
+                        }
+                    });
+                }
+            }
+        })
+        var menu = new Index({ url: "world" });
+        menu.init(function (data) {
+            myvue.menu = data;
+            myvue.$nextTick(function () { this.sethref() })
+        });
+
+       
+
+        var getHeight = 0;
+
+        //设置内容显示区高度
+        function setMainContentHeight() {
+            var clientHeight = document.documentElement.clientHeight;
+         
+            $("#main-content").css("width", "100%");
+            $("#main-content").css("height", (clientHeight- 20) + "px");
+            getHeight = (clientHeight - 0 - 0 - 22);
+        }
+        var tapsPage = 1;//标签滑动页面
+        $(function () {
+           
+
+            var currentId = window.location.hash;
+            if (currentId) {
+                currentId = currentId.substring(1, currentId.length);
+                if (menu.find(currentId) == null) {
+                    addIframe("menu_user_list");
+                } else {
+                    addIframe(currentId);
+                }
+            } else {
+                for (var key in menu.menulist) {
+
+                    if ($("#" + key.id + "_li").parent().css("display") != "none") {
+                        addIframe(key.id);
+                        break;
+                    }
+                }
+
+            }
+            setMainContentHeight();
+            $("#rightPage").on("click", function () {
+                var sumStr = $("#tapsDiv").css("width");
+                var sumLength = Number(sumStr.substring(0, sumStr.length - 2));
+
+                var pmStr = $("#breadcrumbs").css("width");
+                var pmLength = Number(pmStr.substring(0, pmStr.length - 2));
+
+                var leftPageStr = $("#leftPage").css("width");
+                var leftPageLength = Number(leftPageStr.substring(0, leftPageStr.length - 2));
+
+                var rightPageStr = $("#rightPage").css("width");
+                var rightPageLength = Number(rightPageStr.substring(0, rightPageStr.length - 2));
+
+                var pageWidth = (pmLength - rightPageLength - leftPageLength) * tapsPage;
+                if (sumLength - pageWidth <= 0) {
+                    return;
+                }
+                $("#tapsDiv").animate({ right: pageWidth + 'px' });
+                tapsPage++;
+            });
+
+            $("#leftPage").on("click", function () {
+                if (tapsPage <= 1) {
+                    tapsPage = 1;
+                    $("#tapsDiv").animate({ right: '0px' });
+                    return;
+                }
+                tapsPage--;
+                var sumStr = $("#tapsDiv").css("width");
+                var sumLength = Number(sumStr.substring(0, sumStr.length - 2));
+
+                var pmStr = $("#breadcrumbs").css("width");
+                var pmLength = Number(pmStr.substring(0, pmStr.length - 2));
+
+                var leftPageStr = $("#leftPage").css("width");
+                var leftPageLength = Number(leftPageStr.substring(0, leftPageStr.length - 2));
+
+                var rightPageStr = $("#rightPage").css("width");
+                var rightPageLength = Number(rightPageStr.substring(0, rightPageStr.length - 2));
+
+                var pageWidth = (pmLength - rightPageLength - leftPageLength) * (tapsPage - 1);
+                $("#tapsDiv").animate({ right: pageWidth + 'px' });
+            });
+
+            //$("#logout").on("click",function(){
+            //	$.ajax({
+            //		type:"get",
+            //		url:ctxPath+'/user/logout',
+            //		dataType:'json',
+            //		success:function(data){
+            //			delCookie("nickName");
+            //			delCookie("token");
+            //			window.location.href="login.html";
+            //		}
+            //	})
+            //});
+        })
+
+        $("body").on("click", "a[data-id]", function (e) {
+            addIframe($(this).data("id"), e, $(this).data("sub"));
+
+        })
+
+        var I64BIT_TABLE =
+        'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_-'.split('');
+
+        function hash(input) {
+            var hash = 5381;
+            var i = input.length - 1;
+
+            if (typeof input == 'string') {
+                for (; i > -1; i--)
+                    hash += (hash << 5) + input.charCodeAt(i);
+            }
+            else {
+                for (; i > -1; i--)
+                    hash += (hash << 5) + input[i];
+            }
+            var value = hash & 0x7FFFFFFF;
+
+            var retValue = '';
+            do {
+                retValue += I64BIT_TABLE[value & 0x3F];
+            }
+            while (value >>= 6);
+
+            return retValue;
+        }
+        function addIframe(id, e, sub) {
+            var event = e || window.event;
+            var obj = menu.find(id);
+            if (obj == null) {
+                if (!sub) {
+                    event.stopPropagation();    //  阻止事件冒泡
+                    return;
+                }
+                else {
+
+                    var x = hash(id)
+                    obj = menu.find(x);
+
+                    //先移除
+
+                    if (obj == null) {
+                        //添加到menu菜单列表
+                        var menu1 = new Menu(x, id, sub);
+                        obj = menu1;
+                        menu.menulist.push(menu1)
+                    }
+                }
+            }
+            if (document.getElementById(obj.id) === null) {
+                $(".J_iframe").css("display", "none");
+                var html = "";
+                html += '<iframe height="100%" scroll="auto" width="100%" class="J_iframe" id="' + obj.id + '" frameborder="0" src="' + obj.url + '">'
+                html += '</iframe>';
+                $("#main-content").append(html);
+                $(".J_menuTab").removeClass("selectedTab");
+                var titleHtml = "";
+                titleHtml += '<a href="javascript:;" data-id=' + obj.id + ' id="tab_' + obj.id + '" class="J_menuTab selectedTab"';
+                titleHtml += '	data-id="form_validate.html">' + obj.title + '<i';
+                titleHtml += '	class="fa fa-times-circle" onclick="delIframe(this,\'' + obj.id + '\')"></i></a>	';
+                $("#tapsDiv").append(titleHtml);
+            } else {
+                $(".J_iframe").css("display", "none");
+                $(".J_menuTab").removeClass("selectedTab");
+                $("#" + obj.id).css("display", "block");
+                if (!!sub) {
+                    $("#" + obj.id).attr('src', $("#" + obj.id).attr('src'));
+                }
+                $("#tab_" + obj.id).addClass("selectedTab");
+            }
+
+            if ($(".nav-list a[data-id=" + obj.id + "]").length > 0) {
+                //  $(".nav-list").find("li").removeClass("open");
+                $(".active").removeClass("active");
+                //   $(".nav-list").find("li").removeClass("active open");
+
+                // $(".nav-list a[data-id=" + obj.id + "]").parent().parent().parent().addClass("open");
+
+                $(".nav-list a[data-id=" + obj.id + "]").parent().addClass("active");
+            }
+            //$("#"+id+"_li").parent().addClass("active");
+
+            var url = window.location.href;
+            if (url.indexOf("#") != -1) {
+                url = url.substring(0, url.indexOf("#"));
+            }
+            window.location.href = url + "#" + id;
+
+        }
+
+        function delIframe(obj, id) {
+            var nextShowObj = $("#" + id).next();
+            var nextId = $(nextShowObj).attr("id");
+            if (nextId === undefined) {
+                nextShowObj = $("#" + id).prev();
+                nextId = $(nextShowObj).attr("id");
+            }
+            if (nextId !== undefined) {
+                addIframe(nextId);
+            }
+
+            $("#" + id).remove();
+            $(obj).parent().remove();
+            var event = window.event;
+            event.stopPropagation();    //  阻止事件冒泡
+        }
+    </script>
+    <script>
+        /**
+ * cookie操作
+ */
+        function setCookie(name, value, time) {
+            var exp = new Date();
+            if (time == 0) {
+                time = 1000 * 60 * 60 * 24 * 360;
+            }
+            if (time != null) {
+                exp.setTime(exp.getTime() + time);
+                document.cookie = name + "=" + escape(value) + ";expires="
+                        + exp.toGMTString();
+            } else {
+                document.cookie = name + "=" + escape(value);
+            }
+
+        }
+
+        function getCookie(name) {
+            var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+            if (arr = document.cookie.match(reg))
+                return unescape(arr[2]);
+            else
+                return null;
+        }
+
+        function delCookie(name) {
+            var exp = new Date();
+            exp.setTime(exp.getTime() - 1);
+            var cval = getCookie(name);
+            if (cval != null) {
+                document.cookie = name + "=" + cval + ";expires=" + exp.toGMTString();
+            }
+        }
+
+        function getRequest(pathName) {
+            var url = location.search; // 获取url中"?"符后的字串
+            var theRequest = new Object();
+            if (url.indexOf("?") != -1) {
+                var str = url.substr(1);
+                strs = str.split("&");
+                for (var i = 0; i < strs.length; i++) {
+                    theRequest[strs[i].split("=")[0]] = decodeURI((strs[i].split("=")[1]));
+                }
+            }
+            return theRequest[pathName];
+        }
+        getUserInfo();
+        function getUserInfo() {
+            var url = "handler/GobalHandler.ashx?_op=userinfo";
+            HttpAjax.ajaxget(url, "", function (data) {
+                $(".user-info label").text(data.data.UserName);
+            })
+        }
+    </script>
+
+</body>
+</html>

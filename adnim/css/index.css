@@ -1,0 +1,28 @@
+
+.tab{background: #f0f0f0;height: auto; overflow: hidden}
+.jd_pro{width: 1140px;  margin:100px auto 0; display: block ; height: auto; overflow: hidden}
+
+.jd_pro h1{font-size: 48px; ;font-weight: normal; text-align: left }
+.jd_pro_r{margin-top: 50px}
+.jd_pro .r_t,.jd_pro_r .r_c{font-size: 48px; font-weight: normal; text-align: left }
+.jd_pro  .r_c{font-size: 18px;; margin-top: 40px}
+.r_c p{margin-top: 20px}
+.r_c p:before{content: '';width: 10px; height:10px; border-radius: 10px; background: #029fe9; display: block; float: left;margin:6px 15px 0px 0}
+ .r_btn,.tab2 .r_btn{width:240px; height: 55px; float:left;margin-top: 80px; font-size: 30px; font-weight: normal; display: block;  text-align: center; line-height: 55px;background: #029fe9;color: #fff}
+.r_btn:hover,.tab2 .r_btn:hover{color: #fff; cursor: pointer; }
+
+
+.tab2{background:url("../images/tab2.jpg") center no-repeat #029fe9;   margin-top: -100px;}
+.tab2 .r_btn{background: #ffd803; color: #807012; margin-top: 20px;}
+.tab2 .r_c p:before{background: #fff;}
+.tab2 .jd_pro_r{margin: 120px 0 80px }
+
+.tab3{background:url("../images/tab3.jpg") center no-repeat #171717;   margin-top: -100px; }
+.tab3 .jd_pro_r{margin: 100px 0 100px }
+
+.content-block{width: 100%; min-width: 1140px;}
+
+
+@media (min-width: 768px){
+    .jd_pro{padding-bottom: 50px;}
+}
