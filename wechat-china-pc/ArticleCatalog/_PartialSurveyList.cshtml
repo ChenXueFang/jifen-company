@@ -1,0 +1,729 @@
+﻿@{
+   
+    var startIndex = 0;
+    int CountAll = Convert.ToInt32(ViewBag.pageCount ?? 0);
+    int PageIndex = ViewBag.PageIndex;
+    int PageSize = ViewBag.PageSize;
+    decimal allPage = Math.Ceiling(Convert.ToDecimal(CountAll) / Convert.ToDecimal(PageSize));
+    if (CountAll == 0)
+    {
+        PageIndex = 0;
+    }
+
+}
+<link href="~/Content/js/element/element2.css" rel="stylesheet" />
+<link href="~/Content/css/pagination.css" rel="stylesheet" />
+<script src="~/Content/js/vue/vue2.js"></script>
+<script src="~/Content/js/element/element2.js"></script>
+@* 复制功能 *@
+<script src="~/Content/js/clipboard.min.js"></script>
+<script src="~/Content/components/UploadImg.js"></script>
+
+<script>
+    window.crmtest = false;
+</script>
+<script src="~/Content/js/mock-cms-test.js"></script>
+<script src="~/Content/js/mock-min.js"></script>
+
+<div id="qrlist" class="vueApp">
+    <div class="custom-tree-container">
+        @* 复制文本域需要的输入框 *@
+        <input id='input' value='' style='color: #fff;width: 1px;height: 1px;border: #ffff;'/>
+
+        <div class="block">
+            @* <div class="titles">
+                <p>目录名称</p>
+                <p>目录地址</p>
+                <p>添加时间</p>
+                <p>目录图片</p>
+                <p>更多操作</p>
+            </div> *@
+            <el-tree
+            ref='tree'
+            :data="catalogList"
+            node-key="id"
+            default-expand-all
+            v-on:node-drag-start="handleDragStart"
+            v-on:node-drag-enter="handleDragEnter"
+            v-on:node-drag-leave="handleDragLeave"
+            v-on:node-drag-over="handleDragOver"
+            v-on:node-drag-end="handleDragEnd"
+            v-on:node-drop="handleDrop"
+            draggable
+            :allow-drop="allowDrop"
+            :allow-drag="allowDrag"
+            :expand-on-click-node="false">
+                <span class="custom-tree-node" slot-scope="{ node, data }">
+                    <p style="width: 107px;height: 100%">{{ data.CatalogName}}</p>
+                    <span class='treeData'>
+                        <span>{{data.AddTime?data.AddTime.substring(0, 10):''}}</span>
+                        <div style='width:170px;height:100px;margin-right:4vw'><img :src='data.CatalogBanner' style='width:100%;height:100px'/></div>
+                        <el-button
+                            type="text"
+                            size="mini"
+                            class='copyBtn'
+                            v-on:click="() => copyurl(data)">
+                            目录地址
+                        </el-button>
+                        <el-button
+                            type="text"
+                            size="mini"
+                            v-on:click="() => clickModal(node,data)">
+                            编辑
+                        </el-button>
+                        <el-button
+                                type="text"
+                                size="mini"
+                                v-on:click="append(data)">
+                            新增子级
+                        </el-button>
+                        <el-button
+                                type="text"
+                                size="mini"
+                                v-on:click="remove(node, data)">
+                            删除
+                        </el-button>
+                    </span>
+                </span>
+            </el-tree>
+            <div style="width: 105px; height: 30px; background: #2491ca; text-align: center; line-height: 30px; color: rgb(255, 255, 255);margin: 60px 139px 0px 0px;float: right; cursor: pointer;" v-on:click='submitAll'>保存</div>
+        </div>
+    </div>
+
+   <!-- 模态框   -->
+    <div :class="ModalState">
+        <div class="ModalCon">
+            <p class="ModalTitle">编辑文章目录</p>
+            <ul class="addUl" style="margin-top: -144px;">
+                <li class="li1">
+                    <span class="redStar">*</span>目录名称：<input type="text" name="SurveyName" v-model='currentName' placeholder="请输入目录名称" style='width: 177px;'/>
+                </li>
+                <li class="li2" style="margin-left: 26px;">
+                    父级菜单：
+                    <el-select v-model="currentFather" placeholder="请选择" :disabled='FatherDisabled'>
+                        <el-option
+                        v-for="item in options"
+                        :key="item.CatalogName"
+                        :value="item.CatalogName">
+                        </el-option>
+                    </el-select>
+                </li>
+                <li class="li1" style='display:flex'>
+                    <span class="redStar">*</span>banner图：
+                    <div style='margin-top:17px'>
+                        <div style='width:148px;height:148px;'>
+                            <el-upload
+                            class="avatar-uploader"
+                            list-type="picture-card"
+                            action="/Handler/UploadHandler.ashx"
+                            :show-file-list="false"
+                            :on-success="handleBannerSuccess"
+                            :before-upload="beforeAvatarUpload">
+                            <img v-if="bannerImg" :src="bannerImg" class="avatar" style='width:148px;height:148px'>
+                            <i v-else class="el-icon-plus avatar-uploader-icon"></i>
+                            </el-upload>
+                        </div>
+                        <div style="width: 148px;text-align: center;color:#d4d4d4;margin-top: -10px;">(900 x 500)</div>
+                    </div>
+                </li>
+                @* <li class="li1" style='display:flex;margin-top: 136px;margin-left: 32px;'>
+                    logo图片：
+                    <div style='margin-top:17px'>
+                        <div style='width:148px;height:148px;'>
+                            <el-upload
+                            class="avatar-uploader"
+                            list-type="picture-card"
+                            action="/Handler/UploadHandler.ashx"
+                            :show-file-list="false"
+                            :on-success="handleLogoSuccess"
+                            :before-upload="beforeAvatarUpload">
+                            <img v-if="logoImg" :src="logoImg" class="avatar" style='width:148px;height:148px'>
+                            <i v-else class="el-icon-plus avatar-uploader-icon"></i>
+                            </el-upload>
+                        </div>
+                        <div style="width: 148px;text-align: center;color:#d4d4d4;margin-top: -10px;">(300 x 300)</div>
+                    </div>
+                </li> *@
+            </ul>
+            <div class="ModalBtnBox">
+                <p class="ModalCancel" v-on:click="ModalCancel">取消</p>
+                <p class="ModalSure" v-on:click="ModalSure">确定</p>
+            </div>
+        </div>
+    </div>
+    <!--  模态框-->
+
+
+</div>
+
+<script>
+  
+var id = 1000
+var app_p21 = new Vue({
+        el: ".vueApp",
+        data: {
+            totalPage:@CountAll,
+            currentPage:@PageIndex,
+            size:@PageSize,
+            value1: true, //开关
+            value2: true, 
+            currentName:'', // 编辑 目录名
+            currentFather:'', // 编辑 一级目录
+            FatherDisabled:false, // 编辑 是一级目录，不能下拉
+            defaultProps: {
+                children: 'children',
+                label: 'label',
+                time:'time',
+                address:'address',
+            },
+            treeData:null,
+            @* 选择下拉 *@
+            options: [],
+            value: '',
+            bannerImg:'',
+            logoImg:'',
+            ModalState: 'closeModal',// 模态框样式判断 showModal closeModal
+            catalogList:[], //目录列表
+            tempcatalogList:[],//平级目录
+            dropArr:[], //拖拽改变后的数据
+            isAddData:null,
+
+        },
+        created: function () {  
+            this.getCatalogList()
+     
+        },
+        methods:{
+            // 复制预览链接
+            copyurl(data) {
+                var CatalogId = data.CatalogId
+                var input = document.getElementById("input");
+                input.value = window.location.origin + '/Article/List.aspx?CatalogIdArr=' + CatalogId; // 修改文本框的内容
+                input.select(); // 选中文本
+                document.execCommand("copy"); // 执行浏览器复制命令
+                this.$message({
+                    message: '复制成功',
+                    type: 'success'
+                });
+            },
+            handleBannerSuccess(res, file) {
+              if(res.state==1){
+                this.bannerImg = window.location.origin+res.url;
+              }else{
+                  this.$message.error('上传失败');
+              }
+            },
+            handleLogoSuccess(res, file) {
+                if(res.state==1){
+                    this.logoImg = window.location.origin+res.url;
+                }else{
+                    this.$message.error('上传失败');
+                }
+            },
+            beforeAvatarUpload(file) {
+                const isJPG = file.type === 'image/jpeg';
+                const isLt2M = file.size / 1024 / 1024 < 2;
+                if (!isLt2M) {
+                this.$message.error('上传头像图片大小不能超过 2MB!');
+                }
+                // return isJPG && isLt2M;
+                return isLt2M;
+            },
+            // 开关
+            switchBtn:function (val) {
+               // console.log(val)
+            },
+            // 树形图 
+            append(data) {
+                this.ModalState = 'showModal'// 模态框样式判断 showModal closeModal
+                this.currentName = ''
+                this.currentFather = data.CatalogName
+                this.bannerImg = ''
+                this.logoImg = ''
+                this.FatherDisabled = false
+                // 筛选父级目录 options，在平级数据tempcatalogList中筛选
+                var faList = this.tempcatalogList.filter(function(a) {
+                    return a.CatalogLevel == data.CatalogLevel;
+                });
+                this.options = faList //父级下拉菜单
+
+                this.isAddData = data
+                // console.log(data,'增加')
+            },
+            remove(node, data) {
+                var that = this
+                this.$confirm('是否删除该目录?', '提示', {
+                    confirmButtonText: '确定',
+                    cancelButtonText: '取消',
+                    }).then(() => {
+                        $.ajax({
+                            url: "/ArticleCatalog/del",
+                            data: { CatalogId: data.CatalogId},
+                            type: 'POST',
+                            dataType: 'JSON',
+                            beforeSend: function () { $("#loading").css("display", "block"); },
+                            success: function (res) {
+                                $("#loading").css("display", "none");
+                                var result = $.parseJSON(res);
+                                // console.log(result)
+                                if (result.state == 1) {
+                                    that.getCatalogList() 
+                                    that.$message({
+                                        type: 'success',
+                                        message: '删除成功!'
+                                    });
+                                }else{
+                                    that.$message.error(result.msg);
+                                }
+                            },
+                            error: function (e) {
+                                $("#loading").css("display", "none");
+                                dialog.open(e);
+                            }
+                        });
+                    }).catch(() => {
+                        @* that.$message({
+                            type: 'info',
+                            message: '已取消删除'
+                        });*@
+                });
+            },
+            // 编辑 显示模态框（模态框）
+            clickModal: function (node, data) {
+                this.ModalState = 'showModal';  //显示模态框closeModal
+                this.currentName = data.CatalogName// 当前目录名称
+                this.bannerImg = data.CatalogBanner 
+                this.logoImg = data.CatalogLogo
+                this.catalogId = data.CatalogId;
+                @* 判断是否为一级目录 *@
+                if(data.ParentId==null){
+                    this.FatherDisabled = true
+                    this.currentFather = ''
+                }else{
+                    this.FatherDisabled = false
+                    this.currentFather = node.parent.data.CatalogName // 父级目录名
+                    // 筛选父级目录 options，在平级数据tempcatalogList中筛选
+                    var faList = this.tempcatalogList.filter(function(a) {
+                        return a.CatalogLevel == node.parent.data.CatalogLevel;
+                    });
+                    this.options = faList //父级下拉菜单
+                }
+                // console.log(node,'node.data自己，node.parent.data上一级')
+                // console.log(data,'data自己')
+            },// 点击取消（模态框）
+            ModalCancel: function () {
+                // console.log('点击取消')
+                this.ModalState = 'closeModal'
+                this.isAddData = null
+            },
+            setData : function () {
+                if(!this.currentName){
+                    dialog.open("目录名称不能为空");
+                    this.ModalState = 'showModal';
+                    return false;
+                }else if(!this.bannerImg) {
+                    dialog.open("banner图不能为空");
+                    this.ModalState = 'showModal';
+                    return false;
+                }else{
+                    return true
+                }
+            },
+            // 点击确定（模态框） 保存编辑
+            ModalSure: function () {
+                var that = this
+                // console.log('点击确定')
+                var check = this.setData();
+                if (check) {
+                    this.ModalState = 'closeModal';
+                    @* 增加子级 *@
+                    if(this.isAddData){
+                        var newChild = { CatalogName: this.currentName, CatalogLogo: this.logoImg, CatalogBanner:this.bannerImg, ParentId:this.isAddData.CatalogId, children: [] };
+                        this.catalogId = ''
+                        if (!this.isAddData.children) {
+                            this.$set(this.isAddData, 'children', []);
+                        }
+                        this.isAddData.children.push(newChild);
+                    }
+                    @* 下拉菜单中的父级 *@
+                    if(this.options.length>0){
+                        for(var i = 0;i<this.options.length;i++){
+                            if(this.options[i].CatalogName == this.currentFather){
+                                this.selectParentId = this.options[i].CatalogId
+                            }
+                        }
+                    }
+                    $.ajax({
+                        type: 'POST',
+                        url: '/ArticleCatalog/save',
+                        data: { 
+                            CatalogId:this.catalogId,
+                            CatalogName:this.currentName,
+                            ParentId:this.selectParentId?this.selectParentId:null,
+                            CatalogBanner: this.bannerImg,
+                            CatalogLogo: this.logoImg
+                        },
+                        success: function (res) {
+                            var result = $.parseJSON(res);
+                            if (result.state == 1) {
+                                this.isAddData = null
+                                that.getCatalogList()
+                                that.$message({
+                                    type: 'success',
+                                    message: '已保存!'
+                                });
+                            }else{
+                                that.$message.error(result.msg);
+                            }
+                        }
+                    })
+                }
+            },
+
+            // 拖拽
+            handleDragStart(node, ev) {
+                // console.log('drag start', node);
+            },
+            handleDragEnter(draggingNode, dropNode, ev) {
+                // console.log('tree drag enter: ', dropNode.data.CatalogName);
+            },
+            handleDragLeave(draggingNode, dropNode, ev) {
+                // console.log('tree drag leave: ', dropNode.data.CatalogName);
+                // console.log('tree drag leave: draggingNode', draggingNode);
+                // console.log('tree drag leave: dropNode', dropNode);
+                @* 拖拽改变的数据--离开结束 *@
+                @* draggingNode.data.ParentId = dropNode.parent.data.CatalogId
+                this.dropArr.push(draggingNode.data) *@
+            },
+            handleDragOver(draggingNode, dropNode, ev) {
+                // console.log('tree drag over: ', dropNode.data.CatalogName);
+            },
+            handleDragEnd(draggingNode, dropNode, dropType, ev) {
+                @* this.dropArr = [] *@
+                // console.log('tree drag end: ', dropNode && dropNode.data.CatalogName, dropType);
+                // console.log('tree drag end: draggingNode', draggingNode);
+                // console.log('tree drag end: dropNode', dropNode);
+                @* 拖拽改变的数据--拖动结束 *@
+                if(dropNode.parent.data.CatalogId){
+                    draggingNode.data.ParentId = dropNode.parent.data.CatalogId //子ParentId = 父CatalogId
+                }else{
+                    draggingNode.data.ParentId = null
+                }
+                this.dropArr.push(draggingNode.data)
+            },
+            handleDrop(draggingNode, dropNode, dropType, ev) {
+                // console.log('tree drop: ', dropNode.data.CatalogName, dropType);
+            },
+            allowDrop(draggingNode, dropNode, type) {
+                if (dropNode.data.CatalogName === '二级 3-1') {
+                return type !== 'inner';
+                } else {
+                return true;
+                }
+            },
+            allowDrag(draggingNode) {
+                return draggingNode.data.CatalogName.indexOf('三级 3-2-2') === -1;
+            },
+
+            @* 保存 列表拖拽 *@
+            getChildrenData:function(postData,parentItem){
+                if (parentItem.children) {
+                    for (var i in parentItem.children) {
+                        var item=parentItem.children[i];
+                        @* debugger; *@
+                        postData.push({
+                            CataLogId:item.CatalogId,
+                            ParentId:parentItem.CatalogId,
+                        });
+                        this.getChildrenData(postData,item);
+                    }
+                   
+                }
+              
+            },
+            @* 保存 列表拖拽 *@
+            submitAll(){
+                var that = this
+                @* debugger; *@
+                var postData=[];
+                for(var i in this.catalogList){
+                    var item=this.catalogList[i];
+                    @* debugger; *@
+                    postData.push({
+                        CataLogId:item.CatalogId,
+                        ParentId:null,
+                    });
+                    this.getChildrenData(postData,item);
+                    
+                }
+                $.ajax({
+                    type: 'POST',
+                    url: '/ArticleCatalog/saveAll',
+                    data: { datajson: JSON.stringify(postData) },
+                    success: function (res) {
+                        var result = $.parseJSON(res);
+                        if (result.state == 1) {
+                            that.$message({
+                                type: 'success',
+                                message: '已保存!'
+                            });
+                            @* that.getCatalogList(); *@
+                        }else{
+                            that.$message.error(result.msg);
+                        }
+                    }
+                })
+            },
+            @* 获取目录 *@
+            getCatalogList(){
+                var that=this;
+                $.ajax({
+                    url: '/ArticleCatalog/list',
+                    data: {
+                        PageIndex: 1,
+                        PageSize: 100
+                    },
+                    type: 'GET',
+                    beforeSend: function () { $("#loading").css("display", "block"); },
+                    success: function (result) {
+                        $("#loading").css("display", "none");                        
+                        that.tempcatalogList = JSON.parse(result).rows;
+                        that.catalogList = that.tempcatalogList
+
+                        //遍历接口返回数据
+                          var result = [];
+                          for (var item of that.catalogList) {
+                            //判断是否为顶层节点
+                            if (item.ParentId == null) {
+                              var parent = {
+                                CatalogId: item.CatalogId,
+                                AddTime: item.AddTime,
+                                CatalogName: item.CatalogName,
+                                CatalogLogo: item.CatalogLogo,
+                                CatalogBanner: item.CatalogBanner,
+                                ParentId: item.ParentId,
+                                CatalogLevel: item.CatalogLevel
+                              };
+                              parent.children =that.funCreateTree(item.CatalogId,that.catalogList);
+                              result.push(parent);
+                            }
+                          }
+                          //打印出result
+                           // console.log("生成树形结构.....");
+                           // console.log(result);
+                           that.catalogList = result
+                    },
+                    error: function () {
+                        $("#loading").css("display", "none");
+                    }
+                });
+            },
+            @* 树形数据拼凑 *@
+            CreateTreeJson() {
+              //遍历接口返回数据
+              var result = [];
+              for (var item of this.catalogList) {
+                //判断是否为顶层节点
+                if (item.ParentId == null) {
+                  var parent = {
+                    CatalogId: item.CatalogId,
+                    AddTime: item.AddTime,
+                    CatalogName: item.CatalogName,
+                    CatalogLogo: item.CatalogLogo,
+                    CatalogBanner: item.CatalogBanner,
+                    ParentId: item.ParentId
+                  };
+                  parent.children = this.funCreateTree(item.CatalogId, this.catalogList);
+                  result.push(parent);
+                }
+              }
+              //打印出result
+               // console.log("生成树形结构.....");
+               // console.log(result);
+            },   
+            funCreateTree(CatalogId, catalogList) {
+              var childs = new Array();
+              for (var arr of catalogList) {
+                //循环获取子节点
+                if (arr.ParentId == CatalogId) {
+                  var child = {
+                    CatalogId: arr.CatalogId,
+                    AddTime: arr.AddTime,
+                    CatalogName: arr.CatalogName,
+                    CatalogLogo: arr.CatalogLogo,
+                    CatalogBanner: arr.CatalogBanner,
+                    ParentId: arr.ParentId,
+                    CatalogLevel: arr.CatalogLevel
+                };
+                //获取子节点的子节点
+                var childscopy = this.funCreateTree(child.CatalogId, catalogList); //递归获取子节点
+                //// console.log(childscopy)
+                if (childscopy.length > 0) {
+                  child.children = childscopy;
+                }
+                  childs.push(child);
+                }
+              }
+              return childs;
+            },
+
+            // 获取树形的复选框值 
+            treeCheck(value) {
+                // console.log(value)
+                this.treeData= value
+            },
+
+            
+
+        }
+    })
+</script>
+
+<style>
+.el-tree {
+    margin-top: 50px;
+}
+.custom-tree-node {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    padding-right: 8px;
+}
+.el-tree-node__content{
+    height:120px !important;
+    line-height:120px !important;
+    border-top:1px solid #d1dbe5;
+}
+.treeData{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    position:relative;
+}
+.treeData>span{
+    margin-right:4vw;
+    text-align:center;
+}
+/*模态框样式*/
+.showModal{
+    width: 100%;
+    height: 100vh;
+    background:rgba(0,0,0,0.7);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index:999;
+}
+.closeModal{
+    display: none;
+}
+.ModalCon{
+    width: 37%;
+    height: 500px;
+    border-radius: 10px;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 99999;
+}
+.ModalTitle{
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    font-size: 21px!important;
+    padding: 20px 0 20px 39px;
+    color: #333;
+}
+.ModalTips{
+    width: 100%;
+    height: 51px;
+    display: flex;
+    color: #999;
+    font-size: 20px !important;
+    justify-content: center;
+    align-items: center;
+}
+.ModalBtnBox{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    border-top: 0.1vh solid #ccc;
+    cursor: pointer;
+    font-size: 21px !important;
+}
+.ModalSure{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.3vw;
+    color:#66b1ff;
+}
+.ModalCancel{
+    width: 49%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 0.1vh solid #ccc;
+    letter-spacing: 0.3vw;
+    color: #999999;
+}
+/*模态框样式end*/
+.custom-tree-container{
+    width: 100%;
+    margin-top: 20px;
+    padding-bottom: 70px;
+}
+.block{
+    overflow: hidden;
+}
+.el-tree {
+    margin-top: 50px;
+}
+.custom-tree-node {
+    flex: 0.9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.el-tree-node.is-expanded>.el-tree-node__children {
+    display: block;
+}
+.titles{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: -52px;
+    padding-bottom: 10px;
+}
+.titles>p:nth-child(1){
+    width:55%;
+}
+.titles>p:nth-child(2){
+    margin-left: -25%;
+}
+.titles>p:nth-child(4){
+    width:11%;
+}
+.titles>p:nth-child(5){
+    margin-right: 8%;
+}
+.el-tree {
+    border: none !important;
+    border-bottom:1px solid #d1dbe5 !important;
+}
+</style>

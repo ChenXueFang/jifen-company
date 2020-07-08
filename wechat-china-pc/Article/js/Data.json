@@ -1,0 +1,67 @@
+﻿{
+  "Survey": {
+    "SurveyId": 1,
+    "SurveyName": "微信公众平台问卷调查",
+    "SurveyContent": "",
+    "QuestionList": [
+      {
+        "QuestionId": 1,
+        "QuestionName": "您对本次微信自助服务的体验满意吗？",
+        "IsOpen": false,
+        "AnswerList": [
+          {
+            "AnswerId": 1,
+            "AnswerContent": "满意",
+            "IsOpen": false,
+            "IsChecked": false
+          },
+          {
+            "AnswerId": 2,
+            "AnswerContent": "一般",
+            "IsOpen": false
+          },
+          {
+            "AnswerId": 3,
+            "AnswerContent": "不满意",
+            "IsOpen": false
+          },
+          {
+            "AnswerId": 4,
+            "AnswerContent": "很不满意",
+            "IsOpen": false
+          }
+        ]
+      },
+      {
+        "QuestionId": 2,
+        "QuestionName": "您是否达成本次访问目的？",
+        "IsOpen": false,
+        "AnswerList": [
+          {
+            "AnswerId": 5,
+            "AnswerContent": "达成",
+            "IsOpen": false
+          },
+          {
+            "AnswerId": 6,
+            "AnswerContent": "部分达成",
+            "IsOpen": false
+          },
+          {
+            "AnswerId": 7,
+            "AnswerContent": "没达成",
+            "IsOpen": true,
+            "InputDes": ""
+          }
+        ]
+      },
+      {
+        "QuestionId": 3,
+        "QuestionName": "您对我们的微信公众号还有什么其他意见或建议？",
+        "IsOpen": true,
+        "InputDes": ""
+      }
+    ]
+
+  }
+}

@@ -1,0 +1,203 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "文章目录";
+}
+@Html.Action("_PartialTop", "Partial")
+@Html.Action("_PartialLeft", "Partial")
+@Scripts.Render("~/tool/my97")
+<link href="~/Content/css/pagination.css" rel="stylesheet" />
+<script src="~/Content/js/vue/vue.min.js"></script>
+<script src="~/Content/js/element/element.js"></script>
+
+<div class="containerRight">
+    <div class="kewordsChange">
+        <ul>
+            <li id="btnSurveyList" class="borderColor" v-on:click='headListName'>文章目录管理</li>
+            <li id="addsurvey" v-on:click='headCreatName'>创建根目录</li>
+        </ul>
+        <div class="searchInput" style="display: none;">
+            <input type="text" value="" name="searchsc" placeholder="请输入文章目录名称">
+            <a href="javascript:void(0);" onclick="SearchAll();">
+                <img src="/Content/images/buttom.png">
+            </a>
+        </div>
+    </div>
+    <div class="addContent accountList" id="surveyList">
+        @Html.Action("_PartialSurveyList", "ArticleCatalog")
+    </div>
+
+    <div class="addContent vueindex" id="editview" style="display: none;">
+
+        <div class="divQuestion">
+            <ul class="addUl">
+                <li class="li1">
+                    <span class="redStar">*</span>目录名称：<input type="text" name="SurveyName" placeholder="请输入目录名称" v-model='SurveyName'/>
+                </li>
+                <li class="li1" style='display:flex'>
+                    <span class="redStar">*</span>banner图：
+                    <div style='margin-top:17px;margin-left: 20px;'>
+                        <div style='width:148px;height:148px;'>
+                            <el-upload
+                            class="avatar-uploader"
+                            list-type="picture-card"
+                            action="/Handler/UploadHandler.ashx"
+                            :show-file-list="false"
+                            :on-success="handleBannerSuccess"
+                            :before-upload="beforeAvatarUpload">
+                            <img v-if="bannerImg" :src="bannerImg" class="avatar" style='width:148px;height:148px'>
+                            <i v-else class="el-icon-plus avatar-uploader-icon"></i>
+                            </el-upload>
+                        </div>
+                        <div style="width: 148px;text-align: center;color:#d4d4d4;margin-top: -10px;">(900 x 500)</div>
+                    </div>
+                </li>
+                @* <li class="li1" style='display:flex;margin-top: 155px;margin-left: 10px;'>
+                    logo图片：
+                    <div style='margin-top:17px;margin-left: 20px;'>
+                        <div style='width:148px;height:148px;'>
+                            <el-upload
+                            class="avatar-uploader"
+                            list-type="picture-card"
+                            action="/Handler/UploadHandler.ashx"
+                            :show-file-list="false"
+                            :on-success="handleLogoSuccess"
+                            :before-upload="beforeAvatarUpload">
+                            <img v-if="logoImg" :src="logoImg" class="avatar" style='width:148px;height:148px'>
+                            <i v-else class="el-icon-plus avatar-uploader-icon"></i>
+                            </el-upload>
+                        </div>
+                        <div style="width: 148px;text-align: center;color:#d4d4d4;margin-top: -10px;">(300 x 300)</div>
+                    </div>
+                </li> *@
+            </ul>
+        </div>
+        <div style="width: 105px; height: 30px; background: #2491ca; text-align: center; line-height: 30px; color: #fff; margin: 190px 0 0 290px;cursor:pointer;" v-on:click="subNew()">提交</div>
+    </div>
+</div>
+
+<script>
+    var app_p21 = new Vue({
+        el: ".vueindex",
+        data: {
+            SurveyName:'',
+            bannerImg:'',
+            logoImg:'',
+        },
+        created: function () {   
+        },
+        methods:{
+            handleBannerSuccess(res, file) {
+              if(res.state==1){
+                this.bannerImg = window.location.origin+res.url;
+              }else{
+                  this.$message.error('上传失败');
+              }
+            },
+            handleLogoSuccess(res, file) {
+                if(res.state==1){
+                    this.logoImg = window.location.origin+res.url;
+                }else{
+                    this.$message.error('上传失败');
+                }
+            },
+            beforeAvatarUpload(file) {
+                const isJPG = file.type === 'image/jpeg';
+                const isLt2M = file.size / 1024 / 1024 < 2;
+                if (!isLt2M) {
+                this.$message.error('上传头像图片大小不能超过 2MB!');
+                }
+                // return isJPG && isLt2M;
+                return isLt2M;
+            },
+            //json赋值
+            setData : function () {
+                DataJson = {};
+                DataJson.SurveyName = this.SurveyName;
+                if (DataJson.SurveyName == '') {
+                    alert("目录名称不能为空");
+                    $('[name="SurveyName"]').focus();
+                    return false;
+                }else if(!this.bannerImg) {
+                    dialog.open("banner图不能为空");
+                    return false;
+                }
+                return true;
+            },
+            //提交
+            subNew: function () {
+                var that = this
+                var check = this.setData();
+                if (check) {
+                    $.ajax({
+                        type: 'POST',
+                        url: '/ArticleCatalog/save',
+                        data: { 
+                            CatalogName:this.SurveyName,
+                            CatalogBanner: this.bannerImg,
+                            CatalogLogo: this.logoImg
+                        },
+                        success: function (res) {
+                            var result = $.parseJSON(res);
+                            if (result.state == 1) {
+                                that.$message({
+                                    type: 'success',
+                                    message: '创建成功!'
+                                });
+                                that.SurveyName = ''
+                                that.bannerImg = ''
+                                that.logoImg = ''
+                                window.location.reload()   //刷新页面
+                            }else{
+                                that.$message.error(result.msg);
+                            }
+                        }
+                    })
+                }
+            },
+
+        }
+    })
+</script>
+
+<link href="~/Content/js/element/element-ui.css" rel="stylesheet" />
+<style>
+    .addUl input{
+        padding-left:10px;
+        border-radius: 4px;
+        border: 1px solid #bfcbd9;
+        padding: 10px;
+    }
+    
+    .el-icon-caret-right:before {
+        content: "";
+    }
+    .el-tree-node__content>.el-tree-node__expand-icon {
+        padding: 0px;
+    }
+    @* 上传图片 *@
+    .el-upload-list--picture-card .el-upload-list__item-actions {
+        left: -21px;
+    }
+    .el-upload-list--picture-card .el-upload-list__item .el-icon-check, .el-upload-list--picture-card .el-upload-list__item .el-icon-circle-check {
+    position: absolute;
+    right: 11px;
+}
+@* 图片预览图标隐藏 *@
+.el-upload-list--picture-card .el-upload-list__item-actions span .el-icon-zoom-in{
+    display: none;
+}
+@* 上传图片删除图标 *@
+.el-upload-list--picture-card .el-upload-list__item-actions span .el-icon-delete{
+    top: 45%;
+    position: absolute;
+}
+.accountList ul li img {
+    margin-top: 0px;
+}
+.redStar{
+    width: 10px !important;
+    color: red;
+    font-size: 18px;
+    @* margin-right: 7px; *@
+}
+</style>

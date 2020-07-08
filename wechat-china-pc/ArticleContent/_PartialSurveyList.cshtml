@@ -1,0 +1,108 @@
+﻿@{
+    @model IEnumerable<wechat.DBModel.surveyDB.Survey>
+    var startIndex = 0;
+    int CountAll = Convert.ToInt32(ViewBag.pageCount ?? 0);
+    int PageIndex = ViewBag.PageIndex;
+    int PageSize = ViewBag.PageSize;
+    decimal allPage = Math.Ceiling(Convert.ToDecimal(CountAll) / Convert.ToDecimal(PageSize));
+    if (CountAll == 0)
+    {
+        PageIndex = 0;
+    }
+
+}
+@* <link href="~/Content/js/element/element-ui.css" rel="stylesheet" />
+<link href="~/Content/css/pagination.css" rel="stylesheet" />
+<script src="~/Content/js/vue/vue.min.js"></script>
+<script src="~/Content/js/element/element.js"></script> *@
+<div class="accountListTop">
+    <span style="width: 25%;">标题</span>
+    <span style="width: 25%;">开始时间</span>
+    <span style="width: 25%;">结束时间</span>
+    <span style="width: 25%;">操作</span>
+</div>
+<div id="qrlist">
+
+    <ul>
+        @foreach (var item in Model)
+        {
+            var background = "#F4F5F9";
+            if (startIndex % 2 != 0)
+            {
+                background = "#FFFFFF";
+            }
+
+            <li style="background: @background;">
+                <div style="width: 25%; height: 73px; float: left;">
+                    <span>@item.SurveyName</span>
+                </div>
+                <div style="width: 25%; height: 73px; float: left;">
+                    @item.BeginTime
+                </div>
+                <div style="width: 25%; height: 73px; float: left;white-space: nowrap; text-overflow: ellipsis; overflow: hidden;">
+                    @item.EndTime
+                </div>
+                <div style="width: 25%; height: 73px; float: left;white-space: nowrap; text-overflow: ellipsis; overflow: hidden;">
+                    <a href="javascript:void(0);" onclick="delSurvey('@item.SurveyId')">删除</a>
+                </div>
+            </li>
+            startIndex++;
+        }
+    </ul>
+</div>
+<div class="pagination21 paget">
+    <el-pagination
+        v-on:current-change="handleCurrentChange"
+          :current-page="currentPage"
+          :page-size="size"
+          :total="totalPage"
+          style="margin-top:10px;"
+        ></el-pagination>
+</div>
+<script>
+var app_p21 = new Vue({
+        el: ".pagination21",
+        data: {
+            totalPage:@CountAll,
+            currentPage:@PageIndex,
+            size:@PageSize
+        },
+        created: function () {   
+        },
+        methods:{
+            handleCurrentChange:function(val) {
+                changePage(val)
+            }
+        }
+})
+</script>
+@*<div class="pageTurning" style="margin-bottom: 20px;">
+    @if (PageIndex <= 1)
+    {
+        <div class="pageTurningLeft bg-color">
+            <img src="/Content/images/left.png" />
+        </div>
+    }
+    else
+    {
+        <div class="pageTurningLeft" style="cursor:pointer" onclick="changePage(@PageIndex-1)">
+            <img src="/Content/images/left.png" />
+        </div>
+    }
+
+    <div class="pageTurningCenter">
+        <span>@PageIndex/@allPage </span>
+    </div>
+    @if (PageIndex == allPage)
+    {
+        <div class="pageTurningRight bg-color">
+            <a><img src="/Content/images/right.png" /></a>
+        </div>
+    }
+    else
+    {
+        <div class="pageTurningRight" style="cursor:pointer" onclick="changePage(@PageIndex+1)">
+            <a><img src="/Content/images/right.png" /></a>
+        </div>
+    }
+</div>*@

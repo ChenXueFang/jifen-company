@@ -1,0 +1,99 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "文章预览";
+}
+@Html.Action("_PartialTop", "Partial")
+@Html.Action("_PartialLeft", "Partial")
+@Scripts.Render("~/tool/my97")
+<link href="~/Content/js/element/element-ui.css" rel="stylesheet" />
+<link href="~/Content/js/muse/muse-ui.css" rel="stylesheet" />
+<link href="~/Content/css/survey.css" rel="stylesheet" />
+<script src="~/Content/js/vue/vue.min.js"></script>
+<!-- <script src="~/Content/js/vue/vue@2.6.7.js"></script> -->
+<script src="~/Content/js/element/element.js"></script>
+<script src="~/Content/js/muse/muse-ui.js"></script>
+<!-- <script src="~/Content/js/test.js"></script> -->
+<!-- 引入样式 -->
+<!-- <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css"> -->
+<!-- 引入组件库 -->
+<!-- <script src="https://unpkg.com/element-ui/lib/index.js"></script> -->
+<style>
+.center {
+    height: 608px;
+}
+.iframe{
+    height: 596px;
+}
+.lotteryHeader {
+    position: relative
+    overflow: hidden;
+}
+</style>
+<div class="containerRight" id="preview" v-cloak>
+    <div class="headerBox">
+        <el-radio-group v-model="showWay" v-on:change="changShowWay">
+            <el-radio-button label="1">手机预览</el-radio-button>
+            <el-radio-button label="2">关闭预览</el-radio-button>
+        </el-radio-group>
+    </div>
+    <div class="bodyBox mobile" v-if="showWay==1">
+        <!-- 手机的预览 -->
+        <!-- 中间模块 -->
+        <div class="editCenter">
+          <!-- 手机壳 -->
+          <div class="lottery scollWrap">
+            <div
+              class="center"
+            >
+                <div>
+                    <div class="lotteryHeader">
+                        @* 预览内容 *@
+                        <iframe :src="preUrl" class="iframe" scrolling="auto" frameborder="0"></iframe>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+<script>
+var survey = new Vue({
+        el: "#preview",
+        data: {
+           showWay:1,
+           dialog: false,
+           preUrl:''
+        },
+        computed:{
+            
+        },
+        created: function () { 
+            this.preUrl="/Article/Detail.aspx?openid=test&ArticleId=" + this.requestUrl('ArticleId')
+        },
+        methods:{
+            changShowWay(){
+                if(this.showWay=='2'){
+                    window.opener=null;
+                    window.open('','_self');
+                    window.close();
+                }
+            },
+            // 接收页面传过来的参数
+            requestUrl(paras) {
+                var url = decodeURI(location.href);
+                var paraString = url.substring(url.indexOf("?") + 1, url.length).split("&");
+                var paraObj = {}
+                for (i = 0; j = paraString[i]; i++) {
+                    paraObj[j.substring(0, j.indexOf("=")).toLowerCase()] = j.substring(j.indexOf("=") + 1, j.length);
+                }
+                var returnValue = paraObj[paras.toLowerCase()];
+                if (typeof (returnValue) == "undefined") {
+                    return "";
+                } else {
+                    return returnValue;
+                }
+            },
+            
+        }
+})
+</script>

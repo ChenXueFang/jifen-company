@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style type="text/css">
+            /*.bottoms input {
+                width: 80%;
+                height: 1rem;
+                background-color: #1190c7;
+                outline: none;
+                border: 1px solid transparent;
+                color: white;
+                font-size: 0.4rem;
+                border-radius: 0.1rem;
+            }*/
+    </style>
+</head>
+<body>
+    <div class="SuccessWrap">
+        <h2 class="SuccessWrap_tips1">您已经成功提交</h2>
+        <h2>感谢您的参与和支持！</h2>
+        <img src="images/submit.png" />
+        <div class="bottom">
+            <input type="button" value="关闭" onclick="Close()" />
+        </div>
+    </div>
+    
+
+</body>
+</html>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script>
+    function Close() {
+        WeixinJSBridge.invoke('closeWindow', {}, function (res) {
+
+            //alert(res.err_msg);
+
+        });
+    }
+</script>

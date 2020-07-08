@@ -1,0 +1,176 @@
+[v-cloak]{
+    display:none !important;
+}
+* {
+margin: 0;
+padding: 0;
+}
+
+html {
+font-size: 100px;
+}
+
+body {
+width: 100%;
+height: 100%;
+font-size: 0.14rem;
+font-family: Microsoft YaHei;
+color: gray;
+background: #f7f7f7;
+}
+
+input[type=button], input[type=submit], input[type=file], button {
+cursor: pointer;
+-webkit-appearance: none;
+}
+
+h2 {
+color: #5c5c5c;
+font-size: 0.2rem;
+margin-bottom: 0.13rem;
+}
+
+.header {
+width: 100%;
+height: 0.6rem;
+background-color: #0089c4;
+text-align: center;
+vertical-align: middle;
+}
+
+.header img {
+width: 8%;
+height: auto;
+text-align: center;
+vertical-align: middle;
+padding-top: 0.15rem;
+}
+
+.header span {
+display: inline-block;
+color: white;
+/*height:0.6rem;*/
+font-size: 0.18rem;
+vertical-align: middle;
+padding-top: 0.15rem;
+font-weight: bold;
+}
+
+.questionAll {
+width: 92%;
+height: auto;
+border: 1px solid #d9d9d9;
+margin: 0.2rem auto;
+padding-bottom: 0.2rem;
+position: relative;
+background: white;
+}
+
+.QuestionName {
+width: 92%;
+color: black;
+padding: 0.15rem 0;
+margin: 0 auto;
+font-size: 0.16rem;
+border-bottom: 1px solid #d9d9d9;
+}
+
+.answers {
+width: 95%;
+height: 0.35rem;
+/*border:1px solid red;*/
+line-height: 0.35rem;
+font-size: 0.14rem;
+}
+
+.questAnswer {
+width: 100%;
+height: 0.35rem;
+/*background:pink*/
+}
+
+.answerContent {
+float: left;
+margin-left: 0.2rem;
+}
+
+.checks {
+width: 0.2rem;
+height: 0.2rem;
+border: 1px solid #d9d9d9;
+float: right;
+position: relative;
+top: 0.075rem;
+}
+
+.active {
+background: url(../images/checbox.png) no-repeat center;
+background-size: cover;
+}
+
+.answerOther {
+width: 90%;
+height: 0.5rem;
+float: left;
+margin-left: 4%;
+margin-top: 0.1rem;
+border: 1px dashed #d9d9d9;
+padding: 10px;
+font-size: 0.15rem;
+outline: none;
+}
+
+.questionOther {
+width: 85%;
+height: 1rem;
+border: 1px dashed #d9d9d9;
+margin-left: 4%;
+padding: 10px;
+margin-top: 0.15rem;
+outline: none;
+font-size: 0.15rem;
+}
+
+.SuccessWrap {
+width: 100%;
+height: 100%;
+text-align: center;
+background-color: #f7f7f7;
+}
+
+.SuccessWrap img {
+margin-top: 0.3rem;
+width: 20%;
+}
+
+.SuccessWrap_tips1 {
+margin-top: 1.3rem;
+}
+
+.bottom {
+text-align: center;
+margin: 0.5rem 0;
+}
+
+.bottom input {
+width:80%;
+height: 0.45rem;
+background-color: #1190c7;
+outline: none;
+border: 1px solid transparent;
+color: white;
+font-size: 0.18rem;
+border-radius: 0.05rem;
+}
+
+.loading {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5) url(/Content/images/loading.gif) no-repeat center center;
+    display: none;
+    z-index: 9999;
+    opacity: .3;
+}

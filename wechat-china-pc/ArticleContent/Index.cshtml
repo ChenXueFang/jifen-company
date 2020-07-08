@@ -1,0 +1,897 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "文章";
+    <link rel="stylesheet" type="text/css" href="/Content/js/simditor-2.3.6/styles/simditor.css" />
+    <link href="/Content/js/bootstrap/bootstrap-select.css" rel="stylesheet" />
+    <script type="text/javascript" src="/Content/js/simditor-2.3.6/scripts/module.js"></script>
+    <script type="text/javascript" src="/Content/js/simditor-2.3.6/scripts/hotkeys.js"></script>
+    <script type="text/javascript" src="/Content/js/simditor-2.3.6/scripts/uploader.js"></script>
+    <script type="text/javascript" src="/Content/js/simditor-2.3.6/scripts/simditor.js"></script>
+
+    <script type="text/javascript" src="/Content/js/simditor-2.3.6/scripts/mediavideo.js"></script>
+    <script type="text/javascript" src="/Content/js/simditor-2.3.6/scripts/localimg.js"></script>
+    <script type="text/javascript" src="/Content/js/simditor-2.3.6/scripts/medianews.js"></script>
+    <script type="text/javascript" src="/Content/js/WizardUpload.js"></script>
+    <script type="text/javascript" src="/Content/js/vue/vue.min.js"></script>
+    <script src="/Content/js/bootstrap/bootstrap-select.js"></script>
+    <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/Content/js/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/Content/js/ueditor/ueditor.all.js"> </script>
+    <script src="/Content/js/ueditor/xiumi-ue-dialog-v5.js"></script>
+    <link rel="stylesheet" href="/Content/js/ueditor/xiumi-ue-v5.css" />
+    <!--建议手动加在语言，避免在ie下有时因为加载语言失败导致编辑器加载失败-->
+    <!--这里加载的语言文件会覆盖你在配置项目里添加的语言类型，比如你在配置项目里配置的是英文，这里加载的中文，那最后就是中文-->
+    <script type="text/javascript" charset="utf-8" src="/Content/js/ueditor/lang/zh-cn/zh-cn.js"></script>
+}
+@Html.Action("_PartialTop", "Partial")
+@Html.Action("_PartialLeft", "Partial")
+@Scripts.Render("~/tool/my97")
+<link href="~/Content/js/element/element2.css" rel="stylesheet" />
+<link href="~/Content/css/pagination.css" rel="stylesheet" />
+<script src="~/Content/js/vue/vue2.js"></script>
+<script src="~/Content/js/element/element2.js"></script>
+<script src="~/Content/components/UploadImg.js"></script>
+
+<script>
+    window.crmtest = false;
+</script>
+<script src="~/Content/js/mock-cms-test.js"></script>
+<script src="~/Content/js/mock-min.js"></script>
+
+<div class="containerRight" id='vueArticleContent'>
+    @* 复制文本域需要的输入框 *@
+    <input id='input' value='' style='color: #fff;width: 1px;height: 1px;border: #ffff;' />
+    <div class="kewordsChange">
+        <ul>
+            <li id="btnSurveyList" class="borderColor">文章管理</li>
+            <li id="addsurvey">文章列表</li>
+        </ul>
+    </div>
+
+    <!--图文消息-->
+    <div class="newsMessage tabContainer editBox">
+        <div class="newsForm" id="diveditpage">
+            <div class="newsFormTil">
+                <ul>
+                    <li filed="imageTxt" class="liColor">图文消息</li>
+                </ul>
+            </div>
+            <div id="imageTxt" class="imageTxt otdiv">
+                <ul class="modelul">
+                    @* 标题 *@
+                    <li>
+                        <span class="formtit"><span class="redStar">*</span>标题</span>
+                        <input type="text" placeholder="请在此处输入标题" v-model='title' maxlength="64" value="" id="newsFormat" name="Format" style="padding-left: 10px;" />
+                        <span class="formtit fontColor"><i>0</i>/64</span>
+                    </li>
+                    @* 文章标签 *@
+                    <li class='essayTip' style='display:flex;'>
+                        <span class="formtit">文章标签</span>
+                        <div  class='rightGroup' style='display:flex;align-items:start;'>
+                            <el-checkbox-group v-model="essayLabelList1" size="mini" style='margin-left:14px;'>
+                                <el-checkbox-button v-for="item in essayLabelList" :label="item">{{item}}</el-checkbox-button>
+                            </el-checkbox-group>
+                            @* 添加标签盒子 *@
+                            <div style='display:flex;margin-top: 15px;width: 285px;'>
+                                <input placeholder="请输入标签(10字内)" v-model='essayLabel' maxlength="10" style='width: 164px;' />
+                                <el-button type="primary" plain size="mini" v-on:click='addLabel'>添加标签</el-button>
+                            </div>
+                        </div>
+                    </li>
+                    @* 用户分组 *@
+                    <li>
+                        <span class="formtit">用户分组</span>
+                        <el-checkbox-group class='rightGroup' v-model="userGroup1" size="mini">
+                            <el-checkbox-button v-for="item in userGroup" :label="item">{{item}}</el-checkbox-button>
+                        </el-checkbox-group>
+                    </li>
+                    @* 微信标签 单选 *@
+                    <li>
+                        <span class="formtit">微信标签</span>
+                        <div class='rightGroup' style='float: left;margin: 14px 0 0 17px;'>
+                            <el-radio-group v-model="wxLabel">
+                                <el-radio v-for='item in wxLabelList' :label="item" v-on:click.native.prevent="clickitem(item)">{{item}}</el-radio>
+                            </el-radio-group>
+                        </div>
+                    </li>
+                    @* 文章分类 树形 *@
+                    <li>
+                        <span class="formtit"><span class="redStar">*</span>文章分类</span>
+                        <el-tree
+                        class='rightGroup'
+                        :data="catalogList"
+                        show-checkbox
+                        node-key="CatalogId"
+                        ref="tree"
+                        highlight-current
+                        :props="defaultProps"
+                        :default-checked-keys="checkedTrees"
+                        v-on:check='treeCheck'>
+                        <span class="custom-tree-node" slot-scope="{ node, data }">
+                            <span>{{ data.CatalogName }}</span>
+                        </span>
+                        </el-tree>
+                    </li>
+                    @* 正文 *@
+                    <li style='margin-top: 10px;'>
+                        <span class="formtit"><span class="redStar">*</span>正文</span>
+                        <div style="width: 60%; float:left; margin: 10px 0 0 15px;">
+                            <textarea id="newscontents" name="content" class="content" placeholder="从这里开始写正文" autofocus></textarea>
+                        </div>
+
+                        <div class="positionFixed" style="left: 58.5%; top: -10px; display: none;">
+                            <input class="addSucai dvbtn" style="display:block;" type="button" value="添加图片" onclick="openArticle()" />
+                            <input class="addSucai dvbtn" style="display:block;" type="button" value="添加视频" onclick="AddTencentVideo()" />
+                        </div>
+                        <div style="clear:both;"></div>
+                    </li>
+                    @* logo图 *@
+                    <li style="min-height: 140px;margin-top:30px" class='bannerBox'>
+                        <span class="formtit"><span class="redStar">*</span>logo图</span>
+                        <div style='margin-left: 87px;'>
+                            <div style='width:148px;height:148px;overflow: hidden;'>
+                                <el-upload
+                                class="avatar-uploader"
+                                list-type="picture-card"
+                                action="/Handler/UploadHandler.ashx"
+                                :show-file-list="false"
+                                :on-success="handleLogoSuccess"
+                                :before-upload="beforeAvatarUpload">
+                                <img v-if="uploadImg" :src="uploadImg" class="avatar" style='width:148px;height:148px'>
+                                <i v-else class="el-icon-plus avatar-uploader-icon"></i>
+                                </el-upload>
+                            </div>
+                            <div style="width: 148px;text-align: center;color:#d4d4d4;">(300 x 300)</div>
+                        </div>
+                    </li>
+                    @* 摘要 *@
+                    <li>
+                        <span class="formtit">摘要</span>
+                        <textarea id="newsdig" name="digest" v-model='abstractEssay' style="padding-left: 10px;" maxlength="120" placeholder="选填，如果不填写会默认抓取正文前54个字"></textarea>
+                        <span class="formtit fontColor"><i>0</i>/120</span>
+                    </li>
+                </ul>
+                @* 预览小框 *@
+                @* <div class="phoneBox-2" id="div_Big" style="display: block;">
+                    <div class="phoneBox-2-container">
+                        <div class="phoneBox-2-container-tit"><p targetid="newsTitle" style="word-wrap:break-word;">{{title?title:'新年新启程：“安心蓝”带回家'}}</p><span>@DateTime.Now.ToString("MM月dd日")</span></div>
+                        <div class="phoneBanner-2">
+                            <div class="phoneBanner-2-img">
+                                <img src="~/Content/images/defaultImg.jpg" class="newsImg_Big" style="width:100%;height:100%;" />
+                            </div>
+                            <div class="phoneBanner-2-container">
+                                <p targetid="newsdig" style="word-wrap:break-word;">{{abstractEssay?abstractEssay:'新年新启程：“安心蓝”带回家'}}微信公众号是开发者或商家在微信公众平台上申请的应用账号，形成了一种主流的线上线下微信互动营销方式。</p>
+                            </div>
+                        </div>
+                     
+                        <div class="phoneBanner-2-footer" style="display:none;">
+                            <span> 阅读全文</span>
+                            <i>></i>
+                        </div>
+                    </div>
+                    <div class="phoneBox-2-container">
+                        <ul>
+                            <li>
+                                <div class="phoneListContainer">
+                                    <p targetid="newsTitle">{{title?title:'新功能玩转“全屋定制”'}}</p>
+                                    <div class="phoneListImg">
+                                        <img class="newsImg_Small" src="~/Content/images/defaultImg.jpg" style="width:auto;height:100%;" />
+                                    </div>
+                                    <div style="clear: both;"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div> *@
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footerBtn">
+                <button style="background: #2491CA;border-radius:5px" v-on:click="saveInfo('preView')">预览</button>
+                <button style="background: #2491CA; cursor:pointer;border-radius:5px" v-on:click="saveInfo('')">保存</button>
+            </div>
+        </div>
+    </div>
+
+    @* 素材管理 *@
+    <div class="tabContainer sourceManage" style="display:none;">
+        <div class="manageMaterial">
+            @* 筛选头 *@
+            @* <div class="manageMaterialTit">
+                <span>筛选:</span>
+                <ul id="typesc">
+                    <li><a href="javascript:void(0);" filed="@Senparc.Weixin.MP.UploadMediaFileType.news" class="txtColor">图文</a></li>
+                </ul>
+            </div> *@
+            @* 列表内容 *@
+            <div class="imageTxtNewsTit">
+                <span>图文素材（共 {{totalNum}} 条）</span>
+                <div class="searchInput" style='float:right;display:block'>
+                    <input type="text" value="" name="searchsc" v-model='searchInp'>
+                    <a href="javascript:void(0);" v-on:click="search">
+                        <img src="/Content/images/buttom.png">
+                    </a>
+                </div>
+            </div>
+            <div class="newsImageTxtList">
+                <ul>
+                    <li  v-for="(item,index) in ArticleList" :key="index">
+                        @* <div class="BigImgs">
+                            <img class="lazy2" :src="item.LogoUrl" alt="" />
+                        </div> *@
+                        <div class="IsHeadClass">
+                            <img style="max-width:100px;max-height:100px;margin-top:0;" :src="item.LogoUrl" />
+                        </div>             
+                        <div class="operationBox">
+                            <p style="">{{item.Title}}</p>
+                        </div>
+                        <div class="operationTime">
+                            <p>{{item.OperateName}}</p>
+                        </div>
+                        <div class="operationTime">
+                            <p>{{item.AddTime?item.AddTime.substring(0, 10):''}}</p>
+                        </div>
+                        <div class="operationBtn">
+                            <a href="javascript:void(0);" v-on:click="editBtn(item.ArticleId);"><p style="color: #0089c4;">编辑</p></a>
+                        </div>
+                        <div class="operationBtn">
+                            <a href="javascript:void(0);" v-on:click="copyUrl(item.ArticleId);"><p style="color: #0089c4;">复制链接</p></a>
+                        </div>
+                        <div class="operationBtn">
+                            <a href="javascript:void(0);" v-on:click="delItem(item.ArticleId);"><p style="color: #0089c4;">删除</p></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        @* 页码 *@
+        <div class="pagination25 paget">
+            @* <el-pagination
+                v-on:current-change="handleCurrentChange"
+                :current-page="PageIndex"
+                :page-size="PageSize"
+                :total="totalNum"
+                style="margin-top:10px;"
+                ></el-pagination> *@
+                <el-pagination
+                v-on:current-change="handleCurrentChange"
+                :current-page.sync="PageIndex"
+                :page-size="PageSize"
+                layout="total, prev, pager, next"
+                :total="totalNum">
+                </el-pagination>
+        </div>
+    </div>
+
+</div>
+<div id="divSurvey"></div>
+<script>
+var vueArticleContent = new Vue({
+    el: "#vueArticleContent",
+    data: {
+        totalNum:null,
+        PageIndex:1,
+        PageSize:7,
+        title:null, //标题
+        abstractEssay:null, //摘要
+        treeChecked:null, //文章类型 树形数据
+        checkedTrees:[], //树形默认选中
+        essayLabelList: ['文章标签1', '文章标签2', '文章标签3', '文章标签4'], //文章标签
+        essayLabelList1: [], //默认选中渲染数组
+        userGroup: ['用户分组1', '用户分组2', '用户分组3', '用户分组4'], //用户分组
+        userGroup1: [], 
+        essayLabel:'', // 增加的文章标签
+        wxLabelList:[],
+        wxLabel: null, //微信标签 单选
+        uploadImg:'',
+        @* 文章分类 树形 *@
+        catalogList: [],
+        defaultProps: {
+          children: 'children',
+          label: 'label'
+        },
+        ArticleList:[],
+        searchInp:'',
+        articleIdSave: null,
+
+    },
+    created: function () {  
+        this.getEssayList();
+        this.getCatalogList();
+        this.getEssayLabel();
+        this.getUserGroup();
+        this.getWxLabel();
+    },
+    methods: {
+        // 复制预览链接
+        copyUrl(data) {
+            var CatalogId = data
+            var input = document.getElementById("input");
+            input.value = window.location.origin + '/Article/List.aspx?CatalogIdArr=' + CatalogId; // 修改文本框的内容
+            input.select(); // 选中文本
+            document.execCommand("copy"); // 执行浏览器复制命令
+            this.$message({
+                message: '复制成功',
+                type: 'success'
+            });
+        },
+        handleCurrentChange(){
+            this.getEssayList()
+        },
+        handleLogoSuccess(res, file) {
+            if(res.state==1){
+            this.uploadImg = window.location.origin+res.url;
+            }else{
+                this.$message.error('上传失败');
+            }
+        },
+        beforeAvatarUpload(file) {
+            const isJPG = file.type === 'image/jpeg';
+            const isLt2M = file.size / 1024 / 1024 < 2;
+
+            // if (!isJPG) {
+            // this.$message.error('上传头像图片只能是 JPG 格式!');
+            // }
+            if (!isLt2M) {
+            this.$message.error('上传头像图片大小不能超过 2MB!');
+            }
+            // return isJPG && isLt2M;
+            return isLt2M;
+        },
+        clickitem (index) {
+            index=== this.wxLabel ? this.wxLabel= '': this.wxLabel = index
+        },
+        @* 编辑 获取文章详情 *@
+        editBtn(articleId) {
+            var that = this
+            $.ajax({
+                url: "/ArticleContent/list",
+                data: { ArticleIdArr: articleId },
+                type: 'GET',
+                beforeSend: function () { $("#loading").css("display", "block"); },
+                success: function (result) {
+                    $("#loading").css("display", "none");
+                    $("#addsurvey").removeClass("borderColor");
+                    $("#btnSurveyList").addClass("borderColor");
+                    $(".sourceManage").css("display", "none");
+                    $(".editBox").css("display", "block");
+                    var Articlelist = JSON.parse(result).rows;
+                    if(Articlelist){
+                        var ArticleDetail = JSON.parse(result).rows[0];
+                        
+                        that.title = ArticleDetail.Title; //标题
+                        if(ArticleDetail.CatalogIds && ArticleDetail.CatalogIds.indexOf(',')!=-1 || ArticleDetail.ArticleTags && ArticleDetail.ArticleTags.indexOf(',')!=-1 || ArticleDetail.UserGroups && ArticleDetail.UserGroups.indexOf(',')!=-1){
+                            that.checkedTrees = ArticleDetail.CatalogIds.split(",") //所属分类，拆分成数组，默认选中,树形
+                            that.essayLabelList1 = ArticleDetail.ArticleTags.split(",") //选中的文章标签
+                            that.userGroup1 = ArticleDetail.UserGroups.split(",") //选中的用户分组
+                        }else{
+                            that.checkedTrees.push(ArticleDetail.CatalogIds)
+                            that.essayLabelList1.push(ArticleDetail.ArticleTags)
+                            that.userGroup1.push(ArticleDetail.UserGroups)
+                        }
+                        that.wxLabel = ArticleDetail.WechatTags; //选中的微信标签
+                        editor.setValue((ArticleDetail.ArticleContent)); //正文
+                        that.uploadImg = ArticleDetail.LogoUrl; //logo图
+                        that.abstractEssay = ArticleDetail.Description //摘要
+                        that.articleIdSave = articleId //判断接口是修改还是创建
+                        that.treeChecked = ArticleDetail.CatalogIds //选中的树形
+                    }
+                    // console.log(ArticleDetail,'文章详情++++++++++')
+                },
+                error: function () {
+                    $("#loading").css("display", "none");
+                }
+            });
+        },
+        @* 获取文章标签 *@
+        getEssayLabel(){
+            var that=this;
+            $.ajax({
+                url: '/ArticleContent/articletag',
+                data: {
+                    PageIndex: 1,
+                    PageSize: 100
+                },
+                type: 'GET',
+                beforeSend: function () { $("#loading").css("display", "block"); },
+                success: function (result) {
+                    $("#loading").css("display", "none");
+                    var tempEssayList = JSON.parse(result).rows;
+                    that.ArtLabelListAll = tempEssayList; //文章标签所有基础数据
+                    that.essayLabelList = []
+                    for(i in tempEssayList){
+                        that.essayLabelList.push(tempEssayList[i].TagName) //基础文章标签值
+                    }
+                    // console.log(tempEssayList,'文章标签++++++++++')
+                },
+                error: function () {
+                    $("#loading").css("display", "none");
+                }
+            });
+        },
+        @* 获取用户分组 *@
+        getUserGroup(){
+            var that=this;
+            $.ajax({
+                url: '/ArticleContent/usergroup',
+                data: {
+                    PageIndex: 1,
+                    PageSize: 100
+                },
+                type: 'GET',
+                beforeSend: function () { $("#loading").css("display", "block"); },
+                success: function (result) {
+                    $("#loading").css("display", "none");
+                    var tempEssayList = JSON.parse(result).rows;
+                    that.UserGroupAll = tempEssayList; //用户分组所有基础数据
+                    that.userGroup = []
+                    for(i in tempEssayList){
+                        that.userGroup.push(tempEssayList[i].GroupName) //基础用户分组值
+                    }
+                    // console.log(tempEssayList,'用户分组list++++++++++')
+                },
+                error: function () {
+                    $("#loading").css("display", "none");
+                }
+            });
+        },
+        @* 获取微信标签 *@
+        getWxLabel(){
+            var that=this;
+            $.ajax({
+                url: '/ArticleContent/weixintag',
+                data: {
+                    PageIndex: 1,
+                    PageSize: 100
+                },
+                type: 'GET',
+                beforeSend: function () { $("#loading").css("display", "block"); },
+                success: function (result) {
+                    $("#loading").css("display", "none");
+                    var tempEssayList = JSON.parse(result).rows;
+                    that.WxLabelAll = tempEssayList; //微信标签所有基础数据
+                    that.wxLabelList = []
+                    for(i in tempEssayList){
+                        that.wxLabelList.push(tempEssayList[i].TagName) //基础微信标签值
+                    }
+                    // console.log(tempEssayList,'微信标签list++++++++++')
+                },
+                error: function () {
+                    $("#loading").css("display", "none");
+                }
+            });
+        },
+        @* 获取文章列表 *@
+        getEssayList(){
+            var that=this;
+            $.ajax({
+                url: '/ArticleContent/list',
+                data: {
+                    TitleLike: this.searchInp,
+                    PageIndex: this.PageIndex,
+                    PageSize: this.PageSize
+                },
+                type: 'GET',
+                //dataType: 'text',
+                beforeSend: function () { $("#loading").css("display", "block"); },
+                success: function (result) {
+                    $("#loading").css("display", "none");
+                    var tempEssayList = JSON.parse(result).rows;
+                    if(tempEssayList){
+                        that.ArticleList = tempEssayList;
+                        that.totalNum = JSON.parse(result).total;
+                    }
+                    // console.log(tempEssayList,'列表++++++++++')
+                },
+                error: function () {
+                    $("#loading").css("display", "none");
+                }
+            });
+        },
+        @* 搜索 *@
+        search(){
+            this.getEssayList();
+        },
+        //删除本地素材
+        delItem(tempId) {
+            var that = this
+            this.$confirm('是否删除?', '提示', {
+                confirmButtonText: '确定',
+                cancelButtonText: '取消',
+                }).then(() => {
+                    $.ajax({
+                        url: "/ArticleContent/del",
+                        data: { ArticleId: tempId },
+                        type: 'POST',
+                        dataType: 'JSON',
+                        beforeSend: function () { $("#loading").css("display", "block"); },
+                        success: function (res) {
+                            var result = $.parseJSON(res);
+                            $("#loading").css("display", "none");
+                            if (result.state == 1) {
+                                that.getEssayList();
+                                that.$message({
+                                    type: 'success',
+                                    message: '删除成功!'
+                                });
+                            }else{
+                                that.$message.error(result.msg);
+                            }
+                        },
+                        error: function (e) {
+                            $("#loading").css("display", "none");
+                            dialog.open(e);
+                        }
+                    });
+                }).catch(() => {
+                    @* that.$message({
+                        type: 'info',
+                        message: '已取消删除'
+                    });           *@
+            });
+        },
+        @* 添加文章标签 *@
+        addLabel(){
+            if(this.essayLabel){
+                var addlabel = this.essayLabel
+                this.essayLabelList.push(addlabel) //{TagName:addlabel,TagId:null}
+                this.essayLabel = '' //清空输入框
+            }else{
+                this.$message('请输入标签名');
+            }
+        },
+        @* 处理单选多选数据 *@
+        dealData(){
+            @* 提交文章标签选中值处理 *@
+            if(this.essayLabelList1){
+                var ArtTagIds = [] //只有id值的
+                var ArtTagIdsList = [] //有所有字段
+                for(i in this.essayLabelList1){
+                    var item = this.essayLabelList1[i]
+                    ArtTagIdsList = this.ArtLabelListAll.filter(function(a) {
+                        return a.TagName == item;
+                    });
+                    if(ArtTagIdsList.length>0){
+                        for(k in ArtTagIdsList){
+                            ArtTagIds.push(ArtTagIdsList[k].TagId)
+                        }
+                    }
+                }
+                this.ArticleTagIds = ArtTagIds.join(",")
+            }
+            @* 提交用户分组选中值处理 *@
+            if(this.userGroup1){
+                var userGroupIds = [] //只有id值的
+                var userGroupList = [] //有所有字段
+                for(i in this.userGroup1){
+                    var item = this.userGroup1[i]
+                    userGroupList = this.UserGroupAll.filter(function(a) {
+                        return a.GroupName == item;
+                    });
+                    if(userGroupList.length>0){
+                        for(k in userGroupList){
+                            userGroupIds.push(userGroupList[k].GroupId)
+                        }
+                    }
+                }
+                this.UserGroupIds = userGroupIds.join(",")
+            }
+            @* 提交微信标签选中值处理 *@
+            if(this.wxLabel){
+                var that = this
+                var wxLabelList = this.WxLabelAll.filter(function(a) {
+                    return a.TagName == that.wxLabel;
+                });
+                this.WechatTagIds = wxLabelList[0].TagID
+            }
+        },
+        check2(){
+            if(!this.treeChecked || !this.checkedTrees) {
+                dialog.open("文章分类不能为空");
+                return false;
+            }else if(!this.uploadImg) {
+                dialog.open("logo图不能为空");
+                return false;
+            }else{
+                return true;
+            }
+        },
+        @* 保存 *@
+        saveInfo(value){
+            this.dealData()
+            var that = this    
+            if(!check() || !this.check2()){
+                return false;
+            }
+            var dataInfo = {
+                ArticleId: this.articleIdSave?this.articleIdSave:null, //修改，新建
+                Title:this.title,
+                ArticleTags:this.essayLabelList1.join(","),
+                ArticleTagIds:this.ArticleTagIds,
+                UserGroups:this.userGroup1.join(","),
+                UserGroupIds:this.UserGroupIds,
+                WechatTags:this.wxLabel,
+                WechatTagIds:this.WechatTagIds,
+                CatalogIds:this.treeChecked,
+                ArticleContent:editor.getValue(),
+                LogoUrl:this.uploadImg,
+                Description:this.abstractEssay
+            }
+            if (value == 'preView') {
+                dataInfo.saveType = 'preView'
+            }
+            $.ajax({
+                url: '/ArticleContent/save',
+                data: dataInfo,
+                type: 'POST',
+                beforeSend: function () { $("#loading").css("display", "block"); },
+                success: function (result) {
+                    $("#loading").css("display", "none");
+                    var result = $.parseJSON(result);
+                    if (result.state == 1) {
+                        if (value == 'preView') {
+                            @* window.open("/Article/Detail.aspx?openid=test&ArticleId=" + result.data.ArticleId); *@
+                            window.open("/ArticleContent/previewArticle?ArticleId=" + result.data.ArticleId);
+                        } else {
+                            that.getEssayList();
+                            that.$message({
+                                type: 'success',
+                                message: '保存成功!'
+                            });
+                            $("#btnSurveyList").removeClass("borderColor");
+                            $("#addsurvey").addClass("borderColor");
+                            $(".editBox").css("display", "none");
+                            $(".sourceManage").css("display", "block");
+                            that.title = null
+                            that.essayLabelList1 = []
+                            that.userGroup1 = []
+                            that.wxLabel = null
+                            that.treeChecked = null
+                            that.$refs.tree.setCheckedKeys([]);
+                            editor.setValue(''); //正文
+                            that.uploadImg = null
+                            that.articleIdSave = null
+                            that.abstractEssay = null
+                        }
+                    }else{
+                        that.$message.error(result.msg);
+                    }
+                },
+                error: function () {
+                    $("#loading").css("display", "none");
+                }
+            }); 
+        },
+
+        @* 获取目录 *@
+        getCatalogList(){
+            var that=this;
+            $.ajax({
+                url: '/ArticleCatalog/list',
+                data: {
+                    PageIndex: 1,
+                    PageSize: 100
+                },
+                type: 'GET',
+                beforeSend: function () { $("#loading").css("display", "block"); },
+                success: function (result) {
+                    $("#loading").css("display", "none");
+                    var tempcatalogList = JSON.parse(result).rows;
+                    that.catalogList = tempcatalogList;
+
+                      //遍历接口返回数据
+                      var result = [];
+                      for (var item of that.catalogList) {
+                        //判断是否为顶层节点
+                        if (item.ParentId == null) {
+                          var parent = {
+                            CatalogId: item.CatalogId,
+                            AddTime: item.AddTime,
+                            CatalogName: item.CatalogName,
+                            CatalogLogo: item.CatalogLogo,
+                            ParentId: item.ParentId
+                          };
+                          parent.children =that.funCreateTree(item.CatalogId,that.catalogList);
+                          result.push(parent);
+                        }
+                      }
+                      //打印出result
+                       // console.log("生成树形结构.....");
+                       // console.log(result);
+                       that.catalogList = result
+                },
+                error: function () {
+                    $("#loading").css("display", "none");
+                }
+            });
+        },
+        @* 树形数据拼凑 *@
+        CreateTreeJson() {
+          //遍历接口返回数据
+          var result = [];
+          for (var item of this.catalogList) {
+            //判断是否为顶层节点
+            if (item.ParentId == null) {
+              var parent = {
+                CatalogId: item.CatalogId,
+                AddTime: item.AddTime,
+                CatalogName: item.CatalogName,
+                CatalogLogo: item.CatalogLogo,
+                ParentId: item.ParentId
+              };
+              parent.children = this.funCreateTree(item.CatalogId, this.catalogList);
+              result.push(parent);
+            }
+          }
+          //打印出result
+           // console.log("生成树形结构.....");
+           // console.log(result);
+        },   
+        funCreateTree(CatalogId, catalogList) {
+          var childs = new Array();
+          for (var arr of catalogList) {
+            //循环获取子节点
+            if (arr.ParentId == CatalogId) {
+              var child = {
+                CatalogId: arr.CatalogId,
+                AddTime: arr.AddTime,
+                CatalogName: arr.CatalogName,
+                CatalogLogo: arr.CatalogLogo,
+                ParentId: arr.ParentId
+            };
+            //获取子节点的子节点
+            var childscopy = this.funCreateTree(child.CatalogId, catalogList); //递归获取子节点
+            //// console.log(childscopy)
+            if (childscopy.length > 0) {
+              child.children = childscopy;
+            }
+              childs.push(child);
+            }
+          }
+          return childs;
+        },
+
+        // 获取树形的复选框值 
+        treeCheck(value) {
+            var treeCheck = this.$refs.tree.getCheckedKeys().concat(this.$refs.tree.getHalfCheckedKeys())
+            this.treeChecked= treeCheck.join(",") //树形选中的CatalogId
+            // console.log(this.treeChecked,'树形选中')
+        },
+
+    }
+})
+$(function () {
+    $("#addsurvey").on("click", function () {
+        $("#btnSurveyList").removeClass("borderColor");
+        $("#addsurvey").addClass("borderColor");
+        $(".newsMessage").css("display", "none");
+        $(".sourceManage").css("display", "block");
+    });
+    $("#btnSurveyList").on("click", function () {
+        $("#addsurvey").removeClass("borderColor");
+        $("#btnSurveyList").addClass("borderColor");
+        $(".sourceManage").css("display", "none");
+        $(".newsMessage").css("display", "block");
+    });
+});
+</script>
+
+<style type="text/css">
+.simditor .simditor-body img {
+    margin: 0 auto;
+}
+.edui-default div {
+    line-height: initial;
+}
+.edui-editor {
+    background-color: antiquewhite;
+    min-width: 528px;
+}
+.edui-editor-toolbarboxinner {
+}
+.edui-editor-iframeholder {
+    margin: auto;
+    background-color: white;
+}
+.edui-default .edui-editor {
+    background-color: #EDECEB;
+}
+.el-checkbox-group,.radioBox {
+    margin-left: 85px;
+    margin-top: 15px;
+}
+.bannerBox .btn-info {
+    background: none !important;
+}
+.bannerBox .newsForm {
+    padding-bottom: 20px;
+}
+.bannerBox .el-icon-plus:before {
+    content: "\e6d9" !important;
+}
+.bannerBox input[type="file"] {
+    display: none;
+}
+.faceImg{
+    overflow: hidden;
+    margin-right: 15px;
+}
+.faceImg,.faceImg .el-upload--picture-card,.faceImg .el-upload-list--picture-card .el-upload-list__item{
+    width:181px !important;
+    height:125px !important;
+}
+.faceImg .el-upload-list--picture-card .el-upload-list__item{
+    height:100px !important;
+}
+.faceImg .el-upload--picture-card{
+    border:none !important;
+}
+.smallImg,.smallImg .el-upload--picture-card,.smallImg .el-upload-list--picture-card .el-upload-list__item{
+    width:100px !important;
+}
+.el-pagination button, .el-pagination span:not([class*=suffix]) {
+    line-height: 3;
+}
+.imageTxt > ul > li.essayTip input{
+    width: 14%;
+    height: 29px;
+    float: left;
+    margin: 0px 20px;
+}
+.el-tree {
+    margin-left: 79px;
+    margin-top:17px;
+    padding-top:5px;
+}
+.el-radio {
+    margin-right: 20px;
+}
+@* 树形二级点击会消失 *@
+.el-tree-node>.el-tree-node__children {
+    overflow: visible;
+}
+.modelul {
+    width: 96%;
+}
+@* 多选框变成两行行距调整 *@
+.imageTxt > ul.modelul > li {
+    line-height: 30px;
+}
+@* 勾选单选框往上移动的问题 *@
+.modelul .el-radio, .el-radio__input {
+    line-height: 2.5;
+}
+.rightGroup{
+    width: 70%;
+}
+.newsImageTxtList ul li {
+    height: 130px;
+}
+.IsHeadClass {
+    margin-top: 13px;
+    margin-left: 0;
+}
+.redStar{
+    color: red;
+    font-size: 18px;
+    margin-right: 7px;
+}
+.formtit {
+    width: 70px;
+}
+</style>
+
+
+
+
+@if (Request["temp"] == "old")
+{
+    <script src="/Content/pagejs/template-old.js"></script>
+}
+else
+{
+    <script src="/Content/pagejs/template.js"></script>
+}
