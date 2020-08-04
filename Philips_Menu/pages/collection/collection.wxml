@@ -1,0 +1,46 @@
+<!--collection.wxml-->
+<view class="collection">
+  <view class='header1'>
+    <image class='philipsLogo' src='../../images/PhilipsLogo.png'></image>
+    <view class='headerTitle'>
+      <!-- <view class='leftIcon' bindtap="goIndex">
+        <image src='../../images/left.png'></image>
+      </view> -->
+      <text>我的收藏</text>
+    </view>
+  </view>
+  <view class='collectionContent' style='height:{{scrollHeight}}px' wx:if="{{collectList.length>0&&!isNeedLogin}}">
+    <scroll-view scroll-y style="height: 100%;" bindscrolltolower="lower">
+      <view class='collectionList' wx:for="{{collectList}}" wx:key="key" data-id="{{item.CookBookID}}" bindtap="goDetailsByID">
+        <view class='collectionImg clearfloat'>
+          <view class='name fl'>
+            <text>{{item.CookBookName}}</text>
+          </view>
+          <image class='fr' src="{{url+item.ImageThumb}}"></image>
+        </view>
+        <view class='collectionIntro'>
+          <view class='flag'>
+            <view class='triangle'></view>
+          </view>
+          <view class='IntroName clearfloat'>
+            <view class='fr evaluate'>
+              <block wx:for="{{[1, 2, 3, 4, 5]}}" wx:for-item="i" wx:key="key">
+                <image wx:if="{{(item.Evaluate==0?5:item.Evaluate)>=i}}" src='../../images/active.png'></image>
+                <image wx:else src='../../images/noactive.png'></image>
+              </block>
+            </view>
+            <view class='fr collected'>{{item.Collects}}人已收藏</view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  <view class='noCollection' wx:if="{{collectList.length==0&&isload&&!isNeedLogin}}">
+    <text>没有找到收藏的菜谱</text>
+    <view class='btn' bindtap="goRecipe">去逛逛</view>
+  </view>
+   <view class='noLogin' wx:if="{{isNeedLogin}}">
+    <text>登录查看收藏的菜谱</text>
+    <view class='btn' bindtap="goLogin">登录</view>
+  </view>  
+</view>

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "star": "/components/star/star",
+    "i-load-more": "../../dist/load-more/index"
+  },
+  "navigationBarTitleText": "飞利浦厨房家电美味菜谱"
+}

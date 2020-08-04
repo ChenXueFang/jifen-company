@@ -1,0 +1,7 @@
+<!--pages/getmobile.wxml-->
+<view class="mobile">
+  <image class='banner' src='../../images/banner.png'></image>
+  <view class='title'>查看菜谱，需先绑定个人手机号。您可以选择以 下任意一种方式绑定：</view>
+  <button open-type="getPhoneNumber" class='btn' bindgetphonenumber="getPhoneNumber">微信授权手机号</button>
+  <button bindtap='goRegister'>验证码绑定手机号</button>
+</view>

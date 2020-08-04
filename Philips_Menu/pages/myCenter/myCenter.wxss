@@ -1,0 +1,155 @@
+/* pages/myCenter/myCenter.wxss */
+.con{
+    margin: 30rpx;
+}
+.headBox{
+    width: 690rpx;
+    height: 280rpx;
+    overflow: hidden;
+	background-image: linear-gradient(90deg, 
+		);
+	box-shadow: 0rpx 10rpx 22rpx 0rpx 
+		rgba(0, 78, 48, 0.38);
+    border-radius: 12rpx;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: #d7d7d7;
+    /* z-index: -2; */
+    z-index: 1;
+}
+.headBgImg{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: blur(10rpx);
+}
+.headImgGray{
+    width: 160rpx;
+	height: 160rpx;
+    border-radius: 50%;
+    margin: 0 30rpx;
+	box-shadow: 0rpx 0rpx 16rpx 0rpx 
+		rgba(255, 255, 255, 0.8);
+    border: solid 5rpx #ffffff;
+    background: #d7d7d7;
+}
+.headImg{
+    width: 160rpx;
+	height: 160rpx;
+    border-radius: 50%;
+    margin: 0 30rpx;
+	box-shadow: 0rpx 0rpx 16rpx 0rpx 
+		rgba(255, 255, 255, 0.8);
+    border: solid 5rpx #ffffff;
+}
+.headCon{
+    display: flex;
+    align-items: center;
+}
+.headName{
+    font-size: 36rpx;
+    font-weight:600;
+	letter-spacing: 2rpx;
+    color: #ffffff;
+    margin-bottom: 20rpx;
+}
+.phone{
+    font-size: 30rpx;
+	letter-spacing: 2rpx;
+	color: #ffffff;
+}
+.loginBtn{
+    background: none;
+    padding-left: 0;
+    padding-right: 0;
+    line-height: 1;
+}
+button::after{
+    border: none;
+}
+.labelBox{
+    
+}
+.labelTitle{
+    margin: 30rpx 0 15rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rightIcon{
+    width: 9rpx;
+    height: 18rpx;
+    margin-left: 10rpx;
+}
+.myTitle{
+    font-size: 30rpx;
+    color: #333330;
+    font-weight:500;
+}
+.edit{
+    font-size: 22rpx;
+	color: #999999;
+}
+.labelCon{
+    min-height: 140rpx;
+    background-color: #f9f9f9;
+    padding-bottom: 20rpx;
+}
+.label{
+    display: inline-block;
+    height: 50rpx;
+    line-height: 50rpx;
+	border-radius: 45rpx;
+    border: solid 2rpx #5b991e;
+    padding: 0rpx 45rpx;
+    font-size: 24rpx;
+    color: #5b991e;
+    margin-left: 10rpx;
+    margin-top: 20rpx;
+}
+.myAlbum{
+    margin-top: 30rpx;
+}
+.AlbumBox{
+    display: flex;
+    flex-wrap: wrap;
+}
+.oneAlbum{
+	background-color: #ffffff;
+	box-shadow: 0rpx 2rpx 10rpx 0rpx 
+		rgba(0, 78, 48, 0.16);
+    border-radius: 12rpx;
+    margin-top: 15rpx;
+    padding: 13rpx;
+    margin-right: 21rpx;
+}
+.oneAlbum:nth-child(3n){
+    margin-right: 0rpx;
+}
+.albumImgBox{
+    width: 190rpx;
+    height: 165rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 12rpx;
+}
+.noAlbumImg{
+    width: 100rpx;
+	height: 83rpx;
+}
+.albumTitle{
+    font-size: 28rpx;
+	letter-spacing: 2rpx;
+    color: #000000;
+    margin: 15rpx 0 10rpx;
+}
+.albumNum{
+    font-size: 22rpx;
+	letter-spacing: 1rpx;
+	color: #999999;
+}

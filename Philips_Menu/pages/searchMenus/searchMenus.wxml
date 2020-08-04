@@ -1,0 +1,35 @@
+<!--product.wxml-->
+<view class="product">
+  <!-- 搜索框 -->
+  <view class="searchBox">
+    <input placeholder="Hi~ 今天想吃点什么呢？" bindfocus="clearchoice" bindinput="inputedit" value="{{searchValue}}"></input>
+    <text bindtap="goSearch">搜索</text>
+  </view>
+  <!-- 历史搜索 -->
+  <view wx:if="{{historyList.length}}">
+    <view class="historyTitle">
+      <text class="catagoryTitle">历史搜索</text>
+      <view bindtap="clearHistory" style="padding: 0 10rpx;"><image src="../../images/deleteIcon.png"></image></view>
+    </view>
+    <view wx:for="{{historyList}}" wx:key="key" class="history" data-item="{{item}}" bindtap="goSearchResult">
+      <!-- <text>{{item.name}}</text> -->
+      <text>{{item.name}}</text>
+    </view>
+  </view>
+  <!-- 分类 -->
+  <view>
+    <view class="catagorysTitle">
+      <text class="catagoryTitle">分类</text>
+      <!-- <image src=""></image> -->
+    </view>
+    <view wx:for="{{catagoryList}}" wx:key="key" class="catagorys">
+      <view class="catagorysNameBox" data-expand="{{item.expand}}"  data-index="{{index}}" bindtap="expand" data-typename='{{item.TypeName}}'>
+        <text class="catagorysName">{{item.TypeName}}</text>
+        <image class="{{item.expand? 'expand' : ''}}" src="../../images/arrow-bottom.png"></image>
+      </view>
+      <view wx:if="{{item.expand}}" wx:for="{{item.children}}" wx:for-item="i" wx:for-index="v" wx:key="i" class="history catagory {{i.checked? 'active' :''}}" data-checked="{{i.checked}}"  data-index="{{index}}" data-v="{{v}}" data-name="{{i.SubTypeName}}" data-TypeID="{{i.TypeID}}" data-SubTypeID="{{i.SubTypeID}}"  data-typename='{{item.TypeName}}' bindtap="chooseCatagory">
+        <text>{{i.SubTypeName}}</text>
+      </view>
+    </view>
+  </view>
+</view>

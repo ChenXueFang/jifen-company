@@ -1,0 +1,21 @@
+/* pages/components/star/star.wxss */
+.hard {
+  margin-top: 16rpx;
+  display: flex;
+  align-items: center;
+}
+.hard .hardImg {
+  width: 30rpx;
+  height: 28rpx;
+  margin-right: 10rpx;
+}
+
+.hardText {
+  font-size: 22rpx;
+  color: #5b991e;
+}
+.hard .loveImg {
+  width: 21rpx;
+  height: 20rpx;
+  margin-right: 2rpx;
+}

@@ -1,0 +1,56 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='header'>
+    <image class='philipsLogo' src='../../images/PhilipsLogo.png'></image>
+    <form bindsubmit="formSubmitSearch" report-submit="true">
+      <view class='serachWrap'>
+        <image class='bg' src='../../images/searchbg.png'></image>
+        <input class='searchFood' name="searchKey" cursor="15" type='text' confirm-type="search" bindinput="getSearch" bindconfirm="searchEat" placeholder='{{placeholder}}' placeholder-style="color:#fff" />
+        <image class='rightIcon' src='../../images/search1.png'></image>
+        <button class='searchBtn' form-type="submit"></button>
+      </view>
+    </form>
+    <view class='recommend'>
+      <text class='icon'></text>
+      <text class='word'>为您推荐</text>
+    </view>
+  </view>
+  <!-- style='height:{{swiperHight}}px' -->
+  <view class='swiperWrap'>
+    <image class='swiperbg' src='../../images/swiperbg.png'></image>
+    <swiper class='swiperitem'  indicator-dots="true" indicator-color="#fff" indicator-active-color="#0066a2" autoplay="true" interval="3500" display-multiple-items>
+      <block wx:for="{{swiperList}}" wx:key="key">
+        <swiper-item class="swiperImg" style="border-radius: 0 50rpx 50rpx 0">
+          <image src="{{url+item.ImageUrl}}" data-id="{{item.CookBookID}}" bindtap="goDetailsByID" mode='aspectFill' class="slideImg" />
+          <!-- <view class='dishes'>{{item.Title}}</view> -->
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class='flag'>
+      <view class='triangle'></view>
+    </view>
+  </view>
+
+  <view class='footer clearfloat' >
+    <view class='tabwrap'>
+      <form bindsubmit="goProduct" report-submit="true">
+        <view class='tabList fl'>
+          <image src="../../images/navigation1.png" />
+          <button form-type="submit"></button>
+        </view>
+      </form>
+      <form bindsubmit="goRecipe" report-submit="true">
+        <view class='tabList fl'>
+          <image src="../../images/recipe1.png" />
+          <button form-type="submit"></button>
+        </view>
+      </form>
+      <form bindsubmit="goCollection" report-submit="true">
+        <view class='tabList fl'>
+          <image src="../../images/collection1.png" />
+          <button form-type="submit"></button>
+        </view>
+      </form>
+    </view>
+  </view>
+</view>

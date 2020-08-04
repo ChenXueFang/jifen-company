@@ -1,0 +1,44 @@
+<!--searchresult.wxml-->
+<view class="searchresult">
+  <view class='header1'>
+    <image class='philipsLogo' src='../../images/PhilipsLogo.png'></image>
+    <form bindsubmit="formSubmitSearch" report-submit="true">
+      <view class='serachWrap'>
+        <image class='bg' src='../../images/searchbg.png'></image>
+        <input class='searchAll' name="searchKey" cursor="15" type='text' confirm-type="search" bindinput="getSearch" bindconfirm="searchEat" value='{{search}}' placeholder='{{placeholder}}' placeholder-style="color:#fff" />
+        <image class='searchIcon' src='../../images/search1.png'></image>
+        <button class='searchBtn' form-type="submit"></button>
+      </view>
+    </form>
+  </view>
+  <view class='noResult' wx:if="{{searchResultList.length==0&&isload}}">没搜到相关内容，换个关键词试试？</view>
+  <view class='collectionContent' wx:if="{{searchResultList.length>0}}" style='height:{{scrollHeight}}px'>
+    <scroll-view scroll-y style="height: 100%;" bindscrolltolower="lower">
+      <view class='collectionList' wx:for="{{searchResultList}}" wx:key="key" data-id="{{item.CookBookID}}" bindtap="goDetailsByID">
+        <view class='collectionImg clearfloat'>
+          <view class='name fl'>
+            <text>{{item.CookBookName}}</text>
+          </view>
+          <!--mode="aspectFill"  -->
+          <image class='fr' src="{{ImgURL+item.ImageThumb}}"></image>
+        </view>
+        <view class='collectionIntro'>
+          <view class='flag'>
+            <view class='triangle'></view>
+          </view>
+          <view class='IntroName clearfloat'>
+            <view class='fr evaluate'>
+              <block wx:for="{{[1, 2, 3, 4, 5]}}" wx:for-item="i" wx:key="key">
+                <!-- <image wx:if="{{item.Evaluate>=i}}" src='../../images/star.png'></image>  -->
+                <image wx:if="{{(item.Evaluate==0?5:item.Evaluate)>=i}}" src='../../images/active.png'></image>
+                <image wx:else src='../../images/noactive.png'></image>
+              </block>
+            </view>
+            <view class='fr collected'>{{item.Collects}}人已收藏</view>
+          </view>
+        </view>
+      </view>
+      <!-- <food-component></food-component> -->
+    </scroll-view>
+  </view>
+</view>

@@ -1,0 +1,149 @@
+<!--pages/albumDetail/albumDetail.wxml-->
+<view class="albumBox">
+	<!-- logo -->
+	<view class='top'>
+		<image class='philipsLogo' src='../../images/PhilipsLogo.png'></image>
+	</view>
+	<!-- 信息块 -->
+	<view class="infoBox">
+		<view class="info">
+			<view class="info1">
+				<view class="info1Text">
+					<text class="text1">{{Album.AlbumName}}</text>
+					<text class="text2">{{total}}篇菜谱收藏</text>
+				</view>
+				<!-- navigator -->
+				<navigator url="../buildAlbum/buildAlbum?ID={{Album.ID}}" hover-class="none">
+					<image src="../../images/edit.png"></image>
+					<view class="text3">
+						编辑专辑
+					</view>
+				</navigator>
+			</view>
+		</view>
+		<view class="manage" bindtap="edit" wx:if='{{menuList.length!=0}}'>
+			<image src="../../images/guanli.png"></image>
+			<text>{{isEdit? '取消管理' : '管理专辑'}}</text>
+		</view>
+	</view>
+	<view class="info2">
+		<view><image src="{{headImg}}"></image></view>
+		<view class="text1">{{nick}}：</view>
+		<text class="text2">{{Album.Remark? Album.Remark: '暂无简介'}}</text>
+	</view>
+	<!-- 列表 -->
+	<!-- 固定的tab切换头内容--瀑布流 -->
+	<view class="free-WaterfallFlow {{menuList.length==2?'twoCol':''}}">
+		<block>
+			<view class="flex-wrap" wx:for="{{menuList}}" wx:key='PosterID' wx:if="{{index%2!=''}}" bindtap="handleClick" data-cookid="{{item.CookBookID}}" data-checked="{{item.ischecked}}" data-index="{{index}}">
+				<view class='choose' wx:if="{{isEdit && !item.ischecked}}"></view>
+				<image class="choose active" wx:if="{{isEdit && item.ischecked}}" src="../../images/interetChecked.png"></image>
+				<!-- 背景图 -->
+				<image class="bgImg" src="../../images/cookBg.png"></image>
+				<!-- 菜谱图 -->
+				<view class="container" wx:if="{{item.IsVideo && item.SecondsVedioUrl}}">
+					<view class="video-box" id="video{{index}}" style="height: {{item.styleHight}}rpx;">
+						<video wx:if="{{item.isPlay}}" style="height:{{item.styleHight}}rpx;" src="{{item.SecondsVedioUrl}}" objectFit="fill" class="video-video video tuijianvedio" initial-time="{{item.currentTime}}" controls="{{false}}" autoplay="{{true}}" muted="{{true}}" loop="{{true}}" bindfullscreenchange="eventFullScreen" data-index="{{index}}" id="{{'r'+index}}">
+						</video>
+						<image wx:else class="video-cover tuijianvedio" src="{{item.ImageUrl?imgUrl+item.ImageUrl:''}}" bindtap="eventPlay" data-index="{{index}}" mode="aspectFill" style="height:{{item.styleHight}}rpx;" id="{{'r'+index}}"></image>
+					</view>
+				</view>
+				<image wx:else mode="widthFix" src="{{item.ImageUrl? imgUrl+item.ImageUrl:''}}"></image>
+				<view class='conBox'>
+					<view class="introText">
+						<view class="listName">{{item.CookBookName}}</view>
+						<view class="loveBox">
+							<!-- 喜欢图标 -->
+							<view class="loveImgBox" catchtap="loveBind" data-cookid='{{item.CookBookID}}' data-likesid='{{item.LikesID}}' data-index='{{index}}'>
+								<image class="loveImg" src="../../images/love1.png" wx:if='{{item.IsLikes}}'></image>
+								<image class="loveImg" src="../../images/love0.png" wx:else></image>
+							</view>
+							<text class="loveNum">{{item.LikesCount?item.LikesCount :0}}</text>
+						</view>
+					</view>
+					<star star="{{item.Difficulty}}"></star>
+					<view class="hard">
+						<image class="hardImg" src="../../images/time.png"></image>
+						<text class="hardText">烹饪时间：</text>
+						<text class="hardText">{{item.CookingTime}}min</text>
+					</view>
+				</view>
+			</view>
+		</block>
+		<block>
+			<view bindtap="handleClick" data-cookid="{{item.CookBookID}}" data-checked="{{item.ischecked}}" data-index="{{index}}" class="flex-wrap" wx:for="{{menuList}}" wx:key='PosterID' wx:if="{{index%2==''}}">
+				<!-- <view class="choose {{item.ischecked? 'active' :''}}" wx:if="{{isEdit}}" data-checked="{{item.ischecked}}" data-index="{{index}}" catchtap="chooseMenu"></view> -->
+				<view class='choose' wx:if="{{isEdit && !item.ischecked}}"></view>
+				<image class="choose active" wx:if="{{isEdit && item.ischecked}}" src="../../images/interetChecked.png"></image>
+				<!-- 背景图 -->
+				<image class="bgImg" src="../../images/cookBg.png"></image>
+				<view class="container" wx:if="{{item.IsVideo&& item.SecondsVedioUrl}}">
+					<view class="video-box" id="video{{index}}" style="height: {{item.styleHight}}rpx;">
+						<video wx:if="{{item.isPlay}}" style="height:{{item.styleHight}}rpx;" src="{{item.SecondsVedioUrl}}" objectFit="fill" class="video-video video tuijianvedio" initial-time="{{item.currentTime}}" controls="{{false}}" autoplay="{{true}}" muted="{{true}}" loop="{{true}}" bindfullscreenchange="eventFullScreen" data-index="{{index}}" id="{{'r'+index}}">
+						</video>
+						<image wx:else class="video-cover tuijianvedio" src="{{item.ImageUrl?imgUrl+item.ImageUrl:''}}" bindtap="eventPlay" data-index="{{index}}" mode="aspectFill" style="height:{{item.styleHight}}rpx;" id="{{'r'+index}}"></image>
+					</view>
+				</view>
+				<!-- 菜谱图 -->
+				<image wx:else mode="widthFix" src="{{item.ImageUrl? imgUrl+item.ImageUrl:''}}"></image>
+				<view class='conBox'>
+					<view class="introText">
+						<view class="listName">{{item.CookBookName}}</view>
+						<view class="loveBox">
+							<!-- 喜欢图标 -->
+							<view class="loveImgBox" catchtap="loveBind" data-cookid='{{item.CookBookID}}' data-likesid='{{item.LikesID}}' data-index='{{index}}'>
+								<image class="loveImg" src="../../images/love1.png" wx:if='{{item.IsLikes}}'></image>
+								<image class="loveImg" src="../../images/love0.png" wx:else></image>
+							</view>
+							<text class="loveNum">{{item.LikesCount?item.LikesCount :0}}</text>
+						</view>
+					</view>
+					<star star="{{item.Difficulty}}"></star>
+					<view class="hard">
+						<image class="hardImg" src="../../images/time.png"></image>
+						<text class="hardText">烹饪时间：</text>
+						<text class="hardText">{{item.CookingTime}}min</text>
+					</view>
+				</view>
+			</view>
+		</block>
+	</view>
+	<i-load-more wx-if='{{!cookIsOver&&menuList.length}}' />
+	<i-load-more wx-if='{{cookIsOver&&menuList.length}}' tip="没有更多" loading="{{ false }}" />
+	<!-- 暂无内容 -->
+	<view wx:if='{{menuList.length==0}}' class="nothingBox" style="width:263rpx;text-align:center;margin:0 auto;margin-top:140rpx">
+		<image src='../../images/nothing.png' style="width:263rpx;height:201rpx;margin-left:2rpx"></image>
+		<view style="color:#999;font-size:30rpx;margin-top:60rpx;margin-left:2rpx">目前暂无内容</view>
+	</view>
+	<!-- 固定的tab切换头内容--瀑布流- end -->
+	<!-- 下方选中弹框 -->
+	<view class="bottomBox {{isEdit? 'isEdit':''}}">
+		<view class="left">已选了<text>{{movedAlbum.length}}</text>个笔记</view>
+		<view class="right">
+			<text class="text1" bindtap="openMove">移动到其他专辑</text>
+			<text class="text2" bindtap="BatchDeleteAlbumCook">删除</text>
+		</view>
+	</view>
+	<!-- 下方选择专辑弹框 -->
+	<view class="mask {{isMove? 'isMove':''}}" bindtap="closeMove"></view>
+	<view class="bottomBox2 {{isMove? 'isMove':''}}">
+		<view class="title">
+			<text class="text1">选择专辑</text>
+			<navigator url="../buildAlbum/buildAlbum" hover-class="none" class="">
+				<image src="../../images/add.png"></image>
+				<text class="text2">创建专辑</text>
+			</navigator>
+		</view>
+		<scroll-view scroll-y="true" class="albumList" bindscrolltolower='scrolltolower'>
+			<view wx:for="{{albumList}}" class="album" wx:key="index" data-id="{{item.ID}}" data-name="{{item.AlbumName}}" bindtap="BatchMoveAlbumCook">
+				<view wx-if="{{!item.AlbumCookBookList[0]}}" class="albumImgBox">
+					<image class="noAlbumImg" src="../../images/noAlbum.png"></image>
+				</view>
+				<view wx-if="{{item.AlbumCookBookList[0]}}">
+					<image class="albumImg" src='{{imgUrl}}{{item.AlbumCookBookList[0].ImageUrl}}'></image>
+				</view>
+				<text>{{item.AlbumName}}</text>
+			</view>
+		</scroll-view>
+	</view>
+</view>

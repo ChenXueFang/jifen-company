@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "菜谱专辑",
+  "usingComponents": {
+    "star": "/components/star/star" ,
+    "i-load-more": "../../dist/load-more/index"
+  }
+}

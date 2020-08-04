@@ -1,0 +1,279 @@
+/* pages/cookDetail/cookDetail.wxss */
+/*swiper //// */
+.swiper,
+image{
+    width: 100%;
+    position: relative;
+}
+
+.swiper {
+    height: 750rpx;
+}
+
+.swiperImg {
+    height: 750rpx;
+}
+.swiperVideo{
+    width: 100%;
+}
+/*swiper //////// end*/
+.grade {
+    width: 109rpx;
+    height: 60rpx;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 100rpx 0rpx 0rpx 100rpx;
+    position: absolute;
+    top: 20rpx;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22rpx;
+    color: #333;
+    z-index: 20;
+}
+
+.shareImg,.sharebtn {
+    width: 110rpx;
+    height: 110rpx;
+}
+
+.swiperImg:nth-child(1) {
+    margin-right: 30rpx;
+}
+
+.shareBox {
+    position: absolute;
+    top: 695rpx;
+    right: 23rpx;
+    display: flex;
+    z-index: 99;
+    transition: all .6s; 
+}
+.shareBox2 {
+    position: fixed;
+    bottom: 40rpx;
+    right: 23rpx;
+    display: flex;
+    z-index: 99;
+    /*调用动画 */
+    animation: gun .2s linear;
+}
+/* 声明动画 关键帧 @keyframes 动画名称{} */
+@keyframes gun{
+    0%{
+        bottom: 695rpx;
+    }
+    100%{
+        bottom: 40rpx;
+    } 
+}
+
+.sharebtn{
+    padding-left: 0;
+    padding-right: 0;
+    background: none;
+}
+button.sharebtn::after{
+    border: none;
+}
+
+.pageCon {
+    width: 92%;
+    margin: 0 auto;
+    padding-bottom: 66rpx;
+}
+
+.introTitle,
+.introCon {
+    color: #004E30;
+}
+
+.introTitle {
+    margin-top: 40rpx;
+    margin-bottom: 20rpx;
+    font-size: 36rpx;
+    font-weight: 500;
+    letter-spacing: 2rpx;
+}
+
+.introCon {
+    font-size: 26rpx;
+    line-height: 38rpx;
+    letter-spacing: 1rpx;
+}
+
+.dateTime {
+    width: 20rpx;
+    height: 20rpx;
+}
+
+.loveImg {
+    width: 30rpx;
+    height: 28rpx;
+}
+
+.timeLine {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 29rpx;
+    margin-bottom: 40rpx;
+}
+
+.timeLeft,
+.loveBox {
+    display: flex;
+    align-items: center;
+}
+
+.date {
+    font-size: 20rpx;
+    color: #5B991E;
+    margin-left: 8rpx;
+}
+
+.loveNum {
+    font-size: 20rpx;
+    color: #999;
+    margin-left: 11rpx;
+}
+
+.fourBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.fourOne {
+    width: 48%;
+    font-size: 26rpx;
+    color: rgba(0, 78, 48, 1);
+    line-height: 37rpx;
+    letter-spacing: 1rpx;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30rpx;
+}
+
+.detailCon {
+    font-size: 26rpx;
+    color: rgba(0, 78, 48, 1);
+    line-height: 37rpx;
+    letter-spacing: 1rpx;
+}
+
+.detailImg {
+    width: 38rpx;
+    height: 40rpx;
+    margin-right: 10rpx;
+}
+
+.foodBox {
+    margin-top: 12rpx;
+}
+
+.foodTitle {
+    font-size: 30rpx;
+    font-weight: 500;
+    color: rgba(0, 78, 48, 1);
+    line-height: 42rpx;
+    letter-spacing: 2rpx;
+    margin-bottom: 10rpx;
+}
+
+.foodOne {
+    width: 690rpx;
+    /* height: 80rpx; */
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0rpx 0rpx 10rpx 0rpx rgba(0, 78, 48, 0.16);
+    border-radius: 6rpx;
+    margin-bottom: 10rpx;
+    display: flex;
+    align-items: center;
+}
+
+.foodCon {
+    width: 50%;
+    font-size: 28rpx;
+    color: rgba(0, 78, 48, 1);
+    line-height: 40rpx;
+    letter-spacing: 1rpx;
+    margin: 20rpx 0;
+    padding-left: 30rpx;
+}
+
+.foodCon:nth-child(1) {
+    border-right: 1rpx solid #D8D8D8;
+}
+
+.stepTitle {
+    margin-top: 20rpx;
+}
+
+.stepOne {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0rpx 2rpx 10rpx 0rpx rgba(0, 78, 48, 0.16);
+    border-radius: 6rpx;
+    margin-bottom: 10rpx;
+    padding: 30rpx;
+}
+
+.stepNum {
+    font-size: 30rpx;
+    color: rgba(0, 78, 48, 1);
+    line-height: 42rpx;
+    letter-spacing: 2rpx;
+}
+
+.stepImg {
+    margin-top: 10rpx;
+}
+
+.stepCon {
+    font-size: 28rpx;
+    color: rgba(0, 78, 48, 1);
+    line-height: 40rpx;
+    letter-spacing: 1rpx;
+    margin-top: 20rpx;
+}
+.albumOne{
+    border-bottom: 1rpx solid #d8d8d8;
+    padding: 20rpx 30rpx;
+    display: flex;
+    align-items: center;
+}
+.albumImg{
+    width: 100rpx;
+	height: 100rpx;
+	border-radius: 12rpx;
+    margin-right: 30rpx;
+}
+.addImg{
+    width: 32rpx;
+    height: 32rpx;
+    margin-right: 10rpx;
+}
+.albumTitle{
+    justify-content: space-between;
+}
+.addBox{
+    display: flex;
+    align-items: center;
+}
+.albumText{
+    font-size: 24rpx;
+	letter-spacing: 2rpx;
+	color: #000000;
+}
+.playVideoImg{
+    width: 128rpx;
+    height: 128rpx;
+    z-index: 10;
+    position: absolute;
+    top: 41%;
+    left: 41%;
+}
+.coverImg{
+    z-index: 9;
+}

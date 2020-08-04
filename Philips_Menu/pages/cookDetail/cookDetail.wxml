@@ -1,0 +1,123 @@
+<!--pages/cookDetail/cookDetail.wxml-->
+<view>
+	<!-- 轮播 -->
+	<swiper class="swiper">
+		<block>
+			<swiper-item wx:for='{{ImagesList}}' wx:key='index'>
+				<view wx:if="{{item.type=='video'}}" class="videoBox">
+					<video id="myVideo" class="swiperImg swiperVideo" src="{{item.url}}" controls bindpause='bindpause' wx:if="{{showVideo}}"></video>
+					<image wx:if="{{!showVideo}}" src='{{imgUrl}}{{item.ImageUrl}}' class="coverImg swiperImg"></image>
+					<image wx:if="{{!showVideo}}" src='../../images/play.png' class="playVideoImg" catchtap="bindplay"></image>
+				</view>
+				<image wx:else class="swiperImg" src="{{imgUrl}}{{item.url}}" mode='aspectFill' />
+				<view class="grade">{{index+1}}/{{ImagesList.length}}</view>
+			</swiper-item>
+		</block>
+	</swiper>
+
+	<!-- 分享收藏按钮定位 -->
+	<view class="{{shareBox2?'shareBox2':'shareBox'}}">
+		<image class="shareImg" src="../../images/collection.png" bindtap="openAlbum" />
+		<button class='sharebtn' open-type="share" form-type="submit">
+			<image class="shareImg" src="../../images/share.png" />
+		</button>
+	</view>
+
+	<view class="pageCon">
+		<!-- 简介 -->
+		<view class="introBox">
+			<view class="introTitle">{{CookBookName}}</view>
+			<view class="introCon">{{CookBatching}}</view>
+		</view>
+
+		<!-- 时间行 -->
+		<view class="timeLine">
+			<view class="timeLeft">
+				<image class="dateTime" src="../../images/dateTime.png"></image>
+				<text class="date">{{CreateTime}}</text>
+			</view>
+			<view class="loveBox" bindtap="loveBind">
+				<image wx:if='{{IsLikes}}' class="loveImg" src="../../images/love1.png"></image>
+				<image wx:else class="loveImg" src="../../images/love0.png"></image>
+				<text class="loveNum">{{LikesCount?LikesCount:0}}</text>
+			</view>
+		</view>
+
+		<!-- 四个板块 -->
+		<view class="fourBox">
+			<view class="fourOne">
+				<image class="detailImg" src="../../images/detail1.png"></image>菜谱类型：<text class="detailCon">{{CookBookType}}</text>
+			</view>
+			<view class="fourOne">
+				<image class="detailImg" src="../../images/detail2.png"></image>食用人数：<text class="detailCon">{{Edibles}}人</text>
+			</view>
+			<view class="fourOne">
+				<image class="detailImg" src="../../images/detail3.png"></image>准备时间：<text class="detailCon">{{PreparationTime}}分钟</text>
+			</view>
+			<view class="fourOne">
+				<image class="detailImg" src="../../images/detail4.png"></image>料理时间：<text class="detailCon">{{CookingTime}}分钟</text>
+			</view>
+		</view>
+
+		<!-- 食材 -->
+		<view class="foodBox">
+			<view class="foodTitle">食材</view>
+			<view class="foodOne" wx:for='{{Foods}}' wx:key='index'>
+				<view class="foodCon">{{item.Name}}</view>
+				<view class="foodCon">{{item.Remark}}</view>
+			</view>
+		</view>
+
+		<!-- 做法步骤 -->
+		<view class="stepBox">
+			<view class="foodTitle stepTitle">做法</view>
+			<view class="stepOne" wx:for='{{Steps}}' wx:key='index'>
+				<view class="stepNum">步骤{{index+1}}：</view>
+				<image wx:if='{{item.ImageUrl}}' class="stepImg" mode="widthFix" src="{{isHttp?'':imgUrl}}{{item.ImageUrl}}"></image>
+				<view class="stepCon">{{item.Content}}</view>
+			</view>
+		</view>
+
+		<!-- 小贴士 -->
+		<view class="stepBox" wx:if='{{Tips.length>0}}'>
+			<view class="foodTitle stepTitle">小贴士</view>
+			<view class="stepOne" wx:for='{{Tips}}' wx:key='index'>
+				<view class="stepCon">{{item.Tooltip}}</view>
+			</view>
+		</view>
+
+		<!-- 底部收藏弹框 -->
+		<i-action-sheet visible="{{ visible2 }}" actions="{{ actions2 }}" bind:cancel="closeAlbum" >
+			<scroll-view scroll-y="true" style="height: 570rpx;" slot="header" class="albumBox" bindscrolltolower='scrolltolower'>
+				<view class="albumOne albumTitle">
+					<view class="albumText" style="font-size: 30rpx;">选择专辑</view>
+					<navigator url="../buildAlbum/buildAlbum" hover-class="none" class="addBox albumText">
+						<image class="addImg" src='../../images/add.png'></image>
+						创建专辑
+					</navigator>
+				</view>
+				<view class="albumOne" wx:for='{{menuList}}' wx:key='index' data-name="{{item.AlbumName}}" data-id="{{item.ID}}" bindtap="saveAlbumCookBook">
+				<view wx-if="{{!item.AlbumCookBookList[0]}}">
+				<image class="albumImg"  src="../../images/noAlbum.png"></image>
+				</view>
+					<view wx-if="{{item.AlbumCookBookList[0]}}">
+						<image class="albumImg" src='{{imgUrl}}{{item.AlbumCookBookList[0].ImageUrl}}'></image>
+					</view>
+				
+					<text class="albumText" style="font-size: 28rpx;">{{item.AlbumName}}</text>
+				</view>
+			</scroll-view >
+		</i-action-sheet>
+
+
+
+
+
+
+
+
+
+
+
+	</view>
+</view>

@@ -1,0 +1,9 @@
+<!--pages/accredit.wxml-->
+<view class="accredit">
+  <image class='philipsLogo' src='../../images/PhilipsLogo.png'></image>
+  <image class='bg' style='height:{{imgHeight}}px' src='../../images/bg.png'></image>
+  <text class='title'>欢迎使用“飞利浦厨房家电美味菜谱”小程序</text>
+  <!-- <text style='color:red;font-size:50rpx;font-weight:600'>{{isshow}}</text> -->
+  <button wx:if="{{isshow}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">立即授权</button>
+  <button wx:else bindtap='goIndex'>立即进入</button>
+</view>

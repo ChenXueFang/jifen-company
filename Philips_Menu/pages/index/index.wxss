@@ -1,0 +1,237 @@
+/**index.wxss**/
+.container {
+  width:100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: space-between;
+  /* padding: 200rpx 0; */
+  box-sizing: border-box;
+  position: relative;
+} 
+.header{
+  height: 318rpx;
+}
+.serachWrap{
+  width: 658rpx;
+	height: 70rpx;
+  margin: 60rpx auto 35rpx;
+  position: relative;
+}
+.serachWrap .bg{
+  width:100%;
+  height:100%;
+}
+.searchFood{
+  width: 510rpx;
+	height: 70rpx;
+  font-size: 26rpx;
+  padding:0 15rpx; 
+  position: absolute;
+  left:35rpx;
+  top:0;
+  font-family: MicrosoftYaHei-Bold;
+  color: #fff;
+  font-weight:600;
+}
+.rightIcon{
+  width: 38rpx;
+	height: 38rpx;
+  position: absolute;
+  top:0;
+  bottom:0;
+  right:0;
+  margin: auto 0;
+  padding: 22rpx 20rpx;
+}
+.searchBtn{
+  width: 80rpx;
+  height: 70rpx;
+  position: absolute;
+  top:0;
+  right:0;
+  border: none;
+  background:none;
+  opacity: 0;
+}
+.recommend{
+  width: 658rpx;
+	height: auto;
+  margin: 0 auto;
+}
+.recommend .icon{
+  display: inline-block;
+  width: 21rpx;
+	height: 21rpx;
+	background-color: #1ddaf3;
+	border-radius: 2rpx;
+  vertical-align: middle;
+}
+.recommend .word{
+  font-size: 26rpx;
+	letter-spacing: 2rpx;
+	color: #6a6a6a;
+  vertical-align: middle;
+  margin-left: 12rpx;
+  font-weight: 600;
+  margin-top: -2rpx;
+}
+.swiperWrap{
+  width:100%;
+  height: 710rpx;
+  margin: 8rpx auto 0;
+  position: relative;
+}
+.swiperWrap .swiperbg{
+  width:100%;
+  height: 655rpx;
+}
+.swiperitem{
+ 	width: 604rpx;
+  /* height: 710rpx; */
+  height: 615rpx;
+  position: absolute;
+  left:26rpx;
+  top:0rpx;
+  border-radius: 0 50rpx 50rpx 0;
+  /* overflow: hidden; */
+  background:transparent;
+  /* box-shadow: 24rpx 11rpx 12rpx 0rpx #ededf5; */
+}
+.swiperImg{
+  width:100%;
+  height:615rpx!important;
+  border-radius: 0 50rpx 50rpx 0;
+  overflow: hidden;
+}
+.slideImg{
+  width:100%;
+  height:615rpx;
+  border-radius: 0 50rpx 50rpx 0;
+}
+.swiperitem .wx-swiper-dots.wx-swiper-dots-horizontal{
+  margin-bottom: 0rpx;
+}
+.swiperitem .wx-swiper-dot{
+  width: 48rpx;
+	height: 16rpx;
+  display: inline-flex;
+  margin-left: 20rpx;
+  justify-content:space-between;
+}
+.swiperitem .wx-swiper-dot::before{
+    content: '';
+    flex-grow: 1; 
+    background: #b8bec3;
+}
+.swiperitem .wx-swiper-dot-active::before{
+  background-color: #5de6bc;
+}
+.dishes{
+  width: 100%;
+  height: 110rpx;
+  color: white;
+  font-size:28rpx;
+  line-height: 70rpx;
+  text-align: center;
+  background: rgba(0,0,0,0.6);
+  position: absolute;
+  left: 0;
+  bottom:0;
+}
+.flag{
+  width: 32rpx;
+	height: 60rpx;
+	background-color: #ff9555;
+  position: absolute;
+  left:56rpx;
+  bottom:36rpx;
+}
+.flag .triangle{
+  border-style: solid;
+  border-width: 16rpx 16rpx 16rpx 16rpx;
+  border-color: transparent transparent white transparent;
+  width: 0px;
+  height: 0px;
+	position: absolute;
+  left:0;
+  bottom:0;
+}
+.footer{
+  width:100%;
+  height: 72rpx;
+	background-color: white; 
+  margin-top: 35rpx;
+}
+@media all and (min-height: 715px) {
+  .swiperWrap{
+  height: 780rpx!important;
+}
+.swiperWrap .swiperbg{
+  height: 730rpx!important;
+}
+/* .swiperitem{
+	height: 780rpx!important;
+} */
+.swiperitem,.swiperImg,.slideImg{
+  height:685rpx!important;
+}
+  .footer{
+   margin-top: 80rpx!important;
+  }
+}
+.clearfloat::after{
+  display: block;
+  clear: both;
+  content:"";
+}
+.fl{float:left}
+.fr{float:right}
+.tabwrap{
+  width:90%;
+  height: 72rpx;
+  margin: 0 auto;
+}
+.tabList{
+  width:33.33%;
+  height: 100%;
+  text-align: center;
+  position: relative;
+}
+.tabList image{
+  width: 197rpx;
+	height: 72rpx;
+}
+.tabList text{
+  font-size: 28rpx;
+}
+.tabList button{
+  width: 197rpx;
+	height: 72rpx;
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  margin: 0 auto;
+  opacity: 0;
+  background:none;
+}
+.topTwo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.memberCenterBox{
+  display: flex;
+  align-content: center;
+  font-size: 32rpx;
+  color: #2c78c1;
+  font-weight: 500;
+  margin-right: 40rpx;
+}
+.memberCenterImg{
+  width: 32rpx;
+  height: 38rpx;
+  margin-right: 10rpx;
+}

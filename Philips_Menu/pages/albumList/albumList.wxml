@@ -1,0 +1,39 @@
+<!--pages/albumList/albumList.wxml-->
+<view class="albumBox">
+	<view class='top'>
+		<image class='philipsLogo' src='../../images/PhilipsLogo.png'></image>
+	</view>
+	<!-- <navigator url="../buildAlbum/buildAlbum" hover-class="none" class="newAlbum"> -->
+	<view class="newAlbum" bindtap="goBuildAlbum">
+		<view>
+			<image class="add" src="../../images/add.png"></image>
+			<text>创建新专辑</text>
+		</view>
+		<image class="right" src="../../images/right.png"></image>
+	</view>
+	<!-- </navigator> -->
+	<!-- <navigator url="../albumDetail/albumDetail" wx:for="{{albumList}}" wx:key='index' hover-class="none" class="albumList"> -->
+	<view class="albumList" bindtap="goAlbumDetail" data-id='{{item.ID}}' wx:for="{{albumList}}" wx:key='index'>
+		<view class="albumTitle">
+			<view>
+				<text class="title1">{{item.AlbumName}}</text>
+				<text class="title2">我的收藏·{{item.AlbumCount}}</text>
+			</view>
+			<image class="right" src="../../images/right.png"></image>
+		</view>
+		<view class="imgsBox">
+			<view wx:if="{{!item.AlbumCookBookList.length}}" class="albumImgBox">
+				<image src="../../images/noAlbum.png" class="noAlbumImg"></image>
+			</view>
+			<block wx:else>
+				<view wx:for="{{item.AlbumCookBookList}}" wx:if="{{v<4}}" wx:for-item="i" wx:for-index="v" wx:key='i'>
+					<image mode="aspectFill" src="{{imgUrl}}{{i.ImageUrl}}"></image>
+				</view>
+			</block>
+
+
+		</view>
+	</view>
+	<!-- </navigator> -->
+
+</view>

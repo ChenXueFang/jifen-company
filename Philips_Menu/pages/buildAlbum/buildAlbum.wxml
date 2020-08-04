@@ -1,0 +1,23 @@
+<!--pages/buildAlbum/buildAlbum.wxml-->
+<view class="albumBox">
+	<view class='top'>
+		<image class='philipsLogo' src='../../images/PhilipsLogo.png'></image>
+	</view>
+<!-- <i-panel> -->
+<view class="inputBox">
+<text class="title1">标题</text>
+<input autofocus placeholder="请输入标题" value="{{ title }}" bindinput="inputtitle" maxlength="10"></input>
+</view>    
+<view class="inputBox textareaBox">
+<text class="title1">简介</text> 
+<textarea value="{{ describe }}" placeholder="请输入简介" bindinput="inputdescribe" maxlength="100"></textarea>
+</view>  
+    <!-- <i-input i-class='input' value="{{ title }}" title="标题" autofocus placeholder="请输入标题" /> -->
+     <!-- maxlength="50" -->
+    <!-- <i-input i-class='input textarea' cols="2" value="{{ describe }}" type="textarea" title="简介" placeholder="请输入简介" /> -->
+<!-- </i-panel> -->
+<button class="button saveBtn" bindtap="saveAlbum">保存</button>
+<button class="button deleteBtn"  bindtap="deleteAlbum" wx:if="{{ID && oldTitle!='我的收藏'}}">删除专题</button>
+<!-- <i-button class="button" bind:click="handleClick" loading="true">保存</i-button>
+<i-button bind:click="handleClick" type="primary" disabled>删除专题</i-button> -->
+</view>

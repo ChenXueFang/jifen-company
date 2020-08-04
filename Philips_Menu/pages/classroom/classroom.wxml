@@ -1,0 +1,53 @@
+<!--pages/classroom/classroom.wxml-->
+<import src="../../wxParse/wxParse.wxml" />
+<view>
+	<image class='philipsLogo' src='../../images/PhilipsLogo.png' style="margin-left:30rpx"></image>
+
+	<!-- 滚动tabs切换头 -->
+	<scroll-view scroll-x="true" class='swiper-tab'>
+		<view class="tab-title" wx:for="{{tabList}}" wx:key="item" wx:for-index="tabIndex">
+			<view class="swiper-tab-item {{currentTab == tabIndex ? 'tab-active':''}}" data-index="{{tabIndex}}" bindtap="tabClick" data-productid='{{item.children[0].ID}}'>
+				<view class="tabsName">{{item.label}}</view>
+				<view class="line"></view>
+			</view>
+		</view>
+	</scroll-view>
+
+	<scroll-view scroll-x="true" class='swiper-tab swiper-tab2'>
+		<view class="tab-title" wx:for="{{currentChildren}}" wx:key="item" wx:for-index="tabIndex">
+			<view class="swiper-tab-item swiper-tab-item2 {{currentTab2 == tabIndex ? 'tab-active':''}}" data-index="{{tabIndex}}" bindtap="tabClick2" data-productid='{{item.ID}}'>
+				<image src="{{imgUrl}}{{item.ImageUrl}}" class="tabsImg"></image>
+				<view class="tabsName">{{item.Name}}</view>
+			</view>
+		</view>
+	</scroll-view>
+	<!-- 滚动tabs切换内容 end-->
+	<view class="content">
+		<!-- 轮播 -->
+		<swiper class="swiper">
+			<block>
+				<swiper-item wx:for='{{carouselList}}' wx:key='index'>
+					<video class="carouseVideo" wx:if='{{item.VideoUrl}}' src="{{item.VideoUrl}}" objectFit="fill" controls></video>
+				</swiper-item>
+			</block>
+		</swiper>
+		<view class="caption-wrap">
+			<view wx:if='{{questionList.length>0}}' class="caption-title"><image class="questionImg" src="../../images/question.png" /> 常见问题解答</view>
+			<view wx:for="{{questionList}}" wx:key="key" class="catagorys">
+				<view class="catagorysNameBox" data-expand="{{item.expand}}" data-index="{{index}}" bindtap="expand">
+					<text class="titleNum">Q{{index+1}}</text>
+					<text class="catagorysName">{{item.Question}}</text>
+					<image class="{{item.expand? 'expand' : ''}}" src="../../images/arrow-green-bottom.png"></image>
+				</view>
+				<view wx:if="{{item.expand}}" class="catagory">
+					<image wx:if='{{item.ImageUrl}}' src="{{imgUrl+item.ImageUrl}}" class="answerImg" mode="widthFix"></image>
+					<video wx:if='{{item.VideoUrl}}' src="{{item.VideoUrl}}" objectFit="fill" class="answerVideo" controls></video>
+					<text style="display:block">{{item.Answer}}</text>
+					<!-- <template is="wxParse" data="{{wxParseData:answerArr[index]}}"/> -->
+				</view>
+			</view>
+		</view>
+	</view>
+
+
+</view>

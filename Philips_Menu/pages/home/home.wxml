@@ -1,0 +1,129 @@
+<!--pages/home/home.wxml-->
+<view>
+	<image class='philipsLogo' src='../../images/PhilipsLogo.png' style="margin-left:30rpx"></image>
+	<!-- 搜索栏 -->
+	<view class="searchBox">
+		<navigator url="../searchMenus/searchMenus" hover-class="none" class="searInp">
+			<image class="searchIcon" src="../../images/search.png"></image>
+			<text class="inpText">Hi~ 今天想吃点什么呢？</text>
+		</navigator>
+		<navigator url="../searchMenus/searchMenus" hover-class="none" class="typeBox">
+			<image class="typeIcon" src="../../images/type.png"></image>
+			<view class="typeText">分类</view>
+		</navigator>
+	</view>
+
+	<!-- 滚动tabs切换头 -->
+	<scroll-view scroll-x="true" class='swiper-tab'>
+		<view class="tab-title" wx:for="{{tabList}}" wx:key="item" wx:for-index="tabIndex">
+			<view class="swiper-tab-item {{currentTab == tabIndex ? 'tab-active':''}}" data-index="{{tabIndex}}" bindtap="tabClick" data-productytypeid='{{item.ID}}'>
+				<image class="tabImg" src='{{item.ID=="all"?"":imgUrl}}{{item.Image}}' mode="widthFix"></image>
+				<view class="tabsName  {{currentTab == tabIndex ? 'tab-active-color':''}}">{{item.Name}}</view>
+			</view>
+		</view>
+	</scroll-view>
+
+	<!-- 滚动tabs切换内容 -->
+	<view class="tabCon">
+		<!-- 固定的tab切换头 -->
+		<view class="tabBox2">
+			<view wx:for="{{['推荐', '视频', '我的最爱']}}" wx:key="item" wx:for-index="tabIndex">
+				<view class="swiper-tab-item2 {{currentTab2 == tabIndex ? 'tab-active2':''}}" data-index="{{tabIndex}}" bindtap="tabClick2">
+					<view class="tabsName2">{{item}}</view>
+				</view>
+			</view>
+		</view>
+		<!-- 固定的tab切换头 end-->
+
+		<!-- 固定的tab切换头内容--瀑布流 -->
+		<view class="free-WaterfallFlow {{myPosterList.length==2?'twoCol':''}}">
+			<block>
+				<view bindtap='goCookDetail' data-index='{{index}}' data-cookid='{{item.CookBookID}}' class="flex-wrap" wx:for="{{myPosterList}}" wx:key='index' wx:if="{{index%2!=''}}">
+					<!-- 背景图 -->
+					<image class="bgImg" src="../../images/cookBg.png"></image>
+					<!-- 菜谱图 -->
+					<view class="container" wx:if="{{item.IsVideo&&item.SecondsVedioUrl}}">
+						<view class="video-box" id="video{{index}}" style="height: {{item.styleHight}}px;">
+							<video wx:if="{{item.isPlay}}" src="{{item.SecondsVedioUrl}}" objectFit="fill" class="video-video video tuijianvedio" initial-time="{{item.currentTime}}" controls="{{false}}" autoplay="{{true}}" muted="{{true}}" muted="{{true}}" loop="{{true}}"data-index="{{index}}" style="height:{{item.SecondWidth&&item.SecondWidth>0?(340*item.SencondHeight/item.SecondWidth):125}}rpx" id="{{'r'+index}}">
+							</video>
+							<image wx:else class="video-cover tuijianvedio"  id="{{'r'+index}}" mode="aspectFill" src="{{item.ImageUrl?imgUrl+item.ImageUrl:''}}" data-index="{{index}}" style="height:{{item.SecondWidth&&item.SecondWidth>0?(340*item.SencondHeight/item.SecondWidth):125}}rpx"></image>
+						</view>
+						<!-- </view> -->
+					</view>
+					<image wx:else mode="widthFix" src="{{item.ImageUrl? imgUrl+item.ImageUrl:''}}"></image>
+					<view class='conBox'>
+						<view class="introText">
+							<view class="listName">{{item.CookBookName}}</view>
+							<view class="loveBox">
+								<!-- 喜欢图标 -->
+								<view class="loveImgBox" catchtap="loveBind" data-index='{{index}}'>
+									<image class="loveImg" src="../../images/love1.png" wx:if='{{item.IsLikes}}'></image>
+									<image class="loveImg" src="../../images/love0.png" wx:else></image>
+								</view>
+								<text class="loveNum">{{item.LikesCount?item.LikesCount:0}}</text>
+							</view>
+						</view>
+						<!-- <view class="hard"> -->
+							<!-- 星评 -->
+							<star star="{{item.Difficulty}}"></star>
+						<!-- </view> -->
+						<view class="hard">
+							<image class="hardImg" src="../../images/time.png"></image>
+							<text class="hardText">烹饪时间：</text>
+							<text class="hardText">{{item.CookingTime?item.CookingTime:0}}min</text>
+						</view>
+					</view>
+				</view>
+			</block>
+
+			<block>
+				<view bindtap='goCookDetail' data-index='{{index}}' data-cookid='{{item.CookBookID}}' class="flex-wrap" wx:for="{{myPosterList}}" wx:key='PosterID' wx:if="{{index%2==''}}">
+					<!-- 背景图 -->
+					<image class="bgImg" src="../../images/cookBg.png"></image>
+					<!-- 菜谱图 -->
+					<view class="container" wx:if="{{item.IsVideo&&item.SecondsVedioUrl}}">
+						<view class="video-box" id="video{{index}}" style="height: {{item.styleHight}}px;">
+							<video  wx:if="{{item.isPlay}}" src="{{item.SecondsVedioUrl}}" objectFit="fill" class="video-video video tuijianvedio" initial-time="{{item.currentTime}}" controls="{{false}}" autoplay="{{true}}" muted="{{true}}" loop="{{true}}"data-index="{{index}}" style="height:{{item.SecondWidth&&item.SecondWidth>0?(340*item.SencondHeight/item.SecondWidth):125}}rpx"  id="{{'r'+index}}">
+							</video>
+							<image wx:else class="video-cover tuijianvedio" mode="aspectFill" src="{{item.ImageUrl?imgUrl+item.ImageUrl:''}}" data-index="{{index}}" style="height:{{item.SecondWidth&&item.SecondWidth>0?(340*item.SencondHeight/item.SecondWidth):125}}rpx"  id="{{'r'+index}}"></image>
+						</view>
+					</view>
+					<image wx:else mode="widthFix" src="{{item.ImageUrl? imgUrl+item.ImageUrl:''}}"></image>
+					<view class='conBox'>
+						<view class="introText">
+							<view class="listName">{{item.CookBookName}}</view>
+							<view class="loveBox">
+								<!-- 喜欢图标 -->
+								<view class="loveImgBox" catchtap="loveBind" data-index='{{index}}'>
+									<image class="loveImg" src="../../images/love1.png" wx:if='{{item.IsLikes}}'></image>
+									<image class="loveImg" src="../../images/love0.png" wx:else></image>
+								</view>
+								<text class="loveNum">{{item.LikesCount?item.LikesCount:0}}</text>
+							</view>
+						</view>
+						<!-- <view class="hard"> -->
+							<!-- 星评 -->
+							<star star="{{item.Difficulty}}"></star>
+						<!-- </view> -->
+						<view class="hard">
+							<image class="hardImg" src="../../images/time.png"></image>
+							<text class="hardText">烹饪时间：</text>
+							<text class="hardText">{{item.CookingTime?item.CookingTime:0}}min</text>
+						</view>
+					</view>
+				</view>
+			</block>
+		</view>
+		<i-load-more wx-if='{{((currentTab2==0 && !RecommendIsOver)||(currentTab2==1 && !VideoIsOver)||(currentTab2==2 && !FavoriteIsOver))&&myPosterList.length}}' />
+	<i-load-more wx-if='{{((currentTab2==0 && RecommendIsOver)||(currentTab2==1 && VideoIsOver)||(currentTab2==2 && FavoriteIsOver) )&&myPosterList.length}}' tip="没有更多" loading="{{ false }}" />
+		<!-- 固定的tab切换头内容--瀑布流- end -->
+
+		<!-- 暂无内容 -->
+		<view wx:if='{{myPosterList.length==0}}' class="nothingBox" style="width:263rpx;text-align:center;margin:0 auto;margin-top:140rpx">
+			<image src='../../images/nothing.png' style="width:263rpx;height:201rpx;margin-left:2rpx"></image>
+			<view style="color:#999;font-size:30rpx;margin-top:60rpx;margin-left:2rpx">目前暂无内容</view>
+		</view>
+
+	</view>
+	<!-- 滚动tabs切换内容 end-->
+</view>

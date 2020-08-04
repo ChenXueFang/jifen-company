@@ -1,0 +1,47 @@
+正式站测试站切换：
+1.修改appid；2.修改域名
+
+project.config.json：
+测试appid：wx6b345c0623fec986
+
+project.config.json：
+正式appid：wx0fdfedca6ab8e73f
+
+setting.js:
+  //正式站
+  URL: "https://cookbook.philipswechat.com/",
+  ImgURL: "https://cookbook.philipswechat.com",
+  h5Url: 'https://cec.philipswechat.com/',
+
+  //测试站
+  // URL: "https://smallapp.crmclick.com/",
+  // ImgURL: "https://smallapp.crmclick.com",
+  // h5Url: 'https://h5.crmclick.com/',
+
+菜谱后台：http://smallapp.crmclick.com/adnim/Login.aspx
+账号密码：admin 111111
+
+----------------------------------------------------------------------------------------
+接口：
+API/BasicData.ashx?_op=ProductTypeQuery 首页产品分类（滚动tabs）
+API/BasicData.ashx?_op=HomeDataQuery（pageIndex，pageSize）首页显示
+API/BasicData.ashx?_op=CookBookDetail（CookBookID） 菜谱详情页
+API/BasicData.ashx?_op=ProductClassQuery 课堂分类
+API/BasicData.ashx?_op=SearchProductQuestion 分类查询 参数（productID）
+
+API/BasicData.ashx?_op=SearchCookBook（cookname(手动输入），SearchClass:[{TypeID:6,SubTypeID:[1,2,3]},{TypeID:2,SubTypeID:[1,2,3]}]，productyTypeID(tabs), pageIndex, pageSize  产品搜索（tabs）
+
+API/BasicData.ashx?_op=CookBookLikes （CookBookID，H5UserID，UnionID， oper add ,del）点赞
+API/BasicData.ashx?_op=SaveAlbumCookBook （保存菜谱到专辑 oper add 添加 del 删除  AlbumID  CookBookID）
+API/BasicData.ashx?_op=AlbumQuery（rows 一页多少，page:1 第1页）
+API/BasicData.ashx?_op=SaveShare 分享接口
+
+
+wx.showLoading({
+      title: '加载中',
+    });
+
+wx.hideLoading()
+
+
+

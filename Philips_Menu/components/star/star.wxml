@@ -1,0 +1,8 @@
+<!--pages/components/star/star.wxml-->
+<view class="hard">
+	<image class="hardImg" src="../../images/allStarts.png"></image>
+	<text class="hardText">难易程度：</text>
+	<image class="loveImg" wx:for="{{fullStar}}" wx:key='un' src="../../images/start1.png"></image>
+	<image class="loveImg" wx:if="{{halfStar}}" src="../../images/start0.5.png"></image>
+	<image class="loveImg" wx:for="{{noneStar}}" wx:key='un' src="../../images/start0.png"></image>
+</view>

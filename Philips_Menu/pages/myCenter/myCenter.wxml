@@ -1,0 +1,82 @@
+<!--pages/myCenter/myCenter.wxml-->
+<view>
+	<image class='philipsLogo' src='../../images/PhilipsLogo.png' style="margin-left:30rpx"></image>
+
+	<view class="con">
+		<!-- 头像盒子 -->
+		<view class="headBox">
+			<!-- 背景图 -->
+			<image class='headBgImg' src='{{headImg}}' wx:if="{{isLogin}}" mode='aspectFill'></image>
+			<!-- 授权头像后 -->
+			<view class="headCon" wx:if="{{isLogin}}">
+				<image class='headImg' src='{{headImg}}'></image>
+				<view>
+					<view class="headName">{{nick}}</view>
+					<view class="phone">{{phoneNum}}</view>
+				</view>
+			</view>
+			<!-- 未授权头像 -->
+			<view class="headCon" wx:else bindtap="goRegister">
+				<view class="headImg headImgGray"></view>
+				<view>
+					<view class="headName">未登录</view>
+					<button class="phone loginBtn">注册成为会员 ></button>
+				</view>
+			</view>
+		</view>
+
+		<!-- 我感兴趣的标签 -->
+		<view class="labelBox">
+			<view class="labelTitle">
+				<view class="myTitle">我感兴趣的标签</view>
+				<view bindtap="goInterestLabel">
+					<text class="edit">编辑</text>
+					<image class='rightIcon' src='../../images/right.png'></image>
+				</view>
+			</view>
+			<view class="labelCon">
+				<view class="label" wx:for="{{interestLabels}}" wx:key='index'>{{item.TagName}}</view>
+			</view>
+		</view>
+
+		<!-- 我的专辑 -->
+		<view class="myAlbum">
+			<view class="myTitle myAlbumTitle">我的专辑</view>
+			<!-- 有收藏时 -->
+			<view class="AlbumBox">
+				<view class="oneAlbum" wx:for='{{albumList}}' wx:key='index' bindtap="goAlbumDetail" data-id='{{item.ID}}'>
+					<view wx-if="{{!item.AlbumCookBookList[0]}}" class="albumImgBox">
+					<image class="noAlbumImg"  src="../../images/noAlbum.png"></image>
+					</view>
+					<view wx-if="{{item.AlbumCookBookList[0]}}">
+						<image mode="aspectFill" class="albumImgBox" src='{{imgUrl}}{{item.AlbumCookBookList[0].ImageUrl}}'></image>
+					</view>
+					<!-- <image class="albumImgBox" src="{{imgUrl}}{{item.AlbumCookBookList[0].ImageUrl}}"></image> -->
+					<view class="albumTitle">{{item.AlbumName}}</view>
+					<view class="albumNum">{{item.AlbumCount?item.AlbumCount:'暂无收藏'}}</view>
+				</view>
+			</view>
+			<!-- 没有收藏时 -->
+			<!-- <view class="AlbumBox" wx:else>
+				<view class="oneAlbum">
+					<view class="albumImgBox">
+						<image class="noAlbumImg" src="../../images/noAlbum.png"></image>
+					</view>
+					<view class="albumTitle">我的收藏</view>
+					<view class="albumNum">暂无收藏</view>
+				</view>
+			</view> -->
+		</view>
+
+
+
+
+
+
+
+
+
+
+
+	</view>
+</view>

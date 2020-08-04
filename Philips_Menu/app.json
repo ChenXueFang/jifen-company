@@ -1,0 +1,78 @@
+{
+  "pages": [  
+    "pages/home/home",
+    "pages/searHome/searHome",
+    "pages/classroom/classroom",
+    "pages/myCenter/myCenter",
+    "pages/cookDetail/cookDetail",
+    "pages/interestLabel/interestLabel",
+    "pages/searchMenus/searchMenus",
+    "pages/albumList/albumList",
+    "pages/buildAlbum/buildAlbum",
+    "pages/albumDetail/albumDetail",
+    "pages/registerCode/registerCode",
+    "pages/wxPhone/wxPhone",
+
+
+    "pages/index/index",
+    "pages/accredit/accredit",
+    "pages/register/register",
+    "pages/getmobile/getmobile",
+    "pages/productdetails/productdetails",
+    "pages/login/login",
+    "pages/validation/validation",
+    "pages/product/product",
+    "pages/recipe/recipe",
+    "pages/collection/collection",
+    "pages/memberCardRule/memberCardRule",
+    "pages/privacyPolicy/privacyPolicy",
+    "pages/searchresult/searchresult",
+    "pages/logs/logs"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "iconPath": "images/index.png",
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "selectedIconPath": "images/index_sel.png"
+      },
+      {
+        "iconPath": "images/cookAlbum.png",
+        "pagePath": "pages/albumList/albumList",
+        "text": "菜谱专辑",
+        "selectedIconPath": "images/cookAlbum_sel.png"
+      },
+      {
+        "iconPath": "images/classroom.png",
+        "pagePath": "pages/classroom/classroom",
+        "text": "课堂",
+        "selectedIconPath": "images/classroom_sel.png"
+      },
+      {
+        "iconPath": "images/myCenter.png",
+        "pagePath": "pages/myCenter/myCenter",
+        "text": "个人中心",
+        "selectedIconPath": "images/myCenter_sel.png"
+      }
+    ],
+    "color": "#999",
+    "selectedColor": "#333",
+    "borderStyle": "white"
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "飞利浦厨房家电美味菜谱",
+    "navigationBarTextStyle": "black"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "navigateToMiniProgramAppIdList": [
+    "wxef057181a9632e93"
+  ],
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}

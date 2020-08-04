@@ -1,0 +1,94 @@
+/**app.wxss**/
+@import "/wxParse/wxParse.wxss";
+
+page{background-color:#fff;font-family: MicrosoftYaHei;}  
+.clearfloat::after{
+  display: block;
+  clear: both;
+  content:"";
+  visibility:hidden;
+}
+.clearfloat{zoom:1} 
+.fl{float:left}
+.fr{float:right}
+.header{
+  width:100%;
+  height: auto;
+  background: white;
+}
+.header1{
+  width:100%;
+  height: 212rpx;
+  background: white;
+  position: fixed;
+  left:0;
+  top:0;
+  z-index: 9;
+  box-shadow: 0 0 6rpx #E6E6E6; 
+}
+.philipsLogo{
+  /* width: 183rpx;
+  height: 94rpx;
+  margin-left: 30rpx; */
+  width:153rpx;
+  height:78rpx;
+  display: block;
+}
+.headerTitle{
+  width:100%;
+  height:auto;
+  background: white;
+  line-height: 42rpx;
+  text-align: center;
+  position: relative;
+  margin-top: 41rpx;
+}
+.leftIcon{
+  width: 65rpx;
+	height: 42rpx;
+  position: absolute;
+  left:30rpx;
+  top:0;
+  bottom:0;
+  margin: auto 0;
+  text-align: center;
+   /* border: 1px solid red;  */
+}
+.leftIcon image{
+  width: 19rpx;
+	height: 30rpx;
+  /* position: absolute;
+  left:45rpx;
+  top:0;
+  bottom:0;
+  margin: auto 0; */
+}
+.headerTitle text{
+  text-align: center;
+  color: #252525;
+  font-size: 42rpx;
+  letter-spacing: 35rpx;
+}
+button[type=primary] {
+  color:#FFFFFF;
+  background-color:#39B7F6;
+  border: none!important;
+}
+.button-hover {
+  color:rgba(0, 0, 0, 0.6);
+  /* background-color:#39B7F6!important; */
+  border: none!important;
+}
+view,text, button, input, textarea, navigator {
+font-size: 26rpx;
+font-family: "PingFang SC", Arial, Helvetica, sans-serif;
+box-sizing: border-box;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+color: #222;
+}
+input[type="button"], input[type="submit"], input[type="reset"],
+input[type="text"], input[type="date"], input[type="tel"] {
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: rgb(0, 0, 0, 0);
+}

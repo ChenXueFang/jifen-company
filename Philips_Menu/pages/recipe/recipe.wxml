@@ -1,0 +1,40 @@
+<!--recipe.wxml-->
+<view class="recipe">
+  <view class='top'>
+    <image class='philipsLogo' src='../../images/PhilipsLogo.png'></image>
+    <view class='headerTitle'>
+      <text><text style='letter-spacing:35rpx'>菜</text>谱</text>
+    </view>
+  </view>
+  <view class='recipeContent'>
+    <view class='menuWrap'>
+      <view class='muneClasses'>菜式分类</view>
+      <view class='menuList clearfloat'>
+        <view class='details fl' wx:for="{{recipeList}}" wx:key="key"  wx:if="{{item.TypeID == 3}}" data-name="{{item.SubTypeName}}"  data-typeid="{{item.TypeID}}" data-subtypeid="{{item.SubTypeID}}" bindtap="goSearchResult">
+          <view class='foodIntro' style='background-color:{{item.SubColor}}'>
+            <text>{{item.SubTypeName}}</text>
+          </view>
+        </view>
+        <!-- <view class='details' wx:for="{{recipeList}}" wx:key="key"  wx:if="{{item.TypeID == 3}}" data-name="{{item.SubTypeName}}"  bindtap="goSearchResult">
+          <view class='foodImg'>
+            <image src="{{url+item.ImageUrl}}"></image>
+          </view>
+          <view class='foodIntro'>
+            <text>{{item.SubTypeName}}</text>
+            <image src='../../images/godetails.png'></image>
+          </view>
+        </view> -->
+      </view>
+    </view>
+    <view class='menuWrap'>
+      <view class='muneClasses' style='margin-top:100rpx'>场景分类</view>
+      <view class='menuList clearfloat'>
+        <view class='details fl' wx:for="{{recipeList}}" wx:key="key"  wx:if="{{item.TypeID == 2}}" data-name="{{item.SubTypeName}}"  data-typeid="{{item.TypeID}}" data-subtypeid="{{item.SubTypeID}}" bindtap="goSearchResult">
+          <view class='foodIntro' style='background-color:{{item.SubColor}}'>
+            <text>{{item.SubTypeName}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

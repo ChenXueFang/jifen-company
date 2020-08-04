@@ -1,0 +1,29 @@
+<!--product.wxml-->
+<view class="product">
+  <view class='top'>
+    <image class='philipsLogo' src='../../images/PhilipsLogo.png'></image>
+    <view class='headerTitle'>
+      <!-- <view class='leftIcon' bindtap="goIndex" >
+        <image src='../../images/left.png'></image>
+      </view> -->
+      <text>选择您感兴趣的标签</text>
+      <text class="subTitle">我们会为您推荐相关菜谱</text>
+    </view>
+  </view>
+  <!-- style='height:{{scrollHeight}}px' -->
+  <view class='productContent'>
+   <view class='productWrap clearfloat'>
+      <view class='productList fl' wx:for="{{interestList}}" wx:key="key" data-checked="{{item.checked}}"  data-index="{{index}}" bindtap="chooseInterest">
+        <view class='productImg {{item.checked? "active" :""}}'>
+            <text>{{item.TagName}}</text>
+            <image wx:if="{{item.checked}}" src="../../images/interetChecked.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="btn">
+  <text class="btn2" wx:if="{{isOk}}" bindtap="saveTagUser">下一步</text>
+  <text class="btn1" wx:else>至少选择5个标签</text>
+  
+  </view>
+</view>

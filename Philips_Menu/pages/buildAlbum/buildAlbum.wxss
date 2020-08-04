@@ -1,0 +1,69 @@
+/* pages/buildAlbum/buildAlbum.wxss */
+.albumBox {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  box-sizing: border-box;
+  position: relative;
+  padding: 0 30rpx;
+}
+
+.top {
+  width: 100%;
+  margin-bottom: 40rpx;
+}
+.inputBox{
+  height: 69rpx;
+  line-height:48rpx;
+  border-bottom: 1rpx solid #DEDEDE;
+  padding: 15rpx 0 11rpx;
+}
+.inputBox text{
+  width: 109rpx;
+  display: inline-block;
+  vertical-align: top;
+  color: #666666;
+  font-size: 30rpx;
+	letter-spacing: 2rpx;
+}
+.textareaBox{
+  height: 149rpx;
+  margin-bottom: 385.5rpx;
+  padding: 30rpx 0 23rpx;
+}
+input,textarea{
+  display: inline-block;
+  height: 100%;
+  width: 581rpx;
+  font-size: 34rpx;
+	letter-spacing: 2rpx;
+  color: #333333;
+  
+}
+/* .input {
+  padding: 7rpx 0 !important;
+  border-bottom: 1rpx solid #DEDEDE;
+}
+.textarea textarea {
+  min-height: 96rpx;
+}
+.textarea{
+  margin-bottom: 385.5rpx;
+} */
+.button{
+  width:657rpx;
+  height:90rpx;
+  line-height: 90rpx;
+  border-radius:4rpx;
+  font-size: 28rpx;
+  letter-spacing: 2rpx;
+}
+.saveBtn{
+  background:rgba(91,153,30,1);
+  color: #ffffff;
+  margin-bottom: 30rpx;
+}
+.deleteBtn{
+  color: #5b991e;
+  border:1px solid rgba(91,153,30,1);
+}

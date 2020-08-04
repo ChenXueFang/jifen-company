@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="container" wx-if="{{isProcess}}">
+  <image class='philipsLogo' src='../../images/PhilipsLogo.png' style="margin-left:30rpx"></image>
+
+	<image class="logo" src="../../images/loginLogo.png"></image>
+  <view class="intro_tips">
+    <view class="text1">亲爱的用户</view>
+    <view class="text2">这是您第一次进入飞利浦厨房家电小程序</view>
+    <view class="text2">
+      <view class="text5">请授权你的信息</view>
+      <view class="text3">（昵称、头像、手机号）</view>
+    </view>
+    <view class="text4">成为会员立即享多重福利</view>
+  </view>
+  <!-- <button open-type="getUserInfo" bindgetuserinfo="getUserInfo" wx:if='{{isAuth}}'> 确认 </button> -->
+  <!-- <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" wx:else>微信授权手机号</button> -->
+  <button open-type="getUserInfo" bindgetuserinfo="getUserInfo" wx:if="{{!hasUserInfo}}"> 确认 </button>
+  <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" wx:else>微信授权手机号</button>
+  <button bindtap='goBack' class="cancel"> 取消 </button>
+  <view class="mask" wx:if="{{hasLoading}}"></view>
+</view>
