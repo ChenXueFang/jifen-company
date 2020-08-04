@@ -1,0 +1,52 @@
+{
+  "pages": [
+    
+  "pages/index/index",
+  "pages/editPoster/editPoster",
+  "pages/previewPoster/previewPoster",
+  "pages/previewPoster2/previewPoster2",
+  "pages/classify/classify", 
+  "pages/mine/mine", 
+  "pages/seriesList/seriesList",
+  "pages/login/login",
+  "pages/instructions/instructions"
+   
+  ],
+  "permission": {
+	  
+  },
+  "tabBar": {
+    "list": [
+      {
+        "iconPath": "images/index.png",
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "selectedIconPath": "images/index_sel.png"
+      },
+      {
+        "iconPath": "images/classify.png",
+        "pagePath": "pages/classify/classify",
+        "text": "分类",
+        "selectedIconPath": "images/classify_sel.png"
+      },
+      {
+        "iconPath": "images/mine.png",
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "selectedIconPath": "images/mine_sel.png"
+      }
+    ],
+    "color": "#999",
+    "selectedColor": "#506986"
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "贝德玛导购海报工具",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "navigateToMiniProgramAppIdList": [
+    "wxaf72a47464d8f40a"
+  ]
+}

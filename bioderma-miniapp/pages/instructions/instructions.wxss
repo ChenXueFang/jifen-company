@@ -1,0 +1,75 @@
+/* pages/instructions/instructions.wxss */
+.box{
+    padding-top:  46rpx;
+    text-align: center;
+    color: #546787;
+}
+.bgImg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+}
+.bgImg2 {
+    height: 100%;
+    top: 100%;
+}
+.bgImg3 {
+    height: 100%;
+    top: 200%;
+}
+.bgImg4 {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+.bigTitle{
+    font-size: 72rpx;
+    margin-bottom: 20rpx;
+}
+.subTitle{
+    font-size: 40rpx;
+    margin-bottom: 45rpx;
+}
+.stepBox{
+    width: 100%;
+    position: relative;
+}
+.stepBox:last-child{
+    padding-bottom: 40rpx;
+}
+.stepOne{
+    width: 95%;
+    height: 1149rpx;
+    margin: 0 auto;
+    position: relative;
+}
+.stepTitle{
+    position: absolute;
+    top: 39rpx;
+    left: 46rpx;
+}
+.stepImg{
+    position: absolute;
+    width: 100%;
+    height: 1149rpx;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,154 @@
+/* pages/login/login.wxss */
+.box{
+    padding:  85rpx 30rpx 0;
+    text-align: center;
+    font-size: 28rpx;
+	color: #333333;
+}
+.loginBg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+}
+text{
+    font-size: 30rpx;
+}
+.title{
+    font-size: 48rpx;
+    color: #546785;
+    margin-bottom: 80rpx;
+}
+.inputBox{
+    width: 100%;
+	height: 80rpx;
+	background-color: #ffffff;
+	box-shadow: 0rpx 0rpx 5rpx 0rpx 
+		rgba(0, 0, 0, 0.1);
+    border-radius: 10rpx;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 30rpx;
+    margin-bottom: 20rpx;
+}
+input{
+    width: 73%;
+    text-align: left;
+    margin-left: 57rpx;
+}
+.shopInp{
+    margin-left: 27rpx;
+}
+.coreInp{
+    width: 43%;
+}
+.loginBtn{
+    width: 100%;
+    height: 80rpx;
+    line-height: 80rpx;
+	background-color: #546787;
+	border-radius: 10rpx;
+    margin-top: 80rpx;
+    color: #fefefe;
+}
+.codeBtn{
+    width: 190rpx;
+	height: 48rpx;
+    line-height: 48rpx;
+	background-color: #546787;
+    border-radius: 8rpx;
+    color: #fff;
+    font-size: 28rpx;
+    padding: 0;
+}
+.codeBtn2{
+    font-size: 26rpx;
+}
+/* 模态框 */
+.modalBox .modal-mask {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.5;
+    overflow: hidden;
+    z-index: 9000;
+    color: #fff;
+    }
+    
+    .modalBox .modal-dialog {
+    width: 620rpx;
+    height: 476rpx;
+    overflow: hidden;
+    position: fixed;
+    top: 28%;
+    left: 9%;
+    z-index: 9999;
+    background: #fff;
+    border-radius: 10rpx;
+    }
+    
+    .modalBox .modal-title {
+    padding-top: 50rpx;
+    text-align: center;
+    }
+    
+    .modalBox .modal-title>image {
+        width: 118rpx;
+        height: 118rpx;
+    }
+    
+    .modalBox .modal-content {
+    padding: 40rpx 32rpx;
+    }
+    .modalBox .modal-input {
+    width: 509rpx;
+    height: 78rpx;
+    margin: 0 auto;
+    font-size: 32rpx;
+    line-height: 1.5;
+    color: #546787;
+    }
+    .modalBox .modal-footer {
+    display: flex;
+    justify-content: space-around;
+    height: 86rpx;
+    font-size: 30rpx;
+    line-height: 86rpx;
+    margin-top: 25rpx;
+    }
+    
+    .modalBox .btn-cancel {
+    width: 73%;
+    height: 66rpx;
+    line-height: 66rpx;
+    text-align: center;
+    background-color: #546787;
+    border-radius: 33rpx;
+    font-size: 32rpx;
+    color: #fff;
+    border-radius: 10rpx;
+    }
+    /* 模态框 */
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

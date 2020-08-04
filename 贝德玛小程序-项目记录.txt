@@ -1,0 +1,50 @@
+后台：bioderma@126.com
+密码：bioderma126
+
+测试：
+appid:  wxfd88a35da663ba47 
+涛哥提供的appid: wxc468a6fbe4704544
+测试域名： https://bioderma.crmclick.com
+门店代码 1234
+验证码 61000
+
+
+正式：
+正式站AppID(小程序ID) wxc468a6fbe4704544
+
+
+
+
+url: wx.getStorageSync("apiurl"), 
+  urlImg: wx.getStorageSync("apiImgurl"),
+  defaultUrl: 'https://origin.www.prod.wechat.hsc.philips.com.cn/feichang/stminiapp/',
+  defaultImgUrl: 'https://stapp.philipswechat.com/stadnim/',
+
+
+var apiUrl = 'https://origin.www.prod.wechat.hsc.philips.com.cn/feichang/stminiapp/'; //正式环境
+var apiUrlDev = "https://st.crmclick.com:5001"; //开发环境
+var apiImgUrl = setting.setting.defaultImgUrl; //正式环境-图片
+var apiImgUrlDev = "https://st.crmclick.com:5004/"; //开发环境
+
+App({
+  onLaunch: async function (options) {
+    let that = this;
+    wx.request({
+      url: "https://origin.www.prod.wechat.hsc.philips.com.cn/feichang/stminiapp/",
+      method: 'POST',
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success: res => {
+        // if (res.data.data == "devtools" || res.data.data == "0") {
+        //   wx.setStorageSync("apiurl", apiUrlDev);
+        //   wx.setStorageSync("apiImgurl", apiImgUrlDev);
+        // }
+        // else 
+        {
+          //正式
+          wx.setStorageSync("apiurl", apiUrl);
+          wx.setStorageSync("apiImgurl", apiImgUrl);
+        }
+      }
+    })

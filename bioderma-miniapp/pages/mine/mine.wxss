@@ -1,0 +1,258 @@
+/* pages/mine/mine.wxss */
+page {
+    height: 100%;
+}
+
+.bg {
+    min-height: 88%;
+    background-color: #f5f6fa;
+    padding: 20rpx 25rpx 0rpx;
+    overflow: auto;
+    color: #000;
+}
+
+.headBox {
+    background-color: #fff;
+    font-size: 30rpx;
+    display: flex;
+    align-items: center;
+    color: #333;
+}
+
+.headImg {
+    display: inline-block;
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 22rpx 42rpx 20rpx 60rpx;
+}
+
+.loginBtn {
+    width: 90px;
+    height: 57rpx;
+    line-height: 57rpx;
+    font-size: 30rpx;
+    background-color: #546787;
+    border-radius: 10rpx;
+    color: #fefefe;
+    margin: 0;
+}
+
+/* tab切换 */
+.swiper-tab {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    height: 88rpx;
+    line-height: 88rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-tab-item {
+    font-size: 32rpx;
+    color: #999999;
+}
+
+.swiperRelative {
+    position: relative;
+}
+
+.active {
+    font-size: 36rpx;
+    color: #333333;
+    /* border-bottom: 6rpx solid #546787; */
+}
+
+.active:after {
+    content: '';
+    position: absolute;
+    left: 11px;
+    top: auto;
+    bottom: 0;
+    right: auto;
+    width: 100rpx;
+    height: 6rpx;
+    background-color: #546787;
+    border-radius: 3rpx;
+}
+
+.show {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.proList {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30rpx 0 18rpx;
+}
+
+.proOne {
+    width: 340rpx;
+    font-size: 22rpx;
+    border: solid 1rpx #e4e8eb;
+    border-radius: 0rpx 0rpx 20rpx 20rpx;
+    background-color: #fff;
+    border-radius: 20rpx;
+    margin-bottom: 20rpx;
+}
+
+.proImg {
+    width: 100%;
+    border-radius: 20rpx 20rpx 0rpx 0rpx;
+}
+
+.proIntro {
+    display: flex;
+    align-items: center;
+    padding: 15rpx 20rpx;
+}
+
+.introText {
+    width: 85%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-right: 15rpx;
+}
+
+.myImg {
+    border-radius: 10rpx;
+}
+
+/* 瀑布流 */
+.free-WaterfallFlow {
+    width: 100%;
+    column-count: 2;
+    /*column-count 属性规定元素应该被分隔的列数：*/
+    margin: 30rpx 0 18rpx;
+}
+.twoCol{
+    display: flex;
+    justify-content: space-between;
+}
+
+.free-WaterfallFlow .flex-wrap {
+    display: inline-block;
+    width: 340rpx;
+    font-size: 22rpx;
+    margin-bottom: 5%;
+    border: solid 1rpx #e4e8eb;
+    text-align: center;
+    border-radius: 20rpx;
+    background-color: #fff;
+}
+
+.flex-wrap image {
+    width: 100%;
+    border-radius: 20rpx 20rpx 0rpx 0rpx;
+}
+.flex-wrap .image2 {
+    width: 100%;
+    border-radius: 20rpx;
+}
+.flex-wrap view:nth-child(2) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 10rpx 20rpx 15rpx;
+}
+
+.flex-wrap image.deleteImg {
+    width: 34rpx;
+    height: 36rpx;
+}
+
+.free-WaterfallFlow .flex-wrap.myOne {
+    background: none;
+    border: none;
+}
+
+/* 模态框 */
+.modalBox .modal-mask {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.4;
+    overflow: hidden;
+    z-index: 9000;
+    color: #fff;
+}
+.modalBox .modal-mask3 {
+    z-index: 8000;
+}
+
+.modalBox .modal-dialog {
+    width: 620rpx;
+    padding-bottom: 25rpx;
+    overflow: hidden;
+    position: fixed;
+    top: 20%;
+    left: 9%;
+    z-index: 9999;
+    background: #fff;
+    border-radius: 10rpx;
+}
+
+.modalBox .modal-title {
+    padding-top: 56rpx;
+    text-align: center;
+}
+
+.modalBox .modal-title>image {
+    width: 118rpx;
+    height: 118rpx;
+}
+
+.modalBox .modal-content {
+    padding: 40rpx 32rpx;
+}
+
+.modalBox .modal-input {
+    width: 509rpx;
+    height: 70rpx;
+    margin: 0 auto;
+    font-size: 32rpx;
+    line-height: 1.5;
+    color: #546787;
+    text-align: center;
+}
+
+.modalBox .modal-footer {
+    display: flex;
+    justify-content: space-around;
+    height: 86rpx;
+    font-size: 32rpx;
+    color: #fefefe;
+    line-height: 86rpx;
+}
+
+.modalBox .btn-cancel {
+    width: 260rpx;
+    height: 66rpx;
+    line-height: 66rpx;
+    text-align: center;
+    background-color: #c5c5c5;
+    border-radius: 10rpx;
+}
+
+.modalBox .btn-confirm {
+    width: 260rpx;
+    height: 66rpx;
+    line-height: 66rpx;
+    text-align: center;
+    background-color: #546787;
+    border-radius: 10rpx;
+}
+/* 模态框 */

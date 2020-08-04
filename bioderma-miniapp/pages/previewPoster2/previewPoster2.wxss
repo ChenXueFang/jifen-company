@@ -1,0 +1,584 @@
+/* pages/previewPoster/previewPoster.wxss */
+.box {
+    color: #333;
+    font-size: 30rpx;
+    position: relative;
+    height: 100%;
+}
+
+.bgImg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    min-height: 100%;
+}
+
+.con {
+    padding: 29rpx 24rpx 50rpx;
+}
+
+.title {
+    text-align: center;
+}
+
+.imgBox,
+.postImg {
+    width: 100%;
+}
+
+.imgBox {
+    margin: 27rpx 0 32rpx;
+    /* box-shadow: 0rpx 0rpx 5rpx 0rpx 
+        rgba(0, 0, 0, 0.1); */
+    border-radius: 20rpx;
+    position: relative;
+    color: #63748f;
+}
+
+.postImg {
+    border-radius: 20rpx;
+}
+
+.topBtn {
+    font-size: 22rpx;
+    color: #546787;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.twoBtn {
+    display: flex;
+}
+
+.btnBox {
+    text-align: center;
+}
+
+.backImg {
+    width: 34rpx;
+    height: 29rpx;
+}
+
+.saveBtn {
+    width: 200rpx;
+    height: 70rpx;
+    line-height: 70rpx;
+    background-color: #546787;
+    border-radius: 10rpx;
+    font-size: 28rpx;
+    color: #fefefe;
+    margin: 0;
+}
+
+.QRImg {
+    width: 111rpx;
+    height: 111rpx;
+}
+
+.postTitle {
+    font-size: 48rpx;
+    line-height: 65rpx;
+    position: absolute;
+    /* top: 85rpx;
+    left: 43rpx; */
+    top: 0rpx;
+    left: 0rpx;
+}
+
+.postTitle2 {
+    left: 480rpx;
+    writing-mode: vertical-rl;
+}
+
+.subTitle {
+    width: 370rpx;
+    word-break: break-all;
+    font-size: 26rpx;
+    line-height: 45rpx;
+    /* position: absolute;
+    top: 110rpx;
+    left: 43rpx; */
+}
+
+.subTitle2 {
+    width: auto;
+    left: 60rpx;
+    top: 70rpx;
+    writing-mode: vertical-rl;
+}
+
+.editerBorder {
+    border: solid 4rpx #ffffff;
+    box-shadow: 0rpx 0rpx 8rpx 0rpx rgba(0, 0, 0, 0.17);
+    padding: 13rpx;
+    z-index: 8880;
+}
+
+.QReditBox {
+    position: absolute;
+    top: 843rpx;
+    left: 542rpx;
+}
+.QRBox {
+    width: 121rpx;
+    background-color: #fff;
+    background-color: #ffffff;
+    box-shadow: 0rpx 0rpx 13rpx 0rpx rgba(0, 0, 0, 0.24);
+    border-radius: 10rpx;
+    font-size: 18rpx;
+    color: #333333;
+    text-align: center;
+    padding: 7rpx 5rpx;
+    box-sizing: border-box;
+}
+
+.activeCon {
+    width: 88%;
+    margin: 0 auto;
+    font-size: 34rpx;
+    line-height: 51rpx;
+    color: #63748f;
+}
+
+.delImg,
+.scaleImg {
+    width: 42rpx;
+    height: 42rpx;
+    display:  none;
+}
+.editerBorder .delImg, .editerBorder .scaleImg{
+    display:  block;
+}
+
+.delImg {
+    position: absolute;
+    top: -23rpx;
+    left: -22rpx;
+}
+
+.scaleImg {
+    position: absolute;
+    bottom: -22rpx;
+    right: -22rpx;
+}
+
+/* 模态框 */
+.modalBox .modal-mask {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.4;
+    overflow: hidden;
+    z-index: 9000;
+    color: #fff;
+}
+.modalBox .modal-mask3 {
+    z-index: 8000;
+}
+
+.modalBox .modal-dialog {
+    width: 620rpx;
+    padding-bottom: 25rpx;
+    overflow: hidden;
+    position: absolute;
+    top: 20%;
+    left: 6%;
+    z-index: 9999;
+    background: #fff;
+    border-radius: 10rpx;
+}
+
+.modalBox .modal-dialog2 {
+    top: -5.5%;
+    background: none;
+    font-size: 32rpx;
+    color: #fff;
+}
+.modalBox .modal-dialog3 {
+    z-index: 8100;
+}
+
+.modalBox .modal-title {
+    padding-top: 56rpx;
+    text-align: center;
+}
+
+.modalBox .modal-title>image {
+    width: 118rpx;
+    height: 118rpx;
+}
+
+.modalBox .modal-content {
+    padding: 40rpx 32rpx;
+}
+
+.modalBox .modal-input {
+    width: 509rpx;
+    height: 70rpx;
+    margin: 0 auto;
+    font-size: 32rpx;
+    line-height: 1.5;
+    color: #546787;
+    text-align: center;
+}
+
+.modalBox .modal-footer {
+    display: flex;
+    justify-content: space-around;
+    height: 86rpx;
+    font-size: 32rpx;
+    color: #fefefe;
+    line-height: 86rpx;
+}
+
+.modalBox .btn-cancel {
+    width: 260rpx;
+    height: 66rpx;
+    line-height: 66rpx;
+    text-align: center;
+    background-color: #c5c5c5;
+    border-radius: 10rpx;
+}
+
+.modalBox .btn-confirm {
+    width: 260rpx;
+    height: 66rpx;
+    line-height: 66rpx;
+    text-align: center;
+    background-color: #546787;
+    border-radius: 10rpx;
+}
+
+/* 模态框 */
+
+.modalBox .backIndex {
+    width: 87%;
+    height: 80rpx;
+    line-height: 80rpx;
+    background-color: rgba(0, 0, 0, 0);
+    border: solid 3rpx #ffffff;
+}
+
+.arrBox {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 44%;
+}
+
+.arrBox2 {
+    margin-top: 79%;
+    transform: rotateY(180deg);
+    margin-left: 20%;
+}
+
+.arrImg {
+    width: 167rpx;
+    height: 278rpx;
+    margin-right: 35%;
+}
+
+.canvas{
+    position:fixed;
+    left:100%; 
+}
+
+/* 新方法发样式 */
+/**index.wxss**/
+.bg {
+    width: 100%;
+    height: 100vh;
+  }
+  .contentWarp{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    /* background-color: #d1e3f1; */
+  }
+  .touchWrap{
+      transform-origin: center;
+      position: absolute;
+      z-index: 100;
+  }
+  
+  .imgWrap {
+      box-sizing: border-box;
+      width: 100%;
+      transform-origin: center;
+      float: left;
+      border: 5rpx transparent dashed;
+  }
+  .imgWrap image {
+      float: left;
+  }
+  .touchActive .x {
+      display: block;
+  }
+  
+  .touchActive .o {
+      display: block;
+  }
+  
+  .x {
+      position: absolute;
+      top: -25rpx;
+      left: -25rpx;
+      z-index: 500;
+      display: none;
+      width: 50rpx;
+      height: 50rpx;
+      overflow: hidden;
+      font-weight: bold;
+      color: #d1e3f1;
+  }
+  .o {
+      position: absolute;
+      bottom: -25rpx;
+      right: -25rpx;
+      width: 50rpx;
+      height: 50rpx;
+      text-align: center;
+      display: none;
+      overflow: hidden;
+      font-weight: bold;
+      color: #d1e3f1;
+  }
+  .active {
+      background-color: rgb(78, 114, 151);
+  }
+  
+  .active view {
+      border: none;
+  }
+  .touchActive {
+      /* border: 4rpx #fff dashed; */
+      z-index: 400;
+  }
+  .fixed {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  
+  
+  .canvasWrap {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 999;
+      text-align: center;
+  }
+  
+  .maskCanvas {
+      position: absolute;
+      left: -200%;
+      top: 0;
+  }
+  
+  .btn {
+      font-size: 30rpx;
+      color: #81b7c4;
+      border: 3rpx solid #81b7c4;
+      background-color: #fff;
+      line-height: 90rpx;
+      width: 50%;
+      margin-top: 20rpx;
+      height: 90rpx;
+  }
+  
+  .btnView view {
+      padding-bottom: 20rpx;
+  }
+  
+  .hand {
+      position: absolute;
+      left: 100rpx;
+      right: 0;
+      margin: auto;
+      z-index: 100;
+  }
+  
+  .getUserInfoBtn {
+      position: initial;
+      border: none;
+      background-color: none;
+  }
+  
+  .getUserInfoBtn::after {
+      border: none;
+  }
+  
+  .btn_view {
+      display: flex;
+      padding: 20rpx;
+  }
+  
+  .btn_view button {
+      width: 300rpx;
+      font-size: 30rpx;
+      color: #81b7c4;
+      border: 3rpx solid #81b7c4;
+      background-color: #fff;
+      line-height: 90rpx;
+  }
+
+  /* 新方法 */
+  .touchWrap{
+    transform-origin: center;
+    position: absolute;
+    z-index: 100;
+}
+
+.imgWrap {
+    box-sizing: border-box;
+    width: 100%;
+    transform-origin: center;
+    float: left;
+    border: 5rpx transparent dashed;
+}
+.imgWrap image {
+    float: left;
+}
+.touchActive .x {
+    display: block;
+}
+
+.touchActive .o {
+    display: block;
+}
+
+.x {
+    position: absolute;
+    top: -25rpx;
+    left: -25rpx;
+    z-index: 500;
+    display: none;
+    width: 50rpx;
+    height: 50rpx;
+    overflow: hidden;
+    font-weight: bold;
+    color: #d1e3f1;
+}
+.o {
+    position: absolute;
+    bottom: -25rpx;
+    right: -25rpx;
+    width: 50rpx;
+    height: 50rpx;
+    text-align: center;
+    display: none;
+    overflow: hidden;
+    font-weight: bold;
+    color: #d1e3f1;
+}
+.active {
+    background-color: rgb(78, 114, 151);
+}
+
+.active view {
+    border: none;
+}
+.touchActive {
+    /* border: 4rpx #fff dashed; */
+    z-index: 400;
+}
+.fixed {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+
+.canvasWrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+    text-align: center;
+}
+
+.maskCanvas {
+    position: absolute;
+    left: -200%;
+    top: 0;
+}
+
+.btn {
+    font-size: 30rpx;
+    color: #81b7c4;
+    border: 3rpx solid #81b7c4;
+    background-color: #fff;
+    line-height: 90rpx;
+    width: 50%;
+    margin-top: 20rpx;
+    height: 90rpx;
+}
+
+.btnView view {
+    padding-bottom: 20rpx;
+}
+
+.hand {
+    position: absolute;
+    left: 100rpx;
+    right: 0;
+    margin: auto;
+    z-index: 100;
+}
+
+.getUserInfoBtn {
+    position: initial;
+    border: none;
+    background-color: none;
+}
+
+.getUserInfoBtn::after {
+    border: none;
+}
+
+.btn_view {
+    display: flex;
+    padding: 20rpx;
+}
+
+.btn_view button {
+    width: 300rpx;
+    font-size: 30rpx;
+    color: #81b7c4;
+    border: 3rpx solid #81b7c4;
+    background-color: #fff;
+    line-height: 90rpx;
+}
+
+.resImg {
+  width: 75%;
+  margin-top: 10px;
+}
+/* 新方法end */
+
+/* 隐藏canvas */
+.maskCanvas{
+    position: fixed;
+    left: 100%;
+}

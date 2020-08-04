@@ -1,0 +1,124 @@
+ wx.showLoading({
+      title: '加载中',
+    })
+    this.setData({
+      hasLoading: true
+    })
+    app.getEventLog("101", "点击授权用户按钮", "");
+    if (e.detail.userInfo != undefined) {
+      app.globalData.userInfo = e.detail.userInfo
+
+      if (app.globalData.userInfo != null) {
+        wx.setStorageSync("nickName", app.globalData.userInfo.nickName);
+        wx.setStorageSync("avatarUrl", app.globalData.userInfo.avatarUrl);
+        wx.setStorageSync("gender", app.globalData.userInfo.gender);
+        wx.setStorageSync("province", app.globalData.userInfo.province);
+        wx.setStorageSync("city", app.globalData.userInfo.city);
+        wx.setStorageSync("country", app.globalData.userInfo.country);
+      }
+    }
+
+    var that = this;
+    var iv = e.detail.iv;
+    var encr = e.detail.encryptedData;
+    var rawData = e.detail.rawData;
+    var signature = e.detail.signature;
+
+    if (e.detail.errMsg == 'getUserInfo:fail auth deny' || e.detail.errMsg == 'getPhoneNumber:user deny' || e.detail.errMsg == 'getUserInfo:fail:cancel to confirm login' || e.detail.errMsg != 'getUserInfo:ok') {
+      //用户未授权
+      wx.showModal({
+        title: '温馨提示',
+        showCancel: false,
+        content: '请先授权',
+        success: function (res) { }
+      })
+      app.getEventLog("103", "点击授权用户取消按钮", "");
+      that.setData({
+        hasUserInfo: false,
+        hasMobileInfo: false,
+        hasLoading: false,
+      });
+      wx.hideLoading()
+    } else {
+      app.getEventLog("102", "点击授权用户确认按钮", "");
+      wx.login({
+        success: res => {
+          var code = res.code;
+          var that = this;
+          if (encr != null && encr != "" && encr != undefined) {
+            //用户确认授权 调用涛哥接口 获取小程序的openid unionid 公众号的openid
+            wx.request({
+              url: setting.setting.payUrl + 'Api/Miniapp/GetUserInfo',
+              data: {
+                code: encodeURI(code),
+                appid: setting.setting.appid,
+                iv: encodeURI(iv),
+                encryptedData: encodeURI(encr),
+                signature: encodeURI(signature)
+              },
+              header: {
+                'content-type': 'application/json'
+              },
+              timeout: 30000,
+              method: 'GET',
+              dataType: "json",
+              success: function (res) {
+                wx.hideLoading()
+                if (res.data.state == 1) {
+                  debugger
+                  if (res.data.data != null) {
+                    app.globalData.unionId = res.data.data.unionid;
+                    app.globalData.h5OpenId = res.data.data.wechatOpenid;
+                    app.globalData.miniOpenId = res.data.data.openid;
+                    wx.setStorageSync("unionidKey", res.data.data.unionid);
+                    wx.setStorageSync("h5OpenId", res.data.data.wechatOpenid);
+                    wx.setStorageSync("miniOpenId", res.data.data.openid);
+                    that.setData({
+                      hasUserInfo: true,
+                      hasMobileInfo: false
+                    });
+                    //用于客服对接
+                    that.wxSaveUserInfo();
+                    //检查用户是否是会员
+                    that.checkVipUser();
+                  }
+                } else {
+                  that.setData({
+                    hasUserInfo: false,
+                    hasMobileInfo: false
+                  });
+                  wx.showModal({
+                    title: '温馨提示',
+                    showCancel: false,
+                    content: res.data.msg,
+                    success: function (res) { }
+                  })
+                }
+              },
+              fail: function (err) {
+                wx.hideLoading()
+                console.log(err)
+              }
+            })
+          } else {
+            //参数为空
+            wx.hideLoading()
+            wx.showModal({
+              title: '温馨提示',
+              showCancel: false,
+              content: "授权未通过",
+              success: function (res) { }
+            })
+          }
+        },
+        fail: res =>{
+          wx.hideLoading()
+          wx.showModal({
+            title: '温馨提示',
+            showCancel: false,
+            content: res.errMsg,
+            success: function (res) { }
+          })
+        }
+      })
+    }

@@ -1,0 +1,98 @@
+<!--pages/mine/mine.wxml-->
+<!-- 授权-头像 -->
+<view class="headBox" wx:if='{{!isAuth}}'>
+	<view class="headImg"></view>
+	<button class="loginBtn" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="getUserInfo">授权登录</button>
+</view>
+<!-- 头像 -->
+<view class="headBox" wx:else>
+	<image class="headImg" src="{{headImg}}" />
+	<text>{{nickName}}</text>
+</view>
+
+<view class="bg">
+	<view class="swiper-tab">
+		<view class="swiperRelative">
+			<view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab" style="margin-right: 40rpx">我的收藏</view>
+		</view>
+		<view class="swiperRelative">
+			<view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">我的海报</view>
+		</view>
+	</view>
+
+	<!--我的收藏内容--->
+	<view class="{{currentTab == 0 ? 'show':'hidden'}}">
+		<view class="free-WaterfallFlow {{myCollectList.length==2?'twoCol':''}}">
+			<block>
+				<navigator url="../editPoster/editPoster?posterId={{item.PosterID}}" hover-class="none" class="flex-wrap" wx:for="{{myCollectList}}" wx:key='PosterID' wx:if="{{(index+1)%2!=''}}">
+					<image mode="widthFix" src="{{imgUrl}}{{item.SmallImageUrl}}"></image>
+					<view class="proIntro">
+						<view class="introText">{{item.Title=='undefined'?'':item.Title}}</view>
+						<image class="deleteImg" src="../../images/delete.png" catch:tap="delBtn" data-currentid='{{item.ID}}' />
+					</view>
+				</navigator>
+			</block>
+			<block>
+				<navigator url="../editPoster/editPoster?posterId={{item.PosterID}}" hover-class="none" class="flex-wrap" wx:for="{{myCollectList}}" wx:key='PosterID' wx:if="{{(index+1)%2==''}}">
+					<image mode="widthFix" src="{{imgUrl}}{{item.SmallImageUrl}}"></image>
+					<view class="proIntro">
+						<view class="introText">{{item.Title=='undefined'?'':item.Title}}</view>
+						<image class="deleteImg" src="../../images/delete.png" catch:tap="delBtn" data-currentid='{{item.ID}}' />
+					</view>
+				</navigator>
+			</block>
+		</view>
+	</view>
+	<!--我的收藏end-->
+
+	<!--我的海报内容--->
+	<view class="{{currentTab == 1 ? 'show':'hidden'}}">
+		<view class="free-WaterfallFlow {{myPosterList.length==2?'twoCol':''}}">
+			<block>
+				<navigator url="../editPoster/editPoster?posterId={{item.PosterID}}" hover-class="none" class="flex-wrap myOne" wx:for="{{myPosterList}}" wx:key='PosterID' wx:if="{{index%2!=''}}">
+					<image class="image2" mode="widthFix" src="{{imgUrl}}{{item.SmallImageUrl}}"></image>
+					<view class="proIntro">
+						<view class="introText">{{item.Title=='undefined'?'':item.Title}}</view>
+						<image class="deleteImg" src="../../images/delete.png" catch:tap="delBtn" data-currentid='{{item.ID}}' />
+					</view>
+				</navigator>
+			</block>
+			<block>
+				<navigator url="../editPoster/editPoster?posterId={{item.PosterID}}" hover-class="none" class="flex-wrap myOne" wx:for="{{myPosterList}}" wx:key='PosterID' wx:if="{{index%2==''}}">
+					<image class="image2" mode="widthFix" src="{{imgUrl}}{{item.SmallImageUrl}}"></image>
+					<view class="proIntro">
+						<view class="introText">{{item.Title=='undefined'?'':item.Title}}</view>
+						<image class="deleteImg" src="../../images/delete.png" catch:tap="delBtn" data-currentid='{{item.ID}}' />
+					</view>
+				</navigator>
+			</block>
+		</view>
+	</view>
+	<!--我的海报end--->
+
+	<!--删除弹窗-->
+	<view class="modalBox">
+		<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+		<view class="modal-dialog" wx:if="{{showModal}}">
+			<view class="modal-title">
+				<image src="../../images/smile.png" class="smileImg"></image>
+			</view>
+			<view class="modal-content">
+				<view class="modal-input">
+					您确认删除该海报吗？
+				</view>
+			</view>
+			<view class="modal-footer">
+				<view class="btn-cancel" bindtap="onCancel" data-status="cancel">取消</view>
+				<view class="btn-confirm" bindtap="onConfirm" data-status="confirm">确定</view>
+			</view>
+		</view>
+	</view>
+	<!-- 删除弹窗 -->
+
+
+
+
+
+
+</view>

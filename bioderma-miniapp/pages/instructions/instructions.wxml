@@ -1,0 +1,19 @@
+<!--pages/instructions/instructions.wxml-->
+<image class="bgImg" src="../../images/loginBg.png"></image>
+<image class="bgImg bgImg2" src="../../images/loginBg.png"></image>
+<image class="bgImg bgImg3" src="../../images/loginBg.png"></image>
+
+<view class="box">
+	<view class="bigTitle">操作说明</view>
+	<view class="subTitle">Operating Instructions</view>
+
+	<view class="stepBox">
+		<image class="bgImg bgImg4" src="../../images/loginBg.png"></image>
+		<view class="stepOne" wx:for='{{stepList}}' wx:key="index">
+			<image class="stepImg" src="{{item.stepImg}}" />
+			<view class="stepTitle">{{item.stepTitle}}</view>
+		</view>
+	</view>
+
+
+</view>

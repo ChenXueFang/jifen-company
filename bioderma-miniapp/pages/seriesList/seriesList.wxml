@@ -1,0 +1,42 @@
+<!--pages/seriesList/seriesList.wxml-->
+<view class="bg">
+
+	<view class="{{seriesList.length>0?'free-WaterfallFlow':'columnCount2'}}">
+		<!-- 分类名 -->
+		<view class="seriesTitle">
+			<view class="titleBox">
+				<view class="typeName">{{typeList[id-1].typeName}}</view>
+				<view wx:if='{{id<=6}}'>{{typeList[id-1].subTypeName}}</view>
+			</view>
+			<image class="seriesImg" src="{{typeList[id-1].typeImg}}" />
+		</view>
+
+		<!-- 瀑布流左右分布 -->
+		<block>
+			<navigator url="../editPoster/editPoster?posterId={{item.PosterID}}" hover-class="none" class="flex-con" wx:for="{{seriesList}}" wx:key='PosterID'>
+				<!-- 授权按钮 -->
+				<!-- <button wx:if='{{!isVip}}' class='userBtn' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="getUserInfo"></button> -->
+
+				<view class="flex-wrap" wx:if="{{item.id%2!=''}}">
+					<image mode="widthFix" src="{{imgUrl}}{{item.SmallImageUrl}}"></image>
+					<view>{{item.Title}}</view>
+				</view>
+			</navigator>
+		</block>
+
+		<block>
+			<navigator url="../editPoster/editPoster?posterId={{item.PosterID}}" hover-class="none" class="flex-con" wx:for="{{seriesList}}" wx:key='PosterID'>
+				<!-- 授权按钮 -->
+				<!-- <button wx:if='{{!isVip}}' class='userBtn' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="getUserInfo"></button> -->
+
+				<view class="flex-wrap" wx:if="{{item.id%2==''}}">
+					<image mode="widthFix" src="{{imgUrl}}{{item.SmallImageUrl}}"></image>
+					<view>{{item.Title}}</view>
+				</view>
+			</navigator>
+		</block>
+	</view>
+
+
+
+</view>

@@ -1,0 +1,81 @@
+<!--pages/index/index.wxml-->
+<view class="bg">
+	<!-- 轮播 -->
+	<view class="swiperBox">
+		<swiper class="swiper" indicator-dots indicator-active-color="#546787">
+			<block>
+				<swiper-item wx:for='{{carouselList}}' wx:key='index'>
+					<navigator url="{{item.Url}}" hover-class="none">
+						<image class="swiperImg" src="{{imgUrl}}{{item.ImageUrl}}" />
+					</navigator>
+				</swiper-item>
+			</block>
+		</swiper>
+		<!-- 操作说明 -->
+		<view class="instruBtn" bindtap="toInstructions">
+			<image class="instruImg" src="../../images/instructions.png" />
+			<text>操作说明</text>
+		</view>
+	</view>
+
+	<!-- 核心产品 -->
+	<view class="corePro">
+		<view class="titleMore">
+			<text>核心产品</text>
+			<view class="more" bindtap="toCoreMore">更多
+				<image class="rightImg" src="../../images/right.png" />
+			</view>
+		</view>
+		<!-- 产品列表 -->
+		<view class="proList">
+			<navigator url="../editPoster/editPoster?posterId={{item.PosterID}}" hover-class="none" class="proOne" wx:for='{{usedPosterList}}' wx:key='index'>
+				<image class="proImg" src="{{imgUrl}}{{item.SmallImageUrl}}" />
+				<view class="proIntro">{{item.Title}}</view>
+			</navigator>
+		</view>
+	</view>
+
+	<!-- 特定客群 -->
+	<view class="corePro">
+		<view class="titleMore">
+			<text>特定客群</text>
+			<view class="more" bindtap="toCustomerMore">更多
+				<image class="rightImg" src="../../images/right.png" />
+			</view>
+		</view>
+		<!-- 客群列表 -->
+		<view class="proList customerBox">
+			<navigator url="../seriesList/seriesList?id=6" hover-class="none" class=" customer">
+				<image class="customerImg" src="../../images/a.png" />
+			</navigator>
+			<navigator url="../seriesList/seriesList?id=7" hover-class="none" class=" customer">
+				<image class="customerImg" src="../../images/b.png" />
+			</navigator>
+			<navigator url="../seriesList/seriesList?id=8" hover-class="none" class=" customer">
+				<image class="customerImg" src="../../images/c.png" />
+			</navigator>
+			<navigator url="../seriesList/seriesList?id=9" hover-class="none" class=" customer">
+				<image class="customerImg" src="../../images/d.png" />
+			</navigator>
+		</view>
+	</view>
+
+	<!-- 当季精选 -->
+	<view class="corePro">
+		<view class="titleMore">
+			<text>当季精选</text>
+			<view class="more" bindtap="toSpecialMore">更多
+				<image class="rightImg" src="../../images/right.png" />
+			</view>
+		</view>
+		<!-- 精选列表 -->
+		<view class="proList">
+			<navigator url="../editPoster/editPoster?posterId={{item.PosterID}}" hover-class="none" class="proOne" wx:for='{{SeasonList}}' wx:key='index'>
+				<image class="proImg" src="{{imgUrl}}{{item.SmallImageUrl}}" />
+				<view class="proIntro">{{item.Title}}</view>
+			</navigator>
+		</view>
+	</view>
+
+
+</view>

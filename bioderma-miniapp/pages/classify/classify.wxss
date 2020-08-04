@@ -1,0 +1,79 @@
+/* pages/classify/classify.wxss */
+
+.bg {
+  background-color: #f5f6fa;
+}
+
+.tab {
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.imgs {
+  margin-top: 5px;
+}
+
+.img_product {
+  width: 510rpx;
+  height: 140rpx;
+}
+
+.img_customer {
+  width: 510rpx;
+  height: 160rpx;
+}
+
+.tab_item {
+  font-size: 28rpx;
+  height: 120rpx;
+  line-height: 120rpx;
+  text-align: center;
+}
+
+.left {
+  width: 180rpx;
+  height: 100vh;
+  position: fixed;
+  background-color: #f5f6fa;
+}
+
+.right {
+  position: absolute;
+  left: 180rpx;
+  width: 570rpx;
+  background-color: #fff;
+  height: 100%;
+}
+
+.right-content {
+  margin: 15px;
+}
+
+.selected {
+  background-color: #fff;
+}
+
+/* 瀑布流 */
+
+.free-WaterfallFlow {
+  width: 97%;
+  column-count: 2; /*column-count 属性规定元素应该被分隔的列数：*/
+  margin: 30rpx 0 18rpx;
+}
+.twoCol{
+  display: flex;
+  justify-content: space-between;
+}
+
+.free-WaterfallFlow .flex-wrap {
+  display: inline-block;
+}
+
+.flex-wrap image {
+  width: 250rpx;
+  border-radius: 10px;
+}
+.free-WaterfallFlow .flex-wrap.myOne {
+  background: none;
+  border: none;
+}

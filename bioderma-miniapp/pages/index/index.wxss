@@ -1,0 +1,110 @@
+/* pages/index/index.wxss */
+.bg {
+    background-color: #f5f6fa;
+    padding: 20rpx 25rpx 0rpx;
+    overflow: auto;
+	color: #000000;
+}
+/*swiper //// */
+.swiperBox, image, .corePro{
+    width: 100%;
+    position: relative;
+}
+
+.swiper {
+    height: 900rpx;
+}
+
+.swiperImg {
+    height: 840rpx;
+    border-radius: 16rpx;
+}
+/*swiper //////// end*/
+.instruBtn{
+    width: 100rpx;
+	height: 100rpx;
+    background-color: #ffffff;
+    border-radius: 50%;
+	box-shadow: 0rpx 3rpx 8rpx 1rpx 
+		rgba(81, 105, 139, 0.39);
+    opacity: 0.8;
+    font-size: 18rpx;
+    color: #51698b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 62rpx;
+    right: 0rpx;
+}
+.instruImg{
+    width: 30rpx;
+    height: 30rpx;
+    margin-bottom: 5rpx;
+}
+.corePro{
+    margin-top: 30rpx;
+}
+.titleMore{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 34rpx;
+}
+.more{
+    font-size: 26rpx;
+	color: #666666;
+}
+.rightImg{
+    width: 11rpx;
+    height: 21rpx;
+    margin-left: 10rpx;
+}
+.proList{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30rpx 0 38rpx;
+}
+.proOne{
+    width: 230rpx;
+    height: 405rpx;
+    font-size: 22rpx;
+    border-radius: 20rpx;
+    background-color: #fff;
+}
+.proImg{
+    height: 340rpx;
+    border-radius: 20rpx 20rpx 0rpx 0rpx;
+}
+.proIntro{
+    text-align: center;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    padding: 12rpx 20rpx 15rpx;
+}
+.customerBox{
+    flex-wrap: wrap;
+}
+.customer{
+    width: 340rpx;
+}
+.customerImg{
+    height: 161rpx;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

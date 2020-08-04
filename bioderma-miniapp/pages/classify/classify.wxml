@@ -1,0 +1,58 @@
+<!--pages/classify/classify.wxml-->
+<view class="bg tab">
+  <view class="left">
+    <block wx:for="{{['产品系列','客群分类','最新海报','常用海报']}}" wx:key="item" wx:for-index="tabIndex">
+      <view class="tab_item {{currentTab == tabIndex ? 'selected':''}}" data-index="{{tabIndex}}" bindtap="onTabItemTap">
+        <text>{{item}}</text>
+      </view>
+    </block>
+  </view>
+  <view class="right">
+    <view hidden='{{currentTab !=0}}' class="right-content">
+      <text>产品系列</text>
+      <view class="imgs">
+        <navigator url="../seriesList/seriesList?id={{productImg.id}}&currentTab=0" hover-class="none" wx:for="{{product_images}}" wx:for-item="productImg" wx:key="id">
+          <image class="img_product" src="{{productImg.src}} "></image>
+        </navigator>
+      </view>
+    </view>
+    <view hidden='{{currentTab !=1}}' class="right-content ">
+      <text>客群分类</text>
+      <view class="imgs">
+        <navigator url="../seriesList/seriesList?id={{customerImg.id}}&currentTab=1" hover-class="none" wx:for="{{customer_images}}" wx:for-item="customerImg" wx:key="id">
+          <image class="img_customer" src="{{customerImg.src}} "></image>
+        </navigator>
+      </view>
+    </view>
+    <view hidden='{{currentTab !=2}}' class="right-content ">
+      <text>最新海报</text>
+      <view class="free-WaterfallFlow {{newPosterList.length==2?'twoCol':''}}">
+        <block>
+          <navigator url="../editPoster/editPoster?posterId={{item.PosterID}}&currentTab=2" hover-class="none" class="flex-wrap" wx:for="{{newPosterList}}" wx:key='PosterID' wx:if="{{item.id%2!=''}}">
+            <image mode="widthFix" src="{{imgUrl}}{{item.SmallImageUrl}}"></image>
+          </navigator>
+        </block>
+        <block>
+          <navigator url="../editPoster/editPoster?posterId={{item.PosterID}}&currentTab=3" hover-class="none" class="flex-wrap" wx:for="{{newPosterList}}" wx:key='PosterID' wx:if="{{item.id%2==''}}">
+            <image mode="widthFix" src="{{imgUrl}}{{item.SmallImageUrl}}"></image>
+          </navigator>
+        </block>
+      </view>
+    </view>
+    <view hidden='{{currentTab !=3}}' class="right-content ">
+      <text>常用海报</text>
+      <view class="free-WaterfallFlow {{usedPosterList.length==2?'twoCol':''}}">
+        <block>
+          <navigator url="../editPoster/editPoster?posterId={{item.PosterID}}" hover-class="none" class="flex-wrap" wx:for="{{usedPosterList}}" wx:key='PosterID' wx:if="{{item.id%2!=''}}">
+            <image mode="widthFix" src="{{imgUrl}}{{item.SmallImageUrl}}"></image>
+          </navigator>
+        </block>
+        <block>
+          <navigator url="../editPoster/editPoster?posterId={{item.PosterID}}" hover-class="none" class="flex-wrap" wx:for="{{usedPosterList}}" wx:key='PosterID' wx:if="{{item.id%2==''}}">
+            <image mode="widthFix" src="{{imgUrl}}{{item.SmallImageUrl}}"></image>
+          </navigator>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>

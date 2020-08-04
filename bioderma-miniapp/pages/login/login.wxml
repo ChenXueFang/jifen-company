@@ -1,0 +1,46 @@
+<!--pages/login/login.wxml-->
+<image class="loginBg" src="../../images/loginBg.png"></image>
+
+<view class="box">
+	<view class="title">会员登录</view>
+	<view class="inputBox">
+		<text>手机号</text>
+		<input bindinput="getInputTel" type="number" placeholder="请输入手机号" />
+	</view>
+	<view class="inputBox">
+		<text>验证码</text>
+		<input bindinput="getInputCode" type="number" class="coreInp" placeholder="请输入验证码" />
+		<button class="codeBtn codeBtn2" wx:if="{{isget}}">{{codetype}}</button>
+		<button class="codeBtn" wx:else bindtap="getCode">获取验证码</button>
+	</view>
+	<view class="inputBox">
+		<text>门店代码</text>
+		<input bindinput="getInputShop" class="shopInp" placeholder="请输入门店代码" />
+	</view>
+	<button class="loginBtn" bindtap="login">登录</button>
+
+	<!--弹窗-->
+	<view class="modalBox">
+		<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+		<view class="modal-dialog" wx:if="{{showModal}}">
+			<view class="modal-title">
+				<image src="../../images/smile.png" class="smileImg"></image>
+			</view>
+			<view class="modal-content">
+				<view class="modal-input">
+					亲爱的小伙伴，您还不是小贝壳儿，请联系贝德玛激活您的账户
+				</view>
+			</view>
+			<view class="modal-footer">
+				<view class="btn-cancel" bindtap="onCancel" data-status="cancel">关闭</view>
+			</view>
+		</view>
+	</view>
+	<!-- 弹窗 -->
+
+
+
+
+
+
+</view>

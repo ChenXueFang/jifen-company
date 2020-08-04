@@ -1,0 +1,92 @@
+<!--pages/editPoster/editPoster.wxml-->
+<view class="box">
+	<image class="bgImg" src="../../images/loginBg.png" />
+	<view class="con">
+		<view class="title">海报图片</view>
+		<view class="imgBox">
+			<image mode="widthFix" class="postImg" src="{{imgUrl}}{{posterDetail.PosterImageUrl}}" />
+			<!-- 授权-收藏按钮 -->
+			<button class="collect" data-btntype='collectbtn' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="getUserInfo"  wx:if='{{!isAuth}}'>
+				<image wx:if='{{isCollect}}' class="collectImg" src="../../images/collected.png" />
+				<image wx:else class="collectImg" src="../../images/collect.png" />
+				收藏
+			</button>
+			<!-- 收藏按钮 -->
+			<button class="collect" bindtap="bindCollect" wx:else>
+				<image wx:if='{{isCollect}}' class="collectImg" src="../../images/collected.png" />
+				<image wx:else class="collectImg" src="../../images/collect.png" />
+				收藏
+			</button>
+		</view>
+		<view class="title">官方推荐话术</view>
+		<view class="officialText">{{posterDetail.Note}}</view>
+	</view>
+</view>
+
+<view class="box">
+	<!-- 背景图 -->
+	<image class="bgImg" src="../../images/loginBg.png" />
+	<!-- 内容 -->
+	<view class="con">
+		<view class="formBox">
+			<view class="formItem">
+				<view class="formTitle border">编辑标题</view>
+				<input placeholder-class="phcolor" class="border titleInp" placeholder="{{!isAuth?'请先授权登录': '请输入标题'}}" maxlength='20' value="{{titleValue}}" bindinput="getTitleValue" disabled='{{!isAuth}}'>  <!-- disabled='{{!isAuth}}' -->
+				<view class='word wordInp'>({{lastInp|0}}/20)</view>
+				</input>
+			</view>
+
+			<view class="formItem">
+				<view class="formTitle border">编辑店铺活动
+					<switch class='switch green' checked="{{switchChecked}}" bindchange="switchChange" disabled='{{!isAuth}}'></switch>  <!-- disabled='{{!isAuth}}' -->
+				</view>
+				<textarea wx:if='{{switchChecked}}' placeholder-class="phcolor" class="textarea-bg border" maxlength='100' placeholder="{{!isAuth?'请先授权登录': '请输入推荐话术'}}" value="{{activeValue}}" bindinput="getActiveValue" disabled='{{!isAuth}}'>  <!-- -->
+					<view class='word'>({{lastArea|0}}/100)</view>
+		        </textarea>
+			</view>
+
+			<!-- <view class="formItem">
+				<view class="formTitle border">
+					<text>文字方向</text> 
+					<radio-group bindchange="radiochange">
+						<radio style="margin-right:30rpx" value='across' checked disabled='{{!isAuth}}'>横向</radio>
+						<radio value='stand' disabled='{{!isAuth}}'>竖向</radio>
+					</radio-group>
+				</view>
+			</view> -->
+
+			<view class="updateBox">
+				<view class="formTitle">编辑二维码</view>
+				<!-- 上传二维码 -->
+				<view class="uploader">
+					<view class="weui-uploader__files" id="uploaderFiles">
+						<block wx:for="{{files}}" wx:key="*this">
+							<view class="weui-uploader__file uploader__file" bindtap="previewImage" id="{{item}}">
+								<image class="weui-uploader__img" src="{{item}}" mode="aspectFill" />
+								<!-- <view class="delete"> -->
+								<image class="delete" catchtap="deletefile" id="{{index}}" src="../../images/del.png"></image>
+								<!-- </view> -->
+							</view>
+						</block>
+					</view>
+					<view class="weui-uploader__input-box">
+						<!-- 上传按钮蒙版-未授权禁用 -->
+						<view class="weui-uploader__input" wx:if='{{!isAuth}}'>
+							<image class="updateImg" src="../../images/update.png" mode="aspectFill" />
+						</view>
+						<!-- 上传按钮 -->
+						<view class="weui-uploader__input" bindtap="chooseImage" wx:else>
+							<image class="updateImg" src="../../images/update.png" mode="aspectFill" />
+						</view>
+					</view>
+				</view>
+				<!-- 上传二维码 -->
+			</view>
+		</view>
+
+		<!-- 授权-预览按钮 -->
+		<button class="previewBtn" data-btntype='prebtn' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="getUserInfo" wx:if='{{!isAuth}}'>授权登录</button>
+		<button class="previewBtn" bindtap="topreviewPoster"  wx:else>预览海报</button>
+
+	</view>
+</view>

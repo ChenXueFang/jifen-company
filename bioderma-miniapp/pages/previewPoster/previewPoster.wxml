@@ -1,0 +1,104 @@
+<!--pages/previewPoster/previewPoster.wxml-->
+<image class="bgImg" src="../../images/loginBg.png" />
+
+<view class="box">
+	<image class="bgImg" src="../../images/loginBg.png" />
+	<view class="con">
+		<view class="topBtn">
+			<view class="twoBtn">
+				<!-- <view class="btnBox" style="margin-right: 30rpx">
+					<image class="backImg" src="../../images/back.png" />
+					<view>上一步</view>
+				</view> -->
+				<view class="btnBox" bindtap="bindExit">
+					<image class="backImg" src="../../images/exit.png" />
+					<view>退出</view>
+				</view>
+			</view>
+			<button class="saveBtn" bindtap="bindSave">保存并下载</button>
+		</view>
+
+		<view class="imgBox">
+			<canvas class="canvas"  canvas-id="myCanvas" style="width:700rpx;height:{{canvasHeight}}px;">
+			</canvas>
+			<image mode="widthFix" class="postImg" src="../../images/pro2.png" />
+			<!-- 标题 -->
+			<view  wx:if='{{titleValue}}' class="postTitle {{isAcross?'':'postTitle2'}} {{aim==1?'editerBorder':''}}" style="width: {{width}}rpx; height: {{height}}rpx; margin-left: {{left}}rpx; margin-top: {{top}}rpx; transform: translate(0%, 0%) scale({{ scale }}) rotate({{ rotate }}deg);" bindload="bindload" bindtouchstart="touchstart" bindtouchmove="touchmove" bindtouchend="touchend">
+			<text class="txt" id="txt0" data-scale="{{scale}}">	{{titleValue}}</text>
+				<image wx:if='{{aim==1}}' class="delImg" src="../../images/del.png" bindtap="bindDel" />
+				<image wx:if='{{aim==1}}' class="scaleImg" src="../../images/scale.png" />
+			</view>
+			<!-- 副标题 -->
+			<view wx:if='{{subValue}}' class="subTitle {{isAcross?'':'subTitle2'}} {{aim==2?'editerBorder':''}}" style="width: {{width_sub}}rpx; height: {{height_sub}}rpx; margin-left: {{left_sub}}rpx; margin-top: {{top_sub}}rpx; transform: translate(0%, 0%) scale({{ scale_sub }}) rotate({{ rotate_sub }}deg);" bindload="bindload_sub" bindtouchstart="touchstart_sub" bindtouchmove="touchmove_sub" bindtouchend="touchend_sub">
+				<text class="txt" id="txt1" data-scale="{{scale_sub}}">	{{subValue}}</text>	
+				<image wx:if='{{aim==2}}' class="delImg" src="../../images/del.png" bindtap="bindDel2" />
+				<image wx:if='{{aim==2}}' class="scaleImg" src="../../images/scale.png" />
+			</view>
+			<!-- 二维码 -->
+			<view wx:if='{{QRValue}}' class="QReditBox {{aim==3?'editerBorder':''}}" style="width: {{width_QR}}rpx; height: {{height_QR}}rpx; margin-left: {{left_QR}}rpx; margin-top: {{top_QR}}rpx; transform: translate(0%, 0%) scale({{ scale_QR }}) rotate({{ rotate_QR }}deg);" bindload="bindload_QR" bindtouchstart="touchstart_QR" bindtouchmove="touchmove_QR" bindtouchend="touchend_QR">
+				<view class="QRBox">
+					<image mode="widthFix" class="QRImg" src="../../images/QR.png" />
+					<view> <text  class="txt" id="txt2" data-scale="{{scale_QR}}">长按识别二维码了解详情</text> </view>
+				</view>
+				<image wx:if='{{aim==3}}' class="delImg" src="../../images/del.png" bindtap="bindDel3" />
+				<image wx:if='{{aim==3}}' class="scaleImg" src="../../images/scale.png" />
+			</view>
+		</view>
+
+
+		<!-- 活动推荐话术 -->
+		<view class="activeCon">推荐话术内容推荐话术内容推荐话术内容推荐话术内容推荐话术内容</view>
+
+		<!-- 功能引导弹框 -->
+		<view class="modalBox">
+			<view class="modal-mask modal-mask3" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal_guide}}"></view>
+			<view class="modal-dialog modal-dialog2 modal-dialog3" wx:if="{{showModal_guide}}" bindtap="hideModal">
+				<view class="arrBox {{isAcross?'':'arrBox2'}}">
+					<image mode="widthFix" class="arrImg" src="../../images/arr.png" />
+				</view>
+				<view class="modal-footer">
+					拖动这里可以改变字体的大小和位置哦！
+				</view>
+			</view>
+		</view>
+		<!-- 功能引导弹框 end-->
+
+		<!-- 保存成功弹框 -->
+		<view class="modalBox">
+			<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal_success}}"></view>
+			<view class="modal-dialog modal-dialog2" wx:if="{{showModal_success}}">
+				<view class="modal-title">
+					您的海报已保存成功，请在相册中查看
+				</view>
+				<view class="modal-content">
+					<image mode="widthFix" class="postImg" src="{{imgUrl}}{{PosterImagesURL}}" />
+				</view>
+				<view class="modal-footer">
+					<view class="btn-confirm backIndex" bindtap="toIndex" data-status="confirm">返回首页</view>
+				</view>
+			</view>
+		</view>
+		<!-- 保存成功弹框 end-->
+
+		<!--退出弹窗-->
+		<view class="modalBox">
+			<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+			<view class="modal-dialog" wx:if="{{showModal}}">
+				<view class="modal-title">
+					<image src="../../images/smile.png" class="smileImg"></image>
+				</view>
+				<view class="modal-content">
+					<view class="modal-input">
+						您确认退出编辑吗？
+					</view>
+				</view>
+				<view class="modal-footer">
+					<view class="btn-cancel" bindtap="onCancel" data-status="cancel">取消</view>
+					<view class="btn-confirm" bindtap="onConfirm_back" data-status="confirm">确定</view>
+				</view>
+			</view>
+		</view>
+		<!-- 退出弹窗 -->
+
+	</view>
+</view>
