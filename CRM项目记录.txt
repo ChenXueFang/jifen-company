@@ -1,0 +1,13 @@
+CRM模块化
+接口地址：http://vip.crmclick.com/crmadmin/swagger/index.html
+
+测试站发布地址：/crmvip.crmclick.com/CrmAdmin/wwwroot/
+
+测试站登录地址：http://vip.crmclick.com/crmadmin/index.html#/
+登录账号：1001
+登录密码：123456
+
+前端组件：iview
+http://iview.talkingdata.com/#/components/guide/install
+
+
