@@ -1,0 +1,5 @@
+登录账号：admin
+密码：123456
+
+项目路径
+C:\Users\liuxi\Desktop\项目\BI.zip\BI\philips_ultrasound_report\ACETemplate\ACETemplate\adnim
